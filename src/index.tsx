@@ -12,9 +12,10 @@ import Chapter5 from "./components/pages/chapters/Chapter5";
 import Chapter6 from "./components/pages/chapters/Chapter6";
 import Chapter7 from "./components/pages/chapters/Chapter7";
 import AppendixSpells from "./components/pages/appendices/AppendixSpells";
-import AppendixWeapons from "./components/pages/appendices/AppendixArmor";
+import AppendixWeapons from "./components/pages/appendices/AppendixWeapons";
 import AppendixArmor from "./components/pages/appendices/AppendixArmor";
 import AppendixItems from "./components/pages/appendices/AppendixItems";
+import AppendixBestiary from "./components/pages/appendices/AppendixBestiary";
 import Sheet from "./components/pages/Sheet";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
 	{
 		path: "/items",
 		element: <AppendixItems />,
+	},
+	{
+		path: "/bestiary",
+		element: <AppendixBestiary />,
 	},
 	{
 		path: "/sheet",

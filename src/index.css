@@ -83,7 +83,7 @@ button.h5:hover {
 	color: #fff;
 }
 button.h5:hover:after {
-	content: url("../public/images/link.png");
+	content: url("../images/link.png");
 	width: 20px;
 	height: 20px;
 }

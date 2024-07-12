@@ -25,10 +25,10 @@ export default function AppendixWeapons() {
 			{itemCategories.array.map((category, index) => {
 				return (
 					<>
-						<h4 key={index}>{category.name}</h4>
-						<div className='row' style={{justifyItems: "start", flexWrap: "wrap", margin: 0}}>
-							{category.items.map(item => (
-								<ItemElement item={item} />
+						<h4 key={"h4" + index}>{category.name}</h4>
+						<div key={"div" + index} className='row' style={{justifyItems: "start", flexWrap: "wrap", margin: 0}}>
+							{category.items.map((item, index2) => (
+								<ItemElement item={item} key={index2} />
 							))}
 						</div>
 					</>

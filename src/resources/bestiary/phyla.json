@@ -1,0 +1,29 @@
+[
+	{
+		"name": "Beast",
+		"description": "Living beasts of an ordinary sort.",
+		"latin": "vertebrata"
+	},
+	{
+		"name": "Invertebrate",
+		"description": "Living creatures of a primitive sort.",
+		"latin": "invertebrata"
+	},
+	{
+		"name": "Undead",
+		"namePlural": "Undead",
+		"description": "Death-touched entities either returned to unnatural semblance of life, or undeparted spirits of the deceased. These entities are greatly harmed by weapons of silver.",
+		"latin": "inmortis"
+	},
+	{
+		"name": "demigod",
+		"description": "Pure spiritual beings which may manifest in the material plane. They never die, but may be banished to their home realm.",
+		"latin": "animis"
+	},
+	{
+		"name": "Oddity",
+		"namePlural": "Oddities",
+		"description": "Unnatural beings of diverse and often unknown origins.",
+		"latin": "monstrum"
+	}
+]
