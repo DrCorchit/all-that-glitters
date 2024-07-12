@@ -1,0 +1,45 @@
+import athleticsJson from "../resources/feats/athletics.json";
+import combatJson from "../resources/feats/combat.json";
+import proficiencyJson from "../resources/feats/proficiency.json";
+import {Keyword} from "../utils/keyword";
+import Source from "../utils/source";
+
+export interface Feat extends Keyword {
+	slots: number;
+	reqs: string[];
+}
+
+export const athleticsFeats = new Source<Feat>(
+	"Athletic",
+	athleticsJson.map(json => ({
+		name: json.name,
+		description: json.effect,
+		slots: json.cost.slots,
+		reqs: json.reqs,
+	})),
+	feat => feat.name
+);
+
+export const combatFeats = new Source<Feat>(
+	"Combat",
+	combatJson.map(json => ({
+		name: json.name,
+		description: json.effect,
+		slots: json.cost.slots,
+		reqs: json.reqs ?? [],
+	})),
+	feat => feat.name
+);
+
+export const proficiencyFeats = new Source<Feat>(
+	"Proficiency",
+	proficiencyJson.map(json => ({
+		name: json.name,
+		description: json.effect,
+		slots: json.cost.slots,
+		reqs: json.reqs,
+	})),
+	feat => feat.name
+);
+
+export const feats = [athleticsFeats, combatFeats, proficiencyFeats];

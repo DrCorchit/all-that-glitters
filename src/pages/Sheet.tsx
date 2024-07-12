@@ -1,4 +1,4 @@
-import {Skill, skills} from "../../concepts/skill";
+import {Skill, skills} from "../concepts/skill";
 
 const Info = () => {
 	return (
@@ -150,10 +150,12 @@ const SkillEntries = () => {
 				backgroundSize: "50%",
 			}}>
 			<thead>
-				<th className='subheader'>Skill</th>
-				<th className='subheader'>Base</th>
-				<th className='subheader'>Bonuses</th>
-				<th className='subheader'>Total</th>
+				<tr>
+					<th className='subheader'>Skill</th>
+					<th className='subheader'>Base</th>
+					<th className='subheader'>Bonuses</th>
+					<th className='subheader'>Total</th>
+				</tr>
 			</thead>
 			<tbody>
 				{skills.array.map((skill, index) => {

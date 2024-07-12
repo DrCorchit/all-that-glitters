@@ -1,5 +1,5 @@
-import {lookupGenera, phyla, Plane, planes, Spirit, spirits} from "../../../concepts/bestiary";
-import Appendix from "../../Appendix";
+import Appendix from "../../components/Appendix";
+import {Plane, Spirit, planes, spirits, phyla, lookupGenera} from "../../concepts/bestiary";
 
 function PlaneElement({plane}: {plane: Plane}): JSX.Element {
 	return (
@@ -20,7 +20,7 @@ function SpiritElement({spirit}: {spirit: Spirit}): JSX.Element {
 
 export default function AppendixWeapons() {
 	return (
-		<Appendix index={4}>
+		<Appendix index={6}>
 			<h4>The Planes of Existence</h4>
 			<p>The world consists of the following planes:</p>
 			{planes.array.map((plane, index) => (

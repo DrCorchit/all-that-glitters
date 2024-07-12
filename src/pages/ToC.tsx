@@ -1,7 +1,7 @@
-import {range} from "../../utils/utils";
-import {appendices} from "../AppendixInfo";
-import {ChapterInfo, chapters} from "../ChapterInfo";
-import {AppendixLink, ChapterLink} from "../InternalLink";
+import {appendices} from "../components/AppendixInfo";
+import {ChapterInfo, chapters} from "../components/ChapterInfo";
+import {ChapterLink, AppendixLink} from "../components/InternalLink";
+import {range} from "../utils/utils";
 
 function TocEntry({chapter}: {chapter: ChapterInfo}) {
 	return (

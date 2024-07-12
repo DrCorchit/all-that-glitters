@@ -1,9 +1,9 @@
-import Chapter from "../../Chapter";
-import {chapters} from "../../ChapterInfo";
-import {ChapterLink} from "../../InternalLink";
-import Section from "../../Section";
-import {Sub} from "../../Sub";
-import strings from "../../../resources/strings.json";
+import Chapter from "../../components/Chapter";
+import {chapters} from "../../components/ChapterInfo";
+import {ChapterLink} from "../../components/InternalLink";
+import Section from "../../components/Section";
+import {Sub} from "../../components/Sub";
+import strings from "../../resources/strings.json";
 
 const index = 4;
 const info = chapters[index - 1];

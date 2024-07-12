@@ -1,7 +1,7 @@
-import {chapters} from "../../ChapterInfo";
-import {schools, School, Study} from "../../../concepts/school";
-import Chapter from "../../Chapter";
-import Section from "../../Section";
+import Chapter from "../../components/Chapter";
+import {chapters} from "../../components/ChapterInfo";
+import Section from "../../components/Section";
+import {schools, School, Study} from "../../concepts/school";
 
 const index = 7;
 const info = chapters[index - 1];

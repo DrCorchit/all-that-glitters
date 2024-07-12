@@ -1,7 +1,7 @@
-import {WeaponType, weaponKeywords, weaponTypes} from "../../../concepts/weapon";
-import Appendix from "../../Appendix";
-import {GlossaryElement} from "../../Glossary";
-import {Table} from "../../Table";
+import Appendix from "../../components/Appendix";
+import {GlossaryElement} from "../../components/Glossary";
+import {Table} from "../../components/Table";
+import {WeaponType, weaponKeywords, weaponTypes} from "../../concepts/weapon";
 
 const headers = ["Name", "Damage", "Price", "Modifiers", "Requirements", "Notes"];
 

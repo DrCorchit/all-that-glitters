@@ -1,14 +1,15 @@
 import {Link} from "react-router-dom";
-import {attributes} from "../../../concepts/attribute";
-import {skills, Skill} from "../../../concepts/skill";
-import Chapter from "../../Chapter";
-import {chapters} from "../../ChapterInfo";
-import {ChapterLink, AppendixLink} from "../../InternalLink";
-import Outline from "../../Outline";
-import Section from "../../Section";
-import {Sub} from "../../Sub";
-import {Table} from "../../Table";
-import strings from "../../../resources/strings.json";
+import Chapter from "../../components/Chapter";
+import {chapters} from "../../components/ChapterInfo";
+import {ChapterLink, AppendixLink} from "../../components/InternalLink";
+import Outline from "../../components/Outline";
+import Section from "../../components/Section";
+import {Sub} from "../../components/Sub";
+import {Table} from "../../components/Table";
+import {attributes} from "../../concepts/attribute";
+import {skills, Skill} from "../../concepts/skill";
+import strings from "../../resources/strings.json";
+
 const index = 3;
 const info = chapters[index - 1];
 

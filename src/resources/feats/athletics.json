@@ -1,0 +1,51 @@
+[
+	{
+		"name": "Freestyle",
+		"effect": "The player spends one week practicing freestyle swimming. Swim speed is increased by 50%.",
+		"cost": {
+			"slots": 3
+		},
+		"reqs": ["A body of water of suitable depth.", "Strength 14 or Speed 14"]
+	},
+	{
+		"name": "Lung Capacity",
+		"effect": "The player spends one week practicing holding their breath and diving under water. After persistent practice, the player learns to hold their breath for 50% longer than normal.",
+		"cost": {
+			"slots": 4
+		},
+		"reqs": ["A body of water of suitable depth.", "Willpower 14"]
+	},
+	{
+		"name": "Leaping and Landing",
+		"effect": "The player spends one week practicing jumping from one surface to another, landing on a variety of terrain types. Jump height and distance are increased by 50%. The player gains a 1d4 bonus when making saving throws to avoid landing prone.",
+		"cost": {
+			"slots": 3
+		},
+		"reqs": ["Terrain suitable for such practice.", "Dexterity 12"]
+	},
+	{
+		"name": "Falling",
+		"effect": "The player practices landing on various surfaces from various heights, using a rolling technique whereby weight is distributed between the feet, legs, buttocks, and shoulders. Having learned various falling techniques, fall damage is reduced by 10 + 1d10.",
+		"cost": {
+			"slots": 4
+		},
+		"reqs": ["Terrain suitable for such practice.", "Leaping and Landing", "Dexterity 14"]
+	},
+	{
+		"name": "Vertical Escape",
+		"effect": "The player learns to use the grappling hook to make a hasty escape. If surroundings are appropriate, the player can throw the hook up to 30 feet vertically as an action. On a successful DT 12 {{skills.mobility}} check, the grappling hook latches. The player can use an action to climb 10 feet up the rope, away from enemy melee attacks.",
+		"cost": {
+			"gold": 20,
+			"slots": 3
+		},
+		"reqs": ["12 DEX", "Mobility Proficiency"]
+	},
+	{
+		"name": "Wall Run",
+		"effect": "The player learns to run a short distance along or up walls, and to leap backwards off of them.",
+		"cost": {
+			"slots": 4
+		},
+		"reqs": ["Mobility Expertise", "Speed 15 or Dexterity 15"]
+	}
+]

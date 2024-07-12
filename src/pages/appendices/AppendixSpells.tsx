@@ -1,12 +1,12 @@
 import {ReactElement, useState} from "react";
-import {schools} from "../../../concepts/school";
-import {Spell, lookupSpellsBySchool} from "../../../concepts/spell";
-import {recordEquals, range} from "../../../utils/utils";
-import Appendix from "../../Appendix";
-import Collapsible from "../../Collapsible";
-import {AppendixLink} from "../../InternalLink";
-import Outline from "../../Outline";
-import Section from "../../Section";
+import Appendix from "../../components/Appendix";
+import Collapsible from "../../components/Collapsible";
+import {AppendixLink} from "../../components/InternalLink";
+import Outline from "../../components/Outline";
+import Section from "../../components/Section";
+import {schools} from "../../concepts/school";
+import {Spell, lookupSpellsBySchool} from "../../concepts/spell";
+import {recordEquals, range} from "../../utils/utils";
 
 const filterTypes = ["At Least", "Exactly", "At Most"] as const;
 type FilterType = (typeof filterTypes)[number];

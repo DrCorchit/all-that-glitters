@@ -1,8 +1,8 @@
-import Chapter from "../../Chapter";
-import {chapters} from "../../ChapterInfo";
-import {Glossary} from "../../Glossary";
-import {ChapterLink} from "../../InternalLink";
-import Section from "../../Section";
+import Chapter from "../../components/Chapter";
+import {chapters} from "../../components/ChapterInfo";
+import {Glossary} from "../../components/Glossary";
+import {ChapterLink} from "../../components/InternalLink";
+import Section from "../../components/Section";
 
 const index = 1;
 const info = chapters[index - 1];

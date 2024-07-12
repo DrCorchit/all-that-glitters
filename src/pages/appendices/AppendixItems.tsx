@@ -1,5 +1,5 @@
-import {Item, itemCategories} from "../../../concepts/items";
-import Appendix from "../../Appendix";
+import Appendix from "../../components/Appendix";
+import {Item, itemCategories} from "../../concepts/items";
 
 function ItemElement({item}: {item: Item}): JSX.Element {
 	return (
@@ -24,14 +24,14 @@ export default function AppendixWeapons() {
 		<Appendix index={5}>
 			{itemCategories.array.map((category, index) => {
 				return (
-					<>
-						<h4 key={"h4" + index}>{category.name}</h4>
-						<div key={"div" + index} className='row' style={{justifyItems: "start", flexWrap: "wrap", margin: 0}}>
+					<div key={index}>
+						<h4>{category.name}</h4>
+						<div className='row' style={{justifyItems: "start", flexWrap: "wrap", margin: 0}}>
 							{category.items.map((item, index2) => (
 								<ItemElement item={item} key={index2} />
 							))}
 						</div>
-					</>
+					</div>
 				);
 			})}
 		</Appendix>

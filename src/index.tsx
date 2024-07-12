@@ -2,21 +2,22 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import MainPage from "./components/pages/Main";
-import ToC from "./components/pages/ToC";
-import Chapter1 from "./components/pages/chapters/Chapter1";
-import Chapter2 from "./components/pages/chapters/Chapter2";
-import Chapter3 from "./components/pages/chapters/Chapter3";
-import Chapter4 from "./components/pages/chapters/Chapter4";
-import Chapter5 from "./components/pages/chapters/Chapter5";
-import Chapter6 from "./components/pages/chapters/Chapter6";
-import Chapter7 from "./components/pages/chapters/Chapter7";
-import AppendixSpells from "./components/pages/appendices/AppendixSpells";
-import AppendixWeapons from "./components/pages/appendices/AppendixWeapons";
-import AppendixArmor from "./components/pages/appendices/AppendixArmor";
-import AppendixItems from "./components/pages/appendices/AppendixItems";
-import AppendixBestiary from "./components/pages/appendices/AppendixBestiary";
-import Sheet from "./components/pages/Sheet";
+import MainPage from "./pages/Main";
+import ToC from "./pages/ToC";
+import Chapter1 from "./pages/chapters/Chapter1";
+import Chapter2 from "./pages/chapters/Chapter2";
+import Chapter3 from "./pages/chapters/Chapter3";
+import Chapter4 from "./pages/chapters/Chapter4";
+import Chapter5 from "./pages/chapters/Chapter5";
+import Chapter6 from "./pages/chapters/Chapter6";
+import Chapter7 from "./pages/chapters/Chapter7";
+import AppendixSpells from "./pages/appendices/AppendixSpells";
+import AppendixWeapons from "./pages/appendices/AppendixWeapons";
+import AppendixArmor from "./pages/appendices/AppendixArmor";
+import AppendixItems from "./pages/appendices/AppendixItems";
+import AppendixBestiary from "./pages/appendices/AppendixBestiary";
+import Sheet from "./pages/Sheet";
+import AppendixFeats from "./pages/appendices/AppendixFeats";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
 	{
 		path: "/spells",
 		element: <AppendixSpells />,
+	},
+	{
+		path: "/feats",
+		element: <AppendixFeats />,
 	},
 	{
 		path: "/weapons",

@@ -1,11 +1,11 @@
 import {Link} from "react-router-dom";
-import {damageTypes, DamageType} from "../../../concepts/damageType";
-import {statuses, StatusEffect} from "../../../concepts/statusEffect";
-import Chapter from "../../Chapter";
-import {chapters} from "../../ChapterInfo";
-import {ChapterLink} from "../../InternalLink";
-import Section from "../../Section";
-import {Sub} from "../../Sub";
+import Chapter from "../../components/Chapter";
+import {chapters} from "../../components/ChapterInfo";
+import {ChapterLink} from "../../components/InternalLink";
+import Section from "../../components/Section";
+import {Sub} from "../../components/Sub";
+import {damageTypes, DamageType} from "../../concepts/damageType";
+import {statuses, StatusEffect} from "../../concepts/statusEffect";
 
 const index = 5;
 const info = chapters[index - 1];

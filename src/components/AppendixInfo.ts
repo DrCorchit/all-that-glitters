@@ -6,7 +6,7 @@ export interface AppendixInfo {
 
 export const appendices: AppendixInfo[] = [
 	{index: 1, name: "Appendix: Spells", link: "/spells"},
-	{index: 2, name: "Appendix: Abilities", link: "/abilities"},
+	{index: 2, name: "Appendix: Feats", link: "/feats"},
 	{index: 3, name: "Appendix: Weapons", link: "/weapons"},
 	{index: 4, name: "Appendix: Armor & Materials", link: "/armor"},
 	{index: 5, name: "Appendix: Mercantile Goods", link: "/items"},
