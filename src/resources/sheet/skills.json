@@ -1,0 +1,82 @@
+[
+	{
+		"name": "Accuracy",
+		"attrs": ["DEX"],
+		"description": "Describes a player’s accuracy with ranged weapons such as bows and firearms."
+	},
+	{
+		"name": "Defense",
+		"attrs": ["STR"],
+		"description": "Skill at defensive maneuvers and tactics, in particular armor and shields."
+	},
+	{
+		"name": "Folklore",
+		"attrs": ["NST"],
+		"description": "Measures knowledge gained from listening to locals and engaging in conversation with diverse sorts of individuals. In addition to local geography and history, includes knowledge of myths, mythical beings, and religion."
+	},
+	{
+		"name": "Initiative",
+		"attrs": ["SPD"],
+		"description": "Determines move order in battle."
+	},
+	{
+		"name": "Legerdemain",
+		"attrs": ["DEX"],
+		"description": "Used when lockpicking and pickpocketing items, or other such tricks."
+	},
+	{
+		"name": "Literacy",
+		"attrs": ["INT"],
+		"description": "Measures knowledge usually obtained via formal education or reading books, such as philosophy, mathematics, economics, or history. Deficiency in this skill indicates that the character is illiterate."
+	},
+	{
+		"name": "Martial Arts",
+		"attrs": ["STR", "DEX"],
+		"description": "Describes skill in armed and unarmed combat. Proficiency bonuses in this area are required to use certain melee weapons effectively. Normally, either strength or dexterity can be used interchangeably as the base attribute."
+	},
+	{
+		"name": "Medicine",
+		"attrs": ["INT"],
+		"description": "Measures knowledge of disease and wound treatment."
+	},
+	{
+		"name": "Mobility",
+		"attrs": ["DEX", "SPD"],
+		"description": "The ability to climb, mantle, vault, and otherwise navigate past obstacles."
+	},
+	{
+		"name": "Nature",
+		"attrs": ["NST"],
+		"description": "Measures background knowledge that would usually be obtained by spending time in nature or around animals. Used when casting nature spells."
+	},
+	{
+		"name": "Performance",
+		"attrs": ["CHA"],
+		"description": "Captures a player's ability to sing, dance, play instruments, or otherwise entertain a crowd. Proficiency with this skill implies the ability to play at least one musical instrument."
+	},
+	{
+		"name": "Persuasion",
+		"attrs": ["CHA", "STR"],
+		"description": "Used when engaging in factual debate, intimidation, or deception. Strength becomes the base attribute only when making a threat of physical force."
+	},
+	{
+		"name": "Perception",
+		"attrs": ["NST", "CHA"],
+		"description": "The ability to discern more than is immediately obvious. When attempting to perceive a character’s honesty or motives, charisma becomes the base stat."
+	},
+	{
+		"name": "Sorcery",
+		"attrs": ["INT"],
+		"description": "Practical knowledge of magic, including the speedy recall and correct execution of verbal and somatic spell components."
+	},
+	{
+		"name": "Stealth",
+		"attrs": ["DEX", "SPD"],
+		"description": "Used when sneaking or attempting to perform actions without being seen. Speed cannot be used if the noise of sprinting would arouse excessive suspicion."
+	},
+	{
+		"name": "Survival",
+		"attrs": ["NST"],
+		"description": "Measures general survival skills, including the ability to recognize threats, build shelter, and live off the land. Used when attempting to recognize monsters at the start of combat."
+	}
+]

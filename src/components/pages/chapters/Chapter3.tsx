@@ -1,0 +1,425 @@
+import {Link} from "react-router-dom";
+import {attributes} from "../../../concepts/attribute";
+import {skills, Skill} from "../../../concepts/skill";
+import Chapter from "../../Chapter";
+import {chapters} from "../../ChapterInfo";
+import {ChapterLink, AppendixLink} from "../../InternalLink";
+import Outline from "../../Outline";
+import Section from "../../Section";
+import {Sub} from "../../Sub";
+import {Table} from "../../Table";
+import strings from "../../../resources/strings.json";
+const index = 3;
+const info = chapters[index - 1];
+
+function InfoSection(): JSX.Element {
+	return (
+		<Section name={info.sections[0]}>
+			<p>
+				This section is found in the topmost left section of the character sheet, and records the most basic information about your character,
+				including their name, combat class, level, race, and alignment. Races, classes, and alignments are discussed in more detail in the
+				<ChapterLink chapter={2} rel='prev'>
+					previous chapter
+				</ChapterLink>
+				. Except for your character level, information in this section usually doesn't change.
+			</p>
+		</Section>
+	);
+}
+
+function StatsSection(): JSX.Element {
+	return (
+		<Section name={info.sections[1]}>
+			<p>Found in the topmost right corner, this section tracks several important statistics:</p>
+			<h5>Hitpoints</h5>
+			<p>
+				Hitpoints (HP) measure hardiness and vitality. When a creature's hitpoints fall to zero, they succumb to their wounds and fall unconscious. A
+				character’s maximum HP is initially equal to their strength score and increases each level by one half their strength score. The base value
+				can be bolstered by other effects such as class feature, feats, or magical gear.
+			</p>
+			<pre>{strings.max_hp_formula}</pre>
+			<h5>Willpower</h5>
+			<p>
+				Willpower (WP) is expended as the player uses powerful spells and abilities. When WP is fully depleted, the character is said to be exhausted.
+				There is not an immediate penalty for this condition, other than not being able to use critically important abilities. Maximum willpower is
+				equal to 10 plus a player's <Sub attr='CHA' /> and <Sub attr='NST' />
+				modifiers.
+			</p>
+			<pre>{strings.max_wp_formula}</pre>
+			<h5>Mitigation</h5>
+			<p>
+				Mitigation (MIT) is a derived statistic which determines how likely a character is to successfully avoid damage from an attack, similar to
+				armor class from D&amp;D. During combat, melee and ranged attacks are treated as an event roll testing the martial arts or accuracy skill of
+				the attacking player. Mitigation provides the difficulty threshold that determines whether the attack succeeds. Thus, players with high
+				mitigation are hit less often and survive longer.
+			</p>
+			<p>
+				Mitigation is composed of two values: dodge chance (DC) and block chance (BC). Dodge chance is initially equal to the player’s dexterity
+				attribute, while block chance is determined by the character’s shields and armor. The two values are added together to calculate total
+				mitigation. Note that DC is reduced after every attack by the attacker's
+				<Sub attr='DEX' /> modifier, whether the attack is successful or not. Dodge chance is also reduced to zero (for both characters) when a
+				character is grappled.
+			</p>
+			<p>DC, BC, and MIT are calculated as follows:</p>
+			<pre>{strings.dc_formula}</pre>
+			<pre>{strings.bc_formula}</pre>
+			<pre>{strings.mit_formula}</pre>
+			<p style={{marginLeft: "25px"}}>
+				Note: The character sheet is meant to record the base mitigation statistic. Temporary or conditional bonuses (such as from potions, spells, or
+				parrying) should not be recorded here.
+			</p>
+			<p>
+				To calculate effective MIT against an attack, add any circumstantial bonuses or penalties to BC and DC to the base mitigation value. For
+				example, specific potions increase DC, while the parry reaction or certain spells improve BC.
+			</p>
+			<h5>Gold</h5>
+			<p>
+				Gold measures a character's material wealth, and does not necessarily correspond to a specific number of gold coins or any specific currency.
+				Coins made from other metals such as copper or silver are converted to their gold value when recorded on the character sheet. Gold is mainly
+				used to purchase goods and services, such as buying equipment from merchants or hiring trainers.
+			</p>
+			<h5>Status</h5>
+			<p>This section records any status effects inflicted on your character.</p>
+			<h5>Training Slots</h5>
+			<p>
+				Training slots are a resource that control how often a character can learn new abilities from training. Characters expend training slots
+				whenever they learn new feats or spells. If they don't have enough training slots for a new ability, they may have to forget an ability to
+				regain the required training slots, or wait until they level up. If you're just making a character, you won't have used any training slots, so
+				they will be at maximum, which is equal to your intelligence attribute score. Training slots are explained in more detail in{" "}
+				<ChapterLink chapter={6} />.
+			</p>
+			<pre>{strings.training_slots_formula}</pre>
+		</Section>
+	);
+}
+
+function AttrsSection(): JSX.Element {
+	return (
+		<Section name={info.sections[2]}>
+			<p>
+				The six attributes, <i>Strength</i>, <i>Dexterity</i>, <i>Speed</i>, <i>Intelligence</i>, <i>Instinct</i>, and <i>Charisma</i>, describe the
+				raw physical and mental capabilities of a character. Each attribute has a value typically from 0 to 20, with a score of 0 indicating a total
+				absence of the attribute (as with someone who is dead or unconscious) while a score of 20 indicating a nearly superhuman level of aptitude.
+				For humans, a score of ten indicates an average level of proficiency.
+			</p>
+			<p style={{marginLeft: "25px"}} id='modifier'>
+				Note: In some situations, we do not use the attribute score directly, but the <i>modifier</i>. The modifier for an attribute is obtained by
+				subtracting 10 from the attribute score. An average human with 10 for all attribute scores would thus have 0 for their modifiers.
+			</p>
+			<Table
+				headers={["Attribute Name", "Abbreviation", "What it Measures", "GameplayEffects", "Real-life Equivalence"]}
+				data={attributes.array}
+				mapper={attr => [attr.name, attr.abbr, attr.description, attr.effects.join(", "), attr.interpretation ?? ""]}
+			/>
+			<p>
+				Each attribute affects multiple aspects of gameplay, meaning that players should care about which stats they prioritize and which they
+				neglect. Not every character needs to be well-rounded, but characters with unusual ability score distributions should feel somewhat unbalanced
+				to play.
+			</p>
+			<p>
+				If you're filling out your character sheet for the first time, your attributes are going to be determined by your racial and class bonuses. Go
+				ahead and add up the totals and record them onto your character sheet, then move to the next section. Your attribute scores will increase
+				later on as you level up.
+			</p>
+		</Section>
+	);
+}
+
+function EquipmentSection(): JSX.Element {
+	return (
+		<Section name={info.sections[3]}>
+			<p>
+				This section records your character's equipped weapons and armor. Magical trinkets are not recorded here, but under "inventory", even if they
+				are currently being worn.
+			</p>
+			<h5>Weapons</h5>
+			<p>
+				To fill out this section, copy down the names and damage of the weapons you chose when you created your character. For example, let's suppose
+				you're playing a character with a strength score of 13 and a dexterity score of 15. If you chose a longsword, you would write:
+			</p>
+			<pre>Longsword 1d12+3</pre>
+			<p>
+				The 1d12 is the die used by the weapon, while the +3 comes from your strength, because the longsword is a strength weapon. On the other hand,
+				if you chose a katana, you would enter:
+			</p>
+			<pre>Katana 1d8+5</pre>
+			<p>
+				Since the katana is a nimble weapon, you want to use whichever is higher of strength and dexterity for damage. Since 15 is higher than 13, you
+				would use dexterity.
+			</p>
+			<p>
+				Finally, write down whichever modifiers apply to that weapon. You can refer to <AppendixLink appendix={3} /> for more information on weapons
+				and modifiers. If you're fully familiar with your weapon's modifiers, I suggest using this space to record the abilities of any magical
+				weapons you equip.
+			</p>
+			<p>A player can carry up to two weapons, as follows:</p>
+			<ul>
+				<li>A single two-handed weapon</li>
+				<li>A one-handed weapon, plus a buckler, shield, or small weapon in the offhand</li>
+				<li>Two light weapons, such as two shortswords or two daggers</li>
+				<li>A light weapon and a greatshield</li>
+				<li>A one-handed weapon, with the offhand kept free to cast spells</li>
+			</ul>
+			<p>If you only carry one weapon, leave the "offhand" column blank.</p>
+			<h5>Armor</h5>
+			<p>
+				Under the "armor" section, write down the type of armor your character is wearing and the associated BC. For example, if your character is a
+				knight you would start out wearing half plate. Therefore, you would write:
+			</p>
+			<pre>Name: Half Plate BC: 12</pre>
+			<p>
+				If you don't know the BC of your armor, you can look it up in <AppendixLink appendix={4} />
+			</p>
+		</Section>
+	);
+}
+
+function SkillsSection(): JSX.Element {
+	return (
+		<Section name={info.sections[4]}>
+			<p>
+				Skills are related to attributes in that they are also used for event rolls. Every skill has an underlying supporting attribute, whose
+				modifier is added to the roll as with an attribute check. In addition to this, players add a bonus from training called a proficiency bonus.
+				The final value of the skill check equals the number rolled on the d20 plus the attribute modifier plus the proficency bonus, as follows:
+			</p>
+			<pre>{strings.skill_check_formula}</pre>
+			<p>
+				Although every skill depends on at least one attribute, several skills have a secondary supporting attribute whose modifier may be used
+				instead, under certain circumstances. For example, a player who is sneaking may decide that they are too clumsy to move quietly and instead
+				opt to sprint past the guard while his gaze is turned. In this case, the player is trying to use their modifier for speed instead of dexterity
+				for the stealth check. Whether this type of substitution is allowed is situational. Certain circumstances may <i>require</i> that the
+				alternative attribute score modifier is used, while others may allow the player to choose whichever is higher.
+			</p>
+			<p>
+				When filling out this section, copy the <Link to={{hash: "modifier"}}>modifier</Link> of the relevant attribute under the column labeled
+				"base". Then, record your proficiency bonus (if any) under "bonus". Add the two together to calculate your total bonus for that skill. For
+				example, if your character has a dexterity score of 13 and proficiency in
+				<Sub skill='accuracy' />, you would fill out the entry for the accuracy skill as follows:
+			</p>
+			<pre>Base + Bonus = Total 3 + 2 = +5</pre>
+			<p>Here is a list of all skills:</p>
+			<table className='standard'>
+				<thead>
+					<tr>
+						<th>Skill Name</th>
+						<th>Supporting Attributes</th>
+						<th>What it Measures</th>
+					</tr>
+				</thead>
+				<tbody>
+					{skills.array.map((skill, index) => (
+						<SkillElement skill={skill} key={index} />
+					))}
+				</tbody>
+			</table>
+			<p>There are five levels of proficiency in each skill. Each proficiency level has a corresponding bonus, as follows:</p>
+			<table className='standard'>
+				<tbody>
+					<tr>
+						<th>Level</th>
+						<th>Roll Bonus</th>
+						<th>Effects</th>
+					</tr>
+					<tr>
+						<td>Deficient</td>
+						<td>-2</td>
+						<td>Rolling a 2 or 3 counts as a critical failure.</td>
+					</tr>
+					<tr>
+						<td>None</td>
+						<td>0</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Proficient</td>
+						<td>2</td>
+						<td>Can expend 5 willpower to roll with advantage.</td>
+					</tr>
+					<tr>
+						<td>Expert</td>
+						<td>4</td>
+						<td>Can expend 4 willpower to roll with advantage.</td>
+					</tr>
+					<tr>
+						<td>Mastery</td>
+						<td>6</td>
+						<td>Can expend 3 willpower to roll with advantage. Can reroll a natural 1 once per skill check.</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				Each of these labels indicate that the player has either undertaken training or has an especial weakness in that skill. Deficiencies can be
+				overcome and expertise and mastery can be attained through training even after a character is made.
+			</p>
+			<p>
+				When players obtain proficiency bonuses to the same skill from multiple sources, they do not combine to advance one’s proficiency in that
+				skill to the next level. However, if a player acquires proficiency for the same skill from both their race and class, they may take
+				proficiency in a new skill to replace the doubled proficiency.
+			</p>
+		</Section>
+	);
+}
+
+function SkillElement({skill}: {skill: Skill}): JSX.Element {
+	return (
+		<tr>
+			<td>
+				<b>{skill.name}</b>
+			</td>
+			<td>{skill.attrs.map(attr => attr.abbr).join(", ")}</td>
+			<td>{skill.description}</td>
+		</tr>
+	);
+}
+
+function AbilitiesSection(): JSX.Element {
+	return (
+		<Section name={info.sections[5]}>
+			<p>
+				Abilities are specific skills that confer some benefit to the player, such as spells or feats. Abilities are categorized as innate, trained,
+				or rote. Innate abilities are acquired from a player’s class or race (such as the barbarian’s rage), and cannot be obtained via training.
+				Abilities learned from trainers are called trained abilities, but become rote once their practice has become fully mastered.
+			</p>
+			<p>
+				In this section, write down the name of any abilities you learn, followed by the training slots used by that ability. Innate abilities don't
+				need to go here, since they are determined by your class. If an ability is known by rote, leave the "training slots" column for that ability
+				blank. If you're filling out a character sheet for a level one character, this section will be mostly blank except for any starting spells.
+			</p>
+		</Section>
+	);
+}
+
+function BackstorySection(): JSX.Element {
+	return (
+		<Section name={info.sections[6]}>
+			<p>
+				This section is highly unique to each character, and describes their origins, their motivations for becoming an adventurers, personal goals,
+				as well as character strengths or flaws. There's a lot that can go here, so use your judgement and flesh out your character as much as you
+				like.
+			</p>
+			<p>Ideally, this section should provide some explanation of your character's motives, origins, and flaws.</p>
+		</Section>
+	);
+}
+
+function InventorySection(): JSX.Element {
+	return (
+		<Section name={info.sections[7]}>
+			<p>
+				The final aspect of your character is their inventory, which includes everything they are carrying including equipped weapons and armor. If
+				you're filling out your character sheet for the first time, you should refer to your class choice to find your initial loadout. When you find
+				additional items during your adventure, you'll add them here.
+			</p>
+			<p>
+				Inventory items are categorized as weapons, gear (clothing, armor, and jewelry), tools, and consumables. All of these items are stored in your
+				adventurer's pack. If any inventory item is equipped (such as a magic ring or amulet) you can put a star or other special mark next to it, to
+				indicate that it is worn. There is no limit to the number of magical items you can equip, although you can't gain benefits from wearing
+				multiple items of the same type or on the same bodypart. For example, you can't receive the bonuses from two amulets or rings at once, even if
+				your character wears them at the same time.
+			</p>
+			<p>For more info on equipment, see the following appendices:</p>
+			<ul>
+				<li>
+					<AppendixLink appendix={3} />
+				</li>
+				<li>
+					<AppendixLink appendix={4} />
+				</li>
+				<li>
+					<AppendixLink appendix={5} />
+				</li>
+			</ul>
+		</Section>
+	);
+}
+
+function RecapSection(): JSX.Element {
+	return (
+		<Section name={info.sections[8]}>
+			<p>
+				Now that we've covered the various components of the character sheet, let's walk through the process of creating a character and filling out
+				the sheet. Let's create a character named "Arnoch Strontorius":
+			</p>
+			<blockquote>
+				{" "}
+				Arnoch is a wizard, preferring to explore the application of arcane energy outside the auspices of university. He comes from a long line of
+				adventurers, all the way back to his thrice-great grandfather, Sapio Strontorius. Back in the day, Sapio made a name for himself as a
+				mercenary who wielded his hand-and-a-half sword and elemental magic with equal finesse. Although Arnoch has a lot to live up to, he's already
+				shown himself as a magical prodigy. A string of family anecdotes recount his abilities, including a time when he burnt down an entire outhouse
+				and several trees at the wee age of three, despite not having any formal training in pyromancy. Arnoch has always been enamored with flames,
+				and fireball is his favorite spell. He says his favorite sound is the silence that comes just before a fireball (usually hurled by Arnoch
+				himself) strikes and explodes, although the sound of dry tinder bursting into flame is a close second. His family has always encouraged him to
+				develop his talents, and are very excited to send their little pyromaniac off on his first adventure.
+			</blockquote>
+			<blockquote>
+				Although Arnoch's got a bit of elven ancestry from way back when, he's mainly just an old-fashioned, home-grown human raised on the family
+				farm. (Meaning the true source of his powers remains a mystery.) Arnoch has a strong moral compass, but little regard for the law, making him
+				unpredictable and threat to corrupt politicians. As Arnoch sets out to find his fortune, he little guesses just what he's heading into... or
+				that he is already being watched, on account of his extraordinary powers.
+			</blockquote>
+			<p>
+				Now that we've established Arnoch's background, let's fill in his character sheet. First we write "Arnoch Strontorius" in the info section,
+				followed by "wizard" as his class and "1" as his level. Below this, we write "human" and "CG" or "Chaotic Good" as his alignment.
+			</p>
+			<p>
+				In the next section, we need Arnoch's attributes. As a human, we can choose to improve two of Arnoch's attributes by 1, by decreasing two
+				others by 1. We'll increase his <Sub attr='INT' /> and <Sub attr='CHA' />, at the cost of his <Sub attr='SPD' />
+				and <Sub attr='STR' />. As a wizard, he gains +2 to <Sub attr='INT' /> and <Sub attr='CHA' />. Adding these together, Arnoch's attributes are
+				as follows:
+			</p>
+			<ul>
+				<li>
+					<b>STR</b>: 9
+				</li>
+				<li>
+					<b>DEX</b>: 10
+				</li>
+				<li>
+					<b>SPD</b>: 9
+				</li>
+				<li>
+					<b>INT</b>: 13
+				</li>
+				<li>
+					<b>NST</b>: 10
+				</li>
+				<li>
+					<b>CHA</b>: 13
+				</li>
+			</ul>
+			<p>
+				We can now go ahead and enter these values under "Attributes", and then move on to the statistics section. At level 1, max HP is equal to
+				Strength, so we enter "9" as his max HP. Arnoch's <Sub attr='NST' /> modifier is +0 and his
+				<Sub attr='CHA' /> modifier is +3. We add these together and then add 10 to calculate his max willpower of 13. Finally, his intelligence of 13
+				means that he has 13 training slots. Since he hasn't learned any new abilities yet, his training slots are at maximum.
+			</p>
+			<p>
+				Now let's calculate his mitigation stat. He's wearing sorcerer's robes, so his block chance is zero. Meanwhile, his dexterity is 10, which is
+				his dodge chance. For his mitigation stat, we write:
+			</p>
+			<pre>Block + Dodge = Mitigation 0 + 10 = 10</pre>
+			<p>The next sections are abilities, backstory, and equipment.</p>
+			<p>TODO: Martial Class walkthrough (knight)</p>
+		</Section>
+	);
+}
+
+export default function Chapter3(): JSX.Element {
+	return (
+		<Chapter index={index}>
+			<p>
+				The character sheet, available <Link to='/sheet'>here</Link> is divided into 8 sections:
+			</p>
+			<Outline sections={info.sections} />
+			<InfoSection />
+			<StatsSection />
+			<AttrsSection />
+			<EquipmentSection />
+			<SkillsSection />
+			<AbilitiesSection />
+			<BackstorySection />
+			<InventorySection />
+			<RecapSection />
+		</Chapter>
+	);
+}

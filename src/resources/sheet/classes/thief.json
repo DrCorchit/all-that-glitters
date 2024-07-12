@@ -1,0 +1,56 @@
+{
+  "name": "Thief",
+  "description": "Thieves are found in every city and village and borough, in every corner of the world. Their techniques are as varied as you can imagine, but they have one thing in common: the ability to disappear quickly and quietly. This skill proves immensely useful for those that turn to the path of adventuring, for one cannot easily be killed if one is not seen. Of course, the occasional coinpurse snipped from the belt of an unsuspecting noble doesn’t hurt either.",
+  "backstoryPrompts": [
+    "Do you have any moral qualms about taking things that don’t belong to you?",
+    "Have you ever been in prison?",
+    "Do you have any connections to a crime syndicate?",
+    "What made you leave your previous life and start adventuring?"
+  ],
+  "alignment": "Non-Good",
+  "coreAbilityName": "Street Smarts",
+  "coreAbilityDescription": [
+    "Owing to your lifestyle, you have a variety of talents in diverse areas:",
+    {
+      "tag": "ul",
+      "content": [
+        {
+          "tag": "li",
+          "content": "<b>Take Backsies</b>: Once a day, you can expend 3 willpower to reroll a failed skill check, provided you have proficiency in that skill."
+        },
+        {
+          "tag": "li",
+          "content": "<b>Hard Knocks</b>: As an expert with small weapons, you can always conceal one small weapon on your person. This weapon can only be found if you are physically searched and the person conducting the search passes a DT 15 {{skills.perception}} check."
+        },
+        {
+          "tag": "li",
+          "content": "<b>Thieves' Cant</b>: You know a special form of communication that allows you to communicate secret messages, up to 6 words per minute. The language is widely known among thieves and beggars, and may be taught with party members."
+        }
+      ]
+    }
+  ],
+  "levelingBonuses": {
+    "1": "+2 to {{attr.DEX}} and {{attr.NST}}, and proficiency in {{skills.legerdemain}} and {{skills.perception}}.",
+    "7": "gain <i>Lucky Sevens</i>. Whenever you roll a 7 on a d20, it automatically counts as a critical success."
+  },
+  "startingEquipment": {
+    "_": [
+      "A set of {{armor.leather_armor}}",
+      "Any two small weapons",
+      "A {{weapons.dagger}}, {{weapons.stiletto}} or {{weapons.tanto}}, concealed on your person.",
+      "Five {{weapons.throwing_knives}}",
+      "A {{items.crowbar}}",
+      "A {{items.rucksack}} containing 4 stolen goods. Each stolen item is worth (disadvantaged) 1d100 gold"
+    ],
+    "An adventurer's pack, containing:": [
+      "1d20 gold",
+      "3 days rations and a jug of {{items.water}}",
+      "A {{items.bedroll}}",
+      "A set of {{items.plain_clothes}}",
+      "A {{items.tinderbox}} and a {{items.torch}}",
+      "A {{items.disguise_kit}} and a {{items.forgery_kit}}",
+      "A {{items.whetstone}}",
+      "A bottle of any alcoholic drink"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"name": "Wizard",
+	"description": "Cloistered in his high tower, a tall and heavily bearded man pushes arcane magic to its absolute limit. Bedecked in a great flowing robe and pointed hat, he ensures that the stars and planets align before pursuing his audacious experiment. Sanity and restraint long forsaken, he clutches a crystal ball, gazing somewhere within as blue electricity arcs from the tips of his fingers. No-one knows how he got his power; some say it runs in his blood, while others say that he was once a promising young student expelled from a university. Whatever the case, a wizard is someone with a naturally high aptitude for magic who usually practices on their own terms, outside the auspices of a university.",
+	"backstoryPrompts": [
+		"Have you ever attended a magical university? If so, did you drop out or were you expelled?",
+		"How do you feel about the ethical limitations imposed on scholarly research?",
+		"Do you conduct experiments on your own? If so, are they ethical?",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"limitations": "Wizards ",
+	"coreAbilityName": "Favorite Spell",
+	"coreAbilityDescription": "Whenever you learn a spell, you may choose to make that spell your favorite. When you cast this spell, you add your willpower modifier to the spell potency in addition to the regular spell potency modifier.",
+	"levelingBonuses": {
+		"1": "gain +1 to {{attr.INT}} and {{attr.CHA}} and proficiency in survival."
+	},
+	"startingEquipment": {
+		"_": ["A set of {{items.mage_robes}}", "A {{items.magical_staff}}", "A large, pointed hat", "Any small weapon"],
+		"An adventurer's pack, containing:": [
+			"3 days {{items.rations}}",
+			"A {{items.tent}} and {{items.pillow}}",
+			"2 sets of {{items.plain_clothes}}",
+			"3 {{items.candle}}s and a {{items.bell}}",
+			"An {{items.ink}} and a blank {{items.scroll}}"
+		],
+		"Up to three of the following items, secured in a {{items.rucksack}}:": [
+			"A pair of {{items.spectacles}}",
+			"A bottle of any alcoholic drink",
+			"A pipe and {{items.tobacco}}",
+			"A cup of {{items.salt}}",
+			"A gallon jug of {{items.water}}",
+			"A pair of {{items.scissors}} and some {{items.string}}"
+		]
+	}
+}

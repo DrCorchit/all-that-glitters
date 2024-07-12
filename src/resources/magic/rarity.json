@@ -1,0 +1,18 @@
+[
+	{
+		"name": "Common",
+		"description": "Common spells are widely known and easy to learn. Some of these spells are watered-down versions of more powerful spells studied by academic institutions."
+	},
+	{
+		"name": "Academic",
+		"description": "Academic spells are studied and taught at a university level. They are generally inaccessible to the population at large, but not intentionally kept secret."
+	},
+	{
+		"name": "Forbidden",
+		"description": "Forbidden spells are those widely deemed unethical or dangerous, such as necromancy or demonolatry. If you want to learn these spells, you might have to get your hands dirty."
+	},
+	{
+		"name": "Esoteric",
+		"description": "Esoteric spells are not taught by universities, even at a doctoral level. Some of these spells have been lost to time, while others are studied in secret by druidic orders or cultist enclaves. The easiest way to learn esoteric spells is via supernatural assistance."
+	}
+]

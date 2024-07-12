@@ -1,0 +1,43 @@
+{
+  "name": "Marksman",
+  "altName": "Sniperess",
+  "description": "Anyone can pick up a bow. With some strength and a little training, one can draw and release an arrow as well. However, only a true marksman can hit a distant target quickly and reliably. Such potency with a bow or musket is what distinguishes an ordinary archer from a true marksman.",
+  "backstoryPrompts": [
+    "How did you learn to use a bow or musket?",
+    "Do you brag about the time you made that really tricky shot? (Of course you do...)",
+    "How often do you practice? Do you naturally have good aim?",
+    "What made you leave your previous life and start adventuring?"
+  ],
+  "coreAbilityName": "Sniping Shot",
+  "coreAbilityDescription": "When making a ranged attack, you may expend 2 willpower to focus your aim, gaining advantage on the attack roll and lowering the CT by 1.",
+  "limitations": "Marksmen ",
+  "levelingBonuses": {
+    "1": "gain +2 {{attr.STR}} and {{attr.DEX}} and expertise in {{skills.accuracy}}",
+    "2": "gain +1 {{attr.DEX}}",
+    "3": "gain proficiency in {{skills.medicine}}, {{skills.mobility}}, or {{skills.stealth}}."
+  },
+  "startingEquipment": {
+    "_": [
+      "A coat of {{armor.gambeson}}.",
+      "A {{weapons.longbow}} and a {{items.quiver}} with 24 arrows",
+      "Any standard weapon.",
+      "A {{items.lantern}} with {{items.oil}}"
+    ],
+    "Either of the following:": [
+      "A {{weapons.shortbow}}, plus 24 {{items.arrow}}s",
+      "A {{weapons.crossbow}} and a {{items.quiver}} with 24 {{items.bolt}}s",
+      "A {{weapons.pistol}} and 12 {{items.bullet}}s",
+      "A {{weapons.arquebus}} and 12 {{items.bullet}}s"
+    ],
+    "An adventurer's pack, containing:": [
+      "30 + 1d100 gold",
+      "3 days {{items.rations}} and a {{items.canteen}}",
+      "A {{items.bedroll}}",
+      "Two sets of {{items.plain_clothes}}",
+      "A {{items.spyglass}} and a set of {{items.navigational_tools}}",
+      "A pair of {{items.climbing_boots}}, {{items.climbing_gear}}, and a {{items.rope}}",
+      "A {{items.medical_kit}}",
+      "A spare {{items.quiver}} containing 24 {{items.arrow}}s"
+    ]
+  }
+}

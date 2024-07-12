@@ -1,0 +1,35 @@
+{
+  "name": "Druid",
+  "description": "Whether a shaman from a remote tribe or an isolated hermit, a druid reveres, worships, and protects nature. Nature rewards this special connection by allowing the druid to practice unique and powerful forms of magic, such as transforming into various animals.",
+  "backstoryPrompts": [
+    "How did you become a druid?",
+    "Are you connected to a formal druid circle, or do you work on your own?",
+    "How would you describe your relationship with nature?",
+    "What does it take to cultivate such a close connection with nature?",
+    "What made you leave your previous life and start adventuring?"
+  ],
+  "alignment": "Non-Evil",
+  "coreAbilityName": "Wildshape",
+  "coreAbilityDescription": "Wildshape. You have the ability to transform into animals, expending an amount of AP dependent on the animal chosen to do so.",
+  "limitations": "As a druid, you begin with deficiency in two of these three skills: {{skills.defense}}, {{skills.literacy}}, {{skills.legerdemain}}.",
+  "levelingBonuses": {
+    "1": "gain +2 to {{attr.CHA}} and {{attr.NST}}, and proficiency in {{skills.medicine}} and {{skills.survival}}."
+  },
+  "startingEquipment": {
+    "_": [
+      "A set of {{items.druid_robes}}",
+      "A {{items.magical_staff}}",
+      "A pair of sandals or moccasins",
+      "A wooden {{weapons.club}}",
+      "A {{items.talisman}}"
+    ],
+    "An adventurer's pack, containing": [
+      "1d20 gold",
+      "3 days {{items.rations}}",
+      "A calabash, usable as a {{items.canteen}}",
+      "A {{items.bedroll}}",
+      "1 set of {{items.plain_clothes}}",
+      "A {{items.medical_kit}}"
+    ]
+  }
+}

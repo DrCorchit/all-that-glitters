@@ -1,0 +1,151 @@
+[
+	{
+		"name": "Astrology",
+		"description": "The magic of the spheres and the vault of the heavens. Spells of this category vary significantly, allowing one to deal damage or heal, invoke insanity, become invisible, or even travel instantaneously through the cosmos.",
+		"attr": "INT",
+		"skill": "literacy",
+		"studies": [
+			{
+				"name": "Solar",
+				"description": "The subdivision of astrology concerned with the sun and stars. Focuses on radiance and healing.",
+				"adjective": "Solar Astrological"
+			},
+			{
+				"name": "Lunar",
+				"description": "The subdivision of astrology connected with the moon and its phases. Focuses on darkness and insanity.",
+				"adjective": "Lunar Astrological"
+			},
+			{
+				"name": "Planetary",
+				"description": "The subdivision of astrology focused on the movement and alignments of the lesser spheres. Focuses on gravity and teleportation.",
+				"adjective": "Planetary Astrological"
+			}
+		]
+	},
+
+	{
+		"name": "Conjuration",
+		"description": "The magic of spirits, great and small. This school deals with the consultation and summoning of various types of spirits. When summoning great spirits, one must first later their name so that one may later summon them when the need arises. Some spirits enjoy being summoned and consider it a thrill, while others consider it an inconvenience or even an ignominy.",
+		"attr": "CHA",
+		"skill": "Folklore",
+		"studies": [
+			{
+				"name": "Thaumaturgy",
+				"description": "Concerned with the summoning and binding of minor spirits, sometimes in great numbers.",
+				"adjective": "Thaumaturgical"
+			},
+			{
+				"name": "Theurgy",
+				"description": "Holy magic, concerned with supplications of gods and angels.",
+				"adjective": "Theurgical"
+			},
+			{
+				"name": "Draconolatry",
+				"description": "The worship, consultation, and supplication of dragons. Great and noble spirits of limitless power are they.",
+				"adjective": "Draconic"
+			},
+			{
+				"name": "Demonolatry",
+				"description": "The ill-advised practice of consulting and entreating with demons. Practicioner, beware!",
+				"adjective": "Demonic"
+			},
+			{
+				"name": "Necromancy",
+				"description": "An amalgamation of iniquitous practices which violate the sacred rest of the dead. The entire college is utterly forbidden.",
+				"adjective": "Necromantic"
+			}
+		]
+	},
+	{
+		"name": "Elementurgy",
+		"description": "The way of the the four elements is as ancient as it is powerful. It is flexible and devastating, being able to deal damage or provide utility in a pinch. By gaining attunement to the pure elemental spheres, the master magus can even summon and bid mighty elemental constructs.",
+		"attr": "NST",
+		"skill": "sorcery",
+		"studies": [
+			{
+				"name": "Fire",
+				"description": "Elemental fire magic. Focuses on the forces of heat, flame, and lava.",
+				"adjective": "Elemental Fire"
+			},
+			{
+				"name": "Air",
+				"description": "Elemental air magic. Focuses on forces such as wind, clouds, and lightning.",
+				"adjective": "Elemental Air"
+			},
+			{
+				"name": "Earth",
+				"description": "Elemental earth magic. Focuses on substances such as clay, stone, and metal.",
+				"adjective": "Elemental Earth"
+			},
+			{
+				"name": "Water",
+				"description": "Elemental water magic. Focuses on substances such as water, snow, and ice.",
+				"adjective": "Elemental Water"
+			}
+		]
+	},
+	{
+		"name": "Psionics",
+		"description": "The magic of the mind in its most pure and concentrated form. Despite years of study, its deepest secrets remain impenetrable to university scholars. There is more to this school than meets the mind, it seems.",
+		"attr": "CHA",
+		"skill": "sorcery",
+		"studies": [
+			{
+				"name": "Telepathy",
+				"description": "Explores magically aided communication, and various forms of mind control and mental domination.",
+				"adjective": "Telepathic"
+			},
+			{
+				"name": "Telekinesis",
+				"description": "Magic concerned with the movement of objects by mental impulse alone.",
+				"adjective": "Telekinetic"
+			},
+			{
+				"name": "Illusion",
+				"description": "Magic concerned with conveying false sensory impressions and misdirection, and dispelling the same.",
+				"adjective": "Illusion"
+			}
+		]
+	},
+	{
+		"name": "Shamanism",
+		"description": "The magic of living things, of the wild, and fairies. The study is called biomancy by acedmic institutions, but the druids who actually practice it detest this name. Spells of this school are not taught or studuied by universities, and must be obtained from druid circles or the mad whisperings of the fey themselves.",
+		"attr": "NST",
+		"skill": "nature",
+		"studies": [
+			{
+				"name": "Weal",
+				"description": "The magic of plants, often used for healing or poisoning.",
+				"adjective": "Weal Shamanic"
+			},
+			{
+				"name": "Wild",
+				"description": "The magic of animals, often used for transformations.",
+				"adjective": "Wild Shamanic"
+			},
+			{
+				"name": "Wyrd",
+				"description": "The magic of the fey. Spells of this college are as chaotic and unpredictable as the fey themselves.",
+				"adjective": "Wyrd Shamanic"
+			}
+		]
+	},
+	{
+		"name": "Alchemy",
+		"description": "An ancient school focused on interactions between magic and chemistry. It is said that the secret is in neither the magic nor the mixture, but in the harmony between the two. Alchemical spells are always enchantment rituals, where the magic is cast upon a potion or poison as it is brewed. Most potions lose their magical properties after a long rest, but can be restored via a short ritual. Optimal results are obtained when performed at an alchemical laboratory, but can be performed using field equipment in a pinch.",
+		"attr": "INT",
+		"skill": "literacy",
+		"studies": [
+			{
+				"name": "Pharmacology",
+				"description": "The study of beneficial brews and potions.",
+				"adjective": "Alchemical"
+			},
+			{
+				"name": "Toxicology",
+				"description": "The study of toxins and potions with detrimental effects.",
+				"adjective": "Alchemical"
+			}
+		]
+	}
+]

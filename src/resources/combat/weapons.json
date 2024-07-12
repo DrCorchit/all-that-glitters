@@ -1,0 +1,464 @@
+[
+	{
+		"name": "Small Weapons",
+		"description": "Small weapons are those which are easily wielded in one hand, including everyday tools improvised as weapons. They require no especial skill to use, are easily concealed, and are typically wielded by civilians. These weapons automatically have the light property, and can be dual-wielded or used in the offhand.",
+		"weapons": [
+			{
+				"name": "Cleaver",
+				"description": "A heavy knife for cutting meat.",
+				"damage": "1d6",
+				"cost": 2,
+				"modifiers": ["Slashing", "Light", "Improvised"],
+				"requirements": []
+			},
+			{
+				"name": "Club",
+				"description": "Any hefty stick or chair leg will do.",
+				"damage": "1d6",
+				"cost": 1,
+				"modifiers": ["Bludgeoning", "Light", "Improvised"],
+				"requirements": []
+			},
+			{
+				"name": "Dagger",
+				"description": "A short sidearm, suitable for slashing or stabbing. The “Sharp” property does not apply when thrown.",
+				"damage": "1d4",
+				"cost": 5,
+				"modifiers": ["Cut-and-Thrust", "Light", "Nimble", "Sharp", "Throwable", "Range: 20/60"],
+				"requirements": []
+			},
+			{
+				"name": "Hatchet",
+				"description": "A small axe suitable for throwing",
+				"damage": "1d4",
+				"cost": 5,
+				"modifiers": ["Slashing", "Light", "Nimble", "Throwable", "Range: 20/60"],
+				"requirements": []
+			},
+			{
+				"name": "Knife",
+				"description": "An ordinary workman’s knife",
+				"damage": "1d4",
+				"cost": 1,
+				"modifiers": ["Piercing", "Light", "Nimble", "Improvised"],
+				"requirements": []
+			},
+			{
+				"name": "Sickle",
+				"description": "A farmer’s tool of dubious sharpness. May be modified by a blacksmith to lose the Improvised trait, for 50 gold.",
+				"damage": "1d6",
+				"cost": 5,
+				"modifiers": ["Slashing", "Light", "Nimble", "Improvised"],
+				"requirements": []
+			},
+			{
+				"name": "Stiletto",
+				"description": "A stabbing knife, long and sharp. Ignores BC from chainmail.",
+				"damage": "1d4",
+				"cost": 5,
+				"modifiers": ["Piercing", "Light", "Nimble", "Sharp"],
+				"requirements": []
+			},
+			{
+				"name": "Tanto",
+				"description": "A short slashing blade with an angular tip.",
+				"damage": "1d4",
+				"cost": 10,
+				"modifiers": ["Slashing", "Light", "Nimble", "Sharp"],
+				"requirements": []
+			}
+		]
+	},
+	{
+		"name": "Standard Weapons",
+		"description": "These are proper weapon and sidearms, usable in one hand. Some of these require martial training, or accommodate a two-handed grip.",
+		"weapons": [
+			{
+				"name": "Bastard Sword",
+				"description": "A flexible sword with many uses.",
+				"damage": "1d6",
+				"cost": 100,
+				"modifiers": ["Cut-and-Thrust", "Versatile: 1d8", "Mordhau: 1d4", "Parrying 6"],
+				"requirements": ["11 STR", "Martial Arts Expertise"]
+			},
+			{
+				"name": "Battle Axe",
+				"description": "An axe especially designed for combat",
+				"damage": "1d6",
+				"cost": 30,
+				"modifiers": ["Slashing", "Light"],
+				"requirements": []
+			},
+			{
+				"name": "Bearded Axe",
+				"description": "An axe with its weight balanced at the head.",
+				"damage": "1d6",
+				"cost": 50,
+				"modifiers": ["Slashing", "Versatile: 1d8"],
+				"requirements": ["11 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Broadsword",
+				"description": "A sword for slashing, of a category including the cutlass, machete, falchion, and scimitar.",
+				"damage": "1d6",
+				"cost": 20,
+				"modifiers": ["Slashing", "Light", "Parrying 6"],
+				"requirements": []
+			},
+			{
+				"name": "Estoc",
+				"description": "A soldier’s thrusting sword for piercing mail. In the right hands, can be used to ignore chainmail BC.",
+				"damage": "1d6",
+				"cost": 50,
+				"modifiers": ["Piercing", "Parrying 6"],
+				"requirements": ["Martial Arts Proficiency"]
+			},
+			{
+				"name": "Mace",
+				"description": "A martial weapon for crushing armor.",
+				"damage": "1d6",
+				"cost": 30,
+				"modifiers": ["Bludgeoning", "Versatile: 1d8", "Parrying 3"],
+				"requirements": ["11 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Morningstar",
+				"description": "A martial weapon, spiked for piercing mail. Damage becomes bludgeoning versus plate armor.",
+				"damage": "1d6",
+				"cost": 50,
+				"modifiers": ["Piercing"],
+				"requirements": ["Martial Arts Proficiency"]
+			},
+			{
+				"name": "Rapier",
+				"description": "A rapscallion’s sword—or a gentleman’s...",
+				"damage": "1d6",
+				"cost": 30,
+				"modifiers": ["Piercing", "Nimble", "Parrying 3"],
+				"requirements": []
+			},
+			{
+				"name": "Shortsword",
+				"description": "A shorter sword of lighter weight, making an ideal sidearm. Similar to the arming sword and gladius.",
+				"damage": "1d6",
+				"cost": 20,
+				"modifiers": ["Cut-and-Thrust", "Nimble", "Light", "Parrying 3"],
+				"requirements": []
+			},
+			{
+				"name": "Quarterstaff",
+				"description": "More than a walking staff, in skilled hands. Improvised trait does not apply when attacking with dexterity.",
+				"damage": "1d6",
+				"cost": 10,
+				"modifiers": ["Bludgeoning", "Nimble", "Improvised", "Parrying 6"],
+				"requirements": []
+			},
+			{
+				"name": "Spear",
+				"description": "A pointed weapon for throwing or stabbing. Range: 20/60",
+				"damage": "1d6",
+				"cost": 20,
+				"modifiers": ["Piercing", "Polearm", "Throwable"],
+				"requirements": ["Martial Arts Proficiency"]
+			},
+			{
+				"name": "Wakizashi",
+				"description": "A curved sword of foreign make. Excellent craftsmanship.",
+				"damage": "1d6",
+				"cost": 100,
+				"modifiers": ["Slashing", "Nimble", "Sharp", "Light"],
+				"requirements": ["Martial Arts Proficiency"]
+			},
+			{
+				"name": "Warhammer",
+				"description": "A large hammer, sized for one or two hands.",
+				"damage": "1d6",
+				"cost": 30,
+				"modifiers": ["Bludgeoning", "Versatile: 1d8", "Parrying 6"],
+				"requirements": ["11 STR", "Martial Arts Proficiency"]
+			}
+		]
+	},
+	{
+		"name": "Great Weapons",
+		"description": "Great Weapons are two-handed martial weapons that sacrifice precision for power. This category includes polearms, which are the primary weapons of infantry and possess excellent damage and reach.",
+		"weapons": [
+			{
+				"name": "Longsword",
+				"description": "A knight’s two-handed sword. May be upgraded by a blacksmith to gain <i>Sharp</i> for 150 gold.",
+				"damage": "1d10",
+				"cost": 150,
+				"modifiers": ["Cut-and-Thrust", "Mordhau: 1d8", "Parrying 6", "Two-Handed"],
+				"requirements": ["12 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Katana",
+				"description": "Lighter and sharper than a longsword.",
+				"damage": "1d8",
+				"cost": 200,
+				"modifiers": ["Slashing", "Nimble", "Sharp", "Two-Handed"],
+				"requirements": ["14 DEX", "Martial Arts Expertise"]
+			},
+			{
+				"name": "Claymore",
+				"description": "An exceptionally powerful two-handed sword",
+				"damage": "1d12",
+				"cost": 200,
+				"modifiers": ["Cut-and-Thrust", "Two-Handed", "Mordhau: 1d8"],
+				"requirements": ["14 STR", "Martial Arts Expertise"]
+			},
+			{
+				"name": "Greataxe",
+				"description": "A large axe well suited to those possessing great brawn",
+				"damage": "1d12",
+				"cost": 150,
+				"modifiers": ["Slashing", "Two-Handed"],
+				"requirements": ["14 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Maul",
+				"description": "A greathammer, for smashing through armor.",
+				"damage": "1d12",
+				"cost": 150,
+				"modifiers": ["Bludgeoning", "Two-Handed"],
+				"requirements": ["15 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Bardiche",
+				"description": "'Tis a poleaxe, nothing less.",
+				"damage": "1d10",
+				"cost": 200,
+				"modifiers": ["Slashing", "Two-Handed", "Polearm"],
+				"requirements": ["13 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Halberd",
+				"description": "A poleaxe and spear combination.",
+				"damage": "1d12",
+				"cost": 250,
+				"modifiers": ["Cut-and-Thrust", "Two-Handed", "Polearm"],
+				"requirements": ["13 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Pike",
+				"description": "A thrusting polearm too heavy for throwing. Similar to the glaive, partisan, billhook, and fauchard.",
+				"damage": "1d10",
+				"cost": 150,
+				"modifiers": ["Piercing", "Sharp", "Two-Handed", "Polearm"],
+				"requirements": ["13 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Naginata",
+				"description": "A light polearm favored by the deft.",
+				"damage": "1d10",
+				"cost": 200,
+				"modifiers": ["Slashing", "Nimble", "Two-Handed", "Polearm"],
+				"requirements": ["12 STR", "12 DEX", "Martial Arts Expertise"]
+			},
+			{
+				"name": "Lance",
+				"description": "An extremely long spear, designed for mounted combat. Improvised trait does not apply if attacking from horseback.",
+				"damage": "1d12",
+				"cost": 250,
+				"modifiers": ["Piercing", "Improvised", "Two-Handed", "Polearm"],
+				"requirements": ["12 STR", "Martial Arts Proficiency"]
+			},
+			{
+				"name": "Trident",
+				"description": "A triple pointed polearm.",
+				"damage": "1d10",
+				"cost": 150,
+				"modifiers": ["Piercing", "Throwable", "Two-Handed", "Polearm", "Range: 20/60"],
+				"requirements": ["12 STR"]
+			}
+		]
+	},
+	{
+		"name": "Ranged Weapons",
+		"description": "Weapons designed to be thrown or to launch a projectile.",
+		"weapons": [
+			{
+				"name": "Throwing Knives",
+				"description": "Knives specially designed to be hurled.",
+				"damage": "1d4",
+				"cost": 1,
+				"modifiers": ["Piercing", "Sharp", "Throwable", "Light", "Range: 30/90"],
+				"requirements": ["Accuracy Proficiency"]
+			},
+			{
+				"name": "Shuriken",
+				"description": "A thrown, spinning weapon from a distant land.",
+				"damage": "1d6",
+				"cost": 2,
+				"modifiers": ["Slashing", "Throwable", "Light", "Range: 30/90"],
+				"requirements": ["Accuracy Expertise"]
+			},
+			{
+				"name": "Javelin",
+				"description": "A light spear, made for throwing.",
+				"damage": "1d8",
+				"cost": 5,
+				"modifiers": ["Piercing", "Throwable", "Light", "Range: 30/120"],
+				"requirements": ["Martial Arts Proficiency"]
+			},
+			{
+				"name": "Boomerang",
+				"description": "A throwing weapon that returns to its user. May be enchanted to return items to the thrower, for 200 gold. Range: 30/90",
+				"damage": "1d4",
+				"cost": 5,
+				"modifiers": ["Bludgeoning", "Nimble", "Throwable", "Light", "Range: 30/90"],
+				"requirements": ["Accuracy Expertise"]
+			},
+			{
+				"name": "Shortbow",
+				"description": "A bow favored by hunters and spies.",
+				"damage": "1d8",
+				"cost": 10,
+				"modifiers": ["Piercing", "Nimble", "Two-Handed", "Projectile: Arrows", "Range: 150/300"],
+				"requirements": ["Accuracy Proficiency"]
+			},
+			{
+				"name": "Longbow",
+				"description": "The bow used by professional archers.",
+				"damage": "1d12",
+				"cost": 30,
+				"modifiers": ["Piercing", "Two-Handed", "Projectile: Arrows", "Range: 300/600"],
+				"requirements": ["Accuracy Expertise"]
+			},
+			{
+				"name": "Hand Crossbow",
+				"description": "A miniature crossbow. Widely considered a gimmick.",
+				"damage": "1d8",
+				"cost": 50,
+				"modifiers": ["Piercing", "Light", "Crossbow", "Projectile: Bolts", "Range: 50/150"],
+				"requirements": []
+			},
+			{
+				"name": "Crossbow",
+				"description": "A mechanical bow operated by a trigger.",
+				"damage": "2d8",
+				"cost": 100,
+				"modifiers": ["Piercing", "Crossbow", "Projectile: Bolts", "Range: 300/600"],
+				"requirements": []
+			},
+			{
+				"name": "Arbalest",
+				"description": "A crossbow of monstrous proportions.",
+				"damage": "3d8",
+				"cost": 250,
+				"modifiers": ["Piercing", "Two-Handed", "Crossbow", "Projectile: Bolts", "Range: 300/600"],
+				"requirements": ["STR 14"]
+			},
+			{
+				"name": "Pistol",
+				"description": "A compact firearm, carried in one hand. Designed to be fired once and then holstered.",
+				"damage": "1d12",
+				"cost": 100,
+				"modifiers": ["Firearm", "Projectile: Bullets", "Light", "Range: 20/60"],
+				"requirements": []
+			},
+			{
+				"name": "Hand Cannon",
+				"description": "A heavy pistol, for those strong enough to wield it. Light modifier does not apply if strength is less than 16.",
+				"damage": "2d12",
+				"cost": 200,
+				"modifiers": ["Firearm", "Projectile: Bullets", "Light", "Range: 20/60"],
+				"requirements": ["14 STR"]
+			},
+			{
+				"name": "Arquebus",
+				"description": "A powerful and unpredictable firearm.",
+				"damage": "2d12",
+				"cost": 150,
+				"modifiers": ["Firearm", "Projectile: Bullets", "Range: 30/90"],
+				"requirements": []
+			},
+			{
+				"name": "Blunderbus",
+				"description": "A heavier gun, firing grapeshot.",
+				"damage": "3d12",
+				"cost": 200,
+				"modifiers": ["Firearm", "Projectile: Bullets", "Range: 20/60"],
+				"requirements": ["12 STR", "12 DEX"]
+			},
+			{
+				"name": "Musket",
+				"description": "The pinnacle of technological prowess.",
+				"damage": "3d12",
+				"cost": 250,
+				"modifiers": ["Firearm", "Projectile: Bullets", "Range: 50/150"],
+				"requirements": ["12 STR", "12 DEX"]
+			}
+		]
+	},
+	{
+		"name": "Special Weapons",
+		"description": "Weapons with atypical abilities for specialized use.",
+		"weapons": [
+			{
+				"name": "Net",
+				"description": "For catching and restraining.",
+				"damage": "0",
+				"cost": 10,
+				"modifiers": [],
+				"requirements": ["Martial Arts Proficiency"]
+			},
+			{
+				"name": "Grappling Hook",
+				"description": "For hooking and pulling, or escaping. Allows <i>Vertical Escape</i> and <i>Come Hither</i>.",
+				"damage": "0",
+				"cost": 10,
+				"modifiers": [],
+				"requirements": ["Martial Arts proficiency"]
+			},
+			{
+				"name": "Flail",
+				"description": "For countering shields.",
+				"damage": "1d6",
+				"cost": 100,
+				"modifiers": ["Piercing"],
+				"requirements": ["Martial Arts Expertise"]
+			},
+			{
+				"name": "Hook Sword",
+				"description": "For disarming opponents.",
+				"damage": "1d6",
+				"cost": 100,
+				"modifiers": ["Slashing"],
+				"requirements": ["Martial Arts Expertise"]
+			},
+			{
+				"name": "Buckler",
+				"description": "A small shield. Allows shield bash.",
+				"damage": "1d4",
+				"cost": 30,
+				"modifiers": ["Bludgeoning", "Blocking 1", "Nimble"],
+				"requirements": []
+			},
+			{
+				"name": "Shield",
+				"description": "An ordinary shield. Allows shield bash.",
+				"damage": "1d4",
+				"cost": 50,
+				"modifiers": ["Bludgeoning", "Blocking 2"],
+				"requirements": ["Defense proficiency", "12 STR"]
+			},
+			{
+				"name": "Greatshield",
+				"description": "An extraordinarily large shield. Allows shield charge.",
+				"damage": "1d6",
+				"cost": 100,
+				"modifiers": ["Bludgeoning", "Blocking 3"],
+				"requirements": ["Defense Expertise", "14 STR"]
+			},
+			{
+				"name": "Mantlet",
+				"description": "A shield designed to be carried with two hands or planted on the ground. Cannot perform weapon attacks while carrying this shield. Provides cover when placed on the ground. Allows shield charge.",
+				"damage": "1d8",
+				"cost": 150,
+				"modifiers": ["Bludgeoning", "Blocking 4"],
+				"requirements": ["Defense Proficiency", "14 STR"]
+			}
+		]
+	}
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Slashing",
+    "color": "#CFF",
+    "effect": "The target's DC is reduced by 2 until the start of their next turn.",
+    "sources": "bladed weapons such as swords and axes, or the claws of wild animals."
+  },
+  {
+    "name": "Piercing",
+    "color": "#FFF",
+    "effect": "Critical hit damage is doubled.",
+    "sources": "arrows, spears, and swords, or the fangs of monsters."
+  },
+  {
+    "name": "Bludgeoning",
+    "color": "#888",
+    "effect": "When a bludgeoning attack is blocked, the target still takes half damage.",
+    "sources": "hammers, hooves or fists, and falling damage."
+  },
+  {
+    "name": "Heat",
+    "color": "#F80",
+    "effect": "The target gains one level of burning.",
+    "sources": "burning creatures, pyromantic magic, or the breath of dragons."
+  },
+  {
+    "name": "Cold",
+    "color": "#4BF",
+    "effect": "The target gains one level of freezing.",
+    "sources": "frost spells or environmental hazards such as blizzards or icy water."
+  },
+  {
+    "name": "Force",
+    "color": "#D00",
+    "effect": "Liable to knock the target prone.",
+    "sources": "explosions, and certain spells"
+  },
+  {
+    "name": "Lightning",
+    "color": "#FF4",
+    "effect": "Deals 1 Deals half damage versus opponents wearing metal armor.",
+    "sources": "lightning or storm spells"
+  },
+  {
+    "name": "Acid",
+    "color": "#AF0",
+    "effect": "Erodes armor. Target BC is reduced by 1 if the attack is not dodged.",
+    "sources": "bile, acidic venom, and certain alchemical mixtures."
+  },
+  {
+    "name": "Poison",
+    "color": "#4D0",
+    "effect": "Carries with it additional effects dependant on the type of poison.",
+    "sources": "poisoned blades, the claws and fangs of venomous beasts, and certain spells."
+  },
+  {
+    "name": "Holy",
+    "color": "#FFA",
+    "effect": "An extraordinarily bright light of divine origin. Deals double damage to evil and the undead, but only half to good.",
+    "sources": "radiant lights, solar astrology, and theurgical summons."
+  },
+  {
+    "name": "Profane",
+    "color": "#92F",
+    "effect": "A sickening miasma of spiritual darkness. Deals double damage to good-aligned creatures, but only half to evil.",
+    "sources": "lunar astrology, necromantic spells, and demonic summons."
+  }
+]

@@ -1,0 +1,35 @@
+{
+	"name": "Witch",
+	"altName": "Warlock",
+	"description": "Witches and warlocks are a diverse sort, hailing from many walks of life. You may find one in a palace in the very heart of luxury, another in a dingy cave or a squalid coven, and a third in a quaint shack amidst a great forest. Wherever they are found, witches are defined by their immense power, gained from their pact with a supernatural entity. The terms of these pacts are as diverse and as varied as warlocks themselves, and bring danger, madness, and power in equal measure. Such pacts are usually made with demonic or fey beings, for angels and dragons have little use of pacts. Demonic patrons typically allow their supplicants to dispose of their power in whatever manner they wish, in exchange for enslavement in the afterlife. Conversely, fey constantly demand small (or not-so-small) favors, but care very little for their supplicant’s eternal fate.",
+	"backstoryPrompts": [
+		"Why did you seek power in service to a supernatural being?",
+		"Do you believe that your pact will turn out in your favor?",
+		"Do you follow a ritual when you supplicate before your patron?",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"alignment": "Non-Good",
+	"coreAbilityName": "Eldritch Blast",
+	"coreAbilityDescription": "You may expend 2 willpower to channel the power of your patron. A beam of eerie blue energy streaks from your outstretched hand to a target within 60 feet, dealing 1d10 plus your charisma modifier in force damage.",
+	"levelingBonuses": {
+		"1": "gain +1 to {{attr.INT}} and {{attr.CHA}}, and proficiency in {{skills.persuasion}}."
+	},
+	"startingEquipment": {
+		"_": ["A set of {{items.mage_robes}}", "A {{items.magical_wand}}", "A {{items.dagger}} or {{items.stiletto}}"],
+		"An adventurer's pack, containing:": [
+			"2d100 gold",
+			"3 days {{items.rations}}",
+			"A {{items.bedroll}}, {{items.pillow}}",
+			"2 sets of {{items.plain_clothes}}",
+			"A {{items.talisman}} and a {{items.bell}}"
+		],
+		"One of the following items, shoved to the bottom of the pack:": [
+			"{{items.formal_wear}} and a set of {{items.priest_robes}}",
+			"A {{items.cards}}, A human skull, a {[items.candle}}, and an {{items.hourglass}} (gain inspiration)",
+			"A {{items.portable_alchemy_set}} (lose 50 gold)",
+			"A {{items.crystal_ball}} (lose 100 gold)",
+			"A bar of {{items.soap}} and {{items.perfume}}",
+			"An {{items.ink}} and a {{items.scroll}}, plus a {{items.signet_ring}} (gain proficiency in {{skills.literacy}})"
+		]
+	}
+}

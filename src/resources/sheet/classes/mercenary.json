@@ -1,0 +1,38 @@
+{
+  "name": "Mercenary",
+  "description": "The mercenary eschews lofty aspirations of honor and glory and fights almost exclusively for coin. Although they have a cutthroat reputation, there is a simple pragmatism to their motives. Mercenaries fight with whatever weapons and training they can purchase, and do not limit themselves to any particular discipline.",
+  "backstoryPrompts": [
+    "How did you acquire your combat skill?",
+    "Do you take pride in your work?",
+    "Do you fight for money, for the excitement of battle, or something else?",
+    "What made you leave your previous life and start adventuring?"
+  ],
+  "alignment": "Non-Good",
+  "coreAbilityName": "Mercenary Contract",
+  "coreAbilityDescription": "You have associations with a mercenaries guild, which connects individuals of martial prowess with clients in need of muscle. This mercenary guild positions you well to take on mercenary contracts and meet trainers for various skills: defense, martial arts, and even sorcery.",
+  "levelingBonuses": {
+    "1": "gain +2 to {{attr.STR}}, +1 to {{attr.DEX}} and {{attr.INT}}."
+  },
+  "startingEquipment": {
+    "_": [
+      "A set of {{armor.breastplate}}.",
+      "Any standard weapon",
+      "Any small weapon",
+      "A {{weapons.buckler}}"
+    ],
+    "An adventurer's pack, containing:": [
+      "2d100 gold",
+      "3 days {{items.rations}}.",
+      "A {{items.bedroll}}, {{items.pillow}}",
+      "Two sets of {{items.plain_clothes}}.",
+      "A pair of {{items.manacles}}",
+      "A {{items.rope}}"
+    ],
+    "Any one of the following:": [
+      "A second standard weapon",
+      "A dozen {{weapons.throwing_knives}} and a {{weapons.grappling_hook}}",
+      "A {{weapons.hand_cannon}} and ten bullets.",
+      "A "
+    ]
+  }
+}

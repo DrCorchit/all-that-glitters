@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Tiny",
+    "maxHeight": 2,
+    "tileSize": 0,
+    "terminalVelocity": 45,
+    "notes": "May only wield small weapons (i.e. daggers)."
+  },
+  {
+    "name": "Small",
+    "maxHeight": 4,
+    "tileSize": 1,
+    "terminalVelocity": 100,
+    "notes": "May not wield great weapons, and versatile weapons may only be held in a two-handed grip."
+  },
+  {
+    "name": "Medium",
+    "maxHeight": 8,
+    "tileSize": 1,
+    "terminalVelocity": 180,
+    "notes": ""
+  },
+  {
+    "name": "Large",
+    "maxHeight": 16,
+    "tileSize": 2,
+    "terminalVelocity": 300,
+    "notes": "May wield 2H weapons in one hand."
+  },
+  {
+    "name": "Huge",
+    "maxHeight": 32,
+    "tileSize": 3,
+    "terminalVelocity": 500,
+    "notes": "May wield 2H weapons in one hand. Unable to wield small or medium weapons."
+  },
+  {
+    "name": "Enormous",
+    "maxHeight": 999,
+    "tileSize": 4,
+    "terminalVelocity": 999,
+    "notes": "May not wield ordinary weapons."
+  }
+]

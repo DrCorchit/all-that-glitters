@@ -1,0 +1,83 @@
+[
+	{
+		"name": "Rags",
+		"cost": 0,
+		"weight": 1,
+		"description": "A set of threadbare garments, such as befits a beggar."
+	},
+	{
+		"name": "Plain Clothes",
+		"cost": 20,
+		"weight": 1,
+		"description": "Ordinary clothes for ordinary folk."
+	},
+	{
+		"name": "Formal Wear",
+		"cost": 100,
+		"weight": 1,
+		"description": "Appropriate for appearances before a noble or royal court. +1 to performance checks."
+	},
+	{
+		"name": "Religious Vestments",
+		"cost": 70,
+		"weight": 2,
+		"description": "Distinguishing attire of a priest, cleric, or similar ilk.",
+		"key": "priest_robes"
+	},
+	{
+		"name": "Sorcerer's Robes",
+		"cost": 150,
+		"weight": 2,
+		"description": "Distinguishes one as a practitioner of the arcane. Grants advantage on ability checks to cast magical spells.",
+		"key": "mage_robes"
+	},
+	{
+		"name": "Druid's Robes",
+		"cost": 50,
+		"weight": 3,
+		"description": "Rugged robes that never wear thin or lose color. Signifies membership in a druidic circle, and grants advantage on medicine and nature ability checks.",
+		"key": "druid_robes"
+	},
+	{
+		"name": "Bathrobe",
+		"cost": 50,
+		"weight": 1,
+		"description": "Comfortable and lightweight. A rich man's vanity."
+	},
+	{
+		"name": "Hooded Cloak",
+		"cost": 30,
+		"weight": 2,
+		"description": "Offers protection from rain and cold, as well as a distinct air of mystery."
+	},
+	{
+		"name": "Alchemical Apron",
+		"cost": 30,
+		"weight": 2,
+		"description": "A cloth apron treated to weather the onslaught of acid. Increases BC versus acid damage by 3, and grants advantage on ability checks to brew alchemical potions. If worn over armor, it falls off after 10 slashing damage is received."
+	},
+	{
+		"name": "Blacksmith's Apron",
+		"cost": 50,
+		"weight": 5,
+		"description": "A thick leather apron designed to withstand wayward sprays of sparks. Increases BC versus fire damage by 3. If worn over armor, it falls off after 10 slashing damage is received."
+	},
+	{
+		"name": "Gloves",
+		"cost": 10,
+		"weight": 0,
+		"description": "Prevents callouses and protects one's hands from the cold."
+	},
+	{
+		"name": "Climbing Boots",
+		"cost": 20,
+		"weight": 2,
+		"description": "Includes crampons for the surest of footing. +2 to mobility checks."
+	},
+	{
+		"name": "Elegant Boots",
+		"cost": 30,
+		"weight": 1,
+		"description": "Ostentatious boots signifying personal wealth. +1 to performance checks when combined with formal wear."
+	}
+]

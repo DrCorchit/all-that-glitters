@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Cut-And-Thrust",
+		"description": "The weapon can deal either {{damage.slashing}} or {{damage.piercing}} damage."
+	},
+	{
+		"name": "Nimble",
+		"description": "Dexterity can be used to provide the weapon’s damage, instead of strength."
+	},
+	{
+		"name": "Improvised",
+		"description": "The item is not designed as a weapon. The damage die is rolled with disadvantage."
+	},
+	{
+		"name": "Light",
+		"description": "The weapon can be used alongside a greatshield, or dual wielded alongside another light weapon."
+	},
+	{
+		"name": "Two-Handed",
+		"description": "The weapon must be handled with two hands when attacking."
+	},
+	{
+		"name": "Sharp",
+		"description": "The critical threshold for the weapon is reduced by 1. This ability is lost after critical failing an attack roll, but can be regained by using a whetstone."
+	},
+	{
+		"name": "Polearm",
+		"description": "The weapon can hit targets 10 feet away instead of 5, and is compatible with the <i>Polarm Charge</i> ability."
+	},
+	{
+		"name": "Throwable",
+		"description": "The weapon does not gain the {{weapon_keywords.improvised}} trait when thrown."
+	},
+	{
+		"name": "Crossbow",
+		"description": "The weapon is a mechanical crossbow. It requires 30 seconds to reload, and its damage does not benefit from the user's attribute scores."
+	},
+	{
+		"name": "Firearm",
+		"description": "The weapon is a firearm and deals {{damage.force}} damage. It requires 1 minute to reload, and its damage does not benefit from the user's attribute scores."
+	},
+	{
+		"name": "Parrying",
+		"description": "The weapon increases mitigation by the indicated amount when the parry reaction is taken."
+	},
+	{
+		"name": "Blocking",
+		"description": "The weapon increases BC by a certain amount, doubled when actively blocking."
+	},
+	{
+		"name": "Mordhau",
+		"description": "The weapon can be held by the blade, using the crossguard as a hammer. This changes the weapon’s damage type to bludgeoning, and replaces the damage die. (Larger swords have this property.)"
+	},
+	{
+		"name": "Versatile",
+		"description": "The weapon can be held in an alternate grip for extra damage."
+	},
+	{
+		"name": "Projectile",
+		"description": "The weapon fires a specific type of projectile"
+	},
+	{
+		"name": "Ranged",
+		"description": "The weapon has a range: X/Y. Attacks against targets beyond X feet away have disadvantage; attacks against targets beyond Y feet away automatically fail."
+	}
+]

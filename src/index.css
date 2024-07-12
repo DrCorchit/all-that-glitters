@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Aboreto");
+@import url("https://fonts.googleapis.com/css?family=Almendra+Display");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair");
+@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade");
+
+@page {
+	size: 8.5in 11in;
+	margin: 0.5in;
+}
+
+body {
+	margin: auto;
+	max-width: 720px;
+	background-color: black;
+}
+h1 {
+	font-family: "Almendra Display";
+	font-size: 36pt;
+	text-align: center;
+	color: #cb0;
+	margin: 20px 0;
+}
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Aboreto";
+}
+h2 {
+	font-size: 16pt;
+	font-weight: normal;
+	text-align: center;
+	color: #cb0;
+	margin: 15px 0 15px 0;
+}
+h3 {
+	font-size: 24pt;
+	text-align: center;
+	color: #cb0;
+	margin: 10px 0 10px 0;
+}
+h4 {
+	margin-bottom: 5px;
+	margin-top: 20px;
+	color: #ccc;
+	font-size: 20pt;
+}
+h5 {
+	margin-bottom: 5px;
+	margin-top: 20px;
+	color: #aaa;
+	font-size: 14pt;
+}
+h4:after,
+h5:after {
+	content: " ";
+	display: block;
+	border: 0.5px solid #aaa;
+}
+hr {
+	border: 0;
+	border-top: 1px solid #bc0;
+}
+pre {
+	color: #ccc;
+	background-color: #444;
+	border-radius: 3px;
+	padding: 4px;
+	margin: 10px 0px;
+	font-family: Courier New;
+	font-size: 10pt;
+}
+
+button.h5 {
+	font-family: "Aboreto";
+	color: #aaa;
+	background-color: transparent;
+	font-size: 14pt;
+	font-weight: bold;
+	border: none;
+}
+button.h5:hover {
+	color: #fff;
+}
+button.h5:hover:after {
+	content: url("../public/images/link.png");
+	width: 20px;
+	height: 20px;
+}
+
+li,
+p,
+a,
+label {
+	font-family: "Calibri";
+	color: #ccc;
+	font-size: 10pt;
+	line-height: 100%;
+	margin: 0 0 10px 0;
+	background: none;
+}
+blockquote {
+	font-family: "Calibri";
+	color: #ccc;
+	font-size: 9pt;
+	line-height: 100%;
+}
+ul,
+ol {
+	margin: 10px 0px 10px 0px;
+}
+a:link {
+	color: #cb0;
+}
+a:visited {
+	color: #980;
+}
+a:hover {
+	color: #fff;
+}
+
+table.standard {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px 0 10px 0;
+}
+table.standard tr:nth-child(even) {
+	background-color: #30302c;
+}
+table.standard tr:nth-child(odd) {
+	background-color: #151515;
+}
+table.standard tr:hover {
+	background-color: #664;
+}
+table.standard th {
+	font-family: "Calibri";
+	color: #aa8;
+	font-size: 14pt;
+	border: 1px solid #aa8;
+	padding: 6px;
+	text-align: center;
+	background-color: #303033;
+}
+table.standard td {
+	font-family: "Calibri";
+	color: #ccc;
+	font-size: 10pt;
+	border: 1px solid #aa8;
+	padding: 4px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+.column {
+	flex: 1 1 auto;
+	margin: 10px;
+}
+.column-grow {
+	flex: 1 0 auto;
+	margin: 10px;
+}
+.column-shrink {
+	flex: 0 0 auto;
+	margin: 10px;
+}
+
+.background {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #30302a;
+	border-radius: 3px;
+	background-color: #181818;
+}
+.background h4,
+.background h5 {
+	margin-top: 0px;
+}
+
+.background-inner {
+	padding: 5px;
+	border: 1px solid #30302a;
+	background-color: #282828;
+	border-radius: 5px;
+}
+
+.collapsible {
+	color: #aaa;
+	cursor: pointer;
+	padding: 0;
+	font-family: "Aboreto";
+	font-size: 14px;
+	background-color: transparent;
+	border: none;
+	border-radius: 3px;
+}
+.collapsible:hover {
+	color: #cca;
+	border-radius: 3px;
+	background-color: #443;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+a.tooltip {
+	position: relative;
+
+	/* if want hover over icon instead of text based, uncomment below */
+	/*    background-image: url("../images/info_tooltip.svg");
+            /!* width and height of svg *!/
+            width: 16px;
+            height: 16px;*/
+}
+
+a.tooltip span {
+	display: none;
+}
+
+a.tooltip:hover span {
+	/* show tooltip */
+	display: block;
+	/* position relative to container div.tooltip */
+	position: absolute;
+	left: 0%;
+	bottom: 100%;
+	/* prettify */
+	padding: 8px;
+	color: #ccc;
+	background-color: black;
+	border: 0.1em solid #aa8;
+	/* round the corners */
+	border-radius: 5px;
+	/* prevent too wide tooltip */
+	width: 200px;
+}
+
+/* Character sheet only */
+.sheet {
+	width: 100%;
+	font-family: "Bellefair";
+	font-size: 13pt;
+	background-color: white;
+}
+table.sheet {
+	border-collapse: none;
+	border: 1px solid black;
+}
+table.inner {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+table.sheet th,
+table.inner th {
+	line-height: 100%;
+	margin-top: 0.05in;
+	margin-bottom: 0.05in;
+	font-family: "Aboreto";
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+	background-color: transparent;
+}
+table th.subheader {
+	border: 0;
+	font-size: 10pt;
+}
+table.sheet td,
+table.inner td {
+	line-height: 100%;
+	border-bottom: 0.5px solid black;
+}
+table.sheet .border {
+	border: 1px solid black;
+}
+table.sheet .noborder {
+	border: none;
+}
+
+/* Tells the cells containing an image not to have a border and display the image in the center */
+table.sheet td.image {
+	border: 0;
+	text-align: center;
+	position: relative;
+}
+/* Sets image height to 70, respecting aspect ratio*/
+table.sheet td.image img {
+	height: 70px;
+	width: auto;
+}
+/*  */
+table.sheet td.image div {
+	position: absolute;
+	font-size: 8pt;
+	bottom: 8%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

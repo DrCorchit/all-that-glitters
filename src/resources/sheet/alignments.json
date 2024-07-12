@@ -1,0 +1,47 @@
+[
+  {
+    "abbr":"LG",
+    "name":"Lawful Good",
+    "description":"Describes a character whose faith in lofty principles belies their fastidious obedience to the law."
+  },
+  {
+    "abbr":"NG",
+    "name":"Neutral Good",
+    "description":"Describes a character with a highly practical, often nuanced view of morality."
+  },
+  {
+    "abbr":"CG",
+    "name":"Chaotic Good",
+    "description":"Describes a character who views laws and authority as oppressive and artificial constructs."
+  },
+  {
+    "abbr":"LN",
+    "name":"Lawful Neutral",
+    "description":"Describes a character who minds their own business."
+  },
+  {
+    "abbr":"TN",
+    "name":"True Neutral",
+    "description":"Describes a character that is either deeply aloof, or deeply practical."
+  },
+  {
+    "abbr":"CN",
+    "name":"Chaotic Neutral",
+    "description":"Describes a character given to irrational outbursts and flights of fancy. Likely to provides amusing companionship, though unreliable."
+  },
+  {
+    "abbr":"LE",
+    "name":"Lawful Evil",
+    "description":"Describes a character who maximizes their own interests while maintaining the required social veneer; a high-functioning psychopath."
+  },
+  {
+    "abbr":"NE",
+    "name":"Neutral Evil",
+    "description":"Describes an incorrigible scoundrel whose cruelty is restrained only by self-interest."
+  },
+  {
+    "abbr":"CE",
+    "name":"Chaotic Evil",
+    "description":"Describes a character who displays random and capricious acts of cruelty. Extremely dangerous."
+  }
+]

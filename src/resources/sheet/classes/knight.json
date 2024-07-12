@@ -1,0 +1,78 @@
+{
+	"name": "Knight",
+	"description": "The knight is a low-ranking noble with formal combat training. Although they may be called to fight in battle, a knight’s primary purpose is to serve for the glory of their Lord or Lady, to whom they have sworn an oath of fealty. Many knights are also accompanied by a squire, a young knight in training who may carry their lord’s banner or help them don and doff their armor. On the battlefield, a knight is a magnificent sight, clad in expensive steel plate armor and with their lord’s ensignia emblazoned on their shield. However, some knights forgo a shield altogether, preferring a heavier two-handed weapon. Either way, knights train extensively and are rarely caught flat-footed, even when out of armor",
+	"backstoryPrompts": [
+		"Did you train as a page or a squire before becoming a knight?",
+		"Are you proud of your country and your liege, or have you become disillusioned?",
+		"Was your oath of fealty inspired by love, respect, or political convenience?",
+		"How far back can you trace your lineage?",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"alignment": "Lawful",
+	"coreAbilityName": "Shining Armor",
+	"coreAbilityDescription": [
+		"You have sworn an oath to a nobleman or lady, to protect them with your life and to fight for them in battle. In return, they have provided you with a fine suit of chainmail, and several high quality steel weapons."
+	],
+	"limitations": "Deficient in sorcery.",
+	"levelingBonuses": {
+		"1": "gain expertise in defense.",
+		"2": [
+			"learn any two abilities from the following list:",
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "{{maneuvers.parry}}"
+					},
+					{
+						"tag": "li",
+						"content": "{{maneuvers.shield_bash}}"
+					},
+					{
+						"tag": "li",
+						"content": "{{feats.lancer}}"
+					},
+					{
+						"tag": "li",
+						"content": "{{feats.defender}}"
+					}
+				]
+			}
+		],
+		"3": "your liege gifts you an improved suit of armor. You may choose a suit of {{armor.half_plate_armor}} or {{armor.splinted_chainmail}}.",
+		"4": "The dexterity and speed caps on your armor are increased by 1.",
+		"5": "Learn 2 combat maneuvers",
+		"6": "in recognition of your glorious and heroic conduct, your liege grants you a set of steel plate armor.",
+		"7": "You ignore disadvantage on mobility checks while wearing half plate armor, and ignore disadvantage on stealth checks while wearing full plate.",
+		"8": "The dexterity and speed caps on your armor are further increased, from 1 to 2.",
+		"9": "when you fail a saving throw against a spell, you can expend willpower (equal to the amount by which you failed the save) to instead succeed the save.",
+		"12": "The dexterity and speed caps on your armor are further increased, from 2 to 3.",
+		"16": "The dexterity and speed caps on your armor are further increased, from 3 to 4."
+	},
+	"startingEquipment": {
+		"_": [
+			"A set of steel {{armor.chainmail}}",
+			"An arming sword ({{weapons.shortsword}})",
+			"A {{weapons.shield}}",
+			"A {{items.lantern}}, with one {{items.oil}}.",
+			"A {{items.rope}}"
+		],
+		"A primary weapon, of one of the following types:": ["A bastard sword", "A longsword", "A bearded axe", "A warhammer"],
+		"A secondary weapon, of one of the following types:": [
+			"A {{weapons.battle_axe}}",
+			"A falchion ({{weapons.broadsword}})",
+			"An {{weapons.estoc}}",
+			"A {{weapons.mace}}",
+			"A {{weapons.morningstar}}",
+			"A {{weapons.rapier}}"
+		],
+		"An adventurer's pack, containing:": [
+			"2d100 gold",
+			"7 days {{items.rations}} and a {{items.canteen}}",
+			"A {{items.tent}}",
+			"Two sets of {{items.plain_clothes}}",
+			"One set of {{items.formal_wear}}"
+		]
+	}
+}
