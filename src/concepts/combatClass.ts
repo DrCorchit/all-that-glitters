@@ -23,11 +23,15 @@ function handleStartingEquipment(json: Record<string, Array<string>>): Map<strin
 	return new Map(array.map(entry => [entry[0], entry[1]]));
 }
 
+const classesRaw = classesJson.map(json => ({
+	name: json.name,
+}));
+
 export const classes = new Source<CombatClass>(
 	"Classes",
 	[],
 	clazz => clazz.name,
-	clazz => clazz.name
+	(item, text) => `<InternalLink chapter={2}>${text ?? item.name}</InternalLink>`
 );
 
 /*

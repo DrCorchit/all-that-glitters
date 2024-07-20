@@ -21,7 +21,7 @@
 		"latin": "amphibia",
 		"phylum": "vertebrata",
 		"name": "Amphibian",
-		"description": "Creatures which transition from water to land at different phases of their lifecycle."
+		"description": "Creatures which transition from water to land at certain phases of their lifecycle."
 	},
 	{
 		"latin": "ichthia",

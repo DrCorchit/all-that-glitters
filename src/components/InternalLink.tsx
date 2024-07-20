@@ -5,11 +5,11 @@ import {appendices} from "./AppendixInfo";
 import {Link} from "react-router-dom";
 
 export function ChapterLink({chapter, section, rel, children}: {chapter: number; section?: number; rel?: string; children?: ReactNode}) {
-	if (chapter <= 0 || chapter > chapters.length) {
+	if (chapter <= 0 || chapter > chapters.array.length) {
 		throw new Error("Chapter index out of range!");
 	}
 
-	const info = chapters[chapter - 1];
+	const info = chapters.array[chapter - 1];
 	const link = `/chapters/${info.index}`;
 	let text, hash;
 	if (section !== undefined) {
@@ -28,11 +28,11 @@ export function ChapterLink({chapter, section, rel, children}: {chapter: number;
 }
 
 export function AppendixLink({appendix, target, rel, children}: {appendix: number; target?: string; rel?: string; children?: ReactNode}) {
-	if (appendix <= 0 || appendix > appendices.length) {
+	if (appendix <= 0 || appendix > appendices.array.length) {
 		throw new Error("Appendix index out of range!");
 	}
 
-	const info = appendices[appendix - 1];
+	const info = appendices.array[appendix - 1];
 	const hash = target === undefined ? undefined : normalize(target);
 	return (
 		<Link to={{pathname: info.link, hash: hash}} rel={rel}>

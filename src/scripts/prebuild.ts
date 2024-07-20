@@ -117,8 +117,10 @@ function replaceHelper(replacer: Replacer, index: number, path: string[], text?:
 	} else {
 		const next = replacer.delegates.find(item => normalize(item.name) === key);
 		if (!next) {
-			console.log(root.delegates.map(it => it.name).join(", "));
-			throw new Error(`No field '${key}' in ${replacer.name} (evaluating ${path.join(".")})`);
+			const message = `No field '${key}' in ${replacer.name} (evaluating ${path.join(".")})`;
+			console.log(message);
+			//throw new Error(message);
+			return path.join(".");
 		}
 		return replaceHelper(next, index + 1, path, text);
 	}

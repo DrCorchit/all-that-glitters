@@ -21,3 +21,12 @@ export const SPD: Attribute = attributes.array[2];
 export const INT: Attribute = attributes.array[3];
 export const NST: Attribute = attributes.array[4];
 export const CHA: Attribute = attributes.array[5];
+
+export interface StatBlock {
+	str: number;
+	dex: number;
+	spd: number;
+	int: number;
+	nst: number;
+	cha: number;
+}

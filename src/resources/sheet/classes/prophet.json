@@ -53,7 +53,7 @@
 			"A {{items.instrument}} (and proficiency in {{skills.performance}})",
 			"A {{items.disguise_kit}} and a {{items.forgery_kit}}",
 			"A {{items.medical_kit}} (and proficiency in {{skills.medicine}})",
-			"A half-dozen {{items.lockpick}}s (and proficiency in {{skills.legerdemin}})"
+			"A half-dozen {{items.lockpick}}s (and proficiency in {{skills.legerdemain}})"
 		]
 	}
 }

@@ -30,7 +30,7 @@
 			"A {{items.lock}}",
 			"A {{items.whetstone}}",
 			"A {{items.dog_whistle}}",
-			"A pet, such as a {{items.cat}}, {{items.dog}}, {{items.parrot}}, or {{items.monkey}}",
+			"A pet, such as a {{animals.cat}}, {{animals.dog}}, {{animals.parrot}}, or {{animals.monkey}}",
 			"A bottle of {{items.moonshine}}",
 			"Two {{items.trap}}s"
 		]
