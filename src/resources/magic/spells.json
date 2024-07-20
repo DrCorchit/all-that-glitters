@@ -121,7 +121,7 @@
 	{
 		"name": "Astral Projection",
 		"level": 5,
-		"description": "The caster enters a meditative state and enters the astral plane, the realm ordinarily accessible only to disincarnate entities. The nature of the astral is elucidated in {{files.appendix_bestiary}}. While in the astral, the caster may explore the lower astral to perceive a distorted version of the physical plane, or venture into the higher astral and converse with various entities in their natural environs, and request their names for summoning purposes.",
+		"description": "The caster enters a meditative state and enters the astral plane, the realm ordinarily accessible only to disincarnate entities. The nature of the astral is elucidated in {{appendices.bestiary}}. While in the astral, the caster may explore the lower astral to perceive a distorted version of the physical plane, or venture into the higher astral and converse with various entities in their natural environs, and request their names for summoning purposes.",
 		"rarity": "Common",
 		"study": "Theurgy",
 		"type": "Ritual",
@@ -1454,7 +1454,7 @@
 	{
 		"name": "Flame Armor",
 		"level": 2,
-		"description": "Wreath your body in flame. The spell does not increase your {{BC}}, but causes enemies that start or end their turn next to you to take 1d12 {{damage.heat}} damage.",
+		"description": "Wreath your body in flame. The spell does not increase your {{keywords.bc}}, but causes enemies that start or end their turn next to you to take 1d12 {{damage.heat}} damage.",
 		"rarity": "Common",
 		"study": "Fire",
 		"type": "Evocation",
@@ -1574,7 +1574,7 @@
 	{
 		"name": "Force Shield",
 		"level": 4,
-		"description": "Generate a shield of telekinetic force measuring six feet in diameter. The shield appears as a shimmering transparent pocket of air hovering in front of you. The shield grants partial cover and provides 7 {{BC}} to up to two people standing behind it.",
+		"description": "Generate a shield of telekinetic force measuring six feet in diameter. The shield appears as a shimmering transparent pocket of air hovering in front of you. The shield grants partial cover and provides 7 {{keywords.bc}} to up to two people standing behind it.",
 		"rarity": "Common",
 		"study": "Telekinesis",
 		"type": "Concentration",
@@ -2161,7 +2161,7 @@
 	{
 		"name": "Iron Armor",
 		"level": 6,
-		"description": "Your skin becomes covered by a magical metallic liquid. The liquid condenses and becomes firm wherever an arrow, missile, or blade would strike true. {{BC}} is increased by 10.",
+		"description": "Your skin becomes covered by a magical metallic liquid. The liquid condenses and becomes firm wherever an arrow, missile, or blade would strike true. {{keywords.bc}} is increased by 10.",
 		"rarity": "Common",
 		"study": "Earth",
 		"type": "Concentration",

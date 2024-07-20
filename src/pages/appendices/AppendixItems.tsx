@@ -1,5 +1,5 @@
 import Appendix from "../../components/Appendix";
-import {Item, itemCategories} from "../../concepts/items";
+import {Item, itemCategories} from "../../concepts/item";
 
 function ItemElement({item}: {item: Item}): JSX.Element {
 	return (

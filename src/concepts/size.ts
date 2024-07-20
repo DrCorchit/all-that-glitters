@@ -9,4 +9,9 @@ export interface Size {
 	notes: string;
 }
 
-export const sizes = new Source<Size>("Sizes", sizesJson, size => size.name);
+export const sizes = new Source<Size>(
+	"Sizes",
+	sizesJson,
+	size => size.name,
+	(size, text) => `<ChapterLink chapter={2}>${text ?? size.name}</ChapterLink>`
+);

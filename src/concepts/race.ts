@@ -7,4 +7,9 @@ export interface Race {
 	bonuses: string;
 }
 
-export const races = new Source<Race>("Races", racesJson, race => race.name);
+export const races = new Source<Race>(
+	"Races",
+	racesJson,
+	race => race.name,
+	(race, text) => `<Tooltip tip={${text ?? race.name}}>${race.description}</Tooltip>`
+);

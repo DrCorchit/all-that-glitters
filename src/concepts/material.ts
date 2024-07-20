@@ -1,6 +1,6 @@
 import materialsJson from "../resources/items/materials.json";
 import Source from "../utils/source";
-import {Item} from "./items";
+import {Item} from "./item";
 
 export interface Material extends Item {
 	bc: number;
@@ -10,5 +10,6 @@ export interface Material extends Item {
 export const materials = new Source<Material>(
 	"materials",
 	materialsJson.map(json => ({...json, effects: json.effects ?? []})),
-	material => material.name
+	material => material.name,
+	(material, text) => `<Tooltip tip={${text ?? material.name}}>${material.description}</Tooltip>`
 );

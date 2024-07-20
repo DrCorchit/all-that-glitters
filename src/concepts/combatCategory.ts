@@ -7,4 +7,9 @@ export interface CombatCategory extends Keyword {
 	bonuses: string[];
 }
 
-export const combatCategories = new Source<CombatCategory>("Categories", categoriesJson, category => category.name);
+export const combatCategories = new Source<CombatCategory>(
+	"Categories",
+	categoriesJson,
+	category => category.name,
+	(category, text) => `<Tooltip tip={${text ?? category.name}}>A category of character classes. ${category.description}</Tooltip>`
+);

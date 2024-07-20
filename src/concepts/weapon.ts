@@ -4,11 +4,16 @@ import {Keyword} from "../utils/keyword";
 import Source from "../utils/source";
 import {normalize} from "../utils/utils";
 import {Damage} from "./damage";
-import {Item} from "./items";
+import {Item} from "./item";
 
 export interface WeaponKeyword extends Keyword {}
 
-export const weaponKeywords = new Source<WeaponKeyword>("Weapon Keywords", weaponKeywordsJson, keyword => keyword.name);
+export const weaponKeywords = new Source<WeaponKeyword>(
+	"Weapon Keywords",
+	weaponKeywordsJson,
+	keyword => keyword.name,
+	(keyword, text) => `<Tooltip tip={${text ?? keyword.name}}>${keyword.description}</Tooltip>`
+);
 
 interface WeaponJson {
 	name: string;
@@ -56,11 +61,13 @@ export class WeaponType {
 export const weaponTypes = new Source<WeaponType>(
 	"Weapon Types",
 	weaponsJson.map(json => new WeaponType(json)),
-	type => type.name
+	type => type.name,
+	(type, text) => `<Tooltip tip={${text ?? type.name}}>${type.description}</Tooltip>`
 );
 
 export const weapons = new Source<Weapon>(
 	"Weapons",
 	weaponTypes.array.flatMap(type => type.weaponsArray),
-	weapon => weapon.name
+	weapon => weapon.name,
+	(weapon, text) => `<Tooltip tip={${text ?? weapon.name}}>${weapon.description}</Tooltip>`
 );

@@ -8,7 +8,12 @@ export interface Attribute extends Keyword {
 	interpretation?: string;
 }
 
-export const attributes = new Source<Attribute>("Attributes", attributesJson, attr => attr.abbr);
+export const attributes = new Source<Attribute>(
+	"Attr",
+	attributesJson,
+	attr => attr.abbr,
+	attr => `<Sub attr="${attr.abbr}"/>`
+);
 
 export const STR: Attribute = attributes.array[0];
 export const DEX: Attribute = attributes.array[1];

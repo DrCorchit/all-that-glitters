@@ -1,6 +1,6 @@
 import armorJson from "../resources/items/armor.json";
 import Source from "../utils/source";
-import {Item} from "./items";
+import {Item} from "./item";
 
 export interface Armor extends Item {
 	bc: number;
@@ -8,4 +8,9 @@ export interface Armor extends Item {
 	effects: string[];
 }
 
-export const armor = new Source<Armor>("armor", armorJson, (armor: Armor) => armor.name);
+export const armor = new Source<Armor>(
+	"armor",
+	armorJson,
+	(armor: Armor) => armor.name,
+	(armor, text) => `<Tooltip tip={${text ?? armor.name}}>${armor.description}</Tooltip>`
+);

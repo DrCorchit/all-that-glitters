@@ -9,7 +9,8 @@ export interface DamageType extends WeaponKeyword {
 }
 
 export const damageTypes = new Source<DamageType>(
-	"Damage Types",
+	"Damage",
 	damageTypesJson.map(json => ({...json, description: `Indicates that the weapon deals ${json.name} damage.`})),
-	type => type.name
+	type => type.name,
+	(damage, text) => `<span style={{color: "${damage.color}"}}>${text ?? damage.name}</span>`
 );

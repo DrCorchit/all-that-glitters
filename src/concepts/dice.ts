@@ -29,7 +29,7 @@ export default class Dice {
 	}
 
 	roll(): number {
-		var total = 0;
+		let total = 0;
 		range(1, this.num).forEach(() => (total += roll(this.die)));
 		return total;
 	}

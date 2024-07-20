@@ -17,7 +17,8 @@ export const athleticsFeats = new Source<Feat>(
 		slots: json.cost.slots,
 		reqs: json.reqs,
 	})),
-	feat => feat.name
+	feat => feat.name,
+	(feat, text) => `<Tooltip tip={${text ?? feat.name}}>${feat.description}</Tooltip>`
 );
 
 export const combatFeats = new Source<Feat>(
@@ -28,7 +29,8 @@ export const combatFeats = new Source<Feat>(
 		slots: json.cost.slots,
 		reqs: json.reqs ?? [],
 	})),
-	feat => feat.name
+	feat => feat.name,
+	(feat, text) => `<Tooltip tip={${text ?? feat.name}}>${feat.description}</Tooltip>`
 );
 
 export const proficiencyFeats = new Source<Feat>(
@@ -39,7 +41,8 @@ export const proficiencyFeats = new Source<Feat>(
 		slots: json.cost.slots,
 		reqs: json.reqs,
 	})),
-	feat => feat.name
+	feat => feat.name,
+	(feat, text) => `<Tooltip tip={${text ?? feat.name}}>${feat.description}</Tooltip>`
 );
 
 export const feats = [athleticsFeats, combatFeats, proficiencyFeats];

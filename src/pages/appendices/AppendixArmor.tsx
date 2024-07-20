@@ -1,7 +1,7 @@
 import Appendix from "../../components/Appendix";
 import {Table} from "../../components/Table";
 import {armor} from "../../concepts/armor";
-import {materials} from "../../concepts/materials";
+import {materials} from "../../concepts/material";
 
 export default function AppendixWeapons() {
 	return (

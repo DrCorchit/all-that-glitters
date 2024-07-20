@@ -11,7 +11,7 @@ export function ChapterLink({chapter, section, rel, children}: {chapter: number;
 
 	const info = chapters[chapter - 1];
 	const link = `/chapters/${info.index}`;
-	var text, hash;
+	let text, hash;
 	if (section !== undefined) {
 		text = info.sections[section - 1];
 		hash = normalize(text);

@@ -14,5 +14,6 @@ export const skills = new Source<Skill>(
 		description: json.description,
 		attrs: json.attrs.map(attr => attributes.lookup(attr)),
 	})),
-	skill => skill.name
+	skill => skill.name,
+	(skill, _text) => `<Sub skill="${skill.name}" />`
 );

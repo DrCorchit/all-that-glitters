@@ -87,7 +87,7 @@ function FilterForm({filterState, setFilterState}: {filterState: FilterState; se
 			</select>
 			{filterTypes.map((type, index) => (
 				<label key={index}>
-					<input type='radio' value={type} onChange={e => setFilterState({...filterState, type: type})} checked={filterState.type === type} />
+					<input type='radio' value={type} onChange={() => setFilterState({...filterState, type: type})} checked={filterState.type === type} />
 					{type}
 				</label>
 			))}

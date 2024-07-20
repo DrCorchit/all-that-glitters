@@ -11,7 +11,7 @@ import {skills, Skill} from "../../concepts/skill";
 import strings from "../../resources/strings.json";
 
 const index = 3;
-const info = chapters[index - 1];
+const info = chapters.array[index - 1];
 
 function InfoSection(): JSX.Element {
 	return (

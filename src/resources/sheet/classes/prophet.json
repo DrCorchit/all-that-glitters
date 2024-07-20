@@ -1,62 +1,59 @@
 {
-  "name": "Prophet",
-  "description": "The prophet is an individual called upon by a specific god to bring about religious transformation. Often a firebrand or a heretic, prophets care little for social conformity and instead operate based off of faith and unwavering moral or spiritual convictions. For this reason, they are scorned and hated by religious authorities and are often on the run.",
-  "backstoryPrompts": [
-    "When did you first hear the voice of your god calling you to action?",
-    "Has anyone ever called you a heretic or condemned your teachings?",
-    "What is your god's attitude towards those who do not believe?",
-    "What made you leave your previous life and start adventuring?"
-  ],
-  "alignment": "Chaotic",
-  "coreAbilityName": "Divine Smite",
-  "coreAbilityDescription": "As an agent of divine prophecy, you may channel your deity's wrath in order to spread your message.  Your deity",
-  "levelingBonuses": {
-    "1": "gain proficiency in {{skills.sorcery}}. You have knowledge of any ",
-    "2": [
-      "choose your divine calling. You may choose one of the following:",
-      {
-        "tag": "ul",
-        "content": [
-          {
-            "tag": "li",
-            "content": "Calling of the healer. Gain proficiency in {{skills.medicine}}."
-          },
-          {
-            "tag": "li",
-            "content": "Calling of the deceiver. Gain proficiency in {{skills.stealth}} and {{skills.legerdemain}}."
-          },
-          {
-            "tag": "li",
-            "content": "Calling of the teacher. Gain proficiency in {{skills.literacy}}. You may learn one scholarly spell."
-          },
-          {
-            "tag": "li",
-            "content": "Calling of the destroyer. Gain proficiency in {{skills.."
-          }
-        ]
-      }
-    ]
-  },
-  "startingEquipment": {
-    "_": [
-      "A set of {{items.rags}}, blessed by the divine to provide the same benefits as {{items.mage_robes}}.",
-      "A {{items.magical_staff}}"
-    ],
-    "An adventurer's pack, containing:": [
-      "1d20 gold",
-      "3 days {{items.rations}} and a {{items.canteen}}",
-      "A {{items.bedroll}}",
-      "One set of {{items.plain_clothes}}",
-      "One set of {{items.priest_robes}}",
-      "A pair of {{items.spectacles}} ",
-      "A {{items.frying_pan}}",
-      "A bottle of {{items.moonshine}}"
-    ],
-    "Any two of the following": [
-      "A {{items.instrument}} (and proficiency in {{skills.performance}}",
-      "A {{items.disguise_kit}} and a {{items.forgery_kit}}",
-      "A {{items.medical_kit}} (and proficiency in {{skills.medicine}})",
-      "A half-dozen {{items.lockpick}}s"
-    ]
-  }
+	"name": "Prophet",
+	"description": "The prophet is an individual called upon by a specific god to bring about religious transformation. Often a firebrand or a heretic, prophets care little for social conformity and instead operate based off of faith and unwavering moral or spiritual convictions. For this reason, they are scorned and hated by religious authorities and are often on the run.",
+	"backstoryPrompts": [
+		"When did you first hear the voice of your god calling you to action?",
+		"Has anyone ever called you a heretic or condemned your teachings?",
+		"What is your god's attitude towards those who do not believe?",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"alignment": "Chaotic",
+	"coreAbilityName": "Divine Smite",
+	"coreAbilityDescription": "As an agent of divine prophecy, you may channel your deity's wrath in order to spread your message.  Your deity",
+	"levelingBonuses": {
+		"1": "gain proficiency in {{skills.sorcery}}. You have knowledge of any ",
+		"2": [
+			"you discover you divine calling, chosen by your deity. You may take one of the following:",
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "Calling of the healer. Gain proficiency in {{skills.medicine}}. You heal 1d4 HP whenever you cast a healing spell."
+					},
+					{
+						"tag": "li",
+						"content": "Calling of the deceiver. Gain proficiency in {{skills.stealth}} and {{skills.legerdemain}}."
+					},
+					{
+						"tag": "li",
+						"content": "Calling of the teacher. Gain proficiency in {{skills.literacy}}. You may learn one scholarly spell."
+					},
+					{
+						"tag": "li",
+						"content": "Calling of the destroyer. Gain proficiency in {{skills.initiative}}."
+					}
+				]
+			}
+		]
+	},
+	"startingEquipment": {
+		"_": ["A set of {{items.rags}}, blessed by the divine to provide the same benefits as {{items.mage_robes}}.", "A {{items.magical_staff}}"],
+		"An adventurer's pack, containing:": [
+			"1d20 gold",
+			"3 days {{items.rations}} and a {{items.canteen}}",
+			"A {{items.bedroll}}",
+			"One set of {{items.plain_clothes}}",
+			"One set of {{items.priest_robes}}",
+			"A pair of {{items.spectacles}} ",
+			"A {{items.frying_pan}}",
+			"A bottle of {{items.moonshine}}"
+		],
+		"Any two of the following": [
+			"A {{items.instrument}} (and proficiency in {{skills.performance}})",
+			"A {{items.disguise_kit}} and a {{items.forgery_kit}}",
+			"A {{items.medical_kit}} (and proficiency in {{skills.medicine}})",
+			"A half-dozen {{items.lockpick}}s (and proficiency in {{skills.legerdemin}})"
+		]
+	}
 }

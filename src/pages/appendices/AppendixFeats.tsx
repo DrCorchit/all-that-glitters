@@ -1,5 +1,5 @@
 import Appendix from "../../components/Appendix";
-import {Feat, feats} from "../../concepts/feats";
+import {Feat, feats} from "../../concepts/feat";
 import {normalize} from "../../utils/utils";
 
 function FeatElement({feat}: {feat: Feat}): JSX.Element {

@@ -1,10 +1,20 @@
+export type Json = JsonPrimitive | JsonObject | JsonArray;
+
+export type JsonPrimitive = string | number | boolean;
+
+export interface JsonObject {
+	[x: string]: Json;
+}
+
+export interface JsonArray extends Array<Json> {}
+
 export function normalize(str: string): string {
 	return str
 		.toLowerCase()
-		.replaceAll(/[_ —–-]+/g, " ")
-		.replaceAll(/[^a-z0-9 ]+/g, "")
+		.replace(/[_ —–-]+/g, " ")
+		.replace(/[^a-z0-9 ]+/g, "")
 		.trim()
-		.replaceAll(/ +/g, "_");
+		.replace(/ +/g, "_");
 }
 
 export function range(start: number, length: number): number[] {

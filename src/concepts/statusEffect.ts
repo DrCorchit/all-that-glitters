@@ -9,4 +9,9 @@ export interface StatusEffect {
 	notes: string;
 }
 
-export const statuses = new Source<StatusEffect>("Statuses", statusJson, status => status.name);
+export const statuses = new Source<StatusEffect>(
+	"Status",
+	statusJson,
+	status => status.name,
+	(status, text) => `<Tooltip tip={${text ?? status.name}}>${status.effect}</Tooltip>`
+);

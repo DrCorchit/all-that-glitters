@@ -8,7 +8,7 @@ import {Keyword} from "../utils/keyword";
 import Source from "../utils/source";
 import {armor} from "./armor";
 import {weaponTypes} from "./weapon";
-import {materials} from "./materials";
+import {materials} from "./material";
 import {normalize} from "../utils/utils";
 
 export interface ItemCategory {
@@ -29,7 +29,8 @@ export const itemCategories = new Source<ItemCategory>(
 		{name: "Containers", items: containersJson},
 		{name: "Miscellaneous", items: miscJson},
 	],
-	cat => cat.name
+	cat => cat.name,
+	(items, text) => `<Tooltip tip={${text ?? items.name}}>A category of items</Tooltip>`
 );
 
 export interface Item extends Keyword {
@@ -41,5 +42,6 @@ export interface Item extends Keyword {
 export const items = new Source<Item>(
 	"Items",
 	itemCategories.array.flatMap(items => items.items),
-	item => normalize(item.key ?? item.name)
+	item => normalize(item.key ?? item.name),
+	(item, text) => `<Tooltip tip={${text ?? item.name}}>${item.description}</Tooltip>`
 );

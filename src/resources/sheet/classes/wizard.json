@@ -9,7 +9,7 @@
 	],
 	"limitations": "Wizards ",
 	"coreAbilityName": "Favorite Spell",
-	"coreAbilityDescription": "Whenever you learn a spell, you may choose to make that spell your favorite. When you cast this spell, you add your willpower modifier to the spell potency in addition to the regular spell potency modifier.",
+	"coreAbilityDescription": "Whenever you learn a spell, you may choose to make that spell your favorite.",
 	"levelingBonuses": {
 		"1": "gain +1 to {{attr.INT}} and {{attr.CHA}} and proficiency in survival."
 	},

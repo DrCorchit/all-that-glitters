@@ -5,14 +5,47 @@ import Source from "../utils/source";
 import {normalize, toOrdinal} from "../utils/utils";
 import {School, studies, Study} from "./school";
 
-export interface Rarity extends Keyword {}
-export const rarities = new Source<Rarity>("Rarities", rarityJson, rarity => rarity.name);
+export interface SpellJson {
+	name: string;
+	description: string;
+	level: number;
+	rarity: string;
+	type: string;
+	study: string;
+	trainingReqs: {
+		level: number;
+		slots: number;
+		gold?: number;
+		INT?: number;
+		NST?: number;
+		CHA?: number;
+	};
+	castingReqs: {
+		time: string;
+		evocation: number;
+		concentration?: number;
+	};
+}
+
+export interface Rarity extends Keyword {
+	slots: number;
+	gold: number;
+}
+
+export const rarities = new Source<Rarity>(
+	"Rarities",
+	rarityJson,
+	rarity => rarity.name,
+	(feat, text) => `<Tooltip tip={${text ?? feat.name}}>${feat.description}</Tooltip>`
+);
 
 export type Type = "Evocation" | "Concentration" | "Ritual" | "Ceremony";
 
 export interface TrainingReqs {
 	level: number;
+	gold: number;
 	slots: number;
+	spells: Spell[];
 	int: number;
 	nst: number;
 	cha: number;
@@ -37,35 +70,19 @@ export class Spell {
 	id: string;
 	blurb: string;
 
-	constructor(json: {
-		name: string;
-		description: string;
-		level: number;
-		rarity: string;
-		type: string;
-		study: string;
-		trainingReqs: {
-			level: number;
-			slots: number;
-			INT?: number;
-			NST?: number;
-			CHA?: number;
-		};
-		castingReqs: {
-			time: string;
-			evocation: number;
-			concentration?: number;
-		};
-	}) {
+	constructor(json: SpellJson) {
 		this.name = json.name;
 		this.description = json.description;
 		this.level = json.level;
 		this.rarity = rarities.lookup(json.rarity);
 		this.type = json.type as Type;
 		this.study = studies.lookup(json.study);
+
 		this.trainingReqs = {
 			level: json.trainingReqs.level,
 			slots: json.trainingReqs.slots,
+			gold: json.trainingReqs.gold ?? 0,
+			spells: [],
 			int: json.trainingReqs.INT ?? 0,
 			nst: json.trainingReqs.NST ?? 0,
 			cha: json.trainingReqs.CHA ?? 0,
@@ -79,12 +96,6 @@ export class Spell {
 		this.blurb = makeBlurb(this);
 	}
 }
-
-export const spells = new Source<Spell>(
-	"Spells",
-	spellsJson.map(json => new Spell(json)),
-	spell => spell.name
-);
 
 function makeBlurb(spell: Spell): string {
 	const prefix = getPrefix(spell);
@@ -101,7 +112,7 @@ function getPrefix(spell: Spell): string {
 	return `${level} level ${rarity}`;
 }
 
-function getBase(spell: Spell): String {
+function getBase(spell: Spell): string {
 	const study = normalize(spell.study.name);
 	switch (study) {
 		case "pharmacology":
@@ -116,6 +127,16 @@ function getBase(spell: Spell): String {
 function getSuffix(spell: Spell): string {
 	return spell.type === "Evocation" || spell.type === "Concentration" ? "spell" : "";
 }
+
+//function spellAttrReqFormula(json: SpellJson) {	return 10 + json.level; }
+
+export const spells = new Source<Spell>(
+	"Spells",
+	spellsJson.map(json => new Spell(json)),
+	spell => spell.name,
+
+	(spell, text) => `<AppendixLink appendix={1} target="${spell.id}">${text ?? spell.name}</AppendixLink>`
+);
 
 export function lookupSpellsByStudy(study: Study): Spell[] {
 	return spells.array.filter(spell => {

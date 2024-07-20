@@ -73,7 +73,7 @@ export class Damage {
 			return "0";
 		}
 
-		var output = "";
+		let output = "";
 		if (this.base > 0) {
 			output += this.base.toString();
 		}

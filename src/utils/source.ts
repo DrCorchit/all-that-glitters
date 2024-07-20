@@ -1,14 +1,19 @@
+import {Replacer} from "../scripts/prebuild";
 import {normalize} from "./utils";
 
-export default class Source<T> {
+export default class Source<T> implements Replacer {
 	name: string;
 	array: T[];
 	map: Map<string, T>;
+	values: (value: string, name?: string) => string;
+	delegates: Replacer[];
 
-	constructor(name: string, array: T[], namingFunction: (item: T) => string) {
+	constructor(name: string, array: T[], namingFunction: (item: T) => string, renderingFunction: (item: T, text?: string) => string) {
 		this.name = name;
 		this.array = array;
 		this.map = new Map(array.map(item => [normalize(namingFunction(item)), item]));
+		this.values = (value, text) => renderingFunction(this.lookup(value), text);
+		this.delegates = [];
 	}
 
 	lookup(name: string): T {

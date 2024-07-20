@@ -6,4 +6,9 @@ export interface Alignment extends Keyword {
 	abbr: string;
 }
 
-const alignmnets = new Source<Alignment>("Alignments", alignmentsJson, alignment => alignment.abbr);
+export const alignments = new Source<Alignment>(
+	"Alignments",
+	alignmentsJson,
+	alignment => alignment.abbr,
+	(alignment, text) => text ?? alignment.name
+);

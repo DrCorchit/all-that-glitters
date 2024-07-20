@@ -7,13 +7,23 @@ import Source from "../utils/source";
 
 export interface Plane extends Keyword {}
 
-export const planes = new Source<Plane>("Planes", planesJson, plane => plane.name);
+export const planes = new Source<Plane>(
+	"Planes",
+	planesJson,
+	plane => plane.name,
+	(plane, text) => `<Tooltip tip={${text ?? plane.name}}>${plane.description}</Tooltip>`
+);
 
 export interface Spirit extends Keyword {
 	latin: string;
 }
 
-export const spirits = new Source<Spirit>("Spirits", spiritsJson, spirit => spirit.name);
+export const spirits = new Source<Spirit>(
+	"Spirits",
+	spiritsJson,
+	spirit => spirit.name,
+	(spirit, text) => `<Tooltip tip={${text ?? spirit.name}}>${spirit.description}</Tooltip>`
+);
 
 export interface Phylum extends Keyword {
 	namePlural: string;
@@ -26,7 +36,8 @@ export const phyla = new Source<Phylum>(
 		...json,
 		namePlural: json.namePlural ?? json.name + "s",
 	})),
-	phylum => phylum.latin
+	phylum => phylum.latin,
+	(phylum, text) => `<Tooltip tip={${text ?? phylum.name}}>${phylum.description}</Tooltip>`
 );
 
 export interface Genus extends Keyword {
@@ -40,7 +51,8 @@ export const genera = new Source<Genus>(
 		...json,
 		phylum: phyla.lookup(json.phylum),
 	})),
-	genus => genus.latin
+	genus => genus.latin,
+	(genus, text) => `<Tooltip tip={${text ?? genus.name}}>${genus.description}</Tooltip>`
 );
 
 export function lookupGenera(phylum: Phylum): Genus[] {

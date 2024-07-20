@@ -1,3 +1,5 @@
+import Source from "./source";
+
 export interface Keyword {
 	abbr?: string;
 	name: string;
@@ -84,3 +86,10 @@ export const CT: Keyword = {
 	name: "Critical Threshold",
 	description: "The value on the d20 required for a critical success. Normally equal to 20.",
 };
+
+export const keywords = new Source<Keyword>(
+	"Keywords",
+	[GM, P, NPC, PC, HP, MAX_HP, TEMP_HP, WP, MAX_WP, BC, DC, DT, CT],
+	keyword => keyword.abbr ?? keyword.name,
+	keyword => keyword.name
+);
