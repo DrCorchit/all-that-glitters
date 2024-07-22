@@ -1,65 +1,62 @@
-import {writeFileSync} from "fs";
-import {templatize} from "./prebuild";
-import assassinJson from "../resources/sheet/classes/assassin.json";
-import barbarianJson from "../resources/sheet/classes/barbarian.json";
-import crusaderJson from "../resources/sheet/classes/crusader.json";
-import druidJson from "../resources/sheet/classes/druid.json";
-import hermitJson from "../resources/sheet/classes/hermit.json";
-import inquisitorJson from "../resources/sheet/classes/inquisitor.json";
-import knightJson from "../resources/sheet/classes/knight.json";
-import marksmanJson from "../resources/sheet/classes/marksman.json";
-import mercenaryJson from "../resources/sheet/classes/mercenary.json";
-import minstrelJson from "../resources/sheet/classes/minstrel.json";
-import monkJson from "../resources/sheet/classes/monk.json";
-import prophetJson from "../resources/sheet/classes/prophet.json";
-import psychicJson from "../resources/sheet/classes/psychic.json";
-import rangerJson from "../resources/sheet/classes/ranger.json";
-import scholarJson from "../resources/sheet/classes/scholar.json";
-import thiefJson from "../resources/sheet/classes/thief.json";
-import tinkerJson from "../resources/sheet/classes/tinker.json";
-import veteranJson from "../resources/sheet/classes/veteran.json";
-import witchJson from "../resources/sheet/classes/witch.json";
-import wizardJson from "../resources/sheet/classes/wizard.json";
-import {Json} from "../utils/utils";
+import fs from "fs";
+import {Builder} from "../utils/tsxBuilder";
 
-interface ClassJson {
+export interface ClassJson {
 	name: string;
 	altName?: string;
 	description: string;
 	backstoryPrompts: string[];
 	alignment?: string;
 	coreAbilityName: string;
-	coreAbilityDescription: Json;
-	limitations?: Json;
-	levelingBonuses: Json;
-	startingEquipment: Json;
+	coreAbilityDescription: string;
+	limitations?: string;
+	levelingBonuses: Record<string, string>;
+	startingEquipment: Record<string, string[]>;
 }
 
-const classesJson: ClassJson[] = [
-	assassinJson,
-	barbarianJson,
-	crusaderJson,
-	druidJson,
-	hermitJson,
-	inquisitorJson,
-	knightJson,
-	marksmanJson,
-	mercenaryJson,
-	minstrelJson,
-	monkJson,
-	prophetJson,
-	psychicJson,
-	rangerJson,
-	scholarJson,
-	thiefJson,
-	tinkerJson,
-	veteranJson,
-	witchJson,
-	wizardJson,
-];
+export default function process(source: string): [string, string] {
+	const json = JSON.parse(source) as ClassJson;
+	const levelingBonuses = Object.entries(json.levelingBonuses)
+		.map(entry => `\n    <div>At level ${entry[0]}, ${entry[1]}</div>`)
+		.join("");
 
-export default function assembleClasses(): void {
-	let output = JSON.stringify(classesJson);
-	output = templatize(output);
-	writeFileSync("src/resources/sheet/classes.json", output);
+	const startingEquipment = Object.entries(json.startingEquipment)
+		.map(entry => {
+			const container = entry[0] !== "_" ? `\n  <b>${entry[0]}</b>:\n` : "\n";
+			const items = entry[1].map(item => `    <li>${item}</li>`).join("\n");
+			return `${container}  <ul>\n${items}\n  </ul>`;
+		})
+		.join("");
+
+	const builder = new Builder();
+	builder.withImport('import Sub from "../components/Sub";');
+	builder.withImport('import Tooltip from "../components/Tooltip";');
+	builder.withString("name", json.name);
+	builder.withString("altName", json.altName);
+	builder.withString("description", json.description);
+	builder.withStringArray("backstoryPrompts", json.backstoryPrompts);
+	builder.withString("alignment", json.alignment);
+	builder.withString("coreAbilityName", json.coreAbilityName);
+	builder.withTemplatizedString("coreAbilityDescription", json.coreAbilityDescription);
+	builder.withTemplatizedString("limitations", json.limitations);
+	builder.withTemplatizedString("levelingBonuses", levelingBonuses);
+	builder.withTemplatizedString("startingEquipment", startingEquipment);
+
+	const value = builder.build();
+	//console.log(`Transformed class json for ${json.name}:\n${value}`);
+	return [json.name, value];
+}
+
+export function assembleClasses() {
+	const root = "src/resources/sheet/classes";
+	const classes = fs.readdirSync(root);
+
+	classes.forEach(filename => {
+		const path = `${root}\\${filename}`;
+		const str = fs.readFileSync(path, "utf8");
+		const tsx = process(str);
+		const output = `src/generated/${tsx[0]}.tsx`;
+		fs.writeFileSync(output, tsx[1]);
+		//console.log(`wrote class ${tsx[0]} to ${output}`);
+	});
 }

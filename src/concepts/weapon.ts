@@ -12,7 +12,7 @@ export const weaponKeywords = new Source<WeaponKeyword>(
 	"Weapon Keywords",
 	weaponKeywordsJson,
 	keyword => keyword.name,
-	(keyword, text) => `<Tooltip tip={${text ?? keyword.name}}>${keyword.description}</Tooltip>`
+	(keyword, text) => `<Tooltip tip={"${text ?? keyword.name}"}>${keyword.description}</Tooltip>`
 );
 
 interface WeaponJson {
@@ -62,12 +62,12 @@ export const weaponTypes = new Source<WeaponType>(
 	"Weapon Types",
 	weaponsJson.map(json => new WeaponType(json)),
 	type => type.name,
-	(type, text) => `<Tooltip tip={${text ?? type.name}}>${type.description}</Tooltip>`
+	(type, text) => `<Tooltip tip={"${text ?? type.name}"}>${type.description}</Tooltip>`
 );
 
 export const weapons = new Source<Weapon>(
 	"Weapons",
 	weaponTypes.array.flatMap(type => type.weaponsArray),
 	weapon => weapon.name,
-	(weapon, text) => `<Tooltip tip={${text ?? weapon.name}}>${weapon.description}</Tooltip>`
+	(weapon, text) => `<Tooltip tip={"${text ?? weapon.name}"}>${weapon.description}</Tooltip>`
 );

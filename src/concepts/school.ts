@@ -37,12 +37,12 @@ export const schools = new Source<School>(
 		studies: json.studies.map(study => new Study(study.name, study.description, json.name, study.adjective)),
 	})),
 	school => school.name,
-	(school, text) => `<Tooltip tip={${text ?? school.name}}>${school.description}</Tooltip>`
+	(school, text) => `<Tooltip tip={"${text ?? school.name}"}>${school.description}</Tooltip>`
 );
 
 export const studies = new Source<Study>(
 	"Studies",
 	schools.array.flatMap(school => school.studies),
 	study => study.name,
-	(study, text) => `<Tooltip tip={${text ?? study.name}}>${study.description}</Tooltip>`
+	(study, text) => `<Tooltip tip={"${text ?? study.name}"}>${study.description}</Tooltip>`
 );

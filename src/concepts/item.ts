@@ -30,7 +30,7 @@ export const itemCategories = new Source<ItemCategory>(
 		{name: "Miscellaneous", items: miscJson},
 	],
 	cat => cat.name,
-	(items, text) => `<Tooltip tip={${text ?? items.name}}>A category of items</Tooltip>`
+	(items, text) => `<Tooltip tip={"${text ?? items.name}"}>A category of items</Tooltip>`
 );
 
 export interface Item extends Keyword {
@@ -43,5 +43,5 @@ export const items = new Source<Item>(
 	"Items",
 	itemCategories.array.flatMap(items => items.items),
 	item => normalize(item.key ?? item.name),
-	(item, text) => `<Tooltip tip={${text ?? item.name}}>${item.description}</Tooltip>`
+	(item, text) => `<Tooltip tip={"${text ?? item.name}"}>${item.description}</Tooltip>`
 );

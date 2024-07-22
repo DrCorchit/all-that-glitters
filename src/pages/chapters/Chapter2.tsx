@@ -8,9 +8,10 @@ import {classes} from "../../concepts/combatClass";
 import {races, Race} from "../../concepts/race";
 import {sizes, Size} from "../../concepts/size";
 import {range} from "../../utils/utils";
+import {ClassElement} from "../../components/ClassElement";
 
 const index = 2;
-const info = chapters[index - 1];
+const info = chapters.array[index - 1];
 
 const altSectionNames = ["Choose a Race", "Choose a Class", "Choose an Alignment", "Write a Backstory", "Choose starting Equipment"];
 
@@ -195,7 +196,9 @@ function ClassSection(): JSX.Element {
 				level 10. This bonus cannot increase the proficiency bonus beyond mastery.
 			</p>
 			<p>A detailed explanation of classes is given below, in alphabetical order.</p>
-			TODO add classes
+			{classes.array.map((clazz, index) => (
+				<ClassElement clazz={clazz} key={index} />
+			))}
 		</Section>
 	);
 }

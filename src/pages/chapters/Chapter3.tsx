@@ -4,7 +4,7 @@ import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink, AppendixLink} from "../../components/InternalLink";
 import Outline from "../../components/Outline";
 import Section from "../../components/Section";
-import {Sub} from "../../components/Sub";
+import Sub from "../../components/Sub";
 import {Table} from "../../components/Table";
 import {attributes} from "../../concepts/attribute";
 import {skills, Skill} from "../../concepts/skill";

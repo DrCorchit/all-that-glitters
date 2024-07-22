@@ -12,5 +12,5 @@ export const armor = new Source<Armor>(
 	"armor",
 	armorJson,
 	(armor: Armor) => armor.name,
-	(armor, text) => `<Tooltip tip={${text ?? armor.name}}>${armor.description}</Tooltip>`
+	(armor, text) => `<Tooltip tip={"${text ?? armor.name}"}>${armor.description}</Tooltip>`
 );

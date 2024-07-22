@@ -3,12 +3,12 @@ import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink} from "../../components/InternalLink";
 import Section from "../../components/Section";
-import {Sub} from "../../components/Sub";
+import Sub from "../../components/Sub";
 import {damageTypes, DamageType} from "../../concepts/damageType";
 import {statuses, StatusEffect} from "../../concepts/statusEffect";
 
 const index = 5;
-const info = chapters[index - 1];
+const info = chapters.array[index - 1];
 
 function Intro(): JSX.Element {
 	return (

@@ -11,5 +11,5 @@ export const combatCategories = new Source<CombatCategory>(
 	"Categories",
 	categoriesJson,
 	category => category.name,
-	(category, text) => `<Tooltip tip={${text ?? category.name}}>A category of character classes. ${category.description}</Tooltip>`
+	(category, text) => `<Tooltip tip={"${text ?? category.name}"}>A category of character classes. ${category.description}</Tooltip>`
 );

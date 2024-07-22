@@ -15,14 +15,13 @@ import {skills} from "../concepts/skill";
 import {spells} from "../concepts/spell";
 import {statuses} from "../concepts/statusEffect";
 import {weaponKeywords, weapons, weaponTypes} from "../concepts/weapon";
-import Source from "../utils/source";
 import {Plugin} from "vite";
-import assembleClasses from "./assembleClasses";
 import assembleSpells from "./assembleSpells";
 import {chapters} from "../components/ChapterInfo";
 import {appendices} from "../components/AppendixInfo";
 import {normalize} from "../utils/utils";
 import {keywords} from "../utils/keyword";
+import {assembleClasses} from "./assembleClasses";
 
 const matchRegex = /\{\{(.*?)}}/g;
 const contentRegex = /(?<path>\w+(\.\w+)*)(#(?<text>.*))?/;
@@ -47,7 +46,9 @@ export function templatize(input: string): string {
 		}
 
 		output.push(replace(input.substring(start, end)));
+		last = end;
 	});
+	output.push(input.substring(last, input.length));
 
 	return output.join(" ");
 }
@@ -89,7 +90,7 @@ const replacers: Replacer[] = [
 
 const root: Replacer = {
 	name: "root",
-	values: (arg, _name) => {
+	values: arg => {
 		throw new Error(`No value '${arg}' in root replacer`);
 	},
 	delegates: replacers,
@@ -132,8 +133,9 @@ export default function prebuild(): Plugin {
 		async configResolved() {
 			console.log("Assembling spells.json...");
 			await assembleSpells();
-			console.log("Assembling classes.json");
+			//console.log("Assembling classes.json");
 			assembleClasses();
+			console.log("Finished Prebuild.");
 		},
 	};
 }

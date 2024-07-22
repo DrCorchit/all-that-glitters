@@ -11,5 +11,5 @@ export const materials = new Source<Material>(
 	"materials",
 	materialsJson.map(json => ({...json, effects: json.effects ?? []})),
 	material => material.name,
-	(material, text) => `<Tooltip tip={${text ?? material.name}}>${material.description}</Tooltip>`
+	(material, text) => `<Tooltip tip={"${text ?? material.name}"}>${material.description}</Tooltip>`
 );

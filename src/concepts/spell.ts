@@ -36,7 +36,7 @@ export const rarities = new Source<Rarity>(
 	"Rarities",
 	rarityJson,
 	rarity => rarity.name,
-	(feat, text) => `<Tooltip tip={${text ?? feat.name}}>${feat.description}</Tooltip>`
+	(feat, text) => `<Tooltip tip={"${text ?? feat.name}"}>${feat.description}</Tooltip>`
 );
 
 export type Type = "Evocation" | "Concentration" | "Ritual" | "Ceremony";

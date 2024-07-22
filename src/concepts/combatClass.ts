@@ -1,50 +1,45 @@
-import classesJson from "../resources/sheet/classes.json";
+/*
+import barbarianJson from "../resources/sheet/classes/barbarian.class.json";
+import crusaderJson from "../resources/sheet/classes/crusader.class.json";
+import druidJson from "../resources/sheet/classes/druid.class.json";
+import hermitJson from "../resources/sheet/classes/hermit.class.json";
+import inquisitorJson from "../resources/sheet/classes/inquisitor.class.json";
+import knightJson from "../resources/sheet/classes/knight.class.json";
+import marksmanJson from "../resources/sheet/classes/marksman.json";
+import mercenaryJson from "../resources/sheet/classes/mercenary.json";
+import minstrelJson from "../resources/sheet/classes/minstrel.json";
+import monkJson from "../resources/sheet/classes/monk.json";
+import prophetJson from "../resources/sheet/classes/prophet.json";
+import psychicJson from "../resources/sheet/classes/psychic.json";
+import rangerJson from "../resources/sheet/classes/ranger.json";
+import scholarJson from "../resources/sheet/classes/scholar.json";
+import thiefJson from "../resources/sheet/classes/thief.json";
+import tinkerJson from "../resources/sheet/classes/tinker.json";
+import veteranJson from "../resources/sheet/classes/veteran.json";
+import witchJson from "../resources/sheet/classes/witch.json";
+import wizardJson from "../resources/sheet/classes/wizard.json";
+*/
+import Assassin from "../generated/Assassin";
 import Source from "../utils/source";
-import {Keyword} from "../utils/keyword";
 
-export interface CombatClass extends Keyword {
+export interface CombatClass {
+	name: string;
+	description: string;
 	altName?: string;
 	backstoryPrompts: string[];
 	alignment?: string;
 	coreAbilityName: string;
-	coreAbilityDescription: string;
-	limitations: string;
-	levelingBonuses: Map<number, string>;
-	startingEquipment: Map<string, Array<string>>;
+	coreAbilityDescription: JSX.Element;
+	limitations: JSX.Element;
+	levelingBonuses: JSX.Element;
+	startingEquipment: JSX.Element;
 }
 
-function handleLevelingBonuses(json: Record<string, string>): Map<number, string> {
-	const array = Object.entries(json);
-	return new Map(array.map(entry => [Number(entry[0]), entry[1]]));
-}
-
-function handleStartingEquipment(json: Record<string, Array<string>>): Map<string, Array<string>> {
-	const array = Object.entries(json);
-	return new Map(array.map(entry => [entry[0], entry[1]]));
-}
-
-const classesRaw = classesJson.map(json => ({
-	name: json.name,
-}));
+const classesJson: CombatClass[] = [Assassin];
 
 export const classes = new Source<CombatClass>(
 	"Classes",
-	[],
+	classesJson,
 	clazz => clazz.name,
 	(item, text) => `<InternalLink chapter={2}>${text ?? item.name}</InternalLink>`
 );
-
-/*
-export const classes = new Source<CombatClass>(
-	"Classes",
-	classesJson.map(json => ({
-		name: json.name,
-		altName: json.altName,
-		description: json.description,
-		prompts: json.prompts,
-		alignment: alignments.lookup(json.alignment),
-	})),
-	clazz => clazz.name,
-	(clazz, text) => `<InternalLink chapter={2} tip={${text ?? clazz.name}}>${clazz.description}</Tooltip>`
-);
-*/

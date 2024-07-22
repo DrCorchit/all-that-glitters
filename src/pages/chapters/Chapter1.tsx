@@ -5,7 +5,7 @@ import {ChapterLink} from "../../components/InternalLink";
 import Section from "../../components/Section";
 
 const index = 1;
-const info = chapters[index - 1];
+const info = chapters.array[index - 1];
 
 function Intro() {
 	return (

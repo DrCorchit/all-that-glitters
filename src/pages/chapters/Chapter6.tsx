@@ -3,10 +3,10 @@ import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink, AppendixLink} from "../../components/InternalLink";
 import Outline from "../../components/Outline";
 import Section from "../../components/Section";
-import {Sub} from "../../components/Sub";
+import Sub from "../../components/Sub";
 
 const index = 6;
-const info = chapters[index - 1];
+const info = chapters.array[index - 1];
 
 function Intro(): JSX.Element {
 	return (

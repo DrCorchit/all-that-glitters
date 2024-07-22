@@ -98,7 +98,8 @@ function spellMinLevelFormula(json: SpellJson) {
 }
 
 function spellSlotCostFormula(json: SpellJson) {
-	let slotCost = rarities.lookup(json.rarity).slots + Math.floor(json.level / 2);
+	let slotCost = rarities.lookup(json.rarity).slots;
+	slotCost += Math.floor(json.level / 2);
 	return slotCost;
 }
 
@@ -129,9 +130,9 @@ function spellCHAFormula(json: SpellJson): number | undefined {
 }
 
 export default async function assembleSpells(): Promise<void> {
-	let spellsJson = await parseSpellsFile();
+	const spellsJson = await parseSpellsFile();
 	spellsJson.map(spell => initSpell(spell));
 	let output = JSON.stringify(spellsJson);
 	output = templatize(output);
-	writeFileSync("src/resources/magic/spells2.json", output);
+	writeFileSync("src/generated/spells.json", output);
 }

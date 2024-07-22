@@ -4,7 +4,7 @@ import Section from "../../components/Section";
 import {schools, School, Study} from "../../concepts/school";
 
 const index = 7;
-const info = chapters[index - 1];
+const info = chapters.array[index - 1];
 
 function LearningSpellsSection(): JSX.Element {
 	return (

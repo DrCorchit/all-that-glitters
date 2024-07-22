@@ -1,43 +1,39 @@
 {
-  "name": "Assassin",
-  "description": "An assassin’s art is a quick and sure death, delivered without remorse or hesitation. Typically employed by a political state or criminal syndicate, assassins quickly learn to make use of any weapon available, including the weapons of their own targets. This makes them extremely versatile adventurers, able to adapt to nearly any combat situation as the need arises.",
-  "backstoryPrompts": [
-    "Who has hired you in the past?",
-    "How many targets have you killed?",
-    "Do you remember your first kill?",
-    "How did you acquire your unique skillset?",
-    "Does your character struggle with any form of guilt?",
-    "What made you leave your previous life and start adventuring?"
-  ],
-  "alignment": "Non-Good",
-  "coreAbilityName": "Assassination",
-  "coreAbilityDescription": "You may expend 2 willpower to mark a target for assassination. On the next turn, the first attack that results in a critical hit becomes an assassination and deals an additional 15 damage.",
-  "limitations": "Due to their extremely specialized skillset, assassins have a deficiency in two of the following three skills: {{skills.nature}}, {{skills.defense}}, or {{skills.survival}}.",
-  "levelingBonuses": {
-    "1": "gain proficiency in two out of these three skills: {{skills.martial_arts}}, {{skills.initiative}}, and {{skills.accuracy}}.",
-    "2": "when you initiate combat with an attack, gain advantage on the {{skills.initiative}} roll. You begin combat with an extra action."
-  },
-  "startingEquipment": {
-    "_": [
-      "A set of {{armor.leather_armor}}.",
-      "Any two {{weapon_keywords.nimble}} weapons",
-      "A {{weapons.buckler}}"
-    ],
-    "Concealed on their person:": [
-      "Any two small weapons",
-      "A vial of neurotoxic poison",
-      "A dozen {{weapons.throwing_knives}} or {{weapons.shuriken}}s",
-      "A dozen {{items.lockpick}}s"
-    ],
-    "An adventurer's pack, containing:": [
-      "2d100 gold",
-      "3 days {{items.rations}} and a {{items.canteen}}.",
-      "A {{items.bedroll}}",
-      "Two sets of {{items.plain_clothes}}.",
-      "One set of {{items.formal_wear}}",
-      "A {{items.disguise_kit}}",
-      "A pair of {{items.manacles}}",
-      "A {{items.rope}} and {{weapons.grappling_hook}}"
-    ]
-  }
+	"name": "Assassin",
+	"description": "An assassin’s art is a quick and sure death, delivered without remorse or hesitation. Typically employed by a political state or criminal syndicate, assassins quickly learn to make use of any weapon available, including the weapons of their own targets. This makes them extremely versatile adventurers, able to adapt to nearly any combat situation as the need arises.",
+	"backstoryPrompts": [
+		"Who has hired you in the past?",
+		"How many targets have you killed?",
+		"Do you remember your first kill?",
+		"How did you acquire your unique skillset?",
+		"Does your character struggle with any form of guilt?",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"alignment": "Non-Good",
+	"coreAbilityName": "Assassination",
+	"coreAbilityDescription": "You may expend 3 willpower to mark a target for assassination. The next time you score a critical hit on that target, deal an additional 15 damage.",
+	"limitations": "Due to their extremely specialized skillset, assassins have a deficiency in two of the following three skills: {{skills.nature}}, {{skills.defense}}, or {{skills.survival}}.",
+	"levelingBonuses": {
+		"1": "gain proficiency in two out of these three skills: {{skills.martial_arts}}, {{skills.initiative}}, and {{skills.accuracy}}.",
+		"2": "when you initiate combat with an attack, gain advantage on the {{skills.initiative}} roll. You begin combat with an extra action."
+	},
+	"startingEquipment": {
+		"_": ["A set of {{armor.leather_armor}}.", "Any two {{weapon_keywords.nimble}} weapons", "A {{weapons.buckler}}"],
+		"Concealed on their person:": [
+			"Any two small weapons",
+			"A vial of neurotoxic poison",
+			"A dozen {{weapons.throwing_knives}} or {{weapons.shuriken}}s",
+			"A dozen {{items.lockpick}}s"
+		],
+		"An adventurer's pack, containing:": [
+			"2d100 gold",
+			"3 days {{items.rations}} and a {{items.canteen}}.",
+			"A {{items.bedroll}}",
+			"Two sets of {{items.plain_clothes}}.",
+			"One set of {{items.formal_wear}}",
+			"A {{items.disguise_kit}}",
+			"A pair of {{items.manacles}}",
+			"A {{items.rope}} and {{weapons.grappling_hook}}"
+		]
+	}
 }

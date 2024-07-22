@@ -9,26 +9,7 @@
 	],
 	"alignment": "Non-Good",
 	"coreAbilityName": "Street Smarts",
-	"coreAbilityDescription": [
-		"Owing to your lifestyle, you have a variety of talents in diverse areas:<ul><li><b>Take Backsies<\b>: </li></ul>",
-		{
-			"tag": "ul",
-			"content": [
-				{
-					"tag": "li",
-					"content": "<b>Take Backsies</b>: Once a day, you can expend 5 willpower to reroll a failed skill check, provided you have proficiency in that skill."
-				},
-				{
-					"tag": "li",
-					"content": "<b>Hard Knocks</b>: As an expert with small weapons, you can always conceal one small weapon on your person. This weapon can only be found if you are physically searched and the person conducting the search passes a DT 15 {{skills.perception}} check."
-				},
-				{
-					"tag": "li",
-					"content": "<b>Thieves' Cant</b>: You know a special form of communication that allows you to communicate secret messages, up to 6 words per minute. The language is widely known among thieves and beggars."
-				}
-			]
-		}
-	],
+	"coreAbilityDescription": "Owing to your lifestyle, you have a variety of talents in diverse areas:<ul><li><b>Slim Pickings</b>: You can always conceal one small weapon on your person. This weapon can only be found if you are physically searched and the person conducting the search passes a DT 15 {{skills.perception}} check.</li><li><b>Hard Knocks</b>: Your small weapons never suffer from the {{weapon_keywords.improvised}} penalty. Small weapons with the {{weapon_keywords.sharp}} property lower the weapon CT by 2, instead of 1.</li><li><b>Thieves' Cant</b>: You know a special form of communication that allows you to communicate secret messages, up to 6 words per minute. The language is widely known among thieves and beggars.</li></ul>",
 	"levelingBonuses": {
 		"1": "proficiency in {{skills.legerdemain}} and {{skills.perception}}.",
 		"7": "gain <i>Lucky Sevens</i>. Whenever you roll a 7 on a d20, it automatically counts as a critical success."

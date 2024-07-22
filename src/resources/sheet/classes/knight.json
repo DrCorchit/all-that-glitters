@@ -14,30 +14,7 @@
 	"limitations": "Deficient in sorcery.",
 	"levelingBonuses": {
 		"1": "gain expertise in defense.",
-		"2": [
-			"learn any two abilities from the following list: <ul><li></li></ul>",
-			{
-				"tag": "ul",
-				"content": [
-					{
-						"tag": "li",
-						"content": "{{maneuvers.parry}}"
-					},
-					{
-						"tag": "li",
-						"content": "{{maneuvers.shield_bash}}"
-					},
-					{
-						"tag": "li",
-						"content": "{{feats.lancer}}"
-					},
-					{
-						"tag": "li",
-						"content": "{{feats.defender}}"
-					}
-				]
-			}
-		],
+		"2": "learn any two abilities from the following list: <ul><li>{{maneuvers.parry}}</li><li>{{maneuvers.shield_bash}}</li><li>{{feats.lancer}}</li><li>{{feats.defender}}</li></ul>",
 		"3": "your liege gifts you an improved suit of armor. You may choose a suit of {{armor.half_plate_armor}} or {{armor.splinted_chainmail}}.",
 		"4": "The dexterity and speed caps on your armor are increased by 1.",
 		"5": "Learn 2 combat maneuvers",
