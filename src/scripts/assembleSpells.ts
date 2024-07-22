@@ -1,7 +1,7 @@
 import {createReadStream, writeFileSync} from "fs";
 import {rarities, SpellJson} from "../concepts/spell";
 import rd from "readline";
-import {templatize} from "./prebuild";
+import {templatize} from "../utils/templatizer";
 import {studies} from "../concepts/school";
 import {once} from "node:events";
 

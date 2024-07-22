@@ -27,13 +27,13 @@ export default function ToC() {
 			<h2>Player's Handbook</h2>
 			<p>This guide is designed for players new to TTRPGs. If you're an experienced player, I suggest skipping the first chapter.</p>
 			<ol>
-				{chapters.map((chapter, index) => (
+				{chapters.array.map((chapter, index) => (
 					<TocEntry chapter={chapter} key={index} />
 				))}
 				<li>
 					Appendices
 					<ol type='i'>
-						{appendices.map((appendix, index) => (
+						{appendices.array.map((appendix, index) => (
 							<li key={index}>
 								<AppendixLink appendix={appendix.index} />
 							</li>

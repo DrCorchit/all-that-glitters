@@ -1,4 +1,4 @@
-import {templatize} from "../scripts/prebuild";
+import {templatize} from "./templatizer";
 
 export class Builder {
 	imports: string[] = [];
@@ -17,11 +17,9 @@ export class Builder {
 		return this;
 	}
 
-	withTemplatizedString(key: string, value?: string): Builder {
+	withTSX(key: string, value?: string): Builder {
 		if (value !== undefined) {
-			const templatizedValue = templatize(value);
-			//console.log(`${value} --> ${templatizedValue}`);
-			return this.withValue(key, `<>${templatizedValue}</>`);
+			return this.withValue(key, `<>${value}</>`);
 		}
 		return this;
 	}
@@ -40,7 +38,7 @@ export class Builder {
 
 	build(): string {
 		const propsArray = Array.from(this.properties).map(entry => `  ${entry[0]}: ${entry[1]},`);
-		const propsStr = propsArray.join("\n");
+		const propsStr = templatize(propsArray.join("\n"));
 		return `//Auto-generated file (do not modify)
 ${this.imports.join("\n")}
 export default {

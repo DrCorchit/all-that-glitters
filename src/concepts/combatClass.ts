@@ -1,42 +1,63 @@
-/*
-import barbarianJson from "../resources/sheet/classes/barbarian.class.json";
-import crusaderJson from "../resources/sheet/classes/crusader.class.json";
-import druidJson from "../resources/sheet/classes/druid.class.json";
-import hermitJson from "../resources/sheet/classes/hermit.class.json";
-import inquisitorJson from "../resources/sheet/classes/inquisitor.class.json";
-import knightJson from "../resources/sheet/classes/knight.class.json";
-import marksmanJson from "../resources/sheet/classes/marksman.json";
-import mercenaryJson from "../resources/sheet/classes/mercenary.json";
-import minstrelJson from "../resources/sheet/classes/minstrel.json";
-import monkJson from "../resources/sheet/classes/monk.json";
-import prophetJson from "../resources/sheet/classes/prophet.json";
-import psychicJson from "../resources/sheet/classes/psychic.json";
-import rangerJson from "../resources/sheet/classes/ranger.json";
-import scholarJson from "../resources/sheet/classes/scholar.json";
-import thiefJson from "../resources/sheet/classes/thief.json";
-import tinkerJson from "../resources/sheet/classes/tinker.json";
-import veteranJson from "../resources/sheet/classes/veteran.json";
-import witchJson from "../resources/sheet/classes/witch.json";
-import wizardJson from "../resources/sheet/classes/wizard.json";
-*/
 import Assassin from "../generated/Assassin";
+import Barbarian from "../generated/Barbarian";
+import Crusader from "../generated/Crusader";
+import Druid from "../generated/Druid";
+import Hermit from "../generated/Hermit";
+import Inquisitor from "../generated/Inquisitor";
+import Knight from "../generated/Knight";
+import Marksman from "../generated/Marksman";
+import Mercenary from "../generated/Mercenary";
+import Minstrel from "../generated/Minstrel";
+import Monk from "../generated/Monk";
+import Prophet from "../generated/Prophet";
+import Psychic from "../generated/Psychic";
+import Ranger from "../generated/Ranger";
+import Scholar from "../generated/Scholar";
+import Thief from "../generated/Thief";
+import Tinker from "../generated/Tinker";
+import Veteran from "../generated/Veteran";
+import Witch from "../generated/Witch";
+import Wizard from "../generated/Wizard";
 import Source from "../utils/source";
 
 export interface CombatClass {
 	name: string;
-	description: string;
+	description: JSX.Element;
 	altName?: string;
 	backstoryPrompts: string[];
 	alignment?: string;
 	coreAbilityName: string;
 	coreAbilityDescription: JSX.Element;
-	limitations: JSX.Element;
-	levelingBonuses: JSX.Element;
-	startingEquipment: JSX.Element;
+	limitations?: JSX.Element;
+	levelingBonuses: Record<number, JSX.Element>;
+	startingEquipment: {name?: JSX.Element; contents: JSX.Element[]}[];
 }
 
-const classesJson: CombatClass[] = [Assassin];
-
+//const classesJson: CombatClass[] = [];
+//*
+const classesJson: CombatClass[] = [
+	Assassin,
+	Barbarian,
+	Crusader,
+	Druid,
+	Hermit,
+	Inquisitor,
+	Knight,
+	Marksman,
+	Mercenary,
+	Minstrel,
+	Monk,
+	Prophet,
+	Psychic,
+	Ranger,
+	Scholar,
+	Thief,
+	Tinker,
+	Veteran,
+	Witch,
+	Wizard,
+];
+//*/
 export const classes = new Source<CombatClass>(
 	"Classes",
 	classesJson,

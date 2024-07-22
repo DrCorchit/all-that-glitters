@@ -88,6 +88,7 @@ button.h5:hover:after {
 	height: 20px;
 }
 
+.default,
 li,
 p,
 a,
@@ -207,7 +208,8 @@ table.standard td {
 	white-space: nowrap;
 }
 
-a.tooltip {
+.tooltip {
+	color: #aa8;
 	position: relative;
 
 	/* if want hover over icon instead of text based, uncomment below */
@@ -217,11 +219,11 @@ a.tooltip {
             height: 16px;*/
 }
 
-a.tooltip span {
+.tooltip span {
 	display: none;
 }
 
-a.tooltip:hover span {
+.tooltip:hover span {
 	/* show tooltip */
 	display: block;
 	/* position relative to container div.tooltip */

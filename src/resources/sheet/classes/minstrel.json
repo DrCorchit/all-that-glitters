@@ -1,40 +1,36 @@
 {
-  "name": "Minstrel",
-  "description": "A minstrel is easy to spot—simply listen for the sound of a cheering crowd, and see what has captured their attention. It might be a jester, or a woman with a guitar, or a halfling turning flips and cartwheels. Either way, the minstrel is occupied with the trade of entertainment. As one should be, if one feasts or goes hungry according to the quality of one’s performance.",
-  "backstoryPrompts": [
-    "How do you entertain crowds?",
-    "When was your first performance? How did it go?",
-    "Do you ever get stage fright?",
-    "How does it feel to finish a performance to thunderous applause?",
-    "Have you ever been booed off a stage?",
-    "What made you leave your previous life and start adventuring?"
-  ],
-  "alignment": "Non-Lawful",
-  "coreAbilityName": "Poetic Justice",
-  "coreAbilityDescription": "When any character makes an attack roll, you may spend 2 willpower to make a quick cheer, quip, retort, or insult (as appropriate). On a successful DT 10 performance check, the attacker gains advantage (if they were an ally) or disadvantage (if they were an enemy).",
-  "levelingBonuses": {
-    "1": "gain +1 {{attr.DEX}} and +1 {{attr.CHA}}, plus proficiency in performance."
-  },
-  "startingEquipment": {
-    "_": [
-      "A set of {{armor.quilted_armor}}",
-      "A {{weapon_keywords.nimble}} weapon",
-      "A {{weapons.dagger}}",
-      "A {{items.instrument}} of some kind"
-    ],
-    "An adventurer's pack, containing:": [
-      "30 + 1d100 gold.",
-      "3 days {{items.rations}}.",
-      "Two sets of {{items.plain_clothes}}.",
-      "One set of {{items.formal_wear}}",
-      "Three {{items.lockpick}}s",
-      "A {{items.tent}}"
-    ],
-    "A satchel, containing:": [
-      "A {{items.mirror}}",
-      "{{items.soap}} and {{items.perfume}}",
-      "A {{items.disguise_kit}}",
-      "A pair of {{items.scissors}} and a {{items.thread}}"
-    ]
-  }
+	"name": "Minstrel",
+	"altName": "Bard",
+	"description": "A minstrel is easy to spot—simply listen for the sound of a cheering crowd, and see what has captured their attention. It might be a jester, or a woman with a guitar, or a halfling turning flips and cartwheels. Either way, the minstrel is occupied with the trade of entertainment. As one should be, if one feasts or goes hungry according to the quality of one’s performance.",
+	"backstoryPrompts": [
+		"How do you entertain crowds?",
+		"When was your first performance? How did it go?",
+		"Do you ever get stage fright?",
+		"How does it feel to finish a performance to thunderous applause?",
+		"Have you ever been booed off a stage?",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"alignment": "Non-Lawful",
+	"coreAbilityName": "Poetic Justice",
+	"coreAbilityDescription": "When any character makes an attack roll, you may spend 2 willpower to make a quick cheer, quip, retort, or insult (as appropriate). If you pass a successful DT 10 {{skills.performance}} check, the attacker gains advantage (if they were an ally) or disadvantage (if they were an enemy).",
+	"levelingBonuses": {
+		"1": "gain +1 {{attr.DEX}} and +1 {{attr.CHA}}, plus proficiency in performance."
+	},
+	"startingEquipment": {
+		"_": ["A set of {{armor.quilted_armor}}", "A {{weapon_keywords.nimble}} weapon", "A {{weapons.dagger}}", "A {{items.instrument}} of some kind"],
+		"An adventurer's pack, containing:": [
+			"30 + 1d100 gold.",
+			"3 days {{items.rations}}.",
+			"Two sets of {{items.plain_clothes}}.",
+			"One set of {{items.formal_wear}}",
+			"Three {{items.lockpick}}s",
+			"A {{items.tent}}"
+		],
+		"A satchel, containing:": [
+			"A {{items.mirror}}",
+			"{{items.soap}} and {{items.perfume}}",
+			"A {{items.disguise_kit}}",
+			"A pair of {{items.scissors}} and a {{items.thread}}"
+		]
+	}
 }

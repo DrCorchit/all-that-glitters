@@ -1,4 +1,4 @@
-import {Replacer} from "../scripts/prebuild";
+import {Replacer} from "./templatizer";
 import {normalize} from "./utils";
 
 export default class Source<T> implements Replacer {

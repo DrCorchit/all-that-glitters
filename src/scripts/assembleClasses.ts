@@ -14,33 +14,34 @@ export interface ClassJson {
 	startingEquipment: Record<string, string[]>;
 }
 
-export default function process(source: string): [string, string] {
+function process(source: string): [string, string] {
 	const json = JSON.parse(source) as ClassJson;
 	const levelingBonuses = Object.entries(json.levelingBonuses)
-		.map(entry => `\n    <div>At level ${entry[0]}, ${entry[1]}</div>`)
+		.map(entry => `\n    ${entry[0]}: <span className="default">${entry[1]}</span>,`)
 		.join("");
 
 	const startingEquipment = Object.entries(json.startingEquipment)
 		.map(entry => {
-			const container = entry[0] !== "_" ? `\n  <b>${entry[0]}</b>:\n` : "\n";
-			const items = entry[1].map(item => `    <li>${item}</li>`).join("\n");
-			return `${container}  <ul>\n${items}\n  </ul>`;
+			const name = entry[0] === "_" ? "" : `name: <b>${entry[0]}</b>, `;
+			const contents = entry[1].map(item => `<>${item}</>`).join(", ");
+			return `\n    { ${name}contents: [${contents}] },`;
 		})
 		.join("");
 
 	const builder = new Builder();
 	builder.withImport('import Sub from "../components/Sub";');
 	builder.withImport('import Tooltip from "../components/Tooltip";');
+
 	builder.withString("name", json.name);
 	builder.withString("altName", json.altName);
-	builder.withString("description", json.description);
+	builder.withTSX("description", json.description);
 	builder.withStringArray("backstoryPrompts", json.backstoryPrompts);
 	builder.withString("alignment", json.alignment);
 	builder.withString("coreAbilityName", json.coreAbilityName);
-	builder.withTemplatizedString("coreAbilityDescription", json.coreAbilityDescription);
-	builder.withTemplatizedString("limitations", json.limitations);
-	builder.withTemplatizedString("levelingBonuses", levelingBonuses);
-	builder.withTemplatizedString("startingEquipment", startingEquipment);
+	builder.withTSX("coreAbilityDescription", json.coreAbilityDescription);
+	builder.withTSX("limitations", json.limitations);
+	builder.withValue("levelingBonuses", `{${levelingBonuses}}`);
+	builder.withValue("startingEquipment", `[${startingEquipment}]`);
 
 	const value = builder.build();
 	//console.log(`Transformed class json for ${json.name}:\n${value}`);

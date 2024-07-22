@@ -26,7 +26,7 @@
 		],
 		"One of the following items, shoved to the bottom of the pack:": [
 			"{{items.formal_wear}} and a set of {{items.priest_robes}}",
-			"A {{items.cards}}, A human skull, a {[items.candle}}, and an {{items.hourglass}} (gain inspiration)",
+			"A {{items.cards}}, A human skull, a {{items.candle}}, and an {{items.hourglass}} (gain inspiration)",
 			"A {{items.portable_alchemy_set}} (lose 50 gold)",
 			"A {{items.crystal_ball}} (lose 100 gold)",
 			"A bar of {{items.soap}} and {{items.perfume}}",
