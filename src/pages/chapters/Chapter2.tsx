@@ -4,11 +4,11 @@ import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink, AppendixLink} from "../../components/InternalLink";
 import Section from "../../components/Section";
 import {combatCategories, CombatCategory} from "../../concepts/combatCategory";
-import {classes} from "../../concepts/combatClass";
-import {races, Race} from "../../concepts/race";
+import {races, Race} from "../../generated/race";
 import {sizes, Size} from "../../concepts/size";
 import {range} from "../../utils/utils";
 import {ClassElement} from "../../components/ClassElement";
+import {classes} from "../../generated/combatClass";
 
 const index = 2;
 const info = chapters.array[index - 1];
@@ -94,10 +94,8 @@ function RaceElement({race}: {race: Race}) {
 	return (
 		<>
 			<h5>{race.name}</h5>
-			{race.description.map((entry, index) => (
-				<p key={index}>{entry}</p>
-			))}
-			<p>{race.bonuses}</p>
+			{race.description}
+			{race.bonuses}
 		</>
 	);
 }

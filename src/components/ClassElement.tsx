@@ -54,11 +54,3 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 		</div>
 	);
 }
-/*
-<b>{entry[0]}</b>
-						<ul>
-							{entry[1].map((item, index2) => (
-								<li key={index2}>{item}</li>
-							))}
-						</ul>
-						*/

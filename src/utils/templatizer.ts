@@ -1,29 +1,10 @@
-import {alignments} from "../concepts/alignment";
-import {armor} from "../concepts/armor";
-import {attributes} from "../concepts/attribute";
-import {genera, phyla, planes, spirits} from "../concepts/bestiary";
-import {combatCategories} from "../concepts/combatCategory";
-import {classes} from "../concepts/combatClass";
-import {damageTypes} from "../concepts/damageType";
-import {athleticsFeats, combatFeats} from "../concepts/feat";
-import {items} from "../concepts/item";
-import {materials} from "../concepts/material";
-import {races} from "../concepts/race";
-import {schools} from "../concepts/school";
-import {sizes} from "../concepts/size";
-import {skills} from "../concepts/skill";
-import {spells} from "../concepts/spell";
-import {statuses} from "../concepts/statusEffect";
-import {weaponKeywords, weapons, weaponTypes} from "../concepts/weapon";
-import {chapters} from "../components/ChapterInfo";
-import {appendices} from "../components/AppendixInfo";
+import {Replacer, root} from "./replacer";
 import {normalize} from "./utils";
-import {keywords} from "./keyword";
 
 const matchRegex = /\{\{(.*?)}}/g;
 const contentRegex = /(?<path>\w+(\.\w+)*)(#(?<text>.*))?/;
 
-export function templatize(input: string): string {
+export function templatize(input: string, replacer: Replacer = root): string {
 	//const result = matchRegex.exec(input);
 	const matches = Array.from(input.matchAll(matchRegex));
 
@@ -42,7 +23,7 @@ export function templatize(input: string): string {
 			output.push(input.substring(last, start));
 		}
 
-		output.push(replace(input.substring(start, end)));
+		output.push(replace(input.substring(start, end), replacer));
 		last = end;
 	});
 	output.push(input.substring(last, input.length));
@@ -50,50 +31,7 @@ export function templatize(input: string): string {
 	return output.join("");
 }
 
-export interface Replacer {
-	name: string;
-	values: (value: string, name?: string) => string;
-	delegates: Replacer[];
-}
-
-const replacers: Replacer[] = [
-	chapters,
-	appendices,
-	keywords,
-	alignments,
-	armor,
-	attributes,
-	planes,
-	spirits,
-	phyla,
-	genera,
-	combatCategories,
-	classes,
-	damageTypes,
-	athleticsFeats,
-	combatFeats,
-	items,
-	materials,
-	races,
-	schools,
-	sizes,
-	skills,
-	spells,
-	statuses,
-	weaponKeywords,
-	weaponTypes,
-	weapons,
-];
-
-const root: Replacer = {
-	name: "root",
-	values: arg => {
-		throw new Error(`No value '${arg}' in root replacer`);
-	},
-	delegates: replacers,
-};
-
-function replace(input: string): string {
+function replace(input: string, replacer: Replacer): string {
 	const result = contentRegex.exec(input);
 
 	if (!result || !result.groups) {
@@ -103,7 +41,7 @@ function replace(input: string): string {
 	const path = result.groups["path"].split(".");
 	const text = result.groups["name"];
 
-	const output = replaceHelper(root, 0, path, text);
+	const output = replaceHelper(replacer, 0, path, text);
 	console.log(`Replaced ${input} with ${output}`);
 	return output;
 }

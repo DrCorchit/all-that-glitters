@@ -1,6 +1,7 @@
 import {Plugin} from "vite";
-import assembleSpells from "../scripts/assembleSpells";
-import {assembleClasses} from "../scripts/assembleClasses";
+import {assembleSpells} from "./assembleSpells";
+import {assembleClasses} from "./assembleClasses";
+import {assembleRaces} from "./assembleRaces";
 
 export function prebuild(): Plugin {
 	return {
@@ -8,8 +9,11 @@ export function prebuild(): Plugin {
 		async configResolved() {
 			console.log("Assembling spells.json...");
 			await assembleSpells();
+			console.log("Assembling races.json");
+			assembleRaces();
 			console.log("Assembling classes.json");
 			assembleClasses();
+
 			console.log("Finished Prebuild.");
 		},
 	};

@@ -1,35 +1,48 @@
 import {templatize} from "./templatizer";
 
-export class Builder {
+export class FileBuilder {
 	imports: string[] = [];
-	properties = new Map<string, string>();
-	constructor() {}
+	members: string[] = [];
 
-	withImport(it: string): Builder {
+	withImport(it: string): FileBuilder {
 		this.imports.push(it);
 		return this;
 	}
 
-	withString(key: string, value?: string): Builder {
+	withMember(it: string): FileBuilder {
+		this.members.push(it);
+		return this;
+	}
+
+	build(): string {
+		return `//Auto-generated file (do not modify)\n${this.imports.join("\n")}\n\n${this.members.join("\n\n")}`;
+	}
+}
+
+export class ObjectBuilder {
+	properties = new Map<string, string>();
+	constructor() {}
+
+	withString(key: string, value?: string): ObjectBuilder {
 		if (value !== undefined) {
 			return this.withValue(key, `"${value}"`);
 		}
 		return this;
 	}
 
-	withTSX(key: string, value?: string): Builder {
+	withTSX(key: string, value?: string): ObjectBuilder {
 		if (value !== undefined) {
-			return this.withValue(key, `<>${value}</>`);
+			return this.withValue(key, `<div className='default'>${value}</div>`);
 		}
 		return this;
 	}
 
-	withStringArray(key: string, value?: string[]): Builder {
+	withStringArray(key: string, value?: string[]): ObjectBuilder {
 		const valueStr = value?.map(val => `"${val}"`)?.join(", ");
 		return this.withValue(key, `[${valueStr}]`);
 	}
 
-	withValue(key: string, value?: string): Builder {
+	withValue(key: string, value?: string): ObjectBuilder {
 		if (value !== undefined) {
 			this.properties.set(key, value);
 		}
@@ -38,11 +51,7 @@ export class Builder {
 
 	build(): string {
 		const propsArray = Array.from(this.properties).map(entry => `  ${entry[0]}: ${entry[1]},`);
-		const propsStr = templatize(propsArray.join("\n"));
-		return `//Auto-generated file (do not modify)
-${this.imports.join("\n")}
-export default {
-${propsStr}
-}`;
+		const props = templatize(propsArray.join("\n"));
+		return `{\n${props}\n}`;
 	}
 }

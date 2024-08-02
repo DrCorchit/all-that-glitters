@@ -129,10 +129,10 @@ function spellCHAFormula(json: SpellJson): number | undefined {
 	}
 }
 
-export default async function assembleSpells(): Promise<void> {
+export async function assembleSpells(): Promise<void> {
 	const spellsJson = await parseSpellsFile();
 	spellsJson.map(spell => initSpell(spell));
 	let output = JSON.stringify(spellsJson);
 	output = templatize(output);
-	writeFileSync("src/generated/spells.json", output);
+	//writeFileSync("src/generated/spells.json", output);
 }
