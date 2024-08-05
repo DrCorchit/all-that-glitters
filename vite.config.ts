@@ -5,4 +5,8 @@ import {prebuild} from "./src/scripts/prebuild";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react(), prebuild()],
+	server: {
+		port: 80,
+		strictPort: true,
+	},
 });
