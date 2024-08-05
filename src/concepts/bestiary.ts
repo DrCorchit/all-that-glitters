@@ -4,6 +4,7 @@ import phylaJson from "../resources/bestiary/phyla.json";
 import generaJson from "../resources/bestiary/genera.json";
 import {Keyword} from "../utils/keyword";
 import Source from "../utils/source";
+import {replacers} from "../utils/replacer";
 
 export interface Plane extends Keyword {}
 
@@ -13,6 +14,8 @@ export const planes = new Source<Plane>(
 	plane => plane.name,
 	(plane, text) => `<Tooltip tip={"${text ?? plane.name}"}>${plane.description}</Tooltip>`
 );
+
+replacers.push(planes);
 
 export interface Spirit extends Keyword {
 	latin: string;
@@ -24,6 +27,8 @@ export const spirits = new Source<Spirit>(
 	spirit => spirit.name,
 	(spirit, text) => `<Tooltip tip={"${text ?? spirit.name}"}>${spirit.description}</Tooltip>`
 );
+
+replacers.push(spirits);
 
 export interface Phylum extends Keyword {
 	namePlural: string;
@@ -40,6 +45,8 @@ export const phyla = new Source<Phylum>(
 	(phylum, text) => `<Tooltip tip={"${text ?? phylum.name}"}>${phylum.description}</Tooltip>`
 );
 
+replacers.push(phyla);
+
 export interface Genus extends Keyword {
 	phylum: Phylum;
 	latin: string;
@@ -54,6 +61,8 @@ export const genera = new Source<Genus>(
 	genus => genus.latin,
 	(genus, text) => `<Tooltip tip={"${text ?? genus.name}"}>${genus.description}</Tooltip>`
 );
+
+replacers.push(genera);
 
 export function lookupGenera(phylum: Phylum): Genus[] {
 	return genera.array.filter(genus => genus.phylum === phylum);

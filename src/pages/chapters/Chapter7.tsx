@@ -1,7 +1,7 @@
 import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import Section from "../../components/Section";
-import {schools, School, Study} from "../../concepts/school";
+import {schools, School, Study} from "../../concepts/magic";
 
 const index = 7;
 const info = chapters.array[index - 1];
@@ -10,12 +10,15 @@ function LearningSpellsSection(): JSX.Element {
 	return (
 		<Section name={info.sections[0]}>
 			<p>
-				In order to learn a spell, a player must usually find a spellbook, scroll, or trainer who has knowledge of that specific spell. These would
-				normally be found in larger towns and cities, or rarely in dungeons or out in the wilderness. Certain spells are so widespread that they are
-				considered common knowledge and can be learned without a tome. Likewise, certain class abilities such as the Witch's eldritch tome or the
-				scholar's codex arcana provide special access to arcane knowledge.
+				In order to learn a spell, a player must usually find a spellbook, scroll, or trainer who has knowledge of that
+				specific spell. These would normally be found in larger towns and cities, or rarely in dungeons or out in the
+				wilderness. Certain spells are so widespread that they are considered common knowledge and can be learned
+				without a tome. Likewise, certain class abilities such as the Witch's eldritch tome or the scholar's codex
+				arcana provide special access to arcane knowledge.
 			</p>
-			<p>Once an appropriate trainer or tome has been located, the player may have to meet certain requirements, such as:</p>
+			<p>
+				Once an appropriate trainer or tome has been located, the player may have to meet certain requirements, such as:
+			</p>
 			<ul>
 				<li>A certain adventurer level</li>
 				<li>A certain level of an attribute</li>
@@ -24,31 +27,34 @@ function LearningSpellsSection(): JSX.Element {
 				<li>A certain number of training slots</li>
 			</ul>
 			<p>
-				Each spell lists its specific requirements in its description. Once all these requirements are met, the player learns the spell. The spell can
-				only be unlearned if the player intentionally forgets it, usually in order to free up training slots.
+				Each spell lists its specific requirements in its description. Once all these requirements are met, the player
+				learns the spell. The spell can only be unlearned if the player intentionally forgets it, usually in order to
+				free up training slots.
 			</p>
 			<h5>Spell Rarities</h5>
 			<p>
-				Some spells are much more commonly used and studied than others. Spells come in four rarities, which determine how difficult it is to acquire
-				knowledge, as well as how others (such as NPCs) would likely react to seeing them used.
+				Some spells are much more commonly used and studied than others. Spells come in four rarities, which determine
+				how difficult it is to acquire knowledge, as well as how others (such as NPCs) would likely react to seeing them
+				used.
 			</p>
 			<ul>
 				<li>
-					<b>Common</b> spells are widely known and often used for very practical applications such as healing or repair. These spells are usually
-					watered-down versions of more powerful spells studied by academic institutions.
+					<b>Common</b> spells are widely known and often used for very practical applications such as healing or
+					repair. These spells are usually watered-down versions of more powerful spells studied by academic
+					institutions.
 				</li>
 				<li>
-					<b>Scholarly</b> spells are studied and taught at a university level. They are generally inaccessible to the population at large, usually
-					due to the high precision and innate talent required to cast correctly.
+					<b>Scholarly</b> spells are studied and taught at a university level. They are generally inaccessible to the
+					population at large, usually due to the high precision and innate talent required to cast correctly.
 				</li>
 				<li>
-					<b>Esoteric</b> spells are not taught by universities, even at a doctoral level. Learning of the existence of such a spell (let alone
-					learning its practice) usually requires supernatural assistance.
+					<b>Esoteric</b> spells are not taught by universities, even at a doctoral level. Learning of the existence of
+					such a spell (let alone learning its practice) usually requires supernatural assistance.
 				</li>
 				<li>
-					<b>Forbidden</b> spells are not taught by universities, even at a doctoral level, for reasons other than legality. Some of these spells have
-					been lost to time, while others are studied in secret by druids or cultists. The easiest way to learn esoteric spells is via supernatural
-					assistance.
+					<b>Forbidden</b> spells are not taught by universities, even at a doctoral level, for reasons other than
+					legality. Some of these spells have been lost to time, while others are studied in secret by druids or
+					cultists. The easiest way to learn esoteric spells is via supernatural assistance.
 				</li>
 			</ul>
 		</Section>
@@ -59,39 +65,44 @@ function CastingSpellsSection(): JSX.Element {
 	return (
 		<Section name={info.sections[1]}>
 			<p>
-				Once a spell has been learned, certain additional requirements must be met in order to cast the spell. These requirements are unique to each
-				spell, and detailed in the spell description. In general, most spells expend AP and require a main hand action to cast. However, some spells
-				require two hands, while others can be cast with the offhand. Spell requirements are often related to how the spell is cast, as follows:
+				Once a spell has been learned, certain additional requirements must be met in order to cast the spell. These
+				requirements are unique to each spell, and detailed in the spell description. In general, most spells expend AP
+				and require a main hand action to cast. However, some spells require two hands, while others can be cast with
+				the offhand. Spell requirements are often related to how the spell is cast, as follows:
 			</p>
 			<ul>
 				<li>
-					<b>Evocation spells</b>: These are spells of the ordinary sort, which are cast quickly and take effect instantaneously. So named because
-					they often initiated by speaking a magical word. Casting the spell incurs a one-time expenditure of AP. Most of these are versatile spells
-					with few material or circumstantial requirements.
-				</li>
-				<li>
-					<b>Concentration Spells</b>: Spells which are cast over a span of time. These spells usually require a burst of AP to initiate the spell and
-					a smaller amount to maintain it. Concentration can be broken if the caster is damaged or distracted.
-				</li>
-				<li>
-					<b>Rituals</b>: Spells that require careful and methodic preparation. These spells are not normally cast during combat, but usually offer a
-					better tradeoff of AP versus power. Rituals often require specific circumstances, such as certain weather conditions, positioning of the
-					moon or stars, or access to a consecrated altar.
-				</li>
-				<li>
-					<b>Ceremonies</b>: Ceremonies are complex rituals that require more magical energy than is available to a single character. During a
-					ceremony, each participant contributes some energy towards the casting of the spell. Like rituals, these spells often have special
+					<b>Evocation spells</b>: These are spells of the ordinary sort, which are cast quickly and take effect
+					instantaneously. So named because they often initiated by speaking a magical word. Casting the spell incurs a
+					one-time expenditure of AP. Most of these are versatile spells with few material or circumstantial
 					requirements.
 				</li>
 				<li>
-					<b>Enchantments</b>: An enchantment is a special type of ritual spell where the magic is infused into a physical object or substance, such
-					as a sword, piece of armor, or an alchemical brew. The enchantment's magic lingers long after the spell is cast.
+					<b>Concentration Spells</b>: Spells which are cast over a span of time. These spells usually require a burst
+					of AP to initiate the spell and a smaller amount to maintain it. Concentration can be broken if the caster is
+					damaged or distracted.
+				</li>
+				<li>
+					<b>Rituals</b>: Spells that require careful and methodic preparation. These spells are not normally cast
+					during combat, but usually offer a better tradeoff of AP versus power. Rituals often require specific
+					circumstances, such as certain weather conditions, positioning of the moon or stars, or access to a
+					consecrated altar.
+				</li>
+				<li>
+					<b>Ceremonies</b>: Ceremonies are complex rituals that require more magical energy than is available to a
+					single character. During a ceremony, each participant contributes some energy towards the casting of the
+					spell. Like rituals, these spells often have special requirements.
+				</li>
+				<li>
+					<b>Enchantments</b>: An enchantment is a special type of ritual spell where the magic is infused into a
+					physical object or substance, such as a sword, piece of armor, or an alchemical brew. The enchantment's magic
+					lingers long after the spell is cast.
 				</li>
 			</ul>
 			<h5>Targeting Spells</h5>
 			<p>
-				Many spells have a range of effectiveness and target a certain area of the battlefield. Every spell has a target, of one of the following
-				types:
+				Many spells have a range of effectiveness and target a certain area of the battlefield. Every spell has a
+				target, of one of the following types:
 			</p>
 			<ul>
 				<li>
@@ -104,16 +115,17 @@ function CastingSpellsSection(): JSX.Element {
 					<b>Range</b>: The spell affects some or all targets of a specific type within a given range.
 				</li>
 				<li>
-					<b>Shape</b>: The spell targets a specific area within range, based on one of the shapes described below. If the range is zero, the shape is
-					targeted on the caster.
+					<b>Shape</b>: The spell targets a specific area within range, based on one of the shapes described below. If
+					the range is zero, the shape is targeted on the caster.
 				</li>
 			</ul>
 			<p>
-				Most spells that target something within a range require line-of-sight to the target. A spell can be cast on a target without line-of-sight
-				only if the description explicitly says so. The caster always has line-of-sight to themselves.
+				Most spells that target something within a range require line-of-sight to the target. A spell can be cast on a
+				target without line-of-sight only if the description explicitly says so. The caster always has line-of-sight to
+				themselves.
 			</p>
 			<p>Spells that target a shape use one of the following shapes:</p>
-			<table className='standard'>
+			<table className='default'>
 				<thead>
 					<tr>
 						<th>Shape</th>
@@ -127,28 +139,31 @@ function CastingSpellsSection(): JSX.Element {
 					</tr>
 					<tr>
 						<td>Cylinder</td>
-						<td>Affects all targets which overlap a vertical cylinder. The cylinder's radius and height are specified by the spell.</td>
+						<td>
+							Affects all targets which overlap a vertical cylinder. The cylinder's radius and height are specified by
+							the spell.
+						</td>
 					</tr>
 					<tr>
 						<td>Cone</td>
 						<td>
-							Affects all targets which overlap a horizontal cone, with the tip at the point of origination. The cone's length is specified by the
-							spell. Its angle defaults to 45 if not specified.
+							Affects all targets which overlap a horizontal cone, with the tip at the point of origination. The cone's
+							length is specified by the spell. Its angle defaults to 45 if not specified.
 						</td>
 					</tr>
 					<tr>
 						<td>Line</td>
 						<td>
-							Affects all targets in the path of the line. The length is specified by the spell. The width defaults to 1 if not otherwise specified.
-							If the spell target is self, then one of the line endpoints ends on the caster's tile. The caster decides if the spell includes their
-							tile or not.
+							Affects all targets in the path of the line. The length is specified by the spell. The width defaults to 1
+							if not otherwise specified. If the spell target is self, then one of the line endpoints ends on the
+							caster's tile. The caster decides if the spell includes their tile or not.
 						</td>
 					</tr>
 					<tr>
 						<td>Cube</td>
 						<td>
-							Affects all targets within a cube. The edge length of the cube is specified by the spell. The cube is centered on the point of
-							origination if not otherwise specified.
+							Affects all targets within a cube. The edge length of the cube is specified by the spell. The cube is
+							centered on the point of origination if not otherwise specified.
 						</td>
 					</tr>
 				</tbody>
@@ -161,25 +176,28 @@ function SchoolsOfSorcerySection(): JSX.Element {
 	return (
 		<Section name={info.sections[2]}>
 			<blockquote>
-				Any sensible treatise on magic will disclose the following insight: <i>magic is energy</i>. Therefore, magic is classified according to whence
-				this energy originates, the techniques used to manipulate it, and finally according to the overall purpose of its application. In fact, all
-				spells follow the same basic pattern, whereby the magus identifies a source of energy, imposes order over chaos, and finally unleashes this
-				directed energy upon the world.
+				Any sensible treatise on magic will disclose the following insight: <i>magic is energy</i>. Therefore, magic is
+				classified according to whence this energy originates, the techniques used to manipulate it, and finally
+				according to the overall purpose of its application. In fact, all spells follow the same basic pattern, whereby
+				the magus identifies a source of energy, imposes order over chaos, and finally unleashes this directed energy
+				upon the world.
 				<p style={{textAlign: "right"}}>
 					— Albrecht Riftenvorg, <i>A Primer on Magic</i>
 				</p>
 			</blockquote>
 			<p>
-				Despite being intensely studied, magic remains an abstruse and opaque subject. Among those who study it, there is no consensus as to why
-				certain individuals wield its power so effortlessly, why certain spells are so difficult to reproduce, and why other spells work at all. This
-				inconvenience doesn't stop scholars from doing the one thing they are truly good at, however: categorizing things.
+				Despite being intensely studied, magic remains an abstruse and opaque subject. Among those who study it, there
+				is no consensus as to why certain individuals wield its power so effortlessly, why certain spells are so
+				difficult to reproduce, and why other spells work at all. This inconvenience doesn't stop scholars from doing
+				the one thing they are truly good at, however: categorizing things.
 			</p>
 			<p>
-				A long time ago, spells were categorized into two types: thaumaturgy and divination. Thaumaturgical disciplines used the suffix -urgy, while
-				divination schools used the suffix -mancy. For example, there was once a distinction between necromancy and necromurgy; the former was
-				concerned with contacting deceased spirits, while the latter with raising their bodies. However, centuries of expanding magical theory as well
-				as a good deal of linguistic bastardization have relegated such distinction to a mere footnote of history. Modern magic is divided into six
-				schools of sorcery, which each have their own disciplines. These are listed below:
+				A long time ago, spells were categorized into two types: thaumaturgy and divination. Thaumaturgical disciplines
+				used the suffix -urgy, while divination schools used the suffix -mancy. For example, there was once a
+				distinction between necromancy and necromurgy; the former was concerned with contacting deceased spirits, while
+				the latter with raising their bodies. However, centuries of expanding magical theory as well as a good deal of
+				linguistic bastardization have relegated such distinction to a mere footnote of history. Modern magic is divided
+				into six schools of sorcery, which each have their own disciplines. These are listed below:
 			</p>
 			{schools.array.map((school, index) => (
 				<SchoolElement school={school} key={index} />

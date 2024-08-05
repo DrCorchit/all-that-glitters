@@ -1,12 +1,12 @@
-import {Link} from "react-router-dom";
 import {normalize} from "../utils/utils";
+import {HashLink} from "react-router-hash-link";
 
 export default function Outline({pathname, sections}: {pathname?: string; sections: string[]}) {
 	const links = sections.map((name, index) => {
-		const hash = normalize(name);
+		const link = `${pathname}#${normalize(name)}`;
 		return (
 			<li key={index}>
-				<Link to={{pathname: pathname, hash: hash}}>{name}</Link>
+				<HashLink to={link}>{name}</HashLink>
 			</li>
 		);
 	});

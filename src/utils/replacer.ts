@@ -1,22 +1,6 @@
-import {appendices} from "../components/AppendixInfo";
-import {chapters} from "../components/ChapterInfo";
-import {keywords} from "./keyword";
-import {alignments} from "../concepts/alignment";
-import {armor} from "../concepts/armor";
-import {attributes} from "../concepts/attribute";
-import {planes, spirits, phyla, genera} from "../concepts/bestiary";
-import {combatCategories} from "../concepts/combatCategory";
-//import {damageTypes} from "../concepts/damageType";
-import {athleticsFeats, combatFeats} from "../concepts/feat";
-import {items} from "../concepts/item";
-import {materials} from "../concepts/material";
-import {schools} from "../concepts/school";
-import {sizes} from "../concepts/size";
-import {skills} from "../concepts/skill";
-// import {spells} from "../concepts/spell";
-// import {statuses} from "../concepts/statusEffect";
-// import {weaponKeywords, weaponTypes, weapons} from "../concepts/weapon";
-// import {classes} from "../generated/combatClass";
+//import {classes} from "../generated/combatClass";
+//import {races} from "../generated/race";
+//import {spells} from "../generated/spell";
 
 export interface Replacer {
 	name: string;
@@ -24,33 +8,7 @@ export interface Replacer {
 	delegates: Replacer[];
 }
 
-const replacers: Replacer[] = [
-	chapters,
-	appendices,
-	keywords,
-	alignments,
-	armor,
-	attributes,
-	planes,
-	spirits,
-	phyla,
-	genera,
-	combatCategories,
-	// classes,
-	// damageTypes,
-	athleticsFeats,
-	combatFeats,
-	items,
-	materials,
-	schools,
-	sizes,
-	skills,
-	// spells,
-	// statuses,
-	// weaponKeywords,
-	// weaponTypes,
-	// weapons,
-];
+export const replacers: Replacer[] = [];
 
 export const root: Replacer = {
 	name: "root",

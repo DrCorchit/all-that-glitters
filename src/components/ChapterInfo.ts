@@ -1,3 +1,4 @@
+import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 
 export interface ChapterInfo {
@@ -42,17 +43,7 @@ export const chapters = new Source<ChapterInfo>(
 		{
 			index: 5,
 			name: "How do I Fight?",
-			sections: [
-				"The Battlefield",
-				"Beginning Combat",
-				"Taking Actions",
-				"Attacking",
-				"Moving",
-				"Grappling",
-				"Defeat",
-				"Damage Types",
-				"Status Effects",
-			],
+			sections: ["The Battlefield", "Beginning Combat", "Taking Actions", "Defeat", "Damage Types", "Status Effects"],
 		},
 		{
 			index: 6,
@@ -82,3 +73,5 @@ export const chapters = new Source<ChapterInfo>(
 		return `<ChapterLink chapter={${item.index}}>${text ?? defaultName}</ChapterLink>`;
 	}
 );
+
+replacers.push(chapters);

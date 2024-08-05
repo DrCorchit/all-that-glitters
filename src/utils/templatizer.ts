@@ -10,7 +10,7 @@ export function templatize(input: string, replacer: Replacer = root): string {
 
 	//This means the input didn't have any {{ }}
 	if (matches.length == 0) {
-		console.log(`Nothing to replace in input: [${matches}]`);
+		//console.log(`Nothing to replace in input: [${input}]`);
 		return input;
 	}
 
@@ -42,7 +42,7 @@ function replace(input: string, replacer: Replacer): string {
 	const text = result.groups["name"];
 
 	const output = replaceHelper(replacer, 0, path, text);
-	console.log(`Replaced ${input} with ${output}`);
+	//console.log(`Replaced ${input} with ${output}`);
 	return output;
 }
 

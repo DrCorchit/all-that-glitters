@@ -1,6 +1,7 @@
 import weaponKeywordsJson from "../resources/combat/weapon_keywords.json";
 import weaponsJson from "../resources/combat/weapons.json";
 import {Keyword} from "../utils/keyword";
+import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 import {normalize} from "../utils/utils";
 import {Damage} from "./damage";
@@ -14,6 +15,8 @@ export const weaponKeywords = new Source<WeaponKeyword>(
 	keyword => keyword.name,
 	(keyword, text) => `<Tooltip tip={"${text ?? keyword.name}"}>${keyword.description}</Tooltip>`
 );
+
+replacers.push(weaponKeywords);
 
 interface WeaponJson {
 	name: string;
@@ -65,9 +68,13 @@ export const weaponTypes = new Source<WeaponType>(
 	(type, text) => `<Tooltip tip={"${text ?? type.name}"}>${type.description}</Tooltip>`
 );
 
+replacers.push(weaponTypes);
+
 export const weapons = new Source<Weapon>(
 	"Weapons",
 	weaponTypes.array.flatMap(type => type.weaponsArray),
 	weapon => weapon.name,
 	(weapon, text) => `<Tooltip tip={"${text ?? weapon.name}"}>${weapon.description}</Tooltip>`
 );
+
+replacers.push(weapons);

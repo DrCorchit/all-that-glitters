@@ -1,3 +1,4 @@
+import {replacers} from "./replacer";
 import Source from "./source";
 
 export interface Keyword {
@@ -93,3 +94,5 @@ export const keywords = new Source<Keyword>(
 	keyword => keyword.abbr ?? keyword.name,
 	keyword => keyword.name
 );
+
+replacers.push(keywords);

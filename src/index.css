@@ -120,21 +120,21 @@ a:hover {
 	color: #fff;
 }
 
-table.standard {
+table.default {
 	border-collapse: collapse;
 	width: 100%;
 	margin: 10px 0 10px 0;
 }
-table.standard tr:nth-child(even) {
+table.default tr:nth-child(even) {
 	background-color: #30302c;
 }
-table.standard tr:nth-child(odd) {
+table.default tr:nth-child(odd) {
 	background-color: #151515;
 }
-table.standard tr:hover {
+table.default tr:hover {
 	background-color: #664;
 }
-table.standard th {
+table.default th {
 	font-family: "Calibri";
 	color: #aa8;
 	font-size: 14pt;
@@ -143,7 +143,7 @@ table.standard th {
 	text-align: center;
 	background-color: #303033;
 }
-table.standard td {
+table.default td {
 	font-family: "Calibri";
 	color: #ccc;
 	font-size: 10pt;

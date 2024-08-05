@@ -42,9 +42,9 @@ export class ObjectBuilder {
 		return this.withValue(key, `[${valueStr}]`);
 	}
 
-	withValue(key: string, value?: string): ObjectBuilder {
+	withValue(key: string, value?: string | number): ObjectBuilder {
 		if (value !== undefined) {
-			this.properties.set(key, value);
+			this.properties.set(key, value.toString());
 		}
 		return this;
 	}

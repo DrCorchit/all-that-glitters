@@ -85,7 +85,7 @@ function buildClassesFile() {
 	"Classes",
 	allClasses,
 	clazz => clazz.name,
-	(item, text) => \`<InternalLink chapter={2}>\${text ?? item.name}</InternalLink>\`
+	(item, text) => \`<ChapterLink chapter={2} target={item.name}>\${text ?? item.name}</InternalLink>\`
 );`);
 
 	return builder.build();

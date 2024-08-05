@@ -1,9 +1,9 @@
-import {createReadStream, writeFileSync} from "fs";
-import {rarities, SpellJson} from "../concepts/spell";
+import fs, {createReadStream} from "fs";
 import rd from "readline";
-import {templatize} from "../utils/templatizer";
-import {studies} from "../concepts/school";
 import {once} from "node:events";
+import {FileBuilder, ObjectBuilder} from "../utils/tsxBuilder";
+import {rarities, SpellJson, studies} from "../concepts/magic";
+import {normalize} from "../utils/utils";
 
 const studyRegex = /^\s*(?<study>\w+)\s*$/;
 const spellsRegex = /^\s*(?<level>\d+)\|(?<name>.*?)\|(?<info>.*?)\|(?<description>.*?)$/;
@@ -18,7 +18,7 @@ async function parseSpellsFile(): Promise<SpellJson[]> {
 		const temp = line.match(studyRegex);
 		if (temp) {
 			study = temp[0];
-			console.log("Study --> " + study);
+			//console.log("Study --> " + study);
 		} else if (study) {
 			spells.push(parseSpell(line, study));
 		} else {
@@ -129,10 +129,80 @@ function spellCHAFormula(json: SpellJson): number | undefined {
 	}
 }
 
-export async function assembleSpells(): Promise<void> {
-	const spellsJson = await parseSpellsFile();
-	spellsJson.map(spell => initSpell(spell));
-	let output = JSON.stringify(spellsJson);
-	output = templatize(output);
-	//writeFileSync("src/generated/spells.json", output);
+function buildSpellObject(json: SpellJson): string {
+	const builder = new ObjectBuilder();
+	builder.withString("name", json.name);
+	builder.withTSX("description", json.description);
+	builder.withValue("level", json.level);
+	builder.withString("rarity", json.rarity);
+	builder.withString("type", json.type);
+	builder.withString("study", json.study);
+
+	const trainReqs = new ObjectBuilder();
+	trainReqs.withValue("level", json.trainingReqs.level);
+	trainReqs.withValue("slots", json.trainingReqs.slots);
+	trainReqs.withValue("gold", json.trainingReqs.gold);
+	trainReqs.withValue("INT", json.trainingReqs.INT);
+	trainReqs.withValue("NST", json.trainingReqs.NST);
+	trainReqs.withValue("CHA", json.trainingReqs.CHA);
+	builder.withValue("trainingReqs", trainReqs.build());
+
+	const castReqs = new ObjectBuilder();
+	castReqs.withString("time", json.castingReqs.time);
+	castReqs.withValue("evocation", json.castingReqs.evocation);
+	castReqs.withValue("concentration", json.castingReqs.concentration);
+	builder.withValue("castingReqs", castReqs.build());
+
+	return builder.build();
+}
+
+async function buildSpellsFile() {
+	const json = await parseSpellsFile();
+
+	const spellObjects = json.map(obj => {
+		const name = normalize(obj.name);
+		const tsx = buildSpellObject(initSpell(obj));
+		return [name, tsx];
+	});
+
+	const builder = new FileBuilder();
+	builder.withImport('import Sub from "../components/Sub";');
+	builder.withImport('import Tooltip from "../components/Tooltip";');
+	builder.withImport('import Source from "../utils/source";');
+	builder.withImport('import {AppendixLink, ChapterLink} from "../components/InternalLink";');
+	builder.withImport('import {Spell} from "../concepts/magic";');
+
+	spellObjects.forEach(info => {
+		const [name, tsx] = info;
+		builder.withMember(`export const ${name} = new Spell(${tsx});`);
+	});
+	const array = spellObjects.map(info => info[0]).join(", ");
+
+	builder.withMember(`const allSpells: Spell[] = [${array}]`);
+
+	builder.withMember(`export const spells = new Source<Spell>(
+	"Spells",
+	allSpells,
+	spell => spell.name,
+	(item, text) => \`<AppendixLink appendix={1} target={item.name}>\${text ?? item.name}</InternalLink>\`
+);`);
+
+	builder.withMember(`export function lookupSpellsByStudy(study: Study): Spell[] {
+	return spells.array.filter(spell => {
+		return spell.study === study;
+	});
+}`);
+
+	builder.withMember(`export function lookupSpellsBySchool(school: School): Spell[] {
+	return spells.array.filter(spell => {
+		return school.studies.includes(spell.study);
+	});
+}
+`);
+
+	return builder.build();
+}
+
+export async function assembleSpells() {
+	fs.writeFileSync("src/generated/spell.tsx", await buildSpellsFile());
 }

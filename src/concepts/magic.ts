@@ -1,13 +1,13 @@
 import rarityJson from "../resources/magic/rarity.json";
-import spellsJson from "../resources/magic/spells.json";
+import schoolsJson from "../resources/magic/schools.json";
 import {Keyword} from "../utils/keyword";
 import Source from "../utils/source";
 import {normalize, toOrdinal} from "../utils/utils";
-import {School, studies, Study} from "./school";
+import {Attribute, attributes} from "./attribute";
+import {Skill, skills} from "./skill";
 
-export interface SpellJson {
+interface SpellInfo {
 	name: string;
-	description: string;
 	level: number;
 	rarity: string;
 	type: string;
@@ -25,6 +25,14 @@ export interface SpellJson {
 		evocation: number;
 		concentration?: number;
 	};
+}
+
+export interface SpellJson extends SpellInfo {
+	description: string;
+}
+
+export interface SpellTSX extends SpellInfo {
+	description: JSX.Element;
 }
 
 export interface Rarity extends Keyword {
@@ -57,9 +65,52 @@ export interface CastingReqs {
 	concentration: number;
 }
 
-export class Spell {
+export class Study implements Keyword {
 	name: string;
 	description: string;
+	schoolName: string;
+	adjective: string;
+
+	constructor(name: string, description: string, schoolName: string, adjective: string) {
+		this.name = name;
+		this.description = description;
+		(this.schoolName = schoolName), (this.adjective = adjective);
+	}
+
+	school(): School {
+		return schools.lookup(this.schoolName);
+	}
+}
+
+export interface School extends Keyword {
+	attr: Attribute;
+	skill: Skill;
+	studies: Study[];
+}
+
+export const schools = new Source<School>(
+	"Schools",
+	schoolsJson.map(json => ({
+		name: json.name,
+		description: json.description,
+		attr: attributes.lookup(json.attr),
+		skill: skills.lookup(json.skill),
+		studies: json.studies.map(study => new Study(study.name, study.description, json.name, study.adjective)),
+	})),
+	school => school.name,
+	(school, text) => `<Tooltip tip={"${text ?? school.name}"}>${school.description}</Tooltip>`
+);
+
+export const studies = new Source<Study>(
+	"Studies",
+	schools.array.flatMap(school => school.studies),
+	study => study.name,
+	(study, text) => `<Tooltip tip={"${text ?? study.name}"}>${study.description}</Tooltip>`
+);
+
+export class Spell {
+	name: string;
+	description: JSX.Element;
 	level: number;
 	rarity: Rarity;
 	type: Type;
@@ -70,7 +121,7 @@ export class Spell {
 	id: string;
 	blurb: string;
 
-	constructor(json: SpellJson) {
+	constructor(json: SpellTSX) {
 		this.name = json.name;
 		this.description = json.description;
 		this.level = json.level;
@@ -126,26 +177,4 @@ function getBase(spell: Spell): string {
 
 function getSuffix(spell: Spell): string {
 	return spell.type === "Evocation" || spell.type === "Concentration" ? "spell" : "";
-}
-
-//function spellAttrReqFormula(json: SpellJson) {	return 10 + json.level; }
-
-export const spells = new Source<Spell>(
-	"Spells",
-	spellsJson.map(json => new Spell(json)),
-	spell => spell.name,
-
-	(spell, text) => `<AppendixLink appendix={1} target="${spell.id}">${text ?? spell.name}</AppendixLink>`
-);
-
-export function lookupSpellsByStudy(study: Study): Spell[] {
-	return spells.array.filter(spell => {
-		return spell.study === study;
-	});
-}
-
-export function lookupSpellsBySchool(school: School): Spell[] {
-	return spells.array.filter(spell => {
-		return school.studies.includes(spell.study);
-	});
 }

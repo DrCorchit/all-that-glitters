@@ -12,9 +12,17 @@ export function TableBody({data}: {data: string[][]}): JSX.Element {
 	);
 }
 
-export function Table<T>({headers, data, mapper}: {headers: string[]; data: T[]; mapper: (item: T) => string[]}): JSX.Element {
+export function Table<T>({
+	headers,
+	data,
+	mapper,
+}: {
+	headers: string[];
+	data: T[];
+	mapper: (item: T) => string[];
+}): JSX.Element {
 	return (
-		<table className='standard'>
+		<table className='default'>
 			{headers.length > 0 && (
 				<thead>
 					<tr>

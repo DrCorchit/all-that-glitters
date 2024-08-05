@@ -11,8 +11,8 @@ const info = chapters.array[index - 1];
 function Intro(): JSX.Element {
 	return (
 		<p>
-			Outside of combat, most events are fairly open-ended and subject to DM discretion. However, certain actions do have predefined rules, for
-			consistency and balance. These are listed below:
+			Outside of combat, most events are fairly open-ended and subject to DM discretion. However, certain actions do
+			have predefined rules, for consistency and balance. These are listed below:
 		</p>
 	);
 }
@@ -21,25 +21,29 @@ function RestingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[0]}>
 			<p>
-				Over time, your characters become ragged and weary as they take damage and expend AP during combat. Although some HP and AP can be recovered
-				with potions or abilities, most recovery is done through resting. There are three kinds of rests:
+				Over time, your characters become ragged and weary as they take damage and expend AP during combat. Although
+				some HP and AP can be recovered with potions or abilities, most recovery is done through resting. There are
+				three kinds of rests:
 			</p>
 			<ul>
 				<li>
-					<b>Holiday</b>: The party spends several nights in or around a town, resting and relaxing or drinking and carousing as they will. All HP and
-					AP are restored, and all status conditions are recovered. Holiday costs 10 gold per adventurer per night, and grants 1d6 temporary HP and
-					1d4 temporary WP. Players can reroll these dice up to three times by taking additional days on holiday.
+					<b>Holiday</b>: The party spends several nights in or around a town, resting and relaxing or drinking and
+					carousing as they will. All HP and AP are restored, and all status conditions are recovered. Holiday costs 10
+					gold per adventurer per night, and grants 1d6 temporary HP and 1d4 temporary WP. Players can reroll these dice
+					up to three times by taking additional days on holiday.
 				</li>
 				<li>
-					<b>Night's Rest</b>: All HP and AP are restored. The entire party makes camp and sleeps for 8 hours, completing the adventuring day. If in
-					the wilderness, this typically involves setting up camp, building a fire, cooking dinner, and so forth. In villages and towns, it usually
-					involves a night at an inn. Taking a long rest consumes a day's rations, or 5 gold when resting at an inn. It's not possible to long rest
-					inside certain areas, such as a fortress controlled by the enemy or a hostile wilderness or dungeon.
+					<b>Night's Rest</b>: All HP and AP are restored. The entire party makes camp and sleeps for 8 hours,
+					completing the adventuring day. If in the wilderness, this typically involves setting up camp, building a
+					fire, cooking dinner, and so forth. In villages and towns, it usually involves a night at an inn. Taking a
+					long rest consumes a day's rations, or 5 gold when resting at an inn. It's not possible to long rest inside
+					certain areas, such as a fortress controlled by the enemy or a hostile wilderness or dungeon.
 				</li>
 				<li>
-					<b>Breather</b>: The party sits down for an hour or so to dress their wounds and catch their breath. Each player recovers 1d8 HP and 1d4 AP.
-					The party can take at most two breathers per day, possibly back to back. This amount increases at higher levels, as follows:
-					<table className='standard'>
+					<b>Breather</b>: The party sits down for an hour or so to dress their wounds and catch their breath. Each
+					player recovers 1d8 HP and 1d4 AP. The party can take at most two breathers per day, possibly back to back.
+					This amount increases at higher levels, as follows:
+					<table className='default'>
 						<thead>
 							<tr>
 								<th>Level</th>
@@ -85,42 +89,49 @@ function WorkingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[1]}>
 			<p>
-				At times, players may decide to earn money by plying various trades. Each trade pays a certain amount on a daily basis, sometimes dependent on
-				one or more skill checks. However, adventurers are not particularly fond of regular work, and therefore rarely take such jobs for more than a
-				month. One the occasions where they do take such jobs, the pay is as follows:
+				At times, players may decide to earn money by plying various trades. Each trade pays a certain amount on a daily
+				basis, sometimes dependent on one or more skill checks. However, adventurers are not particularly fond of
+				regular work, and therefore rarely take such jobs for more than a month. One the occasions where they do take
+				such jobs, the pay is as follows:
 			</p>
 			<ul>
 				<li>
-					<b>Farming &amp; Manual Labor</b>: Pay is low, but honest. A player who engages in this sort of activity earns 3 gold per day.
+					<b>Farming &amp; Manual Labor</b>: Pay is low, but honest. A player who engages in this sort of activity earns
+					3 gold per day.
 				</li>
 				<li>
-					<b>Guarding</b>: Offers higher pay than other unskilled jobs at 5 gold per day. If the players are directly attacked while guarding, they
-					roll for <Sub skill='defense' /> to handle the situation. If not, the DM may have the players roll for <Sub skill='perception' />. If the
-					players fail to observe a crime that was committed, they may be docked a day's pay or dismissed from guard duty. Players should roll for
-					these events roughly once for every week of guard duty.
+					<b>Guarding</b>: Offers higher pay than other unskilled jobs at 5 gold per day. If the players are directly
+					attacked while guarding, they roll for <Sub skill='defense' /> to handle the situation. If not, the DM may
+					have the players roll for <Sub skill='perception' />. If the players fail to observe a crime that was
+					committed, they may be docked a day's pay or dismissed from guard duty. Players should roll for these events
+					roughly once for every week of guard duty.
 				</li>
 				<li>
-					<b>Performing</b>: At most one player can take this job per tavern per night. The base pay depends on the player's
-					<Sub skill='performance' /> roll: Below 16: 1 gold. At or above 16: 1d10 gold. On a critical success, the player earns 1d20 gold. If the
-					player has master level performance, the roll is made with advantage. If performing for more than a few nights, the player can take the
-					average of three nights as their daily pay.
+					<b>Performing</b>: At most one player can take this job per tavern per night. The base pay depends on the
+					player's
+					<Sub skill='performance' /> roll: Below 16: 1 gold. At or above 16: 1d10 gold. On a critical success, the
+					player earns 1d20 gold. If the player has master level performance, the roll is made with advantage. If
+					performing for more than a few nights, the player can take the average of three nights as their daily pay.
 				</li>
 				<li>
-					<b>Hunting &amp; Fishing</b>: Player engaged in this activity make a DT 15 <Sub skill='survival' /> check. On a success, they acquire enough
-					fish, fowl, or game to feed themselves and one other player for one night. On a critical success, they feed the entire party. If near a
-					town, the quarry can instead be sold for 10 or 20 gold, respectively. If attempted in an inhospitable environment, the DM may impose
-					disadvantage or forbid hunting altogether.
+					<b>Hunting &amp; Fishing</b>: Player engaged in this activity make a DT 15 <Sub skill='survival' /> check. On
+					a success, they acquire enough fish, fowl, or game to feed themselves and one other player for one night. On a
+					critical success, they feed the entire party. If near a town, the quarry can instead be sold for 10 or 20
+					gold, respectively. If attempted in an inhospitable environment, the DM may impose disadvantage or forbid
+					hunting altogether.
 				</li>
 				<li>
-					<b>Transcribing</b>: If there is an employer hiring for this type of work, the player may be able to take employment as a scribe. The player
-					must be at least proficient in literacy and also pass a DT 15 <Sub skill='literacy' />
-					check to convince the employer that they are suitable for this type of work. If successful, they may work as a scribe for some time,
-					transcribing dictations, copying manuscripts, and the like. Pay is 5 gold per day.
+					<b>Transcribing</b>: If there is an employer hiring for this type of work, the player may be able to take
+					employment as a scribe. The player must be at least proficient in literacy and also pass a DT 15{" "}
+					<Sub skill='literacy' />
+					check to convince the employer that they are suitable for this type of work. If successful, they may work as a
+					scribe for some time, transcribing dictations, copying manuscripts, and the like. Pay is 5 gold per day.
 				</li>
 				<li>
-					<b>Healing</b>: The base pay depends on a <Sub skill='medicine' /> check. On a critical fail, the player earns no money and cannot continue
-					to practice medicine. Below 12, and the pay is 1 gold. 12 or above, and the pay is 1d8. On a critical success, pay is 1d20. If healing for
-					more than a few days, the player can take the average of three days as their daily pay.
+					<b>Healing</b>: The base pay depends on a <Sub skill='medicine' /> check. On a critical fail, the player earns
+					no money and cannot continue to practice medicine. Below 12, and the pay is 1 gold. 12 or above, and the pay
+					is 1d8. On a critical success, pay is 1d20. If healing for more than a few days, the player can take the
+					average of three days as their daily pay.
 				</li>
 			</ul>
 		</Section>
@@ -131,24 +142,25 @@ function TravelingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[2]}>
 			<p>
-				When traveling long distance overland, there are a number of concerns: travel time, food, water, bandits, weather, and road quality. Of these,
-				food and bandits are the most troublesome.
+				When traveling long distance overland, there are a number of concerns: travel time, food, water, bandits,
+				weather, and road quality. Of these, food and bandits are the most troublesome.
 			</p>
 			<h5>Travel Time</h5>
 			<p>
-				The amount of distance covered per day depends greatly on the physical fitness of the traveler, trail and weather conditions, and other
-				factors such as mounts. A character's long distance hiking speed over even terrain is equal to half their speed score in feet per seconds. For
-				a character with a speed score of 10, this is about 3.4 miles per hour. Players can travel at this speed for around 8 hours per day.
+				The amount of distance covered per day depends greatly on the physical fitness of the traveler, trail and
+				weather conditions, and other factors such as mounts. A character's long distance hiking speed over even terrain
+				is equal to half their speed score in feet per seconds. For a character with a speed score of 10, this is about
+				3.4 miles per hour. Players can travel at this speed for around 8 hours per day.
 			</p>
 			<p>
-				25-30 miles is a reasonable distance for a party to cover per day, provided they follow established roads. When travelling over rough terrain
-				(such as mountains or dense forests), this distance is halved.
+				25-30 miles is a reasonable distance for a party to cover per day, provided they follow established roads. When
+				travelling over rough terrain (such as mountains or dense forests), this distance is halved.
 			</p>
 			<h5>Food</h5>
 			<p>
-				The basic unit of food is the day's ration. Rations are presumed to consist of nonperishable supplies such as salted meat, pickled vegetables,
-				or hardtack. Each adventurer consumes one ration per day. When rations run out, the party is either forced to hunt, which halves travel speed,
-				or begins starvation.
+				The basic unit of food is the day's ration. Rations are presumed to consist of nonperishable supplies such as
+				salted meat, pickled vegetables, or hardtack. Each adventurer consumes one ration per day. When rations run out,
+				the party is either forced to hunt, which halves travel speed, or begins starvation.
 			</p>
 			<p>Starvation has the following effects:</p>
 			<ul>
@@ -156,26 +168,27 @@ function TravelingSection(): JSX.Element {
 				<li>After day 5, the effect of a long rest is reduced to that of a short rest.</li>
 				<li>After day 10, the party can no longer take rests. Skill checks are made with disadvantage.</li>
 				<li>
-					Starting on the 14th day, all attributes except speed are reduced by 1 each day. When strength reaches zero, the character perishes of
-					hunger.
+					Starting on the 14th day, all attributes except speed are reduced by 1 each day. When strength reaches zero,
+					the character perishes of hunger.
 				</li>
 			</ul>
 			<p>
-				The effects of starvation linger even after consuming rations. In the wilderness, characters recover 1 day of hunger every day they consume
-				rations. In villages and towns, 3 days of hunger are recovered per day. It takes a bit more than one week to fully recover from the brink of
-				starvation.
+				The effects of starvation linger even after consuming rations. In the wilderness, characters recover 1 day of
+				hunger every day they consume rations. In villages and towns, 3 days of hunger are recovered per day. It takes a
+				bit more than one week to fully recover from the brink of starvation.
 			</p>
 			<h5>Bandits</h5>
 			<p>
-				Bandits usually set up ambushes along minor trade routes and between cities, but shy away from the cities themselves and heavily travelled
-				routes. Similarly, pirates roam the seas usually along trade routes. Naturally, all forms of banditry increase during wartime. Bandits and
-				pirates behave differently depending on their class. Yokels and simpleton bandits usually kill their prey outright and loot their pockets.
-				Professional bandits usually investigate their victims and attempt to discern if there is any chance of ransom. Pirates tend to sell their
-				victims as slaves in foreign markets, while privateers tend to seek ransom.
+				Bandits usually set up ambushes along minor trade routes and between cities, but shy away from the cities
+				themselves and heavily travelled routes. Similarly, pirates roam the seas usually along trade routes. Naturally,
+				all forms of banditry increase during wartime. Bandits and pirates behave differently depending on their class.
+				Yokels and simpleton bandits usually kill their prey outright and loot their pockets. Professional bandits
+				usually investigate their victims and attempt to discern if there is any chance of ransom. Pirates tend to sell
+				their victims as slaves in foreign markets, while privateers tend to seek ransom.
 			</p>
 			<p>
-				There are no hard and fast rules for bandit encounters, but a rough understanding of their methods and techniques lends historical accuracy to
-				the campaign.
+				There are no hard and fast rules for bandit encounters, but a rough understanding of their methods and
+				techniques lends historical accuracy to the campaign.
 			</p>
 		</Section>
 	);
@@ -185,34 +198,45 @@ function RidingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[3]}>
 			<p>
-				There are two types of mounts: normal and huge. Normal mounts such as horses and camels generally carry one rider or a lightly loaded cart,
-				and allow their rider to engage in melee combat. Huge mounts such as elephants can carry more riders and pull more weight, but render melee
-				combat impossible. The following rules apply to both types of mounts, unless otherwise stated.
+				There are two types of mounts: normal and huge. Normal mounts such as horses and camels generally carry one
+				rider or a lightly loaded cart, and allow their rider to engage in melee combat. Huge mounts such as elephants
+				can carry more riders and pull more weight, but render melee combat impossible. The following rules apply to
+				both types of mounts, unless otherwise stated.
 			</p>
 			<h5>Mounted Combat</h5>
 			<p>
-				During mounted combat, rider and mount have separate HP and willpower pools, and are targeted separately. The rider and mount share an
-				initiative score and move and act together, but the mount does not take actions. Riders and mounts gain certain bonuses while moving. For
-				these purposes, a mount is considered to be moving if it has moved in its previous or current turn.
+				During mounted combat, rider and mount have separate HP and willpower pools, and are targeted separately. The
+				rider and mount share an initiative score and move and act together, but the mount does not take actions. Riders
+				and mounts gain certain bonuses while moving. For these purposes, a mount is considered to be moving if it has
+				moved in its previous or current turn.
 			</p>
 			<p>A number of special rules apply to mounted combat:</p>
 			<ul>
 				<li>Neither riders nor mounts incur opportunity attacks.</li>
 				<li>Riders have disadvantage on ranged attacks while moving. The "keshik" feat removes this penalty.</li>
 				<li>Riders of huge mounts cannot make melee attacks, and cannot be melee attacked.</li>
-				<li>Melee attacks against riders have disadvantage. If the mount is moving, melee attacks against it also have disadvantage.</li>
-				<li>Attackers with polearms do not suffer disadvantage when attacking riders or mounts, and can make opportunity attacks against mounts.</li>
+				<li>
+					Melee attacks against riders have disadvantage. If the mount is moving, melee attacks against it also have
+					disadvantage.
+				</li>
+				<li>
+					Attackers with polearms do not suffer disadvantage when attacking riders or mounts, and can make opportunity
+					attacks against mounts.
+				</li>
 				<li>The hitpoints of a mount are equal to twice its strength score.</li>
 			</ul>
 			<h5>Pace and Speed</h5>
 			<p>
-				When riding a mount, a player's movement speed is replaced with the speed of their mount. Mounts travel at one of four paces: walk, trot,
-				canter, or gallop. At a walking pace, a mount's speed (in tiles per turn) is one quarter of its <Sub attr='SPD' /> attribute. For a typical
-				riding horse, this is around 4 miles per hour. A mount can walk comfortably for up to eight hours without suffering from exhaustion, even
-				while carrying a rider or pulling a cart (over level terrain). This is the ideal pace for long distances, but unremarkable for combat.
+				When riding a mount, a player's movement speed is replaced with the speed of their mount. Mounts travel at one
+				of four paces: walk, trot, canter, or gallop. At a walking pace, a mount's speed (in tiles per turn) is one
+				quarter of its <Sub attr='SPD' /> attribute. For a typical riding horse, this is around 4 miles per hour. A
+				mount can walk comfortably for up to eight hours without suffering from exhaustion, even while carrying a rider
+				or pulling a cart (over level terrain). This is the ideal pace for long distances, but unremarkable for combat.
 			</p>
-			<p>A mount (not the rider) can expend 1 willpower to increase its pace, doubling its movement speed each level.</p>
-			<table className='standard'>
+			<p>
+				A mount (not the rider) can expend 1 willpower to increase its pace, doubling its movement speed each level.
+			</p>
+			<table className='default'>
 				<thead>
 					<tr>
 						<th>Pace</th>
@@ -257,31 +281,33 @@ function RidingSection(): JSX.Element {
 				</tbody>
 			</table>
 			<p>
-				These speeds apply to mounts which are carrying a single rider or a cart with a light load. When an unladen and unmounted animal moves, it
-				expends half as much willpower when trotting or galloping. Conversely, a mount carrying two riders or a heavy load must expend twice as much
-				willpower in order to trot, and cannot canter or gallop.
+				These speeds apply to mounts which are carrying a single rider or a cart with a light load. When an unladen and
+				unmounted animal moves, it expends half as much willpower when trotting or galloping. Conversely, a mount
+				carrying two riders or a heavy load must expend twice as much willpower in order to trot, and cannot canter or
+				gallop.
 			</p>
 			<h5>Additional Rules</h5>
 			<ul>
 				<li>
-					A player can mount a rideable feral animal by passing a DT 18 <Sub skill='nature' /> check. Failing the check, the rider must make a DT 12{" "}
-					<Sub attr='STR' /> saving throw or be thrown off. The rider can continue to make checks until they succeed or are thrown off.
+					A player can mount a rideable feral animal by passing a DT 18 <Sub skill='nature' /> check. Failing the check,
+					the rider must make a DT 12 <Sub attr='STR' /> saving throw or be thrown off. The rider can continue to make
+					checks until they succeed or are thrown off.
 				</li>
 				<li>
-					When a mount dies, the rider is thrown from its back and must make a DT 16 <Sub skill='mobility' /> check or else fall prone and lose all
-					actions on their next turn.
+					When a mount dies, the rider is thrown from its back and must make a DT 16 <Sub skill='mobility' /> check or
+					else fall prone and lose all actions on their next turn.
 				</li>
 				<li>
-					Mounts can have levels, which affect their max HP and recovery during breathers. A mount's level is determined by the DM, and can increase
-					alongside that of its rider.
+					Mounts can have levels, which affect their max HP and recovery during breathers. A mount's level is determined
+					by the DM, and can increase alongside that of its rider.
 				</li>
 				<li>
-					A mount can pull weight equal to its deadlift weight as determined by its strength score. A mount can pull up to twice this weight as a
-					heavy load.
+					A mount can pull weight equal to its deadlift weight as determined by its strength score. A mount can pull up
+					to twice this weight as a heavy load.
 				</li>
 				<li>
-					The storyteller may adapt any of these rules to accommodate fantasy mounts such as dragons or pegasi. Such adaptations should be made known
-					to players in advance to avoid confusion.
+					The storyteller may adapt any of these rules to accommodate fantasy mounts such as dragons or pegasi. Such
+					adaptations should be made known to players in advance to avoid confusion.
 				</li>
 			</ul>
 		</Section>
@@ -292,14 +318,15 @@ function SwimmingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[4]}>
 			<p>
-				Whether above or under the water, movement speed is reduced by one half when swimming. A character with a speed score of 10 that normally
-				moves at 5 ft/s would swim at 2.5 ft/s. It's possible to train swimming speed (Athletics Training: Freestyle), to bring swimming up to walking
-				speed.
+				Whether above or under the water, movement speed is reduced by one half when swimming. A character with a speed
+				score of 10 that normally moves at 5 ft/s would swim at 2.5 ft/s. It's possible to train swimming speed
+				(Athletics Training: Freestyle), to bring swimming up to walking speed.
 			</p>
 			<p>
-				Underwater, players can normally hold their breath for 10 seconds per point invested in the strength attribute, after which point they must
-				pass a DT 10 willpower saving throw every ten seconds to avoid drowning. As with swimming speed, this can be improved with training (Athletics
-				Training: Lung Capacity). The same rules apply when holding one's breath for other reasons, such as trying to avoid inhaling toxic fumes.
+				Underwater, players can normally hold their breath for 10 seconds per point invested in the strength attribute,
+				after which point they must pass a DT 10 willpower saving throw every ten seconds to avoid drowning. As with
+				swimming speed, this can be improved with training (Athletics Training: Lung Capacity). The same rules apply
+				when holding one's breath for other reasons, such as trying to avoid inhaling toxic fumes.
 			</p>
 		</Section>
 	);
@@ -309,15 +336,17 @@ function FallingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[5]}>
 			<p>
-				When making a standing jump, players can jump a number of feet equal to one half their speed score. If the player makes a running jump (or
-				takes the move action prior to jumping while in combat), jump distance is equal to their speed score in feet. Jump height is always one half
-				of standing jump distance. Both jump distance and jump height can be increased by athletics training.
+				When making a standing jump, players can jump a number of feet equal to one half their speed score. If the
+				player makes a running jump (or takes the move action prior to jumping while in combat), jump distance is equal
+				to their speed score in feet. Jump height is always one half of standing jump distance. Both jump distance and
+				jump height can be increased by athletics training.
 			</p>
 			<p>
-				Damage from falling is determined by impact velocity, or how fast a character is moving when they hit the ground. When airborn, characters
-				accelerate downward at roughly 30 feet per second per second, until they reach a maximal velocity due to air resistance. This means that fall
-				damage increases the higher they fall until it reaches a maximum value.{" "}
-				<ChapterLink chapter={2} section={2}>
+				Damage from falling is determined by impact velocity, or how fast a character is moving when they hit the
+				ground. When airborn, characters accelerate downward at roughly 30 feet per second per second, until they reach
+				a maximal velocity due to air resistance. This means that fall damage increases the higher they fall until it
+				reaches a maximum value.{" "}
+				<ChapterLink chapter={2} target='size'>
 					Larger characters
 				</ChapterLink>{" "}
 				have a higher terminal velocity and therefore have a higher maximal fall damage.
@@ -327,18 +356,19 @@ function FallingSection(): JSX.Element {
 				<li>Fall damage type is always bludgeoning.</li>
 				<li>Characters can take fall damage from sources other than falling, such as being hurled into a wall.</li>
 				<li>
-					Characters can choose to fall up to twice their terminal velocity by tucking in their limbs and maneuvering into a headfirst position, if so
-					desired.
+					Characters can choose to fall up to twice their terminal velocity by tucking in their limbs and maneuvering
+					into a headfirst position, if so desired.
 				</li>
 				<li>
-					Characters can take more damage than their terminal velocity if they are moving faster when they hit the ground. Characters in the air
-					accelerate or decelerate as necessary until they reach their terminal velocity.
+					Characters can take more damage than their terminal velocity if they are moving faster when they hit the
+					ground. Characters in the air accelerate or decelerate as necessary until they reach their terminal velocity.
 				</li>
 			</ul>
 			<p>
-				For the purposes of determining fall damage, always round down the player's fall height or impact velocity to match the last row applicable.
+				For the purposes of determining fall damage, always round down the player's fall height or impact velocity to
+				match the last row applicable.
 			</p>
-			<table className='standard'>
+			<table className='default'>
 				<thead>
 					<tr>
 						<th>Impact Velocity (ft/s)</th>
@@ -424,8 +454,8 @@ function SneakingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[6]}>
 			<p>
-				Sneaking is handled through a <Sub skill='stealth' /> ability check. The default roll required to evade detection is 10. The difficulty is
-				affected by noise, lighting, and other circumstances, as follows:
+				Sneaking is handled through a <Sub skill='stealth' /> ability check. The default roll required to evade
+				detection is 10. The difficulty is affected by noise, lighting, and other circumstances, as follows:
 			</p>
 			<ul>
 				<li>Total Darkness: -5 to the DT</li>
@@ -449,22 +479,25 @@ function PickpocketingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[7]}>
 			<p>
-				Pickpocketing is a risky but potentially rewarding endeavor. To pickpocket, you roll for <Sub skill='legerdemain' />
-				while your mark rolls for <Sub skill='perception' />. If your roll is higher than the mark's role, you successfully pick their pocket.
-				Otherwise, they catch you with your hand in their pocket and act accordingly.
+				Pickpocketing is a risky but potentially rewarding endeavor. To pickpocket, you roll for{" "}
+				<Sub skill='legerdemain' />
+				while your mark rolls for <Sub skill='perception' />. If your roll is higher than the mark's role, you
+				successfully pick their pocket. Otherwise, they catch you with your hand in their pocket and act accordingly.
 			</p>
 			<p>There are special rules in certain occasions:</p>
 			<ul>
 				<li>
-					If the mark is in the middle of a crowd, engaged in deep conversation, or similarly distracted they have disadvantage on the perception
-					roll.
+					If the mark is in the middle of a crowd, engaged in deep conversation, or similarly distracted they have
+					disadvantage on the perception roll.
 				</li>
 				<li>If the mark has their hands in their pockets, they have advantage on the perception roll.</li>
-				<li>If you are intoxicated or one of your hands is restrained, you have disadvantage on the legerdemain roll.</li>
+				<li>
+					If you are intoxicated or one of your hands is restrained, you have disadvantage on the legerdemain roll.
+				</li>
 				<li>If the city or location has a criminal reputation, the DT of the legerdemain check is increased by 1d6.</li>
 			</ul>
 			<p>When pickpocketing, different types of citizens usually have different amounts of money:</p>
-			<table className='standard'>
+			<table className='default'>
 				<thead>
 					<tr>
 						<th>Class</th>
@@ -516,19 +549,22 @@ function LockpickingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[8]}>
 			<p>
-				Lockpicking is fairly straightforward. To pick a lock, the player must have at least one lockpick in their inventory. They roll a{" "}
-				<Sub skill='legerdemain' /> check against the DT of the lock. If it fails, the lockpick is lost, but they may continue attempting to pick the
-				lock if they have additional lockpicks. If successful, the lock is opened. Most locks have a DT of 12-15, but some may be as high as 20.
+				Lockpicking is fairly straightforward. To pick a lock, the player must have at least one lockpick in their
+				inventory. They roll a <Sub skill='legerdemain' /> check against the DT of the lock. If it fails, the lockpick
+				is lost, but they may continue attempting to pick the lock if they have additional lockpicks. If successful, the
+				lock is opened. Most locks have a DT of 12-15, but some may be as high as 20.
 			</p>
 			<p>Some special rules apply:</p>
 			<ul>
 				<li>
-					If a guard is watching, you may have to roll for stealth while picking the lock. If you fail the stealth roll, you can continue picking the
-					lock, but will have to deal with the consequences as the guard will notice your lawless behavior.
+					If a guard is watching, you may have to roll for stealth while picking the lock. If you fail the stealth roll,
+					you can continue picking the lock, but will have to deal with the consequences as the guard will notice your
+					lawless behavior.
 				</li>
 				<li>
-					If a lock is of an unusual make, the pick can break inside the lock rendering the lock unpickable. The DM should notify the player
-					beforehand if this is likely to occur. The lockpick breaking inside the lock may also happen on a critical failure.
+					If a lock is of an unusual make, the pick can break inside the lock rendering the lock unpickable. The DM
+					should notify the player beforehand if this is likely to occur. The lockpick breaking inside the lock may also
+					happen on a critical failure.
 				</li>
 				<li>Some locks may require two picks to be used at a time.</li>
 			</ul>
@@ -540,8 +576,9 @@ function TradingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[9]}>
 			<p>
-				Merchants typically have a range of wares available for purchase. Some wares are common and available almost anywehre, while others are
-				exceptionally rare and usually unique to a specific merchant. Commonly available items are listed in these locations:
+				Merchants typically have a range of wares available for purchase. Some wares are common and available almost
+				anywehre, while others are exceptionally rare and usually unique to a specific merchant. Commonly available
+				items are listed in these locations:
 			</p>
 			<ul>
 				<li>
@@ -555,17 +592,18 @@ function TradingSection(): JSX.Element {
 				</li>
 			</ul>
 			<p>
-				Players can attempt to haggle merchants using the <Sub skill='persuasion' /> skill. A merchant can be haggled up to three times, offering
-				successively larger discounts if the player is able to pass increasingly difficulty persuasion checks. If the player fails any haggle, the
-				merchant becomes obstinate and the discount for that item cannot be increased further. If the player fails to surpass DT 10 on a haggle, the
-				merchant becomes irritated and removes all discounts completely.
+				Players can attempt to haggle merchants using the <Sub skill='persuasion' /> skill. A merchant can be haggled up
+				to three times, offering successively larger discounts if the player is able to pass increasingly difficulty
+				persuasion checks. If the player fails any haggle, the merchant becomes obstinate and the discount for that item
+				cannot be increased further. If the player fails to surpass DT 10 on a haggle, the merchant becomes irritated
+				and removes all discounts completely.
 			</p>
 			<p>
-				After attempting to haggle a merchant, the same merchant will not allow themselves to be haggled again for some time, unless they are fond of
-				the adventuring party or from a culture where haggling is expected. The DM may impose situational bonuses or penalties to haggling
-				accordingly.
+				After attempting to haggle a merchant, the same merchant will not allow themselves to be haggled again for some
+				time, unless they are fond of the adventuring party or from a culture where haggling is expected. The DM may
+				impose situational bonuses or penalties to haggling accordingly.
 			</p>
-			<table className='standard'>
+			<table className='default'>
 				<thead>
 					<tr>
 						<th>Haggle Attempt</th>

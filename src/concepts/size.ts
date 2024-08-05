@@ -1,4 +1,5 @@
 import sizesJson from "../resources/sheet/sizes.json";
+import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 
 export interface Size {
@@ -13,5 +14,7 @@ export const sizes = new Source<Size>(
 	"Sizes",
 	sizesJson,
 	size => size.name,
-	(size, text) => `<ChapterLink chapter={2}>${text ?? size.name}</ChapterLink>`
+	(size, text) => `<ChapterLink chapter={2} target='size'>${text ?? size.name}</ChapterLink>`
 );
+
+replacers.push(sizes);

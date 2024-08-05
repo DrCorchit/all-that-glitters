@@ -2,41 +2,73 @@ import {ReactNode} from "react";
 import {normalize} from "../utils/utils";
 import {chapters} from "./ChapterInfo";
 import {appendices} from "./AppendixInfo";
-import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
-export function ChapterLink({chapter, section, rel, children}: {chapter: number; section?: number; rel?: string; children?: ReactNode}) {
+export function SheetLink({children}: {children: ReactNode}) {
+	return <HashLink to={"/sheet"}>{children}</HashLink>;
+}
+
+export function ChapterLink({
+	chapter,
+	target = "",
+	rel,
+	children,
+}: {
+	chapter: number;
+	target?: string;
+	rel?: "prev" | "next";
+	children?: ReactNode;
+}) {
 	if (chapter <= 0 || chapter > chapters.array.length) {
 		throw new Error("Chapter index out of range!");
 	}
 
 	const info = chapters.array[chapter - 1];
-	const link = `/chapters/${info.index}`;
-	let text, hash;
-	if (section !== undefined) {
-		text = info.sections[section - 1];
-		hash = normalize(text);
+	const link = `/chapters/${info.index}#${target}`;
+	let text;
+	if (target) {
+		text = target;
+		target = normalize(target);
 	} else {
 		text = `Chapter ${info.index}`;
-		hash = undefined;
 	}
 
 	return (
-		<Link to={{pathname: link, hash: hash}} rel={rel}>
+		<HashLink to={link} rel={rel}>
 			{children || text}
-		</Link>
+		</HashLink>
 	);
 }
 
-export function AppendixLink({appendix, target, rel, children}: {appendix: number; target?: string; rel?: string; children?: ReactNode}) {
+export function AppendixLink({
+	appendix,
+	target = "",
+	rel,
+	children,
+}: {
+	appendix: number;
+	target?: string;
+	rel?: "prev" | "next";
+	children?: ReactNode;
+}) {
 	if (appendix <= 0 || appendix > appendices.array.length) {
 		throw new Error("Appendix index out of range!");
 	}
 
 	const info = appendices.array[appendix - 1];
-	const hash = target === undefined ? undefined : normalize(target);
+	const link = `${info.link}#${target}`;
+
+	let text;
+	if (target) {
+		text = target;
+		target = normalize(target);
+	} else {
+		text = info.name;
+	}
+
 	return (
-		<Link to={{pathname: info.link, hash: hash}} rel={rel}>
-			{children || info.name}
-		</Link>
+		<HashLink to={link} rel={rel}>
+			{children || text}
+		</HashLink>
 	);
 }

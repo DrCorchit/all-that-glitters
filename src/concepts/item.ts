@@ -10,6 +10,7 @@ import {armor} from "./armor";
 import {weaponTypes} from "./weapon";
 import {materials} from "./material";
 import {normalize} from "../utils/utils";
+import {replacers} from "../utils/replacer";
 
 export interface ItemCategory {
 	name: string;
@@ -45,3 +46,5 @@ export const items = new Source<Item>(
 	item => normalize(item.key ?? item.name),
 	(item, text) => `<Tooltip tip={"${text ?? item.name}"}>${item.description}</Tooltip>`
 );
+
+replacers.push(items);

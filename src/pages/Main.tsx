@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {SheetLink} from "../components/InternalLink";
 
 function MainPage() {
 	return (
@@ -8,18 +9,20 @@ function MainPage() {
 			<h2>A Fantasy Renaissance Tabletop Role-Playing Game</h2>
 			<hr />
 			<p>
-				All That Glitters is a fantasy tabletop role-playing game set in a world inspired by the late medieval to early renaissance period. There's
-				fantasy races like dwarves and elves, knights in shining armor, a sprinkling of gunpowder, and an entire spectrum of magical spells. Central
-				to the game is the call to adventure, as souls of every stripe leave behind the comfortable and familiar in order to bravely explore the
-				unknown, fight evil, or find their fortune—often all three at once!
+				All That Glitters is a fantasy tabletop role-playing game set in a world inspired by the late medieval to early
+				renaissance period. There's fantasy races like dwarves and elves, knights in shining armor, a sprinkling of
+				gunpowder, and an entire spectrum of magical spells. Central to the game is the call to adventure, as souls of
+				every stripe leave behind the comfortable and familiar in order to bravely explore the unknown, fight evil, or
+				find their fortune—often all three at once!
 			</p>
 			<p>So what's unique about All That Glitters?</p>
 			<p>
-				All That Glitters is designed to capture the essence of swords-and-torches swashbuckling while providing a combat and spellcasting framework
-				that is easy to expand, modify, and homebrew. The combat system is designed to capture much of the nuance of actual martial combat without
-				getting bogged down in spreadsheets and mathematical formulas. Combat is fast-paced, decisive, and meaningful, so that players can get back to
-				the story—or the next combat encounter! Finally, the leveling system is designed to ensure every choice offers a meaningful tradeoff of one
-				utility for another. After all, if nothing is forgone, nothing is truly chosen.
+				All That Glitters is designed to capture the essence of swords-and-torches swashbuckling while providing a
+				combat and spellcasting framework that is easy to expand, modify, and homebrew. The combat system is designed to
+				capture much of the nuance of actual martial combat without getting bogged down in spreadsheets and mathematical
+				formulas. Combat is fast-paced, decisive, and meaningful, so that players can get back to the story—or the next
+				combat encounter! Finally, the leveling system is designed to ensure every choice offers a meaningful tradeoff
+				of one utility for another. After all, if nothing is forgone, nothing is truly chosen.
 			</p>
 			<p>These are the primary design goals of the game:</p>
 			<ol>
@@ -30,9 +33,12 @@ function MainPage() {
 				<li>To increase flexibility when leveling characters, without sacrificing variety or balance.</li>
 			</ol>
 			<p>
-				If you're interested in playing the game, you're welcome to begin by reading the <Link to='chapters'>Player's Handbook</Link>.<br />
-				If you're interested in running a game, I suggest reading the <Link to='dmg_toc'>Dungeon Master's Guide</Link>.<br />
-				Character sheets are available <Link to='sheet'>here</Link> with an optional second page available <Link to='sheet_2'>here</Link>.
+				If you're interested in playing the game, you're welcome to begin by reading the{" "}
+				<Link to='chapters'>Player's Handbook</Link>.<br />
+				If you're interested in running a game, I suggest reading the <Link to='dmg_toc'>Dungeon Master's Guide</Link>.
+				<br />
+				Character sheets are available <SheetLink>here</SheetLink> with an optional second page available{" "}
+				<Link to='sheet_2'>here</Link>.
 			</p>
 			<h1>...Is Not Gold!</h1>
 			<h2>Thank you for reading.</h2>

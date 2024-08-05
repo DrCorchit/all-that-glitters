@@ -4,9 +4,9 @@ import Collapsible from "../../components/Collapsible";
 import {AppendixLink} from "../../components/InternalLink";
 import Outline from "../../components/Outline";
 import Section from "../../components/Section";
-import {schools} from "../../concepts/school";
-import {Spell, lookupSpellsBySchool} from "../../concepts/spell";
+import {Spell, schools} from "../../concepts/magic";
 import {recordEquals, range} from "../../utils/utils";
+import {lookupSpellsBySchool} from "../../generated/spell";
 
 const filterTypes = ["At Least", "Exactly", "At Most"] as const;
 type FilterType = (typeof filterTypes)[number];
@@ -60,7 +60,13 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 	);
 }
 
-function FilterForm({filterState, setFilterState}: {filterState: FilterState; setFilterState: (filter: FilterState) => void}): JSX.Element {
+function FilterForm({
+	filterState,
+	setFilterState,
+}: {
+	filterState: FilterState;
+	setFilterState: (filter: FilterState) => void;
+}): JSX.Element {
 	const isDirty = !recordEquals(filterState, defaultFilterState);
 
 	function resetForm(event: React.MouseEvent) {
@@ -87,7 +93,12 @@ function FilterForm({filterState, setFilterState}: {filterState: FilterState; se
 			</select>
 			{filterTypes.map((type, index) => (
 				<label key={index}>
-					<input type='radio' value={type} onChange={() => setFilterState({...filterState, type: type})} checked={filterState.type === type} />
+					<input
+						type='radio'
+						value={type}
+						onChange={() => setFilterState({...filterState, type: type})}
+						checked={filterState.type === type}
+					/>
 					{type}
 				</label>
 			))}

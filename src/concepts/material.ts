@@ -1,4 +1,5 @@
 import materialsJson from "../resources/items/materials.json";
+import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 import {Item} from "./item";
 
@@ -13,3 +14,5 @@ export const materials = new Source<Material>(
 	material => material.name,
 	(material, text) => `<Tooltip tip={"${text ?? material.name}"}>${material.description}</Tooltip>`
 );
+
+replacers.push(materials);

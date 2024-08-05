@@ -1,4 +1,5 @@
 import damageTypesJson from "../resources/combat/damage_types.json";
+import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 import {WeaponKeyword} from "./weapon";
 
@@ -14,3 +15,5 @@ export const damageTypes = new Source<DamageType>(
 	type => type.name,
 	(damage, text) => `<span style={{color: "${damage.color}"}}>${text ?? damage.name}</span>`
 );
+
+replacers.push(damageTypes);
