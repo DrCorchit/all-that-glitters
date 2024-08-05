@@ -6,7 +6,7 @@ import {prebuild} from "./src/scripts/prebuild";
 export default defineConfig({
 	plugins: [react(), prebuild()],
 	server: {
-		port: 80,
+		port: 5173,
 		strictPort: true,
 	},
 });
