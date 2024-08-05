@@ -18,7 +18,7 @@ export function normalize(str: string): string {
 }
 
 export function range(start: number, length: number): number[] {
-	return Array.from({length: length}, (v, k) => k + start);
+	return Array.from({length: length}, (_, k) => k + start);
 }
 
 const ordinalSuffixes = ["th", "st", "nd", "rd", "th"];

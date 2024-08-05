@@ -1,4 +1,3 @@
-import {normalize} from "path";
 import creaturesJson from "../resources/bestiary/creatures.json";
 import Source from "../utils/source";
 import {StatBlock} from "./attribute";

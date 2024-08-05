@@ -2,10 +2,10 @@ import {ReactNode} from "react";
 import {normalize} from "../utils/utils";
 import {chapters} from "./ChapterInfo";
 import {appendices} from "./AppendixInfo";
-import {HashLink} from "react-router-hash-link";
+import {Link} from "react-router-dom";
 
 export function SheetLink({children}: {children: ReactNode}) {
-	return <HashLink to={"/sheet"}>{children}</HashLink>;
+	return <Link to={"/sheet"}>{children}</Link>;
 }
 
 export function ChapterLink({
@@ -34,9 +34,9 @@ export function ChapterLink({
 	}
 
 	return (
-		<HashLink to={link} rel={rel}>
+		<Link to={link} rel={rel}>
 			{children || text}
-		</HashLink>
+		</Link>
 	);
 }
 
@@ -67,8 +67,8 @@ export function AppendixLink({
 	}
 
 	return (
-		<HashLink to={link} rel={rel}>
+		<Link to={link} rel={rel}>
 			{children || text}
-		</HashLink>
+		</Link>
 	);
 }

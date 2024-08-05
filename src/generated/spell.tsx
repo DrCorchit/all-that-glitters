@@ -3,7 +3,7 @@ import Sub from "../components/Sub";
 import Tooltip from "../components/Tooltip";
 import Source from "../utils/source";
 import {AppendixLink, ChapterLink} from "../components/InternalLink";
-import {Spell} from "../concepts/magic";
+import {School, Spell, Study} from "../concepts/magic";
 
 export const brew_innoculative_philter = new Spell({
   name: "Brew: Innoculative Philter",

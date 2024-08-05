@@ -1,5 +1,4 @@
 //Auto-generated file (do not modify)
-import React from "react";
 import Sub from "../components/Sub";
 import Source from "../utils/source";
 

@@ -30,7 +30,6 @@ function buildRacesFile() {
 
 	const builder = new FileBuilder();
 
-	builder.withImport('import React from "react";');
 	builder.withImport('import Sub from "../components/Sub";');
 	//builder.withImport('import Tooltip from "../components/Tooltip";');
 	builder.withImport('import Source from "../utils/source";');

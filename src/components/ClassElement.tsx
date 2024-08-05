@@ -1,4 +1,4 @@
-import {CombatClass} from "../concepts/combatClass";
+import {CombatClass} from "../generated/combatClass";
 import {normalize} from "../utils/utils";
 import Collapsible from "./Collapsible";
 

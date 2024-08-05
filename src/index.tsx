@@ -18,6 +18,7 @@ import AppendixItems from "./pages/appendices/AppendixItems";
 import AppendixBestiary from "./pages/appendices/AppendixBestiary";
 import Sheet from "./pages/Sheet";
 import AppendixFeats from "./pages/appendices/AppendixFeats";
+import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -90,6 +91,7 @@ const router = createBrowserRouter([
 
 root.render(
 	<React.StrictMode>
+		<ScrollToHashElement />
 		<RouterProvider router={router} />
 	</React.StrictMode>
 );

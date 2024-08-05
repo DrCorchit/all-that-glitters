@@ -5,17 +5,16 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"prebuild": "tsc src/scripts/prebuild.ts --target ES2023 --module ESNext --moduleResolution bundler && node src/scripts/prebuild.js",
 		"build": "tsc -b && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@types/react-router-hash-link": "^2.4.9",
+		"@cascadia-code/scroll-to-hash-element": "^2.0.2",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-		"react-router-dom": "^6.24.1",
-		"react-router-hash-link": "^2.4.3"
+		"react-router": "^6.26.0",
+		"react-router-dom": "^6.26.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20.14.10",
@@ -27,7 +26,7 @@
 		"eslint": "^8.57.0",
 		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-react-refresh": "^0.4.7",
-		"typescript": "^5.5.3",
+		"typescript": "^5.5.4",
 		"vite": "^5.3.1"
 	}
 }

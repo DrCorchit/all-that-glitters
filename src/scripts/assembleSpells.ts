@@ -170,7 +170,7 @@ async function buildSpellsFile() {
 	builder.withImport('import Tooltip from "../components/Tooltip";');
 	builder.withImport('import Source from "../utils/source";');
 	builder.withImport('import {AppendixLink, ChapterLink} from "../components/InternalLink";');
-	builder.withImport('import {Spell} from "../concepts/magic";');
+	builder.withImport('import {School, Spell, Study} from "../concepts/magic";');
 
 	spellObjects.forEach(info => {
 		const [name, tsx] = info;
