@@ -1,4 +1,5 @@
 import {ReactElement, ReactNode, useEffect} from "react";
+import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 import {appendices} from "./AppendixInfo";
 import Navigation from "./Navigation";
 import {AppendixLink} from "./InternalLink";
@@ -20,6 +21,7 @@ export default function Appendix({index, children}: {index: number; children: Re
 
 	return (
 		<>
+			<ScrollToHashElement />
 			<h3>{info.name}</h3>
 			{nav}
 			{children}

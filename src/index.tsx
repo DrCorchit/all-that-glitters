@@ -89,9 +89,12 @@ const router = createBrowserRouter([
 	},
 ]);
 
+//ScrollToHashElement properties:
+//behavior -> "auto", "instant", "smooth"
+//inline -> "center", "end", "nearest", "start"
+//block -> "center", "end", "nearest", "start"
 root.render(
 	<React.StrictMode>
-		<ScrollToHashElement />
 		<RouterProvider router={router} />
 	</React.StrictMode>
 );

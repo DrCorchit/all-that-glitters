@@ -24,7 +24,6 @@ export function ChapterLink({
 	}
 
 	const info = chapters.array[chapter - 1];
-	const link = `/chapters/${info.index}#${target}`;
 	let text;
 	if (target) {
 		text = target;
@@ -33,6 +32,7 @@ export function ChapterLink({
 		text = `Chapter ${info.index}`;
 	}
 
+	const link = `/chapters/${info.index}#${target}`;
 	return (
 		<Link to={link} rel={rel}>
 			{children || text}

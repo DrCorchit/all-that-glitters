@@ -47,7 +47,7 @@ function buildClassesFile() {
 	const classFiles = fs.readdirSync(root);
 
 	const classObjects = classFiles.map(filename => {
-		const path = `${root}\\${filename}`;
+		const path = `${root}/${filename}`;
 		const str = fs.readFileSync(path, "utf8");
 		const json = JSON.parse(str) as ClassJson;
 		const name = normalize(json.name);
