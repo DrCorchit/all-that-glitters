@@ -8,14 +8,17 @@
 		"What made you leave your previous life and start adventuring?"
 	],
 	"alignment": "Chaotic",
-	"coreAbilityName": "Divine Smite",
-	"coreAbilityDescription": "As an agent of divine prophecy, you may channel your deity's wrath in order to spread your message.  Your deity",
+	"coreAbilityName": "Miracle",
+	"coreAbilityDescription": "As an agent of divine will, you may channel your deity's power once per day to cast a spell with its willpower cost reduced by 5.",
 	"levelingBonuses": {
 		"1": "gain proficiency in {{skills.sorcery}}. You have knowledge of any ",
 		"2": "you discover you divine calling, chosen by your deity. You may take one of the following: <ul><li>Calling of the healer. Gain proficiency in {{skills.medicine}}. You heal 1d4 HP whenever you cast a healing spell.</li><li>Calling of the deceiver. Gain proficiency in {{skills.stealth}} and {{skills.legerdemain}}.</li><li>Calling of the teacher. Gain proficiency in {{skills.literacy}}. You may learn one scholarly spell.</li><li>Calling of the destroyer. Gain proficiency in {{skills.initiative}}.</li></ul>"
 	},
 	"startingEquipment": {
-		"_": ["A set of {{items.rags}}, blessed by the divine to provide the same benefits as {{items.mage_robes}}.", "A {{items.magical_staff}}"],
+		"_": [
+			"A set of {{items.rags}}, blessed by the divine to provide the same benefits as {{items.mage_robes}}.",
+			"A {{items.magical_staff}}"
+		],
 		"An adventurer's pack, containing:": [
 			"1d20 gold",
 			"3 days {{items.rations}} and a {{items.canteen}}",

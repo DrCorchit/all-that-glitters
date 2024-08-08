@@ -1,0 +1,31 @@
+{
+	"name": "Plague Doctor",
+	"description": "Hiding behind a mask packed with roses and incense, the plague doctor prolongs life or hastens death with equal ease. Equipped with leaches, syringes, and vials of strange chemicals, the doctor has every tool of modern medicine at their disposal.",
+	"backstoryPrompts": [
+		"When and why did you begin to practice medicine?",
+		"Do you practice medicine primarily in order to save life, or for money?",
+		"What are your opinions on newfangled medical practices, such as disinfectants and ",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"coreAbilityName": "Syringe Shot",
+	"coreAbilityDescription": "You have a special syringe filled with chemicals, which you can use to poison your opponents. As a melee weapon, it functions as an {{weapons.estoc}}. You can fill the syringe with any toxin you concoct to add the effects of that poison to your melee attack.",
+	"levelingBonuses": {
+		"1": "TODO"
+	},
+	"startingEquipment": {
+		"_": [
+			"A set of {{items.plain_clothes}}",
+			"A {{weapons.shortsword}} and a {{weapons.dagger}}",
+			"A doctor's robes, and a mask."
+		],
+		"An adventurer's pack, containing:": [
+			"2d100 gold",
+			"3 days {{items.rations}}",
+			"A {{items.tent}} or a {{items.bedroll}}, {{items.pillow}}",
+			"Two sets of {{items.plain_clothes}}",
+			"A {{items.scissors}} and a {{items.thread}}",
+			"A {{items.map}}",
+			"A {{items.crowbar}}"
+		]
+	}
+}

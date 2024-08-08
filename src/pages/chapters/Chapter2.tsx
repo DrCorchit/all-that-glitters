@@ -188,7 +188,7 @@ function ClassSection(): JSX.Element {
 					value.
 				</li>
 				<li>
-					<b>Mana Regeneration</b>: When starting a combat turn with less than two willpower, gain one willpower.
+					<b>Mana Regeneration</b>: When starting a combat turn with less than 1 willpower, gain one willpower.
 				</li>
 				<li>
 					<b>Precision Strike</b>: When making a dexterity-based weapon attack, you may expend 1 willpower to gain +3 to
@@ -199,8 +199,8 @@ function ClassSection(): JSX.Element {
 					willpower or using the "Beast Speech" spell.
 				</li>
 				<li>
-					<b>Meditation</b>: Once per long rest and while outside of combat, you may expend 4 willpower to meditate or
-					pray to your deity. You may increase an attribute of your choice by 2 for one hour, but not above 20.
+					<b>Meditation</b>: Once a day, (while not in combat) you may expend one willpower to meditate or pray to your
+					deity, increasing an attribute of your choice by 1 for one hour.
 				</li>
 			</ul>
 			<p>

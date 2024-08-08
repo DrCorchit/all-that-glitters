@@ -1,105 +1,105 @@
 [
-  {
-    "name": "Quilted Armor",
-    "description": "A homespun gambeson. A sure sign of a hooligan.",
-    "bc": 2,
-    "cost": 1,
-    "weight": 1,
-    "reqs": [],
-    "effects": ["-1 {{attr.CHA}}"]
-  },
-  {
-    "name": "Gambeson",
-    "description": "A proper gambeson, befitting a squire.",
-    "bc": 3,
-    "cost": 10,
-    "weight": 8,
-    "reqs": [],
-    "effects": []
-  },
-  {
-    "name": "Leather Armor",
-    "description": "Composed of boiled leather. Worn by knaves.",
-    "bc": 5,
-    "cost": 15,
-    "weight": 10,
-    "reqs": [],
-    "effects": []
-  },
-  {
-    "name": "Brigandine",
-    "description": "Metal plates riveted together beneath leather. Cheaper than mail.",
-    "bc": 7,
-    "cost": 50,
-    "weight": 15,
-    "reqs": ["STR 10"],
-    "effects": ["{{attr.DEX}} is capped at 18."]
-  },
-  {
-    "name": "Breastplate",
-    "description": "Robust protection for the vital regions.",
-    "bc": 8,
-    "cost": 50,
-    "weight": 20,
-    "reqs": ["STR 10"],
-    "effects": ["{{attr.DEX}} is capped at 15."]
-  },
-  {
-    "name": "Hauberk",
-    "description": "A chainmail shirt, as worn by rank-and-file infantry.",
-    "bc": 9,
-    "cost": 50,
-    "weight": 20,
-    "reqs": ["STR 10"],
-    "effects": ["{{attr.DEX}} is capped at 16.", "Stealth disadvantage"]
-  },
-  {
-    "name": "Ringmail",
-    "description": "Chainmail, almost, but the links are not woven together.",
-    "bc": 10,
-    "cost": 75,
-    "weight": 45,
-    "reqs": ["STR 12", "Defense Proficiency"],
-    "effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 13.", "Stealth disadvantage"]
-  },
-  {
-    "name": "Chainmail",
-    "description": "Full mail. Flexible and effective.",
-    "bc": 11,
-    "cost": 150,
-    "weight": 45,
-    "reqs": ["STR 12", "Defense Proficiency"],
-    "effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 13.", "Stealth disadvantage"]
-  },
-  {
-    "name": "Half Plate Armor",
-    "description": "Plate armor, but with nonessentials stripped away to spare the cost.",
-    "bc": 12,
-    "cost": 250,
-    "weight": 45,
-    "reqs": ["STR 12", "Defense Expertise"],
-    "effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 12.", "{{skills.mobility}} disadvantage"]
-  },
-  {
-    "name": "Splinted Chainmail",
-    "description": "Chainmail with vertical splints to shore up defense of the limbs.",
-    "bc": 13,
-    "cost": 200,
-    "weight": 50,
-    "reqs": ["STR 12", "Defense Expertise"],
-    "effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "{{skills.stealth}} disadvantage"]
-  },
-  {
-    "name": "Full Plate Armor",
-    "description": "The highest quality.",
-    "bc": 14,
-    "cost": 500,
-    "weight": 60,
-    "reqs": ["STR 14", "Heavy Armor Training"],
-    "effects": [
-      "{{attr.DEX}} and {{attr.SPD}} are capped at 10.",
-      "{{skills.mobility}} disadvantage",
-      "{{skills.stealth}} disadvantage"
-    ]
-  }
+	{
+		"name": "Quilted Armor",
+		"description": "A homespun gambeson. A sure sign of a hooligan.",
+		"bc": 2,
+		"cost": 1,
+		"weight": 1,
+		"reqs": [],
+		"effects": ["-1 {{attr.CHA}}"]
+	},
+	{
+		"name": "Gambeson",
+		"description": "A proper gambeson, befitting a squire.",
+		"bc": 3,
+		"cost": 10,
+		"weight": 8,
+		"reqs": [],
+		"effects": []
+	},
+	{
+		"name": "Leather Armor",
+		"description": "Composed of boiled leather. Worn by knaves.",
+		"bc": 4,
+		"cost": 15,
+		"weight": 10,
+		"reqs": [],
+		"effects": []
+	},
+	{
+		"name": "Brigandine",
+		"description": "Metal plates riveted together beneath leather. Cheaper than mail.",
+		"bc": 5,
+		"cost": 50,
+		"weight": 15,
+		"reqs": ["STR 10"],
+		"effects": ["{{attr.DEX}} is capped at 18."]
+	},
+	{
+		"name": "Hauberk",
+		"description": "A chainmail shirt, as worn by rank-and-file infantry.",
+		"bc": 6,
+		"cost": 50,
+		"weight": 20,
+		"reqs": ["STR 10"],
+		"effects": ["{{attr.DEX}} is capped at 16.", "Stealth disadvantage"]
+	},
+	{
+		"name": "Breastplate",
+		"description": "Robust protection for the vital regions.",
+		"bc": 6,
+		"cost": 50,
+		"weight": 20,
+		"reqs": ["STR 10"],
+		"effects": ["{{attr.DEX}} is capped at 15."]
+	},
+	{
+		"name": "Ringmail",
+		"description": "Chainmail, almost, but the links are not woven together.",
+		"bc": 8,
+		"cost": 75,
+		"weight": 45,
+		"reqs": ["STR 12", "Defense Proficiency"],
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 13.", "Stealth disadvantage"]
+	},
+	{
+		"name": "Chainmail",
+		"description": "Full mail. Flexible and effective.",
+		"bc": 9,
+		"cost": 150,
+		"weight": 45,
+		"reqs": ["STR 12", "Defense Proficiency"],
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 13.", "Stealth disadvantage"]
+	},
+	{
+		"name": "Half Plate Armor",
+		"description": "Plate armor, but with nonessentials stripped away to spare the cost.",
+		"bc": 10,
+		"cost": 250,
+		"weight": 45,
+		"reqs": ["STR 12", "Defense Expertise"],
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 12.", "{{skills.mobility}} disadvantage"]
+	},
+	{
+		"name": "Splinted Chainmail",
+		"description": "Chainmail with vertical splints to shore up defense of the limbs.",
+		"bc": 10,
+		"cost": 200,
+		"weight": 50,
+		"reqs": ["STR 12", "Defense Expertise"],
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "{{skills.stealth}} disadvantage"]
+	},
+	{
+		"name": "Full Plate Armor",
+		"description": "The highest quality.",
+		"bc": 12,
+		"cost": 500,
+		"weight": 60,
+		"reqs": ["STR 14", "Heavy Armor Training"],
+		"effects": [
+			"{{attr.DEX}} and {{attr.SPD}} are capped at 10.",
+			"{{skills.mobility}} disadvantage",
+			"{{skills.stealth}} disadvantage"
+		]
+	}
 ]

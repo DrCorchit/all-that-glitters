@@ -16,7 +16,7 @@ export interface CombatClass {
 	startingEquipment: {name?: JSX.Element; contents: JSX.Element[]}[];
 }
 
-export const Assassin = {
+export const assassin = {
   name: "Assassin",
   description: <div className='default'>An assassin’s art is a quick and sure death, delivered without remorse or hesitation. Typically employed by a political state or criminal syndicate, assassins quickly learn to make use of any weapon available, including the weapons of their own targets. This makes them extremely versatile adventurers, able to adapt to nearly any combat situation as the need arises.</div>,
   backstoryPrompts: ["Who has hired you in the past?", "How many targets have you killed?", "Do you remember your first kill?", "How did you acquire your unique skillset?", "Does your character struggle with any form of guilt?", "What made you leave your previous life and start adventuring?"],
@@ -33,7 +33,7 @@ export const Assassin = {
     { name: <b>An adventurer's pack, containing:</b>, contents: [<>2d100 gold</>, <>3 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip> and a <Tooltip tip={"Canteen"}>Holds one quart of drinking water.</Tooltip>.</>, <>A <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip></>, <>Two sets of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip>.</>, <>One set of <Tooltip tip={"Formal Wear"}>Appropriate for appearances before a noble or royal court. +1 to performance checks.</Tooltip></>, <>A <Tooltip tip={"Disguise Kit"}>For changing one's appearance. </Tooltip></>, <>A pair of <Tooltip tip={"Manacles"}>For restraining the unruly or unwilling. Breakable by a successful DT 20 strength check.</Tooltip></>, <>A <Tooltip tip={"100 Foot Rope"}>Easily affixed to an adventurer's pack. Holds up to 1000 pounds of weight.</Tooltip> and <Tooltip tip={"Grappling Hook"}>For hooking and pulling, or escaping. Allows <i>Vertical Escape</i> and <i>Come Hither</i>.</Tooltip></>] },],
 };
 
-export const Barbarian = {
+export const barbarian = {
   name: "Barbarian",
   description: <div className='default'>Whether a local farmhand or a tribesman from a remote tundra or jungle, barbarians are united by their unparalleled fury in battle, as well as sheer physical brawn. By tapping into primal rage, barbarians can strike harder and faster than anyone else while laughing off blows that would stagger an ordinary man. Barbarians typically wear light armor, and swing the largest weapons they can find. Their bodies are often covered in scars, either from tribal initiation rituals, or past battles. Some barbarians channel their rage in a drunken stupor, while others transform into the animals that embody their inner beast.</div>,
   backstoryPrompts: ["Have you always been strong, or did you go through a lot of training?", "Is your immense brawn shared by other members of your family or tribe?", "When did you first discover that rage could make you stronger?", "What made you leave your previous life and start adventuring?"],
@@ -60,7 +60,7 @@ export const Barbarian = {
     { name: <b>An adventurer's pack, containing:</b>, contents: [<>30 + 1d100 gold</>, <>3 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip></>, <>A <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip></>, <>Two sets of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip>.</>, <>2 bottles of <Tooltip tip={"Mead, Bottle of"}>Made from honey. Sweeter than beer.</Tooltip></>, <>A bottle of <Tooltip tip={"Moonshine, Flask of"}>Extremely strong alcohol. Lacks the royal stamp, indicating that is has been manufactured illegally.</Tooltip></>] },],
 };
 
-export const Crusader = {
+export const crusader = {
   name: "Crusader",
   description: <div className='default'>The crusader offers their services to a chosen deity by swearing a sincere theological oath. As long as the oath is kept, their powers never wane and their enemies are smitten down before them. But even the most devoted mortal may at times be sorely tempted to break such an oath. Should the temptation prove too much, the crusader may find themselves tumbling down the dark path of the oathbreaker.</div>,
   backstoryPrompts: ["What made you swear fealty to one particular deity?", "Do you ever feel tempted to break your oath?", "Is your god pleased with your service, or are you on shaky terms?", "What made you leave your previous life and start adventuring?"],
@@ -78,7 +78,7 @@ export const Crusader = {
     { name: <b>One of the following items:</b>, contents: [<>A <Tooltip tip={"Ram"}>For when lockpicks fail. Allows 2-4 adventurers to combine their strength score when breaking down a door.</Tooltip> (Gain +1 <Sub attr="STR"/>)</>, <>A <Tooltip tip={"Musical Instrument"}>An instrument such as a guitar, banjo, lute, or dulcimer. Not included: the skill to play it.</Tooltip> (Gain proficiency in <Sub skill="Performance" />)</>, <>A <Tooltip tip={"Hand Crossbow"}>A miniature crossbow. Widely considered a gimmick.</Tooltip> and <Tooltip tip={"Quiver"}>Holds up to 24 arrows or crossbow bolts.</Tooltip> with two dozen arrows. (Gain proficiency in <Sub skill="Accuracy" />)</>, <>A set of <Tooltip tip={"Climbing Gear"}>Includes 10 pitons, 3 carabiners, and a harness</Tooltip>. (Gain proficiency in <Sub skill="Mobility" />)</>] },],
 };
 
-export const Druid = {
+export const druid = {
   name: "Druid",
   description: <div className='default'>Whether a shaman from a remote tribe or an isolated hermit, a druid reveres, worships, and protects nature. Nature rewards this special connection by allowing the druid to practice unique and powerful forms of magic, such as transforming into various animals.</div>,
   backstoryPrompts: ["How did you become a druid?", "Are you connected to a formal druid circle, or do you work on your own?", "How would you describe your relationship with nature?", "What does it take to cultivate such a close connection with nature?", "What made you leave your previous life and start adventuring?"],
@@ -93,7 +93,7 @@ export const Druid = {
     { name: <b>An adventurer's pack, containing</b>, contents: [<>1d20 gold</>, <>3 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip></>, <>A calabash, usable as a <Tooltip tip={"Canteen"}>Holds one quart of drinking water.</Tooltip></>, <>A <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip></>, <>1 set of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>A <Tooltip tip={"Medical Kit"}>Includes bandages, sutures, and antiseptic. +2 to medicine checks while in inventory, or may be used to provide 2d6 healing during a short rest.</Tooltip></>] },],
 };
 
-export const Hermit = {
+export const hermit = {
   name: "Hermit",
   description: <div className='default'><p>A hermit is someone who has chosen to live alone, usually on the outskirts of civilization. Such prolonged solitude leaves one with countless hours of quiet contemplation, and the slow progression from idiosyncrasy to eccentricity and madness. Alone in the wilderness, it is only a matter of time before one's most savage and primal instincts begin to dominate. Then comes the choice of whether to resist the madness or embrace it wholeheartedly, but this too is only a matter of time. In the end, there comes a day when that which lumbers out of the hermit's hut is more beast than man.</p><p>Whether by some inborn ability or through countless hours of meditation, a hermit is someone who has developed the ability to transform at will into a particular animal. Unlike a druid who can transform into a wide variety of small creatures, a hermit can only transform into one type of animal. But what a hermit sacrifices in flexibility, they gain in power. Hermits are known for transforming into mighty creatures such as the direwolf, rune bear, lions, and even the mighty rhinoceros.</p></div>,
   backstoryPrompts: ["How did you learn to transform into your specific animal?", "Have you always had a close connection to nature, or did something spur that connection?", "What was your first transformation like?", "Do you feel more at home as a humanoid or as an animal?", "What made you leave your previous life and start adventuring?"],
@@ -108,7 +108,7 @@ export const Hermit = {
     { name: <b>Two of the following:</b>, contents: [<>A <Tooltip tip={"Padlock &amp; Key"}>For securing valuables, or denying entry.</Tooltip></>, <>A <Tooltip tip={"Whetstone"}>For sharpening knives and blades.</Tooltip></>, <>A <Tooltip tip={"Dog Whistle"}>Dogs may be trained to respond to its signal in a specific way. Typical commands: come, attack, heel, or fetch.</Tooltip></>, <>A pet, such as a <Tooltip tip='Cat'>A domesticated cat, excellent at tracking and hunting small animals.</Tooltip>, <Tooltip tip='Dog'>Man's best friend.</Tooltip>, <Tooltip tip='Parrot'>A colorful bird able to mimic human speech. Those purchased from sailors often possess a colorful vocabulary.</Tooltip>, or <Tooltip tip='Monkey'>A small monkey likely imported from a faroff land. Able to obey simple commands, and in extremely rare cases, cast simple spells.</Tooltip></>, <>A bottle of <Tooltip tip={"Moonshine, Flask of"}>Extremely strong alcohol. Lacks the royal stamp, indicating that is has been manufactured illegally.</Tooltip></>, <>Two <Tooltip tip={"Hunting Trap"}>Reusable. For trapping small animals, such as rabbits, mice, or gophers.</Tooltip>s</>] },],
 };
 
-export const Inquisitor = {
+export const inquisitor = {
   name: "Inquisitor",
   description: <div className='default'>Often clad in black armor and concealed beneath a dark hood or mask, the inquisitor’s dark countenance usually conceals and ever darker heart. An inquisitor has been called by their deity to drive out heresy, and will not hesitate to interrogate or kill anyone who stands in his or her way. Inquisitors are perhaps best known for branding their opponents as heretics, marking them for divine retribution.</div>,
   backstoryPrompts: ["How did you come to choose to serve your god?", "Is your persecution of heretics commanded by god directly, or through a religious institution?", "Do you have any moral qualms about the suffering you bring to the enemies of your god?", "What made you leave your previous life and start adventuring?"],
@@ -125,7 +125,7 @@ export const Inquisitor = {
     { name: <b>One of the following:</b>, contents: [<>A <Tooltip tip={"Crowbar"}>Invented by workmen, for prying. A favorite of thieves and hoodlums galore.</Tooltip> and a <Tooltip tip={"Ladder"}>10 foot, when unfolded. Holds up to 300 pounds.</Tooltip></>, <>A <Tooltip tip={"Hand Crossbow"}>A miniature crossbow. Widely considered a gimmick.</Tooltip> and a <Tooltip tip={"Quiver"}>Holds up to 24 arrows or crossbow bolts.</Tooltip> with 24 bolts</>, <>A <Tooltip tip={"Spyglass"}>Allows viewing distant objects at 4x magnification.</Tooltip> and a <Tooltip tip={"Map"}>Conveys a general sense of surrounding terrain.</Tooltip></>] },],
 };
 
-export const Knight = {
+export const knight = {
   name: "Knight",
   description: <div className='default'>The knight is a low-ranking noble with formal combat training. Although they may be called to fight in battle, a knight’s primary purpose is to serve for the glory of their Lord or Lady, to whom they have sworn an oath of fealty. Many knights are also accompanied by a squire, a young knight in training who may carry their lord’s banner or help them don and doff their armor. On the battlefield, a knight is a magnificent sight, clad in expensive steel plate armor and with their lord’s ensignia emblazoned on their shield. However, some knights forgo a shield altogether, preferring a heavier two-handed weapon. Either way, knights train extensively and are rarely caught flat-footed, even when out of armor</div>,
   backstoryPrompts: ["Did you train as a page or a squire before becoming a knight?", "Are you proud of your country and your liege, or have you become disillusioned?", "Was your oath of fealty inspired by love, respect, or political convenience?", "How far back can you trace your lineage?", "What made you leave your previous life and start adventuring?"],
@@ -152,13 +152,13 @@ export const Knight = {
     { name: <b>An adventurer's pack, containing:</b>, contents: [<>2d100 gold</>, <>7 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip> and a <Tooltip tip={"Canteen"}>Holds one quart of drinking water.</Tooltip></>, <>A <Tooltip tip={"Tent"}>Suitable for two adventurers, or one royal highness.</Tooltip></>, <>Two sets of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>One set of <Tooltip tip={"Formal Wear"}>Appropriate for appearances before a noble or royal court. +1 to performance checks.</Tooltip></>] },],
 };
 
-export const Marksman = {
+export const marksman = {
   name: "Marksman",
   altName: "Sniperess",
   description: <div className='default'>Anyone can pick up a bow. With some strength and a little training, one can draw and release an arrow as well. However, only a true marksman can hit a distant target quickly and reliably. Such potency with a bow or musket is what distinguishes an ordinary archer from a true marksman.</div>,
   backstoryPrompts: ["How did you learn to use a bow or musket?", "Do you brag about the time you made that really tricky shot? (Of course you do...)", "How often do you practice? Do you naturally have good aim?", "What made you leave your previous life and start adventuring?"],
   coreAbilityName: "Sniping Shot",
-  coreAbilityDescription: <div className='default'>When making a ranged attack, you may expend 2 willpower to focus your aim, gaining advantage on the attack roll and lowering the CT by 1.</div>,
+  coreAbilityDescription: <div className='default'>When making a ranged attack, you may expend 1 willpower to focus your aim, gaining advantage on the attack roll and lowering the CT by 1.</div>,
   limitations: <div className='default'>Marksmen </div>,
   levelingBonuses: {
     1: <span className="default">gain +2 <Sub attr="STR"/> and <Sub attr="DEX"/> and expertise in <Sub skill="Accuracy" /></span>,
@@ -170,7 +170,7 @@ export const Marksman = {
     { name: <b>An adventurer's pack, containing:</b>, contents: [<>30 + 1d100 gold</>, <>3 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip> and a <Tooltip tip={"Canteen"}>Holds one quart of drinking water.</Tooltip></>, <>A <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip></>, <>Two sets of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>A <Tooltip tip={"Spyglass"}>Allows viewing distant objects at 4x magnification.</Tooltip> and a set of <Tooltip tip={"Navigational Tools"}>An astrolabe and sextant, used by mariners to determine approximate positioning ascertain the distance to landmarks of known height.</Tooltip></>, <>A pair of <Tooltip tip={"Climbing Boots"}>Includes crampons for the surest of footing. +2 to mobility checks.</Tooltip>, <Tooltip tip={"Climbing Gear"}>Includes 10 pitons, 3 carabiners, and a harness</Tooltip>, and a <Tooltip tip={"100 Foot Rope"}>Easily affixed to an adventurer's pack. Holds up to 1000 pounds of weight.</Tooltip></>, <>A <Tooltip tip={"Medical Kit"}>Includes bandages, sutures, and antiseptic. +2 to medicine checks while in inventory, or may be used to provide 2d6 healing during a short rest.</Tooltip></>, <>A spare <Tooltip tip={"Quiver"}>Holds up to 24 arrows or crossbow bolts.</Tooltip> containing 24 <Tooltip tip={"Arrow"}>Ammunition for drawn bows.</Tooltip>s</>] },],
 };
 
-export const Mercenary = {
+export const mercenary = {
   name: "Mercenary",
   description: <div className='default'>The mercenary eschews lofty aspirations of honor and glory and fights almost exclusively for coin. Although they have a cutthroat reputation, there is a simple pragmatism to their motives. Mercenaries fight with whatever weapons and training they can purchase, and do not limit themselves to any particular discipline.</div>,
   backstoryPrompts: ["How did you acquire your combat skill?", "Do you take pride in your work?", "Do you fight for money, for the excitement of battle, or something else?", "What made you leave your previous life and start adventuring?"],
@@ -185,7 +185,7 @@ export const Mercenary = {
     { name: <b>Any one of the following:</b>, contents: [<>A second standard weapon</>, <>A dozen <Tooltip tip={"Throwing Knives"}>Knives specially designed to be hurled.</Tooltip> and a <Tooltip tip={"Grappling Hook"}>For hooking and pulling, or escaping. Allows <i>Vertical Escape</i> and <i>Come Hither</i>.</Tooltip></>, <>A <Tooltip tip={"Hand Cannon"}>A heavy pistol, for those strong enough to wield it. Light modifier does not apply if strength is less than 16.</Tooltip> and ten bullets.</>, <>A </>] },],
 };
 
-export const Minstrel = {
+export const minstrel = {
   name: "Minstrel",
   altName: "Bard",
   description: <div className='default'>A minstrel is easy to spot—simply listen for the sound of a cheering crowd, and see what has captured their attention. It might be a jester, or a woman with a guitar, or a halfling turning flips and cartwheels. Either way, the minstrel is occupied with the trade of entertainment. As one should be, if one feasts or goes hungry according to the quality of one’s performance.</div>,
@@ -201,7 +201,7 @@ export const Minstrel = {
     { name: <b>A satchel, containing:</b>, contents: [<>A <Tooltip tip={"Looking Glass"}>A genuine glass mirror with silvered backing. No undead or unholy visage shall appear in its frame.</Tooltip></>, <><Tooltip tip={"Soap"}>Washes away sweat and grime, more than plain water. +1 to persuasion and performance checks for 12 hours. 10 uses.</Tooltip> and <Tooltip tip={"Perfume"}>Known as cologne, when sold to men. Lends a pleasant scent to one that wears it. Increases charisma by 1 for one hours, if one has washed with soap. 10 uses.</Tooltip></>, <>A <Tooltip tip={"Disguise Kit"}>For changing one's appearance. </Tooltip></>, <>A pair of <Tooltip tip={"Scissors"}>Suitable for cutting cloth or paper</Tooltip> and a <Tooltip tip={"Needle &amp; Thread"}>A needle and 100 feet of thread wound around a spindle, for sewing.</Tooltip></>] },],
 };
 
-export const Monk = {
+export const monk = {
   name: "Monk",
   description: <div className='default'>The path to enlightenment is not without its twists and turns. For some, a monastery is a permanent home—a place to perfect the techniques of breathing, martial arts, and meditation. For others, the monastery is only a resting place before embarking on the road to adventure. Adventuring monks journey far and wide, where they become known for seemingly superhuman feats of endurance, speed, and strength enabled by extensive training.</div>,
   backstoryPrompts: ["What made you choose the monastic life?", "Have you gained any unique wisdom or insights during your time as a monk?", "Do you still hold the beliefs taught within the monastery?", "What made you leave your previous life and start adventuring?"],
@@ -214,13 +214,26 @@ export const Monk = {
     { contents: [] },],
 };
 
-export const Prophet = {
+export const plague_doctor = {
+  name: "Plague Doctor",
+  description: <div className='default'>Hiding behind a mask packed with roses and incense, the plague doctor prolongs life or hastens death with equal ease. Equipped with leaches, syringes, and vials of strange chemicals, the doctor has every tool of modern medicine at their disposal.</div>,
+  backstoryPrompts: ["When and why did you begin to practice medicine?", "Do you practice medicine primarily in order to save life, or for money?", "What are your opinions on newfangled medical practices, such as disinfectants and ", "What made you leave your previous life and start adventuring?"],
+  coreAbilityName: "Syringe Shot",
+  coreAbilityDescription: <div className='default'>TODO</div>,
+  levelingBonuses: {
+    1: <span className="default">TODO</span>,},
+  startingEquipment: [
+    { contents: [<>A set of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>A <Tooltip tip={"Shortsword"}>A shorter sword of lighter weight, making an ideal sidearm. Similar to the arming sword and gladius.</Tooltip> and a <Tooltip tip={"Dagger"}>A short sidearm, suitable for slashing or stabbing. The “Sharp” property does not apply when thrown.</Tooltip></>, <>A doctor's robes, and a mask.</>] },
+    { name: <b>An adventurer's pack, containing:</b>, contents: [<>2d100 gold</>, <>3 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip></>, <>A <Tooltip tip={"Tent"}>Suitable for two adventurers, or one royal highness.</Tooltip> or a <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip>, <Tooltip tip={"Blanket &amp; Pillow"}>Soft and warm. An adventurer need not forsake <i>all</i> comfort.</Tooltip></>, <>Two sets of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>A <Tooltip tip={"Scissors"}>Suitable for cutting cloth or paper</Tooltip> and a <Tooltip tip={"Needle &amp; Thread"}>A needle and 100 feet of thread wound around a spindle, for sewing.</Tooltip></>, <>A <Tooltip tip={"Map"}>Conveys a general sense of surrounding terrain.</Tooltip></>, <>A <Tooltip tip={"Crowbar"}>Invented by workmen, for prying. A favorite of thieves and hoodlums galore.</Tooltip></>] },],
+};
+
+export const prophet = {
   name: "Prophet",
   description: <div className='default'>The prophet is an individual called upon by a specific god to bring about religious transformation. Often a firebrand or a heretic, prophets care little for social conformity and instead operate based off of faith and unwavering moral or spiritual convictions. For this reason, they are scorned and hated by religious authorities and are often on the run.</div>,
   backstoryPrompts: ["When did you first hear the voice of your god calling you to action?", "Has anyone ever called you a heretic or condemned your teachings?", "What is your god's attitude towards those who do not believe?", "What made you leave your previous life and start adventuring?"],
   alignment: "Chaotic",
-  coreAbilityName: "Divine Smite",
-  coreAbilityDescription: <div className='default'>As an agent of divine prophecy, you may channel your deity's wrath in order to spread your message.  Your deity</div>,
+  coreAbilityName: "Miracle",
+  coreAbilityDescription: <div className='default'>As an agent of divine will, you may channel your deity's power once per day to cast a spell with its willpower cost reduced by 5.</div>,
   levelingBonuses: {
     1: <span className="default">gain proficiency in <Sub skill="Sorcery" />. You have knowledge of any </span>,
     2: <span className="default">you discover you divine calling, chosen by your deity. You may take one of the following: <ul><li>Calling of the healer. Gain proficiency in <Sub skill="Medicine" />. You heal 1d4 HP whenever you cast a healing spell.</li><li>Calling of the deceiver. Gain proficiency in <Sub skill="Stealth" /> and <Sub skill="Legerdemain" />.</li><li>Calling of the teacher. Gain proficiency in <Sub skill="Literacy" />. You may learn one scholarly spell.</li><li>Calling of the destroyer. Gain proficiency in <Sub skill="Initiative" />.</li></ul></span>,},
@@ -230,7 +243,7 @@ export const Prophet = {
     { name: <b>Any two of the following</b>, contents: [<>A <Tooltip tip={"Musical Instrument"}>An instrument such as a guitar, banjo, lute, or dulcimer. Not included: the skill to play it.</Tooltip> (and proficiency in <Sub skill="Performance" />)</>, <>A <Tooltip tip={"Disguise Kit"}>For changing one's appearance. </Tooltip> and a <Tooltip tip={"Forgery Kit"}>Contains stationery, pens, and inks of various sorts, for falsifying signatures.</Tooltip></>, <>A <Tooltip tip={"Medical Kit"}>Includes bandages, sutures, and antiseptic. +2 to medicine checks while in inventory, or may be used to provide 2d6 healing during a short rest.</Tooltip> (and proficiency in <Sub skill="Medicine" />)</>, <>A half-dozen <Tooltip tip={"Lockpick"}>For opening locks without the key. Not sold by decent folk.</Tooltip>s (and proficiency in <Sub skill="Legerdemain" />)</>] },],
 };
 
-export const Psychic = {
+export const psychic = {
   name: "Psychic",
   description: <div className='default'>The powers of a true psychic are a sight to behold. Imagine, for example, an unassuming young woman clad in simple black robes. She raises her hand and her eyes glow bright white, and suddenly the earth begins to tremble. A rock surges upward from the soil, bidden by her telekinetic impulse, and is sent flying towards its target. Surely such power is to be coveted—and feared!</div>,
   backstoryPrompts: ["When did you first discover your unique powers?", "Do you ever struggle to control your powers?", "Have your powers caused you to become an outcast, or changed the way that people view you?", "Do your powers imbue you with a sense of purpose, such as the desire to protect or dominate others?", "What made you leave your previous life and start adventuring?"],
@@ -246,7 +259,7 @@ export const Psychic = {
     { name: <b>One of the following</b>, contents: [<>A <Tooltip tip={"Map"}>Conveys a general sense of surrounding terrain.</Tooltip>, <Tooltip tip={"Compass"}>Always points north, except in the presence of magical fields.</Tooltip>, and <Tooltip tip={"Spyglass"}>Allows viewing distant objects at 4x magnification.</Tooltip></>, <>A <Tooltip tip={"Medical Kit"}>Includes bandages, sutures, and antiseptic. +2 to medicine checks while in inventory, or may be used to provide 2d6 healing during a short rest.</Tooltip></>, <>A <Tooltip tip={"Padlock &amp; Key"}>For securing valuables, or denying entry.</Tooltip> and half a dozen <Tooltip tip={"Lockpick"}>For opening locks without the key. Not sold by decent folk.</Tooltip>s</>, <>A <Tooltip tip={"Needle &amp; Thread"}>A needle and 100 feet of thread wound around a spindle, for sewing.</Tooltip>, <Tooltip tip={"Scissors"}>Suitable for cutting cloth or paper</Tooltip>, and a <Tooltip tip={"Disguise Kit"}>For changing one's appearance. </Tooltip></>] },],
 };
 
-export const Ranger = {
+export const ranger = {
   name: "Ranger",
   description: <div className='default'>The ranger is someone—a farmer, a hunter, or maybe a lumberjack—who lives and works on the edge of civilization and has acquired a deep knowledge of nature and survival. They may have learned to hunt or track prey, tame beasts, or construct traps as a result of living in the wilderness.</div>,
   backstoryPrompts: ["Have you always lived in the wild, or did you move there", "Do you see nature as nurturing or threatening -- or both?", "How did you meet your animal companion?", "What made you leave your previous life and start adventuring?"],
@@ -259,7 +272,7 @@ export const Ranger = {
     { name: <b>An adventurer's pack, containing:</b>, contents: [<>30 + 1d100 gold</>, <>3 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip> and a <Tooltip tip={"Canteen"}>Holds one quart of drinking water.</Tooltip></>, <>A <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip>, <Tooltip tip={"Blanket &amp; Pillow"}>Soft and warm. An adventurer need not forsake <i>all</i> comfort.</Tooltip></>, <>Two sets of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <></>] },],
 };
 
-export const Scholar = {
+export const scholar = {
   name: "Scholar",
   description: <div className='default'>Scholars are formally-trained magic users typically found in highly sheltered environments: libraries, universities, or perhaps a royal laboratory. Here, they are kept safe from the dangers and inconveniences of the outside world. Once in a great while, however, a scholar shuts the cover of his or her dusty tome and packs a bag to go adventuring. Whenever they do so, they are a force to be reckoned with, having mastered powerful forms of magic that have been thoroughly documented and perfected over generations.</div>,
   backstoryPrompts: ["Where did you attend university?", "Are you a student, graduate student, or professor?", "Are you well-liked by your classmates or colleagues?", "What are you currently researching or studying?", "What made you leave your previous life and start adventuring?"],
@@ -274,7 +287,7 @@ export const Scholar = {
     { name: <b>One of the following guilty pleasures:</b>, contents: [<>A jar of <Tooltip tip={"Tobacco"}>1 pound. Emits a thick smoke when lit, agreeable to some and noxious to others.</Tooltip></>, <>A bottle of <Tooltip tip={"Wine, Bottle of"}>A finer drink, favored by nobles and kings.</Tooltip></>, <>Three bottles of <Tooltip tip={"Mead, Bottle of"}>Made from honey. Sweeter than beer.</Tooltip></>, <>A <Tooltip tip={"Traveler's Chess Set"}>The game of kings. Conveniently designed to allow the board to be folded and stowed along with the pieces.</Tooltip></>] },],
 };
 
-export const Thief = {
+export const thief = {
   name: "Thief",
   description: <div className='default'>Thieves are found in every city and village and borough, in every corner of the world. Their techniques are as varied as you can imagine, but they have one thing in common: the ability to disappear quickly and quietly. This skill proves immensely useful for those that turn to the path of adventuring, for one cannot easily be killed if one is not seen. Of course, the occasional coinpurse snipped from the belt of an unsuspecting noble doesn’t hurt either.</div>,
   backstoryPrompts: ["Do you have any moral qualms about taking things that don’t belong to you?", "Have you ever been in prison?", "Do you have any connections to a crime syndicate?", "What made you leave your previous life and start adventuring?"],
@@ -289,21 +302,7 @@ export const Thief = {
     { name: <b>An adventurer's pack, containing:</b>, contents: [<>1d20 gold</>, <>3 days rations and a jug of <Tooltip tip={"Drinking Water"}>1 Gallon of potable water for cooking and drinking.</Tooltip></>, <>A <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip></>, <>A set of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>A <Tooltip tip={"Tinderbox"}>For starting fire. If one is in your possession, you may light a torch, candle, or lantern as an action.</Tooltip> and a <Tooltip tip={"Torch"}>Lasts 4 hours</Tooltip></>, <>A <Tooltip tip={"Disguise Kit"}>For changing one's appearance. </Tooltip> and a <Tooltip tip={"Forgery Kit"}>Contains stationery, pens, and inks of various sorts, for falsifying signatures.</Tooltip></>, <>A <Tooltip tip={"Whetstone"}>For sharpening knives and blades.</Tooltip></>, <>A bottle of any alcoholic drink</>] },],
 };
 
-export const Tinker = {
-  name: "Tinker",
-  altName: "Artificer",
-  description: <div className='default'>Deep in his workshop, the tinker sits hunched over a table full of parts. The sound of clanking and rattling is heard as he searches for this cog, that corkscrew, or a metal shaft. The moon rises high as he works through the dead of night. Perhaps by dawn he emerges, perhaps not. When he does, he is bearing some bizarre contraption. With the winding of a screw, it springs to “life”, another work of eccentric genius. This is the way of a tinker.</div>,
-  backstoryPrompts: ["How did you become skilled with mechanical parts?", "Do you use your trade to pay your bills, or is your hobby mostly a moneypit?", "Are others envious of your skill and your inventions, or awestruck, or indifferent?", "What made you leave your previous life and start adventuring?"],
-  coreAbilityName: "Manufacture",
-  coreAbilityDescription: <div className='default'>TODO</div>,
-  levelingBonuses: {
-    1: <span className="default">TODO</span>,},
-  startingEquipment: [
-    { contents: [<>A set of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>A <Tooltip tip={"Shortsword"}>A shorter sword of lighter weight, making an ideal sidearm. Similar to the arming sword and gladius.</Tooltip> and a <Tooltip tip={"Dagger"}>A short sidearm, suitable for slashing or stabbing. The “Sharp” property does not apply when thrown.</Tooltip></>, <>A <Tooltip tip={"Workman's Hammer"}>An ordinary ball-peen hammer.</Tooltip> and <Tooltip tip={"Chisel"}>For shaping stone and wood. Best when combined with a workman's hammer.</Tooltip></>, <>A <Tooltip tip={"Crowbar"}>Invented by workmen, for prying. A favorite of thieves and hoodlums galore.</Tooltip></>] },
-    { name: <b>An adventurer's pack, containing:</b>, contents: [<>2d100 gold</>, <>3 days <Tooltip tip={"Rations"}>Consists of non-perishable food items for a single day's sustenance.</Tooltip></>, <>A <Tooltip tip={"Tent"}>Suitable for two adventurers, or one royal highness.</Tooltip> or a <Tooltip tip={"Bedroll"}>A minimal sleeping arrangement for a rugged adventurer.</Tooltip>, <Tooltip tip={"Blanket &amp; Pillow"}>Soft and warm. An adventurer need not forsake <i>all</i> comfort.</Tooltip></>, <>Two sets of <Tooltip tip={"Plain Clothes"}>Ordinary clothes for ordinary folk.</Tooltip></>, <>A <Tooltip tip={"Scissors"}>Suitable for cutting cloth or paper</Tooltip> and a <Tooltip tip={"Needle &amp; Thread"}>A needle and 100 feet of thread wound around a spindle, for sewing.</Tooltip></>, <>A <Tooltip tip={"Compass"}>Always points north, except in the presence of magical fields.</Tooltip> and <Tooltip tip={"Navigational Tools"}>An astrolabe and sextant, used by mariners to determine approximate positioning ascertain the distance to landmarks of known height.</Tooltip></>] },],
-};
-
-export const Veteran = {
+export const veteran = {
   name: "Veteran",
   description: <div className='default'>The veteran is an experienced former soldier trained in the use of military grade melee weapons. Veterans thrive on camaraderie and fight best when backed up by their companions. Most importantly, veterans bolster their team in various ways without stepping back from the frontline of battle.</div>,
   backstoryPrompts: ["Why did you join the military?", "What rank did you achieve?", "In which battles or wars did you fight, if any?", "What made you leave your previous life and start adventuring?"],
@@ -317,7 +316,7 @@ export const Veteran = {
     { name: <b>Any three of the following:</b>, contents: [<>A <Tooltip tip={"100 Foot Rope"}>Easily affixed to an adventurer's pack. Holds up to 1000 pounds of weight.</Tooltip>, including a <Tooltip tip={"Block &amp; Tackle"}>For lifting weight and multiplying effort when hoisting with ropes.</Tooltip></>, <><Tooltip tip={"Climbing Gear"}>Includes 10 pitons, 3 carabiners, and a harness</Tooltip></>, <>A <Tooltip tip={"Map"}>Conveys a general sense of surrounding terrain.</Tooltip> and <Tooltip tip={"Compass"}>Always points north, except in the presence of magical fields.</Tooltip></>, <>A <Tooltip tip={"Musical Instrument"}>An instrument such as a guitar, banjo, lute, or dulcimer. Not included: the skill to play it.</Tooltip></>, <>A <Tooltip tip={"Workman's Hammer"}>An ordinary ball-peen hammer.</Tooltip>, <Tooltip tip={"Chisel"}>For shaping stone and wood. Best when combined with a workman's hammer.</Tooltip>, and a <Tooltip tip={"Crowbar"}>Invented by workmen, for prying. A favorite of thieves and hoodlums galore.</Tooltip></>, <>A <Tooltip tip={"Whistle"}>Emits a shrill noise, often to alert of danger.</Tooltip></>] },],
 };
 
-export const Witch = {
+export const witch = {
   name: "Witch",
   altName: "Warlock",
   description: <div className='default'>Witches and warlocks are a diverse sort, hailing from many walks of life. You may find one in a palace in the very heart of luxury, another in a dingy cave or a squalid coven, and a third in a quaint shack amidst a great forest. Wherever they are found, witches are defined by their immense power, gained from their pact with a supernatural entity. The terms of these pacts are as diverse and as varied as warlocks themselves, and bring danger, madness, and power in equal measure. Such pacts are usually made with demonic or fey beings, for angels and dragons have little use of pacts. Demonic patrons typically allow their supplicants to dispose of their power in whatever manner they wish, in exchange for enslavement in the afterlife. Conversely, fey constantly demand small (or not-so-small) favors, but care very little for their supplicant’s eternal fate.</div>,
@@ -334,7 +333,7 @@ export const Witch = {
     { name: <b>One of the following items, shoved to the bottom of the pack:</b>, contents: [<><Tooltip tip={"Formal Wear"}>Appropriate for appearances before a noble or royal court. +1 to performance checks.</Tooltip> and a set of <Tooltip tip={"Religious Vestments"}>Distinguishing attire of a priest, cleric, or similar ilk.</Tooltip></>, <>A <Tooltip tip={"Deck of Cards"}>An ordinary deck of cards, tinged with the faint scent of alcohol and tobacco.</Tooltip>, A human skull, a <Tooltip tip={"Candle"}>Lasts 1 hour; emits only dim light.</Tooltip>, and an <Tooltip tip={"Hourglass"}>Measures out the passage of an hour. Accurate to within one minute.</Tooltip> (gain inspiration)</>, <>A <Tooltip tip={"Portable Alchemy Set"}>Allows brewing potions, though less reliably so than a proper alchemical laboratory.</Tooltip> (lose 50 gold)</>, <>A <Tooltip tip={"Crystal Ball"}>Aids in scrying, divination, and certain forms of astrology. Highly prized by mages.</Tooltip> (lose 100 gold)</>, <>A bar of <Tooltip tip={"Soap"}>Washes away sweat and grime, more than plain water. +1 to persuasion and performance checks for 12 hours. 10 uses.</Tooltip> and <Tooltip tip={"Perfume"}>Known as cologne, when sold to men. Lends a pleasant scent to one that wears it. Increases charisma by 1 for one hours, if one has washed with soap. 10 uses.</Tooltip></>, <>An <Tooltip tip={"Inkpot &amp; Quill"}>An ounce of ink, sufficient to fill 1000 pages, at least.</Tooltip> and a <Tooltip tip={"Scroll"}>5 feet of blank parchment.</Tooltip>, plus a <Tooltip tip={"Signet Ring &amp; Sealing Wax"}>Allows a distinctive wax seal to be affixed to scrolls and letters. Provides proof of authenticity and prevents tampering.</Tooltip> (gain proficiency in <Sub skill="Literacy" />)</>] },],
 };
 
-export const Wizard = {
+export const wizard = {
   name: "Wizard",
   description: <div className='default'>Cloistered in his high tower, a tall and heavily bearded man pushes arcane magic to its absolute limit. Bedecked in a great flowing robe and pointed hat, he ensures that the stars and planets align before pursuing his audacious experiment. Sanity and restraint long forsaken, he clutches a crystal ball, gazing somewhere within as blue electricity arcs from the tips of his fingers. No-one knows how he got his power; some say it runs in his blood, while others say that he was once a promising young student expelled from a university. Whatever the case, a wizard is someone with a naturally high aptitude for magic who usually practices on their own terms, outside the auspices of a university.</div>,
   backstoryPrompts: ["Have you ever attended a magical university? If so, did you drop out or were you expelled?", "How do you feel about the ethical limitations imposed on scholarly research?", "Do you conduct experiments on your own? If so, are they ethical?", "What made you leave your previous life and start adventuring?"],
@@ -349,7 +348,7 @@ export const Wizard = {
     { name: <b>Up to three of the following items, secured in a <Tooltip tip={"Rucksack"}>Of burlap, suitable for any purpose. 5 gallon capacity.</Tooltip>:</b>, contents: [<>A pair of <Tooltip tip={"Spectacles"}>For reading comfort, or restoring sight to the nearsighted adventurer.</Tooltip></>, <>A bottle of any alcoholic drink</>, <>A pipe and <Tooltip tip={"Tobacco"}>1 pound. Emits a thick smoke when lit, agreeable to some and noxious to others.</Tooltip></>, <>A cup of <Tooltip tip={"Salt, 1 cup"}>For flavor, and curing meat. And driving off foul spirits.</Tooltip></>, <>A gallon jug of <Tooltip tip={"Drinking Water"}>1 Gallon of potable water for cooking and drinking.</Tooltip></>, <>A pair of <Tooltip tip={"Scissors"}>Suitable for cutting cloth or paper</Tooltip> and some <Tooltip tip={"String"}>50 feet of string wrapped around a spindle. Its use depends on one's wit and creativity. It entertains cats, if nothing else.</Tooltip></>] },],
 };
 
-const allClasses = [Assassin, Barbarian, Crusader, Druid, Hermit, Inquisitor, Knight, Marksman, Mercenary, Minstrel, Monk, Prophet, Psychic, Ranger, Scholar, Thief, Tinker, Veteran, Witch, Wizard]
+const allClasses = [assassin, barbarian, crusader, druid, hermit, inquisitor, knight, marksman, mercenary, minstrel, monk, plague_doctor, prophet, psychic, ranger, scholar, thief, veteran, witch, wizard]
 
 export const classes = new Source<CombatClass>(
 	"Classes",

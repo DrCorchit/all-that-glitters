@@ -44,9 +44,8 @@ function StatsSection(): JSX.Element {
 			<p>
 				Willpower (WP) is expended as the player uses powerful spells and abilities. When WP is fully depleted, the
 				character is said to be exhausted. There is not an immediate penalty for this condition, other than not being
-				able to use critically important abilities. Maximum willpower is equal to 10 plus a player's <Sub attr='CHA' />{" "}
-				and <Sub attr='NST' />
-				modifiers.
+				able to use critically important abilities. Maximum willpower is equal to 5, plus the maximum of either the{" "}
+				<Sub attr='CHA' /> or <Sub attr='NST' /> modifiers. Willpower also increases by 1 at even numbered levels.
 			</p>
 			<pre>{strings.max_wp_formula}</pre>
 			<h5>Mitigation</h5>
@@ -166,10 +165,10 @@ function EquipmentSection(): JSX.Element {
 			<p>A player can carry up to two weapons, as follows:</p>
 			<ul>
 				<li>A single two-handed weapon</li>
-				<li>A one-handed weapon, plus a buckler, shield, or small weapon in the offhand</li>
+				<li>A one-handed weapon, plus a buckler or shield in the offhand</li>
+				<li>A one-handed weapon, with the offhand kept free to cast spells</li>
 				<li>Two light weapons, such as two shortswords or two daggers</li>
 				<li>A light weapon and a greatshield</li>
-				<li>A one-handed weapon, with the offhand kept free to cast spells</li>
 			</ul>
 			<p>If you only carry one weapon, leave the "offhand" column blank.</p>
 			<h5>Armor</h5>
@@ -200,7 +199,7 @@ function SkillsSection(): JSX.Element {
 				whose modifier may be used instead, under certain circumstances. For example, a player who is sneaking may
 				decide that they are too clumsy to move quietly and instead opt to sprint past the guard while his gaze is
 				turned. In this case, the player is trying to use their modifier for speed instead of dexterity for the stealth
-				check. Whether this type of substitution is allowed is situational. Certain circumstances may <i>require</i>{" "}
+				check. Whether this type of substitution is allowed is situational. Certain circumstances may <i>require</i>
 				that the alternative attribute score modifier is used, while others may allow the player to choose whichever is
 				higher.
 			</p>

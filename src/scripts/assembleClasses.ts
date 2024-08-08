@@ -1,6 +1,6 @@
 import fs from "fs";
 import {FileBuilder, ObjectBuilder} from "../utils/tsxBuilder";
-import {normalize} from "path";
+import {normalize} from "../utils/utils";
 
 export interface ClassJson {
 	name: string;

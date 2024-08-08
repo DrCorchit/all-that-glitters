@@ -1,32 +1,32 @@
 [
-  {
-    "name":"Warrior",
-    "description":"For those who want to play as someone sturdy, wearing heavy armor and fighting with weapons like swords, spears, and halberds.",
-    "classes":["Barbarian", "Knight", "Mercenary", "Veteran"],
-    "bonuses": ["+1 Strength", "Martial Arts Proficiency", "Ability: Heavy Attack"]
-  },
-  {
-    "name":"Renegade",
-    "description":"For those focused on stealth, sneak attacks, and subterfuge—or assassination and seduction!",
-    "classes":["Assassin", "Minstrel", "Thief", "Tinker"],
-    "bonuses": ["+1 Dexterity", "Stealth Proficiency", "Ability: Precision Strike"]
-  },
-  {
-    "name":"Mage",
-    "description":"For those who wish to wield mystical powers, casting arcane spells and unleashing the elements of frost, fire, and lightning.",
-    "classes":["Psychic", "Scholar", "Witch", "Wizard"],
-    "bonuses": ["+1 Intelligence", "Sorcery Proficiency", "Ability: Mana Regeneration"]
-  },
-  {
-    "name":"Naturalist",
-    "description":"For those who want to work closely with nature and animals, living in harmony with the natural world.",
-    "classes":["Druid", "Hermit", "Marksman", "Ranger"],
-    "bonuses": ["+1 Instinct", "Nature Proficiency", "Ability: Beast Speech"]
-  },
-  {
-    "name":"Zealot",
-    "description":"For those who wish to combine magical and martial prowess in devotion to a higher principle or power.",
-    "classes":["Crusader", "Inquisitor", "Monk", "Prophet"],
-    "bonuses": ["+1 Charisma", "Devotion Proficiency", "Ability: Meditation"]
-  }
+	{
+		"name": "Warrior",
+		"description": "For those who want to play as someone sturdy, wearing heavy armor and fighting with weapons like swords, spears, and halberds.",
+		"classes": ["Barbarian", "Knight", "Mercenary", "Veteran"],
+		"bonuses": ["+1 Strength", "Martial Arts Proficiency", "Ability: Heavy Attack"]
+	},
+	{
+		"name": "Renegade",
+		"description": "For those focused on stealth, sneak attacks, and subterfuge—or assassination and seduction!",
+		"classes": ["Assassin", "Minstrel", "Thief", "Tinker"],
+		"bonuses": ["+1 Dexterity", "Stealth Proficiency", "Ability: Precision Strike"]
+	},
+	{
+		"name": "Mage",
+		"description": "For those who wish to wield mystical powers, casting arcane spells and unleashing the elements of frost, fire, and lightning.",
+		"classes": ["Psychic", "Scholar", "Witch", "Wizard"],
+		"bonuses": ["+1 Intelligence", "Sorcery Proficiency", "Ability: Mana Regeneration"]
+	},
+	{
+		"name": "Naturalist",
+		"description": "For those who want to work closely with nature and animals, living in harmony with the natural world.",
+		"classes": ["Druid", "Hermit", "Marksman", "Ranger"],
+		"bonuses": ["+1 Instinct", "Nature Proficiency", "Ability: Beast Speech"]
+	},
+	{
+		"name": "Zealot",
+		"description": "For those who wish to combine magical and martial prowess in devotion to a higher principle or power.",
+		"classes": ["Crusader", "Inquisitor", "Monk", "Prophet"],
+		"bonuses": ["+1 Charisma", "Devotion Proficiency", "Ability: Meditation"]
+	}
 ]

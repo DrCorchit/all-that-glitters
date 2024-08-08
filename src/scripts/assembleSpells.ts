@@ -99,7 +99,7 @@ function spellMinLevelFormula(json: SpellJson) {
 
 function spellSlotCostFormula(json: SpellJson) {
 	let slotCost = rarities.lookup(json.rarity).slots;
-	slotCost += Math.floor(json.level / 2);
+	slotCost += Math.floor(json.level / 3);
 	return slotCost;
 }
 

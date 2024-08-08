@@ -1,20 +1,31 @@
-1|Freestyle|1|Swim speed is increased by 50%.
-2|Deep Breath|2|After persistent practice, you learn to hold your breath for 50% longer than normal.
+
+2|Billy Goat|3|Jump height and distance are increased by 50%. You gain a 1d4 bonus when making {{skills.mobility}} saving throws.
+
+3|Parkour|4|
+4|Roll with the Punches|4|Fall damage is reduced by 2d10. You can expend 1 willpower to reduce {{damage.bludgeoning}} damage you take by 1d4.
+5|Wall Jump|
+3|Dungeoneer|3|Gain a 1d4 bonus to {{skills.perception}} when exploring dungeons, and to {{skills.legerdemain}} when disarming traps.
+
+2|Vertical Escape|3|You may use the grappling hook to make a hasty escape as a combat action. If surroundings are appropriate, you can attempt a DT 12 {{skills.mobility}} check to throw the hook up to 30 feet vertically. If it latches, you can use an action to climb 10 feet up the rope, away from enemy melee attacks.
+4|Come Hither|2|Using an action, the player may throw the grappling hook at a target within 20 feet. Upon a successful {{skills.accuracy}} check against the target’s {{keywords.mit}}, the target is pulled up to 15 feet towards the player.
+
+2|Parry|You may attempt to parry melee attacks using a reaction. When parrying, {{keywords.mit}} is increased by the parry amount of the weapon. Parrying an attack costs a reaction, regardless of whether the attack is successful.
+3|Riposte|4|After a successful parry, you can follow up with a weapon attack.
+3|Cleaving Strike|4|When making a melee attack with a weapon that deals {{damage.slashing}} damage, you can expend 2 willpower to strike an additional foe if more than one foe is in range.
+2|Shield Bash|3|You can make a bludgeoning attack when carrying a {{weapons.buckler}} or {{weapons.shield}}.
+3|Shield Charge|4|
+
+4|Praetorian|You no longer have disadvantage to {{skills.mobility}} checks while wearing armor.
+5|Samurai|4|The penalty to maximum DC when wearing heavy armor is reduced by 2.
+
+1|Mundane|4|1d4 bonus when making spell saving throws, but you cannot cast spells.
+1|Bloodthirsty|4|+1 willpower when slaying an enemy, but spells cost +1 willpower to cast.
+1|Stalwart|5|+3 HP per level, but no bonus to willpower from character level.
+1|Arcane Apprentice|3|Training slot costs for spells in your chosen study are reduced by 1.
+4|Arcane Adept|4|
+7|Arcane Master|6|
+
+
+2|Freestyle|1|Swim speed is increased by 50%.
+3|Deep Breath|2|After persistent practice, you learn to hold your breath for 50% longer than normal.
 4|Take Backsies|5|Once a day, you can expend willpower to reroll a saving throw you have failed. The amount of willpower required is equal to the amount by which you failed the roll.
-2|Leaping and Landing|3|Jump height and distance are increased by 50%. The player gains a 1d4 bonus when making {{skills.mobility}} saving throws.
-3|Roll with the Punches|4|Fall damage is reduced by 10 + 1d10. You can expend 1 willpower to reduce {{damage.bludgeoning}} damage you take by 1d4.
-1|Vertical Escape|3|You may use the grappling hook to make a hasty escape as a combat action. If surroundings are appropriate, you can attempt a DT 12 {{skills.mobility}} check to throw the hook up to 30 feet vertically. If it latches, you can use an action to climb 10 feet up the rope, away from enemy melee attacks.
-2|Wall Jump|
-1|Parkour|4|
-4|Dungeoneer|3|Gain a 1d4 bonus to {{skills.perception}} when exploring dungeons, and to {{skills.legerdemain}} when disarming traps.
-
-3|Vertical Escape|
-Using an action, the player may throw the grappling hook at a target within 20 feet. Upon a successful {{skills.accuracy}} check against the target’s mitigation, the target is pulled 15 feet towards the player.
-
-
-1|Parry|You may attempt to parry melee attacks using a reaction. When parrying, mitigation is increased by the parry amount of the weapon. Parrying an attack costs a reaction, regardless of whether the attack is successful.
-3|Riposte
-1|Shield
-
-5|Turtle|4|The penalty to maximum DC when wearing heavy armor is reduced by 2.
-4|You no longer have disadvantage to {{skills.mobility}} checks while wearing armor.
