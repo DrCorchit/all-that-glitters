@@ -1,5 +1,5 @@
 import Appendix from "../../components/Appendix";
-import {FeatInfo, FeatJson, FeatTSX, featTypes} from "../../concepts/feat";
+import {FeatInfo, FeatTSX, featTypes} from "../../concepts/feat";
 import {normalize, range, recordEquals} from "../../utils/utils";
 import {feats} from "../../generated/feats";
 import {AppendixLink} from "../../components/InternalLink";
