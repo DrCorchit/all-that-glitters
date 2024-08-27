@@ -7,11 +7,16 @@
 		"Do you conduct experiments on your own? If so, are they ethical?",
 		"What made you leave your previous life and start adventuring?"
 	],
-	"limitations": "Wizards ",
+	"limitations": "Wizards have a deficiency in {{skills.defense}} and {{skills.mobility}} or {{skills.initiative}}",
 	"coreAbilityName": "Favorite Spell",
-	"coreAbilityDescription": "Whenever you learn a spell, you may choose to make that spell your favorite.",
+	"coreAbilityDescription": "Whenever you learn a new spell, you may choose to make that spell your favorite. Your favorite spell costs one less willpower to cast than usual.",
 	"levelingBonuses": {
-		"1": "gain +1 to {{attr.INT}} and {{attr.CHA}} and proficiency in survival."
+		"1": "gain proficiency in {{skills.folklore}}, {{skills.literacy}}, {{skills.medicine}}, or {{skills.nature}}. This skill becomes your supporting skill. Also gain the {{feats.arcane_apprentice}} feat in a school of your choice.",
+		"2": "Choose your subclass. You may choose one of the following: <ul><li><b>Summoner</b>: you gain proficiency in {{skills.folklore}}, and the ability to summon a familiar spirit.`</li><li><b></b></li><li><b></b></li><li><b></b></li></ul>",
+		"5": "your proficiency in {{skills.sorcery}} and your supporting skill increase to expertise.",
+		"10": "your proficiency in {{skills.sorcery}} and your supporting skill increase to mastery.",
+		"15": "",
+		"20": ""
 	},
 	"startingEquipment": {
 		"_": ["A set of {{items.mage_robes}}", "A {{items.magical_staff}}", "A large, pointed hat", "Any small weapon"],

@@ -66,25 +66,25 @@ function CastingSpellsSection(): JSX.Element {
 		<Section name={info.sections[1]}>
 			<p>
 				Once a spell has been learned, certain additional requirements must be met in order to cast the spell. These
-				requirements are unique to each spell, and detailed in the spell description. In general, most spells expend AP
-				and require a main hand action to cast. However, some spells require two hands, while others can be cast with
-				the offhand. Spell requirements are often related to how the spell is cast, as follows:
+				requirements are unique to each spell, and detailed in the spell description. In general, most spells expend
+				willpower and require an action to cast. Spell requirements are often related to how the spell is cast, as
+				follows:
 			</p>
 			<ul>
 				<li>
 					<b>Evocation spells</b>: These are spells of the ordinary sort, which are cast quickly and take effect
 					instantaneously. So named because they often initiated by speaking a magical word. Casting the spell incurs a
-					one-time expenditure of AP. Most of these are versatile spells with few material or circumstantial
+					one-time expenditure of willpower. Most of these are versatile spells with few material or circumstantial
 					requirements.
 				</li>
 				<li>
 					<b>Concentration Spells</b>: Spells which are cast over a span of time. These spells usually require a burst
-					of AP to initiate the spell and a smaller amount to maintain it. Concentration can be broken if the caster is
-					damaged or distracted.
+					of willpower to initiate the spell and a smaller amount to maintain it. Concentration can be broken if the
+					caster is damaged or distracted.
 				</li>
 				<li>
 					<b>Rituals</b>: Spells that require careful and methodic preparation. These spells are not normally cast
-					during combat, but usually offer a better tradeoff of AP versus power. Rituals often require specific
+					during combat, but usually offer a better tradeoff of willpower versus power. Rituals often require specific
 					circumstances, such as certain weather conditions, positioning of the moon or stars, or access to a
 					consecrated altar.
 				</li>

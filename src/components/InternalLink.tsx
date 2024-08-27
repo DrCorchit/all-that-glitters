@@ -8,6 +8,10 @@ export function SheetLink({children}: {children: ReactNode}) {
 	return <Link to={"/sheet"}>{children}</Link>;
 }
 
+export function SheetLink2({children}: {children: ReactNode}) {
+	return <Link to={"/sheet2"}>{children}</Link>;
+}
+
 export function ChapterLink({
 	chapter,
 	target = "",

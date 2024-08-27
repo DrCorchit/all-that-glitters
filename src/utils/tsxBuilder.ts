@@ -19,6 +19,29 @@ export class FileBuilder {
 	}
 }
 
+export class ArrayBuilder {
+	members: string[] = [];
+	constructor() {}
+
+	withString(value?: string): ArrayBuilder {
+		if (value !== undefined) {
+			return this.withValue(`"${value}"`);
+		}
+		return this;
+	}
+
+	withValue(value?: string | number): ArrayBuilder {
+		if (value !== undefined) {
+			this.members.push(value.toString());
+		}
+		return this;
+	}
+
+	build(): string {
+		return `[${this.members.join(", ")}]`;
+	}
+}
+
 export class ObjectBuilder {
 	properties = new Map<string, string>();
 	constructor() {}

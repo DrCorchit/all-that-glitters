@@ -1,53 +1,87 @@
-import athleticsJson from "../resources/feats/athletics.json";
-import combatJson from "../resources/feats/combat.json";
+import {CombatClass} from "../generated/combatClass";
 import proficiencyJson from "../resources/feats/proficiency.json";
-import {Keyword} from "../utils/keyword";
 import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
+import {StatBlock} from "./attribute";
+import {CombatCategory} from "./combatCategory";
 
-export interface Feat extends Keyword {
-	slots: number;
-	reqs: string[];
+export interface FeatType {
+	name: string;
+	description: string;
 }
 
-export const athleticsFeats = new Source<Feat>(
-	"Athletic",
-	athleticsJson.map(json => ({
-		name: json.name,
-		description: json.effect,
-		slots: json.cost.slots,
-		reqs: json.reqs,
-	})),
-	feat => feat.name,
-	(feat, text) => `<Tooltip tip={"${text ?? feat.name}"}>${feat.description}</Tooltip>`
+export const common: FeatType = {
+	name: "Common",
+	description: "These feats are available to all characters, with no general restrictions.",
+};
+
+export const arcane: FeatType = {
+	name: "Arcane",
+	description:
+		"These feats affect the use of magical spells. Learning any of these prevents one from taking mundane feats.",
+};
+
+export const mundane: FeatType = {
+	name: "Mundane",
+	description:
+		"These feats are only available to mundane characters with no magical abilities. Learning any spells or arcane feats prevents one from learning these feats.",
+};
+
+export const classFeat = {
+	name: "Class",
+	description: "These feats are restricted to specific character classes.",
+};
+
+export const featTypes = new Source<FeatType>(
+	"Feat Types",
+	[common, arcane, mundane, classFeat],
+	type => type.name,
+	(item, text) => `<Tooltip> tip={"${text ?? item.name}"}>${item.description}</Tooltip>`
 );
 
-replacers.push(athleticsFeats);
+replacers.push(featTypes);
 
-export const combatFeats = new Source<Feat>(
-	"Combat",
-	combatJson.map(json => ({
-		name: json.name,
-		description: json.effect,
-		slots: json.cost.slots,
-		reqs: json.reqs ?? [],
-	})),
-	feat => feat.name,
-	(feat, text) => `<Tooltip tip={"${text ?? feat.name}"}>${feat.description}</Tooltip>`
-);
+export interface FeatInfo {
+	name: string;
+	level: number;
+	featType: FeatType;
+	trainingReqs: {
+		level: number;
+		slots: number;
+		feats: string[];
+		stats: Partial<StatBlock>;
+		clazz?: CombatClass;
+	};
+}
 
-replacers.push(combatFeats);
+export interface FeatJson extends FeatInfo {
+	description: string;
+}
 
-export const proficiencyFeats = new Source<Feat>(
-	"Proficiency",
+export interface FeatTSX extends FeatInfo {
+	description: JSX.Element;
+}
+
+export function featLevelReqFormula(level: number) {
+	return 2 * level - 1;
+}
+
+export const proficiencies = new Source<FeatJson>(
+	"Proficiencies",
 	proficiencyJson.map(json => ({
 		name: json.name,
+		level: json.level,
+		featType: common,
 		description: json.effect,
-		slots: json.cost.slots,
-		reqs: json.reqs,
+		trainingReqs: {
+			level: featLevelReqFormula(json.level),
+			slots: json.cost.slots,
+			feats: [],
+			stats: {},
+		},
 	})),
 	feat => feat.name,
 	(feat, text) => `<Tooltip tip={"${text ?? feat.name}"}>${feat.description}</Tooltip>`
 );
 
-export const feats = [athleticsFeats, combatFeats, proficiencyFeats];
+replacers.push(proficiencies);

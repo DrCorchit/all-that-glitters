@@ -90,7 +90,7 @@ export const CT: Keyword = {
 
 export const keywords = new Source<Keyword>(
 	"Keywords",
-	[GM, P, NPC, PC, HP, MAX_HP, TEMP_HP, WP, MAX_WP, BC, DC, DT, CT],
+	[GM, P, NPC, PC, HP, MAX_HP, TEMP_HP, WP, MAX_WP, MIT, BC, DC, DT, CT],
 	keyword => keyword.abbr ?? keyword.name,
 	keyword => keyword.name
 );

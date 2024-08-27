@@ -1,42 +1,46 @@
 {
-  "name": "Scholar",
-  "description": "Scholars are formally-trained magic users typically found in highly sheltered environments: libraries, universities, or perhaps a royal laboratory. Here, they are kept safe from the dangers and inconveniences of the outside world. Once in a great while, however, a scholar shuts the cover of his or her dusty tome and packs a bag to go adventuring. Whenever they do so, they are a force to be reckoned with, having mastered powerful forms of magic that have been thoroughly documented and perfected over generations.",
-  "backstoryPrompts": [
-    "Where did you attend university?",
-    "Are you a student, graduate student, or professor?",
-    "Are you well-liked by your classmates or colleagues?",
-    "What are you currently researching or studying?",
-    "What made you leave your previous life and start adventuring?"
-  ],
-  "alignment": "Lawful",
-  "coreAbilityName": "Codex Arcana",
-  "coreAbilityDescription": "TODO",
-  "levelingBonuses": {
-    "1": "gain +2 to {{attr.INT}}, and proficiency in literacy."
-  },
-  "startingEquipment": {
-    "_": [
-      "A set of {{items.mage_robes}}",
-      "A {{items.magical_wand}}",
-      "A steel {{weapons.dagger}}",
-      "A pair of {{items.spectacles}}"
-    ],
-    "An adventurer's pack, containing:": [
-      "2d100 gold",
-      "7 days {{items.rations}} and a jug of {{items.water}}",
-      "A {{items.tent}}",
-      "3 sets of {{items.formal_wear}}",
-      "A set of {{items.utensils}}",
-      "An {{items.ink}} and three blank {{items.scroll}}s",
-      "A {{items.signet_ring}}",
-      "A stick of {{items.chalk}}",
-      "A bar of {{items.soap}}"
-    ],
-    "One of the following guilty pleasures:": [
-      "A jar of {{items.tobacco}}",
-      "A bottle of {{items.wine}}",
-      "Three bottles of {{items.mead}}",
-      "A {{items.chess_set}}"
-    ]
-  }
+	"name": "Scholar",
+	"description": "Scholars are formally-trained magic users typically found in highly sheltered environments: libraries, universities, or perhaps a royal laboratory. Here, they are kept safe from the dangers and inconveniences of the outside world. Once in a great while, however, a scholar shuts the cover of his or her dusty tome and packs a bag to go adventuring. Whenever they do so, they are a force to be reckoned with, having mastered powerful forms of magic that have been thoroughly documented and perfected over generations.",
+	"backstoryPrompts": [
+		"Where did you attend university?",
+		"Are you a student, graduate student, or professor?",
+		"Are you well-liked by your classmates or colleagues?",
+		"What are you currently researching or studying?",
+		"What made you leave your previous life and start adventuring?"
+	],
+	"alignment": "Lawful",
+	"coreAbilityName": "Punditry",
+	"coreAbilityDescription": "You start out with the {{feats.arcane_adept}} feat. The training slot cost to learn academic spells is reduced by 2.",
+	"levelingBonuses": {
+		"1": "gain proficiency in {{skills.literacy}}. Gain {{feats.arcane_apprentice}} in a school of your choice.",
+		"5": "increase your proficiency in {{skills.sorcery}} and {{skills.literacy}} to expertise.",
+		"10": "increase your proficiency in {{skills.sorcery}} and {{skills.literacy}} to mastery.",
+		"15": "gain the {{feats.arcane_master}} feat",
+		"20": ""
+	},
+	"startingEquipment": {
+		"_": [
+			"A set of {{items.mage_robes}}",
+			"A {{items.magical_wand}}",
+			"A steel {{weapons.dagger}}",
+			"A pair of {{items.spectacles}}"
+		],
+		"An adventurer's pack, containing:": [
+			"2d100 gold",
+			"7 days {{items.rations}} and a jug of {{items.water}}",
+			"A {{items.tent}}",
+			"3 sets of {{items.formal_wear}}",
+			"A set of {{items.utensils}}",
+			"An {{items.ink}} and three blank {{items.scroll}}s",
+			"A {{items.signet_ring}}",
+			"A stick of {{items.chalk}}",
+			"A bar of {{items.soap}}"
+		],
+		"One of the following guilty pleasures:": [
+			"A jar of {{items.tobacco}}",
+			"A bottle of {{items.wine}}",
+			"Three bottles of {{items.mead}}",
+			"A {{items.chess_set}}"
+		]
+	}
 }

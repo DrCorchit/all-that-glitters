@@ -77,9 +77,9 @@ function BeginningSection(): JSX.Element {
 			<h5>Recognition</h5>
 			<p>
 				The storyteller may decide to ask players to roll for recognition to see the stats of the monsters they are
-				about to fight. This normally includes their HP, AP, attributes, mitigation, and some of their spells, attacks,
-				or abilities. This check depends on the survival skill and its difficulty is determined by the rarity of the
-				monsters in question:
+				about to fight. This normally includes their HP, willpower, attributes, mitigation, and some of their spells,
+				attacks, or abilities. This check depends on the survival skill and its difficulty is determined by the rarity
+				of the monsters in question:
 			</p>
 			<table className='default'>
 				<thead>
@@ -181,12 +181,18 @@ function ActionSection(): JSX.Element {
 					<tr>
 						<td>Attack</td>
 						<td>1 Action</td>
-						<td>The character attacks with their main-hand weapon.</td>
+						<td>
+							The character attacks with their main-hand weapon. Their dodge chance is{" "}
+							<ChapterLink chapter={index} target='attacking'>
+								reduced accordingly
+							</ChapterLink>
+							.
+						</td>
 					</tr>
 					<tr>
-						<td>Throw</td>
+						<td>Spell</td>
 						<td>1 Action</td>
-						<td>The character throws an object such as a spear.</td>
+						<td>The character casts a spell with one hand.</td>
 					</tr>
 					<tr>
 						<td>Grapple</td>
@@ -199,8 +205,9 @@ function ActionSection(): JSX.Element {
 						<td>Help</td>
 						<td>2 Actions</td>
 						<td>
-							The character attempts to rouse an unconscious player, or assist another player with an assailant or
-							condition. Often requires a <Sub skill='medicine' /> skill check.
+							The character moves up to 6 feet and attempts to rouse an unconscious person, or assist them with an
+							assailant or condition. By passing a difficulty 10 <Sub skill='medicine' /> check, the one being helped
+							gains 1d6 hp.
 						</td>
 					</tr>
 					<tr>
@@ -262,14 +269,14 @@ function ActionSection(): JSX.Element {
 			<h5 id='attacking'>Attacking</h5>
 			<p>
 				Attacks are handled in two parts, the first being an attack roll to determine whether the attack connects, and
-				the second being a damage roll to determine how much damage is dealt. The attack roll is an ordinary skill check
-				for martial arts (for melee), accuracy (for ranged), or other skills for the various schools of magic. The DT of
-				the attack roll is the mitigation stat of the target.
+				the second being a damage roll to determine how much damage is dealt. The attack roll is an ordinary skill
+				check, usually <Sub skill='martial_arts' /> for melee attacks and <Sub skill='accuracy' /> for ranged. The
+				difficulty of the attack roll is the mitigation stat of the target.
 			</p>
 			<p>
 				To determine the damage of an attack that has connected, roll the weapon’s damage dice and add your{" "}
 				<ChapterLink chapter={3} target='modifier'>
-					modifier
+					attribute modifier
 				</ChapterLink>{" "}
 				for that weapon's attribute (usually strength). For example, if your character has 14 strength and attacks with
 				a cutlass, you would roll the weapon's damage die (a d6) and add 4 damage. If you rolled a 3, you would deal 7
@@ -288,7 +295,7 @@ function ActionSection(): JSX.Element {
 				Not all attacks are created equal. Sometimes a blade strikes exceptionally true, piercing all defenses. When
 				this happens, the blow is called a critical hit. Critical hits are triggered when the attacker rolls above the
 				<i>critical threshold</i> (abbreviated CT) on the attack roll before any bonuses including proficiencies are
-				applied. Normaly the CT is 20, but certain bonuses lower the threshold making it easier to score critical hits.
+				applied. Normally the CT is 20, but certain bonuses lower the threshold making it easier to score critical hits.
 			</p>
 			<p>When a critical hit lands, a few special rules apply:</p>
 			<ul>
@@ -298,8 +305,8 @@ function ActionSection(): JSX.Element {
 			</ul>
 			<h5 id='defending'>Defending</h5>
 			<p>
-				Defenders can increase their mitigation temporarily by blocking (with an action) or parrying (with a reaction).
-				A few special rules apply to blocking and parrying:
+				Defenders can increase their MIT temporarily by blocking (with an action), parrying (with a reaction), or
+				attempting to dodge (with an action). A few special rules apply to blocking and parrying:
 			</p>
 			<ul>
 				<li>
@@ -310,7 +317,7 @@ function ActionSection(): JSX.Element {
 					A defender can choose which attack to parry, but cannot choose to parry an attack after the attack roll for
 					that attack has already been made.
 				</li>
-				<li>A defender can parry at most one attack per turn.</li>
+				<li>The dodge action allows you to disengage from enemy attacks without triggering opportunity attacks.</li>
 			</ul>
 			<h5 id='moving'>Moving</h5>
 			<p>

@@ -1,7 +1,7 @@
 {
 	"max_hp_formula": "Max HP = STR + STR * (level / 2)",
 	"max_wp_formula": "Max WP = 5 + (level / 2) + max(NST modifier, CHA modifier)",
-	"dc_formula": "DC = DEX",
+	"dc_formula": "DC = min(DEX, armor cap)",
 	"bc_formula": "BC = armor BC + shield BC",
 	"mit_formula": "MIT = BC + DC",
 	"skill_check_formula": "Skill Check = 1d20 + attribute modifier + proficiency bonus",

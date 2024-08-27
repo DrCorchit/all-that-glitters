@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {SheetLink} from "../components/InternalLink";
+import {SheetLink, SheetLink2} from "../components/InternalLink";
 
 function MainPage() {
 	return (
@@ -38,7 +38,7 @@ function MainPage() {
 				If you're interested in running a game, I suggest reading the <Link to='dmg_toc'>Dungeon Master's Guide</Link>.
 				<br />
 				Character sheets are available <SheetLink>here</SheetLink> with an optional second page available{" "}
-				<Link to='sheet_2'>here</Link>.
+				<SheetLink2>here</SheetLink2>.
 			</p>
 			<h1>...Is Not Gold!</h1>
 			<h2>Thank you for reading.</h2>

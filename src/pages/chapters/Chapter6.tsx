@@ -21,19 +21,19 @@ function RestingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[0]}>
 			<p>
-				Over time, your characters become ragged and weary as they take damage and expend AP during combat. Although
-				some HP and AP can be recovered with potions or abilities, most recovery is done through resting. There are
-				three kinds of rests:
+				Over time, your characters become ragged and weary as they take damage and expend willpower during combat.
+				Although some HP and willpower can be recovered with potions or abilities, most recovery is done through
+				resting. There are three kinds of rests:
 			</p>
 			<ul>
 				<li>
 					<b>Holiday</b>: The party spends several nights in or around a town, resting and relaxing or drinking and
-					carousing as they will. All HP and AP are restored, and all status conditions are recovered. Holiday costs 10
-					gold per adventurer per night, and grants 1d6 temporary HP and 1d4 temporary WP. Players can reroll these dice
-					up to three times by taking additional days on holiday.
+					carousing as they will. All HP and willpower are restored, and all status conditions are recovered. Holiday
+					costs 10 gold per adventurer per night, and grants 1d6 temporary HP and 1d4 temporary WP. Players can reroll
+					these dice up to three times by taking additional days on holiday.
 				</li>
 				<li>
-					<b>Night's Rest</b>: All HP and AP are restored. The entire party makes camp and sleeps for 8 hours,
+					<b>Night's Rest</b>: All HP and willpower are restored. The entire party makes camp and sleeps for 8 hours,
 					completing the adventuring day. If in the wilderness, this typically involves setting up camp, building a
 					fire, cooking dinner, and so forth. In villages and towns, it usually involves a night at an inn. Taking a
 					long rest consumes a day's rations, or 5 gold when resting at an inn. It's not possible to long rest inside
@@ -41,8 +41,8 @@ function RestingSection(): JSX.Element {
 				</li>
 				<li>
 					<b>Breather</b>: The party sits down for an hour or so to dress their wounds and catch their breath. Each
-					player recovers 1d8 HP and 1d4 AP. The party can take at most two breathers per day, possibly back to back.
-					This amount increases at higher levels, as follows:
+					player recovers 1d8 HP and 1d4 willpower. The party can take at most two breathers per day, possibly back to
+					back. This amount increases at higher levels, as follows:
 					<table className='default'>
 						<thead>
 							<tr>

@@ -11,7 +11,7 @@
 	"coreAbilityName": "Miracle",
 	"coreAbilityDescription": "As an agent of divine will, you may channel your deity's power once per day to cast a spell with its willpower cost reduced by 5.",
 	"levelingBonuses": {
-		"1": "gain proficiency in {{skills.sorcery}}. You have knowledge of any ",
+		"1": "gain proficiency in {{skills.sorcery}} and the {{feats.arcane_apprentice}} feat in a school of your choice.",
 		"2": "you discover you divine calling, chosen by your deity. You may take one of the following: <ul><li>Calling of the healer. Gain proficiency in {{skills.medicine}}. You heal 1d4 HP whenever you cast a healing spell.</li><li>Calling of the deceiver. Gain proficiency in {{skills.stealth}} and {{skills.legerdemain}}.</li><li>Calling of the teacher. Gain proficiency in {{skills.literacy}}. You may learn one scholarly spell.</li><li>Calling of the destroyer. Gain proficiency in {{skills.initiative}}.</li></ul>"
 	},
 	"startingEquipment": {

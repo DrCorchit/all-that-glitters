@@ -1,32 +1,139 @@
 import Appendix from "../../components/Appendix";
-import {Feat, feats} from "../../concepts/feat";
-import {normalize} from "../../utils/utils";
+import {FeatInfo, FeatJson, FeatTSX} from "../../concepts/feat";
+import {normalize, range, recordEquals} from "../../utils/utils";
+import {feats} from "../../generated/feats";
+import {AppendixLink} from "../../components/InternalLink";
+import {useState} from "react";
+import Collapsible from "../../components/Collapsible";
 
-function FeatElement({feat}: {feat: Feat}): JSX.Element {
+function FeatElement({feat}: {feat: FeatTSX}): JSX.Element {
+	const id = normalize(feat.name);
 	return (
 		<div className='background'>
-			<h5 id={normalize(feat.name)}>{feat.name}</h5>
+			<button
+				className='h5'
+				id={id}
+				onClick={() => {
+					const text = `https://all-that-glitters.net/feats#${id}`;
+					navigator.clipboard.writeText(text);
+				}}>
+				{feat.name}
+			</button>
 			<p>
-				<b>Requirements</b>: {feat.reqs.join(", ")}
-			</p>
-			<p>
-				<b>Training Slots</b>: {feat.slots}
+				<i>{`Level ${feat.level} ${feat.featType} Feat`}</i>
 			</p>
 			<p>{feat.description}</p>
+			<p>
+				<b>Requirements</b>:
+				<ul>
+					<li>Adventurer Level {feat.trainingReqs.level}</li>
+					<li>Training Slots: {feat.trainingReqs.slots}</li>
+					{Object.entries(feat.trainingReqs.stats).map((entry, index) => {
+						return (
+							<li key={index}>
+								{entry[0].toUpperCase()}: {entry[1]}
+							</li>
+						);
+					})}
+					{feat.trainingReqs.feats.map((featName, index) => {
+						const feat = feats.lookup(featName);
+						return (
+							<li key={index}>
+								<AppendixLink appendix={2} target={normalize(feat.name)} />
+							</li>
+						);
+					})}
+				</ul>
+			</p>
 		</div>
 	);
 }
 
+const filterTypes = ["At Least", "Exactly", "At Most"] as const;
+type FilterType = (typeof filterTypes)[number];
+
+type FilterState = {
+	word: string;
+	type: FilterType;
+	level: number;
+};
+
+const defaultFilterState: FilterState = {word: "", type: "At Least", level: 1};
+
+function FilterForm({
+	filterState,
+	setFilterState,
+}: {
+	filterState: FilterState;
+	setFilterState: (filter: FilterState) => void;
+}): JSX.Element {
+	const isDirty = !recordEquals(filterState, defaultFilterState);
+
+	function resetForm(event: React.MouseEvent) {
+		event.preventDefault();
+		setFilterState(defaultFilterState);
+	}
+
+	return (
+		<form>
+			<input
+				name='search'
+				id='word'
+				value={filterState.word}
+				onChange={e => setFilterState({...filterState, word: e.target.value})}
+				placeholder='Filter by feat name'></input>
+			<hr />
+			<label>Filter by feat level: </label>
+			<select value={filterState.level} onChange={e => setFilterState({...filterState, level: Number(e.target.value)})}>
+				{range(1, 9).map((value, index) => (
+					<option value={value} key={index}>
+						{value}
+					</option>
+				))}
+			</select>
+			{filterTypes.map((type, index) => (
+				<label key={index}>
+					<input
+						type='radio'
+						value={type}
+						onChange={() => setFilterState({...filterState, type: type})}
+						checked={filterState.type === type}
+					/>
+					{type}
+				</label>
+			))}
+			{isDirty && <button onClick={resetForm}>Clear</button>}
+		</form>
+	);
+}
+
 export default function AppendixFeats() {
+	const [filterState, setFilterState] = useState<FilterState>(defaultFilterState);
+
+	function filter(feat: FeatInfo): boolean {
+		//TODO add description
+		const featSearchTerm = `${feat.name}`.toLowerCase();
+		if (filterState.word && !featSearchTerm.includes(filterState.word.toLowerCase())) {
+			return false;
+		}
+
+		switch (filterState.type) {
+			case "At Most":
+				return feat.level <= filterState.level;
+			case "Exactly":
+				return feat.level === filterState.level;
+			case "At Least":
+				return feat.level >= filterState.level;
+		}
+	}
+
 	return (
 		<Appendix index={2}>
-			{feats.map((featSource, index) => (
-				<div key={index}>
-					<h4>{featSource.name}</h4>
-					{featSource.array.map((feat, index2) => (
-						<FeatElement feat={feat} key={index2} />
-					))}
-				</div>
+			<Collapsible text='Search'>
+				<FilterForm filterState={filterState} setFilterState={setFilterState} />
+			</Collapsible>
+			{feats.array.filter(filter).map((feat, index) => (
+				<FeatElement feat={feat} key={index} />
 			))}
 		</Appendix>
 	);

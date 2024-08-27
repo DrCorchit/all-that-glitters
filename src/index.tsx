@@ -18,6 +18,7 @@ import AppendixItems from "./pages/appendices/AppendixItems";
 import AppendixBestiary from "./pages/appendices/AppendixBestiary";
 import Sheet from "./pages/Sheet";
 import AppendixFeats from "./pages/appendices/AppendixFeats";
+import {SheetPage2} from "./pages/SheetPage2";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
 	{
 		path: "/sheet",
 		element: <Sheet />,
+	},
+	{
+		path: "/sheet2",
+		element: <SheetPage2 />,
 	},
 ]);
 

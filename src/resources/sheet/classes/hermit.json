@@ -12,7 +12,10 @@
 	"coreAbilityDescription": "You expend 3 willpower to transform into your chosen animal for up to one hour. Your clothing and worn items merge with your beast form, and return upon detransformation. While transformed, your physical attributes ({{attr.STR}}, {{attr.DEX}}, {{attr.SPD}}) change to that of your chosen form.",
 	"levelingBonuses": {
 		"1": "gain proficiency in {{skills.survival}}.",
-		"5": "You may cast nature spells while transformed."
+		"5": "your proficiency in {{skills.nature}} and {{skills.survival}} increase to expertise.",
+		"10": "Your proficiency in {{skills.nature}} and {{skills.survival}} increase to mastery.",
+		"15": "",
+		"20": ""
 	},
 	"startingEquipment": {
 		"_": ["A set of {{items.plain_clothes}}", "A {{items.talisman}}"],

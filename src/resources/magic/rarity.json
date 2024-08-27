@@ -2,7 +2,7 @@
 	{
 		"name": "Common",
 		"description": "Common spells are widely known and easy to learn. Some of these spells are watered-down versions of more powerful spells studied by academic institutions.",
-		"slots": 3,
+		"slots": 2,
 		"gold": 0
 	},
 	{

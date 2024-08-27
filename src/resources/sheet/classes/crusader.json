@@ -9,14 +9,22 @@
 	],
 	"alignment": "Lawful",
 	"coreAbilityName": "Divine Providence",
-	"coreAbilityDescription": "Having taken a solemn oath of service before your God, you may call upon divine providence to bolster you and your allies. Once per short rest, you may take an action and expend 4 willpower to beseech your deity, gaining 1d8 temporary hitpoints and 1d8 bonus holy damage to your next successful weapon attack.",
-	"limitations": "Crusaders start with a deficiency in two of the following three skills: {{skills.literacy}}, {{skills.nature}}, or {{skills.legerdemain}}.",
+	"coreAbilityDescription": "Having taken a solemn oath of service before your God, you may call upon divine providence to bolster you and your allies. Once per short rest, you may take an action and expend 3 willpower to beseech your deity, gaining 1d8 temporary hitpoints and 1d8 bonus holy damage on your next successful weapon attack.",
+	"limitations": "Singleminded in their purpose, crusaders tend to neglect two of the following skills to the point of deficiency: {{skills.literacy}}, {{skills.nature}}, or {{skills.legerdemain}}.",
 	"levelingBonuses": {
-		"1": "gain proficiency in martial arts.",
-		"3": "your god calls you to a deeper level of devotion. During your next night's rest, you behold a vision of a sacred chalice and a righteous blade. You may reach out and touch one of these relics, so embarking on the path of either the <i>cleric</i> or the <i>paladin</i>: <ul><li>As a cleric, your party shares in your fortitude when you pray to your deity. Your divine providence grants allies 1d8 temporary hitpoints. You also gain proficiency in {{skills.medicine}}.</li><li>As a paladin, your prayers kindle divine ardor in the hearts of your companions. After invoking divine providence, each party member gains a bonus of 1d6 to their next weapon or spell attack. You also gain proficiency in {{skills.defense}}</li></ul>"
+		"1": "gain proficiency in {{skills.martial_arts}}.",
+		"2": "your god calls you to a deeper level of devotion. During your next night's rest, you behold a vision of a sacred chalice and a righteous blade. You may reach out and touch one of these relics, so embarking on the path of either the <i>cleric</i> or the <i>paladin</i>: <ul><li>As a cleric, your party shares in your fortitude when you pray to your deity. Your divine providence grants allies 1d4 temporary hitpoints. You also gain proficiency in {{skills.medicine}}.</li><li>As a paladin, your prayers kindle divine ardor in the hearts of your companions. After invoking divine providence, each party member gains a bonus of 1d6 to their next weapon attack. You also gain proficiency in {{skills.defense}}</li></ul>",
+		"5": "your proficiency in {{skills.persuasion}} and {{skills.martial_arts}} increase to expertise.",
+		"10": "Your proficiency in {{skills.persuasion}} and {{skills.martial_arts}} increase to mastery.",
+		"15": "",
+		"20": ""
 	},
 	"startingEquipment": {
-		"_": ["A steel {{armor.hauberk}}.", "A small weapon", "A holy symbol of your deity, which functions as a {{items.talisman}}"],
+		"_": [
+			"A steel {{armor.hauberk}}.",
+			"A small weapon",
+			"A holy symbol of your deity, which functions as a {{items.talisman}}"
+		],
 		"A weapon of one of the following types:": [
 			"Any great weapon or polearm",
 			"Any standard weapon and a {{weapons.shield}}",

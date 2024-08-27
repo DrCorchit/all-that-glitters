@@ -12,9 +12,11 @@
 	"coreAbilityDescription": "When making a ranged attack, you may expend 1 willpower to focus your aim, gaining advantage on the attack roll and lowering the CT by 1.",
 	"limitations": "Marksmen ",
 	"levelingBonuses": {
-		"1": "gain +2 {{attr.STR}} and {{attr.DEX}} and expertise in {{skills.accuracy}}",
-		"2": "gain +1 {{attr.DEX}}",
-		"3": "gain proficiency in {{skills.medicine}}, {{skills.mobility}}, or {{skills.stealth}}."
+		"1": "gain expertise in {{skills.accuracy}} and one of {{skills.medicine}}, {{skills.mobility}}, or {{skills.stealth}}. This becomes your supporting skill.",
+		"5": "increase your proficiency in {{skills.accuracy}} and your supporting skill to expertise.",
+		"10": "increase your proficiency in {{skills.accuracy}} and your supporting skill to mastery.",
+		"15": "",
+		"20": ""
 	},
 	"startingEquipment": {
 		"_": [

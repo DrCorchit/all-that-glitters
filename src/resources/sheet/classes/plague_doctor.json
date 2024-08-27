@@ -7,16 +7,21 @@
 		"What are your opinions on newfangled medical practices, such as disinfectants and ",
 		"What made you leave your previous life and start adventuring?"
 	],
-	"coreAbilityName": "Syringe Shot",
-	"coreAbilityDescription": "You have a special syringe filled with chemicals, which you can use to poison your opponents. As a melee weapon, it functions as an {{weapons.estoc}}. You can fill the syringe with any toxin you concoct to add the effects of that poison to your melee attack.",
+	"coreAbilityName": "This Won't Hurt a Bit",
+	"coreAbilityDescription": "You have a special syringe filled with chemicals, which functions as a {{weapons.stiletto}}. However, when your weapon would be coated with poison, it doubles the Whenever you take a breather or long rest, you can change the mixture.",
 	"levelingBonuses": {
-		"1": "TODO"
+		"1": "gain proficiency in {{skills.medicine}} and the {{feats.arcane_apprentice}} (alchemy) feat.",
+		"5": "increase your proficiency in {{skills.stealth}} and {{skills.medicine}} to expertise.",
+		"10": "increase your proficiency in {{skills.stealth}} and {{skills.medicine}} to mastery.",
+		"15": "",
+		"20": ""
 	},
 	"startingEquipment": {
 		"_": [
 			"A set of {{items.plain_clothes}}",
 			"A {{weapons.shortsword}} and a {{weapons.dagger}}",
-			"A doctor's robes, and a mask."
+			"A doctor's robes, and a mask.",
+			"A jar of leeches."
 		],
 		"An adventurer's pack, containing:": [
 			"2d100 gold",

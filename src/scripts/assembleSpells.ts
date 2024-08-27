@@ -66,6 +66,7 @@ function parseSpell(line: string, study: string): SpellJson {
 		trainingReqs: {
 			level: 1,
 			slots: 1,
+			stats: {},
 		},
 		castingReqs: {
 			evocation: evocation,
@@ -83,9 +84,11 @@ function initSpell(json: SpellJson): SpellJson {
 				level: spellMinLevelFormula(json),
 				slots: spellSlotCostFormula(json),
 				gold: spellGoldCostFormula(json),
-				INT: spellINTFormula(json),
-				NST: spellNSTFormula(json),
-				CHA: spellCHAFormula(json),
+				stats: {
+					int: spellINTFormula(json),
+					nst: spellNSTFormula(json),
+					cha: spellCHAFormula(json),
+				},
 			},
 		};
 	} catch (e) {
@@ -99,7 +102,7 @@ function spellMinLevelFormula(json: SpellJson) {
 
 function spellSlotCostFormula(json: SpellJson) {
 	let slotCost = rarities.lookup(json.rarity).slots;
-	slotCost += Math.floor(json.level / 3);
+	slotCost += Math.floor(json.level / 2);
 	return slotCost;
 }
 
@@ -142,9 +145,11 @@ function buildSpellObject(json: SpellJson): string {
 	trainReqs.withValue("level", json.trainingReqs.level);
 	trainReqs.withValue("slots", json.trainingReqs.slots);
 	trainReqs.withValue("gold", json.trainingReqs.gold);
-	trainReqs.withValue("INT", json.trainingReqs.INT);
-	trainReqs.withValue("NST", json.trainingReqs.NST);
-	trainReqs.withValue("CHA", json.trainingReqs.CHA);
+	const stats = new ObjectBuilder();
+	Object.entries(json.trainingReqs.stats).forEach(entry => {
+		stats.withValue(entry[0], entry[1]);
+	});
+	trainReqs.withValue("stats", stats.build());
 	builder.withValue("trainingReqs", trainReqs.build());
 
 	const castReqs = new ObjectBuilder();

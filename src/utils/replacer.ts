@@ -1,7 +1,3 @@
-//import {classes} from "../generated/combatClass";
-//import {races} from "../generated/race";
-//import {spells} from "../generated/spell";
-
 export interface Replacer {
 	name: string;
 	values: (value: string, name?: string) => string;

@@ -8,17 +8,6 @@ import {Spell, schools} from "../../concepts/magic";
 import {recordEquals, range} from "../../utils/utils";
 import {lookupSpellsBySchool} from "../../generated/spell";
 
-const filterTypes = ["At Least", "Exactly", "At Most"] as const;
-type FilterType = (typeof filterTypes)[number];
-
-type FilterState = {
-	word: string;
-	type: FilterType;
-	level: number;
-};
-
-const defaultFilterState: FilterState = {word: "", type: "At Least", level: 1};
-
 function Spellement({spell}: {spell: Spell}): ReactElement {
 	return (
 		<div className='background'>
@@ -45,9 +34,9 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 				<ul>
 					<li>Adventurer Level: {spell.trainingReqs.level}</li>
 					<li>Training Slots: {spell.trainingReqs.slots}</li>
-					{spell.trainingReqs.int > 0 && <li>Minimum Intelligence: {spell.trainingReqs.int}</li>}
-					{spell.trainingReqs.nst > 0 && <li>Minimum Instinct: {spell.trainingReqs.nst}</li>}
-					{spell.trainingReqs.cha > 0 && <li>Minimum Charisma: {spell.trainingReqs.cha}</li>}
+					{spell.trainingReqs.stats.int && <li>Minimum Intelligence: {spell.trainingReqs.stats.int}</li>}
+					{spell.trainingReqs.stats.nst && <li>Minimum Instinct: {spell.trainingReqs.stats.nst}</li>}
+					{spell.trainingReqs.stats.cha && <li>Minimum Charisma: {spell.trainingReqs.stats.cha}</li>}
 				</ul>
 				<p>Casting Requirements:</p>
 				<ul>
@@ -59,6 +48,17 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 		</div>
 	);
 }
+
+const filterTypes = ["At Least", "Exactly", "At Most"] as const;
+type FilterType = (typeof filterTypes)[number];
+
+type FilterState = {
+	word: string;
+	type: FilterType;
+	level: number;
+};
+
+const defaultFilterState: FilterState = {word: "", type: "At Least", level: 1};
 
 function FilterForm({
 	filterState,
@@ -83,7 +83,7 @@ function FilterForm({
 				onChange={e => setFilterState({...filterState, word: e.target.value})}
 				placeholder='Filter by spell name'></input>
 			<hr />
-			<label>Filter by spell Level: </label>
+			<label>Filter by spell level: </label>
 			<select value={filterState.level} onChange={e => setFilterState({...filterState, level: Number(e.target.value)})}>
 				{range(1, 9).map((value, index) => (
 					<option value={value} key={index}>

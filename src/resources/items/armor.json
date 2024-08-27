@@ -33,7 +33,7 @@
 		"cost": 50,
 		"weight": 15,
 		"reqs": ["STR 10"],
-		"effects": ["{{attr.DEX}} is capped at 18."]
+		"effects": ["{{attr.DEX}} is capped at 16."]
 	},
 	{
 		"name": "Hauberk",
@@ -42,7 +42,7 @@
 		"cost": 50,
 		"weight": 20,
 		"reqs": ["STR 10"],
-		"effects": ["{{attr.DEX}} is capped at 16.", "Stealth disadvantage"]
+		"effects": ["{{attr.DEX}} is capped at 15.", "Stealth disadvantage"]
 	},
 	{
 		"name": "Breastplate",
@@ -51,7 +51,7 @@
 		"cost": 50,
 		"weight": 20,
 		"reqs": ["STR 10"],
-		"effects": ["{{attr.DEX}} is capped at 15."]
+		"effects": ["{{attr.DEX}} is capped at 14."]
 	},
 	{
 		"name": "Ringmail",
@@ -60,7 +60,7 @@
 		"cost": 75,
 		"weight": 45,
 		"reqs": ["STR 12", "Defense Proficiency"],
-		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 13.", "Stealth disadvantage"]
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "Stealth disadvantage"]
 	},
 	{
 		"name": "Chainmail",
@@ -69,7 +69,7 @@
 		"cost": 150,
 		"weight": 45,
 		"reqs": ["STR 12", "Defense Proficiency"],
-		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 13.", "Stealth disadvantage"]
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "Stealth disadvantage"]
 	},
 	{
 		"name": "Half Plate Armor",
@@ -78,7 +78,7 @@
 		"cost": 250,
 		"weight": 45,
 		"reqs": ["STR 12", "Defense Expertise"],
-		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 12.", "{{skills.mobility}} disadvantage"]
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "{{skills.mobility}} disadvantage"]
 	},
 	{
 		"name": "Splinted Chainmail",

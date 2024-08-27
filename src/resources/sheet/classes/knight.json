@@ -10,20 +10,15 @@
 	],
 	"alignment": "Lawful",
 	"coreAbilityName": "Shining Armor",
-	"coreAbilityDescription": "You have sworn an oath to a nobleman or lady, to protect them with your life and to fight for them in battle. In return, they have provided you with a fine suit of chainmail, and several high quality steel weapons.",
-	"limitations": "Deficient in sorcery.",
+	"coreAbilityDescription": "You can expend 1 willpower to add half your armor's BC to a skill check or saving throw. The cost to do so increases by 1 each time this ability is used, and resets to 1 after a long rest.",
+	"limitations": "Deficient in {{skills.sorcery}}.",
 	"levelingBonuses": {
-		"1": "gain expertise in defense.",
-		"2": "learn any two abilities from the following list: <ul><li>{{maneuvers.parry}}</li><li>{{maneuvers.shield_bash}}</li><li>{{feats.lancer}}</li><li>{{feats.defender}}</li></ul>",
-		"3": "your liege gifts you an improved suit of armor. You may choose a suit of {{armor.half_plate_armor}} or {{armor.splinted_chainmail}}.",
-		"4": "The dexterity and speed caps on your armor are increased by 1.",
-		"5": "Learn 2 combat maneuvers",
-		"6": "in recognition of your glorious and heroic conduct, your liege grants you a set of steel plate armor.",
-		"7": "You ignore disadvantage on mobility checks while wearing half plate armor, and ignore disadvantage on stealth checks while wearing full plate.",
-		"8": "The dexterity and speed caps on your armor are further increased, from 1 to 2.",
-		"9": "when you fail a saving throw against a spell, you can expend willpower (equal to the amount by which you failed the save) to instead succeed the save.",
-		"12": "The dexterity and speed caps on your armor are further increased, from 2 to 3.",
-		"16": "The dexterity and speed caps on your armor are further increased, from 3 to 4."
+		"1": "gain expertise in {{skills.defense}}.",
+		"2": "your liege gifts you an improved suit of armor. You gain expertise in {{skills.defense}} and may choose a suit of {{armor.half_plate_armor}} or {{armor.splinted_chainmail}}.",
+		"5": "recognizing heroic conduct, your liege grants you a set of {{armor.full_plate_armor}} and your proficiency in {{skills.defense}} increases to mastery. Your proficiency in {{skills.martial_arts}} increases to expertise. ",
+		"10": "Your proficiency in {{skills.martial_arts}} increases to mastery.",
+		"15": "",
+		"20": ""
 	},
 	"startingEquipment": {
 		"_": [
@@ -33,11 +28,17 @@
 			"A {{items.lantern}}, with one {{items.oil}}.",
 			"A {{items.rope}}"
 		],
-		"A primary weapon, of one of the following types:": ["A bastard sword", "A longsword", "A bearded axe", "A warhammer"],
+		"A primary weapon, of one of the following types:": [
+			"A bastard sword",
+			"A longsword",
+			"A bearded axe",
+			"A warhammer"
+		],
 		"A secondary weapon, of one of the following types:": [
 			"A {{weapons.battle_axe}}",
 			"A falchion ({{weapons.broadsword}})",
 			"An {{weapons.estoc}}",
+			"A {{weapons.flail}}",
 			"A {{weapons.mace}}",
 			"A {{weapons.morningstar}}",
 			"A {{weapons.rapier}}"

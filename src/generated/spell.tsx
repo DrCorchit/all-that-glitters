@@ -14,8 +14,10 @@ export const brew_innoculative_philter = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  INT: 11,
+  slots: 2,
+  stats: {
+  int: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -34,7 +36,9 @@ export const brew_stimulant = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  INT: 12,
+  stats: {
+  int: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -53,7 +57,9 @@ export const brew_antivenin = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  INT: 12,
+  stats: {
+  int: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -71,8 +77,10 @@ export const brew_curative_potion = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  INT: 13,
+  slots: 3,
+  stats: {
+  int: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -90,9 +98,11 @@ export const brew_eloquence_philter = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -111,7 +121,9 @@ export const brew_amphibic_philter = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -129,9 +141,11 @@ export const brew_anaesthetic_potion = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -149,9 +163,11 @@ export const brew_hermetic_philter = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -169,9 +185,11 @@ export const brew_vigor_philter = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  INT: 15,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -189,9 +207,11 @@ export const brew_persistence_philter = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  INT: 15,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -210,7 +230,9 @@ export const brew_hallucinogenic = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  INT: 15,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -228,9 +250,11 @@ export const brew_acumen_philter = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 11,
-  slots: 6,
+  slots: 7,
   gold: 30,
-  INT: 16,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -248,9 +272,11 @@ export const brew_potency_philter = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 11,
-  slots: 6,
+  slots: 7,
   gold: 30,
-  INT: 16,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -268,9 +294,11 @@ export const brew_invisibility_potion = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  INT: 17,
+  stats: {
+  int: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -288,9 +316,11 @@ export const brew_elixir_of_invulnerability = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 15,
-  slots: 6,
+  slots: 8,
   gold: 40,
-  INT: 18,
+  stats: {
+  int: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -308,8 +338,10 @@ export const brew_elixir_of_immortality = new Spell({
   study: "Pharmacology",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  INT: 19,
+  slots: 8,
+  stats: {
+  int: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -327,8 +359,10 @@ export const brew_aphrodisiac = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  INT: 11,
+  slots: 2,
+  stats: {
+  int: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -346,8 +380,10 @@ export const brew_necrotoxin = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  INT: 11,
+  slots: 2,
+  stats: {
+  int: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -366,7 +402,9 @@ export const brew_brimstone = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  INT: 12,
+  stats: {
+  int: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -385,7 +423,9 @@ export const brew_narcoleptic_toxin = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  INT: 12,
+  stats: {
+  int: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -403,8 +443,10 @@ export const brew_lethargic_toxin = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  INT: 13,
+  slots: 3,
+  stats: {
+  int: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -422,9 +464,11 @@ export const brew_debilitative = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -435,16 +479,18 @@ export const brew_debilitative = new Spell({
 
 export const brew_enervative = new Spell({
   name: "Brew: Enervative",
-  description: <div className='default'>A frothing solution of nettles and thistle is distilled from an alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons loses 1d4 AP for each hit.</div>,
+  description: <div className='default'>A frothing solution of nettles and thistle is distilled from an alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons loses 1d4 willpower for each hit.</div>,
   level: 5,
   rarity: "Academic",
   type: "Enchantment",
   study: "Toxicology",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  INT: 15,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -462,9 +508,11 @@ export const brew_neurotoxin = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 11,
-  slots: 6,
+  slots: 7,
   gold: 30,
-  INT: 16,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -482,9 +530,11 @@ export const brew_aqua_regia = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 11,
-  slots: 6,
+  slots: 7,
   gold: 30,
-  INT: 16,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -502,9 +552,11 @@ export const brew_liquid_light = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 15,
-  slots: 6,
+  slots: 8,
   gold: 40,
-  INT: 18,
+  stats: {
+  int: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -522,9 +574,11 @@ export const brew_gorgonic_toxin = new Spell({
   study: "Toxicology",
   trainingReqs: {
   level: 17,
-  slots: 6,
+  slots: 7,
   gold: 90,
-  INT: 19,
+  stats: {
+  int: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -542,8 +596,10 @@ export const lodestone = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  INT: 11,
+  slots: 2,
+  stats: {
+  int: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -561,8 +617,10 @@ export const sunbeam = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  INT: 11,
+  slots: 2,
+  stats: {
+  int: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -581,7 +639,9 @@ export const luminance = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  INT: 12,
+  stats: {
+  int: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -599,8 +659,10 @@ export const solstice = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  INT: 13,
+  slots: 3,
+  stats: {
+  int: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -618,8 +680,10 @@ export const bolster = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  INT: 13,
+  slots: 3,
+  stats: {
+  int: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -637,9 +701,11 @@ export const starlight = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -657,9 +723,11 @@ export const holy_aurora = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  INT: 15,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -678,7 +746,9 @@ export const high_noon = new Spell({
   trainingReqs: {
   level: 11,
   slots: 5,
-  INT: 16,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -696,9 +766,11 @@ export const soul_equinox = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  INT: 17,
+  stats: {
+  int: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -716,9 +788,11 @@ export const justice = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 15,
-  slots: 6,
+  slots: 8,
   gold: 40,
-  INT: 18,
+  stats: {
+  int: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -736,8 +810,10 @@ export const solar_laser = new Spell({
   study: "Solar",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  INT: 19,
+  slots: 8,
+  stats: {
+  int: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -755,8 +831,10 @@ export const ray_of_lunacy = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  INT: 11,
+  slots: 2,
+  stats: {
+  int: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -775,7 +853,9 @@ export const moonshadow = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  INT: 12,
+  stats: {
+  int: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -793,8 +873,10 @@ export const lesser_invisibility = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  INT: 13,
+  slots: 3,
+  stats: {
+  int: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -812,9 +894,11 @@ export const time_stream = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -832,9 +916,11 @@ export const time_void = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  INT: 15,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -852,8 +938,10 @@ export const phantasm = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 9,
-  slots: 5,
-  INT: 15,
+  slots: 6,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -872,7 +960,9 @@ export const midnight = new Spell({
   trainingReqs: {
   level: 11,
   slots: 5,
-  INT: 16,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -890,9 +980,11 @@ export const time_rift = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  INT: 17,
+  stats: {
+  int: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -910,9 +1002,11 @@ export const greater_invisibility = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  INT: 17,
+  stats: {
+  int: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -930,9 +1024,11 @@ export const dark_mercy = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 15,
-  slots: 5,
+  slots: 7,
   gold: 80,
-  INT: 18,
+  stats: {
+  int: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -950,9 +1046,11 @@ export const mass_invisibility = new Spell({
   study: "Lunar",
   trainingReqs: {
   level: 17,
-  slots: 7,
+  slots: 8,
   gold: 45,
-  INT: 19,
+  stats: {
+  int: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -970,8 +1068,10 @@ export const meteorite = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  INT: 11,
+  slots: 2,
+  stats: {
+  int: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -990,7 +1090,9 @@ export const gravity_slam = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  INT: 12,
+  stats: {
+  int: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1008,8 +1110,10 @@ export const microgravity = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  INT: 13,
+  slots: 3,
+  stats: {
+  int: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1028,7 +1132,9 @@ export const gravity_well = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  INT: 14,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1046,8 +1152,10 @@ export const arms_of_hadar = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 7,
-  slots: 5,
-  INT: 14,
+  slots: 6,
+  stats: {
+  int: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1066,7 +1174,9 @@ export const misty_step = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  INT: 15,
+  stats: {
+  int: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1084,9 +1194,11 @@ export const great_comet = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 11,
-  slots: 6,
+  slots: 7,
   gold: 30,
-  INT: 16,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1104,8 +1216,10 @@ export const hunger_of_hadar = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  INT: 16,
+  slots: 7,
+  stats: {
+  int: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1123,9 +1237,11 @@ export const teleportation = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  INT: 17,
+  stats: {
+  int: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1143,8 +1259,10 @@ export const meteor_shower = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 15,
-  slots: 6,
-  INT: 18,
+  slots: 8,
+  stats: {
+  int: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1162,9 +1280,11 @@ export const black_hole = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 15,
-  slots: 5,
+  slots: 7,
   gold: 80,
-  INT: 18,
+  stats: {
+  int: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1182,8 +1302,10 @@ export const mass_teleportation = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  INT: 19,
+  slots: 8,
+  stats: {
+  int: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1201,8 +1323,10 @@ export const stargate = new Spell({
   study: "Planetary",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  INT: 19,
+  slots: 8,
+  stats: {
+  int: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1220,8 +1344,10 @@ export const herbal_remedy = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1239,8 +1365,10 @@ export const shillelagh = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1259,7 +1387,9 @@ export const barkskin = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1278,7 +1408,9 @@ export const thorn_whip = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1296,8 +1428,10 @@ export const aromatherapy = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1315,8 +1449,10 @@ export const tree_speech = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 7,
-  slots: 5,
-  NST: 14,
+  slots: 6,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1334,8 +1470,10 @@ export const chaos_spores = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 9,
-  slots: 5,
-  NST: 15,
+  slots: 6,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1353,8 +1491,10 @@ export const poison_spores = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  NST: 16,
+  slots: 7,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1372,8 +1512,10 @@ export const thorn_bed = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  NST: 16,
+  slots: 7,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1391,8 +1533,10 @@ export const tree_of_life = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 15,
-  slots: 6,
-  NST: 18,
+  slots: 8,
+  stats: {
+  nst: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1410,8 +1554,10 @@ export const become_tree = new Spell({
   study: "Weal",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  NST: 19,
+  slots: 8,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1429,8 +1575,10 @@ export const spiderweb = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1448,8 +1596,10 @@ export const snakebite = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1467,8 +1617,10 @@ export const cats_eye = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1486,8 +1638,10 @@ export const fishs_lung = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 3,
-  slots: 4,
-  NST: 12,
+  slots: 5,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1505,8 +1659,10 @@ export const eagles_talons = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1524,8 +1680,10 @@ export const hawks_eyes = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1543,8 +1701,10 @@ export const ravens_wings = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 7,
-  slots: 5,
-  NST: 14,
+  slots: 6,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1562,8 +1722,10 @@ export const lacerate = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 9,
-  slots: 5,
-  NST: 15,
+  slots: 6,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1581,8 +1743,10 @@ export const mole = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 9,
-  slots: 5,
-  NST: 15,
+  slots: 6,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1600,8 +1764,10 @@ export const owls_wisdom = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  NST: 16,
+  slots: 7,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1619,8 +1785,10 @@ export const rhinos_hide = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 13,
-  slots: 6,
-  NST: 17,
+  slots: 7,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1638,8 +1806,10 @@ export const circle_of_life = new Spell({
   study: "Wild",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  NST: 19,
+  slots: 8,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1657,8 +1827,10 @@ export const fairy_fire = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1677,7 +1849,9 @@ export const beast_speech = new Spell({
   trainingReqs: {
   level: 1,
   slots: 4,
-  NST: 11,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1696,7 +1870,9 @@ export const bubble = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1715,7 +1891,9 @@ export const bonfire = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1733,8 +1911,10 @@ export const spirit_animal = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1752,8 +1932,10 @@ export const far_whisper = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1771,8 +1953,10 @@ export const illusory_terrain = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 7,
-  slots: 5,
-  NST: 14,
+  slots: 6,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1791,7 +1975,9 @@ export const rain_dance = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1809,8 +1995,10 @@ export const awaken_beastie = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 9,
-  slots: 5,
-  NST: 15,
+  slots: 6,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1829,7 +2017,9 @@ export const oneiromancy = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  NST: 15,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1840,15 +2030,17 @@ export const oneiromancy = new Spell({
 
 export const sweet_dreams = new Spell({
   name: "Sweet Dreams",
-  description: <div className='default'>You and all participants call out to the fey, thanking them for their role in maintaining the balance of nature and protecting the life force. You invite them to visit you in your dreams, calling for succor, entertainment, and guidance. All participants roll a 1d4, and gain an effect accordingly: <ol><li>Hellish Nightmares: Tormented by cruel fey, no rest can be had. No Willpower is recovered during the long rest.</li><li>Vivid Visions: Playful and adventurous fey take the dreamer on wondrous adventures seeming to last for many days. Upon awakening, the individual gains 1d4 temporary AP.</li><li>Quiet Quandaries: The dreamer awakens beside a pool of water, which idly asks the dreamer a question. After it has been answered, it invites the dreamer to ask a question of their own. If the adventurer answered the water's question truthfully, it answers truthfully. Also gain 1d6 temporary WP.</li><li>Allmother's Embrace: The dreamers is escorted by powerful fey to the magical heart of the forest. They are greeted by a gentle yet powerful dryad called the Allmother, who embraces them tenderly. Gain 1d8 temporary HP and AP.</li></ol></div>,
+  description: <div className='default'>You and all participants call out to the fey, thanking them for their role in maintaining the balance of nature and protecting the life force. You invite them to visit you in your dreams, calling for succor, entertainment, and guidance. All participants roll a 1d4, and gain an effect accordingly: <ol><li>Hellish Nightmares: Tormented by cruel fey, no rest can be had. No Willpower is recovered during the long rest.</li><li>Vivid Visions: Playful and adventurous fey take the dreamer on wondrous adventures seeming to last for many days. Upon awakening, the individual gains 1d4 temporary willpower.</li><li>Quiet Quandaries: The dreamer awakens beside a pool of water, which idly asks the dreamer a question. After it has been answered, it invites the dreamer to ask a question of their own. If the adventurer answered the water's question truthfully, it answers truthfully. Also gain 1d6 temporary WP.</li><li>Allmother's Embrace: The dreamers is escorted by powerful fey to the magical heart of the forest. They are greeted by a gentle yet powerful dryad called the Allmother, who embraces them tenderly. Gain 1d8 temporary HP and willpower.</li></ol></div>,
   level: 6,
   rarity: "Esoteric",
   type: "Ceremony",
   study: "Wyrd",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  NST: 16,
+  slots: 7,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1866,8 +2058,10 @@ export const primal_form = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  NST: 16,
+  slots: 7,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1885,8 +2079,10 @@ export const forest_defender = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 13,
-  slots: 6,
-  NST: 17,
+  slots: 7,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1904,8 +2100,10 @@ export const fairys_feast = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 13,
-  slots: 6,
-  NST: 17,
+  slots: 7,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1923,8 +2121,10 @@ export const dream_warrior = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 15,
-  slots: 6,
-  NST: 18,
+  slots: 8,
+  stats: {
+  nst: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1942,9 +2142,11 @@ export const monkeys_paw = new Spell({
   study: "Wyrd",
   trainingReqs: {
   level: 17,
-  slots: 6,
+  slots: 7,
   gold: 90,
-  NST: 19,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1962,8 +2164,10 @@ export const find_familiar = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -1981,8 +2185,10 @@ export const mage_hand = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2001,7 +2207,9 @@ export const summon_weapon = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2019,8 +2227,10 @@ export const locust_swarm = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2038,8 +2248,10 @@ export const imbue_sentience = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2058,7 +2270,9 @@ export const soul_dart = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2077,7 +2291,9 @@ export const sentient_weapon = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2096,7 +2312,9 @@ export const exorcism = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  CHA: 15,
+  stats: {
+  cha: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2115,7 +2333,9 @@ export const cloud_of_daggers = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  CHA: 15,
+  stats: {
+  cha: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2133,9 +2353,11 @@ export const demonic_posession = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 11,
-  slots: 5,
+  slots: 6,
   gold: 60,
-  CHA: 16,
+  stats: {
+  cha: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2153,9 +2375,11 @@ export const invade_body = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 13,
-  slots: 5,
+  slots: 6,
   gold: 70,
-  CHA: 17,
+  stats: {
+  cha: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2173,8 +2397,10 @@ export const reincarnation = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 15,
-  slots: 6,
-  CHA: 18,
+  slots: 8,
+  stats: {
+  cha: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2192,8 +2418,10 @@ export const resurrection = new Spell({
   study: "Thaumaturgy",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  CHA: 19,
+  slots: 8,
+  stats: {
+  cha: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2211,8 +2439,10 @@ export const guidance = new Spell({
   study: "Theurgy",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2230,8 +2460,10 @@ export const alarm = new Spell({
   study: "Theurgy",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2250,7 +2482,9 @@ export const detect_magic = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2269,7 +2503,9 @@ export const seek_spirit = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2287,8 +2523,10 @@ export const seance = new Spell({
   study: "Theurgy",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2306,8 +2544,10 @@ export const diagnose = new Spell({
   study: "Theurgy",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2326,7 +2566,9 @@ export const soul_sight = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2345,7 +2587,9 @@ export const augury = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2364,7 +2608,9 @@ export const astral_projection = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  CHA: 15,
+  stats: {
+  cha: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2383,7 +2629,9 @@ export const ancient_name = new Spell({
   trainingReqs: {
   level: 11,
   slots: 5,
-  CHA: 16,
+  stats: {
+  cha: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2401,8 +2649,10 @@ export const futuresight = new Spell({
   study: "Theurgy",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  CHA: 19,
+  slots: 8,
+  stats: {
+  cha: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2422,7 +2672,9 @@ export const vampiric_touch = new Spell({
   level: 1,
   slots: 3,
   gold: 10,
-  CHA: 11,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2440,9 +2692,11 @@ export const life_leach = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 3,
-  slots: 3,
+  slots: 4,
   gold: 20,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2460,9 +2714,11 @@ export const reanimate = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 3,
-  slots: 3,
+  slots: 4,
   gold: 20,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2482,7 +2738,9 @@ export const inflict_disease = new Spell({
   level: 5,
   slots: 4,
   gold: 30,
-  CHA: 13,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2502,7 +2760,9 @@ export const hex = new Spell({
   level: 5,
   slots: 4,
   gold: 30,
-  CHA: 13,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2520,9 +2780,11 @@ export const starvation = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 7,
-  slots: 4,
+  slots: 5,
   gold: 40,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2540,9 +2802,11 @@ export const speak_with_the_dead = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 9,
-  slots: 4,
+  slots: 5,
   gold: 50,
-  CHA: 15,
+  stats: {
+  cha: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2560,9 +2824,11 @@ export const curse = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 11,
-  slots: 5,
+  slots: 6,
   gold: 60,
-  CHA: 16,
+  stats: {
+  cha: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2580,8 +2846,10 @@ export const disintegrate = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  CHA: 16,
+  slots: 7,
+  stats: {
+  cha: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2599,9 +2867,11 @@ export const vampiric_kiss = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 13,
-  slots: 5,
+  slots: 6,
   gold: 70,
-  CHA: 17,
+  stats: {
+  cha: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2619,9 +2889,11 @@ export const devour = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 15,
-  slots: 5,
+  slots: 7,
   gold: 80,
-  CHA: 18,
+  stats: {
+  cha: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2639,8 +2911,10 @@ export const rend_soul = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 15,
-  slots: 6,
-  CHA: 18,
+  slots: 8,
+  stats: {
+  cha: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2658,9 +2932,11 @@ export const flesh_golem = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 17,
-  slots: 6,
+  slots: 7,
   gold: 90,
-  CHA: 19,
+  stats: {
+  cha: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2678,9 +2954,11 @@ export const become_lich = new Spell({
   study: "Necromancy",
   trainingReqs: {
   level: 17,
-  slots: 6,
+  slots: 7,
   gold: 90,
-  CHA: 19,
+  stats: {
+  cha: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2698,8 +2976,10 @@ export const heat_metal = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2717,8 +2997,10 @@ export const mend = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2737,7 +3019,9 @@ export const clay_armor = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2756,7 +3040,9 @@ export const quake = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2774,8 +3060,10 @@ export const quicksand = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2795,7 +3083,9 @@ export const acid_blade = new Spell({
   level: 5,
   slots: 5,
   gold: 15,
-  NST: 13,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2813,9 +3103,11 @@ export const clay_golem = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2834,7 +3126,9 @@ export const stone_armor = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2853,7 +3147,9 @@ export const earthen_wall = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  NST: 15,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2871,9 +3167,11 @@ export const stone_golem = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 11,
-  slots: 6,
+  slots: 7,
   gold: 30,
-  NST: 16,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2892,7 +3190,9 @@ export const iron_armor = new Spell({
   trainingReqs: {
   level: 11,
   slots: 5,
-  NST: 16,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2911,7 +3211,9 @@ export const awaken_statue = new Spell({
   trainingReqs: {
   level: 13,
   slots: 5,
-  NST: 17,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2929,9 +3231,11 @@ export const earthquake = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  NST: 17,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2949,9 +3253,11 @@ export const iron_golem = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 15,
-  slots: 6,
+  slots: 8,
   gold: 40,
-  NST: 18,
+  stats: {
+  nst: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2969,8 +3275,10 @@ export const petrify = new Spell({
   study: "Earth",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  NST: 19,
+  slots: 8,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -2988,8 +3296,10 @@ export const mote_o_fire = new Spell({
   study: "Fire",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3008,7 +3318,9 @@ export const arcane_flames = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3027,7 +3339,9 @@ export const flame_armor = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3045,8 +3359,10 @@ export const flaming_sword = new Spell({
   study: "Fire",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3064,8 +3380,10 @@ export const fireball = new Spell({
   study: "Fire",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3084,7 +3402,9 @@ export const incinerate = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3103,7 +3423,9 @@ export const create_lava = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3122,7 +3444,9 @@ export const fire_elemental = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  NST: 15,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3141,7 +3465,9 @@ export const flame_wall = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  NST: 15,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3160,7 +3486,9 @@ export const fire_storm = new Spell({
   trainingReqs: {
   level: 13,
   slots: 5,
-  NST: 17,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3178,9 +3506,11 @@ export const fire_golem = new Spell({
   study: "Fire",
   trainingReqs: {
   level: 17,
-  slots: 7,
+  slots: 8,
   gold: 45,
-  NST: 19,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3198,8 +3528,10 @@ export const frostbite = new Spell({
   study: "Water",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3217,8 +3549,10 @@ export const shape_water = new Spell({
   study: "Water",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3237,7 +3571,9 @@ export const icicle = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3256,7 +3592,9 @@ export const water_walking = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3274,8 +3612,10 @@ export const ice_elemental = new Spell({
   study: "Water",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3293,8 +3633,10 @@ export const steam_blast = new Spell({
   study: "Water",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3313,7 +3655,9 @@ export const ice_wall = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3331,9 +3675,11 @@ export const wellspring = new Spell({
   study: "Water",
   trainingReqs: {
   level: 7,
-  slots: 5,
+  slots: 6,
   gold: 20,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3351,9 +3697,11 @@ export const become_water = new Spell({
   study: "Water",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  NST: 15,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3371,9 +3719,11 @@ export const ice_armor = new Spell({
   study: "Water",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  NST: 15,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3392,7 +3742,9 @@ export const blizzard = new Spell({
   trainingReqs: {
   level: 11,
   slots: 5,
-  NST: 16,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3410,9 +3762,11 @@ export const ice_golem = new Spell({
   study: "Water",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  NST: 17,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3430,9 +3784,11 @@ export const ice_statue = new Spell({
   study: "Water",
   trainingReqs: {
   level: 15,
-  slots: 6,
+  slots: 8,
   gold: 40,
-  NST: 18,
+  stats: {
+  nst: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3450,8 +3806,10 @@ export const tsunami = new Spell({
   study: "Water",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  NST: 19,
+  slots: 8,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3469,8 +3827,10 @@ export const thunderbolt = new Spell({
   study: "Air",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3488,8 +3848,10 @@ export const electrocute = new Spell({
   study: "Air",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  NST: 11,
+  slots: 2,
+  stats: {
+  nst: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3508,7 +3870,9 @@ export const cyclone = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3527,7 +3891,9 @@ export const shocking_blade = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  NST: 12,
+  stats: {
+  nst: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3545,8 +3911,10 @@ export const blustering_gust = new Spell({
   study: "Air",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  NST: 13,
+  slots: 3,
+  stats: {
+  nst: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3565,7 +3933,9 @@ export const soar = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3584,7 +3954,9 @@ export const lightning_dash = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  NST: 14,
+  stats: {
+  nst: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3603,7 +3975,9 @@ export const air_elemental = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  NST: 15,
+  stats: {
+  nst: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3621,8 +3995,10 @@ export const become_vapor = new Spell({
   study: "Air",
   trainingReqs: {
   level: 11,
-  slots: 6,
-  NST: 16,
+  slots: 7,
+  stats: {
+  nst: 16,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3641,7 +4017,9 @@ export const chain_lighting = new Spell({
   trainingReqs: {
   level: 13,
   slots: 5,
-  NST: 17,
+  stats: {
+  nst: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3659,8 +4037,10 @@ export const lighting_storm = new Spell({
   study: "Air",
   trainingReqs: {
   level: 15,
-  slots: 5,
-  NST: 18,
+  slots: 6,
+  stats: {
+  nst: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3678,8 +4058,10 @@ export const storm_golem = new Spell({
   study: "Air",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  NST: 19,
+  slots: 8,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3697,8 +4079,10 @@ export const hurricane = new Spell({
   study: "Air",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  NST: 19,
+  slots: 8,
+  stats: {
+  nst: 19,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3716,8 +4100,10 @@ export const detect_illusion = new Spell({
   study: "Illusion",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3735,8 +4121,10 @@ export const fleeting_illusion = new Spell({
   study: "Illusion",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3755,7 +4143,9 @@ export const illusory_disguise = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3773,8 +4163,10 @@ export const dispell_illusion = new Spell({
   study: "Illusion",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3792,8 +4184,10 @@ export const illusory_being = new Spell({
   study: "Illusion",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3811,8 +4205,10 @@ export const fools_invisibility = new Spell({
   study: "Illusion",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3831,7 +4227,9 @@ export const mass_illusion = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  CHA: 15,
+  stats: {
+  cha: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3849,8 +4247,10 @@ export const telempathy = new Spell({
   study: "Telepathy",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3868,8 +4268,10 @@ export const minor_telepathy = new Spell({
   study: "Telepathy",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3888,7 +4290,9 @@ export const major_telepathy = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3906,8 +4310,10 @@ export const esoteric_telepathy = new Spell({
   study: "Telepathy",
   trainingReqs: {
   level: 13,
-  slots: 6,
-  CHA: 17,
+  slots: 7,
+  stats: {
+  cha: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3925,8 +4331,10 @@ export const psychic_sight = new Spell({
   study: "Telepathy",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3945,7 +4353,9 @@ export const induce_emotion = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3964,7 +4374,9 @@ export const inflict_amnesia = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -3982,9 +4394,11 @@ export const hypnosis = new Spell({
   study: "Telepathy",
   trainingReqs: {
   level: 9,
-  slots: 5,
+  slots: 6,
   gold: 25,
-  CHA: 15,
+  stats: {
+  cha: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4002,9 +4416,11 @@ export const mind_control = new Spell({
   study: "Telepathy",
   trainingReqs: {
   level: 13,
-  slots: 5,
+  slots: 6,
   gold: 70,
-  CHA: 17,
+  stats: {
+  cha: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4022,9 +4438,11 @@ export const unimind = new Spell({
   study: "Telepathy",
   trainingReqs: {
   level: 15,
-  slots: 6,
+  slots: 8,
   gold: 40,
-  CHA: 18,
+  stats: {
+  cha: 18,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4042,8 +4460,10 @@ export const lesser_telekinetic_pull = new Spell({
   study: "Telekinesis",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4061,8 +4481,10 @@ export const telekinetic_throw = new Spell({
   study: "Telekinesis",
   trainingReqs: {
   level: 1,
-  slots: 3,
-  CHA: 11,
+  slots: 2,
+  stats: {
+  cha: 11,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4081,7 +4503,9 @@ export const levitate_object = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4100,7 +4524,9 @@ export const shockwave = new Spell({
   trainingReqs: {
   level: 3,
   slots: 3,
-  CHA: 12,
+  stats: {
+  cha: 12,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4118,8 +4544,10 @@ export const levitation = new Spell({
   study: "Telekinesis",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4137,8 +4565,10 @@ export const telemanipulation = new Spell({
   study: "Telekinesis",
   trainingReqs: {
   level: 5,
-  slots: 4,
-  CHA: 13,
+  slots: 3,
+  stats: {
+  cha: 13,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4157,7 +4587,9 @@ export const greater_telekinetic_pull = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4176,7 +4608,9 @@ export const force_shield = new Spell({
   trainingReqs: {
   level: 7,
   slots: 4,
-  CHA: 14,
+  stats: {
+  cha: 14,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4195,7 +4629,9 @@ export const psyblast = new Spell({
   trainingReqs: {
   level: 9,
   slots: 4,
-  CHA: 15,
+  stats: {
+  cha: 15,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4213,9 +4649,11 @@ export const force_field = new Spell({
   study: "Telekinesis",
   trainingReqs: {
   level: 13,
-  slots: 6,
+  slots: 7,
   gold: 35,
-  CHA: 17,
+  stats: {
+  cha: 17,
+},
 },
   castingReqs: {
   time: "1 Action",
@@ -4233,8 +4671,10 @@ export const mind_armor = new Spell({
   study: "Telekinesis",
   trainingReqs: {
   level: 17,
-  slots: 7,
-  CHA: 19,
+  slots: 8,
+  stats: {
+  cha: 19,
+},
 },
   castingReqs: {
   time: "1 Action",

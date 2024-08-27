@@ -1,4 +1,24 @@
+import {Helmet} from "react-helmet";
 import {Skill, skills} from "../concepts/skill";
+
+export function Header() {
+	return (
+		<p
+			style={{
+				color: "black",
+				margin: "0",
+				padding: "10px",
+				textAlign: "center",
+				fontFamily: "Jim Nightshade",
+				fontSize: "20pt",
+				fontWeight: "bold",
+				background: "transparent url(/images/header.png) no-repeat bottom right",
+				backgroundSize: "100%",
+			}}>
+			All That Glitters — Character Sheet
+		</p>
+	);
+}
 
 const Info = () => {
 	return (
@@ -224,6 +244,9 @@ const EmptyRow = () => {
 const Sheet = () => {
 	return (
 		<div className='sheet'>
+			<Helmet>
+				<body style={{backgroundColor: "white"}}></body>
+			</Helmet>
 			<p
 				style={{
 					color: "black",

@@ -226,17 +226,17 @@
 			{
 				"name": "Bardiche",
 				"description": "'Tis a poleaxe, nothing less.",
-				"damage": "1d10",
+				"damage": "1d12",
 				"cost": 200,
 				"modifiers": ["Slashing", "Two-Handed", "Polearm"],
 				"requirements": ["13 STR", "Martial Arts Proficiency"]
 			},
 			{
 				"name": "Halberd",
-				"description": "A poleaxe and spear combination.",
-				"damage": "1d12",
+				"description": "A poleaxe and spear combination that can pierce, slash, or bludgeon.",
+				"damage": "1d10",
 				"cost": 250,
-				"modifiers": ["Cut-and-Thrust", "Two-Handed", "Polearm"],
+				"modifiers": ["Cut-and-Thrust", "Bludgeoning", "Two-Handed", "Polearm"],
 				"requirements": ["13 STR", "Martial Arts Proficiency"]
 			},
 			{
@@ -416,7 +416,7 @@
 				"description": "For countering shields.",
 				"damage": "1d6",
 				"cost": 100,
-				"modifiers": ["Piercing"],
+				"modifiers": ["Bludgeoning"],
 				"requirements": ["Martial Arts Expertise"]
 			},
 			{
@@ -440,7 +440,7 @@
 				"description": "An ordinary shield. Allows shield bash.",
 				"damage": "1d4",
 				"cost": 50,
-				"modifiers": ["Bludgeoning", "Blocking 1-2"],
+				"modifiers": ["Bludgeoning", "Blocking 2"],
 				"requirements": ["Defense proficiency", "12 STR"]
 			},
 			{
@@ -448,7 +448,7 @@
 				"description": "An extraordinarily large shield. Allows shield charge.",
 				"damage": "1d6",
 				"cost": 100,
-				"modifiers": ["Bludgeoning", "Blocking 2-3"],
+				"modifiers": ["Bludgeoning", "Blocking 3"],
 				"requirements": ["Defense Expertise", "14 STR"]
 			},
 			{
@@ -456,7 +456,7 @@
 				"description": "A shield designed to be carried with two hands or planted on the ground. Cannot perform weapon attacks while carrying this shield. Provides cover when placed on the ground. Allows shield charge.",
 				"damage": "1d8",
 				"cost": 150,
-				"modifiers": ["Bludgeoning", "Blocking 3"],
+				"modifiers": ["Bludgeoning", "Blocking 4"],
 				"requirements": ["Defense Proficiency", "14 STR"]
 			}
 		]

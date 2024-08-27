@@ -11,11 +11,15 @@
 	],
 	"alignment": "Non-Good",
 	"coreAbilityName": "Assassination",
-	"coreAbilityDescription": "You may expend 3 willpower to mark a target for assassination. The next time you score a critical hit on that target, deal an additional 15 damage.",
+	"coreAbilityDescription": "You may expend 2 willpower to mark a target for assassination. The next time you score a critical hit on that target, deal an additional 2d6 damage.",
 	"limitations": "Due to their extremely specialized skillset, assassins have a deficiency in two of the following three skills: {{skills.nature}}, {{skills.defense}}, or {{skills.survival}}.",
 	"levelingBonuses": {
-		"1": "gain proficiency in two out of these three skills: {{skills.martial_arts}}, {{skills.initiative}}, and {{skills.accuracy}}.",
-		"2": "when you initiate combat with an attack, gain advantage on the {{skills.initiative}} roll. You begin combat with an extra action."
+		"1": "gain proficiency in {{skills.martial_arts}} and either {{skills.initiative}} or {{skills.accuracy}}.",
+		"2": "when you initiate combat with an attack, gain advantage on the {{skills.initiative}} roll. You have an extra action on your first turn of combat.",
+		"5": "Your proficiency in {{skills.stealth}} and {{skills.martial_arts}} increase to expertise.",
+		"10": "Your proficiency in {{skills.stealth}} and {{skills.martial_arts}} increase to mastery.",
+		"15": "",
+		"20": ""
 	},
 	"startingEquipment": {
 		"_": ["A set of {{armor.leather_armor}}.", "Any two {{weapon_keywords.nimble}} weapons", "A {{weapons.buckler}}"],

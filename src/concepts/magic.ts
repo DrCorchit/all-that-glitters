@@ -3,7 +3,7 @@ import schoolsJson from "../resources/magic/schools.json";
 import {Keyword} from "../utils/keyword";
 import Source from "../utils/source";
 import {normalize, toOrdinal} from "../utils/utils";
-import {Attribute, attributes} from "./attribute";
+import {Attribute, attributes, StatBlock} from "./attribute";
 import {Skill, skills} from "./skill";
 
 interface SpellInfo {
@@ -16,9 +16,7 @@ interface SpellInfo {
 		level: number;
 		slots: number;
 		gold?: number;
-		INT?: number;
-		NST?: number;
-		CHA?: number;
+		stats: Partial<StatBlock>;
 	};
 	castingReqs: {
 		time: string;
@@ -54,9 +52,7 @@ export interface TrainingReqs {
 	gold: number;
 	slots: number;
 	spells: Spell[];
-	int: number;
-	nst: number;
-	cha: number;
+	stats: Partial<StatBlock>;
 }
 
 export interface CastingReqs {
@@ -134,9 +130,7 @@ export class Spell {
 			slots: json.trainingReqs.slots,
 			gold: json.trainingReqs.gold ?? 0,
 			spells: [],
-			int: json.trainingReqs.INT ?? 0,
-			nst: json.trainingReqs.NST ?? 0,
-			cha: json.trainingReqs.CHA ?? 0,
+			stats: json.trainingReqs.stats,
 		};
 		this.castingReqs = {
 			time: json.castingReqs.time,
