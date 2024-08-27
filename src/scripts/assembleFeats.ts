@@ -4,7 +4,6 @@ import {once} from "node:events";
 import {FileBuilder, ObjectBuilder} from "../utils/tsxBuilder";
 import {normalize} from "../utils/utils";
 import {classFeat, FeatJson, featLevelReqFormula, FeatType, featTypes} from "../concepts/feat";
-import {classes, CombatClass} from "../generated/combatClass";
 
 const typeRegex = /^\s*(?<study>\w+)\s*$/;
 const featsRegex = /^\s*(?<level>\d+)\|(?<name>.*?)\|(?<slots>\d+)\|(?<reqs>[^|]*)\|(?<description>[^|]*)$/;
@@ -14,7 +13,7 @@ const attrReqRegex = /^(?<attr>\w+) (?<level>\d+)/;
 async function parseFeatsFile(): Promise<FeatJson[]> {
 	const reader = rd.createInterface(createReadStream("src/resources/feats/feats.txt"));
 	let featType: FeatType | undefined = undefined;
-	let clazz: CombatClass | undefined = undefined;
+	let clazz: string | undefined = undefined;
 	const feats: FeatJson[] = [];
 
 	reader.on("line", line => {
@@ -33,7 +32,7 @@ async function parseFeatsFile(): Promise<FeatJson[]> {
 					break;
 				default:
 					featType = classFeat;
-					clazz = classes.lookup(temp[0]);
+					clazz = temp[0];
 					break;
 			}
 		} else if (featType) {
@@ -52,7 +51,7 @@ async function parseFeatsFile(): Promise<FeatJson[]> {
 	return feats;
 }
 
-function parseFeat(line: string, featType: FeatType, clazz?: CombatClass): FeatJson {
+function parseFeat(line: string, featType: FeatType, clazz?: string): FeatJson {
 	const match = line.match(featsRegex);
 
 	if (!match || !match.groups) {
@@ -140,7 +139,8 @@ function buildFeatObject(json: FeatJson): string {
 	});
 	trainReqs.withValue("stats", stats.build());
 	if (json.trainingReqs.clazz) {
-		trainReqs.withValue("clazz", `classes.lookup("${json.trainingReqs.clazz.name}")`);
+		//trainReqs.withValue("clazz", `classes.lookup("${json.trainingReqs.clazz.name}")`);
+		trainReqs.withString("clazz", json.trainingReqs.clazz);
 	}
 
 	builder.withValue("trainingReqs", trainReqs.build());

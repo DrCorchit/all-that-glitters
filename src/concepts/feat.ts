@@ -50,7 +50,7 @@ export interface FeatInfo {
 		slots: number;
 		feats: string[];
 		stats: Partial<StatBlock>;
-		clazz?: CombatClass;
+		clazz?: string;
 	};
 }
 

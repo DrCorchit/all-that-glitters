@@ -1,10 +1,11 @@
 import Appendix from "../../components/Appendix";
-import {FeatInfo, FeatJson, FeatTSX} from "../../concepts/feat";
+import {FeatInfo, FeatJson, FeatTSX, featTypes} from "../../concepts/feat";
 import {normalize, range, recordEquals} from "../../utils/utils";
 import {feats} from "../../generated/feats";
 import {AppendixLink} from "../../components/InternalLink";
 import {useState} from "react";
 import Collapsible from "../../components/Collapsible";
+import Section from "../../components/Section";
 
 function FeatElement({feat}: {feat: FeatTSX}): JSX.Element {
 	const id = normalize(feat.name);
@@ -20,7 +21,7 @@ function FeatElement({feat}: {feat: FeatTSX}): JSX.Element {
 				{feat.name}
 			</button>
 			<p>
-				<i>{`Level ${feat.level} ${feat.featType} Feat`}</i>
+				<i>{`Level ${feat.level} ${feat.featType.name} Feat`}</i>
 			</p>
 			<p>{feat.description}</p>
 			<p>
@@ -28,6 +29,7 @@ function FeatElement({feat}: {feat: FeatTSX}): JSX.Element {
 				<ul>
 					<li>Adventurer Level {feat.trainingReqs.level}</li>
 					<li>Training Slots: {feat.trainingReqs.slots}</li>
+					{feat.trainingReqs.clazz && <li>Combat Class: {feat.trainingReqs.clazz}</li>}
 					{Object.entries(feat.trainingReqs.stats).map((entry, index) => {
 						return (
 							<li key={index}>
@@ -111,7 +113,7 @@ export default function AppendixFeats() {
 	const [filterState, setFilterState] = useState<FilterState>(defaultFilterState);
 
 	function filter(feat: FeatInfo): boolean {
-		//TODO add description
+		//TODO make description searchable
 		const featSearchTerm = `${feat.name}`.toLowerCase();
 		if (filterState.word && !featSearchTerm.includes(filterState.word.toLowerCase())) {
 			return false;
@@ -127,11 +129,31 @@ export default function AppendixFeats() {
 		}
 	}
 
+	const featsRaw = feats.array.filter(filter);
+	const featsByType = new Map(
+		featTypes.array.map(featType => {
+			const feats = featsRaw.filter(feat => feat.featType == featType);
+			return [featType, feats];
+		})
+	);
+
 	return (
 		<Appendix index={2}>
 			<Collapsible text='Search'>
 				<FilterForm filterState={filterState} setFilterState={setFilterState} />
 			</Collapsible>
+			{featTypes.array.map((featType, index) => {
+				const feats = featsByType.get(featType);
+				return (
+					<Section name={featType.name} key={index}>
+						<p>{featType.description}</p>
+						{feats?.map((feat, index2) => (
+							<FeatElement feat={feat} key={index2} />
+						))}
+					</Section>
+				);
+			})}
+
 			{feats.array.filter(filter).map((feat, index) => (
 				<FeatElement feat={feat} key={index} />
 			))}
