@@ -114,6 +114,7 @@ export default function AppendixFeats() {
 
 	function filter(feat: FeatInfo): boolean {
 		//TODO make description searchable
+		//TODO filter by training slots
 		const featSearchTerm = `${feat.name}`.toLowerCase();
 		if (filterState.word && !featSearchTerm.includes(filterState.word.toLowerCase())) {
 			return false;

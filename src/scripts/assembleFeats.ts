@@ -11,7 +11,7 @@ const featsRegex = /^\s*(?<level>\d+)\|(?<name>.*?)\|(?<slots>\d+)\|(?<reqs>[^|]
 const attrReqRegex = /^(?<attr>\w+) (?<level>\d+)/;
 
 async function parseFeatsFile(): Promise<FeatJson[]> {
-	const reader = rd.createInterface(createReadStream("src/resources/feats/feats.txt"));
+	const reader = rd.createInterface(createReadStream("src/resources/sheet/feats.txt"));
 	let featType: FeatType | undefined = undefined;
 	let clazz: string | undefined = undefined;
 	const feats: FeatJson[] = [];

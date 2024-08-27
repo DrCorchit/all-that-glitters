@@ -1,9 +1,7 @@
-import {CombatClass} from "../generated/combatClass";
-import proficiencyJson from "../resources/feats/proficiency.json";
+import proficiencyJson from "../resources/sheet/proficiency.json";
 import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 import {StatBlock} from "./attribute";
-import {CombatCategory} from "./combatCategory";
 
 export interface FeatType {
 	name: string;
