@@ -34,9 +34,9 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 				<ul>
 					<li>Adventurer Level: {spell.trainingReqs.level}</li>
 					<li>Training Slots: {spell.trainingReqs.slots}</li>
-					{spell.trainingReqs.stats.int && <li>Minimum Intelligence: {spell.trainingReqs.stats.int}</li>}
-					{spell.trainingReqs.stats.nst && <li>Minimum Instinct: {spell.trainingReqs.stats.nst}</li>}
-					{spell.trainingReqs.stats.cha && <li>Minimum Charisma: {spell.trainingReqs.stats.cha}</li>}
+					{spell.trainingReqs.stats?.int && <li>Minimum Intelligence: {spell.trainingReqs.stats.int}</li>}
+					{spell.trainingReqs.stats?.nst && <li>Minimum Instinct: {spell.trainingReqs.stats.nst}</li>}
+					{spell.trainingReqs.stats?.cha && <li>Minimum Charisma: {spell.trainingReqs.stats.cha}</li>}
 				</ul>
 				<p>Casting Requirements:</p>
 				<ul>

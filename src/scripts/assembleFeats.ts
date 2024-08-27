@@ -64,8 +64,6 @@ function parseFeat(line: string, featType: FeatType, clazz?: string): FeatJson {
 	const reqs = match.groups["reqs"];
 	const description = match.groups["description"];
 
-	console.log(`${name} ---> ${featType}`);
-
 	if (!reqs) {
 		throw new Error(`Could not parse feat reqs <${line}>`);
 	}
