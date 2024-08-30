@@ -1,4 +1,6 @@
 import {CombatClass} from "../concepts/combatClass";
+import classDescriptions from "../generated/classDescriptions";
+import coreAbilityDescriptions from "../generated/coreAbilityDescriptions";
 import {normalize} from "../utils/utils";
 import Collapsible from "./Collapsible";
 
@@ -10,7 +12,7 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 		<div className='background'>
 			<div className='default'>
 				<h5 id={tag}>{name}</h5>
-				<p>{clazz.description}</p>
+				<p>{classDescriptions.lookup(clazz.name)}</p>
 				<p>While writing the backstory for a {clazz.name}, consider the following:</p>
 				<ul>
 					{clazz.backstoryPrompts.map((prompt, index) => (
@@ -23,7 +25,7 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 					</p>
 				)}
 				<p>
-					<b>Core Ability</b>: <i>{clazz.coreAbilityName}</i>. {clazz.coreAbilityDescription}
+					<b>Core Ability</b>: <i>{clazz.coreAbilityName}</i>. {coreAbilityDescriptions.lookup(clazz.name)}
 				</p>
 				<Collapsible text='Detailed Information'>
 					<b>Limitations</b>: {clazz.limitations}

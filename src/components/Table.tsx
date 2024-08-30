@@ -1,4 +1,6 @@
-export function TableBody({data}: {data: string[][]}): JSX.Element {
+import {ReactNode} from "react";
+
+export function TableBody({data}: {data: ReactNode[][]}): JSX.Element {
 	return (
 		<tbody>
 			{data.map((row, index) => (
@@ -19,7 +21,7 @@ export function Table<T>({
 }: {
 	headers: string[];
 	data: T[];
-	mapper: (item: T) => string[];
+	mapper: (item: T) => ReactNode[];
 }): JSX.Element {
 	return (
 		<table className='default'>

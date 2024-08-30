@@ -45,4 +45,17 @@ export function assembleClasses() {
 	);
 
 	fs.writeFileSync("src/generated/classDescriptions.tsx", classDescriptions.build());
+
+	const file = new FileBuilder();
+	file.withImport(`import { AppendixLink } from "../components/InternalLink"`);
+	file.withImport(`import Sub from "../components/Sub"`);
+	file.withImport(`import Tooltip from "../components/Tooltip"`);
+	const coreAbilityDescriptions = createDirectory(
+		file,
+		classes,
+		clazz => clazz.name,
+		clazz => clazz.coreAbilityDescription
+	);
+
+	fs.writeFileSync("src/generated/coreAbilityDescriptions.tsx", coreAbilityDescriptions.build());
 }

@@ -7,6 +7,9 @@ import Sub from "../../components/Sub";
 import {damageTypes, DamageType} from "../../concepts/damageType";
 import {statuses, StatusEffect} from "../../concepts/statusEffect";
 import Outline from "../../components/Outline";
+import statusRecoveries from "../../generated/statusRecovery";
+import statusEffects from "../../generated/statusEffects";
+import {stat} from "fs";
 
 const index = 5;
 const info = chapters.array[index - 1];
@@ -231,20 +234,19 @@ function ActionSection(): JSX.Element {
 					<tr>
 						<td>Move</td>
 						<td>1 Action</td>
-						<td>
-							The character gains movement points equal to half their speed score. Dodge Chance is increased by 2.
-						</td>
+						<td>The character gains movement points equal to half their speed score.</td>
 					</tr>
 					<tr>
 						<td>Jog</td>
 						<td>1 Action and 1 willpower, or 2 Actions</td>
-						<td>The character gains movement points equal to their speed score. Dodge Chance is increased by 3.</td>
+						<td>The character gains movement points equal to their speed score.</td>
 					</tr>
 					<tr>
 						<td>Dodge</td>
 						<td>1 Action</td>
 						<td>
-							The character moves with deliberate caution, to avoid incoming attacks. Dodge Chance is increased by 3.
+							The character moves with deliberate caution, to avoid incoming attacks. They no longer provoke opportunity
+							attacks, and Dodge Chance is increased by 2.
 						</td>
 					</tr>
 					<tr>
@@ -540,9 +542,9 @@ function StatusEffectElement({status}: {status: StatusEffect}): JSX.Element {
 	return (
 		<tr>
 			<td>{status.name}</td>
-			<td>{status.effect}</td>
+			<td>{statusEffects.lookup(status.name)}</td>
 			<td>{status.causes}</td>
-			<td>{status.recovery}</td>
+			<td>{statusRecoveries.lookup(status.name)}</td>
 			<td>{status.notes}</td>
 		</tr>
 	);

@@ -4,8 +4,8 @@ import {AppendixLink} from "../../components/InternalLink";
 import {useState} from "react";
 import Collapsible from "../../components/Collapsible";
 import Section from "../../components/Section";
-import {Feat, feats, FeatType, featTypes} from "../../concepts/feat";
-import directory from "../../generated/featDescriptions";
+import {Feat, feats, featTypes} from "../../concepts/feat";
+import featDescription from "../../generated/featDescriptions";
 
 function FeatElement({feat}: {feat: Feat}): JSX.Element {
 	const id = normalize(feat.name);
@@ -23,7 +23,7 @@ function FeatElement({feat}: {feat: Feat}): JSX.Element {
 			<p>
 				<i>{`Level ${feat.level} ${feat.featType.name} Feat`}</i>
 			</p>
-			<div className='default'>{directory.lookup(feat.name)}</div>
+			<div className='default'>{featDescription.lookup(feat.name)}</div>
 			<div className='default'>
 				<b>Requirements</b>:
 				<ul>
@@ -131,13 +131,9 @@ export default function AppendixFeats() {
 	}
 
 	const featsRaw = feats.array.filter(filter);
-	//const featsByType = new Map<FeatType, Feat[]>();
-
 	const featsByType = new Map(
 		featTypes.array.map(featType => {
 			const feats = featsRaw.filter(feat => feat.featType === featType);
-
-			console.log(`type: ${featType.name} -> ${feats.map(f => f.name)}`);
 			return [featType, feats];
 		})
 	);

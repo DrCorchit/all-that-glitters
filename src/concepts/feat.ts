@@ -2,6 +2,7 @@ import proficiencyJson from "../resources/sheet/proficiency.json";
 import featJson from "../generated/feats.json";
 import Source from "../utils/source";
 import {StatBlock} from "./attribute";
+import {normalize} from "../utils/utils";
 
 export interface FeatType {
 	name: string;
@@ -79,7 +80,7 @@ export const feats = new Source<Feat>(
 	})),
 	feat => feat.name,
 	feat => feat.name,
-	(feat, text) => `<AppendixLink appendix={2} target="${feat.name}">${text ?? feat.name}</AppendixLink>`
+	(feat, text) => `<AppendixLink appendix={2} target="${normalize(feat.name)}">${text ?? feat.name}</AppendixLink>`
 );
 
 export function featLevelReqFormula(level: number) {

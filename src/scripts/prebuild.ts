@@ -3,6 +3,9 @@ import {assembleSpells} from "./assembleSpells";
 import {assembleClasses} from "./assembleClasses";
 import {assembleRaces} from "./assembleRaces";
 import {assembleFeats} from "./assembleFeats";
+import {assembleArmor} from "./assembleArmor";
+import {assembleWeapons} from "./assembleWeapons";
+import {assembleStatuses} from "./assembleStatuses";
 
 export function prebuild(): Plugin {
 	return {
@@ -12,9 +15,12 @@ export function prebuild(): Plugin {
 			await assembleSpells();
 			console.log("Assembling feats.json...");
 			await assembleFeats();
-			console.log("Assembling races.json...");
+
+			//Assemble TSX files
+			assembleArmor();
+			assembleWeapons();
+			assembleStatuses();
 			assembleRaces();
-			console.log("Assembling classes.json...");
 			assembleClasses();
 			console.log("Finished Prebuild.");
 		},

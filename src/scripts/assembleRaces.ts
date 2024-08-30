@@ -1,14 +1,18 @@
 import fs from "fs";
 import {FileBuilder} from "../utils/tsxBuilder";
-import races from "../resources/sheet/races.json";
 import {createDirectory} from "../utils/tsxDirectory";
+import {races} from "../concepts/race";
 
 export function assembleRaces() {
 	const raceDescriptions = createDirectory(
 		new FileBuilder(),
-		races,
+		races.array,
 		race => race.name,
-		race => race.description.map(parag => `<p>\n${parag}\n</p>`).join("\n")
+		race =>
+			race.description
+				.split("\n")
+				.map(parag => `<p>\n${parag}\n</p>`)
+				.join("\n")
 	);
 
 	fs.writeFileSync("src/generated/raceDescriptions.tsx", raceDescriptions.build());
@@ -18,7 +22,7 @@ export function assembleRaces() {
 
 	const raceBonuses = createDirectory(
 		file,
-		races,
+		races.array,
 		race => race.name,
 		race => race.bonuses
 	);

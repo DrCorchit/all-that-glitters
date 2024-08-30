@@ -33,7 +33,7 @@
 		"cost": 50,
 		"weight": 15,
 		"reqs": ["STR 10"],
-		"effects": ["{{attr.DEX}} is capped at 16."]
+		"effects": ["{{attr.DEX}} is capped at 16"]
 	},
 	{
 		"name": "Hauberk",
@@ -42,7 +42,7 @@
 		"cost": 50,
 		"weight": 20,
 		"reqs": ["STR 10"],
-		"effects": ["{{attr.DEX}} is capped at 15.", "Stealth disadvantage"]
+		"effects": ["{{attr.DEX}} is capped at 15", "{{skills.stealth}} disadvantage"]
 	},
 	{
 		"name": "Breastplate",
@@ -60,7 +60,7 @@
 		"cost": 75,
 		"weight": 45,
 		"reqs": ["STR 12", "Defense Proficiency"],
-		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "Stealth disadvantage"]
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11", "{{skills.stealth}} disadvantage"]
 	},
 	{
 		"name": "Chainmail",
@@ -69,7 +69,7 @@
 		"cost": 150,
 		"weight": 45,
 		"reqs": ["STR 12", "Defense Proficiency"],
-		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "Stealth disadvantage"]
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11", "{{skills.stealth}} disadvantage"]
 	},
 	{
 		"name": "Half Plate Armor",
@@ -78,7 +78,7 @@
 		"cost": 250,
 		"weight": 45,
 		"reqs": ["STR 12", "Defense Expertise"],
-		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "{{skills.mobility}} disadvantage"]
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11", "{{skills.mobility}} disadvantage"]
 	},
 	{
 		"name": "Splinted Chainmail",
@@ -87,7 +87,7 @@
 		"cost": 200,
 		"weight": 50,
 		"reqs": ["STR 12", "Defense Expertise"],
-		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11.", "{{skills.stealth}} disadvantage"]
+		"effects": ["{{attr.DEX}} and {{attr.SPD}} are capped at 11", "{{skills.stealth}} disadvantage"]
 	},
 	{
 		"name": "Full Plate Armor",
@@ -97,7 +97,7 @@
 		"weight": 60,
 		"reqs": ["STR 14", "Heavy Armor Training"],
 		"effects": [
-			"{{attr.DEX}} and {{attr.SPD}} are capped at 10.",
+			"{{attr.DEX}} and {{attr.SPD}} are capped at 10",
 			"{{skills.mobility}} disadvantage",
 			"{{skills.stealth}} disadvantage"
 		]

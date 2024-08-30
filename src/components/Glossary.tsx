@@ -8,14 +8,20 @@ const glossary: Map<string, Keyword[]> = new Map([
 	["Attributes", attributes.array],
 ]);
 
-export function GlossaryElement({term}: {term: Keyword}): ReactElement {
+export function GlossaryElement({
+	term,
+	description,
+}: {
+	term: Keyword;
+	description?: React.JSX.Element;
+}): React.JSX.Element {
 	return term.abbr ? (
 		<li>
-			<b>{term.abbr}</b>: {term.name} ({term.description})
+			<b>{term.abbr}</b>: {term.name} ({description ?? term.description})
 		</li>
 	) : (
 		<li>
-			<b>{term.name}</b>: {term.description}
+			<b>{term.name}</b>: {description ?? term.description}
 		</li>
 	);
 }

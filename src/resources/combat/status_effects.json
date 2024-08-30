@@ -18,7 +18,7 @@
 		"effect": "Accumulates. Characters take 1d4 damage at the end of their turn, then lose one level of burning. If accumulated burning exceeds the target's {{attr.STR}} score at the start of their turn, they are incapacitated for that turn.",
 		"causes": "Fire and sometimes radiant damage.",
 		"recovery": "Alleviated by freezing, water, or the Fire Mitigation ability.",
-		"notes": "Enemies immune to burning damage are also immune to this condition."
+		"notes": "Enemies immune to heat damage are also immune to this condition."
 	},
 	{
 		"name": "Deafened",
@@ -81,14 +81,14 @@
 		"effect": "The target cannot move and their DC is reduced by half. They also have disadvantage when making melee and ranged attacks.",
 		"causes": "Ropes, nets, spiderwebs, or entangling vines or tentacles.",
 		"recovery": "Receiving help from an ally or taking {{damage.slashing}} or {{damage.heat}} damage.",
-		"notes": "Vines and webbing can typically be rent by passing a DT 14 {{attr.STR}} saving throw, ending the effect."
+		"notes": "Vines and webbing can typically be rent by passing a DT 14 strength saving throw, ending the effect."
 	},
 	{
 		"name": "Freezing",
-		"effect": "Accumulates. The target's {{attr.DEX}} is reduced by 1 for each turn of accumulated freezing. Accumulated freezing decreases by 1 at the end of every turn.",
+		"effect": "Accumulates. The target's {{attr.DEX}} is reduced by 1 for each turn of accumulated freezing. Freezing decreases by 1 at the end of every turn.",
 		"causes": "Cold damage or frigid weather.",
 		"recovery": "Fire damage, or short rest.",
-		"notes": "Progresses to frozen when total freezing exceeds the target's {{attr.STR}} score."
+		"notes": "Progresses to frozen when total freezing exceeds the target's strength score."
 	},
 	{
 		"name": "Frozen",

@@ -156,7 +156,7 @@ export const surge = <>You can expend 4 willpower to gain an action, once per tu
 
 export const walking_mountain = <>Your armor BC is added to your maximum willpower.</>
 
-export const double_dog = <>The willpower required to stay conscious (via the <AppendixLink appendix={2} target="That Dog">That Dog</AppendixLink> feat) is reduced by one half (but cannot be reduced below 1).</>
+export const double_dog = <>The willpower required to stay conscious (via the <AppendixLink appendix={2} target="that_dog">That Dog</AppendixLink> feat) is reduced by one half (but cannot be reduced below 1).</>
 
 export const fleetfooted = <>Your first move action each turn no longer costs an action.</>
 
@@ -164,7 +164,7 @@ export const titan = <>Gain +1 willpower when an attack is blocked by your armor
 
 export const steel_avalanche = <>You can expend 2 willpower to add your armor BC to a two-handed melee weapon attack.</>
 
-export const dog_gone = <>The willpower required to stay conscious (via the <AppendixLink appendix={2} target="That Dog">That Dog</AppendixLink> feat) is reduced by one quarter instead of one half (but cannot be reduced below 1).</>
+export const dog_gone = <>The willpower required to stay conscious (via the <AppendixLink appendix={2} target="that_dog">That Dog</AppendixLink> feat) is reduced by one quarter instead of one half (but cannot be reduced below 1).</>
 
 export const bloodthirsty = <>When you get a kill during a rage, you can expend 1 willpower to increase your rage level by 1.</>
 

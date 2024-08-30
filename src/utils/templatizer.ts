@@ -1,7 +1,7 @@
 import {Replacer, root} from "./replacer";
 import {normalize} from "./utils";
 
-const regex = /\{\{(?<path>\w+(\.\w+)*)(#(?<text>.*))?}}/g;
+const regex = /\{\{(?<path>\w+(?:\.\w+)*)(?:#(?<text>.+?))?}}/g;
 
 export function templatizeToTsx(input: string): string {
 	return templatizeHelper(input, true);
@@ -24,8 +24,10 @@ function templatizeHelper(input: string, tsx: boolean) {
 	let last = 0;
 	matches.forEach(match => {
 		if (!match.groups) {
-			throw new Error("Oof");
+			throw new Error(`Failed to match ${input}`);
 		}
+
+		//console.log(`${matches} ${match.index} ${match.length} "${match.input}" => <${match[0]}>`);
 
 		const path = match.groups["path"].split(".");
 		const text = match.groups["text"];

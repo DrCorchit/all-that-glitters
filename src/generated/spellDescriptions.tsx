@@ -358,7 +358,7 @@ export const blizzard = <>You summon a small blizzard, creating a region of extr
 
 export const ice_golem = <>Summon and bid a powerful ice golem.</>
 
-export const ice_statue = <>An enemy makes a DT 16 <Sub skill="Defense" /> aving throw or is instantaneously encased into a block of ice. On a successful save, the target accumulates 3 levels of <Tooltip tip={"Freezing"}>Accumulates. The target's Dexterity is reduced by 1 for each turn of accumulated freezing. Accumulated freezing decreases by 1 at the end of every turn.</Tooltip> instead. If this is sufficient to trigger the <Tooltip tip={"Frozen"}>The target is encased in ice and incapacitated. They become vulnerable to Force and Bludgeoning, but resistant to all other forms of damage.</Tooltip> status, then so be it.</>
+export const ice_statue = <>An enemy makes a DT 16 <Sub skill="Defense" /> aving throw or is instantaneously encased into a block of ice. On a successful save, the target accumulates 3 levels of <Tooltip tip={"Freezing"}>Accumulates. The target's Dexterity is reduced by 1 for each turn of accumulated freezing. Freezing decreases by 1 at the end of every turn.</Tooltip> instead. If this is sufficient to trigger the <Tooltip tip={"Frozen"}>The target is encased in ice and incapacitated. They become vulnerable to Force and Bludgeoning, but resistant to all other forms of damage.</Tooltip> status, then so be it.</>
 
 export const tsunami = <>A great wall of water appears, sweeping across the battlefield in a wide berth 100 feet wide. Targets take 4d10 <span style={{color: "#D00"}}>Force</span> damage and must make a DT 20 <Sub skill="Mobility" /> saving throw or be pushed up to 100 yards by the wall of water.</>
 

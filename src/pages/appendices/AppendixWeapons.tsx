@@ -2,6 +2,7 @@ import Appendix from "../../components/Appendix";
 import {GlossaryElement} from "../../components/Glossary";
 import {Table} from "../../components/Table";
 import {WeaponType, weaponKeywords, weaponTypes} from "../../concepts/weapon";
+import directory from "../../generated/weaponKeywords";
 
 const headers = ["Name", "Damage", "Price", "Modifiers", "Requirements", "Notes"];
 
@@ -32,7 +33,7 @@ export default function AppendixWeapons() {
 			<h4>Weapon Modifiers</h4>
 			<p>Certain weapons have special properties, which affect how they behave:</p>
 			{weaponKeywords.array.map((keyword, index) => (
-				<GlossaryElement term={keyword} key={index} />
+				<GlossaryElement term={keyword} description={directory.lookup(keyword.name)} key={index} />
 			))}
 			{weaponTypes.array.map((type, index) => (
 				<WeaponTable type={type} key={index} />
