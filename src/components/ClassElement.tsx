@@ -1,4 +1,4 @@
-import {CombatClass} from "../generated/combatClass";
+import {CombatClass} from "../concepts/combatClass";
 import {normalize} from "../utils/utils";
 import Collapsible from "./Collapsible";
 
@@ -37,12 +37,12 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 						);
 					})}
 					<b>Starting Equipment</b>:
-					{clazz.startingEquipment.map((container, index) => {
+					{Object.entries(clazz.startingEquipment).map((container, index) => {
 						return (
 							<div className='default' key={index}>
-								{container.name}
+								{container[0]}
 								<ul>
-									{container.contents.map((item, index2) => (
+									{container[1]!!.map((item, index2) => (
 										<li key={index2}>{item}</li>
 									))}
 								</ul>

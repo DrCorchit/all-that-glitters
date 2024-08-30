@@ -53,7 +53,7 @@ Common
   3|Cleaving Strike|4|STR 14|When making a melee attack with a heavy weapon that deals {{damage.slashing}} damage (but not a polearm), you can expend 2 willpower to strike an additional foe if more than one foe is in range.
   3|Shield Bash|3|STR 12|You can make a bludgeoning attack when carrying a {{weapons.buckler}} or {{weapons.shield}} in your offhand.
   3|Shield Charge|4|STR 13,SPD 13|When you take the jog action while carrying a shield, you can make a 1d8 {{damage.bludgeoning}} damage to an enemy. Dealing damage to any enemy in this way consumes your remaining movement points.
-  3|Haft Strike|4|DEX 13|When you make a melee attack with a polearm, you can expend 1 willpower to follow it up with a haft strike. The haft strike deals a flat 1d4 {{damage.bludgeoning damage}} and does not benefit from any attribute modifier or the extended reach of the polearm.
+  3|Haft Strike|4|DEX 13|When you make a melee attack with a polearm, you can expend 1 willpower to follow it up with a haft strike. The haft strike deals a flat 1d4 {{damage.bludgeoning}} damage and does not benefit from any attribute modifier or the extended reach of the polearm.
   3|Dual Wielder|10|DEX 13|When you make a melee weapon attack while dual wielding, you can make a secondary attack with your offhand weapon. The second attack does not benefit from any attribute modifier but is otherwise an ordinary weapon attack.
   3|Stop, Drop, and Roll|3|DEX 13|You can expend 2 actions to extinguish all accumulated {{status.burning}}.  
   3|Riposte|7|DEX 13|You may expend 1 willpower to follow up a successful parry with a counterattack.

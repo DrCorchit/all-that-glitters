@@ -71,7 +71,7 @@
 	},
 	{
 		"name": "Madness",
-		"effect": "Temporarily insane, the target no longer speaks or acts coherently. Their {{attr.INT}} and {{attr.CHA}} scores are reduced by half, and their speech comes out as incoherent babbling. The target must also make a DT 18 {{attr.NST}} saving throw or else immediately attack the nearest creature. Unless otherwise specified, the target may attempt a DT 15 {{attr.NST}} saving throw at the end of its turn to end the effect.",
+		"effect": "Temporarily insane, the target's {{attr.INT}} and {{attr.CHA}} scores are reduced by half, and their speech comes out as incoherent babbling. The target must also make a DT 18 {{attr.NST}} saving throw or else immediately attack the nearest creature. Unless otherwise specified, the condition lasts for 1d4 turns.",
 		"causes": "Certain forms of magic or poisons.",
 		"recovery": "Wait until the condition passes.",
 		"notes": ""

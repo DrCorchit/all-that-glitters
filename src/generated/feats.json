@@ -1,0 +1,1311 @@
+[
+  {
+    "name": "Stalwart",
+    "description": "Gain +2 HP per level, but no bonus to willpower from character level.",
+    "level": 1,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 10,
+      "stats": {
+        "str": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Deft",
+    "description": "Gain a 1d4 bonus to spell saving throws.",
+    "level": 1,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 10,
+      "stats": {
+        "dex": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Eager",
+    "description": "Gain +1 willpower after slaying an enemy.",
+    "level": 1,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 10,
+      "stats": {
+        "spd": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Prodigy",
+    "description": "Training skill proficiency levels to expertise or mastery costs 1 fewer training slots.",
+    "level": 2,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 2,
+      "stats": {
+        "int": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Jack of All Trades",
+    "description": "Remediation and proficiency skill training require one fewer training slot, but other training is increased by 1.",
+    "level": 2,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 4,
+      "stats": {
+        "nst": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Specialist",
+    "description": "Choose an attribute. All skill trainings associated with that attribute cost one less training slot. This feat cannot be taken multiple times, and is mutually exclusive with \"Jack of all Trades\" and \"Prodigy\".",
+    "level": 2,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 3,
+      "stats": {
+        "cha": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Hot Tempered",
+    "description": "When you take 5 or more damage in a single blow, gain 1 willpower.",
+    "level": 3,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 8,
+      "stats": {
+        "nst": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Warthog",
+    "description": "When you fail a saving throw by 1, you can expend 1 willpower to succeed it instead.",
+    "level": 3,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 10,
+      "stats": {
+        "str": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Early Riser",
+    "description": "You have advantage on your first skill check of the day.",
+    "level": 4,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 4,
+      "stats": {
+        "cha": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Night Owl",
+    "description": "You have advantage on skill checks between midnight and sunrise.",
+    "level": 4,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "nst": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Flagellant",
+    "description": "When you take 10 or more damage in a single blow, gain 1 willpower.",
+    "level": 5,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 4,
+      "stats": {
+        "str": 15
+      },
+      "feats": [
+        "adrenaline_rush"
+      ]
+    }
+  },
+  {
+    "name": "Take Backsies",
+    "description": "Once a day, you can expend willpower to reroll a skill check you have failed. The amount of willpower required is equal to the amount by which you failed the roll.",
+    "level": 7,
+    "featType": "Mundane",
+    "trainingReqs": {
+      "level": 13,
+      "slots": 7,
+      "stats": {
+        "dex": 17
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Arcane Apprentice",
+    "description": "You can learn common spells from a chosen school of magic. You can take this feat multiple times, once for each school of magic, but the training slot cost increases by 3 each time.",
+    "level": 1,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 3,
+      "stats": {
+        "int": 10
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Fast Learner",
+    "description": "Whenever you learn a new spell, you can attempt a {{skills.sorcery}} check to reduce the training slot cost by 1. The difficulty of the check is 12 plus the spell's level.",
+    "level": 2,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 6,
+      "stats": {
+        "int": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Sixth Sense",
+    "description": "When sneaking, you have advantage on {{skills.perception}} checks to see if you have been detected.",
+    "level": 2,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 10,
+      "stats": {
+        "nst": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Mana Regeneration",
+    "description": "When you begin a combat turn with no willpower, gain one willpower.",
+    "level": 2,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 10,
+      "stats": {
+        "cha": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Steady Hands",
+    "description": "You can expend 1 willpower to reroll a concentration saving throw (unless triggered by {{damage.lightning}} damage).",
+    "level": 3,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "dex": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "War Mage",
+    "description": "You can cast offensive spells with a range of touch as an opportunity attack.",
+    "level": 3,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "str": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "March",
+    "description": "When you cast a spell, gain 6 feet of movement speed.",
+    "level": 3,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 2,
+      "stats": {
+        "spd": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Arcane Adept",
+    "description": "You can learn academic spells from a chosen school of magic.",
+    "level": 4,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 4,
+      "stats": {
+        "int": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Well Rounded",
+    "description": "Your instinct and charisma modifier scores are added together when calculating willpower.",
+    "level": 4,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 8,
+      "stats": {
+        "nst": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Impetuous",
+    "description": "Your willpower is increased by 3.",
+    "level": 4,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "cha": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Savant",
+    "description": "Your HP is reduced by half, but you gain twice as much willpower from character level.",
+    "level": 4,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "int": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "War Criminal Mage",
+    "description": "You can now learn forbidden spells.",
+    "level": 5,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 3,
+      "stats": {
+        "int": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Erudite",
+    "description": "Ingratiated with collegiate fellows, academic spells cost 1 less training slot.",
+    "level": 5,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 4,
+      "stats": {
+        "int": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Barrage",
+    "description": "Whenever you cast two or more spells in one turn, gain 1 willpower.",
+    "level": 5,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 8,
+      "stats": {
+        "cha": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Sneakspell",
+    "description": "Spells you cast are totally quiet to others.",
+    "level": 5,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 6,
+      "stats": {
+        "nst": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Arcane Master",
+    "description": "You can learn esoteric spells (except from the school of Shamanism).",
+    "level": 6,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 6,
+      "stats": {
+        "int": 16
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "First Strike",
+    "description": "As long as you're not surprised, you can attempt a difficulty 15 {{skills.initiative}} check. If successful, you can cast a spell before initiative is rolled.",
+    "level": 6,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 10,
+      "stats": {
+        "spd": 16
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Master of Ceremonies",
+    "description": "Ceremonies cost half as much willpower to cast.",
+    "level": 7,
+    "featType": "Arcane",
+    "trainingReqs": {
+      "level": 13,
+      "slots": 10,
+      "stats": {
+        "int": 18
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Parry",
+    "description": "You may attempt to parry melee attacks using a reaction. When parrying, your BC is increased by the parry stat of the weapon.",
+    "level": 1,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 3,
+      "stats": {
+        "dex": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Parkour",
+    "description": "Gain a 1d4 bonus to {{skills.mobility}} checks when climbing.",
+    "level": 1,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 4,
+      "stats": {
+        "dex": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Leapfrog",
+    "description": "When you jump, you can jump 1 foot higher and six feet farther.",
+    "level": 1,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 4,
+      "stats": {
+        "spd": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Fast Walker",
+    "description": "When you take the move action, you can move six feet farther.",
+    "level": 1,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 5,
+      "stats": {
+        "spd": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Pensive",
+    "description": "+1 to saving throws, but -1 to skill checks. +1 {{skills.defense}}",
+    "level": 1,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 1,
+      "stats": {
+        "int": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Sensitive",
+    "description": "+1 to skill checks, but -1 to saving throws. +1 {{skills.perception}}",
+    "level": 1,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 1,
+      "stats": {
+        "nst": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Jolly",
+    "description": "Gain +1 on all skill checks as long as your willpower is full.",
+    "level": 1,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 3,
+      "stats": {
+        "cha": 11
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Billy Goat",
+    "description": "You gain a 1d4 bonus when making {{skills.mobility}} saving throws.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 6,
+      "stats": {
+        "str": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Deep Breath",
+    "description": "You can hold your breath twice as long as normal.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 3,
+      "stats": {
+        "str": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Pratfaller",
+    "description": "Fall damage is reduced by 2d6.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 3,
+      "stats": {
+        "dex": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Vertical Escape",
+    "description": "You may use the grappling hook to make a hasty escape as a combat action. If surroundings are appropriate, you can attempt a difficulty 12 {{skills.mobility}} check to throw the hook up to 30 feet vertically. If it latches, you can use an action to climb 10 feet up the rope, away from enemy melee attacks.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 2,
+      "stats": {
+        "dex": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Dodge Roll",
+    "description": "When you take the dodge action, you gain 6 feet of movement speed.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 3,
+      "stats": {
+        "dex": 12,
+        "spd": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Freestyler",
+    "description": "Swim speed is increased by 6 feet per turn.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 2,
+      "stats": {
+        "spd": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Blitzkrieg",
+    "description": "You can make {{skills.martial_arts}} checks using your speed modifier (instead of strength or dexterity)",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 6,
+      "stats": {
+        "spd": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Triage",
+    "description": "When you take the help action, allies heal twice as much hp.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 2,
+      "stats": {
+        "int": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Charlatan",
+    "description": "You can use charisma as a base attribute for {{skills.sorcery}} checks.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 6,
+      "stats": {
+        "cha": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Loremaster",
+    "description": "You can make recognition rolls using the {{skills.folklore}} skill, instead of {{skills.survival}}.",
+    "level": 2,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 4,
+      "stats": {
+        "nst": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Cleaving Strike",
+    "description": "When making a melee attack with a heavy weapon that deals {{damage.slashing}} damage (but not a polearm), you can expend 2 willpower to strike an additional foe if more than one foe is in range.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "str": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Shield Bash",
+    "description": "You can make a bludgeoning attack when carrying a {{weapons.buckler}} or {{weapons.shield}} in your offhand.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 3,
+      "stats": {
+        "str": 12
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Shield Charge",
+    "description": "When you take the jog action while carrying a shield, you can make a 1d8 {{damage.bludgeoning}} damage to an enemy. Dealing damage to any enemy in this way consumes your remaining movement points.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "str": 13,
+        "spd": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Haft Strike",
+    "description": "When you make a melee attack with a polearm, you can expend 1 willpower to follow it up with a haft strike. The haft strike deals a flat 1d4 {{damage.bludgeoning}} damage and does not benefit from any attribute modifier or the extended reach of the polearm.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "dex": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Dual Wielder",
+    "description": "When you make a melee weapon attack while dual wielding, you can make a secondary attack with your offhand weapon. The second attack does not benefit from any attribute modifier but is otherwise an ordinary weapon attack.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 10,
+      "stats": {
+        "dex": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Stop, Drop, and Roll",
+    "description": "You can expend 2 actions to extinguish all accumulated {{status.burning}}.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 3,
+      "stats": {
+        "dex": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Riposte",
+    "description": "You may expend 1 willpower to follow up a successful parry with a counterattack.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 7,
+      "stats": {
+        "dex": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Momentum",
+    "description": "Gain 6 feet of movement speed every time you kill an opponent.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 5,
+      "stats": {
+        "spd": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Friend in Need",
+    "description": "You can take the \"move\" and \"help\" actions in two actions (instead of three).",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "spd": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Spellsword",
+    "description": "When you make a weapon attack on an enemy, it has disadvantage on spell saving throws against your spells until the start of its next turn. When you make a spell attack on an enemy, you have advantage on weapon attacks against it until the start of your next turn.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 10,
+      "stats": {
+        "int": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Bookworm",
+    "description": "You can make recognition rolls using the {{skills.literacy}} skill, instead of {{skills.survival}}",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 6,
+      "stats": {
+        "int": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Dungeoneer",
+    "description": "Gain a 1d4 bonus to {{skills.perception}} when exploring dungeons, and to {{skills.legerdemain}} when disarming traps.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "nst": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Prankster",
+    "description": "You have advantage on rolls to convince your marks that your shenanigans (pickpocketing, lockpicking, deceptions, etc) are harmless pranks.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "cha": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Exceptional",
+    "description": "Gain +1 willpower whenever you deal a critical hit.",
+    "level": 3,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 12,
+      "stats": {
+        "cha": 13
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Guardian",
+    "description": "When you take the block action, allies adjacent to you also benefit from the increased BC.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 10,
+      "stats": {
+        "str": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "That Dog",
+    "description": "Whenever you take damage that would knock you unconscious, you can expend willpower to remain   conscious (at 1 hp). The willpower required is equal to the excess damage.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 10,
+      "stats": {
+        "str": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Come Hither",
+    "description": "Using an action, the player may throw the grappling hook at a target within 20 feet. Upon a successful {{skills.accuracy}} check against the target’s {{keywords.mit}}, the target is pulled up to 15 feet towards the player.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 3,
+      "stats": {
+        "dex": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Marathon",
+    "description": "Jogging costs only one action.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "spd": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Moving Target",
+    "description": "You can move and dodge as a combined single action.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "spd": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Medic",
+    "description": "Whenever you take a breather, you can attempt a {{skills.medicine}} check to heal a party member to full health. The difficulty of the check is equal to their missing health.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "int": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Stoic",
+    "description": "Whenever you take a breather, regain all your willpower.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "nst": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Party Animal",
+    "description": "Whenever you take a breather, you and everyone in your party regains an additional 1d4 willpower.",
+    "level": 4,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "stats": {
+        "cha": 14
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Blunt Cleave",
+    "description": "You can use the cleaving strike maneuver with weapons that deal {{damage.bludgeoning}} damage.",
+    "level": 5,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 5,
+      "stats": {
+        "str": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Skull-Crusher",
+    "description": "When making a heavy attack, the damage dice are added together instead of taking the maximum value.",
+    "level": 5,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 8,
+      "stats": {
+        "str": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Charge Through",
+    "description": "When performing a shield charge, you can damage an additional enemy.",
+    "level": 5,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 6,
+      "stats": {
+        "str": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Wall Jump",
+    "description": "When you take the jump action next to a wall, your jump distance is doubled.",
+    "level": 5,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 4,
+      "stats": {
+        "dex": 15
+      },
+      "feats": [
+        "leapfrog"
+      ]
+    }
+  },
+  {
+    "name": "Adrenaline Rush",
+    "description": "Gain +1 temporary willpower at the start of battle.",
+    "level": 5,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 10,
+      "stats": {
+        "spd": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Surge",
+    "description": "You can expend 4 willpower to gain an action, once per turn.",
+    "level": 5,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 10,
+      "stats": {
+        "spd": 15
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Walking Mountain",
+    "description": "Your armor BC is added to your maximum willpower.",
+    "level": 6,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 10,
+      "stats": {
+        "str": 16
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Double Dog",
+    "description": "The willpower required to stay conscious (via the {{feats.that_dog}} feat) is reduced by one half (but cannot be reduced below 1).",
+    "level": 6,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 10,
+      "stats": {
+        "str": 16
+      },
+      "feats": [
+        "that_dog"
+      ]
+    }
+  },
+  {
+    "name": "Fleetfooted",
+    "description": "Your first move action each turn no longer costs an action.",
+    "level": 6,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 12,
+      "stats": {
+        "spd": 16
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Titan",
+    "description": "Gain +1 willpower when an attack is blocked by your armor.",
+    "level": 7,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 13,
+      "slots": 12,
+      "stats": {
+        "str": 17
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Steel Avalanche",
+    "description": "You can expend 2 willpower to add your armor BC to a two-handed melee weapon attack.",
+    "level": 9,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 17,
+      "slots": 6,
+      "stats": {
+        "str": 19
+      },
+      "feats": []
+    }
+  },
+  {
+    "name": "Dog Gone",
+    "description": "The willpower required to stay conscious (via the {{feats.that_dog}} feat) is reduced by one quarter instead of one half (but cannot be reduced below 1).",
+    "level": 9,
+    "featType": "Common",
+    "trainingReqs": {
+      "level": 17,
+      "slots": 10,
+      "stats": {
+        "str": 20
+      },
+      "feats": [
+        "double_dog"
+      ]
+    }
+  },
+  {
+    "name": "Bloodthirsty",
+    "description": "When you get a kill during a rage, you can expend 1 willpower to increase your rage level by 1.",
+    "level": 2,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 3,
+      "stats": {
+        "str": 12
+      },
+      "feats": [],
+      "clazz": "Barbarian"
+    }
+  },
+  {
+    "name": "Perseverance",
+    "description": "Your rage sustains you in your darkest hour. Once per turn, when you take damage while below half hp, your rage level increases by 1.",
+    "level": 3,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "stats": {
+        "str": 13
+      },
+      "feats": [],
+      "clazz": "Barbarian"
+    }
+  },
+  {
+    "name": "Anger Management",
+    "description": "The cost to rage is decreased from 3 to 2.",
+    "level": 5,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 4,
+      "stats": {
+        "cha": 15
+      },
+      "feats": [],
+      "clazz": "Barbarian"
+    }
+  },
+  {
+    "name": "Thunderin' Tarnation",
+    "description": "magic is stupid, but you can make it go away by yelling at it. Enemies which fail their saving throw against your roar may not cast spells on their next turn, and lose concentration on any spells they have already cast.",
+    "level": 6,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 8,
+      "stats": {
+        "nst": 16
+      },
+      "feats": [],
+      "clazz": "Barbarian"
+    }
+  },
+  {
+    "name": "Armor of God",
+    "description": "Add half your armor BC when making saving throws against spells.",
+    "level": 5,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 12,
+      "stats": {
+        "nst": 15
+      },
+      "feats": [],
+      "clazz": "Crusader"
+    }
+  },
+  {
+    "name": "Immortal",
+    "description": "Your armor BC is added to your",
+    "level": 2,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 4,
+      "stats": {
+        "str": 12
+      },
+      "feats": [],
+      "clazz": "Knight"
+    }
+  },
+  {
+    "name": "Praetorian",
+    "description": "You no longer have disadvantage to {{skills.mobility}} checks while wearing armor.",
+    "level": 4,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 4,
+      "stats": {
+        "str": 14
+      },
+      "feats": [],
+      "clazz": "Knight"
+    }
+  },
+  {
+    "name": "Samurai",
+    "description": "The penalty to maximum DC when wearing heavy armor is reduced by 2.",
+    "level": 5,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 4,
+      "stats": {
+        "str": 15
+      },
+      "feats": [],
+      "clazz": "Knight"
+    }
+  },
+  {
+    "name": "Templar",
+    "description": "Ignore disadvantage on stealth checks while wearing full plate.",
+    "level": 6,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 6,
+      "stats": {
+        "str": 16
+      },
+      "feats": [],
+      "clazz": "Knight"
+    }
+  },
+  {
+    "name": "Crazy Eights",
+    "description": "Whenever you roll an 8 on a d20, something unexpected happens. It is what it is.",
+    "level": 2,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 4,
+      "stats": {
+        "cha": 12
+      },
+      "feats": [],
+      "clazz": "Thief"
+    }
+  },
+  {
+    "name": "Lucky Sevens",
+    "description": "When you roll a seven on a d20, it counts as a critical.",
+    "level": 4,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 12,
+      "stats": {
+        "cha": 14
+      },
+      "feats": [],
+      "clazz": "Thief"
+    }
+  }
+]

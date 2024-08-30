@@ -3,11 +3,13 @@ import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink, AppendixLink} from "../../components/InternalLink";
 import Section from "../../components/Section";
 import {combatCategories, CombatCategory} from "../../concepts/combatCategory";
-import {races, Race} from "../../generated/race";
 import {sizes, Size} from "../../concepts/size";
 import {range} from "../../utils/utils";
 import {ClassElement} from "../../components/ClassElement";
-import {classes} from "../../generated/combatClass";
+import {Race, races} from "../../concepts/race";
+import raceDescriptions from "../../generated/raceDescriptions";
+import raceBonuses from "../../generated/raceBonuses";
+import {combatClasses} from "../../concepts/combatClass";
 
 const index = 2;
 const info = chapters.array[index - 1];
@@ -103,11 +105,11 @@ function RaceSection(): JSX.Element {
 
 function RaceElement({race}: {race: Race}) {
 	return (
-		<>
+		<div className='default'>
 			<h5>{race.name}</h5>
-			{race.description}
-			{race.bonuses}
-		</>
+			{raceDescriptions.lookup(race.name)}
+			{raceBonuses.lookup(race.name)}
+		</div>
 	);
 }
 
@@ -125,10 +127,10 @@ function SizeElement({size}: {size: Size}) {
 	);
 }
 
-const last = classes.array.length;
+const last = combatClasses.array.length;
 const half = last / 2;
-const classesColumn1 = range(0, half).map(index => classes.array[index].name);
-const classesColumn2 = range(half, last - half).map(index => classes.array[index].name);
+const classesColumn1 = range(0, half).map(index => combatClasses.array[index].name);
+const classesColumn2 = range(half, last - half).map(index => combatClasses.array[index].name);
 
 function ClassSection(): JSX.Element {
 	return (
@@ -208,7 +210,7 @@ function ClassSection(): JSX.Element {
 				level at level 5 and again at level 10. This bonus cannot increase the proficiency bonus beyond mastery.
 			</p>
 			<p>A detailed explanation of classes is given below, in alphabetical order.</p>
-			{classes.array.map((clazz, index) => (
+			{combatClasses.array.map((clazz, index) => (
 				<ClassElement clazz={clazz} key={index} />
 			))}
 		</Section>

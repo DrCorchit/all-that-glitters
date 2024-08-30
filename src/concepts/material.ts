@@ -9,10 +9,9 @@ export interface Material extends Item {
 }
 
 export const materials = new Source<Material>(
-	"materials",
+	"Materials",
 	materialsJson.map(json => ({...json, effects: json.effects ?? []})),
+	material => material.name,
 	material => material.name,
 	(material, text) => `<Tooltip tip={"${text ?? material.name}"}>${material.description}</Tooltip>`
 );
-
-replacers.push(materials);

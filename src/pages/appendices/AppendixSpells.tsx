@@ -4,9 +4,9 @@ import Collapsible from "../../components/Collapsible";
 import {AppendixLink} from "../../components/InternalLink";
 import Outline from "../../components/Outline";
 import Section from "../../components/Section";
-import {Spell, schools} from "../../concepts/magic";
+import {Spell, lookupSpellsBySchool, spellSchools} from "../../concepts/magic";
 import {recordEquals, range} from "../../utils/utils";
-import {lookupSpellsBySchool} from "../../generated/spell";
+import directory from "../../generated/spellDescriptions";
 
 function Spellement({spell}: {spell: Spell}): ReactElement {
 	return (
@@ -24,7 +24,7 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 				<i>{spell.blurb}</i>
 			</p>
 			<p>
-				<b>Effect</b>: {spell.description}
+				<b>Effect</b>: {directory.lookup(spell.id)}
 			</p>
 			<p>
 				<b>Duration</b>: TODO
@@ -129,11 +129,11 @@ export default function AppendixSpells(): ReactElement {
 	return (
 		<Appendix index={1}>
 			<h4 id='top'>Schools of Sorcery</h4>
-			<Outline pathname='/spells' sections={schools.array.map(school => school.name)} />
+			<Outline pathname='/spells' sections={spellSchools.array.map(school => school.name)} />
 			<Collapsible text='Search'>
 				<FilterForm filterState={filterState} setFilterState={setFilterState} />
 			</Collapsible>
-			{schools.array.map((school, index) => {
+			{spellSchools.array.map((school, index) => {
 				const spells = lookupSpellsBySchool(school)
 					.filter(filter)
 					.sort((sp1, sp2) => sp1.level - sp2.level);

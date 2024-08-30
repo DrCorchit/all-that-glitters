@@ -1,4 +1,3 @@
-import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 
 export interface ChapterInfo {
@@ -68,10 +67,9 @@ export const chapters = new Source<ChapterInfo>(
 		},
 	],
 	chapter => chapter.index.toString(),
-	(item, text) => {
-		const defaultName = "Chapter " + item.index;
-		return `<ChapterLink chapter={${item.index}}>${text ?? defaultName}</ChapterLink>`;
+	chapter => `Chapter ${chapter.index}`,
+	(chapter, text) => {
+		const defaultName = "Chapter " + chapter.index;
+		return `<ChapterLink chapter={${chapter.index}}>${text ?? defaultName}</ChapterLink>`;
 	}
 );
-
-replacers.push(chapters);

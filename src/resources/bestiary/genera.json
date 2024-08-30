@@ -1,111 +1,111 @@
 [
 	{
 		"latin": "mammalia",
-		"phylum": "vertebrata",
+		"phylum": "beast",
 		"name": "Mammal",
 		"description": "Warm blooded, hairy creatures. Often social."
 	},
 	{
 		"latin": "aves",
-		"phylum": "vertebrata",
+		"phylum": "beast",
 		"name": "Bird",
 		"description": "Warm, feathered creatures. Usually capable of flight."
 	},
 	{
 		"latin": "reptilia",
-		"phylum": "vertebrata",
+		"phylum": "beast",
 		"name": "Reptile",
 		"description": "Cold, scaly creatures with limited empathic faculties."
 	},
 	{
 		"latin": "amphibia",
-		"phylum": "vertebrata",
+		"phylum": "beast",
 		"name": "Amphibian",
 		"description": "Creatures which transition from water to land at certain phases of their lifecycle."
 	},
 	{
 		"latin": "ichthia",
-		"phylum": "vertebrata",
+		"phylum": "beast",
 		"name": "Fish",
 		"namePlural": "Fish",
 		"description": "Creatures with gills and scales, native to lakes, rivers, the depths of the sea and so forth."
 	},
 	{
 		"latin": "arthropoda",
-		"phylum": "invertebrata",
+		"phylum": "invertebrate",
 		"name": "Insect",
 		"description": "Creatures possessing an exoskeleton and jointed limbs, such as insects, spiders, and crustaceans."
 	},
 	{
 		"latin": "mollusca",
-		"phylum": "invertebrata",
+		"phylum": "invertebrate",
 		"name": "Mollusk",
 		"description": "Creatures with soft, slimy flesh, such as octopi and snails. Often intelligent."
 	},
 	{
 		"latin": "amorphia",
-		"phylum": "invertebrata",
+		"phylum": "invertebrate",
 		"name": "Blob",
 		"description": "Various amorphous or gelatinous entities colloquially known as slimes, oozes, or blobs."
 	},
 	{
 		"latin": "pseudophyta",
-		"phylum": "invertebrata",
+		"phylum": "invertebrate",
 		"name": "Plant",
 		"description": "Photosynthetic entities possessing biological and morphological similarities to plants."
 	},
 	{
-		"latin": "reanimis",
-		"phylum": "inmortis",
+		"latin": "redemigod",
+		"phylum": "undead",
 		"name": "Zombie",
 		"description": "Raised dead which feed on dead and decaying corpses. Extremely unpredictable."
 	},
 	{
 		"latin": "vampiris",
-		"phylum": "inmortis",
+		"phylum": "undead",
 		"name": "Vampire",
 		"description": "Immortal undead which feed exclusively on the blood of the living."
 	},
 	{
 		"latin": "spectralis",
-		"phylum": "inmortis",
+		"phylum": "undead",
 		"name": "Ghost",
 		"description": "Spirits of the recently departed, which yet possess the energy required to manifest in the physical."
 	},
 	{
 		"latin": "demens",
-		"phylum": "animis",
+		"phylum": "demigod",
 		"name": "Demon",
 		"description": "Cursed spirits who rebelled against their maker. Now confined to the hells, where their power cannot alleviate their suffering. Too arrogant to seek mercy or forgiveness, they instead strive to bring mortals to subjugation, corruption, and torment."
 	},
 	{
 		"latin": "draconis",
-		"phylum": "animis",
+		"phylum": "demigod",
 		"name": "Dragon",
 		"description": "Ferocious beings forged in the primordial fires. They may take any form, but find that of the dragon most befitting their immense power. Obsessed with hierarchy, they fight constantly amongst their own kind. They largely keep to their own, but occasionally take an interest in mortal affairs."
 	},
 	{
 		"latin": "nympha",
-		"phylum": "animis",
+		"phylum": "demigod",
 		"name": "Fey",
 		"namenamePlural": "Fey",
 		"description": "Playful and mischievous spirits of nature and the wilds, who cannot be tamed. They have acquired a negative reputation, but in truth they only lash out against mortals who encroach upon the forests and jungles of the world."
 	},
 	{
 		"latin": "angelis",
-		"phylum": "animis",
+		"phylum": "demigod",
 		"name": "Angel",
 		"description": "Spirits of light who joyfully serve the divine Source."
 	},
 	{
 		"latin": "constructa",
-		"phylum": "monstrum",
+		"phylum": "oddity",
 		"name": "Construct",
 		"description": "Conglomerations of non-living components animated by lesser spirits. Often assembled by skilled mortal mages."
 	},
 	{
 		"latin": "pseudomorpha",
-		"phylum": "monstrum",
+		"phylum": "oddity",
 		"name": "Mimic",
 		"description": "Any of several entities which take the form of physical objects. Immensely dangerous."
 	}

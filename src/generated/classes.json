@@ -1,0 +1,856 @@
+[
+  {
+    "name": "Assassin",
+    "description": "An assassin’s art is a quick and sure death, delivered without remorse or hesitation. Typically employed by a political state or criminal syndicate, assassins quickly learn to make use of any weapon available, including the weapons of their own targets. This makes them extremely versatile adventurers, able to adapt to nearly any combat situation as the need arises.",
+    "backstoryPrompts": [
+      "Who has hired you in the past?",
+      "How many targets have you killed?",
+      "Do you remember your first kill?",
+      "How did you acquire your unique skillset?",
+      "Does your character struggle with any form of guilt?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Good",
+    "coreAbilityName": "Assassination",
+    "coreAbilityDescription": "You may expend 2 willpower to mark a target for assassination. The next time you score a critical hit on that target, deal an additional 2d6 damage.",
+    "limitations": "Due to their extremely specialized skillset, assassins have a deficiency in two of the following three skills: Nature, Defense, or Survival.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Martial Arts and either Initiative or Accuracy.",
+      "2": "when you initiate combat with an attack, gain advantage on the Initiative roll. You have an extra action on your first turn of combat.",
+      "5": "Your proficiency in Stealth and Martial Arts increase to expertise.",
+      "10": "Your proficiency in Stealth and Martial Arts increase to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Leather Armor.",
+        "Any two Nimble weapons",
+        "A Buckler"
+      ],
+      "Concealed on their person:": [
+        "Any two small weapons",
+        "A vial of neurotoxic poison",
+        "A dozen Throwing Knives or Shurikens",
+        "A dozen Lockpicks"
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "3 days Rations and a Canteen.",
+        "A Bedroll",
+        "Two sets of Plain Clothes.",
+        "One set of Formal Wear",
+        "A Disguise Kit",
+        "A pair of Manacles",
+        "A 100 Foot Rope and Grappling Hook"
+      ]
+    }
+  },
+  {
+    "name": "Barbarian",
+    "description": "Whether a local farmhand or a tribesman from a remote tundra or jungle, barbarians are united by their unparalleled fury in battle, as well as sheer physical brawn. By tapping into primal rage, barbarians can strike harder and faster than anyone else while laughing off blows that would stagger an ordinary man. Barbarians typically wear light armor, and swing the largest weapons they can find. Their bodies are often covered in scars, either from tribal initiation rituals, or past battles. Some barbarians channel their rage in a drunken stupor, while others transform into the animals that embody their inner beast.",
+    "backstoryPrompts": [
+      "Have you always been strong, or did you go through a lot of training?",
+      "Is your immense brawn shared by other members of your family or tribe?",
+      "When did you first discover that rage could make you stronger?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Chaotic",
+    "coreAbilityName": "Rage",
+    "coreAbilityDescription": "You may spend 3 willpower to enter a rage for 5 combat turns. During a rage, your strength is increased by 3. If you are not wearing armor, you also take 3 less damage from bludgeoning, slashing, piercing, and fire damage. You may not cast spells, read scrolls, or use consumables without ending your rage. Note: when an ability increases your rage level, it increases your strength and resistance by the indicated amount and also resets the rage duration to 5 turns.",
+    "limitations": "Due to their careless approach and lack of formal education, barbarians start with a deficiency in two of the following three skills: Sorcery, Literacy, Stealth.",
+    "levelingBonuses": {
+      "1": "Gain proficiency in two of these skills: Initiative, Mobility, or Survival.",
+      "2": "you develop a terrifying primal roar. As an action, you can spend 1 willpower to roar, potentially terrifying nearby enemies. Each enemy must pass an Instinct saving throw or become Terrified. The difficulty of the saving throw is equal to your Instinct attribute score.",
+      "5": "your proficiency in Martial Arts advances to expertise. Also increase your proficiency level in initiative, mobility, or survival.",
+      "10": "Your skill in martial arts advances to mastery. Also increase your proficiency level in initiative, mobility, or survival.",
+      "15": "gain the ability to enter a blackout rage. Entering a blackout rage costs 10 willpower, and immediately increases your rage level to 10 (instead of 3). After your first blackout rage, you either gain a permanent rage level of 2, or you reconsider your life choices and become a monk. As a monk, you keep your barbarian starting gear and proficiencies, but lose your barbarian class abilities."
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Quilted Armor"
+      ],
+      "One of the following, as a primary weapon:": [
+        "A Longsword",
+        "A Greataxe",
+        "A Maul",
+        "Two standard weapons with the Light property."
+      ],
+      "Any two of the following small weapons:": [
+        "A Cleaver",
+        "A Club",
+        "A Dagger",
+        "A Hatchet"
+      ],
+      "An adventurer's pack, containing:": [
+        "30 + 1d100 gold",
+        "3 days Rations",
+        "A Bedroll",
+        "Two sets of Plain Clothes.",
+        "2 bottles of Mead, Bottle of",
+        "A bottle of Moonshine, Flask of"
+      ]
+    }
+  },
+  {
+    "name": "Crusader",
+    "description": "The crusader offers their services to a chosen deity by swearing a sincere theological oath. As long as the oath is kept, their powers never wane and their enemies are smitten down before them. But even the most devoted mortal may at times be sorely tempted to break such an oath. Should the temptation prove too much, the crusader may find themselves tumbling down the dark path of the oathbreaker.",
+    "backstoryPrompts": [
+      "What made you swear fealty to one particular deity?",
+      "Do you ever feel tempted to break your oath?",
+      "Is your god pleased with your service, or are you on shaky terms?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Lawful",
+    "coreAbilityName": "Divine Providence",
+    "coreAbilityDescription": "Having taken a solemn oath of service before your God, you may call upon divine providence to bolster you and your allies. Once per short rest, you may take an action and expend 3 willpower to beseech your deity, gaining 1d8 temporary hitpoints and 1d8 bonus holy damage on your next successful weapon attack.",
+    "limitations": "Singleminded in their purpose, crusaders tend to neglect two of the following skills to the point of deficiency: Literacy, Nature, or Legerdemain.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Martial Arts.",
+      "2": "your god calls you to a deeper level of devotion. During your next night's rest, you behold a vision of a sacred chalice and a righteous blade. You may reach out and touch one of these relics, so embarking on the path of either the <i>cleric</i> or the <i>paladin</i>: <ul><li>As a cleric, your party shares in your fortitude when you pray to your deity. Your divine providence grants allies 1d4 temporary hitpoints. You also gain proficiency in Medicine.</li><li>As a paladin, your prayers kindle divine ardor in the hearts of your companions. After invoking divine providence, each party member gains a bonus of 1d6 to their next weapon attack. You also gain proficiency in Defense</li></ul>",
+      "5": "your proficiency in Persuasion and Martial Arts increase to expertise.",
+      "10": "Your proficiency in Persuasion and Martial Arts increase to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A steel Hauberk.",
+        "A small weapon",
+        "A holy symbol of your deity, which functions as a Talisman"
+      ],
+      "A weapon of one of the following types:": [
+        "Any great weapon or polearm",
+        "Any standard weapon and a Shield",
+        "Any light weapon and a Greatshield"
+      ],
+      "An adventurer's pack, containing:": [
+        "30 + 1d100 gold",
+        "3 days Rations and a Canteen",
+        "A Bedroll, Blanket &amp; Pillow",
+        "Two sets of Plain Clothes.",
+        "One set of Religious Vestments",
+        "3 Torches",
+        "A Candle and a flask of Holy Water"
+      ],
+      "One of the following items:": [
+        "A Ram (Gain +1 Strength)",
+        "A Musical Instrument (Gain proficiency in Performance)",
+        "A Hand Crossbow and Quiver with two dozen arrows. (Gain proficiency in Accuracy)",
+        "A set of Climbing Gear. (Gain proficiency in Mobility)"
+      ]
+    }
+  },
+  {
+    "name": "Druid",
+    "description": "Whether a shaman from a remote tribe or an isolated hermit, a druid reveres, worships, and protects nature. Nature rewards this special connection by allowing the druid to practice unique and powerful forms of magic, such as transforming into various animals.",
+    "backstoryPrompts": [
+      "How did you become a druid?",
+      "Are you connected to a formal druid circle, or do you work on your own?",
+      "How would you describe your relationship with nature?",
+      "What does it take to cultivate such a close connection with nature?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Evil",
+    "coreAbilityName": "Wildshape",
+    "coreAbilityDescription": "You have the ability to transform into a variety of animals. The willpower required to do so is dependent on the animal chosen.",
+    "limitations": "As a druid, you begin with deficiency in two of these three skills: Defense, Literacy, Legerdemain.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Medicine or Survival. This skill becomes your supporting skill.",
+      "5": "your proficiency in Nature and your supporting skill increase to expertise.",
+      "10": "Your proficiency in Nature and your supporting skill increase to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Druid's Robes",
+        "A Magical Staff",
+        "A pair of sandals or moccasins",
+        "A wooden Club",
+        "A Talisman"
+      ],
+      "An adventurer's pack, containing": [
+        "1d20 gold",
+        "3 days Rations",
+        "A calabash, usable as a Canteen",
+        "A Bedroll",
+        "1 set of Plain Clothes",
+        "A Medical Kit"
+      ]
+    }
+  },
+  {
+    "name": "Hermit",
+    "description": "<p>A hermit is someone who has chosen to live alone, usually on the outskirts of civilization. Such prolonged solitude leaves one with countless hours of quiet contemplation, and the slow progression from idiosyncrasy to eccentricity and madness. Alone in the wilderness, it is only a matter of time before one's most savage and primal instincts begin to dominate. Then comes the choice of whether to resist the madness or embrace it wholeheartedly, but this too is only a matter of time. In the end, there comes a day when that which lumbers out of the hermit's hut is more beast than man.</p><p>Whether by some inborn ability or through countless hours of meditation, a hermit is someone who has developed the ability to transform at will into a particular animal. Unlike a druid who can transform into a wide variety of small creatures, a hermit can only transform into one type of animal. But what a hermit sacrifices in flexibility, they gain in power. Hermits are known for transforming into mighty creatures such as the direwolf, rune bear, lions, and even the mighty rhinoceros.</p>",
+    "backstoryPrompts": [
+      "How did you learn to transform into your specific animal?",
+      "Have you always had a close connection to nature, or did something spur that connection?",
+      "What was your first transformation like?",
+      "Do you feel more at home as a humanoid or as an animal?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "coreAbilityName": "Beast Form",
+    "coreAbilityDescription": "You expend 3 willpower to transform into your chosen animal for up to one hour. Your clothing and worn items merge with your beast form, and return upon detransformation. While transformed, your physical attributes ({{attr.STR}}, {{attr.DEX}}, {{attr.SPD}}) change to that of your chosen form.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Survival.",
+      "5": "your proficiency in Nature and Survival increase to expertise.",
+      "10": "Your proficiency in Nature and Survival increase to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Plain Clothes",
+        "A Talisman"
+      ],
+      "An adventurer's pack, containing:": [
+        "1d20 gold",
+        "1 days Rations and a Canteen",
+        "A Bedroll",
+        "1 set of Plain Clothes",
+        "3 Torches",
+        "A 100 Foot Rope",
+        "A Map and Compass",
+        "A Frying Pan and a Tinderbox"
+      ],
+      "Two of the following:": [
+        "A Padlock &amp; Key",
+        "A Whetstone",
+        "A Dog Whistle",
+        "A pet, such as a Cat, Dog, Parrot, or Monkey",
+        "A bottle of Moonshine, Flask of",
+        "Two Hunting Traps"
+      ]
+    }
+  },
+  {
+    "name": "Inquisitor",
+    "description": "Often clad in black armor and concealed beneath a dark hood or mask, the inquisitor’s dark countenance usually conceals and ever darker heart. An inquisitor has been called by their deity to drive out heresy, and will not hesitate to interrogate or kill anyone who stands in his or her way. Inquisitors are perhaps best known for branding their opponents as heretics, marking them for divine retribution.",
+    "backstoryPrompts": [
+      "How did you come to choose to serve your god?",
+      "Is your persecution of heretics commanded by god directly, or through a religious institution?",
+      "Do you have any moral qualms about the suffering you bring to the enemies of your god?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Good",
+    "coreAbilityName": "Heretic’s Brand",
+    "coreAbilityDescription": "In addition to your regular equipment, you have a special branding iron obtained from your chosen deity that can be imbued with divine magic by whispering a short prayer or sacred word. This brand is a standard melee weapon that deals 1d6 {{damage.piercing}} damage, but you can expend 2 willpower  causing the end of the brand to glow blazing hot for 1 minute. Your brand is a standard melee weapon that deals 1d6 piercing damage plus your {{attr.CHA}} modifier in fire damage. Enemies struck by this weapon also receive the heretic’s brand, marking them for divine retribution.",
+    "limitations": "As an inquisitor, you have a deficiency in two out of Accuracy, Medicine or Nature.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Perception and Martial Arts or Sorcery. Either martial arts or sorcery is your supporting skill.",
+      "5": "your proficiency in Persuasion and your supporting skill increase to expertise.",
+      "10": "Your proficiency in Persuasion and your supporting skill increase to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Brigandine.",
+        "Any standard weapon.",
+        "A Dagger",
+        "A Lantern with Flask of Oil",
+        "A Net"
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "3 days Rations and a Canteen",
+        "A Tent with a Blanket &amp; Pillow",
+        "Two sets of Plain Clothes",
+        "One set of Religious Vestments",
+        "A Censer and Incense",
+        "A Talisman",
+        "A pair of Manacles",
+        "A 100 Foot Rope"
+      ],
+      "One of the following:": [
+        "A Crowbar and a Ladder",
+        "A Hand Crossbow and a Quiver with 24 bolts",
+        "A Spyglass and a Map"
+      ]
+    }
+  },
+  {
+    "name": "Knight",
+    "description": "The knight is a low-ranking noble with formal combat training. Although they may be called to fight in battle, a knight’s primary purpose is to serve for the glory of their Lord or Lady, to whom they have sworn an oath of fealty. Many knights are also accompanied by a squire, a young knight in training who may carry their lord’s banner or help them don and doff their armor. On the battlefield, a knight is a magnificent sight, clad in expensive steel plate armor and with their lord’s ensignia emblazoned on their shield. However, some knights forgo a shield altogether, preferring a heavier two-handed weapon. Either way, knights train extensively and are rarely caught flat-footed, even when out of armor",
+    "backstoryPrompts": [
+      "Did you train as a page or a squire before becoming a knight?",
+      "Are you proud of your country and your liege, or have you become disillusioned?",
+      "Was your oath of fealty inspired by love, respect, or political convenience?",
+      "How far back can you trace your lineage?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Lawful",
+    "coreAbilityName": "Shining Armor",
+    "coreAbilityDescription": "You can expend 1 willpower to add half your armor's BC to a skill check or saving throw. The cost to do so increases by 1 each time this ability is used, and resets to 1 after a long rest.",
+    "limitations": "Deficient in Sorcery.",
+    "levelingBonuses": {
+      "1": "gain expertise in Defense.",
+      "2": "your liege gifts you an improved suit of armor. You gain expertise in Defense and may choose a suit of Half Plate Armor or Splinted Chainmail.",
+      "5": "recognizing heroic conduct, your liege grants you a set of Full Plate Armor and your proficiency in Defense increases to mastery. Your proficiency in Martial Arts increases to expertise. ",
+      "10": "Your proficiency in Martial Arts increases to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of steel Chainmail",
+        "An arming sword (Shortsword)",
+        "A Shield",
+        "A Lantern, with one Flask of Oil.",
+        "A 100 Foot Rope"
+      ],
+      "A primary weapon, of one of the following types:": [
+        "A bastard sword",
+        "A longsword",
+        "A bearded axe",
+        "A warhammer"
+      ],
+      "A secondary weapon, of one of the following types:": [
+        "A Battle Axe",
+        "A falchion (Broadsword)",
+        "An Estoc",
+        "A Flail",
+        "A Mace",
+        "A Morningstar",
+        "A Rapier"
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "7 days Rations and a Canteen",
+        "A Tent",
+        "Two sets of Plain Clothes",
+        "One set of Formal Wear"
+      ]
+    }
+  },
+  {
+    "name": "Marksman",
+    "altName": "Sniperess",
+    "description": "Anyone can pick up a bow. With some strength and a little training, one can draw and release an arrow as well. However, only a true marksman can hit a distant target quickly and reliably. Such potency with a bow or musket is what distinguishes an ordinary archer from a true marksman.",
+    "backstoryPrompts": [
+      "How did you learn to use a bow or musket?",
+      "Do you brag about the time you made that really tricky shot? (Of course you do...)",
+      "How often do you practice? Do you naturally have good aim?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "coreAbilityName": "Sniping Shot",
+    "coreAbilityDescription": "When making a ranged attack, you may expend 1 willpower to focus your aim, gaining advantage on the attack roll and lowering the CT by 1.",
+    "limitations": "Marksmen ",
+    "levelingBonuses": {
+      "1": "gain expertise in Accuracy and one of Medicine, Mobility, or Stealth. This becomes your supporting skill.",
+      "5": "increase your proficiency in Accuracy and your supporting skill to expertise.",
+      "10": "increase your proficiency in Accuracy and your supporting skill to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A coat of Gambeson.",
+        "A Longbow and a Quiver with 24 arrows",
+        "Any standard weapon.",
+        "A Lantern with Flask of Oil"
+      ],
+      "Either of the following:": [
+        "A Shortbow, plus 24 Arrows",
+        "A Crossbow and a Quiver with 24 Bolts",
+        "A Pistol and 12 Bullets",
+        "A Arquebus and 12 Bullets"
+      ],
+      "An adventurer's pack, containing:": [
+        "30 + 1d100 gold",
+        "3 days Rations and a Canteen",
+        "A Bedroll",
+        "Two sets of Plain Clothes",
+        "A Spyglass and a set of Navigational Tools",
+        "A pair of Climbing Boots, Climbing Gear, and a 100 Foot Rope",
+        "A Medical Kit",
+        "A spare Quiver containing 24 Arrows"
+      ]
+    }
+  },
+  {
+    "name": "Mercenary",
+    "description": "The mercenary eschews lofty aspirations of honor and glory and fights almost exclusively for coin. Although they have a cutthroat reputation, there is a simple pragmatism to their motives. Mercenaries fight with whatever weapons and training they can purchase, and do not limit themselves to any particular discipline.",
+    "backstoryPrompts": [
+      "How did you acquire your combat skill?",
+      "Do you take pride in your work?",
+      "Do you fight for money, for the excitement of battle, or something else?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Good",
+    "coreAbilityName": "Combat Training",
+    "coreAbilityDescription": "As a result of extensive training, combat feats and maneuvers cost one less training slot to learn.",
+    "levelingBonuses": {
+      "1": "gain proficiency in any skill of your choice. This becomes your supporting skill.",
+      "5": "increase your proficiency in Martial Arts and Medicine to expertise.",
+      "10": "increase your proficiency in Martial Arts and Medicine to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Breastplate.",
+        "Any standard weapon",
+        "Any small weapon",
+        "A Buckler"
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "3 days Rations.",
+        "A Bedroll, Blanket &amp; Pillow",
+        "Two sets of Plain Clothes.",
+        "A pair of Manacles",
+        "A 100 Foot Rope"
+      ],
+      "Any one of the following:": [
+        "A second standard weapon",
+        "A dozen Throwing Knives and a Grappling Hook",
+        "A Hand Cannon and ten bullets.",
+        "A "
+      ]
+    }
+  },
+  {
+    "name": "Minstrel",
+    "altName": "Bard",
+    "description": "A minstrel is easy to spot—simply listen for the sound of a cheering crowd, and see what has captured their attention. It might be a jester, or a woman with a guitar, or a halfling turning flips and cartwheels. Either way, the minstrel is occupied with the trade of entertainment. As one should be, if one feasts or goes hungry according to the quality of one’s performance.",
+    "backstoryPrompts": [
+      "How do you entertain crowds?",
+      "When was your first performance? How did it go?",
+      "Do you ever get stage fright?",
+      "How does it feel to finish a performance to thunderous applause?",
+      "Have you ever been booed off a stage?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Lawful",
+    "coreAbilityName": "Poetic Justice",
+    "coreAbilityDescription": "When any character makes an attack roll, you may spend 2 willpower to make a quick cheer, quip, retort, or insult (as appropriate). If you pass a successful DT 10 {{skills.performance}} check, the attacker gains advantage (if they were an ally) or disadvantage (if they were an enemy).",
+    "levelingBonuses": {
+      "1": "gain proficiency in Performance.",
+      "5": "increase your proficiency in Stealth and Performance to expertise.",
+      "10": "increase your proficiency in Stealth and Performance to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Quilted Armor",
+        "A Nimble weapon",
+        "A Dagger",
+        "A Musical Instrument of some kind"
+      ],
+      "An adventurer's pack, containing:": [
+        "30 + 1d100 gold.",
+        "3 days Rations.",
+        "Two sets of Plain Clothes.",
+        "One set of Formal Wear",
+        "Three Lockpicks",
+        "A Tent"
+      ],
+      "A satchel, containing:": [
+        "A Looking Glass",
+        "Soap and Perfume",
+        "A Disguise Kit",
+        "A pair of Scissors and a Needle &amp; Thread"
+      ]
+    }
+  },
+  {
+    "name": "Monk",
+    "description": "The path to enlightenment is not without its twists and turns. For some, a monastery is a permanent home—a place to perfect the techniques of breathing, martial arts, and meditation. For others, the monastery is only a resting place before embarking on the road to adventure. Adventuring monks journey far and wide, where they become known for seemingly superhuman feats of endurance, speed, and strength enabled by extensive training.",
+    "backstoryPrompts": [
+      "What made you choose the monastic life?",
+      "Have you gained any unique wisdom or insights during your time as a monk?",
+      "Do you still hold the beliefs taught within the monastery?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Evil",
+    "coreAbilityName": "Deadly Weapons",
+    "coreAbilityDescription": "You may add your martial arts proficiency bonus to your unarmed attack damage.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Martial Arts",
+      "5": "increase your proficiency in Persuasion and Martial Arts to expertise.",
+      "10": "increase your proficiency in Persuasion and Martial Arts to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": []
+    }
+  },
+  {
+    "name": "Plague Doctor",
+    "description": "Hiding behind a mask packed with roses and incense, the plague doctor prolongs life or hastens death with equal ease. Equipped with leaches, syringes, and vials of strange chemicals, the doctor has every tool of modern medicine at their disposal.",
+    "backstoryPrompts": [
+      "When and why did you begin to practice medicine?",
+      "Do you practice medicine primarily in order to save life, or for money?",
+      "What are your opinions on newfangled medical practices, such as disinfectants and ",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "coreAbilityName": "This Won't Hurt a Bit",
+    "coreAbilityDescription": "You have a special syringe filled with chemicals, which functions as a {{weapons.stiletto}}. However, when your weapon would be coated with poison, it doubles the Whenever you take a breather or long rest, you can change the mixture.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Medicine and the Arcane Apprentice (alchemy) feat.",
+      "5": "increase your proficiency in Stealth and Medicine to expertise.",
+      "10": "increase your proficiency in Stealth and Medicine to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Plain Clothes",
+        "A Shortsword and a Dagger",
+        "A doctor's robes, and a mask.",
+        "A jar of leeches."
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "3 days Rations",
+        "A Tent or a Bedroll, Blanket &amp; Pillow",
+        "Two sets of Plain Clothes",
+        "A Scissors and a Needle &amp; Thread",
+        "A Map",
+        "A Crowbar"
+      ]
+    }
+  },
+  {
+    "name": "Prophet",
+    "description": "The prophet is an individual called upon by a specific god to bring about religious transformation. Often a firebrand or a heretic, prophets care little for social conformity and instead operate based off of faith and unwavering moral or spiritual convictions. For this reason, they are scorned and hated by religious authorities and are often on the run.",
+    "backstoryPrompts": [
+      "When did you first hear the voice of your god calling you to action?",
+      "Has anyone ever called you a heretic or condemned your teachings?",
+      "What is your god's attitude towards those who do not believe?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Chaotic",
+    "coreAbilityName": "Miracle",
+    "coreAbilityDescription": "As an agent of divine will, you may channel your deity's power once per day to cast a spell with its willpower cost reduced by 5.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Sorcery and the Arcane Apprentice feat in a school of your choice.",
+      "2": "you discover you divine calling, chosen by your deity. You may take one of the following: <ul><li>Calling of the healer. Gain proficiency in Medicine. You heal 1d4 HP whenever you cast a healing spell.</li><li>Calling of the deceiver. Gain proficiency in Stealth and Legerdemain.</li><li>Calling of the teacher. Gain proficiency in Literacy. You may learn one scholarly spell.</li><li>Calling of the destroyer. Gain proficiency in Initiative.</li></ul>"
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Rags, blessed by the divine to provide the same benefits as Sorcerer's Robes.",
+        "A Magical Staff"
+      ],
+      "An adventurer's pack, containing:": [
+        "1d20 gold",
+        "3 days Rations and a Canteen",
+        "A Bedroll",
+        "One set of Plain Clothes",
+        "One set of Religious Vestments",
+        "A pair of Spectacles ",
+        "A Frying Pan",
+        "A bottle of Moonshine, Flask of"
+      ],
+      "Any two of the following": [
+        "A Musical Instrument (and proficiency in Performance)",
+        "A Disguise Kit and a Forgery Kit",
+        "A Medical Kit (and proficiency in Medicine)",
+        "A half-dozen Lockpicks (and proficiency in Legerdemain)"
+      ]
+    }
+  },
+  {
+    "name": "Psychic",
+    "description": "The powers of a true psychic are a sight to behold. Imagine, for example, an unassuming young woman clad in simple black robes. She raises her hand and her eyes glow bright white, and suddenly the earth begins to tremble. A rock surges upward from the soil, bidden by her telekinetic impulse, and is sent flying towards its target. Surely such power is to be coveted—and feared!",
+    "backstoryPrompts": [
+      "When did you first discover your unique powers?",
+      "Do you ever struggle to control your powers?",
+      "Have your powers caused you to become an outcast, or changed the way that people view you?",
+      "Do your powers imbue you with a sense of purpose, such as the desire to protect or dominate others?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "coreAbilityName": "Telekinesis",
+    "coreAbilityDescription": "As a psychic prodigy, you can cast psionics spells for one less willpower.",
+    "limitations": "Psychics choose a deficiency in two of the following three skills: Accuracy, Defense, and Martial Arts",
+    "levelingBonuses": {
+      "1": "gain proficiency in Persuasion. Also gain the Arcane Apprentice for the school of psionics, as well as knowledge of the spell Telekinetic Throw.",
+      "5": "increase your proficiency in Sorcery and Persuasion to expertise.",
+      "10": "increase your proficiency in Sorcery and Persuasion to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Plain Clothes",
+        "A Dagger"
+      ],
+      "A sidearm, such as:": [
+        "A Shortsword",
+        "A Shortbow and Quiver",
+        "A Hand Crossbow and Quiver",
+        "A dozen Throwing Knives"
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "3 days Rations and a Canteen",
+        "A Bedroll, Blanket &amp; Pillow",
+        "2 sets of Plain Clothes",
+        "A 100 Foot Rope and a Block &amp; Tackle",
+        "A Lantern and Flask of Oil"
+      ],
+      "One of the following": [
+        "A Map, Compass, and Spyglass",
+        "A Medical Kit",
+        "A Padlock &amp; Key and half a dozen Lockpicks",
+        "A Needle &amp; Thread, Scissors, and a Disguise Kit"
+      ]
+    }
+  },
+  {
+    "name": "Ranger",
+    "description": "The ranger is someone—a farmer, a hunter, or maybe a lumberjack—who lives and works on the edge of civilization and has acquired a deep knowledge of nature and survival. They may have learned to hunt or track prey, tame beasts, or construct traps as a result of living in the wilderness.",
+    "backstoryPrompts": [
+      "Have you always lived in the wild, or did you move there",
+      "Do you see nature as nurturing or threatening -- or both?",
+      "How did you meet your animal companion?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "coreAbilityName": "Animal Companion",
+    "coreAbilityDescription": "TODO",
+    "levelingBonuses": {
+      "1": "gain proficiency in Accuracy and Survival",
+      "5": "increase your proficiency in Nature and Accuracy or Survival to expertise.",
+      "10": "increase your proficiency in Nature and Accuracy or survival Survival to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A suit of Leather Armor",
+        "Any standard weapon",
+        "A Dagger and two Hatchets"
+      ],
+      "An adventurer's pack, containing:": [
+        "30 + 1d100 gold",
+        "3 days Rations and a Canteen",
+        "A Bedroll, Blanket &amp; Pillow",
+        "Two sets of Plain Clothes",
+        ""
+      ]
+    }
+  },
+  {
+    "name": "Scholar",
+    "description": "Scholars are formally-trained magic users typically found in highly sheltered environments: libraries, universities, or perhaps a royal laboratory. Here, they are kept safe from the dangers and inconveniences of the outside world. Once in a great while, however, a scholar shuts the cover of his or her dusty tome and packs a bag to go adventuring. Whenever they do so, they are a force to be reckoned with, having mastered powerful forms of magic that have been thoroughly documented and perfected over generations.",
+    "backstoryPrompts": [
+      "Where did you attend university?",
+      "Are you a student, graduate student, or professor?",
+      "Are you well-liked by your classmates or colleagues?",
+      "What are you currently researching or studying?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Lawful",
+    "coreAbilityName": "Punditry",
+    "coreAbilityDescription": "You start out with the {{feats.arcane_adept}} feat. The training slot cost to learn academic spells is reduced by 2.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Literacy. Gain Arcane Apprentice in a school of your choice.",
+      "5": "increase your proficiency in Sorcery and Literacy to expertise.",
+      "10": "increase your proficiency in Sorcery and Literacy to mastery.",
+      "15": "gain the Arcane Master feat",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Sorcerer's Robes",
+        "A Magical Wand",
+        "A steel Dagger",
+        "A pair of Spectacles"
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "7 days Rations and a jug of Drinking Water",
+        "A Tent",
+        "3 sets of Formal Wear",
+        "A set of Utensils",
+        "An Inkpot &amp; Quill and three blank Scrolls",
+        "A Signet Ring &amp; Sealing Wax",
+        "A stick of Chalk",
+        "A bar of Soap"
+      ],
+      "One of the following guilty pleasures:": [
+        "A jar of Tobacco",
+        "A bottle of Wine, Bottle of",
+        "Three bottles of Mead, Bottle of",
+        "A Traveler's Chess Set"
+      ]
+    }
+  },
+  {
+    "name": "Thief",
+    "description": "Thieves are found in every city and village and borough, in every corner of the world. Their techniques are as varied as you can imagine, but they have one thing in common: the ability to disappear quickly and quietly. This skill proves immensely useful for those that turn to the path of adventuring, for one cannot easily be killed if one is not seen. Of course, the occasional coinpurse snipped from the belt of an unsuspecting noble doesn’t hurt either.",
+    "backstoryPrompts": [
+      "Do you have any moral qualms about taking things that don’t belong to you?",
+      "Have you ever been in prison?",
+      "Do you have any connections to a crime syndicate?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Good",
+    "coreAbilityName": "Street Smarts",
+    "coreAbilityDescription": "Owing to your lifestyle, you have a variety of talents in diverse areas:<ul><li><b>Slim Pickings</b>: You can always conceal one small weapon on your person. This weapon can only be found if you are physically searched and the person conducting the search passes a DT 15 {{skills.perception}} check.</li><li><b>Hard Knocks</b>: Your small weapons never suffer from the {{weapon_keywords.improvised}} penalty. Small weapons with the {{weapon_keywords.sharp}} property lower the weapon CT by 2, instead of 1.</li><li><b>Thieves' Cant</b>: You know a special form of communication that allows you to communicate secret messages, up to 6 words per minute. The language is widely known among thieves and beggars.</li></ul>",
+    "levelingBonuses": {
+      "1": "proficiency in Legerdemain and Perception.",
+      "5": "increase your proficiency in Stealth and Legerdemain to expertise.",
+      "10": "increase your proficiency in Stealth and Legerdemain to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Leather Armor",
+        "Any two small weapons",
+        "A Dagger, Stiletto or Tanto, concealed on your person.",
+        "Five Throwing Knives",
+        "A Crowbar",
+        "A Rucksack containing 4 stolen goods. Each stolen item is worth (disadvantaged) 1d100 gold"
+      ],
+      "An adventurer's pack, containing:": [
+        "1d20 gold",
+        "3 days rations and a jug of Drinking Water",
+        "A Bedroll",
+        "A set of Plain Clothes",
+        "A Tinderbox and a Torch",
+        "A Disguise Kit and a Forgery Kit",
+        "A Whetstone",
+        "A bottle of any alcoholic drink"
+      ]
+    }
+  },
+  {
+    "name": "Veteran",
+    "description": "The veteran is an experienced former soldier trained in the use of military grade melee weapons. Veterans thrive on camaraderie and fight best when backed up by their companions. Most importantly, veterans bolster their team in various ways without stepping back from the frontline of battle.",
+    "backstoryPrompts": [
+      "Why did you join the military?",
+      "What rank did you achieve?",
+      "In which battles or wars did you fight, if any?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "coreAbilityName": "Battlefield Triage",
+    "coreAbilityDescription": "When you help an ally, they gain 1d4 willpower.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Defense and Medicine",
+      "5": "increase your proficiency in Martial Arts and either Defense or Medicine to expertise.",
+      "10": "increase your proficiency in Martial Arts and either Defense or Medicine to mastery.",
+      "15": "gain the Arcane Master feat",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A Breastplate",
+        "Any polearm",
+        "Any standard weapon",
+        "Any small weapon"
+      ],
+      "An adventurer's pack, containing:": [
+        "30 + 1d100 gold",
+        "7 days Rations and a Canteen.",
+        "A Bedroll, Blanket &amp; Pillow",
+        "2 sets of Plain Clothes",
+        "A Lantern and Flask of Oil",
+        "A Tinderbox",
+        "A Medical Kit"
+      ],
+      "Any three of the following:": [
+        "A 100 Foot Rope, including a Block &amp; Tackle",
+        "Climbing Gear",
+        "A Map and Compass",
+        "A Musical Instrument",
+        "A Workman's Hammer, Chisel, and a Crowbar",
+        "A Whistle"
+      ]
+    }
+  },
+  {
+    "name": "Witch",
+    "altName": "Warlock",
+    "description": "Witches and warlocks are a diverse sort, hailing from many walks of life. You may find one in a palace in the very heart of luxury, another in a dingy cave or a squalid coven, and a third in a quaint shack amidst a great forest. Wherever they are found, witches are defined by their immense power, gained from their pact with a supernatural entity. The terms of these pacts are as diverse and as varied as warlocks themselves, and bring danger, madness, and power in equal measure. Such pacts are usually made with demonic or fey beings, for angels and dragons have little interest in pact-making with mortals. Demonic patrons typically allow their supplicants to dispose of their power in whatever manner they wish, in exchange for enslavement in the afterlife. Conversely, fey constantly demand small (or not-so-small) favors, but care very little for their supplicant’s eternal fate.",
+    "backstoryPrompts": [
+      "Why did you seek power in service to a supernatural being?",
+      "Do you believe that your pact will turn out in your favor?",
+      "Do you follow a ritual when you supplicate before your patron?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "alignment": "Non-Good",
+    "limitations": "You have deficiency in two of Defense, Mobility, and Perception.",
+    "coreAbilityName": "Blood Magic",
+    "coreAbilityDescription": "When you do not have enough willpower to cast a spell, you may sacrifice hitpoints to make up the difference. The number of hitpoints you must sacrifice to gain one willpower starts at 1 and increase by 1 each time this ability is used, until it resets during a long rest.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Persuasion, Folklore or Literacy. This skill becomes your supporting skill.",
+      "2": "having proven your worth to your patron, your pact deepens. You gain one of the followings boons: <li></li>",
+      "5": "your proficiency in Sorcery and your supporting skill increase to expertise.",
+      "10": "your proficiency in Sorcery and your supporting skill increase to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Sorcerer's Robes",
+        "A Magical Wand",
+        "A Dagger or Stiletto"
+      ],
+      "An adventurer's pack, containing:": [
+        "2d100 gold",
+        "3 days Rations",
+        "A Bedroll, Blanket &amp; Pillow",
+        "2 sets of Plain Clothes",
+        "A Talisman and a Bell"
+      ],
+      "One of the following items, shoved to the bottom of the pack:": [
+        "Formal Wear and a set of Religious Vestments",
+        "A Deck of Cards, A human skull, a Candle, and an Hourglass (gain inspiration)",
+        "A Portable Alchemy Set (lose 50 gold)",
+        "A Crystal Ball (lose 100 gold)",
+        "A bar of Soap and Perfume",
+        "An Inkpot &amp; Quill and a Scroll, plus a Signet Ring &amp; Sealing Wax (gain proficiency in Literacy)"
+      ]
+    }
+  },
+  {
+    "name": "Wizard",
+    "description": "Cloistered in his high tower, a tall and heavily bearded man pushes arcane magic to its absolute limit. Bedecked in a great flowing robe and pointed hat, he ensures that the stars and planets align before pursuing his audacious experiment. Sanity and restraint long forsaken, he clutches a crystal ball, gazing somewhere within as blue electricity arcs from the tips of his fingers. No-one knows how he got his power; some say it runs in his blood, while others say that he was once a promising young student expelled from a university. Whatever the case, a wizard is someone with a naturally high aptitude for magic who usually practices on their own terms, outside the auspices of a university.",
+    "backstoryPrompts": [
+      "Have you ever attended a magical university? If so, did you drop out or were you expelled?",
+      "How do you feel about the ethical limitations imposed on scholarly research?",
+      "Do you conduct experiments on your own? If so, are they ethical?",
+      "What made you leave your previous life and start adventuring?"
+    ],
+    "limitations": "Wizards have a deficiency in Defense and Mobility or Initiative",
+    "coreAbilityName": "Favorite Spell",
+    "coreAbilityDescription": "Whenever you learn a new spell, you may choose to make that spell your favorite. Your favorite spell costs one less willpower to cast than usual.",
+    "levelingBonuses": {
+      "1": "gain proficiency in Folklore, Literacy, Medicine, or Nature. This skill becomes your supporting skill. Also gain the Arcane Apprentice feat in a school of your choice.",
+      "2": "Choose your subclass. You may choose one of the following: <ul><li><b>Summoner</b>: you gain proficiency in Folklore, and the ability to summon a familiar spirit.`</li><li><b></b></li><li><b></b></li><li><b></b></li></ul>",
+      "5": "your proficiency in Sorcery and your supporting skill increase to expertise.",
+      "10": "your proficiency in Sorcery and your supporting skill increase to mastery.",
+      "15": "",
+      "20": ""
+    },
+    "startingEquipment": {
+      "_": [
+        "A set of Sorcerer's Robes",
+        "A Magical Staff",
+        "A large, pointed hat",
+        "Any small weapon"
+      ],
+      "An adventurer's pack, containing:": [
+        "3 days Rations",
+        "A Tent and Blanket &amp; Pillow",
+        "2 sets of Plain Clothes",
+        "3 Candles and a Bell",
+        "An Inkpot &amp; Quill and a blank Scroll"
+      ],
+      "Up to three of the following items, secured in a Rucksack:": [
+        "A pair of Spectacles",
+        "A bottle of any alcoholic drink",
+        "A pipe and Tobacco",
+        "A cup of Salt, 1 cup",
+        "A gallon jug of Drinking Water",
+        "A pair of Scissors and some String"
+      ]
+    }
+  }
+]

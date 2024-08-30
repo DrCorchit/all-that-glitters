@@ -1,13 +1,13 @@
 import Appendix from "../../components/Appendix";
-import {FeatInfo, FeatTSX, featTypes} from "../../concepts/feat";
 import {normalize, range, recordEquals} from "../../utils/utils";
-import {feats} from "../../generated/feats";
 import {AppendixLink} from "../../components/InternalLink";
 import {useState} from "react";
 import Collapsible from "../../components/Collapsible";
 import Section from "../../components/Section";
+import {Feat, feats, FeatType, featTypes} from "../../concepts/feat";
+import directory from "../../generated/featDescriptions";
 
-function FeatElement({feat}: {feat: FeatTSX}): JSX.Element {
+function FeatElement({feat}: {feat: Feat}): JSX.Element {
 	const id = normalize(feat.name);
 	return (
 		<div className='background'>
@@ -23,8 +23,8 @@ function FeatElement({feat}: {feat: FeatTSX}): JSX.Element {
 			<p>
 				<i>{`Level ${feat.level} ${feat.featType.name} Feat`}</i>
 			</p>
-			<p>{feat.description}</p>
-			<p>
+			<div className='default'>{directory.lookup(feat.name)}</div>
+			<div className='default'>
 				<b>Requirements</b>:
 				<ul>
 					<li>Adventurer Level {feat.trainingReqs.level}</li>
@@ -41,12 +41,12 @@ function FeatElement({feat}: {feat: FeatTSX}): JSX.Element {
 						const feat = feats.lookup(featName);
 						return (
 							<li key={index}>
-								<AppendixLink appendix={2} target={normalize(feat.name)} />
+								<AppendixLink appendix={2} target={feat.name} />
 							</li>
 						);
 					})}
 				</ul>
-			</p>
+			</div>
 		</div>
 	);
 }
@@ -112,7 +112,7 @@ function FilterForm({
 export default function AppendixFeats() {
 	const [filterState, setFilterState] = useState<FilterState>(defaultFilterState);
 
-	function filter(feat: FeatInfo): boolean {
+	function filter(feat: Feat): boolean {
 		//TODO make description searchable
 		//TODO filter by training slots
 		const featSearchTerm = `${feat.name}`.toLowerCase();
@@ -131,9 +131,13 @@ export default function AppendixFeats() {
 	}
 
 	const featsRaw = feats.array.filter(filter);
+	//const featsByType = new Map<FeatType, Feat[]>();
+
 	const featsByType = new Map(
 		featTypes.array.map(featType => {
-			const feats = featsRaw.filter(feat => feat.featType == featType);
+			const feats = featsRaw.filter(feat => feat.featType === featType);
+
+			console.log(`type: ${featType.name} -> ${feats.map(f => f.name)}`);
 			return [featType, feats];
 		})
 	);
@@ -154,10 +158,6 @@ export default function AppendixFeats() {
 					</Section>
 				);
 			})}
-
-			{feats.array.filter(filter).map((feat, index) => (
-				<FeatElement feat={feat} key={index} />
-			))}
 		</Appendix>
 	);
 }

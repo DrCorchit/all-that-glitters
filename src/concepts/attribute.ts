@@ -1,6 +1,5 @@
 import attributesJson from "../resources/sheet/attrs.json";
 import {Keyword} from "../utils/keyword";
-import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 
 export interface Attribute extends Keyword {
@@ -13,10 +12,9 @@ export const attributes = new Source<Attribute>(
 	"Attr",
 	attributesJson,
 	attr => attr.abbr,
+	attr => attr.name,
 	attr => `<Sub attr="${attr.abbr}"/>`
 );
-
-replacers.push(attributes);
 
 export const STR: Attribute = attributes.array[0];
 export const DEX: Attribute = attributes.array[1];

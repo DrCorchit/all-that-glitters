@@ -1,24 +1,39 @@
-import {Replacer} from "./replacer";
+import {Replacer, replacers} from "./replacer";
 import {normalize} from "./utils";
+
+export const sources: Source<any>[] = [];
 
 export default class Source<T> implements Replacer {
 	name: string;
 	array: T[];
 	map: Map<string, T>;
-	values: (value: string, name?: string) => string;
+	values: (value: string, name?: string, tsx?: boolean) => string;
 	delegates: Replacer[];
 
 	constructor(
 		name: string,
 		array: T[],
 		namingFunction: (item: T) => string,
-		renderingFunction: (item: T, text?: string) => string
+		renderToString: (item: T) => string,
+		renderToTSX: (item: T, text?: string) => string
 	) {
-		this.name = name;
-		this.array = array;
-		this.map = new Map(array.map(item => [normalize(namingFunction(item)), item]));
-		this.values = (value, text) => renderingFunction(this.lookup(value), text);
-		this.delegates = [];
+		try {
+			this.name = name;
+			this.array = array;
+			this.map = new Map(array.map(item => [normalize(namingFunction(item)), item]));
+			this.values = (value, text, tsx) => {
+				const item = this.lookup(value);
+				if (tsx) return renderToTSX(item, text);
+				else return text ?? renderToString(item);
+			};
+
+			this.delegates = [];
+			sources.push(this);
+			console.log(`Loaded ${name} (${array.length} entries)`);
+		} catch (e) {
+			console.error(`Could not load ${name}`);
+			throw e;
+		}
 	}
 
 	lookup(name: string): T {

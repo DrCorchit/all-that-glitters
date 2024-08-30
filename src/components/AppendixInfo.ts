@@ -1,4 +1,3 @@
-import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 
 export interface AppendixInfo {
@@ -18,7 +17,6 @@ export const appendices = new Source<AppendixInfo>(
 		{index: 6, name: "Appendix: Bestiary", link: "/bestiary"},
 	],
 	appendix => appendix.link,
-	(item, text) => `<AppendixLink appendix={${item.index}}>${text ?? item.name}</AppendixLink>`
+	appendix => appendix.name,
+	(appendix, text) => `<AppendixLink appendix={${appendix.index}}>${text ?? appendix.name}</AppendixLink>`
 );
-
-replacers.push(appendices);

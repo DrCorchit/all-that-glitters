@@ -1,7 +1,7 @@
 import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import Section from "../../components/Section";
-import {schools, School, Study} from "../../concepts/magic";
+import {spellSchools, SpellSchool, SpellStudy} from "../../concepts/magic";
 
 const index = 7;
 const info = chapters.array[index - 1];
@@ -199,14 +199,14 @@ function SchoolsOfSorcerySection(): JSX.Element {
 				linguistic bastardization have relegated such distinction to a mere footnote of history. Modern magic is divided
 				into six schools of sorcery, which each have their own disciplines. These are listed below:
 			</p>
-			{schools.array.map((school, index) => (
+			{spellSchools.array.map((school, index) => (
 				<SchoolElement school={school} key={index} />
 			))}
 		</Section>
 	);
 }
 
-export function SchoolElement({school}: {school: School}): JSX.Element {
+export function SchoolElement({school}: {school: SpellSchool}): JSX.Element {
 	return (
 		<>
 			<h5>{school.name}</h5>
@@ -229,7 +229,7 @@ export function SchoolElement({school}: {school: School}): JSX.Element {
 	);
 }
 
-function StudyElement({study}: {study: Study}): JSX.Element {
+function StudyElement({study}: {study: SpellStudy}): JSX.Element {
 	return (
 		<li>
 			<i>{study.name}</i>: {study.description}

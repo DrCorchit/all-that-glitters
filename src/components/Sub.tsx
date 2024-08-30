@@ -14,3 +14,10 @@ export default function Sub({attr, skill}: {attr?: string; skill?: string}): Rea
 		throw new Error("No argument passed in to Sub element");
 	}
 }
+
+/*
+export function Sub2({value}: {value: string}): JSX.Element {
+	const parts = value.split(".");
+	const source = sources.find(parts[0])?.lookup(pa);
+}
+*/

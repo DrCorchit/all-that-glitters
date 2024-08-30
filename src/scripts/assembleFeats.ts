@@ -1,20 +1,20 @@
 import fs, {createReadStream} from "fs";
 import rd from "readline";
 import {once} from "node:events";
-import {FileBuilder, ObjectBuilder} from "../utils/tsxBuilder";
-import {normalize} from "../utils/utils";
-import {classFeat, FeatJson, featLevelReqFormula, FeatType, featTypes} from "../concepts/feat";
+import {FileBuilder} from "../utils/tsxBuilder";
+import {classFeat, Feat, featLevelReqFormula, FeatType, featTypes} from "../concepts/feat";
+import {createDirectory} from "../utils/tsxDirectory";
 
 const typeRegex = /^\s*(?<study>\w+)\s*$/;
 const featsRegex = /^\s*(?<level>\d+)\|(?<name>.*?)\|(?<slots>\d+)\|(?<reqs>[^|]*)\|(?<description>[^|]*)$/;
 
 const attrReqRegex = /^(?<attr>\w+) (?<level>\d+)/;
 
-async function parseFeatsFile(): Promise<FeatJson[]> {
+async function parseFeatsFile(): Promise<Feat[]> {
 	const reader = rd.createInterface(createReadStream("src/resources/sheet/feats.txt"));
 	let featType: FeatType | undefined = undefined;
 	let clazz: string | undefined = undefined;
-	const feats: FeatJson[] = [];
+	const feats: Feat[] = [];
 
 	reader.on("line", line => {
 		line = line.trim();
@@ -51,7 +51,7 @@ async function parseFeatsFile(): Promise<FeatJson[]> {
 	return feats;
 }
 
-function parseFeat(line: string, featType: FeatType, clazz?: string): FeatJson {
+function parseFeat(line: string, featType: FeatType, clazz?: string): Feat {
 	const match = line.match(featsRegex);
 
 	if (!match || !match.groups) {
@@ -87,7 +87,7 @@ function parseFeat(line: string, featType: FeatType, clazz?: string): FeatJson {
 	return output;
 }
 
-function parseReq(feat: FeatJson, req: string) {
+function parseReq(feat: Feat, req: string) {
 	const match = req.match(attrReqRegex);
 	if (match?.groups) {
 		const attr = match.groups["attr"];
@@ -120,67 +120,30 @@ function parseReq(feat: FeatJson, req: string) {
 	}
 }
 
-function buildFeatObject(json: FeatJson): string {
-	const builder = new ObjectBuilder();
-	builder.withString("name", json.name);
-	builder.withTSX("description", json.description);
-	builder.withValue("level", json.level);
-	builder.withValue("featType", `featTypes.lookup("${json.featType.name}")`);
-
-	const trainReqs = new ObjectBuilder();
-	trainReqs.withValue("level", json.trainingReqs.level);
-	trainReqs.withValue("slots", json.trainingReqs.slots);
-	trainReqs.withStringArray("feats", json.trainingReqs.feats);
-	const stats = new ObjectBuilder();
-	Object.entries(json.trainingReqs.stats).forEach(entry => {
-		stats.withValue(entry[0], entry[1]);
-	});
-	trainReqs.withValue("stats", stats.build());
-	if (json.trainingReqs.clazz) {
-		//trainReqs.withValue("clazz", `classes.lookup("${json.trainingReqs.clazz.name}")`);
-		trainReqs.withString("clazz", json.trainingReqs.clazz);
+const featReplacer: (this: any, key: string, value: any) => any = (key, value) => {
+	if (key === "featType") {
+		return value.name;
+	} else {
+		return value;
 	}
-
-	builder.withValue("trainingReqs", trainReqs.build());
-
-	return builder.build();
-}
-
-async function buildFeatsFile() {
-	const json = await parseFeatsFile();
-
-	const featObjects = json.map(obj => {
-		const name = normalize(obj.name);
-		const tsx = buildFeatObject(obj);
-		return [name, tsx];
-	});
-
-	const builder = new FileBuilder();
-	builder.withImport('import Sub from "../components/Sub";');
-	builder.withImport('import Tooltip from "../components/Tooltip";');
-	builder.withImport('import Source from "../utils/source";');
-	//builder.withImport('import {AppendixLink, ChapterLink} from "../components/InternalLink";');
-	builder.withImport('import {featTypes, FeatTSX} from "../concepts/feat";');
-	//builder.withImport("import {classes} from ../generated/classes");
-
-	featObjects.forEach(info => {
-		const [name, tsx] = info;
-		builder.withMember(`export const ${name}: FeatTSX = ${tsx};`);
-	});
-	const array = featObjects.map(info => info[0]).join(", ");
-
-	builder.withMember(`const allFeats: FeatTSX[] = [${array}]`);
-
-	builder.withMember(`export const feats = new Source<FeatTSX>(
-	"Feats",
-	allFeats,
-	feat => feat.name,
-	(item, text) => \`<AppendixLink appendix={2} target={item.name}>\${text ?? item.name}</InternalLink>\`
-);`);
-
-	return builder.build();
-}
+};
 
 export async function assembleFeats() {
-	fs.writeFileSync("src/generated/feats.tsx", await buildFeatsFile());
+	const feats = await parseFeatsFile();
+
+	fs.writeFileSync("src/generated/feats.json", JSON.stringify(feats, featReplacer, 2));
+
+	const file = new FileBuilder();
+	file.withImport(`import { AppendixLink } from "../components/InternalLink"`);
+	file.withImport(`import Sub from "../components/Sub";`);
+	file.withImport(`import Tooltip from "../components/Tooltip"`);
+
+	const featDescriptions = createDirectory(
+		file,
+		feats,
+		feat => feat.name,
+		feat => feat.description
+	);
+
+	fs.writeFileSync("src/generated/featDescriptions.tsx", featDescriptions.build());
 }

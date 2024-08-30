@@ -1,5 +1,5 @@
 import proficiencyJson from "../resources/sheet/proficiency.json";
-import {replacers} from "../utils/replacer";
+import featJson from "../generated/feats.json";
 import Source from "../utils/source";
 import {StatBlock} from "./attribute";
 
@@ -34,37 +34,11 @@ export const featTypes = new Source<FeatType>(
 	"Feat Types",
 	[common, arcane, mundane, classFeat],
 	type => type.name,
-	(item, text) => `<Tooltip> tip={"${text ?? item.name}"}>${item.description}</Tooltip>`
+	type => type.name,
+	(type, text) => `<Tooltip> tip={"${text ?? type.name}"}>${type.description}</Tooltip>`
 );
 
-replacers.push(featTypes);
-
-export interface FeatInfo {
-	name: string;
-	level: number;
-	featType: FeatType;
-	trainingReqs: {
-		level: number;
-		slots: number;
-		feats: string[];
-		stats: Partial<StatBlock>;
-		clazz?: string;
-	};
-}
-
-export interface FeatJson extends FeatInfo {
-	description: string;
-}
-
-export interface FeatTSX extends FeatInfo {
-	description: JSX.Element;
-}
-
-export function featLevelReqFormula(level: number) {
-	return 2 * level - 1;
-}
-
-export const proficiencies = new Source<FeatJson>(
+export const proficiencies = new Source<Feat>(
 	"Proficiencies",
 	proficiencyJson.map(json => ({
 		name: json.name,
@@ -79,7 +53,35 @@ export const proficiencies = new Source<FeatJson>(
 		},
 	})),
 	feat => feat.name,
+	feat => feat.name,
 	(feat, text) => `<Tooltip tip={"${text ?? feat.name}"}>${feat.description}</Tooltip>`
 );
 
-replacers.push(proficiencies);
+export interface Feat {
+	name: string;
+	description: string;
+	level: number;
+	featType: FeatType;
+	trainingReqs: {
+		level: number;
+		slots: number;
+		feats: string[];
+		stats: Partial<StatBlock>;
+		clazz?: string;
+	};
+}
+
+export const feats = new Source<Feat>(
+	"Feats",
+	featJson.map(json => ({
+		...json,
+		featType: featTypes.lookup(json.featType),
+	})),
+	feat => feat.name,
+	feat => feat.name,
+	(feat, text) => `<AppendixLink appendix={2} target="${feat.name}">${text ?? feat.name}</AppendixLink>`
+);
+
+export function featLevelReqFormula(level: number) {
+	return 2 * level - 1;
+}

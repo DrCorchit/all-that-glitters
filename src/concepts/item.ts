@@ -9,8 +9,6 @@ import Source from "../utils/source";
 import {armor} from "./armor";
 import {weaponTypes} from "./weapon";
 import {materials} from "./material";
-import {normalize} from "../utils/utils";
-import {replacers} from "../utils/replacer";
 
 export interface ItemCategory {
 	name: string;
@@ -31,7 +29,8 @@ export const itemCategories = new Source<ItemCategory>(
 		{name: "Miscellaneous", items: miscJson},
 	],
 	cat => cat.name,
-	(items, text) => `<Tooltip tip={"${text ?? items.name}"}>A category of items</Tooltip>`
+	cat => cat.name,
+	(cat, text) => `<Tooltip tip={"${text ?? cat.name}"}>A category of items</Tooltip>`
 );
 
 export interface Item extends Keyword {
@@ -43,8 +42,7 @@ export interface Item extends Keyword {
 export const items = new Source<Item>(
 	"Items",
 	itemCategories.array.flatMap(items => items.items),
-	item => normalize(item.key ?? item.name),
+	item => item.key ?? item.name,
+	item => item.name,
 	(item, text) => `<Tooltip tip={"${text ?? item.name}"}>${item.description}</Tooltip>`
 );
-
-replacers.push(items);

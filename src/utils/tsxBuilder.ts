@@ -1,4 +1,4 @@
-import {templatize} from "./templatizer";
+import {templatizeToTsx} from "./templatizer";
 
 export class FileBuilder {
 	imports: string[] = [];
@@ -74,7 +74,7 @@ export class ObjectBuilder {
 
 	build(): string {
 		const propsArray = Array.from(this.properties).map(entry => `  ${entry[0]}: ${entry[1]},`);
-		const props = templatize(propsArray.join("\n"));
+		const props = templatizeToTsx(propsArray.join("\n"));
 		return `{\n${props}\n}`;
 	}
 }

@@ -10,5 +10,6 @@ export const alignments = new Source<Alignment>(
 	"Alignments",
 	alignmentsJson,
 	alignment => alignment.abbr,
+	alignment => alignment.name,
 	(alignment, text) => text ?? alignment.name
 );

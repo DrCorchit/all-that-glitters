@@ -2,7 +2,7 @@
 	{
 		"name": "Draft Horse",
 		"description": "A sturdy and robust horse for pulling heavy equipment, ploughs, or wagons.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 100,
 		"upkeep": 2,
 		"stats": {
@@ -17,7 +17,7 @@
 	{
 		"name": "Riding Horse",
 		"description": "A horse suitable for riding long distances. Accustomed to carts and carriages.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 150,
 		"upkeep": 2,
 		"stats": {
@@ -32,7 +32,7 @@
 	{
 		"name": "War Horse",
 		"description": "Thoroughbred, accustomed to combat, and tempered for excitement. Capable of bearing two riders and galloping at high speeds.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 500,
 		"upkeep": 5,
 		"stats": {
@@ -47,7 +47,7 @@
 	{
 		"name": "Camel",
 		"description": "A beast of burden, superior to the horse in rocky, barren, and arid climates.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 200,
 		"upkeep": 2,
 		"stats": {
@@ -62,7 +62,7 @@
 	{
 		"name": "Elephant",
 		"description": "Incredibly powerful and majestic. Able to manipulate heavy objects with its trunk.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 1000,
 		"upkeep": 10,
 		"stats": {
@@ -77,7 +77,7 @@
 	{
 		"name": "Dog",
 		"description": "Man's best friend.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 20,
 		"upkeep": 1,
 		"stats": {
@@ -92,7 +92,7 @@
 	{
 		"name": "Cat",
 		"description": "A domesticated cat, excellent at tracking and hunting small animals.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 10,
 		"stats": {
 			"str": 5,
@@ -106,7 +106,7 @@
 	{
 		"name": "Parrot",
 		"description": "A colorful bird able to mimic human speech. Those purchased from sailors often possess a colorful vocabulary.",
-		"genus": "aves",
+		"genus": "bird",
 		"cost": 20,
 		"stats": {
 			"str": 2,
@@ -120,7 +120,7 @@
 	{
 		"name": "Monkey",
 		"description": "A small monkey likely imported from a faroff land. Able to obey simple commands, and in extremely rare cases, cast simple spells.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 50,
 		"upkeep": 1,
 		"stats": {
@@ -135,7 +135,7 @@
 	{
 		"name": "Deer",
 		"description": "A forest-dwelling quadruped with a skittish demeanor. Too weak capable of carrying riders, and rarely domesticated.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 20,
 		"stats": {
 			"str": 14,
@@ -149,7 +149,7 @@
 	{
 		"name": "Bear",
 		"description": "A mighty animal with a thick hide and a prodigious horn. Fearsome and tamable only via magic.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 200,
 		"upkeep": 5,
 		"stats": {
@@ -164,7 +164,7 @@
 	{
 		"name": "Rhinoceros",
 		"description": "A mighty animal with a thick hide and a prodigious horn. Fearsome and tamable only via magic.",
-		"genus": "mammalia",
+		"genus": "mammal",
 		"cost": 500,
 		"upkeep": 5,
 		"stats": {
