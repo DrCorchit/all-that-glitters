@@ -6,7 +6,6 @@ import creaturesJson from "../resources/bestiary/creatures.json";
 import {Keyword} from "../utils/keyword";
 import Source from "../utils/source";
 import {StatBlock} from "./attribute";
-import {normalize} from "../utils/utils";
 
 export interface Plane extends Keyword {}
 

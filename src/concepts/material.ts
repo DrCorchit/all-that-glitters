@@ -1,5 +1,4 @@
 import materialsJson from "../resources/items/materials.json";
-import {replacers} from "../utils/replacer";
 import Source from "../utils/source";
 import {Item} from "./item";
 

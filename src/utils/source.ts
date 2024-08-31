@@ -1,7 +1,7 @@
-import {Replacer, replacers} from "./replacer";
+import {Replacer} from "./replacer";
 import {normalize} from "./utils";
 
-export const sources: Source<any>[] = [];
+export const sources: Source<unknown>[] = [];
 
 export default class Source<T> implements Replacer {
 	name: string;

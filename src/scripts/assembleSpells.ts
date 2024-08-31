@@ -1,7 +1,6 @@
 import fs, {createReadStream} from "fs";
 import rd from "readline";
 import {once} from "node:events";
-import {FileBuilder} from "../utils/tsxBuilder";
 import {spellRarities, SpellJson, spellStudies} from "../concepts/magic";
 import {createDirectory} from "../utils/tsxDirectory";
 

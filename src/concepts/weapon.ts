@@ -1,7 +1,6 @@
 import weaponKeywordsJson from "../resources/combat/weapon_keywords.json";
 import weaponsJson from "../resources/combat/weapons.json";
-import {Keyword, keywords} from "../utils/keyword";
-import {replacers} from "../utils/replacer";
+import {Keyword} from "../utils/keyword";
 import Source from "../utils/source";
 import {normalize} from "../utils/utils";
 import {Damage} from "./damage";

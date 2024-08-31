@@ -16,14 +16,17 @@ export function assembleClasses() {
 	const classesJson = classes.map(clazz => {
 		const levelingBonusesStr = Object.entries(clazz.levelingBonuses).map(entry => {
 			const key = entry[0];
-			const values = templatizeToString(entry[1]!!);
-			return [key, values];
+			const value = entry[1];
+			if (!value) throw new Error("This never happens, I swear");
+			return [key, templatizeToString(value)];
 		});
 
 		const startingEquipmentStr = Object.entries(clazz.startingEquipment).map(entry => {
 			const key = templatizeToString(entry[0]);
-			const values = entry[1]!!.map(value => templatizeToString(value));
-			return [key, values];
+			const values = entry[1];
+			if (!values) throw new Error("This never happens, I swear");
+			const valuesStr = values.map(templatizeToString);
+			return [key, valuesStr];
 		});
 
 		return {
@@ -63,7 +66,9 @@ export function assembleClasses() {
 			const builder = new ObjectBuilder();
 			Object.entries(clazz.levelingBonuses).forEach(entry => {
 				const level = Number.parseInt(entry[0]).toString();
-				const bonus = templatizeToTsx(entry[1]!!);
+				const bonusRaw = entry[1];
+				if (!bonusRaw) throw new Error("This never happens, I swear");
+				const bonus = templatizeToTsx(bonusRaw);
 				builder.withTSX(level, bonus);
 			});
 			return builder;
@@ -86,14 +91,16 @@ export function assembleClasses() {
 
 			Object.entries(clazz.startingEquipment).forEach(entry => {
 				const containerStr = entry[0];
-				const contentsStr = entry[1]!!.map(item => `<>${templatizeToTsx(item)}</>`);
+				const contentsStr = entry[1];
+				if (!contentsStr) throw new Error("This never happens, I swear");
+				const contentsTsx = contentsStr.map(item => `<>${templatizeToTsx(item)}</>`);
 
 				if (containerStr === "_") {
-					loose.withValues(contentsStr);
+					loose.withValues(contentsTsx);
 				} else {
 					const container = new ObjectBuilder();
 					container.withValue("label", `<>${containerStr}</>`);
-					container.withValue("contents", new ArrayBuilder().withValues(contentsStr).build());
+					container.withValue("contents", new ArrayBuilder().withValues(contentsTsx).build());
 					containers.withValue(container.build());
 				}
 			});
@@ -108,6 +115,5 @@ export function assembleClasses() {
 		.withImport(`import Sub from "../components/Sub"`)
 		.withImport(`import Tooltip from "../components/Tooltip"`)
 		.withImport(`import { Inventory } from "../concepts/combatClass"`)
-		.withImport(`import { items } from "../concepts/item"`)
 		.save("src/generated/startingEquipment.tsx");
 }

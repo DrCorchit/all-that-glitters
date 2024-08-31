@@ -1,7 +1,6 @@
 import fs, {createReadStream} from "fs";
 import rd from "readline";
 import {once} from "node:events";
-import {FileBuilder} from "../utils/tsxBuilder";
 import {classFeat, Feat, featLevelReqFormula, FeatType, featTypes} from "../concepts/feat";
 import {createDirectory} from "../utils/tsxDirectory";
 
@@ -120,9 +119,9 @@ function parseReq(feat: Feat, req: string) {
 	}
 }
 
-const featReplacer: (this: any, key: string, value: any) => any = (key, value) => {
+const featReplacer: (this: unknown, key: string, value: unknown) => unknown = (key, value) => {
 	if (key === "featType") {
-		return value.name;
+		return (value as FeatType).name;
 	} else {
 		return value;
 	}
