@@ -1,18 +1,13 @@
-import fs from "fs";
-import {Armor, armor} from "../concepts/armor";
-import {FileBuilder} from "../utils/tsxBuilder";
+import {armor} from "../concepts/armor";
 import {createDirectory} from "../utils/tsxDirectory";
 
 export function assembleArmor() {
-	const file = new FileBuilder();
-	file.withImport(`import Sub from "../components/Sub"`);
-
-	const armorEffects = createDirectory(
-		file,
+	createDirectory(
+		"armorEffects",
 		armor.array,
 		armor => armor.name,
 		armor => armor.effects.join(", ")
-	);
-
-	fs.writeFileSync("src/generated/armorEffects.tsx", armorEffects.build());
+	)
+		.withImport(`import Sub from "../components/Sub"`)
+		.save("src/generated/armorEffects.tsx");
 }

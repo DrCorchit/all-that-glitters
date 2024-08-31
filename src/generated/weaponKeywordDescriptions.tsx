@@ -35,36 +35,36 @@ export const projectile = <>The weapon fires a specific type of projectile</>
 
 export const ranged = <>The weapon has a range: X/Y. Attacks against targets beyond X feet away have disadvantage; attacks against targets beyond Y feet away automatically fail.</>
 
-export const weaponKeywords = new TSXDirectory<React.JSX.Element>();
+export const weaponKeywordDescriptions = new TSXDirectory<React.JSX.Element>();
 
-weaponKeywords.register("cut_and_thrust", cut_and_thrust)
+weaponKeywordDescriptions.register("cut_and_thrust", cut_and_thrust)
 
-weaponKeywords.register("nimble", nimble)
+weaponKeywordDescriptions.register("nimble", nimble)
 
-weaponKeywords.register("improvised", improvised)
+weaponKeywordDescriptions.register("improvised", improvised)
 
-weaponKeywords.register("light", light)
+weaponKeywordDescriptions.register("light", light)
 
-weaponKeywords.register("two_handed", two_handed)
+weaponKeywordDescriptions.register("two_handed", two_handed)
 
-weaponKeywords.register("sharp", sharp)
+weaponKeywordDescriptions.register("sharp", sharp)
 
-weaponKeywords.register("polearm", polearm)
+weaponKeywordDescriptions.register("polearm", polearm)
 
-weaponKeywords.register("throwable", throwable)
+weaponKeywordDescriptions.register("throwable", throwable)
 
-weaponKeywords.register("crossbow", crossbow)
+weaponKeywordDescriptions.register("crossbow", crossbow)
 
-weaponKeywords.register("firearm", firearm)
+weaponKeywordDescriptions.register("firearm", firearm)
 
-weaponKeywords.register("parrying", parrying)
+weaponKeywordDescriptions.register("parrying", parrying)
 
-weaponKeywords.register("blocking", blocking)
+weaponKeywordDescriptions.register("blocking", blocking)
 
-weaponKeywords.register("mordhau", mordhau)
+weaponKeywordDescriptions.register("mordhau", mordhau)
 
-weaponKeywords.register("versatile", versatile)
+weaponKeywordDescriptions.register("versatile", versatile)
 
-weaponKeywords.register("projectile", projectile)
+weaponKeywordDescriptions.register("projectile", projectile)
 
-weaponKeywords.register("ranged", ranged)
+weaponKeywordDescriptions.register("ranged", ranged)

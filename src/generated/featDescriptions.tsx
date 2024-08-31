@@ -1,8 +1,9 @@
 //Auto-generated file (do not modify)
+import React from 'react'
+import {TSXDirectory} from "../utils/tsxDirectory"
 import { AppendixLink } from "../components/InternalLink"
 import Sub from "../components/Sub";
 import Tooltip from "../components/Tooltip"
-import {TSXDirectory} from "../utils/tsxDirectory"
 
 export const stalwart = <>Gain +2 HP per level, but no bonus to willpower from character level.</>
 
@@ -188,190 +189,188 @@ export const crazy_eights = <>Whenever you roll an 8 on a d20, something unexpec
 
 export const lucky_sevens = <>When you roll a seven on a d20, it counts as a critical.</>
 
-const directory = new TSXDirectory<string>();
+export const featDescriptions = new TSXDirectory<React.JSX.Element>();
 
-directory.register("stalwart", stalwart)
+featDescriptions.register("stalwart", stalwart)
 
-directory.register("deft", deft)
+featDescriptions.register("deft", deft)
 
-directory.register("eager", eager)
+featDescriptions.register("eager", eager)
 
-directory.register("prodigy", prodigy)
+featDescriptions.register("prodigy", prodigy)
 
-directory.register("jack_of_all_trades", jack_of_all_trades)
+featDescriptions.register("jack_of_all_trades", jack_of_all_trades)
 
-directory.register("specialist", specialist)
+featDescriptions.register("specialist", specialist)
 
-directory.register("hot_tempered", hot_tempered)
+featDescriptions.register("hot_tempered", hot_tempered)
 
-directory.register("warthog", warthog)
+featDescriptions.register("warthog", warthog)
 
-directory.register("early_riser", early_riser)
+featDescriptions.register("early_riser", early_riser)
 
-directory.register("night_owl", night_owl)
+featDescriptions.register("night_owl", night_owl)
 
-directory.register("flagellant", flagellant)
+featDescriptions.register("flagellant", flagellant)
 
-directory.register("take_backsies", take_backsies)
+featDescriptions.register("take_backsies", take_backsies)
 
-directory.register("arcane_apprentice", arcane_apprentice)
+featDescriptions.register("arcane_apprentice", arcane_apprentice)
 
-directory.register("fast_learner", fast_learner)
+featDescriptions.register("fast_learner", fast_learner)
 
-directory.register("sixth_sense", sixth_sense)
+featDescriptions.register("sixth_sense", sixth_sense)
 
-directory.register("mana_regeneration", mana_regeneration)
+featDescriptions.register("mana_regeneration", mana_regeneration)
 
-directory.register("steady_hands", steady_hands)
+featDescriptions.register("steady_hands", steady_hands)
 
-directory.register("war_mage", war_mage)
+featDescriptions.register("war_mage", war_mage)
 
-directory.register("march", march)
+featDescriptions.register("march", march)
 
-directory.register("arcane_adept", arcane_adept)
+featDescriptions.register("arcane_adept", arcane_adept)
 
-directory.register("well_rounded", well_rounded)
+featDescriptions.register("well_rounded", well_rounded)
 
-directory.register("impetuous", impetuous)
+featDescriptions.register("impetuous", impetuous)
 
-directory.register("savant", savant)
+featDescriptions.register("savant", savant)
 
-directory.register("war_criminal_mage", war_criminal_mage)
+featDescriptions.register("war_criminal_mage", war_criminal_mage)
 
-directory.register("erudite", erudite)
+featDescriptions.register("erudite", erudite)
 
-directory.register("barrage", barrage)
+featDescriptions.register("barrage", barrage)
 
-directory.register("sneakspell", sneakspell)
+featDescriptions.register("sneakspell", sneakspell)
 
-directory.register("arcane_master", arcane_master)
+featDescriptions.register("arcane_master", arcane_master)
 
-directory.register("first_strike", first_strike)
+featDescriptions.register("first_strike", first_strike)
 
-directory.register("master_of_ceremonies", master_of_ceremonies)
+featDescriptions.register("master_of_ceremonies", master_of_ceremonies)
 
-directory.register("parry", parry)
+featDescriptions.register("parry", parry)
 
-directory.register("parkour", parkour)
+featDescriptions.register("parkour", parkour)
 
-directory.register("leapfrog", leapfrog)
+featDescriptions.register("leapfrog", leapfrog)
 
-directory.register("fast_walker", fast_walker)
+featDescriptions.register("fast_walker", fast_walker)
 
-directory.register("pensive", pensive)
+featDescriptions.register("pensive", pensive)
 
-directory.register("sensitive", sensitive)
+featDescriptions.register("sensitive", sensitive)
 
-directory.register("jolly", jolly)
+featDescriptions.register("jolly", jolly)
 
-directory.register("billy_goat", billy_goat)
+featDescriptions.register("billy_goat", billy_goat)
 
-directory.register("deep_breath", deep_breath)
+featDescriptions.register("deep_breath", deep_breath)
 
-directory.register("pratfaller", pratfaller)
+featDescriptions.register("pratfaller", pratfaller)
 
-directory.register("vertical_escape", vertical_escape)
+featDescriptions.register("vertical_escape", vertical_escape)
 
-directory.register("dodge_roll", dodge_roll)
+featDescriptions.register("dodge_roll", dodge_roll)
 
-directory.register("freestyler", freestyler)
+featDescriptions.register("freestyler", freestyler)
 
-directory.register("blitzkrieg", blitzkrieg)
+featDescriptions.register("blitzkrieg", blitzkrieg)
 
-directory.register("triage", triage)
+featDescriptions.register("triage", triage)
 
-directory.register("charlatan", charlatan)
+featDescriptions.register("charlatan", charlatan)
 
-directory.register("loremaster", loremaster)
+featDescriptions.register("loremaster", loremaster)
 
-directory.register("cleaving_strike", cleaving_strike)
+featDescriptions.register("cleaving_strike", cleaving_strike)
 
-directory.register("shield_bash", shield_bash)
+featDescriptions.register("shield_bash", shield_bash)
 
-directory.register("shield_charge", shield_charge)
+featDescriptions.register("shield_charge", shield_charge)
 
-directory.register("haft_strike", haft_strike)
+featDescriptions.register("haft_strike", haft_strike)
 
-directory.register("dual_wielder", dual_wielder)
+featDescriptions.register("dual_wielder", dual_wielder)
 
-directory.register("stop_drop_and_roll", stop_drop_and_roll)
+featDescriptions.register("stop_drop_and_roll", stop_drop_and_roll)
 
-directory.register("riposte", riposte)
+featDescriptions.register("riposte", riposte)
 
-directory.register("momentum", momentum)
+featDescriptions.register("momentum", momentum)
 
-directory.register("friend_in_need", friend_in_need)
+featDescriptions.register("friend_in_need", friend_in_need)
 
-directory.register("spellsword", spellsword)
+featDescriptions.register("spellsword", spellsword)
 
-directory.register("bookworm", bookworm)
+featDescriptions.register("bookworm", bookworm)
 
-directory.register("dungeoneer", dungeoneer)
+featDescriptions.register("dungeoneer", dungeoneer)
 
-directory.register("prankster", prankster)
+featDescriptions.register("prankster", prankster)
 
-directory.register("exceptional", exceptional)
+featDescriptions.register("exceptional", exceptional)
 
-directory.register("guardian", guardian)
+featDescriptions.register("guardian", guardian)
 
-directory.register("that_dog", that_dog)
+featDescriptions.register("that_dog", that_dog)
 
-directory.register("come_hither", come_hither)
+featDescriptions.register("come_hither", come_hither)
 
-directory.register("marathon", marathon)
+featDescriptions.register("marathon", marathon)
 
-directory.register("moving_target", moving_target)
+featDescriptions.register("moving_target", moving_target)
 
-directory.register("medic", medic)
+featDescriptions.register("medic", medic)
 
-directory.register("stoic", stoic)
+featDescriptions.register("stoic", stoic)
 
-directory.register("party_animal", party_animal)
+featDescriptions.register("party_animal", party_animal)
 
-directory.register("blunt_cleave", blunt_cleave)
+featDescriptions.register("blunt_cleave", blunt_cleave)
 
-directory.register("skull_crusher", skull_crusher)
+featDescriptions.register("skull_crusher", skull_crusher)
 
-directory.register("charge_through", charge_through)
+featDescriptions.register("charge_through", charge_through)
 
-directory.register("wall_jump", wall_jump)
+featDescriptions.register("wall_jump", wall_jump)
 
-directory.register("adrenaline_rush", adrenaline_rush)
+featDescriptions.register("adrenaline_rush", adrenaline_rush)
 
-directory.register("surge", surge)
+featDescriptions.register("surge", surge)
 
-directory.register("walking_mountain", walking_mountain)
+featDescriptions.register("walking_mountain", walking_mountain)
 
-directory.register("double_dog", double_dog)
+featDescriptions.register("double_dog", double_dog)
 
-directory.register("fleetfooted", fleetfooted)
+featDescriptions.register("fleetfooted", fleetfooted)
 
-directory.register("titan", titan)
+featDescriptions.register("titan", titan)
 
-directory.register("steel_avalanche", steel_avalanche)
+featDescriptions.register("steel_avalanche", steel_avalanche)
 
-directory.register("dog_gone", dog_gone)
+featDescriptions.register("dog_gone", dog_gone)
 
-directory.register("bloodthirsty", bloodthirsty)
+featDescriptions.register("bloodthirsty", bloodthirsty)
 
-directory.register("perseverance", perseverance)
+featDescriptions.register("perseverance", perseverance)
 
-directory.register("anger_management", anger_management)
+featDescriptions.register("anger_management", anger_management)
 
-directory.register("thunderin_tarnation", thunderin_tarnation)
+featDescriptions.register("thunderin_tarnation", thunderin_tarnation)
 
-directory.register("armor_of_god", armor_of_god)
+featDescriptions.register("armor_of_god", armor_of_god)
 
-directory.register("immortal", immortal)
+featDescriptions.register("immortal", immortal)
 
-directory.register("praetorian", praetorian)
+featDescriptions.register("praetorian", praetorian)
 
-directory.register("samurai", samurai)
+featDescriptions.register("samurai", samurai)
 
-directory.register("templar", templar)
+featDescriptions.register("templar", templar)
 
-directory.register("crazy_eights", crazy_eights)
+featDescriptions.register("crazy_eights", crazy_eights)
 
-directory.register("lucky_sevens", lucky_sevens)
-
-export default directory;
+featDescriptions.register("lucky_sevens", lucky_sevens)

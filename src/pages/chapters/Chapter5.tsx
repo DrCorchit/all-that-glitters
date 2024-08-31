@@ -7,9 +7,8 @@ import Sub from "../../components/Sub";
 import {damageTypes, DamageType} from "../../concepts/damageType";
 import {statuses, StatusEffect} from "../../concepts/statusEffect";
 import Outline from "../../components/Outline";
-import statusRecoveries from "../../generated/statusRecovery";
-import statusEffects from "../../generated/statusEffects";
-import {stat} from "fs";
+import {statusDescriptions} from "../../generated/statusDescriptions";
+import {statusRecoveries} from "../../generated/statusRecoveries";
 
 const index = 5;
 const info = chapters.array[index - 1];
@@ -542,7 +541,7 @@ function StatusEffectElement({status}: {status: StatusEffect}): JSX.Element {
 	return (
 		<tr>
 			<td>{status.name}</td>
-			<td>{statusEffects.lookup(status.name)}</td>
+			<td>{statusDescriptions.lookup(status.name)}</td>
 			<td>{status.causes}</td>
 			<td>{statusRecoveries.lookup(status.name)}</td>
 			<td>{status.notes}</td>

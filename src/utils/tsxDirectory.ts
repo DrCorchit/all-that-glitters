@@ -1,18 +1,18 @@
 import {templatizeToTsx} from "./templatizer";
-import {FileBuilder} from "./tsxBuilder";
+import {FileBuilder, ObjectBuilder} from "./tsxBuilder";
 import {normalize} from "./utils";
 
 export class TSXDirectory<T> {
-	elements: Map<string, JSX.Element> = new Map();
+	elements: Map<string, T> = new Map();
 
 	constructor() {}
 
-	register(key: string, value: JSX.Element) {
+	register(key: string, value: T) {
 		key = normalize(key);
 		this.elements.set(key, value);
 	}
 
-	lookup(key: string): JSX.Element {
+	lookup(key: string): T {
 		key = normalize(key);
 		const temp = this.elements.get(key);
 		if (temp === undefined) {
@@ -23,11 +23,13 @@ export class TSXDirectory<T> {
 }
 
 export function createDirectory<T>(
-	file: FileBuilder,
+	directoryName: string,
 	elements: T[],
 	getName: (ele: T) => string,
 	getField: (ele: T) => string
 ): FileBuilder {
+	const file = new FileBuilder();
+	file.withImport(`import React from 'react'`);
 	file.withImport(`import {TSXDirectory} from \"../utils/tsxDirectory\"`);
 
 	elements.forEach(ele => {
@@ -36,12 +38,34 @@ export function createDirectory<T>(
 		file.withMember(`export const ${name} = <>${field}</>`);
 	});
 
-	file.withMember("const directory = new TSXDirectory<string>();");
+	file.withMember(`export const ${directoryName} = new TSXDirectory<React.JSX.Element>();`);
 	elements.forEach(ele => {
 		const name = normalize(getName(ele));
-		file.withMember(`directory.register("${name}", ${name})`);
+		file.withMember(`${directoryName}.register("${name}", ${name})`);
 	});
-	file.withMember("export default directory;");
+	return file;
+}
 
+export function createTypedDirectory<T>(
+	directoryName: string,
+	elements: T[],
+	getName: (ele: T) => string,
+	getField: (ele: T) => ObjectBuilder,
+	type: string
+): FileBuilder {
+	const file = new FileBuilder();
+	file.withImport(`import {TSXDirectory} from \"../utils/tsxDirectory\"`);
+
+	elements.forEach(ele => {
+		const name = normalize(getName(ele));
+		const field = getField(ele);
+		file.withMember(`export const ${name} = ${field.build()}`);
+	});
+
+	file.withMember(`export const ${directoryName} = new TSXDirectory<${type}>();`);
+	elements.forEach(ele => {
+		const name = normalize(getName(ele));
+		file.withMember(`${directoryName}.register("${name}", ${name})`);
+	});
 	return file;
 }

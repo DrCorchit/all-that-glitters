@@ -1,8 +1,9 @@
 //Auto-generated file (do not modify)
+import React from 'react'
+import {TSXDirectory} from "../utils/tsxDirectory"
 import { ChapterLink, AppendixLink } from "../components/InternalLink"
 import Sub from "../components/Sub"
 import Tooltip from "../components/Tooltip"
-import {TSXDirectory} from "../utils/tsxDirectory"
 
 export const brew_innoculative_philter = <>Though 'tis an unsavory and turgid medicine, it nevertheless prevents the effects of poisoning or disease from taking hold on the body. One ounce of this provides protection for eight hours. The reaction yields four ounces of mixture.</>
 
@@ -444,446 +445,444 @@ export const force_field = <>An invisible wall of telekinetic impulse appears in
 
 export const mind_armor = <>Generate a telekinetic suit of armor covering your entire body. The suit provides 10 BC initially, but loses 1 BC per hour until it vanishes.</>
 
-const directory = new TSXDirectory<string>();
+export const spellDescriptions = new TSXDirectory<React.JSX.Element>();
 
-directory.register("brew_innoculative_philter", brew_innoculative_philter)
+spellDescriptions.register("brew_innoculative_philter", brew_innoculative_philter)
 
-directory.register("brew_stimulant", brew_stimulant)
+spellDescriptions.register("brew_stimulant", brew_stimulant)
 
-directory.register("brew_antivenin", brew_antivenin)
+spellDescriptions.register("brew_antivenin", brew_antivenin)
 
-directory.register("brew_curative_potion", brew_curative_potion)
+spellDescriptions.register("brew_curative_potion", brew_curative_potion)
 
-directory.register("brew_eloquence_philter", brew_eloquence_philter)
+spellDescriptions.register("brew_eloquence_philter", brew_eloquence_philter)
 
-directory.register("brew_amphibic_philter", brew_amphibic_philter)
+spellDescriptions.register("brew_amphibic_philter", brew_amphibic_philter)
 
-directory.register("brew_anaesthetic_potion", brew_anaesthetic_potion)
+spellDescriptions.register("brew_anaesthetic_potion", brew_anaesthetic_potion)
 
-directory.register("brew_hermetic_philter", brew_hermetic_philter)
+spellDescriptions.register("brew_hermetic_philter", brew_hermetic_philter)
 
-directory.register("brew_vigor_philter", brew_vigor_philter)
+spellDescriptions.register("brew_vigor_philter", brew_vigor_philter)
 
-directory.register("brew_persistence_philter", brew_persistence_philter)
+spellDescriptions.register("brew_persistence_philter", brew_persistence_philter)
 
-directory.register("brew_hallucinogenic", brew_hallucinogenic)
+spellDescriptions.register("brew_hallucinogenic", brew_hallucinogenic)
 
-directory.register("brew_acumen_philter", brew_acumen_philter)
+spellDescriptions.register("brew_acumen_philter", brew_acumen_philter)
 
-directory.register("brew_potency_philter", brew_potency_philter)
+spellDescriptions.register("brew_potency_philter", brew_potency_philter)
 
-directory.register("brew_invisibility_potion", brew_invisibility_potion)
+spellDescriptions.register("brew_invisibility_potion", brew_invisibility_potion)
 
-directory.register("brew_elixir_of_invulnerability", brew_elixir_of_invulnerability)
+spellDescriptions.register("brew_elixir_of_invulnerability", brew_elixir_of_invulnerability)
 
-directory.register("brew_elixir_of_immortality", brew_elixir_of_immortality)
+spellDescriptions.register("brew_elixir_of_immortality", brew_elixir_of_immortality)
 
-directory.register("brew_aphrodisiac", brew_aphrodisiac)
+spellDescriptions.register("brew_aphrodisiac", brew_aphrodisiac)
 
-directory.register("brew_necrotoxin", brew_necrotoxin)
+spellDescriptions.register("brew_necrotoxin", brew_necrotoxin)
 
-directory.register("brew_brimstone", brew_brimstone)
+spellDescriptions.register("brew_brimstone", brew_brimstone)
 
-directory.register("brew_narcoleptic_toxin", brew_narcoleptic_toxin)
+spellDescriptions.register("brew_narcoleptic_toxin", brew_narcoleptic_toxin)
 
-directory.register("brew_lethargic_toxin", brew_lethargic_toxin)
+spellDescriptions.register("brew_lethargic_toxin", brew_lethargic_toxin)
 
-directory.register("brew_debilitative", brew_debilitative)
+spellDescriptions.register("brew_debilitative", brew_debilitative)
 
-directory.register("brew_enervative", brew_enervative)
+spellDescriptions.register("brew_enervative", brew_enervative)
 
-directory.register("brew_neurotoxin", brew_neurotoxin)
+spellDescriptions.register("brew_neurotoxin", brew_neurotoxin)
 
-directory.register("brew_aqua_regia", brew_aqua_regia)
+spellDescriptions.register("brew_aqua_regia", brew_aqua_regia)
 
-directory.register("brew_liquid_light", brew_liquid_light)
+spellDescriptions.register("brew_liquid_light", brew_liquid_light)
 
-directory.register("brew_gorgonic_toxin", brew_gorgonic_toxin)
+spellDescriptions.register("brew_gorgonic_toxin", brew_gorgonic_toxin)
 
-directory.register("lodestone", lodestone)
+spellDescriptions.register("lodestone", lodestone)
 
-directory.register("sunbeam", sunbeam)
+spellDescriptions.register("sunbeam", sunbeam)
 
-directory.register("luminance", luminance)
+spellDescriptions.register("luminance", luminance)
 
-directory.register("solstice", solstice)
+spellDescriptions.register("solstice", solstice)
 
-directory.register("bolster", bolster)
+spellDescriptions.register("bolster", bolster)
 
-directory.register("starlight", starlight)
+spellDescriptions.register("starlight", starlight)
 
-directory.register("holy_aurora", holy_aurora)
+spellDescriptions.register("holy_aurora", holy_aurora)
 
-directory.register("high_noon", high_noon)
+spellDescriptions.register("high_noon", high_noon)
 
-directory.register("soul_equinox", soul_equinox)
+spellDescriptions.register("soul_equinox", soul_equinox)
 
-directory.register("justice", justice)
+spellDescriptions.register("justice", justice)
 
-directory.register("solar_laser", solar_laser)
+spellDescriptions.register("solar_laser", solar_laser)
 
-directory.register("ray_of_lunacy", ray_of_lunacy)
+spellDescriptions.register("ray_of_lunacy", ray_of_lunacy)
 
-directory.register("moonshadow", moonshadow)
+spellDescriptions.register("moonshadow", moonshadow)
 
-directory.register("lesser_invisibility", lesser_invisibility)
+spellDescriptions.register("lesser_invisibility", lesser_invisibility)
 
-directory.register("time_stream", time_stream)
+spellDescriptions.register("time_stream", time_stream)
 
-directory.register("time_void", time_void)
+spellDescriptions.register("time_void", time_void)
 
-directory.register("phantasm", phantasm)
+spellDescriptions.register("phantasm", phantasm)
 
-directory.register("midnight", midnight)
+spellDescriptions.register("midnight", midnight)
 
-directory.register("time_rift", time_rift)
+spellDescriptions.register("time_rift", time_rift)
 
-directory.register("greater_invisibility", greater_invisibility)
+spellDescriptions.register("greater_invisibility", greater_invisibility)
 
-directory.register("dark_mercy", dark_mercy)
+spellDescriptions.register("dark_mercy", dark_mercy)
 
-directory.register("mass_invisibility", mass_invisibility)
+spellDescriptions.register("mass_invisibility", mass_invisibility)
 
-directory.register("meteorite", meteorite)
+spellDescriptions.register("meteorite", meteorite)
 
-directory.register("gravity_slam", gravity_slam)
+spellDescriptions.register("gravity_slam", gravity_slam)
 
-directory.register("microgravity", microgravity)
+spellDescriptions.register("microgravity", microgravity)
 
-directory.register("gravity_well", gravity_well)
+spellDescriptions.register("gravity_well", gravity_well)
 
-directory.register("arms_of_hadar", arms_of_hadar)
+spellDescriptions.register("arms_of_hadar", arms_of_hadar)
 
-directory.register("misty_step", misty_step)
+spellDescriptions.register("misty_step", misty_step)
 
-directory.register("great_comet", great_comet)
+spellDescriptions.register("great_comet", great_comet)
 
-directory.register("hunger_of_hadar", hunger_of_hadar)
+spellDescriptions.register("hunger_of_hadar", hunger_of_hadar)
 
-directory.register("teleportation", teleportation)
+spellDescriptions.register("teleportation", teleportation)
 
-directory.register("meteor_shower", meteor_shower)
+spellDescriptions.register("meteor_shower", meteor_shower)
 
-directory.register("black_hole", black_hole)
+spellDescriptions.register("black_hole", black_hole)
 
-directory.register("mass_teleportation", mass_teleportation)
+spellDescriptions.register("mass_teleportation", mass_teleportation)
 
-directory.register("stargate", stargate)
+spellDescriptions.register("stargate", stargate)
 
-directory.register("herbal_remedy", herbal_remedy)
+spellDescriptions.register("herbal_remedy", herbal_remedy)
 
-directory.register("shillelagh", shillelagh)
+spellDescriptions.register("shillelagh", shillelagh)
 
-directory.register("barkskin", barkskin)
+spellDescriptions.register("barkskin", barkskin)
 
-directory.register("thorn_whip", thorn_whip)
+spellDescriptions.register("thorn_whip", thorn_whip)
 
-directory.register("aromatherapy", aromatherapy)
+spellDescriptions.register("aromatherapy", aromatherapy)
 
-directory.register("tree_speech", tree_speech)
+spellDescriptions.register("tree_speech", tree_speech)
 
-directory.register("chaos_spores", chaos_spores)
+spellDescriptions.register("chaos_spores", chaos_spores)
 
-directory.register("poison_spores", poison_spores)
+spellDescriptions.register("poison_spores", poison_spores)
 
-directory.register("thorn_bed", thorn_bed)
+spellDescriptions.register("thorn_bed", thorn_bed)
 
-directory.register("tree_of_life", tree_of_life)
+spellDescriptions.register("tree_of_life", tree_of_life)
 
-directory.register("become_tree", become_tree)
+spellDescriptions.register("become_tree", become_tree)
 
-directory.register("spiderweb", spiderweb)
+spellDescriptions.register("spiderweb", spiderweb)
 
-directory.register("snakebite", snakebite)
+spellDescriptions.register("snakebite", snakebite)
 
-directory.register("cats_eye", cats_eye)
+spellDescriptions.register("cats_eye", cats_eye)
 
-directory.register("fishs_lung", fishs_lung)
+spellDescriptions.register("fishs_lung", fishs_lung)
 
-directory.register("eagles_talons", eagles_talons)
+spellDescriptions.register("eagles_talons", eagles_talons)
 
-directory.register("hawks_eyes", hawks_eyes)
+spellDescriptions.register("hawks_eyes", hawks_eyes)
 
-directory.register("ravens_wings", ravens_wings)
+spellDescriptions.register("ravens_wings", ravens_wings)
 
-directory.register("lacerate", lacerate)
+spellDescriptions.register("lacerate", lacerate)
 
-directory.register("mole", mole)
+spellDescriptions.register("mole", mole)
 
-directory.register("owls_wisdom", owls_wisdom)
+spellDescriptions.register("owls_wisdom", owls_wisdom)
 
-directory.register("rhinos_hide", rhinos_hide)
+spellDescriptions.register("rhinos_hide", rhinos_hide)
 
-directory.register("circle_of_life", circle_of_life)
+spellDescriptions.register("circle_of_life", circle_of_life)
 
-directory.register("fairy_fire", fairy_fire)
+spellDescriptions.register("fairy_fire", fairy_fire)
 
-directory.register("beast_speech", beast_speech)
+spellDescriptions.register("beast_speech", beast_speech)
 
-directory.register("bubble", bubble)
+spellDescriptions.register("bubble", bubble)
 
-directory.register("bonfire", bonfire)
+spellDescriptions.register("bonfire", bonfire)
 
-directory.register("spirit_animal", spirit_animal)
+spellDescriptions.register("spirit_animal", spirit_animal)
 
-directory.register("far_whisper", far_whisper)
+spellDescriptions.register("far_whisper", far_whisper)
 
-directory.register("illusory_terrain", illusory_terrain)
+spellDescriptions.register("illusory_terrain", illusory_terrain)
 
-directory.register("rain_dance", rain_dance)
+spellDescriptions.register("rain_dance", rain_dance)
 
-directory.register("awaken_beastie", awaken_beastie)
+spellDescriptions.register("awaken_beastie", awaken_beastie)
 
-directory.register("oneiromancy", oneiromancy)
+spellDescriptions.register("oneiromancy", oneiromancy)
 
-directory.register("sweet_dreams", sweet_dreams)
+spellDescriptions.register("sweet_dreams", sweet_dreams)
 
-directory.register("primal_form", primal_form)
+spellDescriptions.register("primal_form", primal_form)
 
-directory.register("forest_defender", forest_defender)
+spellDescriptions.register("forest_defender", forest_defender)
 
-directory.register("fairys_feast", fairys_feast)
+spellDescriptions.register("fairys_feast", fairys_feast)
 
-directory.register("dream_warrior", dream_warrior)
+spellDescriptions.register("dream_warrior", dream_warrior)
 
-directory.register("monkeys_paw", monkeys_paw)
+spellDescriptions.register("monkeys_paw", monkeys_paw)
 
-directory.register("find_familiar", find_familiar)
+spellDescriptions.register("find_familiar", find_familiar)
 
-directory.register("mage_hand", mage_hand)
+spellDescriptions.register("mage_hand", mage_hand)
 
-directory.register("summon_weapon", summon_weapon)
+spellDescriptions.register("summon_weapon", summon_weapon)
 
-directory.register("locust_swarm", locust_swarm)
+spellDescriptions.register("locust_swarm", locust_swarm)
 
-directory.register("imbue_sentience", imbue_sentience)
+spellDescriptions.register("imbue_sentience", imbue_sentience)
 
-directory.register("soul_dart", soul_dart)
+spellDescriptions.register("soul_dart", soul_dart)
 
-directory.register("sentient_weapon", sentient_weapon)
+spellDescriptions.register("sentient_weapon", sentient_weapon)
 
-directory.register("exorcism", exorcism)
+spellDescriptions.register("exorcism", exorcism)
 
-directory.register("cloud_of_daggers", cloud_of_daggers)
+spellDescriptions.register("cloud_of_daggers", cloud_of_daggers)
 
-directory.register("demonic_posession", demonic_posession)
+spellDescriptions.register("demonic_posession", demonic_posession)
 
-directory.register("invade_body", invade_body)
+spellDescriptions.register("invade_body", invade_body)
 
-directory.register("reincarnation", reincarnation)
+spellDescriptions.register("reincarnation", reincarnation)
 
-directory.register("resurrection", resurrection)
+spellDescriptions.register("resurrection", resurrection)
 
-directory.register("guidance", guidance)
+spellDescriptions.register("guidance", guidance)
 
-directory.register("alarm", alarm)
+spellDescriptions.register("alarm", alarm)
 
-directory.register("detect_magic", detect_magic)
+spellDescriptions.register("detect_magic", detect_magic)
 
-directory.register("seek_spirit", seek_spirit)
+spellDescriptions.register("seek_spirit", seek_spirit)
 
-directory.register("seance", seance)
+spellDescriptions.register("seance", seance)
 
-directory.register("diagnose", diagnose)
+spellDescriptions.register("diagnose", diagnose)
 
-directory.register("soul_sight", soul_sight)
+spellDescriptions.register("soul_sight", soul_sight)
 
-directory.register("augury", augury)
+spellDescriptions.register("augury", augury)
 
-directory.register("astral_projection", astral_projection)
+spellDescriptions.register("astral_projection", astral_projection)
 
-directory.register("ancient_name", ancient_name)
+spellDescriptions.register("ancient_name", ancient_name)
 
-directory.register("futuresight", futuresight)
+spellDescriptions.register("futuresight", futuresight)
 
-directory.register("vampiric_touch", vampiric_touch)
+spellDescriptions.register("vampiric_touch", vampiric_touch)
 
-directory.register("life_leach", life_leach)
+spellDescriptions.register("life_leach", life_leach)
 
-directory.register("reanimate", reanimate)
+spellDescriptions.register("reanimate", reanimate)
 
-directory.register("inflict_disease", inflict_disease)
+spellDescriptions.register("inflict_disease", inflict_disease)
 
-directory.register("hex", hex)
+spellDescriptions.register("hex", hex)
 
-directory.register("starvation", starvation)
+spellDescriptions.register("starvation", starvation)
 
-directory.register("speak_with_the_dead", speak_with_the_dead)
+spellDescriptions.register("speak_with_the_dead", speak_with_the_dead)
 
-directory.register("curse", curse)
+spellDescriptions.register("curse", curse)
 
-directory.register("disintegrate", disintegrate)
+spellDescriptions.register("disintegrate", disintegrate)
 
-directory.register("vampiric_kiss", vampiric_kiss)
+spellDescriptions.register("vampiric_kiss", vampiric_kiss)
 
-directory.register("devour", devour)
+spellDescriptions.register("devour", devour)
 
-directory.register("rend_soul", rend_soul)
+spellDescriptions.register("rend_soul", rend_soul)
 
-directory.register("flesh_golem", flesh_golem)
+spellDescriptions.register("flesh_golem", flesh_golem)
 
-directory.register("become_lich", become_lich)
+spellDescriptions.register("become_lich", become_lich)
 
-directory.register("heat_metal", heat_metal)
+spellDescriptions.register("heat_metal", heat_metal)
 
-directory.register("mend", mend)
+spellDescriptions.register("mend", mend)
 
-directory.register("clay_armor", clay_armor)
+spellDescriptions.register("clay_armor", clay_armor)
 
-directory.register("quake", quake)
+spellDescriptions.register("quake", quake)
 
-directory.register("quicksand", quicksand)
+spellDescriptions.register("quicksand", quicksand)
 
-directory.register("acid_blade", acid_blade)
+spellDescriptions.register("acid_blade", acid_blade)
 
-directory.register("clay_golem", clay_golem)
+spellDescriptions.register("clay_golem", clay_golem)
 
-directory.register("stone_armor", stone_armor)
+spellDescriptions.register("stone_armor", stone_armor)
 
-directory.register("earthen_wall", earthen_wall)
+spellDescriptions.register("earthen_wall", earthen_wall)
 
-directory.register("stone_golem", stone_golem)
+spellDescriptions.register("stone_golem", stone_golem)
 
-directory.register("iron_armor", iron_armor)
+spellDescriptions.register("iron_armor", iron_armor)
 
-directory.register("awaken_statue", awaken_statue)
+spellDescriptions.register("awaken_statue", awaken_statue)
 
-directory.register("earthquake", earthquake)
+spellDescriptions.register("earthquake", earthquake)
 
-directory.register("iron_golem", iron_golem)
+spellDescriptions.register("iron_golem", iron_golem)
 
-directory.register("petrify", petrify)
+spellDescriptions.register("petrify", petrify)
 
-directory.register("mote_o_fire", mote_o_fire)
+spellDescriptions.register("mote_o_fire", mote_o_fire)
 
-directory.register("arcane_flames", arcane_flames)
+spellDescriptions.register("arcane_flames", arcane_flames)
 
-directory.register("flame_armor", flame_armor)
+spellDescriptions.register("flame_armor", flame_armor)
 
-directory.register("flaming_sword", flaming_sword)
+spellDescriptions.register("flaming_sword", flaming_sword)
 
-directory.register("fireball", fireball)
+spellDescriptions.register("fireball", fireball)
 
-directory.register("incinerate", incinerate)
+spellDescriptions.register("incinerate", incinerate)
 
-directory.register("create_lava", create_lava)
+spellDescriptions.register("create_lava", create_lava)
 
-directory.register("fire_elemental", fire_elemental)
+spellDescriptions.register("fire_elemental", fire_elemental)
 
-directory.register("flame_wall", flame_wall)
+spellDescriptions.register("flame_wall", flame_wall)
 
-directory.register("fire_storm", fire_storm)
+spellDescriptions.register("fire_storm", fire_storm)
 
-directory.register("fire_golem", fire_golem)
+spellDescriptions.register("fire_golem", fire_golem)
 
-directory.register("frostbite", frostbite)
+spellDescriptions.register("frostbite", frostbite)
 
-directory.register("shape_water", shape_water)
+spellDescriptions.register("shape_water", shape_water)
 
-directory.register("icicle", icicle)
+spellDescriptions.register("icicle", icicle)
 
-directory.register("water_walking", water_walking)
+spellDescriptions.register("water_walking", water_walking)
 
-directory.register("ice_elemental", ice_elemental)
+spellDescriptions.register("ice_elemental", ice_elemental)
 
-directory.register("steam_blast", steam_blast)
+spellDescriptions.register("steam_blast", steam_blast)
 
-directory.register("ice_wall", ice_wall)
+spellDescriptions.register("ice_wall", ice_wall)
 
-directory.register("wellspring", wellspring)
+spellDescriptions.register("wellspring", wellspring)
 
-directory.register("become_water", become_water)
+spellDescriptions.register("become_water", become_water)
 
-directory.register("ice_armor", ice_armor)
+spellDescriptions.register("ice_armor", ice_armor)
 
-directory.register("blizzard", blizzard)
+spellDescriptions.register("blizzard", blizzard)
 
-directory.register("ice_golem", ice_golem)
+spellDescriptions.register("ice_golem", ice_golem)
 
-directory.register("ice_statue", ice_statue)
+spellDescriptions.register("ice_statue", ice_statue)
 
-directory.register("tsunami", tsunami)
+spellDescriptions.register("tsunami", tsunami)
 
-directory.register("thunderbolt", thunderbolt)
+spellDescriptions.register("thunderbolt", thunderbolt)
 
-directory.register("electrocute", electrocute)
+spellDescriptions.register("electrocute", electrocute)
 
-directory.register("cyclone", cyclone)
+spellDescriptions.register("cyclone", cyclone)
 
-directory.register("shocking_blade", shocking_blade)
+spellDescriptions.register("shocking_blade", shocking_blade)
 
-directory.register("blustering_gust", blustering_gust)
+spellDescriptions.register("blustering_gust", blustering_gust)
 
-directory.register("soar", soar)
+spellDescriptions.register("soar", soar)
 
-directory.register("lightning_dash", lightning_dash)
+spellDescriptions.register("lightning_dash", lightning_dash)
 
-directory.register("air_elemental", air_elemental)
+spellDescriptions.register("air_elemental", air_elemental)
 
-directory.register("become_vapor", become_vapor)
+spellDescriptions.register("become_vapor", become_vapor)
 
-directory.register("chain_lighting", chain_lighting)
+spellDescriptions.register("chain_lighting", chain_lighting)
 
-directory.register("lighting_storm", lighting_storm)
+spellDescriptions.register("lighting_storm", lighting_storm)
 
-directory.register("storm_golem", storm_golem)
+spellDescriptions.register("storm_golem", storm_golem)
 
-directory.register("hurricane", hurricane)
+spellDescriptions.register("hurricane", hurricane)
 
-directory.register("detect_illusion", detect_illusion)
+spellDescriptions.register("detect_illusion", detect_illusion)
 
-directory.register("fleeting_illusion", fleeting_illusion)
+spellDescriptions.register("fleeting_illusion", fleeting_illusion)
 
-directory.register("illusory_disguise", illusory_disguise)
+spellDescriptions.register("illusory_disguise", illusory_disguise)
 
-directory.register("dispell_illusion", dispell_illusion)
+spellDescriptions.register("dispell_illusion", dispell_illusion)
 
-directory.register("illusory_being", illusory_being)
+spellDescriptions.register("illusory_being", illusory_being)
 
-directory.register("fools_invisibility", fools_invisibility)
+spellDescriptions.register("fools_invisibility", fools_invisibility)
 
-directory.register("mass_illusion", mass_illusion)
+spellDescriptions.register("mass_illusion", mass_illusion)
 
-directory.register("telempathy", telempathy)
+spellDescriptions.register("telempathy", telempathy)
 
-directory.register("minor_telepathy", minor_telepathy)
+spellDescriptions.register("minor_telepathy", minor_telepathy)
 
-directory.register("major_telepathy", major_telepathy)
+spellDescriptions.register("major_telepathy", major_telepathy)
 
-directory.register("esoteric_telepathy", esoteric_telepathy)
+spellDescriptions.register("esoteric_telepathy", esoteric_telepathy)
 
-directory.register("psychic_sight", psychic_sight)
+spellDescriptions.register("psychic_sight", psychic_sight)
 
-directory.register("induce_emotion", induce_emotion)
+spellDescriptions.register("induce_emotion", induce_emotion)
 
-directory.register("inflict_amnesia", inflict_amnesia)
+spellDescriptions.register("inflict_amnesia", inflict_amnesia)
 
-directory.register("hypnosis", hypnosis)
+spellDescriptions.register("hypnosis", hypnosis)
 
-directory.register("mind_control", mind_control)
+spellDescriptions.register("mind_control", mind_control)
 
-directory.register("unimind", unimind)
+spellDescriptions.register("unimind", unimind)
 
-directory.register("lesser_telekinetic_pull", lesser_telekinetic_pull)
+spellDescriptions.register("lesser_telekinetic_pull", lesser_telekinetic_pull)
 
-directory.register("telekinetic_throw", telekinetic_throw)
+spellDescriptions.register("telekinetic_throw", telekinetic_throw)
 
-directory.register("levitate_object", levitate_object)
+spellDescriptions.register("levitate_object", levitate_object)
 
-directory.register("shockwave", shockwave)
+spellDescriptions.register("shockwave", shockwave)
 
-directory.register("levitation", levitation)
+spellDescriptions.register("levitation", levitation)
 
-directory.register("telemanipulation", telemanipulation)
+spellDescriptions.register("telemanipulation", telemanipulation)
 
-directory.register("greater_telekinetic_pull", greater_telekinetic_pull)
+spellDescriptions.register("greater_telekinetic_pull", greater_telekinetic_pull)
 
-directory.register("force_shield", force_shield)
+spellDescriptions.register("force_shield", force_shield)
 
-directory.register("psyblast", psyblast)
+spellDescriptions.register("psyblast", psyblast)
 
-directory.register("force_field", force_field)
+spellDescriptions.register("force_field", force_field)
 
-directory.register("mind_armor", mind_armor)
-
-export default directory;
+spellDescriptions.register("mind_armor", mind_armor)

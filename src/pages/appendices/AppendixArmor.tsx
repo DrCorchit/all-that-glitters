@@ -2,7 +2,7 @@ import Appendix from "../../components/Appendix";
 import {Table} from "../../components/Table";
 import {armor} from "../../concepts/armor";
 import {materials} from "../../concepts/material";
-import directory from "../../generated/armorEffects";
+import {armorEffects} from "../../generated/armorEffects";
 
 export default function AppendixWeapons() {
 	return (
@@ -26,7 +26,7 @@ export default function AppendixWeapons() {
 					<>
 						{armor.description}
 						<br />
-						{directory.lookup(armor.name)}
+						{armorEffects.lookup(armor.name)}
 					</>,
 				]}
 			/>

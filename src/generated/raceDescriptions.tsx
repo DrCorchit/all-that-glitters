@@ -1,4 +1,5 @@
 //Auto-generated file (do not modify)
+import React from 'react'
 import {TSXDirectory} from "../utils/tsxDirectory"
 
 export const human = <><p>
@@ -69,22 +70,20 @@ A saurid is typically shorter than a man, but they grow all their lives until ol
 The saurids I have seen are fairly xenophobic, and live in colonies inside caves usually near water. They hunt, fish, and raise their hatchlings quietly, having few dealings with man or elf, except for the occasional territorial clash. They have developed a unique sort of architecture, and their colonies are quite remarkable, often lavishly decorated with precious stones and cut stone. Their predilection for gathering all things shiny has attracted dwarven traders, which has brought the common tongue to their knowledge. Many of them now seek adventure abroad, bringing with them their fearsome and curious ways.
 </p></>
 
-const directory = new TSXDirectory<string>();
+export const raceDescriptions = new TSXDirectory<React.JSX.Element>();
 
-directory.register("human", human)
+raceDescriptions.register("human", human)
 
-directory.register("elf", elf)
+raceDescriptions.register("elf", elf)
 
-directory.register("dwarf", dwarf)
+raceDescriptions.register("dwarf", dwarf)
 
-directory.register("halfling", halfling)
+raceDescriptions.register("halfling", halfling)
 
-directory.register("orc", orc)
+raceDescriptions.register("orc", orc)
 
-directory.register("tiefling", tiefling)
+raceDescriptions.register("tiefling", tiefling)
 
-directory.register("aarakocra", aarakocra)
+raceDescriptions.register("aarakocra", aarakocra)
 
-directory.register("saurid", saurid)
-
-export default directory;
+raceDescriptions.register("saurid", saurid)

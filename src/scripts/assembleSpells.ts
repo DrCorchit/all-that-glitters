@@ -139,17 +139,14 @@ export async function assembleSpells() {
 
 	fs.writeFileSync("src/generated/spells.json", JSON.stringify(spells, undefined, 2));
 
-	const file = new FileBuilder();
-	file.withImport(`import { ChapterLink, AppendixLink } from "../components/InternalLink"`);
-	file.withImport(`import Sub from "../components/Sub"`);
-	file.withImport(`import Tooltip from "../components/Tooltip"`);
-
-	const spellDescriptions = createDirectory(
-		file,
+	createDirectory(
+		"spellDescriptions",
 		spells,
 		spell => spell.name,
 		spell => spell.description
-	);
-
-	fs.writeFileSync("src/generated/spellDescriptions.tsx", spellDescriptions.build());
+	)
+		.withImport(`import { ChapterLink, AppendixLink } from "../components/InternalLink"`)
+		.withImport(`import Sub from "../components/Sub"`)
+		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.save("src/generated/spellDescriptions.tsx");
 }

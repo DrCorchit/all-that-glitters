@@ -133,17 +133,14 @@ export async function assembleFeats() {
 
 	fs.writeFileSync("src/generated/feats.json", JSON.stringify(feats, featReplacer, 2));
 
-	const file = new FileBuilder();
-	file.withImport(`import { AppendixLink } from "../components/InternalLink"`);
-	file.withImport(`import Sub from "../components/Sub";`);
-	file.withImport(`import Tooltip from "../components/Tooltip"`);
-
-	const featDescriptions = createDirectory(
-		file,
+	createDirectory(
+		"featDescriptions",
 		feats,
 		feat => feat.name,
 		feat => feat.description
-	);
-
-	fs.writeFileSync("src/generated/featDescriptions.tsx", featDescriptions.build());
+	)
+		.withImport(`import { AppendixLink } from "../components/InternalLink"`)
+		.withImport(`import Sub from "../components/Sub";`)
+		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.save("src/generated/featDescriptions.tsx");
 }

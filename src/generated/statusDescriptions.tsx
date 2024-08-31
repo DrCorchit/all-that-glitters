@@ -1,6 +1,7 @@
 //Auto-generated file (do not modify)
-import Sub from "../components/Sub"
+import React from 'react'
 import {TSXDirectory} from "../utils/tsxDirectory"
+import Sub from "../components/Sub"
 
 export const bleeding = <>Accumulates. The target takes damage at the end of its turn equal to its bleeding amount, then loses one level of bleeding.</>
 
@@ -40,44 +41,42 @@ export const invisibility = <>The target cannot be seen or detected via light so
 
 export const ephemeral_invisibility = <>A fragile form of invisibility that dispels at anything more than a slight touch. When interacting with objects (such a handling a bow or opening a door), the target must make a DT 16 <Sub attr="DEX"/> saving throw or lose invisibility. The target also loses invisibility after making a melee attack or being attacked. The target otherwise gains all the benefits of true invisibility.</>
 
-const directory = new TSXDirectory<string>();
+export const statusDescriptions = new TSXDirectory<React.JSX.Element>();
 
-directory.register("bleeding", bleeding)
+statusDescriptions.register("bleeding", bleeding)
 
-directory.register("blinded", blinded)
+statusDescriptions.register("blinded", blinded)
 
-directory.register("burning", burning)
+statusDescriptions.register("burning", burning)
 
-directory.register("deafened", deafened)
+statusDescriptions.register("deafened", deafened)
 
-directory.register("incapacitated", incapacitated)
+statusDescriptions.register("incapacitated", incapacitated)
 
-directory.register("intoxicated", intoxicated)
+statusDescriptions.register("intoxicated", intoxicated)
 
-directory.register("terrified", terrified)
+statusDescriptions.register("terrified", terrified)
 
-directory.register("dazed", dazed)
+statusDescriptions.register("dazed", dazed)
 
-directory.register("prone", prone)
+statusDescriptions.register("prone", prone)
 
-directory.register("lethargic", lethargic)
+statusDescriptions.register("lethargic", lethargic)
 
-directory.register("madness", madness)
+statusDescriptions.register("madness", madness)
 
-directory.register("restrained", restrained)
+statusDescriptions.register("restrained", restrained)
 
-directory.register("freezing", freezing)
+statusDescriptions.register("freezing", freezing)
 
-directory.register("frozen", frozen)
+statusDescriptions.register("frozen", frozen)
 
-directory.register("petrified", petrified)
+statusDescriptions.register("petrified", petrified)
 
-directory.register("poisoned", poisoned)
+statusDescriptions.register("poisoned", poisoned)
 
-directory.register("levitated", levitated)
+statusDescriptions.register("levitated", levitated)
 
-directory.register("invisibility", invisibility)
+statusDescriptions.register("invisibility", invisibility)
 
-directory.register("ephemeral_invisibility", ephemeral_invisibility)
-
-export default directory;
+statusDescriptions.register("ephemeral_invisibility", ephemeral_invisibility)

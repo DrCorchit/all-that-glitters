@@ -1,3 +1,4 @@
+import fs from "fs";
 import {templatizeToTsx} from "./templatizer";
 
 export class FileBuilder {
@@ -17,6 +18,10 @@ export class FileBuilder {
 	build(): string {
 		return `//Auto-generated file (do not modify)\n${this.imports.join("\n")}\n\n${this.members.join("\n\n")}`;
 	}
+
+	save(path: string) {
+		fs.writeFileSync(path, this.build());
+	}
 }
 
 export class ArrayBuilder {
@@ -34,6 +39,11 @@ export class ArrayBuilder {
 		if (value !== undefined) {
 			this.members.push(value.toString());
 		}
+		return this;
+	}
+
+	withValues(values: string[]): ArrayBuilder {
+		this.members.push(...values);
 		return this;
 	}
 

@@ -1,5 +1,16 @@
+import React from "react";
 import classJson from "../generated/classes.json";
 import Source from "../utils/source";
+
+export interface Inventory {
+	loose: React.JSX.Element[];
+	containers: Container[];
+}
+
+export interface Container {
+	label: React.JSX.Element;
+	contents: React.JSX.Element[];
+}
 
 export interface CombatClass {
 	name: string;

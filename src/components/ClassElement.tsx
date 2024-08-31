@@ -1,18 +1,22 @@
 import {CombatClass} from "../concepts/combatClass";
-import classDescriptions from "../generated/classDescriptions";
-import coreAbilityDescriptions from "../generated/coreAbilityDescriptions";
+import {classDescriptions} from "../generated/classDescriptions";
+import {coreAbilityDescriptions} from "../generated/coreAbilityDescriptions";
+import {levelingBonuses} from "../generated/levelingBonuses";
+import {startingEquipment} from "../generated/startingEquipment";
 import {normalize} from "../utils/utils";
 import Collapsible from "./Collapsible";
 
 export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 	const tag = normalize(clazz.name);
 	const name = clazz.altName ? `${clazz.name} (${clazz.altName})` : clazz.name;
+	const bonuses = levelingBonuses.lookup(clazz.name);
+	const inventory = startingEquipment.lookup(clazz.name);
 
 	return (
 		<div className='background'>
 			<div className='default'>
 				<h5 id={tag}>{name}</h5>
-				<p>{classDescriptions.lookup(clazz.name)}</p>
+				{classDescriptions.lookup(clazz.name)}
 				<p>While writing the backstory for a {clazz.name}, consider the following:</p>
 				<ul>
 					{clazz.backstoryPrompts.map((prompt, index) => (
@@ -30,7 +34,7 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 				<Collapsible text='Detailed Information'>
 					<b>Limitations</b>: {clazz.limitations}
 					<b>Leveling Bonuses</b>:
-					{Object.entries(clazz.levelingBonuses).map((entry, index) => {
+					{Object.entries(bonuses).map((entry, index) => {
 						const [level, bonus] = entry;
 						return (
 							<div className='default' key={index}>
@@ -39,12 +43,17 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 						);
 					})}
 					<b>Starting Equipment</b>:
-					{Object.entries(clazz.startingEquipment).map((container, index) => {
+					<ul>
+						{inventory.loose.map((item, index) => (
+							<li key={index}>{item}</li>
+						))}
+					</ul>
+					{inventory.containers.map((container, index) => {
 						return (
 							<div className='default' key={index}>
-								{container[0]}
+								{container.label}
 								<ul>
-									{container[1]!!.map((item, index2) => (
+									{container.contents.map((item, index2) => (
 										<li key={index2}>{item}</li>
 									))}
 								</ul>

@@ -1,6 +1,7 @@
 //Auto-generated file (do not modify)
-import Sub from "../components/Sub"
+import React from 'react'
 import {TSXDirectory} from "../utils/tsxDirectory"
+import Sub from "../components/Sub"
 
 export const human = <>Human characters begin with +1 to two attributes, and -1 to an attribute. They also begin with proficiency in a skill of their choice.</>
 
@@ -18,22 +19,20 @@ export const aarakocra = <>Aarakocra gain a +2 bonus to <Sub attr="SPD"/>, but -
 
 export const saurid = <>Saurids gain +2 to <Sub attr="STR"/> and <Sub attr="SPD"/>, at the cost of -2 <Sub attr="INT"/> and -1 <Sub attr="CHA"/>. They possess the gift of darkvision, able to see in near total darkness. They have deficiency in <Sub skill="Literacy" /> but may take proficiency in two out of <Sub skill="Folklore" />, <Sub skill="Stealth" />, or <Sub skill="Survival" />.</>
 
-const directory = new TSXDirectory<string>();
+export const raceBonuses = new TSXDirectory<React.JSX.Element>();
 
-directory.register("human", human)
+raceBonuses.register("human", human)
 
-directory.register("elf", elf)
+raceBonuses.register("elf", elf)
 
-directory.register("dwarf", dwarf)
+raceBonuses.register("dwarf", dwarf)
 
-directory.register("halfling", halfling)
+raceBonuses.register("halfling", halfling)
 
-directory.register("orc", orc)
+raceBonuses.register("orc", orc)
 
-directory.register("tiefling", tiefling)
+raceBonuses.register("tiefling", tiefling)
 
-directory.register("aarakocra", aarakocra)
+raceBonuses.register("aarakocra", aarakocra)
 
-directory.register("saurid", saurid)
-
-export default directory;
+raceBonuses.register("saurid", saurid)

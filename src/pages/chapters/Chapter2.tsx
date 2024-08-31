@@ -7,8 +7,8 @@ import {sizes, Size} from "../../concepts/size";
 import {range} from "../../utils/utils";
 import {ClassElement} from "../../components/ClassElement";
 import {Race, races} from "../../concepts/race";
-import raceDescriptions from "../../generated/raceDescriptions";
-import raceBonuses from "../../generated/raceBonuses";
+import {raceDescriptions} from "../../generated/raceDescriptions";
+import {raceBonuses} from "../../generated/raceBonuses";
 import {combatClasses} from "../../concepts/combatClass";
 
 const index = 2;

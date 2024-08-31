@@ -1,6 +1,7 @@
 //Auto-generated file (do not modify)
-import Sub from "../components/Sub"
+import React from 'react'
 import {TSXDirectory} from "../utils/tsxDirectory"
+import Sub from "../components/Sub"
 
 export const quilted_armor = <>-1 <Sub attr="CHA"/></>
 
@@ -24,28 +25,26 @@ export const splinted_chainmail = <><Sub attr="DEX"/> and <Sub attr="SPD"/> are 
 
 export const full_plate_armor = <><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 10, <Sub skill="Mobility" /> disadvantage, <Sub skill="Stealth" /> disadvantage</>
 
-const directory = new TSXDirectory<string>();
+export const armorEffects = new TSXDirectory<React.JSX.Element>();
 
-directory.register("quilted_armor", quilted_armor)
+armorEffects.register("quilted_armor", quilted_armor)
 
-directory.register("gambeson", gambeson)
+armorEffects.register("gambeson", gambeson)
 
-directory.register("leather_armor", leather_armor)
+armorEffects.register("leather_armor", leather_armor)
 
-directory.register("brigandine", brigandine)
+armorEffects.register("brigandine", brigandine)
 
-directory.register("hauberk", hauberk)
+armorEffects.register("hauberk", hauberk)
 
-directory.register("breastplate", breastplate)
+armorEffects.register("breastplate", breastplate)
 
-directory.register("ringmail", ringmail)
+armorEffects.register("ringmail", ringmail)
 
-directory.register("chainmail", chainmail)
+armorEffects.register("chainmail", chainmail)
 
-directory.register("half_plate_armor", half_plate_armor)
+armorEffects.register("half_plate_armor", half_plate_armor)
 
-directory.register("splinted_chainmail", splinted_chainmail)
+armorEffects.register("splinted_chainmail", splinted_chainmail)
 
-directory.register("full_plate_armor", full_plate_armor)
-
-export default directory;
+armorEffects.register("full_plate_armor", full_plate_armor)

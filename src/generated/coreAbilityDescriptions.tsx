@@ -1,8 +1,9 @@
 //Auto-generated file (do not modify)
+import React from 'react'
+import {TSXDirectory} from "../utils/tsxDirectory"
 import { AppendixLink } from "../components/InternalLink"
 import Sub from "../components/Sub"
 import Tooltip from "../components/Tooltip"
-import {TSXDirectory} from "../utils/tsxDirectory"
 
 export const assassin = <>You may expend 2 willpower to mark a target for assassination. The next time you score a critical hit on that target, deal an additional 2d6 damage.</>
 
@@ -44,46 +45,44 @@ export const witch = <>When you do not have enough willpower to cast a spell, yo
 
 export const wizard = <>Whenever you learn a new spell, you may choose to make that spell your favorite. Your favorite spell costs one less willpower to cast than usual.</>
 
-const directory = new TSXDirectory<string>();
+export const coreAbilityDescriptions = new TSXDirectory<React.JSX.Element>();
 
-directory.register("assassin", assassin)
+coreAbilityDescriptions.register("assassin", assassin)
 
-directory.register("barbarian", barbarian)
+coreAbilityDescriptions.register("barbarian", barbarian)
 
-directory.register("crusader", crusader)
+coreAbilityDescriptions.register("crusader", crusader)
 
-directory.register("druid", druid)
+coreAbilityDescriptions.register("druid", druid)
 
-directory.register("hermit", hermit)
+coreAbilityDescriptions.register("hermit", hermit)
 
-directory.register("inquisitor", inquisitor)
+coreAbilityDescriptions.register("inquisitor", inquisitor)
 
-directory.register("knight", knight)
+coreAbilityDescriptions.register("knight", knight)
 
-directory.register("marksman", marksman)
+coreAbilityDescriptions.register("marksman", marksman)
 
-directory.register("mercenary", mercenary)
+coreAbilityDescriptions.register("mercenary", mercenary)
 
-directory.register("minstrel", minstrel)
+coreAbilityDescriptions.register("minstrel", minstrel)
 
-directory.register("monk", monk)
+coreAbilityDescriptions.register("monk", monk)
 
-directory.register("plague_doctor", plague_doctor)
+coreAbilityDescriptions.register("plague_doctor", plague_doctor)
 
-directory.register("prophet", prophet)
+coreAbilityDescriptions.register("prophet", prophet)
 
-directory.register("psychic", psychic)
+coreAbilityDescriptions.register("psychic", psychic)
 
-directory.register("ranger", ranger)
+coreAbilityDescriptions.register("ranger", ranger)
 
-directory.register("scholar", scholar)
+coreAbilityDescriptions.register("scholar", scholar)
 
-directory.register("thief", thief)
+coreAbilityDescriptions.register("thief", thief)
 
-directory.register("veteran", veteran)
+coreAbilityDescriptions.register("veteran", veteran)
 
-directory.register("witch", witch)
+coreAbilityDescriptions.register("witch", witch)
 
-directory.register("wizard", wizard)
-
-export default directory;
+coreAbilityDescriptions.register("wizard", wizard)

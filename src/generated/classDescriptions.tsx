@@ -1,4 +1,5 @@
 //Auto-generated file (do not modify)
+import React from 'react'
 import {TSXDirectory} from "../utils/tsxDirectory"
 
 export const assassin = <>An assassin’s art is a quick and sure death, delivered without remorse or hesitation. Typically employed by a political state or criminal syndicate, assassins quickly learn to make use of any weapon available, including the weapons of their own targets. This makes them extremely versatile adventurers, able to adapt to nearly any combat situation as the need arises.</>
@@ -41,46 +42,44 @@ export const witch = <>Witches and warlocks are a diverse sort, hailing from man
 
 export const wizard = <>Cloistered in his high tower, a tall and heavily bearded man pushes arcane magic to its absolute limit. Bedecked in a great flowing robe and pointed hat, he ensures that the stars and planets align before pursuing his audacious experiment. Sanity and restraint long forsaken, he clutches a crystal ball, gazing somewhere within as blue electricity arcs from the tips of his fingers. No-one knows how he got his power; some say it runs in his blood, while others say that he was once a promising young student expelled from a university. Whatever the case, a wizard is someone with a naturally high aptitude for magic who usually practices on their own terms, outside the auspices of a university.</>
 
-const directory = new TSXDirectory<string>();
+export const classDescriptions = new TSXDirectory<React.JSX.Element>();
 
-directory.register("assassin", assassin)
+classDescriptions.register("assassin", assassin)
 
-directory.register("barbarian", barbarian)
+classDescriptions.register("barbarian", barbarian)
 
-directory.register("crusader", crusader)
+classDescriptions.register("crusader", crusader)
 
-directory.register("druid", druid)
+classDescriptions.register("druid", druid)
 
-directory.register("hermit", hermit)
+classDescriptions.register("hermit", hermit)
 
-directory.register("inquisitor", inquisitor)
+classDescriptions.register("inquisitor", inquisitor)
 
-directory.register("knight", knight)
+classDescriptions.register("knight", knight)
 
-directory.register("marksman", marksman)
+classDescriptions.register("marksman", marksman)
 
-directory.register("mercenary", mercenary)
+classDescriptions.register("mercenary", mercenary)
 
-directory.register("minstrel", minstrel)
+classDescriptions.register("minstrel", minstrel)
 
-directory.register("monk", monk)
+classDescriptions.register("monk", monk)
 
-directory.register("plague_doctor", plague_doctor)
+classDescriptions.register("plague_doctor", plague_doctor)
 
-directory.register("prophet", prophet)
+classDescriptions.register("prophet", prophet)
 
-directory.register("psychic", psychic)
+classDescriptions.register("psychic", psychic)
 
-directory.register("ranger", ranger)
+classDescriptions.register("ranger", ranger)
 
-directory.register("scholar", scholar)
+classDescriptions.register("scholar", scholar)
 
-directory.register("thief", thief)
+classDescriptions.register("thief", thief)
 
-directory.register("veteran", veteran)
+classDescriptions.register("veteran", veteran)
 
-directory.register("witch", witch)
+classDescriptions.register("witch", witch)
 
-directory.register("wizard", wizard)
-
-export default directory;
+classDescriptions.register("wizard", wizard)

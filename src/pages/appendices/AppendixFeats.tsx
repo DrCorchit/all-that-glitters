@@ -5,7 +5,7 @@ import {useState} from "react";
 import Collapsible from "../../components/Collapsible";
 import Section from "../../components/Section";
 import {Feat, feats, featTypes} from "../../concepts/feat";
-import featDescription from "../../generated/featDescriptions";
+import {featDescriptions} from "../../generated/featDescriptions";
 
 function FeatElement({feat}: {feat: Feat}): JSX.Element {
 	const id = normalize(feat.name);
@@ -23,7 +23,7 @@ function FeatElement({feat}: {feat: Feat}): JSX.Element {
 			<p>
 				<i>{`Level ${feat.level} ${feat.featType.name} Feat`}</i>
 			</p>
-			<div className='default'>{featDescription.lookup(feat.name)}</div>
+			<div className='default'>{featDescriptions.lookup(feat.name)}</div>
 			<div className='default'>
 				<b>Requirements</b>:
 				<ul>

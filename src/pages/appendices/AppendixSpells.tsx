@@ -6,7 +6,7 @@ import Outline from "../../components/Outline";
 import Section from "../../components/Section";
 import {Spell, lookupSpellsBySchool, spellSchools} from "../../concepts/magic";
 import {recordEquals, range} from "../../utils/utils";
-import directory from "../../generated/spellDescriptions";
+import {spellDescriptions} from "../../generated/spellDescriptions";
 
 function Spellement({spell}: {spell: Spell}): ReactElement {
 	return (
@@ -24,7 +24,7 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 				<i>{spell.blurb}</i>
 			</p>
 			<p>
-				<b>Effect</b>: {directory.lookup(spell.id)}
+				<b>Effect</b>: {spellDescriptions.lookup(spell.id)}
 			</p>
 			<p>
 				<b>Duration</b>: TODO
