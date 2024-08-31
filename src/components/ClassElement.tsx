@@ -28,9 +28,10 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 						<b>Alignment Suggestion</b>: {clazz.alignment}
 					</p>
 				)}
-				<p>
-					<b>Core Ability</b>: <i>{clazz.coreAbilityName}</i>. {coreAbilityDescriptions.lookup(clazz.name)}
-				</p>
+				<div>
+					<b>Core Ability</b>: <i>{clazz.coreAbilityName}</i>
+					{coreAbilityDescriptions.lookup(clazz.name)}
+				</div>
 				<Collapsible text='Detailed Information'>
 					<b>Limitations</b>: {clazz.limitations}
 					<b>Leveling Bonuses</b>:

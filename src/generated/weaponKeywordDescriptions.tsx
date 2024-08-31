@@ -3,37 +3,37 @@ import React from 'react'
 import {TSXDirectory} from "../utils/tsxDirectory"
 import Tooltip from "../components/Tooltip"
 
-export const cut_and_thrust = <>The weapon can deal either <span style={{color: "#CFF"}}>Slashing</span> or <span style={{color: "#FFF"}}>Piercing</span> damage.</>
+export const cut_and_thrust = <div className="default">The weapon can deal either <span style={{color: "#CFF"}}>Slashing</span> or <span style={{color: "#FFF"}}>Piercing</span> damage.</div>
 
-export const nimble = <>Dexterity can be used to provide the weapon’s damage, instead of strength.</>
+export const nimble = <div className="default">Dexterity can be used to provide the weapon’s damage, instead of strength.</div>
 
-export const improvised = <>The item is not designed as a weapon. The damage die is rolled with disadvantage.</>
+export const improvised = <div className="default">The item is not designed as a weapon. The damage die is rolled with disadvantage.</div>
 
-export const light = <>The weapon can be used alongside a greatshield, or dual wielded alongside another light weapon.</>
+export const light = <div className="default">The weapon can be used alongside a greatshield, or dual wielded alongside another light weapon.</div>
 
-export const two_handed = <>The weapon must be handled with two hands when attacking.</>
+export const two_handed = <div className="default">The weapon must be handled with two hands when attacking.</div>
 
-export const sharp = <>The critical threshold for the weapon is reduced by 1. This ability is lost after critical failing an attack roll, but can be regained by using a whetstone.</>
+export const sharp = <div className="default">The critical threshold for the weapon is reduced by 1. This ability is lost after critical failing an attack roll, but can be regained by using a whetstone.</div>
 
-export const polearm = <>The weapon can hit targets 10 feet away instead of 5, and is compatible with the <i>Polarm Charge</i> ability.</>
+export const polearm = <div className="default">The weapon can hit targets 10 feet away instead of 5, and is compatible with the <i>Polarm Charge</i> ability.</div>
 
-export const throwable = <>The weapon does not gain the <Tooltip tip={"Improvised"}>The item is not designed as a weapon. The damage die is rolled with disadvantage.</Tooltip> trait when thrown.</>
+export const throwable = <div className="default">The weapon does not gain the <Tooltip tip={"Improvised"}>The item is not designed as a weapon. The damage die is rolled with disadvantage.</Tooltip> trait when thrown.</div>
 
-export const crossbow = <>The weapon is a mechanical crossbow. It requires 30 seconds to reload, and its damage does not benefit from the user's attribute scores.</>
+export const crossbow = <div className="default">The weapon is a mechanical crossbow. It requires 30 seconds to reload, and its damage does not benefit from the user's attribute scores.</div>
 
-export const firearm = <>The weapon is a firearm and deals <span style={{color: "#D00"}}>Force</span> damage. It requires 1 minute to reload, and its damage does not benefit from the user's attribute scores.</>
+export const firearm = <div className="default">The weapon is a firearm and deals <span style={{color: "#D00"}}>Force</span> damage. It requires 1 minute to reload, and its damage does not benefit from the user's attribute scores.</div>
 
-export const parrying = <>The weapon increases mitigation by the indicated amount when the parry reaction is taken.</>
+export const parrying = <div className="default">The weapon increases mitigation by the indicated amount when the parry reaction is taken.</div>
 
-export const blocking = <>The weapon increases BC by a certain amount, doubled when actively blocking.</>
+export const blocking = <div className="default">The weapon increases BC by a certain amount, doubled when actively blocking.</div>
 
-export const mordhau = <>The weapon can be held by the blade, using the crossguard as a hammer. This changes the weapon’s damage type to bludgeoning, and replaces the damage die. (Larger swords have this property.)</>
+export const mordhau = <div className="default">The weapon can be held by the blade, using the crossguard as a hammer. This changes the weapon’s damage type to bludgeoning, and replaces the damage die. (Larger swords have this property.)</div>
 
-export const versatile = <>The weapon can be held in an alternate grip for extra damage.</>
+export const versatile = <div className="default">The weapon can be held in an alternate grip for extra damage.</div>
 
-export const projectile = <>The weapon fires a specific type of projectile</>
+export const projectile = <div className="default">The weapon fires a specific type of projectile</div>
 
-export const ranged = <>The weapon has a range: X/Y. Attacks against targets beyond X feet away have disadvantage; attacks against targets beyond Y feet away automatically fail.</>
+export const ranged = <div className="default">The weapon has a range: X/Y. Attacks against targets beyond X feet away have disadvantage; attacks against targets beyond Y feet away automatically fail.</div>
 
 export const weaponKeywordDescriptions = new TSXDirectory<React.JSX.Element>();
 

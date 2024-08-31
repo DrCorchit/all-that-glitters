@@ -3,43 +3,43 @@ import React from 'react'
 import {TSXDirectory} from "../utils/tsxDirectory"
 import Tooltip from "../components/Tooltip"
 
-export const bleeding = <>Alleviated by resting, healing spells, or the "help" action.</>
+export const bleeding = <div className="default">Alleviated by resting, healing spells, or the "help" action.</div>
 
-export const blinded = <><Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip>, or wait until vision returns naturally.</>
+export const blinded = <div className="default"><Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip>, or wait until vision returns naturally.</div>
 
-export const burning = <>Alleviated by freezing, water, or the Fire Mitigation ability.</>
+export const burning = <div className="default">Alleviated by freezing, water, or the Fire Mitigation ability.</div>
 
-export const deafened = <>Wait until hearing returns naturally.</>
+export const deafened = <div className="default">Wait until hearing returns naturally.</div>
 
-export const incapacitated = <>Wait until the condition passes.</>
+export const incapacitated = <div className="default">Wait until the condition passes.</div>
 
-export const intoxicated = <>One level of intoxication is lost per hour.</>
+export const intoxicated = <div className="default">One level of intoxication is lost per hour.</div>
 
-export const terrified = <>Wait until the condition passes.</>
+export const terrified = <div className="default">Wait until the condition passes.</div>
 
-export const dazed = <>Wait until the condition passes.</>
+export const dazed = <div className="default">Wait until the condition passes.</div>
 
-export const prone = <>Use the move action to stand up.</>
+export const prone = <div className="default">Use the move action to stand up.</div>
 
-export const lethargic = <>Wait until the condition passes</>
+export const lethargic = <div className="default">Wait until the condition passes</div>
 
-export const madness = <>Wait until the condition passes.</>
+export const madness = <div className="default">Wait until the condition passes.</div>
 
-export const restrained = <>Receiving help from an ally or taking <span style={{color: "#CFF"}}>Slashing</span> or <span style={{color: "#F80"}}>Heat</span> damage.</>
+export const restrained = <div className="default">Receiving help from an ally or taking <span style={{color: "#CFF"}}>Slashing</span> or <span style={{color: "#F80"}}>Heat</span> damage.</div>
 
-export const freezing = <>Fire damage, or short rest.</>
+export const freezing = <div className="default">Fire damage, or short rest.</div>
 
-export const frozen = <>Short rest.</>
+export const frozen = <div className="default">Short rest.</div>
 
-export const petrified = <>Basilisk Oil</>
+export const petrified = <div className="default">Basilisk Oil</div>
 
-export const poisoned = <>Taking an <Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip> or a long rest.</>
+export const poisoned = <div className="default">Taking an <Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip> or a long rest.</div>
 
-export const levitated = <>Break the caster's concentration.</>
+export const levitated = <div className="default">Break the caster's concentration.</div>
 
-export const invisibility = <></>
+export const invisibility = <div className="default"></div>
 
-export const ephemeral_invisibility = <></>
+export const ephemeral_invisibility = <div className="default"></div>
 
 export const statusRecoveries = new TSXDirectory<React.JSX.Element>();
 

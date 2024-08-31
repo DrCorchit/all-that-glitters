@@ -35,7 +35,7 @@ export function createDirectory<T>(
 	elements.forEach(ele => {
 		const name = normalize(getName(ele));
 		const field = templatizeToTsx(getField(ele));
-		file.withMember(`export const ${name} = <>${field}</>`);
+		file.withMember(`export const ${name} = <div className="default">${field}</div>`);
 	});
 
 	file.withMember(`export const ${directoryName} = new TSXDirectory<React.JSX.Element>();`);
