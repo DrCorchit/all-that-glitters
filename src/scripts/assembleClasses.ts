@@ -17,14 +17,14 @@ export function assembleClasses() {
 		const levelingBonusesStr = Object.entries(clazz.levelingBonuses).map(entry => {
 			const key = entry[0];
 			const value = entry[1];
-			if (!value) throw new Error("This never happens, I swear");
+			if (value === undefined) throw new Error("This never happens, I swear");
 			return [key, templatizeToString(value)];
 		});
 
 		const startingEquipmentStr = Object.entries(clazz.startingEquipment).map(entry => {
 			const key = templatizeToString(entry[0]);
 			const values = entry[1];
-			if (!values) throw new Error("This never happens, I swear");
+			if (values === undefined) throw new Error("This never happens, I swear");
 			const valuesStr = values.map(templatizeToString);
 			return [key, valuesStr];
 		});
@@ -67,7 +67,7 @@ export function assembleClasses() {
 			Object.entries(clazz.levelingBonuses).forEach(entry => {
 				const level = Number.parseInt(entry[0]).toString();
 				const bonusRaw = entry[1];
-				if (!bonusRaw) throw new Error("This never happens, I swear");
+				if (bonusRaw === undefined) throw new Error("This never happens, I swear");
 				const bonus = templatizeToTsx(bonusRaw);
 				builder.withTSX(level, bonus);
 			});
@@ -92,7 +92,7 @@ export function assembleClasses() {
 			Object.entries(clazz.startingEquipment).forEach(entry => {
 				const containerStr = entry[0];
 				const contentsStr = entry[1];
-				if (!contentsStr) throw new Error("This never happens, I swear");
+				if (contentsStr === undefined) throw new Error("This never happens, I swear");
 				const contentsTsx = contentsStr.map(item => `<>${templatizeToTsx(item)}</>`);
 
 				if (containerStr === "_") {
