@@ -10,8 +10,6 @@ import {Attribute, attributes, getStat} from "../../concepts/attribute";
 import React from "react";
 
 function NoFeats(): React.JSX.Element {
-	console.log("No feats");
-
 	return (
 		<div className='background'>
 			<p style={{color: "#FFB080"}}>Current filter settings have excluded all feats of this category.</p>

@@ -8,6 +8,14 @@ import {Spell, lookupSpellsBySchool, spellSchools} from "../../concepts/magic";
 import {recordEquals, range} from "../../utils/utils";
 import {spellDescriptions} from "../../generated/spellDescriptions";
 
+function NoSpells(): React.JSX.Element {
+	return (
+		<div className='background'>
+			<p style={{color: "#FFB080"}}>Current filter settings have excluded all spells of this category.</p>
+		</div>
+	);
+}
+
 function Spellement({spell}: {spell: Spell}): ReactElement {
 	return (
 		<div className='background'>
@@ -54,11 +62,13 @@ type FilterType = (typeof filterTypes)[number];
 
 type FilterState = {
 	word: string;
-	type: FilterType;
 	level: number;
+	levelType: FilterType;
+	slots: number;
+	slotsType: FilterType;
 };
 
-const defaultFilterState: FilterState = {word: "", type: "At Least", level: 1};
+const defaultFilterState: FilterState = {word: "", level: 1, levelType: "At Least", slots: 15, slotsType: "At Most"};
 
 function FilterForm({
 	filterState,
@@ -96,8 +106,28 @@ function FilterForm({
 					<input
 						type='radio'
 						value={type}
-						onChange={() => setFilterState({...filterState, type: type})}
-						checked={filterState.type === type}
+						onChange={() => setFilterState({...filterState, levelType: type})}
+						checked={filterState.levelType === type}
+					/>
+					{type}
+				</label>
+			))}
+			<hr />
+			<label>Filter by training slots: </label>
+			<select value={filterState.slots} onChange={e => setFilterState({...filterState, slots: Number(e.target.value)})}>
+				{range(1, 15).map((value, index) => (
+					<option value={value} key={index}>
+						{value}
+					</option>
+				))}
+			</select>
+			{filterTypes.map((type, index) => (
+				<label key={index}>
+					<input
+						type='radio'
+						value={type}
+						onChange={() => setFilterState({...filterState, slotsType: type})}
+						checked={filterState.slotsType === type}
 					/>
 					{type}
 				</label>
@@ -116,13 +146,25 @@ export default function AppendixSpells(): ReactElement {
 			return false;
 		}
 
-		switch (filterState.type) {
+		if (!satisfies(spell.level, filterState.level, filterState.levelType)) {
+			return false;
+		}
+
+		if (!satisfies(spell.trainingReqs.slots, filterState.slots, filterState.slotsType)) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function satisfies(n1: number, n2: number, relation: FilterType): boolean {
+		switch (relation) {
 			case "At Most":
-				return spell.level <= filterState.level;
+				return n1 <= n2;
 			case "Exactly":
-				return spell.level === filterState.level;
+				return n1 == n2;
 			case "At Least":
-				return spell.level >= filterState.level;
+				return n1 >= n2;
 		}
 	}
 
@@ -138,13 +180,11 @@ export default function AppendixSpells(): ReactElement {
 					.filter(filter)
 					.sort((sp1, sp2) => sp1.level - sp2.level);
 
-				if (spells.length === 0) return undefined;
+				const noSpells = spells.length == 0;
 
 				return (
 					<Section name={school.name} key={index}>
-						{spells.map((spell, index) => (
-							<Spellement spell={spell} key={index} />
-						))}
+						{noSpells ? <NoSpells /> : spells.map((spell, index) => <Spellement spell={spell} key={index} />)}
 						<AppendixLink appendix={1} target='top'>
 							Back to Top
 						</AppendixLink>
