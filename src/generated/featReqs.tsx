@@ -1,5 +1,5 @@
 //Auto-generated file (do not modify)
-import {TSXDirectory} from "../utils/tsxDirectory"
+import {TSXDirectory} from "../utils/tsxDirectory";
 import { AppendixLink } from "../components/InternalLink";
 
 export const robust = {

@@ -1,7 +1,7 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import Tooltip from "../components/Tooltip"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import Tooltip from "../components/Tooltip";
 
 export const cut_and_thrust = <div className="default">The weapon can deal either <span style={{color: "#CFF"}}>Slashing</span> or <span style={{color: "#FFF"}}>Piercing</span> damage.</div>
 

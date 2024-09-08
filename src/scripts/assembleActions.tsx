@@ -8,6 +8,6 @@ export function assembleActions() {
 		action => action.name,
 		action => action.description
 	)
-		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.withImport(`import Sub from "../components/Sub";`)
 		.save("src/generated/actionDescriptions.tsx");
 }

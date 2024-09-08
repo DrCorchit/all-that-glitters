@@ -141,9 +141,9 @@ export async function assembleFeats() {
 		feat => feat.name,
 		feat => feat.description
 	)
-		.withImport(`import { AppendixLink } from "../components/InternalLink"`)
+		.withImport(`import { AppendixLink } from "../components/InternalLink";`)
 		.withImport(`import Sub from "../components/Sub";`)
-		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.withImport(`import Tooltip from "../components/Tooltip";`)
 		.save("src/generated/featDescriptions.tsx");
 
 	createTypedDirectory(

@@ -159,8 +159,8 @@ export async function assembleSpells() {
 		spell => spell.name,
 		spell => spell.description
 	)
-		.withImport(`import { ChapterLink, AppendixLink } from "../components/InternalLink"`)
-		.withImport(`import Sub from "../components/Sub"`)
-		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.withImport(`import { ChapterLink, AppendixLink } from "../components/InternalLink";`)
+		.withImport(`import Sub from "../components/Sub";`)
+		.withImport(`import Tooltip from "../components/Tooltip";`)
 		.save("src/generated/spellDescriptions.tsx");
 }

@@ -1,7 +1,7 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import Tooltip from "../components/Tooltip"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import Tooltip from "../components/Tooltip";
 
 export const bleeding = <div className="default">Alleviated by resting, healing spells, or the "help" action.</div>
 

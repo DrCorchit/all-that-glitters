@@ -1,6 +1,6 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
 
 export const human = <div className="default"><p>
 Overall, humans are proud, robust, and athletic. I daresay we are altogether quite handsome. Men average around 5’9” in height; women around 5’4”. Weight varies greatly, usually between 100-200 lbs. We live between 70 and 90 years, if we do not die in one of our many wars.

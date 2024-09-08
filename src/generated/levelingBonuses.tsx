@@ -1,5 +1,5 @@
 //Auto-generated file (do not modify)
-import {TSXDirectory} from "../utils/tsxDirectory"
+import {TSXDirectory} from "../utils/tsxDirectory";
 import Sub from "../components/Sub";
 import Tooltip from "../components/Tooltip";
 import {AppendixLink} from "../components/InternalLink";

@@ -29,8 +29,8 @@ export function createDirectory<T>(
 	getField: (ele: T) => string
 ): FileBuilder {
 	const file = new FileBuilder();
-	file.withImport(`import React from 'react'`);
-	file.withImport(`import {TSXDirectory} from "../utils/tsxDirectory"`);
+	file.withImport(`import React from "react";`);
+	file.withImport(`import {TSXDirectory} from "../utils/tsxDirectory";`);
 
 	elements.forEach(ele => {
 		const name = normalize(getName(ele));
@@ -54,7 +54,7 @@ export function createTypedDirectory<T>(
 	type: string
 ): FileBuilder {
 	const file = new FileBuilder();
-	file.withImport(`import {TSXDirectory} from "../utils/tsxDirectory"`);
+	file.withImport(`import {TSXDirectory} from "../utils/tsxDirectory";`);
 
 	elements.forEach(ele => {
 		const name = normalize(getName(ele));

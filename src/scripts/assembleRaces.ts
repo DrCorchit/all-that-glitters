@@ -19,6 +19,6 @@ export function assembleRaces() {
 		race => race.name,
 		race => race.bonuses
 	)
-		.withImport(`import Sub from "../components/Sub"`)
+		.withImport(`import Sub from "../components/Sub";`)
 		.save("src/generated/raceBonuses.tsx");
 }

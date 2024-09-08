@@ -8,6 +8,6 @@ export function assembleArmor() {
 		armor => armor.name,
 		armor => armor.effects.join(", ")
 	)
-		.withImport(`import Sub from "../components/Sub"`)
+		.withImport(`import Sub from "../components/Sub";`)
 		.save("src/generated/armorEffects.tsx");
 }

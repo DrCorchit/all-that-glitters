@@ -1,7 +1,7 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import Sub from "../components/Sub"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import Sub from "../components/Sub";
 
 export const quilted_armor = <div className="default">-1 <Sub attr="CHA"/></div>
 

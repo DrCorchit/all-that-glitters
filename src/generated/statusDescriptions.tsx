@@ -1,7 +1,7 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import Sub from "../components/Sub"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import Sub from "../components/Sub";
 
 export const bleeding = <div className="default">Accumulates. The target takes damage at the end of its turn equal to its bleeding amount, then loses one level of bleeding.</div>
 

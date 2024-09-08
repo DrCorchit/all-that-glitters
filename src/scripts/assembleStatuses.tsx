@@ -8,7 +8,7 @@ export function assembleStatuses() {
 		status => status.name,
 		status => status.effect
 	)
-		.withImport(`import Sub from "../components/Sub"`)
+		.withImport(`import Sub from "../components/Sub";`)
 		.save("src/generated/statusDescriptions.tsx");
 
 	createDirectory<StatusEffect>(
@@ -17,6 +17,6 @@ export function assembleStatuses() {
 		status => status.name,
 		status => status.recovery
 	)
-		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.withImport(`import Tooltip from "../components/Tooltip";`)
 		.save("src/generated/statusRecoveries.tsx");
 }

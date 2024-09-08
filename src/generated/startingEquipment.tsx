@@ -1,9 +1,9 @@
 //Auto-generated file (do not modify)
-import {TSXDirectory} from "../utils/tsxDirectory"
-import { AppendixLink } from "../components/InternalLink"
-import Sub from "../components/Sub"
-import Tooltip from "../components/Tooltip"
-import { Inventory } from "../concepts/combatClass"
+import {TSXDirectory} from "../utils/tsxDirectory";
+import { AppendixLink } from "../components/InternalLink";
+import Sub from "../components/Sub";
+import Tooltip from "../components/Tooltip";
+import { Inventory } from "../concepts/combatClass";
 
 export const assassin = {
   loose: [<>A set of <Tooltip tip={"Leather Armor"}>Composed of boiled leather. Worn by knaves.</Tooltip>.</>, <>Any two <Tooltip tip={"Nimble"}>Dexterity can be used to provide the weapon’s damage, instead of strength.</Tooltip> weapons</>, <>A <Tooltip tip={"Buckler"}>A small shield. Allows shield bash.</Tooltip></>],

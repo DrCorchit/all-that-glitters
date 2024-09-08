@@ -1,7 +1,7 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import Tooltip from "../components/Tooltip"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import Sub from "../components/Sub";
 
 export const attack = <div className="default">You attack with your main-hand weapon. Your dodge change is reduced accordingly.</div>
 

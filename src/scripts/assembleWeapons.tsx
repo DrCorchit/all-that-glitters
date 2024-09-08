@@ -8,6 +8,6 @@ export function assembleWeapons() {
 		keyword => keyword.name,
 		keyword => keyword.description
 	)
-		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.withImport(`import Tooltip from "../components/Tooltip";`)
 		.save("src/generated/weaponKeywordDescriptions.tsx");
 }

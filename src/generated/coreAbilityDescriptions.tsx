@@ -1,9 +1,9 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import { AppendixLink } from "../components/InternalLink"
-import Sub from "../components/Sub"
-import Tooltip from "../components/Tooltip"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import { AppendixLink } from "../components/InternalLink";
+import Sub from "../components/Sub";
+import Tooltip from "../components/Tooltip";
 
 export const assassin = <div className="default">You may expend 2 willpower to mark a target for assassination. The next time you score a critical hit on that target, deal an additional 2d6 damage.</div>
 

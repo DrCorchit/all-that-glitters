@@ -1,7 +1,7 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import Sub from "../components/Sub"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import Sub from "../components/Sub";
 
 export const human = <div className="default">Human characters begin with +1 to two attributes, and -1 to an attribute. They also begin with proficiency in a skill of their choice.</div>
 

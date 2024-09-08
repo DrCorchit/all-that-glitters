@@ -1,9 +1,9 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
-import { ChapterLink, AppendixLink } from "../components/InternalLink"
-import Sub from "../components/Sub"
-import Tooltip from "../components/Tooltip"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
+import { ChapterLink, AppendixLink } from "../components/InternalLink";
+import Sub from "../components/Sub";
+import Tooltip from "../components/Tooltip";
 
 export const brew_innoculative = <div className="default">Though 'tis an unsavory and turgid medicine, it nevertheless prevents the effects of poisoning or disease from taking hold on the body. One ounce of this provides protection for eight hours. The reaction yields four ounces of mixture.</div>
 

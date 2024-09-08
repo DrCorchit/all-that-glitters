@@ -53,9 +53,9 @@ export function assembleClasses() {
 		clazz => clazz.name,
 		clazz => clazz.coreAbilityDescription
 	)
-		.withImport(`import { AppendixLink } from "../components/InternalLink"`)
-		.withImport(`import Sub from "../components/Sub"`)
-		.withImport(`import Tooltip from "../components/Tooltip"`)
+		.withImport(`import { AppendixLink } from "../components/InternalLink";`)
+		.withImport(`import Sub from "../components/Sub";`)
+		.withImport(`import Tooltip from "../components/Tooltip";`)
 		.save("src/generated/coreAbilityDescriptions.tsx");
 
 	createTypedDirectory(
@@ -111,9 +111,9 @@ export function assembleClasses() {
 		},
 		"Inventory"
 	)
-		.withImport(`import { AppendixLink } from "../components/InternalLink"`)
-		.withImport(`import Sub from "../components/Sub"`)
-		.withImport(`import Tooltip from "../components/Tooltip"`)
-		.withImport(`import { Inventory } from "../concepts/combatClass"`)
+		.withImport(`import { AppendixLink } from "../components/InternalLink";`)
+		.withImport(`import Sub from "../components/Sub";`)
+		.withImport(`import Tooltip from "../components/Tooltip";`)
+		.withImport(`import { Inventory } from "../concepts/combatClass";`)
 		.save("src/generated/startingEquipment.tsx");
 }

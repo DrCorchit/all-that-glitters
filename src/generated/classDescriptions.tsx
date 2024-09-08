@@ -1,6 +1,6 @@
 //Auto-generated file (do not modify)
-import React from 'react'
-import {TSXDirectory} from "../utils/tsxDirectory"
+import React from "react";
+import {TSXDirectory} from "../utils/tsxDirectory";
 
 export const assassin = <div className="default">An assassin’s art is a quick and sure death, delivered without remorse or hesitation. Typically employed by a political state or criminal syndicate, assassins quickly learn to make use of any weapon available, including the weapons of their own targets. This makes them extremely versatile adventurers, able to adapt to nearly any combat situation as the need arises.</div>
 
