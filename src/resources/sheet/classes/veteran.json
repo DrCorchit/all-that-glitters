@@ -7,10 +7,11 @@
 		"In which battles or wars did you fight, if any?",
 		"What made you leave your previous life and start adventuring?"
 	],
-	"coreAbilityName": "Battlefield Triage",
-	"coreAbilityDescription": "When you help an ally, they gain 1d4 willpower.",
+	"coreAbilityName": "Brothers in Arms",
+	"coreAbilityDescription": "When in combat, you gain advantage on skill checks (including attack rolls) made while adjacent to an ally.",
 	"levelingBonuses": {
 		"1": "gain proficiency in {{skills.defense}} and {{skills.medicine}}",
+		"2": "whenever you help an ally, they gain 1d4 willpower and advantage on their next attack roll.",
 		"5": "increase your proficiency in {{skills.martial_arts}} and either {{skills.defense}} or {{skills.medicine}} to expertise.",
 		"10": "increase your proficiency in {{skills.martial_arts}} and either {{skills.defense}} or {{skills.medicine}} to mastery.",
 		"15": "gain the {{feats.arcane_master}} feat",

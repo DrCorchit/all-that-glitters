@@ -5,7 +5,7 @@ import {spellRarities, SpellJson, spellStudies} from "../concepts/magic";
 import {createDirectory} from "../utils/tsxDirectory";
 
 const studyRegex = /^\s*(?<study>\w+)\s*$/;
-const spellsRegex = /^\s*(?<level>\d+)\|(?<name>.*?)\|(?<info>.*?)\|(?<description>.*?)$/;
+const spellsRegex = /^\s*(?<level>\d+)\|(?<name>.*?)\|(?<duration>.+?)?\|(?<info>.*?)\|(?<description>.*?)$/;
 const infoRegex = /(?<rarity>[a-zA-Z]+) (?<type>[a-zA-Z]+) (?<evocation>\d+),?(?<concentration>\d+)?/;
 
 async function parseSpellsFile(): Promise<SpellJson[]> {
@@ -38,11 +38,12 @@ function parseSpell(line: string, study: string): SpellJson {
 	const match = line.match(spellsRegex);
 
 	if (!match || !match.groups) {
-		throw new Error(`Could not parse spell <${match}>`);
+		throw new Error(`Could not parse spell <${match || line}>`);
 	}
 
 	const level = Number(match.groups["level"]);
 	const name = match.groups["name"];
+	const duration = match.groups["duration"] || "";
 	const info = match.groups["info"].match(infoRegex);
 	const description = match.groups["description"];
 
@@ -59,6 +60,7 @@ function parseSpell(line: string, study: string): SpellJson {
 		name: name,
 		description: description,
 		level: level,
+		duration: duration,
 		rarity: rarity,
 		type: type,
 		study: study,
@@ -79,6 +81,7 @@ function initSpell(json: SpellJson): SpellJson {
 	try {
 		return {
 			...json,
+			duration: spellDurationOrDefault(json),
 			trainingReqs: {
 				level: spellMinLevelFormula(json),
 				slots: spellSlotCostFormula(json),
@@ -92,6 +95,14 @@ function initSpell(json: SpellJson): SpellJson {
 		};
 	} catch (e) {
 		throw new Error(`Error while initializing spell: ${json.name}`, {cause: e});
+	}
+}
+
+function spellDurationOrDefault(json: SpellJson) {
+	if (!json.duration) {
+		return json.castingReqs.concentration ? "Concentration" : "Instantaneous";
+	} else {
+		return json.duration;
 	}
 }
 

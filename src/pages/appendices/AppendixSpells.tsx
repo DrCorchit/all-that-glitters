@@ -27,7 +27,7 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 				<b>Effect</b>: {spellDescriptions.lookup(spell.id)}
 			</p>
 			<p>
-				<b>Duration</b>: TODO
+				<b>Duration</b>: {spell.duration}
 			</p>
 			<Collapsible text='Additional Information'>
 				<p>Training Requirements:</p>

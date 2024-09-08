@@ -11,6 +11,7 @@ export interface SpellJson {
 	name: string;
 	description: string;
 	level: number;
+	duration: string;
 	rarity: string;
 	type: string;
 	study: string;
@@ -105,6 +106,7 @@ export class Spell {
 	name: string;
 	description: string;
 	level: number;
+	duration: string;
 	rarity: SpellRarity;
 	type: Type;
 	study: SpellStudy;
@@ -118,6 +120,7 @@ export class Spell {
 		this.name = json.name;
 		this.description = json.description;
 		this.level = json.level;
+		this.duration = json.duration;
 		this.rarity = spellRarities.lookup(json.rarity);
 		this.type = json.type as Type;
 		this.study = spellStudies.lookup(json.study);

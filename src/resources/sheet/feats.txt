@@ -1,36 +1,68 @@
 Mundane
-  1|Stalwart|10|STR 11|Gain +2 HP per level, but no bonus to willpower from character level.
+  1|Robust|10|STR 11|Gain +1 HP per level.
   1|Deft|10|DEX 11|Gain a 1d4 bonus to spell saving throws.
   1|Eager|10|SPD 11|Gain +1 willpower after slaying an enemy.
-  2|Prodigy|2|INT 12|Training skill proficiency levels to expertise or mastery costs 1 fewer training slots.
+
+  2|Stalwart|10|STR 12|Gain +2 HP per level, but no bonus to willpower from character level.
+  2|Untouchable|8|DEX 12|Gain +2 DC whenever you take the {{actions.dodge}} action.
+  2|Moving Target|8|SPD 12|Gain +1 DC whenever you take the {{actions.move}} action, and +2 DC whenever you take the {{actions.jog}} action.
+  2|Prodigy|3|INT 12|Training skill proficiency levels to expertise or mastery costs 1 fewer training slots.
   2|Jack of All Trades|4|NST 12|Remediation and proficiency skill training require one fewer training slot, but other training is increased by 1.
   2|Specialist|3|CHA 12|Choose an attribute. All skill trainings associated with that attribute cost one less training slot. This feat cannot be taken multiple times, and is mutually exclusive with "Jack of all Trades" and "Prodigy".
-  3|Hot Tempered|8|NST 13|When you take 5 or more damage in a single blow, gain 1 willpower.
-  3|Warthog|10|STR 13|When you fail a saving throw by 1, you can expend 1 willpower to succeed it instead.
-  4|Early Riser|4|CHA 14|You have advantage on your first skill check of the day.
-  4|Night Owl|6|NST 14|You have advantage on skill checks between midnight and sunrise.
-  5|Flagellant|4|STR 15,adrenaline_rush|When you take 10 or more damage in a single blow, gain 1 willpower.
-  7|Take Backsies|7|DEX 17|Once a day, you can expend willpower to reroll a skill check you have failed. The amount of willpower required is equal to the amount by which you failed the roll.
+
+  3|Hot Tempered|8|STR 13|When you take 5 or more damage in a single blow, gain 1 willpower.
+  3|Forbearance|10|DEX 13|When you fail a saving throw by 2 or less, you can expend 1 willpower to succeed it instead.
+  3|Fleetfooted|12|SPD 13|You can expend three willpower to gain an additional action, once per turn.
+  3|Double Checker|6|INT 13|You can expend 1 willpower to reroll {{skills.perception}} checks, once per check.
+  3|Night Owl|6|NST 13|You have advantage on skill checks between midnight and sunrise.
+  3|Early Riser|4|CHA 13|You have advantage on your first skill check of the day.
+
+  4|Urbane|6|INT 14|You have advantage on {{skill.persuasion}} and {{skills.performance}} checks with members of polite society.
+  4|Eccentric|4|NST 14|You gain 1d4 willpower whenever you critically fail.
+  4|Chic|4|CHA 14|This feat does nothing, but everyone agrees it makes you look extremely fashionable.
+
+  5|Rage Reflexes|4|STR 15,hot_tempered|When you take 10 or more damage in a single blow, gain 1 willpower.
+  5|Take Backsies|7|DEX 17|Once a day, you can expend willpower to reroll a skill check you have failed. The amount of willpower required is equal to the amount by which you failed the roll.
+  5|Double Time|SPD 15|
+
+  6|Stone Pate|15|STR 16|Enemies can't crit against you unless they had advantage on the attack roll.
+  6|Artful Dodger|8|DEX 16|Gain 1 willpower whenever you take the {{actions.dodge}} action.
+  6|Evasion Action|15||You can use your {{attr.SPD}} attribute as the base for your DC, instead of {{attr.DEX}} whenever you take the {{actions.move}} or {{actions.jog}} action.
 
 Arcane
   1|Arcane Apprentice|3|INT 10|You can learn common spells from a chosen school of magic. You can take this feat multiple times, once for each school of magic, but the training slot cost increases by 3 each time.
+
   2|Fast Learner|6|INT 12|Whenever you learn a new spell, you can attempt a {{skills.sorcery}} check to reduce the training slot cost by 1. The difficulty of the check is 12 plus the spell's level.
   2|Sixth Sense|10|NST 12|When sneaking, you have advantage on {{skills.perception}} checks to see if you have been detected.
-  2|Mana Regeneration|10|CHA 12|When you begin a combat turn with no willpower, gain one willpower.
-  3|Steady Hands|4|DEX 13|You can expend 1 willpower to reroll a concentration saving throw (unless triggered by {{damage.lightning}} damage).
+  2|Mana Regeneration|10|CHA 12|When you begin a combat turn with no willpower, gain 1 willpower.
+
+  3|Steady Hands|4|STR 13|You can expend 1 willpower to reroll a concentration saving throw (unless triggered by {{damage.lightning}} damage).
   3|War Mage|4|STR 13|You can cast offensive spells with a range of touch as an opportunity attack.
+  3|Multitasker|6|DEX 13|You can cast evocation spells while concentrating on another spell.
   3|March|2|SPD 13|When you cast a spell, gain 6 feet of movement speed.
-  4|Arcane Adept|4|INT 14|You can learn academic spells from a chosen school of magic.
+
+  4|Arcane Adept|4|arcane_apprentice|You can learn academic spells from a chosen school of magic.
+  4|Savant|6|INT 14|Your HP is reduced by half, but you gain twice as much willpower from character level.  
   4|Well Rounded|8|NST 14|Your instinct and charisma modifier scores are added together when calculating willpower.
   4|Impetuous|6|CHA 14|Your willpower is increased by 3.
-  4|Savant|6|INT 14|Your HP is reduced by half, but you gain twice as much willpower from character level.  
-  5|War Criminal Mage|3|INT 15|You can now learn forbidden spells.
+
+  5|War Criminal Mage|3|arcane_adept|You can now learn forbidden spells.
+  5|Rock Steady|8|STR 15,steady_hands|You always have advantage on concentration saving throws.
+  5|Overclocked|12|DEX 15,multitasker|You can concentrate on two spells at once.
+  5|Shock and Awe|8|SPD 15|The first spell you cast each battle costs half as much willpower.
   5|Erudite|4|INT 15|Ingratiated with collegiate fellows, academic spells cost 1 less training slot.
+  5|Silent Spell|6|NST 15|Spells you cast are totally quiet to others.
   5|Barrage|8|CHA 15|Whenever you cast two or more spells in one turn, gain 1 willpower.
-  5|Sneakspell|6|NST 13|Spells you cast are totally quiet to others.
-  6|Arcane Master|6|INT 16|You can learn esoteric spells (except from the school of Shamanism).
-  6|First Strike|10|SPD 16|As long as you're not surprised, you can attempt a difficulty 15 {{skills.initiative}} check. If successful, you can cast a spell before initiative is rolled.
-  7|Master of Ceremonies|10|INT 18|Ceremonies cost half as much willpower to cast.
+
+  6|Occultist|6|arcane_adept|You can learn esoteric spells from any school(except Shamanism).
+  6|First Strike|10|SPD 16|As long as you're not surprised, you can attempt a DT 20 {{skills.initiative}} check to cast a spell before initiative is rolled.
+  6|Master of Ceremonies|10|INT 17|Ceremonies cost half as much willpower to cast.
+
+  6|Primal Hunter|3|NST 16|Your prey has disadvantage on saving throws against your Shamanic spells.
+  6|Mana Synthesis|10|CHA 16|When your begin a combat turn with less than 2 willpower, gain up to 2 willpower.
+
+  9|Arcane Master|12|arcane_adept|Increase maximum willpower by one for every esoteric or forbidden spell you've learned.
+  9|Mana Dynamo|12|CHA 19|When you begin a combat turn with less than 3 willpower, gain up to 3 willpower.
 
 Common
   1|Parry|3|DEX 11|You may attempt to parry melee attacks using a reaction. When parrying, your BC is increased by the parry stat of the weapon.
@@ -40,30 +72,36 @@ Common
   1|Pensive|1|INT 11|+1 to saving throws, but -1 to skill checks. +1 {{skills.defense}}
   1|Sensitive|1|NST 11|+1 to skill checks, but -1 to saving throws. +1 {{skills.perception}}
   1|Jolly|3|CHA 11|Gain +1 on all skill checks as long as your willpower is full.
+
   2|Billy Goat|6|STR 12|You gain a 1d4 bonus when making {{skills.mobility}} saving throws.
   2|Deep Breath|3|STR 12|You can hold your breath twice as long as normal.
+  2|Flailing Strike|5|STR 12|Attacks you make with a flail ignore extra BC provided by shields.
   2|Pratfaller|3|DEX 12|Fall damage is reduced by 2d6.
   2|Vertical Escape|2|DEX 12|You may use the grappling hook to make a hasty escape as a combat action. If surroundings are appropriate, you can attempt a difficulty 12 {{skills.mobility}} check to throw the hook up to 30 feet vertically. If it latches, you can use an action to climb 10 feet up the rope, away from enemy melee attacks.
-  2|Dodge Roll|3|DEX 12,SPD 12|When you take the dodge action, you gain 6 feet of movement speed.
+  2|Dodge Roll|3|DEX 12,SPD 12|When you take the dodge action, you gain 6 feet of movement.
   2|Freestyler|2|SPD 12|Swim speed is increased by 6 feet per turn.
   2|Blitzkrieg|6|SPD 12|You can make {{skills.martial_arts}} checks using your speed modifier (instead of strength or dexterity)
   2|Triage|2|INT 12|When you take the help action, allies heal twice as much hp.
   2|Charlatan|6|CHA 12|You can use charisma as a base attribute for {{skills.sorcery}} checks.
   2|Loremaster|4|NST 12|You can make recognition rolls using the {{skills.folklore}} skill, instead of {{skills.survival}}.
+
   3|Cleaving Strike|4|STR 14|When making a melee attack with a heavy weapon that deals {{damage.slashing}} damage (but not a polearm), you can expend 2 willpower to strike an additional foe if more than one foe is in range.
+  3|Mordhau Strike|3|STR 14|You can use certain swords with the {{keywords.mordhau}} property to deal {{damage.bludgeoning}} damage. The damage dice is changed accordingly.
   3|Shield Bash|3|STR 12|You can make a bludgeoning attack when carrying a {{weapons.buckler}} or {{weapons.shield}} in your offhand.
-  3|Shield Charge|4|STR 13,SPD 13|When you take the jog action while carrying a shield, you can make a 1d8 {{damage.bludgeoning}} damage to an enemy. Dealing damage to any enemy in this way consumes your remaining movement points.
   3|Haft Strike|4|DEX 13|When you make a melee attack with a polearm, you can expend 1 willpower to follow it up with a haft strike. The haft strike deals a flat 1d4 {{damage.bludgeoning}} damage and does not benefit from any attribute modifier or the extended reach of the polearm.
   3|Dual Wielder|10|DEX 13|When you make a melee weapon attack while dual wielding, you can make a secondary attack with your offhand weapon. The second attack does not benefit from any attribute modifier but is otherwise an ordinary weapon attack.
+  3|Riposte|8|DEX 13|The player may expend 2 willpower to follow up a successful parry with a counterattack.
   3|Stop, Drop, and Roll|3|DEX 13|You can expend 2 actions to extinguish all accumulated {{status.burning}}.  
   3|Riposte|7|DEX 13|You may expend 1 willpower to follow up a successful parry with a counterattack.
-  3|Momentum|5|SPD 13|Gain 6 feet of movement speed every time you kill an opponent.
+  3|Momentum|5|SPD 13|Gain 12 feet of movement speed every time you kill an opponent.
   3|Friend in Need|4|SPD 13|You can take the "move" and "help" actions in two actions (instead of three).
+  3|Shield Charge|4|SPD 13|When you take the jog action while carrying a shield, you can make a 1d8 plus your speed modifier in {{damage.bludgeoning}} damage to an enemy. Dealing damage to any enemy in this way consumes your remaining movement points.
   3|Spellsword|10|INT 13|When you make a weapon attack on an enemy, it has disadvantage on spell saving throws against your spells until the start of its next turn. When you make a spell attack on an enemy, you have advantage on weapon attacks against it until the start of your next turn.
   3|Bookworm|6|INT 13|You can make recognition rolls using the {{skills.literacy}} skill, instead of {{skills.survival}}
   3|Dungeoneer|4|NST 13|Gain a 1d4 bonus to {{skills.perception}} when exploring dungeons, and to {{skills.legerdemain}} when disarming traps.  
   3|Prankster|4|CHA 13|You have advantage on rolls to convince your marks that your shenanigans (pickpocketing, lockpicking, deceptions, etc) are harmless pranks.
-  3|Exceptional|12|CHA 13|Gain +1 willpower whenever you deal a critical hit.  
+  3|Exceptional|12|CHA 13|Gain +1 willpower whenever you deal a critical hit.
+
   4|Guardian|10|STR 14|When you take the block action, allies adjacent to you also benefit from the increased BC.
   4|That Dog|10|STR 14|Whenever you take damage that would knock you unconscious, you can expend willpower to remain   conscious (at 1 hp). The willpower required is equal to the excess damage.
   4|Come Hither|3|DEX 14|Using an action, the player may throw the grappling hook at a target within 20 feet. Upon a successful {{skills.accuracy}} check against the target’s {{keywords.mit}}, the target is pulled up to 15 feet towards the player.
@@ -76,6 +114,7 @@ Common
   5|Skull-Crusher|8|STR 15|When making a heavy attack, the damage dice are added together instead of taking the maximum value.
   5|Charge Through|6|STR 15|When performing a shield charge, you can damage an additional enemy.
   5|Wall Jump|4|DEX 15,leapfrog|When you take the jump action next to a wall, your jump distance is doubled.
+  5|Hook Sword Link Strike|8|DEX 15,hook_sword_disarm_strike|When dual wielding hook swords, you can make a 
   5|Adrenaline Rush|10|SPD 15|Gain +1 temporary willpower at the start of battle.
   5|Surge|10|SPD 15|You can expend 4 willpower to gain an action, once per turn.
   6|Walking Mountain|10|STR 16|Your armor BC is added to your maximum willpower.
@@ -85,21 +124,61 @@ Common
   9|Steel Avalanche|6|STR 19|You can expend 2 willpower to add your armor BC to a two-handed melee weapon attack.
   9|Dog Gone|10|STR 20,double_dog|The willpower required to stay conscious (via the {{feats.that_dog}} feat) is reduced by one quarter instead of one half (but cannot be reduced below 1).
 
+Assassin
+
 Barbarian
-2|Bloodthirsty|3|STR 12|When you get a kill during a rage, you can expend 1 willpower to increase your rage level by 1.
+2|Bloodthirsty|3|STR 12|When you get a kill during a rage, your rage level increases by 1.
 3|Perseverance|4|STR 13|Your rage sustains you in your darkest hour. Once per turn, when you take damage while below half hp, your rage level increases by 1.
 5|Anger Management|4|CHA 15|The cost to rage is decreased from 3 to 2.
-6|Thunderin' Tarnation|8|NST 16|magic is stupid, but you can make it go away by yelling at it. Enemies which fail their saving throw against your roar may not cast spells on their next turn, and lose concentration on any spells they have already cast.
+6|Thunderin' Tarnation|8|NST 16|Magic is stupid, but you can make it go away by yelling at it. Enemies which fail their saving throw against your roar may not cast spells on their next turn, and lose concentration on any spells they have already cast.
 
 Crusader
+3|Sword of Truth|8|CHA 13|Gain advantage on {{skills.persuasion}} checks whenever you brandish your weapon.
+4|Shield of Faith|4|STR 14|Your shield's BC is added when making saving throws against spells, as long as you are blocking.
 5|Armor of God|12|NST 15|Add half your armor BC when making saving throws against spells.
 
+Druid
+
+Hermit
+
+Inquisitor
+
 Knight
-2|Immortal|4|STR 12|Your armor BC is added to your 
-4|Praetorian|4|STR 14|You no longer have disadvantage to {{skills.mobility}} checks while wearing armor.
-5|Samurai|4|STR 15|The penalty to maximum DC when wearing heavy armor is reduced by 2.
-6|Templar|6|STR 16|Ignore disadvantage on stealth checks while wearing full plate.
+2|Immortal|6|STR 12|The penalty to maximum DC when wearing heavy armor is reduced by 2.
+4|Praetorian|4|SPD 14|You can use the "Riposte" skill for only one willpower.
+4|Samurai|6|DEX 14|You no longer have disadvantage to {{skills.mobility}} checks while wearing armor.
+5|Templar|7|DEX 14|Ignore disadvantage on stealth checks while wearing full plate.
+
+Marksman
+
+Mercenary
+
+Minstrel
+
+Monk
+
+Plague Doctor
+
+Prophet
+
+Psychic
+
+Ranger
+
+Scholar
 
 Thief
-2|Crazy Eights|4|CHA 12|Whenever you roll an 8 on a d20, something unexpected happens. It is what it is.
-4|Lucky Sevens|12|CHA 14|When you roll a seven on a d20, it counts as a critical.
+2|Recidivism|5|CHA 12|You have advantage on skill checks for actions that are against the law.
+3|Crazy Eights|5|CHA 13|Whenever you roll an 8 on a d20, something unexpected happens. It is what it is.
+4|Mastermind|8|INT 14|You have advantage on {{skills.persuasion}} rolls to convince unscrupulous folk to carry out your plans, and can always find specialists of the appropriate skill for the job.
+5|Lucky Sevens|12|NST 15|When you roll a seven on a d20, it counts as a natural 20.
+
+Veteran
+2|Desperado|3|DEX 12|You have advantage on skill checks and saving throws whenever an ally is downed or unconscious.
+3|Battlefield Triage|3|INT 13|When you help an ally, they are healed for twice as much as usual.
+4|Hold the Line|6|NST 14|Whenever you succeed a spell saving throw, adjacent allies succeed too.
+5|Teamwork|10|CHA 15|When you make a heavy attack while adjacent to an ally, you can expend 2 willpower to add your {{attr.CHA}} modifier to the damage.
+
+Witch
+
+Wizard
