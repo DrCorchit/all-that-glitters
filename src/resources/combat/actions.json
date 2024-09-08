@@ -1,1 +1,62 @@
-[{}]
+[
+	{
+		"name": "Attack",
+		"cost": "1 Action",
+		"description": "You attack with your main-hand weapon. Your dodge change is reduced accordingly."
+	},
+	{
+		"name": "Spell",
+		"cost": "1 Action",
+		"description": "You cast a spell."
+	},
+	{
+		"name": "Grapple",
+		"cost": "2 Action",
+		"description": "You attempt to wrestle an enemy, rendering them incapable of taking actions or reactions."
+	},
+	{
+		"name": "Help",
+		"cost": "2 Actions",
+		"description": "You move up to 6 feet and attempt to rouse an unconscious person, or assist an ally with an assailant or condition. By passing a difficulty 10 {{skills.medicine}} check, the one you help gains 1d6 hp."
+	},
+	{
+		"name": "Block",
+		"cost": "1 Action",
+		"description": "You use your shield to block incoming attacks, increasing your BC until the start of your next turn."
+	},
+	{
+		"name": "Parry",
+		"cost": "1 Reaction",
+		"description": "You attempt to use your melee weapon to deflect an incoming melee attack."
+	},
+	{
+		"name": "Opportunity Attack",
+		"cost": "1 Reaction",
+		"description": "You attack an enemy that is moving out of engagement range."
+	},
+	{
+		"name": "Rest",
+		"cost": "2 Actions",
+		"description": "You take a moment to gather you wits and redouble your resolve. Gain 1 willpower."
+	},
+	{
+		"name": "Dodge",
+		"cost": "1 Action",
+		"description": "You move with deliberate caution, to evade incoming attacks. You no longer provoke opportunity attacks, and your DC is increased by 2."
+	},
+	{
+		"name": "Move",
+		"cost": "1 Action",
+		"description": "You can move a number of feet equal to thrice your speed attribute score."
+	},
+	{
+		"name": "Jog",
+		"cost": "1 Action and 1 willpower",
+		"description": "You can move a number of feet equal to six times your speed attribute score."
+	},
+	{
+		"name": "Leap",
+		"cost": "1 Action",
+		"description": "You leap across the battlefield, clearing a height of one third your speed score and a distance one half your speed score, in feet. If this action is taken after a move action, the horizontal distance is doubled."
+	}
+]

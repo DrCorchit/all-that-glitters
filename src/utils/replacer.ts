@@ -1,5 +1,6 @@
 import {appendices} from "../components/AppendixInfo";
 import {chapters} from "../components/ChapterInfo";
+import {actions} from "../concepts/actions";
 import {alignments} from "../concepts/alignment";
 import {armor} from "../concepts/armor";
 import {attributes} from "../concepts/attribute";
@@ -23,6 +24,7 @@ const replacers: Replacer[] = [
 	chapters,
 	appendices,
 	keywords,
+	actions,
 	alignments,
 	armor,
 	attributes,

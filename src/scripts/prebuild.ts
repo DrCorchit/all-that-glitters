@@ -6,6 +6,7 @@ import {assembleFeats} from "./assembleFeats";
 import {assembleArmor} from "./assembleArmor";
 import {assembleWeapons} from "./assembleWeapons";
 import {assembleStatuses} from "./assembleStatuses";
+import {assembleActions} from "./assembleActions";
 
 export function prebuild(): Plugin {
 	return {
@@ -18,6 +19,7 @@ export function prebuild(): Plugin {
 
 			//Assemble TSX files
 			assembleArmor();
+			assembleActions();
 			assembleWeapons();
 			assembleStatuses();
 			assembleRaces();

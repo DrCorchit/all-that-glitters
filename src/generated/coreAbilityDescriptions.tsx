@@ -39,7 +39,7 @@ export const scholar = <div className="default">You start out with the <Appendix
 
 export const thief = <div className="default">Owing to your lifestyle, you have a variety of talents in diverse areas:<ul><li><b>Slim Pickings</b>: You can always conceal one small weapon on your person. This weapon can only be found if you are physically searched and the person conducting the search passes a DT 15 <Sub skill="Perception" /> check.</li><li><b>Hard Knocks</b>: Your small weapons never suffer from the <Tooltip tip={"Improvised"}>The item is not designed as a weapon. The damage die is rolled with disadvantage.</Tooltip> penalty. Small weapons with the <Tooltip tip={"Sharp"}>The critical threshold for the weapon is reduced by 1. This ability is lost after critical failing an attack roll, but can be regained by using a whetstone.</Tooltip> property lower the weapon CT by 2, instead of 1.</li><li><b>Thieves' Cant</b>: You know a special form of communication that allows you to communicate secret messages, up to 6 words per minute. The language is widely known among thieves and beggars.</li></ul></div>
 
-export const veteran = <div className="default">When you help an ally, they gain 1d4 willpower.</div>
+export const veteran = <div className="default">When in combat, you gain advantage on skill checks (including attack rolls) made while adjacent to an ally.</div>
 
 export const witch = <div className="default">When you do not have enough willpower to cast a spell, you may sacrifice hitpoints to make up the difference. The number of hitpoints you must sacrifice to gain one willpower starts at 1 and increase by 1 each time this ability is used, until it resets during a long rest.</div>
 

@@ -142,6 +142,7 @@ export const thief = {
 
 export const veteran = {
   1: <div className='default'>gain proficiency in <Sub skill="Defense" /> and <Sub skill="Medicine" /></div>,
+  2: <div className='default'>whenever you help an ally, they gain 1d4 willpower and advantage on their next attack roll.</div>,
   5: <div className='default'>increase your proficiency in <Sub skill="Martial Arts" /> and either <Sub skill="Defense" /> or <Sub skill="Medicine" /> to expertise.</div>,
   10: <div className='default'>increase your proficiency in <Sub skill="Martial Arts" /> and either <Sub skill="Defense" /> or <Sub skill="Medicine" /> to mastery.</div>,
   15: <div className='default'>gain the <AppendixLink appendix={2} target="arcane_master">Arcane Master</AppendixLink> feat</div>,

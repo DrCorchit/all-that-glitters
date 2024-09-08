@@ -2,9 +2,11 @@ import fs, {createReadStream} from "fs";
 import rd from "readline";
 import {once} from "node:events";
 import {classFeat, Feat, featLevelReqFormula, FeatType, featTypes} from "../concepts/feat";
-import {createDirectory} from "../utils/tsxDirectory";
+import {createDirectory, createTypedDirectory} from "../utils/tsxDirectory";
+import {ArrayBuilder, ObjectBuilder} from "../utils/tsxBuilder";
+import {templatizeToTsx} from "../utils/templatizer";
 
-const typeRegex = /^\s*(?<study>\w+)\s*$/;
+const typeRegex = /^\s*(?<study>[a-zA-Z ]+)\s*$/;
 const featsRegex = /^\s*(?<level>\d+)\|(?<name>.*?)\|(?<slots>\d+)\|(?<reqs>[^|]*)\|(?<description>[^|]*)$/;
 
 const attrReqRegex = /^(?<attr>\w+) (?<level>\d+)/;
@@ -26,6 +28,7 @@ async function parseFeatsFile(): Promise<Feat[]> {
 				case "arcane":
 				case "common":
 				case "mundane":
+				case "maneuver":
 					featType = featTypes.lookup(temp[0]);
 					clazz = undefined;
 					break;
@@ -54,7 +57,7 @@ function parseFeat(line: string, featType: FeatType, clazz?: string): Feat {
 	const match = line.match(featsRegex);
 
 	if (!match || !match.groups) {
-		throw new Error(`Could not parse feat <${match}>`);
+		throw new Error(`Could not parse feat <${line}>`);
 	}
 
 	const level = Number(match.groups["level"]);
@@ -75,8 +78,8 @@ function parseFeat(line: string, featType: FeatType, clazz?: string): Feat {
 		trainingReqs: {
 			level: featLevelReqFormula(level),
 			slots: slots,
+			other: [],
 			stats: {},
-			feats: [],
 			clazz: clazz,
 		},
 	};
@@ -115,7 +118,7 @@ function parseReq(feat: Feat, req: string) {
 				throw new Error("Unknown attribute: " + attr);
 		}
 	} else {
-		feat.trainingReqs.feats.push(req);
+		feat.trainingReqs.other.push(req);
 	}
 }
 
@@ -142,4 +145,19 @@ export async function assembleFeats() {
 		.withImport(`import Sub from "../components/Sub";`)
 		.withImport(`import Tooltip from "../components/Tooltip"`)
 		.save("src/generated/featDescriptions.tsx");
+
+	createTypedDirectory(
+		"featReqs",
+		feats,
+		feat => feat.name,
+		feat => {
+			const reqs = new ArrayBuilder().withValues(feat.trainingReqs.other.map(req => templatizeToTsx(req)));
+			return new ObjectBuilder().withValue("reqs", reqs.build());
+		},
+		"{reqs: React.JSX.Element[]}"
+	)
+		//.withImport(`import Sub from "../components/Sub";`)
+		//.withImport(`import Tooltip from "../components/Tooltip"`)
+		.withImport(`import { AppendixLink } from "../components/InternalLink";`)
+		.save("src/generated/featReqs.tsx");
 }

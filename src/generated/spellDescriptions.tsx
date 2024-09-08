@@ -5,7 +5,7 @@ import { ChapterLink, AppendixLink } from "../components/InternalLink"
 import Sub from "../components/Sub"
 import Tooltip from "../components/Tooltip"
 
-export const brew_innoculative_philter = <div className="default">Though 'tis an unsavory and turgid medicine, it nevertheless prevents the effects of poisoning or disease from taking hold on the body. One ounce of this provides protection for eight hours. The reaction yields four ounces of mixture.</div>
+export const brew_innoculative = <div className="default">Though 'tis an unsavory and turgid medicine, it nevertheless prevents the effects of poisoning or disease from taking hold on the body. One ounce of this provides protection for eight hours. The reaction yields four ounces of mixture.</div>
 
 export const brew_stimulant = <div className="default">A drink of this tangy and effervescent mixture brings pep and vigor to one's body, regaining lost willpower. While in effect, one gains</div>
 
@@ -59,7 +59,7 @@ export const brew_liquid_light = <div className="default">A viscous, glowing sol
 
 export const brew_gorgonic_toxin = <div className="default">Following the correct procedure, a skilled alchemist may produce 1 drop of a foul grayish paste. Failing a DT 16 willpower saving throw, whoso drinks a drink tainted with a drop of this poison shall be turned to stone in a few seconds time. The drop may also be used to coat a weapon or arrow which, striking true, shall deliver the selfsame fate to an unlucky foe.</div>
 
-export const lodestone = <div className="default">A trail of ghostly lights appear, guiding you to a location you have visited before no further than ten miles away. The lights last for one hour, and can be seen by allies and enemies. The lights appear as you approach them and disappear as you leave them behind.</div>
+export const lodestone = <div className="default">A trail of ghostly lights appear, guiding you to a location you have visited before no further than ten miles away. The lights can be seen by allies and enemies, and appear as you approach them and disappear as you leave them behind.</div>
 
 export const sunbeam = <div className="default">Deal 1d8 <span style={{color: "#FFA"}}>Holy</span> damage to an enemy. If cast upon an ally (but not undead or an automaton) heal it by that amount instead.</div>
 
@@ -79,15 +79,15 @@ export const soul_equinox = <div className="default">A mote of light damages an 
 
 export const justice = <div className="default">Deal <span style={{color: "#FFA"}}>Holy</span> damage to an enemy equal to the last amount of damage it dealt, or heal a target by the last damage it took.</div>
 
-export const solar_laser = <div className="default">A beam of light brighter than the sun issues forth from your hands and burns all in its path. All creatures caught in the path of the light must pass a DT 15 <Sub skill="Mobility" /> check or take 2d20 <span style={{color: "#FFA"}}>Holy</span> damage and become <Tooltip tip={"Blinded"}>The target cannot see, has disadvantage on attack rolls, and automatically fails any ability checks and saving throws based on sight.</Tooltip> for 1d4 turns. Creatures that make their save take half damage and are not blinded.</div>
+export const solar_laser = <div className="default">A beam of light brighter than the sun issues forth from your hands and burns all in its path. All creatures caught in the path of the light must pass a DT 20 <Sub skill="Mobility" /> check or take 2d20 <span style={{color: "#FFA"}}>Holy</span> damage and become <Tooltip tip={"Blinded"}>The target cannot see, has disadvantage on attack rolls, and automatically fails any ability checks and saving throws based on sight.</Tooltip> for 1d4 turns. Creatures that make their save take half damage and are not blinded.</div>
 
 export const ray_of_lunacy = <div className="default">A dark violet ray issues forth from your extended hand, directed towards the forehead of the chosen creature. That creature must succeed a DT 12 <Sub attr="CHA"/> saving throw or be driven to <Tooltip tip={"Madness"}>Temporarily insane, the target's Intelligence and Charisma scores are reduced by half, and their speech comes out as incoherent babbling. The target must also make a DT 18 Instinct saving throw or else immediately attack the nearest creature. Unless otherwise specified, the condition lasts for 1d4 turns.</Tooltip> and become <Tooltip tip={"Blinded"}>The target cannot see, has disadvantage on attack rolls, and automatically fails any ability checks and saving throws based on sight.</Tooltip> for 1d4 turns.</div>
 
 export const moonshadow = <div className="default">A circular shadow appears on the ground, encircled by ghastly violet flames. Entities stepping inside the circle are <Tooltip tip={"Blinded"}>The target cannot see, has disadvantage on attack rolls, and automatically fails any ability checks and saving throws based on sight.</Tooltip> and take 1d6 <span style={{color: "#92F"}}>Profane</span> damage per turn.</div>
 
-export const lesser_invisibility = <div className="default">You or a target you can touch gains <Tooltip tip={"Ephemeral Invisibility"}>A fragile form of invisibility that dispels at anything more than a slight touch. When interacting with objects (such a handling a bow or opening a door), the target must make a DT 16 Dexterity saving throw or lose invisibility. The target also loses invisibility after making a melee attack or being attacked. The target otherwise gains all the benefits of true invisibility.</Tooltip> for 10 minutes.</div>
+export const lesser_invisibility = <div className="default">You or a target you can touch gains <Tooltip tip={"Ephemeral Invisibility"}>A fragile form of invisibility that dispels at anything more than a slight touch. When interacting with objects (such a handling a bow or opening a door), the target must make a DT 16 Dexterity saving throw or lose invisibility. The target also loses invisibility after making a melee attack or being attacked. The target otherwise gains all the benefits of true invisibility.</Tooltip> for 12 minutes.</div>
 
-export const time_stream = <div className="default">Time accelerates for you or a target you touch, allowing the target to take twice as many actions per turn for 2 turns. From the target's perspective, the world appears to be unfolding in slow motion for around 20 seconds.</div>
+export const time_stream = <div className="default">Time accelerates for you or a target you touch, allowing them to take twice as many actions per turn. From the target's perspective, the world appears to be unfolding in slow motion.</div>
 
 export const time_void = <div className="default">An object or entity makes a DT 14 <Sub skill="Defense" /> saving throw. On a failed save, it disappears into a dark void where no time passes for 1d4 turns. When the spell ends, the object returns to the same spot, unchanged, as if no time had passed during that interval.</div>
 
@@ -99,7 +99,7 @@ export const time_rift = <div className="default">The spell creates a sphere wit
 
 export const greater_invisibility = <div className="default">You or a target you touch gains <Tooltip tip={"Invisibility"}>The target cannot be seen or detected via light sources, including magical light sources. The target has advantage when attempting to hide or make melee attacks. Enemies attempting to make melee or ranged attacks against the target have disadvantage.</Tooltip> for 1 hour.</div>
 
-export const dark_mercy = <div className="default">Deal 1d100 <span style={{color: "#92F"}}>Profane</span> damage to a creature whose willpower is exhausted. On a DT 18 <Sub skill="Defense" /> save, the damage is reduced by half.</div>
+export const mercy_kill = <div className="default">Deal 1d100 <span style={{color: "#92F"}}>Profane</span> damage to a creature whose willpower is exhausted. On a DT 18 <Sub skill="Defense" /> save, the damage is reduced by half.</div>
 
 export const mass_invisibility = <div className="default">You and up to six ceremonial participants gain <Tooltip tip={"Invisibility"}>The target cannot be seen or detected via light sources, including magical light sources. The target has advantage when attempting to hide or make melee attacks. Enemies attempting to make melee or ranged attacks against the target have disadvantage.</Tooltip> for 8 hours.</div>
 
@@ -111,7 +111,7 @@ export const microgravity = <div className="default">For one minute, the target'
 
 export const gravity_well = <div className="default">Create a gravity well at a chosen point. Each creature that starts its turn within 50 feet of the sphere must make a DT 12 <Sub skill="Mobility" /> saving throw or be pulled 10 feet closer to the point and lose the ability to move. If the creature begins its turn adjacent to the sphere, the DT of the saving throw increases to 18.</div>
 
-export const arms_of_hadar = <div className="default">A mass of tentacles erupt from a portal to the dark between the stars, lashing out at an enemy. If the enemy fails a DT 13 <Sub skill="Defense" /> saving throw, it takes 1d6 <span style={{color: "#92F"}}>Profane</span> damage and becomes <Tooltip tip={"Restrained"}>The target cannot move and their DC is reduced by half. They also have disadvantage when making melee and ranged attacks.</Tooltip>. The creature may attempt to break free as an action on each of its turns by rerolling its saving throw, taking an additional 1d6 profane damage each time it fails. If it fails to break free after four attempts, it is pulled through the portal and devoured by the eternal ones. The target must be <ChapterLink chapter={2} target="size">Large</ChapterLink> or smaller, and is immediately freed if helped by an ally.</div>
+export const arms_of_hadar = <div className="default">A mass of tentacles erupt from a portal to the dark between the stars, lashing out at an enemy. If the enemy fails a DT 15 <Sub skill="Defense" /> saving throw, it takes 1d6 <span style={{color: "#92F"}}>Profane</span> damage and becomes <Tooltip tip={"Restrained"}>The target cannot move and their DC is reduced by half. They also have disadvantage when making melee and ranged attacks.</Tooltip>. The creature may attempt to break free as an action on each of its turns by rerolling its saving throw, taking an additional 1d6 profane damage each time it fails. If it fails to break free after four attempts, it is pulled through the portal and devoured by the eternal ones. The target must be <ChapterLink chapter={2} target="size">Large</ChapterLink> or smaller, and is immediately freed if helped by an ally.</div>
 
 export const misty_step = <div className="default">Teleport to a location you can see, within 300 feet.</div>
 
@@ -121,15 +121,15 @@ export const hunger_of_hadar = <div className="default">A portal to the dark bet
 
 export const teleportation = <div className="default">Transport yourself or a target you touch to a location you have visited before. If the target is unwilling, they may attempt a DT 8 <Sub skill="Defense" /> saving throw to resist being teleported.</div>
 
-export const meteor_shower = <div className="default">A storm of meteors plummets from the sky, towards random locations near a chosen point. Targets within range take 2d8 bludgeoning and 2d8 <span style={{color: "#D00"}}>Force</span> damage. Each target that passes a DT 12 <Sub skill="Mobility" /> save takes no bludgeoning damage.</div>
+export const meteor_shower = <div className="default">A storm of meteors plummets from the sky, towards random locations near a chosen point. Targets within 60 feet take 2d8 bludgeoning and 2d8 <span style={{color: "#D00"}}>Force</span> damage. Each target that passes a DT 12 <Sub skill="Mobility" /> save takes no bludgeoning damage.</div>
 
 export const black_hole = <div className="default">A dark sphere appears in the chosen location, drawing in nearby creatures and objects for one minute. Each creature that starts its turn within 50 feet of the sphere must make a DT 15 <Sub skill="Mobility" /> saving throw or be pulled 10 feet closer to the sphere and lose the ability to move. Any creature that ends its turn adjacent (including diagonally) to the sphere takes 3d20 <span style={{color: "#D00"}}>Force</span> damage. If the creature begins its turn adjacent to the sphere, the DT of the saving throw increases to 20.</div>
 
-export const mass_teleportation = <div className="default">When the ceremony is completed, up all participants are teleported to a location up to 10 miles away. Each additional participant increases the cost of the spell by 20, but also increases the teleportation range by 5 miles.</div>
+export const mass_teleportation = <div className="default">When the ceremony is completed, all participants (at least 3) are teleported to a location up to 10 miles away. Each additional participant increases the cost of the spell by 10, but also increases the teleportation range by 5 miles.</div>
 
 export const stargate = <div className="default">Two parties working in tandem perform corresponding ceremonies in two different locations. After confirming appropriate astrological alignment, the two groups (typically working via psychic connection) gather around a circle and perform a complex ceremony involving specific incantations. When the ceremony is complete, a permanent astral gate appears in that location, linked to the corresponding gate constructed by the cooperating party. The portal remains open indefinitely, unless another ceremony is convened to banish it.</div>
 
-export const herbal_remedy = <div className="default">Heal yourself and a target you touch for 1d6 damage. You cannot heal yourself with this spell unless you heal a living creature.</div>
+export const herbal_remedy = <div className="default">Heal yourself and a target you touch for 1d6 damage. You cannot target yourself with this spell.</div>
 
 export const shillelagh = <div className="default">Any wooden weapons (such as a club or quarterstaff) wielded by the caster becomes imbued with the power of nature. While active, the caster may add their <Sub skill="Nature" /> proficiency bonus to the weapon's damage. In addition, they may use the nature skill to make attack rolls with the weapon, instead of <Sub skill="Martial Arts" />.</div>
 
@@ -143,7 +143,7 @@ export const tree_speech = <div className="default">Placing their hands on a tre
 
 export const chaos_spores = <div className="default">A cloud of spores coalesces around a point chosen by the caster. Targets within must make a <Sub attr="NST"/> saving throw or suffer one of the following effects: <ol><li><Tooltip tip={"Blinded"}>The target cannot see, has disadvantage on attack rolls, and automatically fails any ability checks and saving throws based on sight.</Tooltip></li><li><Tooltip tip={"Dazed"}>The target cannot take reactions, and has disadvantage on all saving throws.</Tooltip></li><li><Tooltip tip={"Madness"}>Temporarily insane, the target's Intelligence and Charisma scores are reduced by half, and their speech comes out as incoherent babbling. The target must also make a DT 18 Instinct saving throw or else immediately attack the nearest creature. Unless otherwise specified, the condition lasts for 1d4 turns.</Tooltip></li><li><Tooltip tip={"Terrified"}>Terrified beyond rational measure, the target is compelled to take the move away from the source of its fear each turn before taking any other actions.</Tooltip></li></ol></div>
 
-export const poison_spores = <div className="default">A cloud of poisonous spores condenses on the target, implanting them with fungal growth. The spell cannot be mitigated, and inflicts 3 <span style={{color: "#4D0"}}>Poison</span> damage. The damage increases by 3 every time it is cast on the same target. Spore buildup is removed if the target is set aflame.</div>
+export const poison_spores = <div className="default">A cloud of poisonous spores condenses on the target, implanting them with fungal growth. The spell cannot be mitigated, and inflicts 3 <span style={{color: "#4D0"}}>Poison</span> damage. The damage increases by 3 every time it is cast on the same target. Spore buildup is removed if the target is healed or set aflame.</div>
 
 export const thorn_bed = <div className="default">An area designated by the caster becomes thickly overgrown with thorns, becoming difficult terrain. Targets affected take 1d4 piercing damage immediately and an additional 1d4 piercing damage whenever they move through the terrain.</div>
 
@@ -157,7 +157,7 @@ export const snakebite = <div className="default">The appearance of a serpent la
 
 export const cats_eye = <div className="default">The target gains the ability to see in the dark, seeing in pitch blackness as if it were dim light, and in dim light as if it were bright light.</div>
 
-export const fishs_lung = <div className="default">The caster gains the ability to breathe water for 1 hour.</div>
+export const fishs_lung = <div className="default">The caster gains the ability to breathe water.</div>
 
 export const eagles_talons = <div className="default">The caster's hands temporarily grow sharp talons, increasing their unarmed melee damage by 1d6 plus their <Sub skill="Nature" /> proficiency in <span style={{color: "#FFF"}}>Piercing</span> damage. In addition, they gain advantage on grappling checks.</div>
 
@@ -173,21 +173,21 @@ export const owls_wisdom = <div className="default">The caster's <Sub attr="INT"
 
 export const rhinos_hide = <div className="default">If not wearing armor, the caster's skin becomes as tough as a Rhinoceros, increasing their BC by 8 for 5 turns. They also gain resistance to <span style={{color: "#AF0"}}>Acid</span>, <span style={{color: "#FF4"}}>Lightning</span> and <span style={{color: "#F80"}}>Heat</span> damage.</div>
 
-export const circle_of_life = <div className="default">The caster takes 2d6 damage, but the target is healed for thrice that amount. If the caster falls unconscious as a result of casting this spell, the target is healed completely.</div>
+export const circle_of_life = <div className="default">The caster takes 2d6 <span style={{color: "#FFA"}}>Holy</span> damage, but the target is healed for thrice that amount. If the caster falls unconscious as a result of casting this spell, the target is healed completely.</div>
 
 export const fairy_fire = <div className="default">The caster designates an area, causing the ground to glow and sparkle with eerie fairy fire. Enemies entering this area become illuminated and outlined in green, blue, teal, or violet light, even if they are invisible. Melee or ranged attacks against such enemies have advantage, unless the attacker is blinded.</div>
 
-export const beast_speech = <div className="default">The caster gains the ability to converse with animals for one hour.</div>
+export const beast_speech = <div className="default">The caster gains the ability to converse with animals.</div>
 
-export const bubble = <div className="default">A magical bubble appears, able to engulf one <ChapterLink chapter={2} target="size">Medium</ChapterLink> target. On your turn, you can move the bubble up to 3 feet per second. Physical attacks cannot pass through the bubble, but it can be attacked from within by the engulfed creature. The bubble is vulnerable to <span style={{color: "#FFF"}}>Piercing</span> damage and pops after taking 1d20 piercing damage. The bubble lasts for up to 1 minute and has a Mitigation of 5, from its dodge chance.</div>
+export const bubble = <div className="default">A magical bubble appears, able to engulf one <ChapterLink chapter={2} target="size">Medium</ChapterLink> target. On your turn, you can move the bubble up to 18 feet (3 tiles). Physical attacks cannot pass through the bubble, but it can be attacked from within by the engulfed creature. The bubble is vulnerable to <span style={{color: "#FFF"}}>Piercing</span> damage and pops after taking 1d20 piercing damage. The bubble a dodge chance of 5.</div>
 
-export const bonfire = <div className="default">A magical bonfire appears, lasting for up to one hour. Once per turn, the caster can use a reaction to cause it to deal 2d6 fire damage to enemies within 5 feet. The bonfire is otherwise ordinary and can be extinguished by water or suffocation.</div>
+export const bonfire = <div className="default">A magical bonfire appears, lasting for up to one hour. Once per turn, the caster can use a reaction to cause it to deal 2d6 <span style={{color: "#F80"}}>Heat</span> damage to enemies within 5 feet. The bonfire is otherwise ordinary and can be extinguished by water or suffocation.</div>
 
 export const spirit_animal = <div className="default">The first time this spell is cast, the caster enters a trance and meets their spirit animal, a fey spirit wise in the ways of the wild who takes the form of a spectral animal, such as a bear, panther, wolf, or hawk. TODO</div>
 
 export const far_whisper = <div className="default">You gain the ability to whisper to distant creatures as if they were near. You may whisper or speak to a creature up to a mile away, and they will hear your voice as if they were standing beside you.</div>
 
-export const illusory_terrain = <div className="default">The caster beseeches the appropriate fairy council to disguise a large swathe of terrain in an appropriate manner. The fairies must be convinced that it is in their benefit to do so, though (being fey) they rarely say no to a sufficiently clever prank. If the player passes a DT 16 <Sub skill="Persuasion" /> check, the terrain appears transformed for 1d8 days, after which time the fey grow bored and cease the illusion. The illusion can be detected by anyone who draws close and</div>
+export const illusory_terrain = <div className="default">The caster beseeches the appropriate fairy council to disguise a large swathe of terrain in a specific manner. The fairies must be convinced that it is in their benefit to do so, though they (being fey) rarely say no to a sufficiently clever prank. If the player passes a DT 16 <Sub skill="Persuasion" /> check, the terrain appears transformed for a time, until the fey grow bored and cease the illusion. The illusion can be detected by anyone who draws close and passes a DT 14 <Sub skill="Perception" /> check.</div>
 
 export const rain_dance = <div className="default">The caster leads a group in a dance of supplication around a fire, beseeching the fey for rain, snow, or clear skies. The fey, eager to show their power, respond by producing the requested weather.</div>
 
@@ -195,9 +195,9 @@ export const awaken_beastie = <div className="default">A beast is permanently aw
 
 export const oneiromancy = <div className="default">During the ritual, the caster beseeches the fey for a vision concerning an important topic, and then falls into a magical slumber. While asleep, the caster receives a vision. The DM privately rolls a d20, which determines how directly the vision answers the question. On a 1, the vision (fantastical as it may be) bears absolutely no relation to the question at hand, and may even be malicious fey trickery.</div>
 
-export const sweet_dreams = <div className="default">You and all participants call out to the fey, thanking them for their role in maintaining the balance of nature and protecting the life force. You invite them to visit you in your dreams, calling for succor, entertainment, and guidance. All participants roll a 1d4, and gain an effect accordingly: <ol><li>Hellish Nightmares: Tormented by cruel fey, no rest can be had. No Willpower is recovered during the long rest.</li><li>Vivid Visions: Playful and adventurous fey take the dreamer on wondrous adventures seeming to last for many days. Upon awakening, the individual gains 1d4 temporary willpower.</li><li>Quiet Quandaries: The dreamer awakens beside a pool of water, which idly asks the dreamer a question. After it has been answered, it invites the dreamer to ask a question of their own. If the adventurer answered the water's question truthfully, it answers truthfully. Also gain 1d6 temporary WP.</li><li>Allmother's Embrace: The dreamers is escorted by powerful fey to the magical heart of the forest. They are greeted by a gentle yet powerful dryad called the Allmother, who embraces them tenderly. Gain 1d8 temporary HP and willpower.</li></ol></div>
+export const sweet_dreams = <div className="default">You and all participants call out to the fey, thanking them for their role in maintaining the balance of nature and protecting the life force. You invite them to visit you in your dreams, calling for succor, entertainment, and guidance. All participants roll a 1d4, and gain an effect accordingly: <ol><li>Hellish Nightmares: Tormented by cruel fey, no rest can be had. No Willpower is recovered during the long rest.</li><li>Vivid Visions: Playful and adventurous fey take the dreamer on wondrous adventures seeming to last for many days. Upon awakening, the individual gains 1d4 temporary willpower.</li><li>Quiet Quandaries: The dreamer awakens beside a pool of water, which idly asks the dreamer a question. After it has been answered, it invites the dreamer to ask a question of their own. If the adventurer answered the water's question truthfully, it answers truthfully. Also gain 1d6 temporary WP.</li><li>Everwood's Embrace: The dreamer is escorted by powerful fey to the magical heart of the forest. They are greeted by a gentle yet powerful dryad, who embraces them tenderly. Gain 1d8 temporary HP and willpower.</li></ol></div>
 
-export const primal_form = <div className="default">The caster expends 10 willpower to transform into a more primal version of their race for one hour. For example, a human, elf, dwarf, or halfling would become a neanderthal. The caster gains +5 <Sub attr="STR"/>, and +2 <Sub attr="NST"/> but suffers -5 <Sub attr="INT"/> and -2 <Sub attr="CHA"/> for the duration of the spell. You lose one level of proficiency in every skill for the duration of the spell.</div>
+export const primal_form = <div className="default">The caster expends 10 willpower to transform into a more primal version of their race for the duration. For example, a human, elf, dwarf, or halfling would become a neanderthal. The caster gains +5 <Sub attr="STR"/>, and +2 <Sub attr="NST"/> but suffers -5 <Sub attr="INT"/> and -2 <Sub attr="CHA"/>. You lose one level of proficiency in every skill for the duration of the spell.</div>
 
 export const forest_defender = <div className="default">An allied animal (recruited via <AppendixLink appendix={1} target="beast_speech">Beast Speech</AppendixLink> or <AppendixLink appendix={1} target="awaken_beastie">Awaken Beastie</AppendixLink>) grows to twice its normal size. Such a creature gains +10 <Sub attr="STR"/>.</div>
 
@@ -213,35 +213,11 @@ export const mage_hand = <div className="default">The caster expends 1 willpower
 
 export const summon_weapon = <div className="default">Summon a small or standard weapon to hand for one hour. The weapon is partially transparent, ever burning with an eerie violet flame. The weapon deals the same damage as a weapon of steel.</div>
 
-export const locust_swarm = <div className="default">A swarm of biting locusts swarms around a target, dealing 2d6 <span style={{color: "#FFF"}}>Piercing</span> damage. The spell also has a chance to inflict <Tooltip tip={"Poisoned"}>After a set amount of time, the poison takes hold. The exact effect depends on the type of poison.</Tooltip>,</div>
+export const detect_magic = <div className="default">You detect the presence of any ongoing spells. You may also detect TODO</div>
+
+export const locust_swarm = <div className="default">A swarm of biting locusts swarms around a target, dealing 2d6 <span style={{color: "#4D0"}}>Poison</span> damage. TODO poison status effect.</div>
 
 export const imbue_sentience = <div className="default">A minor spirit is bound to an inanimate object weighing less than one ton. TODO</div>
-
-export const soul_dart = <div className="default">The caster imbues some of their life force into a number of spectral darts, up to four. Lose 1 hp and one willpower for each dart summoned. Each dart deals 1d6 piercing damage on a hit, and cannot miss.</div>
-
-export const sentient_weapon = <div className="default">The spirit of a fallen warrior is summoned from the astral to imbue a summoned weapon with sentience for one hour. The spirit possess a weapon summoned with <AppendixLink appendix={1} target="summon_weapon">Summon Weapon</AppendixLink>, and causes it hover in place and attack on its own.</div>
-
-export const exorcism = <div className="default">The caster attempts to purge a demon or unnatural host from a possessed body. The caster rolls for <Sub skill="Sorcery" /> while the possessing spirit rolls for <Sub attr="NST"/>. If the caster rolls higher, the spirit is cast out, unless it is extremely powerful.</div>
-
-export const cloud_of_daggers = <div className="default">Summon dozens of daggers from the astral plane begin to swirl around the designated region. Creatures within take 2d4 slashing and 2d4 piercing damage per turn.</div>
-
-export const demonic_posession = <div className="default">The caster calls forth a lesser demon and commands it to bind the chosen creature. The demon attempts possession, rolling for <Sub attr="CHA"/> against the victim's current willpower. If successful, the target is possessed for one hour, at which point they may make an additional saving throw to escape possession.</div>
-
-export const invade_body = <div className="default">The caster identifies a victim and attempts to permanently enter their body. The caster rolls for <Sub skill="Sorcery" /> against the target's willpower score. If successful, the victim is abruptly torn from their body and cast into the astral plane, while their attacker inhabits their body. If this spell is cast successful while already incarnate, the caster's previous body suffers cardiac arrest and undergoes irreversible damage after 2d6 minutes.</div>
-
-export const reincarnation = <div className="default">Draconic spirits answer the ceremonial call, allowing a living and a deceased soul exchange places. The reincarnated spirit inhabits the new body, while the sacrificial participant departs into the astral plane as a servant of dragons. The dragons accept only willing sacrifices, but otherwise do not question the methods of the ceremony. Once reincarnated, the soul retains both their old memories and those of the body's original inhabitant.</div>
-
-export const resurrection = <div className="default">A deceased soul is returned to its body and made whole again, in a manner holy and pure. If the soul's body was destroyed, a new one in the same likeness is formed. The spirit to be resurrected must be good aligned. Otherwise, the leader must pass a DT 18 <Sub skill="Persuasion" /> check to persuade the angels that it is righteous to make an exception and overturn the course of nature. If the spirit to resurrect is evil, the</div>
-
-export const guidance = <div className="default">The caster touches an ally, giving them a 1d4 bonus to ability checks and saving throws for one round.</div>
-
-export const alarm = <div className="default">A minor spirit is infused into an object, keeping watch. If the spirit observes unexpected or suspicious behavior, it begins to screech as loudly as possible. Each minor spirit has its own manner of screeching, but they are invariably extremely loud and annoying. The spirit can respond to simple instructions once summoned, regarding when to remain silent, screech, or abandon its post. If the spell <AppendixLink appendix={1} target="minor_telepathy">Minor telepathy</AppendixLink> is known, the spirit can be instructed to transmit a silent telepathic alarm instead. If the spell <AppendixLink appendix={1} target="major_telepathy">Major Telepathy</AppendixLink> is known, it can also communicate details about the situation when the alarm is triggered.</div>
-
-export const detect_magic = <div className="default">You detect the presence of any ongoing spells. You may also detect</div>
-
-export const seek_spirit = <div className="default">The caster enters a meditative state and calls out for assistance, either to angels, demons, or dragons. Up to three entities are called forth, identifying themselves by name, but not by rank or alignment. The caster may ask each entity three questions, in order to discern its nature. The questions are limited to hypotheticals. The caster remembers the names of these principalities and powers, whose names he may later call upon in times of need.</div>
-
-export const seance = <div className="default">The caster enters a state of focus, sitting in a quiet and darkened room scented with incense. The caster calls a departed soul by name and asks them to come forward. A spirit responds and may answer questions, but might not answer truthfully or be the one which was called. The caster can attempt a DT 16 <Sub skill="Perception" /> (CHA) check to determine if the spirit has lied at any point so far during the ritual. Detecting a liar banishes the spirit but does not necessarily end the seance.</div>
 
 export const diagnose = <div className="default">Gain insight into the remaining hitpoints and willpower of an enemy monster.</div>
 
@@ -251,9 +227,23 @@ export const augury = <div className="default">TODO</div>
 
 export const astral_projection = <div className="default">The caster enters a meditative state and enters the astral plane, the realm ordinarily accessible only to disincarnate entities. The nature of the astral is elucidated in <AppendixLink appendix={6}>Appendix: Bestiary</AppendixLink>. While in the astral, the caster may explore the lower astral to perceive a distorted version of the physical plane, or venture into the higher astral and converse with various entities in their natural environs, and request their names for summoning purposes.</div>
 
+export const cloud_of_daggers = <div className="default">Summon dozens of daggers from the astral plane begin to swirl around the designated region. Creatures within take 2d4 slashing and 2d4 piercing damage per turn.</div>
+
 export const ancient_name = <div className="default">The ritual establishes an audience with an ancient and mighty spirit: a dragon, an archdemon, or an angel. Each type of spirit must be plied by a valuable thing of a specific kind: the dragon, by gold. The demon, by the blood of innocents. The angel, by sincerity and a pure heart. If the offering is lacking in quality or quantity, the spirit chastises the summoner and explains by what terms, if any, the spirit may be plied. If successful, the spirit joins the player as a summon for eight hours. The spirit fights at the player's side and is true to their word, but acts of their own volition otherwise.</div>
 
-export const futuresight = <div className="default">The player gains the ability to foresee events before they occur. For one hour, the player may see the result of skill checks before the underlying action is undertaken.</div>
+export const guidance = <div className="default">The caster touches an ally, giving them a 1d4 bonus to ability checks and saving throws for the duration.</div>
+
+export const alarm = <div className="default">A minor spirit is infused into an object, keeping watch. If the spirit observes unexpected or suspicious behavior, it begins to screech as loudly as possible. Each minor spirit has its own manner of screeching, but they are invariably extremely loud and annoying. The spirit can respond to simple instructions once summoned, regarding when to remain silent, screech, or abandon its post. If the spell <AppendixLink appendix={1} target="minor_telepathy">Minor Telepathy</AppendixLink> is known, the spirit can be instructed to transmit a silent telepathic alarm instead. If the spell <AppendixLink appendix={1} target="major_telepathy">Major Telepathy</AppendixLink> is known, it can also communicate details about the situation when the alarm is triggered.</div>
+
+export const seek_spirit = <div className="default">The caster enters a meditative state and calls out for assistance, either to angels, demons, or dragons. Up to three entities are called forth, identifying themselves by name, but not by rank or alignment. The caster may ask each entity three questions, in order to discern its nature. The questions are limited to hypotheticals. The caster remembers the names of these principalities and powers, whose names he may later call upon in times of need.</div>
+
+export const sentient_weapon = <div className="default">The spirit of a fearsome angel is summoned from the astral to imbue a summoned weapon with sentience for one hour. The spirit possess a weapon summoned with <AppendixLink appendix={1} target="summon_weapon">Summon Weapon</AppendixLink>, and causes it hover in place and attack on its own.</div>
+
+export const exorcism = <div className="default">The caster attempts to purge a demon or unnatural host from a possessed body. The caster rolls for <Sub skill="Sorcery" /> while the possessing spirit rolls for <Sub attr="NST"/>. If the caster rolls higher, the spirit is cast out, unless it is extremely powerful.</div>
+
+export const futuresight = <div className="default">You gain the ability to foresee events before they occur, up to one hour in the future. You can roll skill checks before the underlying action is undertaken.</div>
+
+export const resurrection = <div className="default">A deceased soul is returned to its body and made whole again, in a manner holy and pure. If the soul's body was destroyed, a new one in the same likeness is formed. The spirit to be resurrected must be good aligned. Otherwise, the leader must pass a DT 18 <Sub skill="Persuasion" /> check to persuade the angels that it is righteous to make an exception and overturn the course of nature. If the spirit to resurrect is evil, the</div>
 
 export const vampiric_touch = <div className="default">A target you touch is putrefied with necrotic energy. The target takes 1d8 <span style={{color: "#92F"}}>Profane</span> damage, while you are healed by the same amount of damage dealt.</div>
 
@@ -261,27 +251,37 @@ export const life_leach = <div className="default">A ray of black energy arcs fr
 
 export const reanimate = <div className="default">A bestial or humanoid creature is returned to an eerie semblance of life.</div>
 
-export const inflict_disease = <div className="default">A target you choose potentially becomes afflicted by one of a number of diseases, with symptoms appearing within one hour if the target  fails a DT 10 <Sub skill="Defense" /> saving throw. The target becomes <Tooltip tip={"Lethargic"}>The target must expend willpower to take the move action. All willpower is exhuasted if traveling more than one mile on foot. The target also has disadvantage on skill checks and saving throws.</Tooltip> for 1d8 days.</div>
+export const seance = <div className="default">The caster enters a state of focus, sitting in a quiet and darkened room scented with incense. The caster calls a departed soul by name and asks them to come forward. A spirit responds and may answer questions, but might not answer truthfully or be the one which was called. The caster can attempt a DT 16 <Sub skill="Perception" /> (CHA) check to determine if the spirit has lied at any point so far during the ritual. Detecting a liar banishes the spirit but does not necessarily end the seance.</div>
 
-export const hex = <div className="default">Cruel magic inflicts a lasting disability upon the target, hampering their use of a chosen skill. The target gains disadvantage on checks with that skill until they are cleansed by a priest or sprinkled with holy water.</div>
+export const soul_dart = <div className="default">The caster imbues some of their life force into a number of spectral darts, up to four. Lose 1 hp and one willpower for each dart summoned. Each dart deals 1d6 piercing damage on a hit, and cannot miss.</div>
 
 export const starvation = <div className="default">The target gains one level of starvation, as if it had gone a day without consuming food.</div>
 
 export const speak_with_the_dead = <div className="default">A dead body is used as conduit to contact a departed soul. The soul is torn across time and space and wrenched back into its former body in order to answer up to three questions. Afterwards, its body crumbles into dust. If the soul is incarnated, its current body falls unconscious while this spell is cast.</div>
 
-export const curse = <div className="default">The target is cursed with a cruel and lasting affliction of one of the following types: TODO</div>
-
-export const disintegrate = <div className="default">A ray of dark black and green energy arcs towards a target. The target takes 3d12 <span style={{color: "#92F"}}>Profane</span> damage if it is living, or disintegrates into a pile of ash if it is inanimate.</div>
+export const disintegrate = <div className="default">A ray of dark black and green energy arcs towards a target. The target takes 3d12 <span style={{color: "#92F"}}>Profane</span> damage if it is living, or disintegrates into a pile of ash if it is inanimate. Targets slain by this spell cannot be raised or resurrected into their original body.</div>
 
 export const vampiric_kiss = <div className="default">Transfer up to 6 willpower to or from a target you can touch. If the target is willing, the spell costs no willpower. If not, you must grapple the target before casting the spell.</div>
-
-export const devour = <div className="default">Inflict 2d6 <span style={{color: "#92F"}}>Profane</span> damage on a target. If the spell lands a killing blow, gain their remaining willpower.</div>
 
 export const rend_soul = <div className="default">Deal 4d12 <span style={{color: "#92F"}}>Profane</span> damage to a target within 100 yards. If a target is slain as a result of this spell, the caster may immediately enter its body.</div>
 
 export const flesh_golem = <div className="default">A repulsive mountain of pulsating organs and exposed muscle is summoned to do its master's bidding.</div>
 
 export const become_lich = <div className="default">The caster prepares a number of vessels, called phylacteries, to anchor the components of their soul to the physical plane. For every phylactery, a sentient mortal life (willing or unwilling) is sacrificed, to provide the necessary magical binding energy. A minimum of three sacrifices is required, to complete the ritual. The sacrificial victims contribute their willpower towards the completion of the ritual. When the ceremony is complete, the caster becomes a lich, a sentient undead with a lifespan of 666 years. Repeating the ritual extends lifespan by an additional 666 years, but requires twice as many sacrifices each time.</div>
+
+export const reincarnation = <div className="default">Draconic spirits answer the ceremonial call, allowing a living and a deceased soul exchange places. The reincarnated spirit inhabits the new body, while the sacrificial participant departs into the astral plane as a servant of dragons. The dragons accept only willing sacrifices, but otherwise do not question the methods of the ceremony. Once reincarnated, the soul retains both their old memories and those of the body's original inhabitant.</div>
+
+export const hex = <div className="default">Cruel magic inflicts a lasting disability upon the target, hampering their use of a chosen skill. The target gains disadvantage on checks with that skill until they are cleansed by a priest or sprinkled with holy water.</div>
+
+export const inflict_disease = <div className="default">A target you choose potentially becomes afflicted by one of a number of diseases, with symptoms appearing within one hour if the target  fails a DT 10 <Sub skill="Defense" /> saving throw. The target becomes <Tooltip tip={"Lethargic"}>The target must expend willpower to take the move action. All willpower is exhuasted if traveling more than one mile on foot. The target also has disadvantage on skill checks and saving throws.</Tooltip> for 1d8 days.</div>
+
+export const curse = <div className="default">The target is cursed with a cruel and lasting affliction of one of the following types: TODO</div>
+
+export const demonic_posession = <div className="default">The caster calls forth a lesser demon and commands it to bind the chosen creature. The demon attempts possession, rolling for <Sub attr="CHA"/> against the victim's current willpower. If successful, the target is possessed for one hour, at which point they may make an additional saving throw to escape possession.</div>
+
+export const invade_body = <div className="default">The caster identifies a victim and attempts to permanently enter their body. The caster rolls for <Sub skill="Sorcery" /> against the target's maximum willpower. If successful, the victim is abruptly torn from their body and cast into the astral plane, while their attacker inhabits their body. If this spell is cast successful while already incarnate, the caster's previous body suffers cardiac arrest and undergoes irreversible damage after 2d6 minutes.</div>
+
+export const devour = <div className="default">Inflict 2d6 <span style={{color: "#92F"}}>Profane</span> damage on a target. If the spell lands a killing blow, gain their remaining willpower.</div>
 
 export const heat_metal = <div className="default">A piece of metal such as a weapon or suit of armor becomes unbearably hot. If the item is worn or carried, the wearer takes 2 <span style={{color: "#F80"}}>Heat</span> damage, which increases by 2 each turn to a maximum of 8 <span style={{color: "#F80"}}>Heat</span> damage per turn.</div>
 
@@ -311,21 +311,21 @@ export const earthquake = <div className="default">The ground around you rumbles
 
 export const iron_golem = <div className="default">Summon a heavy iron golem, heaviest of the golems.</div>
 
-export const petrify = <div className="default">Transform a creature of living flesh into stone. The creature may make a DT 10 <Sub skill="Defense" /> saving throw to resist this effect.</div>
+export const petrify = <div className="default">Transform a creature of living flesh into stone. The creature may make a DT 10 <Sub skill="Sorcery" /> saving throw to resist this effect.</div>
 
 export const mote_o_fire = <div className="default">A mote of fire alights in your hand, hovering gently. The flame can be held for illumination, or thrown at an enemy within 30 feet. If thrown, roll for <Sub skill="Accuracy" /> again your target. On a hit, it takes 2d6 <span style={{color: "#F80"}}>Heat</span> damage.</div>
 
 export const arcane_flames = <div className="default">Flowing flames surge from your outstretched hands, dealing 3d6 <span style={{color: "#F80"}}>Heat</span> damage to all creatures caught in the blaze.</div>
 
-export const flame_armor = <div className="default">Wreath your body in flame. The spell does not increase your Block Chance, but causes enemies that start or end their turn next to you to take 1d12 <span style={{color: "#F80"}}>Heat</span> damage.</div>
+export const flame_armor = <div className="default">Wreath your body in flame, gaining immunity to <span style={{color: "#F80"}}>Heat</span> damage. The spell does not increase your Block Chance, but causes enemies that start or end their turn next to you to take 1d12 <span style={{color: "#F80"}}>Heat</span> damage.</div>
 
-export const flaming_sword = <div className="default">For one hour, A blade is imbued with the power of arcane fire. The blade deals 1d6 additional <span style={{color: "#F80"}}>Heat</span> damage.</div>
+export const flaming_sword = <div className="default">A blade is imbued with the power of arcane fire. The blade deals 1d6 additional <span style={{color: "#F80"}}>Heat</span> damage.</div>
 
 export const fireball = <div className="default">Hurl a blazing ball of fire which explodes upon impact. Roll for <Sub skill="Accuracy" /></div>
 
 export const incinerate = <div className="default">An flame of exceptional heat deals 2d12 <span style={{color: "#F80"}}>Heat</span> damage to a target within 15 feet.</div>
 
-export const create_lava = <div className="default">Create a mass of lava, able to cover 100 square feet of terrain. Creatures which start or end their turn on lava take 3d6 <span style={{color: "#F80"}}>Heat</span> damage.</div>
+export const create_lava = <div className="default">Create a mass of lava, able to cover 100 square feet of terrain. Creatures which start or end their turn on lava take 3d6 <span style={{color: "#F80"}}>Heat</span> damage. After the spell duration, the lava solidifies into rock and no longer deals damage.</div>
 
 export const fire_elemental = <div className="default">Summon a fire elemental. It knows the spells <AppendixLink appendix={1} target="mote_o_fire">Mote o' Fire</AppendixLink>, <AppendixLink appendix={1} target="arcane_flames">Arcane Flames</AppendixLink> and <AppendixLink appendix={1} target="fireball">Fireball</AppendixLink>, and has a continual flame cloak as if it had cast <AppendixLink appendix={1} target="flame_armor">Flame Armor</AppendixLink>.</div>
 
@@ -333,7 +333,7 @@ export const flame_wall = <div className="default">A wall of flames, 20 feet in 
 
 export const fire_storm = <div className="default">Pure flame explodes from the caster bringing glorious devastation. The caster deals 4d20 <span style={{color: "#F80"}}>Heat</span> damage to all creatures within 50 feet.</div>
 
-export const fire_golem = <div className="default">The ritual summons a fire golem, the most volatile of the golems.</div>
+export const fire_golem = <div className="default">The ritual summons a fire golem, the most volatile of the golems. The golem automatically casts <AppendixLink appendix={1} target="fire_storm">Fire Storm</AppendixLink> when it is defeated, or may be ordered to do so when it is banished.</div>
 
 export const frostbite = <div className="default">A conical spray of frost deals 1d6 <span style={{color: "#4BF"}}>Cold</span> damage to all enemies caught within.</div>
 
@@ -341,7 +341,7 @@ export const shape_water = <div className="default">You may shape water into a f
 
 export const icicle = <div className="default">An icy spear is hurled at a foe, dealing 1d8 <span style={{color: "#FFF"}}>Piercing</span> and 1d6 <span style={{color: "#4BF"}}>Cold</span> damage.</div>
 
-export const water_walking = <div className="default">For one hour, you gain the ability to walk on water as if it were solid ground. When the spell is about to expire, the water's surface betakes a spongy and soft texture, as if it were thick mud or bedding. If cast while the mage is partially submerged, you are propelled to the surface of the water. If fully underwater, the spell has no effect. You do not take fall damage if you cast this spell before falling onto the surface of the water.</div>
+export const water_walking = <div className="default">Gain the ability to walk on water as if it were solid ground. When the spell is about to expire, the water's surface betakes a spongy and soft texture, as if it were thick mud or bedding. If cast while partially submerged, you are propelled to the surface of the water. If fully underwater, the spell has no effect. You do not take fall damage if you cast this spell before falling onto the surface of the water.</div>
 
 export const ice_elemental = <div className="default">Summon and bid an ice elemental from the plane of water. The ice elemental knows the spells <AppendixLink appendix={1} target="frostbite">Frostbite</AppendixLink>, <AppendixLink appendix={1} target="icicle">Icicle</AppendixLink>, <AppendixLink appendix={1} target="water_walking">Water Walking</AppendixLink>, and <AppendixLink appendix={1} target="become_water">Become Water</AppendixLink>.</div>
 
@@ -349,13 +349,13 @@ export const steam_blast = <div className="default">A gout of pressurized steam 
 
 export const ice_wall = <div className="default">Construct a wall of ice, one yard thick and up to 10 yards in length. Creatures inside the wall when it forms must make a DT 8 <Sub skill="Mobility" /> saving throw or become encased in the wall for the duration of the spell. Creatures which pass the saving throw may choose to stand on top of the wall or be pushed to one side.</div>
 
-export const wellspring = <div className="default">Water spouts forth from a point designated by the caster, releasing up to 10 gallons per minute.</div>
+export const wellspring = <div className="default">Water spouts forth from a point designated by the caster, releasing up to 5 gallons per minute.</div>
 
 export const become_water = <div className="default">The caster becomes liquid water for up to eight hours, able to flow and reform according to their will.</div>
 
 export const ice_armor = <div className="default">Encase yourself in armor of solid ice. You gain immunity to <span style={{color: "#4BF"}}>Cold</span> damage and you BC increases by 7. The spell lasts for 1 minute or until you take 10 <span style={{color: "#888"}}>Bludgeoning</span> damage.</div>
 
-export const blizzard = <div className="default">You summon a small blizzard, creating a region of extremely frigid air within a radius of 100 feet that lasts for 1 hour. Targets within take 1d12 <span style={{color: "#4BF"}}>Cold</span> damage and 1d12 <span style={{color: "#D00"}}>Force</span> damage per turn.</div>
+export const blizzard = <div className="default">You summon a small blizzard, creating a region of extremely frigid air within a radius of 100 feet. Targets within take 1d12 <span style={{color: "#4BF"}}>Cold</span> damage and 1d12 <span style={{color: "#D00"}}>Force</span> damage per turn.</div>
 
 export const ice_golem = <div className="default">Summon and bid a powerful ice golem.</div>
 
@@ -369,17 +369,17 @@ export const electrocute = <div className="default">Attempt an unarmed attack on
 
 export const cyclone = <div className="default">A swiftly swirling whirlwind forms in the location you choose. On your turn, you can move the cyclone along a path up to 20 feet in length, dealing 2d6 <span style={{color: "#D00"}}>Force</span> damage to each target hit.</div>
 
-export const shocking_blade = <div className="default">Imbue a metallic weapon you can touch with the power of lightning. The weapon deals 1d6 <span style={{color: "#FF4"}}>Lightning</span> damage for one hour.</div>
+export const shocking_blade = <div className="default">Imbue a metallic weapon you can touch with the power of lightning.  1d6 <span style={{color: "#FF4"}}>Lightning</span> damage is added to the weapon's damage.</div>
 
 export const blustering_gust = <div className="default">A gust of wind blusters forth, dealing no damage but pushing enemies about. An enemy caught in the gust is pushed 20 feet in the direction of the gust. On a successful DT 10 <Sub skill="Defense" /> saving throw, the target is only pushed half that distance.</div>
 
-export const soar = <div className="default">Gain the ability of wingless flight for five minutes. While the spell is active, you may move through the air at 15 feet per second.</div>
+export const soar = <div className="default">Gain the ability of wingless flight for five minutes. While the spell is active, you may move through the air at 12 feet per second.</div>
 
 export const lightning_dash = <div className="default">Teleport to a location you can see within 15 feet. If any enemies are between you and your destination, they take 1d12 <span style={{color: "#FF4"}}>Lightning</span> damage.</div>
 
 export const air_elemental = <div className="default">Summons an air elemental to do your bidding. The elemental knows <AppendixLink appendix={1} target="blustering_gust">Blustering Gust</AppendixLink>, <AppendixLink appendix={1} target="soar">Soar</AppendixLink>, <AppendixLink appendix={1} target="lightning_dash">Lightning Dash</AppendixLink>, abd <AppendixLink appendix={1} target="thunderbolt">Thunderbolt</AppendixLink>.</div>
 
-export const become_vapor = <div className="default">Become a cloud of vapor. You become immune to slashing, piercing, and bludgeoning damage. You may change your shape to fit around or between narrow obstacles or enemies. You may not delve underwater, and if this spell is cast underwater, you automatically shoot to the surface.</div>
+export const become_vapor = <div className="default">Become a cloud of vapor. You become immune to slashing, piercing, and bludgeoning damage. You may change your shape to fit around or between narrow obstacles or enemies. You may not delve underwater, and if this spell is cast underwater, you automatically bubble to the surface.</div>
 
 export const chain_lighting = <div className="default">A bolt of blue lightning leaps from your outstretched hand to an enemy within range, and then to an additional enemy within 10 feet, if available. Up to three targets take 3d8 <span style={{color: "#FF4"}}>Lightning</span> damage.</div>
 
@@ -391,17 +391,19 @@ export const hurricane = <div className="default">By the power of this ceremony,
 
 export const detect_illusion = <div className="default">For one hour after casting the spell, you psychically discern the presence of illusions.</div>
 
-export const fleeting_illusion = <div className="default">You manifest a small illusion, which may have a physical and auditory component. The illusion may be used to lure, mystify, repel, or even assist the target. However, if the target passes a DT 16 <Sub skill="Perception" /> check, they are able to perceive the illusion.</div>
+export const fleeting_illusion = <div className="default">You manifest a small illusion, which may have a physical and auditory component. The illusion may be used to lure, mystify, repel, or even assist the target. However, if the target passes a DT 16 <Sub skill="Perception" /> check, they are able to perceive the illusion as such.</div>
 
 export const illusory_disguise = <div className="default">For one hour, your face appears to change to match any face you have seen previously. Your clothes, stature, and body type do not change unless you also know the <AppendixLink appendix={1} target="illusory_being">Illusory Being</AppendixLink> spell. You may dismiss this spell at will before the duration is through. Anyone who scrutinizes your face may make a DT 18 <Sub skill="Perception" /> check to see past your disguise.</div>
 
-export const dispell_illusion = <div className="default">An illusion spell you have detected is permanently dispelled. Some illusions may make a saving throw based on the charisma of the caster.</div>
+export const dispell_illusion = <div className="default">An illusion spell you have detected is permanently dispelled. Sufficiently powerful illusions may resist being dispelled.</div>
 
 export const illusory_being = <div className="default">You create an illusory being of any of the following types: <i>Beguiling</i>, <i>Terrifying</i>, <i>Distracting</i>, or <i>Ordinary</i>. The being appears in a location you can see, and obeys your telepathic command for the duration of the spell.</div>
 
-export const fools_invisibility = <div className="default">The target is filled with the inexplicable and illogical conviction that they are fully invisible.</div>
+export const fools_invisibility = <div className="default">The target is filled with the inexplicable and irrational conviction that they are fully invisible. TODO</div>
 
-export const mass_illusion = <div className="default">You create a powerful illusion visible from a great distance to any number of people. The visual has a</div>
+export const unseeable = <div className="default">For the duration of the spell, those who see you believe that you are a phantasm, hallucination, or a figment of their imagination, unless they succeed a DT 20 <Sub skill="Perception" /> saving throw. If you speak to anyone in this state, they will either not remember what was said, or believe that it was said during a dream.</div>
+
+export const mass_illusion = <div className="default">You create a powerful illusion visible from a great distance to any number of people. The visual has a TODO</div>
 
 export const telempathy = <div className="default">You reach out and place the palms of your hands on either side of the target's forehead. While so positioned, you experience the emotions of the target as if they were your own. By mutual agreement, the target may also experience your emotions as well.</div>
 
@@ -409,21 +411,21 @@ export const minor_telepathy = <div className="default">You read the thoughts of
 
 export const major_telepathy = <div className="default">You establish a psychic connection with a being within range that you can see. You may read their thoughts, including those that the being is unable or unwilling to articulate. You may also impart your own thoughts into their mind. The spell lasts for as long as you continue concentration, or until the target breaks line of sight for ten minutes. If the target is unwilling, they may make a DT 15 willpower saving throw to resist. If successful, they reject your contact and have advantage on all willpower saving throws against you for the next 24 hours.</div>
 
-export const esoteric_telepathy = <div className="default">For 24 hours, you gain the ability to read the thoughts of an entity known to you by name, and may communicate with them telepathically. If at any point they become aware of your presence within their mind, they may make a DT 18 charisma saving throw to resist. If successful, they reject your intrusion and have advantage on all willpower saving throws against you for the next 24 hours.</div>
+export const psychic_sight = <div className="default">You see and hear through the senses of someone within 100 yards, from a first person perspective. If the target has not consented to psychic contact, they make a DT 12 <Sub attr="CHA"/> saving throw to detect your presence. Above DT 15, they may also choose to reject your from their mind. As long as the target detects your presence, they have advantage on saving throws against your psychic spells for the next 24 hours.</div>
 
-export const psychic_sight = <div className="default">You see and hear through the senses of someone you can see, from a first person perspective. If the target has not consented to psychic contact, they make a DT 12 <Sub skill="Perception" /> saving throw to detect your presence. If this check succeeds, they may make a DT 15 <Sub attr="CHA"/> saving throw to reject your from their mind. Failing this, they can interfere with the spell by closing their eyes.</div>
+export const induce_emotion = <div className="default">If the target fails a DT 16 <Sub attr="CHA"/> saving throw, they are overcome by an emotion you choose: calm, confusion, courage, fear, or rage.</div>
 
-export const induce_emotion = <div className="default">Induce one of the following emotions in a target: calm, confusion, courage, fear, or rage.</div>
+export const amnesia = <div className="default">If the target fails a DT 17 <Sub attr="CHA"/> saving throw, they immediately forget their immediate surroundings and intentions.</div>
 
-export const inflict_amnesia = <div className="default">The the target fails a DT 17 <Sub attr="CHA"/> saving throw, they immediately forget their immediate surroundings and intentions.</div>
+export const hypnosis = <div className="default">On a failed DT 15 <Sub attr="CHA"/> saving throw, a target that can see you becomes mesmerized and serves you in combat for 1d4 turns. If the target takes damage, they may repeat the saving throw.</div>
 
-export const hypnosis = <div className="default">You mesmerize a target that can see you, causing it to serve you in combat. If the target fails a DT 15 <Sub attr="CHA"/> saving throw, the spell takes hold and the target joins you in combat. If the target takes damage, they may repeat the saving throw.</div>
+export const mind_control = <div className="default">The target makes a charisma saving throw. IfTake control of a being you can see within 100 yards. You automatically gain the psychic sight and major telepathy. The target makes a DT 10 perception check to realize they are being psychically dominated. If the target succeeds, they may make an additional DT 18 willpower check to resist your control. If they succeed this check, the spell ends and they have advantage on similar checks against you. If it fails, they may make additional attempts to resist at the end of each of their combat turns, or before making actions significantly against their interests. Additionally, if the target is aware that they are being dominated, they may give subtle tells such as speaking with unnatural vocal inflections or eye twitches.</div>
 
-export const mind_control = <div className="default">Take control of being you can see within range. You automatically gain the psychic sight and major telepathy. The target makes a DT 10 perception check to realize they are being psychically dominated. If the target succeeds, they may make an additional DT 18 willpower check to resist your control. If they succeed this check, the spell ends and they have advantage on similar checks against you. If it fails, they may make additional attempts to resist at the end of each of their combat turns, or before making actions significantly against their interests. Additionally, if the target is aware that they are being dominated, they may give subtle tells such as speaking with unnatural vocal inflections or eye twitches.</div>
+export const esoteric_telepathy = <div className="default">For 24 hours, you gain the ability to read the thoughts of an entity known to you by name, and may communicate with them telepathically. If at any point they become aware of your presence within their mind, they may make a DT 18 charisma saving throw to resist. If successful, they reject your intrusion and have advantage on all psychic saving throws against you for the next 24 hours.</div>
 
 export const unimind = <div className="default">During the ceremony, all participants share a single mind such that the thoughts and emotions of each participant are instantaneously apparent to all others. Participants other than the caster must possess at least 12 <Sub attr="CHA"/> in order to participate in the ritual. The willpower cost is divided between all participants.</div>
 
-export const lesser_telekinetic_pull = <div className="default">A target weighing less than 20 pounds is drawn to the beckoning fingers of your outstretched hand. The object must be within 50 feet.</div>
+export const lesser_telekinetic_pull = <div className="default">A target weighing less than 20 pounds is drawn to the beckoning fingers of your outstretched hand. The object must be within 60 feet.</div>
 
 export const telekinetic_throw = <div className="default">Hurl an object or enemy captured by one of your telekinetic spells and make an <Sub skill="Accuracy" /> attack roll. If it hits, deal 2d8 <span style={{color: "#888"}}>Bludgeoning</span> damage. If the object thrown was already under your telekinetic control, you have advantage on the attack roll. If the object levitated was a dagger or spear etc, the damage type changes to <span style={{color: "#FFF"}}>Piercing</span>. The projectile's speed depends on the weight of the object. If the object weighs one pound or less, it moves at 200 ft/s. Otherwise, its speed is 200 ft/s divided by its weight in pounds.</div>
 
@@ -435,7 +437,7 @@ export const levitation = <div className="default">While concentration is mainta
 
 export const telemanipulation = <div className="default">Via subtle telekinetic impulses, the caster manipulates a target weighing less than 20 pounds with great precision, moving or rotating it at will. The object moves at a maximum speed of 5 ft/s and may not be rotated in such a way that any part of its outer boundary exceeds maximum speed relative to the center of mass. There is no limit to how many times this spell may be cast upon the same object or how much weight may be moved, provided all casters act in concert.</div>
 
-export const greater_telekinetic_pull = <div className="default">A <ChapterLink chapter={2} target="size">Medium</ChapterLink> or small creature is drawn just before your outstretched hands, at a rate of 10 ft/s. It gains the <Tooltip tip={"Levitated"}>The target is levitating, unable to plant their feet firmly on the ground. The target cannot move by mundane means, or make melee attacks.</Tooltip> status for as long as you maintain concentration. The target may make a DT 11 <Sub skill="Defense" /> or <Sub skill="Sorcery" /> saving throw to resist being pulled.</div>
+export const greater_telekinetic_pull = <div className="default">A <ChapterLink chapter={2} target="size">Medium</ChapterLink> or small creature is drawn just before your outstretched hands, at a speed of 12 ft/s (12 tiles per combat turn). It gains the <Tooltip tip={"Levitated"}>The target is levitating, unable to plant their feet firmly on the ground. The target cannot move by mundane means, or make melee attacks.</Tooltip> status for as long as you maintain concentration. The target may make a DT 12 <Sub skill="Defense" /> or <Sub skill="Sorcery" /> saving throw to resist being pulled.</div>
 
 export const force_shield = <div className="default">Generate a shield of telekinetic force measuring six feet in diameter. The shield appears as a shimmering transparent pocket of air hovering in front of you. The shield grants partial cover and provides 7 Block Chance to up to two people standing behind it.</div>
 
@@ -443,11 +445,11 @@ export const psyblast = <div className="default">Deal 4d6 <span style={{color: "
 
 export const force_field = <div className="default">An invisible wall of telekinetic impulse appears in the chosen location. The wall prevents the passage of people and objects except for the spellcaster and allies. The wall can absorb 50+1d100 damage before concentration fails and the spell must be recast.</div>
 
-export const mind_armor = <div className="default">Generate a telekinetic suit of armor covering your entire body. The suit provides 10 BC initially, but loses 1 BC per hour until it vanishes.</div>
+export const mind_armor = <div className="default">Generate a telekinetic suit of armor covering your entire body. The suit provides 10 BC initially, but loses 1 BC per hour until it vanishes. The spell cannot take hold if armor is already worn, but does not impose any of the mobility or stealth penalties ordinarily associated with heavy armor.</div>
 
 export const spellDescriptions = new TSXDirectory<React.JSX.Element>();
 
-spellDescriptions.register("brew_innoculative_philter", brew_innoculative_philter)
+spellDescriptions.register("brew_innoculative", brew_innoculative)
 
 spellDescriptions.register("brew_stimulant", brew_stimulant)
 
@@ -541,7 +543,7 @@ spellDescriptions.register("time_rift", time_rift)
 
 spellDescriptions.register("greater_invisibility", greater_invisibility)
 
-spellDescriptions.register("dark_mercy", dark_mercy)
+spellDescriptions.register("mercy_kill", mercy_kill)
 
 spellDescriptions.register("mass_invisibility", mass_invisibility)
 
@@ -655,35 +657,11 @@ spellDescriptions.register("mage_hand", mage_hand)
 
 spellDescriptions.register("summon_weapon", summon_weapon)
 
+spellDescriptions.register("detect_magic", detect_magic)
+
 spellDescriptions.register("locust_swarm", locust_swarm)
 
 spellDescriptions.register("imbue_sentience", imbue_sentience)
-
-spellDescriptions.register("soul_dart", soul_dart)
-
-spellDescriptions.register("sentient_weapon", sentient_weapon)
-
-spellDescriptions.register("exorcism", exorcism)
-
-spellDescriptions.register("cloud_of_daggers", cloud_of_daggers)
-
-spellDescriptions.register("demonic_posession", demonic_posession)
-
-spellDescriptions.register("invade_body", invade_body)
-
-spellDescriptions.register("reincarnation", reincarnation)
-
-spellDescriptions.register("resurrection", resurrection)
-
-spellDescriptions.register("guidance", guidance)
-
-spellDescriptions.register("alarm", alarm)
-
-spellDescriptions.register("detect_magic", detect_magic)
-
-spellDescriptions.register("seek_spirit", seek_spirit)
-
-spellDescriptions.register("seance", seance)
 
 spellDescriptions.register("diagnose", diagnose)
 
@@ -693,9 +671,23 @@ spellDescriptions.register("augury", augury)
 
 spellDescriptions.register("astral_projection", astral_projection)
 
+spellDescriptions.register("cloud_of_daggers", cloud_of_daggers)
+
 spellDescriptions.register("ancient_name", ancient_name)
 
+spellDescriptions.register("guidance", guidance)
+
+spellDescriptions.register("alarm", alarm)
+
+spellDescriptions.register("seek_spirit", seek_spirit)
+
+spellDescriptions.register("sentient_weapon", sentient_weapon)
+
+spellDescriptions.register("exorcism", exorcism)
+
 spellDescriptions.register("futuresight", futuresight)
+
+spellDescriptions.register("resurrection", resurrection)
 
 spellDescriptions.register("vampiric_touch", vampiric_touch)
 
@@ -703,27 +695,37 @@ spellDescriptions.register("life_leach", life_leach)
 
 spellDescriptions.register("reanimate", reanimate)
 
-spellDescriptions.register("inflict_disease", inflict_disease)
+spellDescriptions.register("seance", seance)
 
-spellDescriptions.register("hex", hex)
+spellDescriptions.register("soul_dart", soul_dart)
 
 spellDescriptions.register("starvation", starvation)
 
 spellDescriptions.register("speak_with_the_dead", speak_with_the_dead)
 
-spellDescriptions.register("curse", curse)
-
 spellDescriptions.register("disintegrate", disintegrate)
 
 spellDescriptions.register("vampiric_kiss", vampiric_kiss)
-
-spellDescriptions.register("devour", devour)
 
 spellDescriptions.register("rend_soul", rend_soul)
 
 spellDescriptions.register("flesh_golem", flesh_golem)
 
 spellDescriptions.register("become_lich", become_lich)
+
+spellDescriptions.register("reincarnation", reincarnation)
+
+spellDescriptions.register("hex", hex)
+
+spellDescriptions.register("inflict_disease", inflict_disease)
+
+spellDescriptions.register("curse", curse)
+
+spellDescriptions.register("demonic_posession", demonic_posession)
+
+spellDescriptions.register("invade_body", invade_body)
+
+spellDescriptions.register("devour", devour)
 
 spellDescriptions.register("heat_metal", heat_metal)
 
@@ -843,6 +845,8 @@ spellDescriptions.register("illusory_being", illusory_being)
 
 spellDescriptions.register("fools_invisibility", fools_invisibility)
 
+spellDescriptions.register("unseeable", unseeable)
+
 spellDescriptions.register("mass_illusion", mass_illusion)
 
 spellDescriptions.register("telempathy", telempathy)
@@ -851,17 +855,17 @@ spellDescriptions.register("minor_telepathy", minor_telepathy)
 
 spellDescriptions.register("major_telepathy", major_telepathy)
 
-spellDescriptions.register("esoteric_telepathy", esoteric_telepathy)
-
 spellDescriptions.register("psychic_sight", psychic_sight)
 
 spellDescriptions.register("induce_emotion", induce_emotion)
 
-spellDescriptions.register("inflict_amnesia", inflict_amnesia)
+spellDescriptions.register("amnesia", amnesia)
 
 spellDescriptions.register("hypnosis", hypnosis)
 
 spellDescriptions.register("mind_control", mind_control)
+
+spellDescriptions.register("esoteric_telepathy", esoteric_telepathy)
 
 spellDescriptions.register("unimind", unimind)
 

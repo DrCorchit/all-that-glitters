@@ -9,6 +9,7 @@ import {statuses, StatusEffect} from "../../concepts/statusEffect";
 import Outline from "../../components/Outline";
 import {statusDescriptions} from "../../generated/statusDescriptions";
 import {statusRecoveries} from "../../generated/statusRecoveries";
+import {actions} from "../../concepts/actions";
 
 const index = 5;
 const info = chapters.array[index - 1];
@@ -180,79 +181,13 @@ function ActionSection(): JSX.Element {
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>Attack</td>
-						<td>1 Action</td>
-						<td>
-							The character attacks with their main-hand weapon. Their dodge chance is{" "}
-							<ChapterLink chapter={index} target='attacking'>
-								reduced accordingly
-							</ChapterLink>
-							.
-						</td>
-					</tr>
-					<tr>
-						<td>Spell</td>
-						<td>1 Action</td>
-						<td>The character casts a spell with one hand.</td>
-					</tr>
-					<tr>
-						<td>Grapple</td>
-						<td>2 Actions</td>
-						<td>
-							The character attempts to wrestle an enemy, rendering them incapable of taking actions or reactions.
-						</td>
-					</tr>
-					<tr>
-						<td>Help</td>
-						<td>2 Actions</td>
-						<td>
-							The character moves up to 6 feet and attempts to rouse an unconscious person, or assist them with an
-							assailant or condition. By passing a difficulty 10 <Sub skill='medicine' /> check, the one being helped
-							gains 1d6 hp.
-						</td>
-					</tr>
-					<tr>
-						<td>Block</td>
-						<td>1 Action</td>
-						<td>
-							The player uses their shield to block incoming attacks until the start of their next turn, doubling the BC
-							from their shield.
-						</td>
-					</tr>
-					<tr>
-						<td>Parry</td>
-						<td>1 Reaction</td>
-						<td>The player attempts to use their melee weapon to deflect incoming attacks.</td>
-					</tr>
-					<tr>
-						<td>Opportunity Attack</td>
-						<td>1 Reaction</td>
-						<td>The player attacks a monster that is moving out of engagement range.</td>
-					</tr>
-					<tr>
-						<td>Move</td>
-						<td>1 Action</td>
-						<td>The character gains movement points equal to half their speed score.</td>
-					</tr>
-					<tr>
-						<td>Jog</td>
-						<td>1 Action and 1 willpower, or 2 Actions</td>
-						<td>The character gains movement points equal to their speed score.</td>
-					</tr>
-					<tr>
-						<td>Dodge</td>
-						<td>1 Action</td>
-						<td>
-							The character moves with deliberate caution, to avoid incoming attacks. They no longer provoke opportunity
-							attacks, and Dodge Chance is increased by 2.
-						</td>
-					</tr>
-					<tr>
-						<td>Jump</td>
-						<td>5 movement points</td>
-						<td>The player jumps across the battlefield, gaining height and bypassing obstacles.</td>
-					</tr>
+					{actions.array.map((action, index) => (
+						<tr key={index}>
+							<td>{action.name}</td>
+							<td>{action.cost}</td>
+							<td>{action.description}</td>
+						</tr>
+					))}
 				</tbody>
 			</table>
 			<h5 id='reactions'>Reacting</h5>

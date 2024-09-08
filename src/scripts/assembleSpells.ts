@@ -14,8 +14,12 @@ async function parseSpellsFile(): Promise<SpellJson[]> {
 	const spells: SpellJson[] = [];
 
 	reader.on("line", line => {
+		line = line.trim();
 		const temp = line.match(studyRegex);
-		if (temp) {
+
+		if (!line) {
+			return;
+		} else if (temp) {
 			study = temp[0];
 			//console.log("Study --> " + study);
 		} else if (study) {

@@ -26,6 +26,11 @@ export const mundane: FeatType = {
 		"These feats are only available to mundane characters with no magical abilities. Learning any spells or arcane feats prevents one from learning these feats.",
 };
 
+export const maneuver: FeatType = {
+	name: "Maneuver",
+	description: "These feats are active combat abilities available to any character with proper training.",
+};
+
 export const classFeat = {
 	name: "Class",
 	description: "These feats are restricted to specific character classes.",
@@ -33,7 +38,7 @@ export const classFeat = {
 
 export const featTypes = new Source<FeatType>(
 	"Feat Types",
-	[common, arcane, mundane, classFeat],
+	[common, arcane, mundane, maneuver, classFeat],
 	type => type.name,
 	type => type.name,
 	(type, text) => `<Tooltip> tip={"${text ?? type.name}"}>${type.description}</Tooltip>`
@@ -49,7 +54,7 @@ export const proficiencies = new Source<Feat>(
 		trainingReqs: {
 			level: featLevelReqFormula(json.level),
 			slots: json.cost.slots,
-			feats: [],
+			other: [],
 			stats: {},
 		},
 	})),
@@ -66,7 +71,7 @@ export interface Feat {
 	trainingReqs: {
 		level: number;
 		slots: number;
-		feats: string[];
+		other: string[];
 		stats: Partial<StatBlock>;
 		clazz?: string;
 	};
@@ -86,3 +91,5 @@ export const feats = new Source<Feat>(
 export function featLevelReqFormula(level: number) {
 	return 2 * level - 1;
 }
+
+export const maxFeatSlots = 15;

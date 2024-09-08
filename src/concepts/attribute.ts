@@ -31,3 +31,8 @@ export interface StatBlock {
 	nst: number;
 	cha: number;
 }
+
+export function getStat(stats: Partial<StatBlock>, attr: Attribute): number {
+	const entry = Object.entries(stats).find(entry => attr.abbr.toLowerCase() === entry[0]);
+	return entry?.[1] ?? 0;
+}

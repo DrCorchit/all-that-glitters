@@ -1,8 +1,9 @@
 [
   {
-    "name": "Brew: Innoculative Philter",
+    "name": "Brew: Innoculative",
     "description": "Though 'tis an unsavory and turgid medicine, it nevertheless prevents the effects of poisoning or disease from taking hold on the body. One ounce of this provides protection for eight hours. The reaction yields four ounces of mixture.",
     "level": 1,
+    "duration": "8 Hours",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -23,6 +24,7 @@
     "name": "Brew: Stimulant",
     "description": "A drink of this tangy and effervescent mixture brings pep and vigor to one's body, regaining lost willpower. While in effect, one gains",
     "level": 2,
+    "duration": "8 Hours",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -43,6 +45,7 @@
     "name": "Brew: Antivenin",
     "description": "A vile and brackish concoction. Nevertheless, one ounce is all that is required to cure ongoing poisons and ailments. The reaction yields 4 ounces of the substance.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -63,6 +66,7 @@
     "name": "Brew: Curative Potion",
     "description": "A crimson philter of lion or bear's blood is precipitated in alchemical solution. The reaction yields 4 ounces of liquid, which are stored in a stoppered flask. As an action, you may drink up to 4 ounces from the flask, healing 1d4 damage each.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -83,6 +87,7 @@
     "name": "Brew: Eloquence Philter",
     "description": "A xanthous solution of egg yolk and four-leaf clovers is condensed from an alchemical mixture. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, gaining 1 point of charisma until the next long rest.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -104,6 +109,7 @@
     "name": "Brew: Amphibic Philter",
     "description": "Produces a viscous extract, condensed from an alchemical mixture of frog feet and fish scales. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, gaining the ability to breathe underwater for 30 minutes.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -124,6 +130,7 @@
     "name": "Brew: Anaesthetic Potion",
     "description": "Produces a transparent liquid, distilled from an alchemical solution of crushed glass and mermaid tears. The reaction yields 1 ounce of liquid, which is stored in a vial. In drinking the potion, you gain 2d6 temporary HP and 1d4 temporary willpower, and your nerves are greatly dulled to the sensation of pain.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -145,6 +152,7 @@
     "name": "Brew: Hermetic Philter",
     "description": "A pale solution of ostrich feathers and gazelle blood is condensed from an alchemical mixture. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, gaining 1 point of speed until the next long rest.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -166,6 +174,7 @@
     "name": "Brew: Vigor Philter",
     "description": "Produces an effervescent yellow potion which swirls without cessation. The reaction produces 1 ounce of product, which is stored in a vial. As an action, you may drink the contents of the vial, gaining 2 points of dexterity until the next long rest.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -187,6 +196,7 @@
     "name": "Brew: Persistence Philter",
     "description": "A cerulean solution of crushed pearl and gold dust is extracted from an alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, gaining 1 point of intelligence until the next long rest.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -208,6 +218,7 @@
     "name": "Brew: Hallucinogenic",
     "description": "A cerulean solution of crushed pearl and gold dust is extracted from an alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, gaining 1 point of intelligence until the next long rest.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -228,6 +239,7 @@
     "name": "Brew: Acumen Philter",
     "description": "Produces a cerulean solution of crushed pearl and gold dust, which forms at the top of an alchemical mixture. The reaction yields 1 ounce of product, which is stored in a vial. As an action, you may drink the contents of the vial, gaining 2 points of intelligence until the next long rest.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -249,6 +261,7 @@
     "name": "Brew: Potency Philter",
     "description": "A cerulean solution of crushed pearl and gold dust is extracted from an alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, gaining 1 point of intelligence until the next long rest.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -270,6 +283,7 @@
     "name": "Brew: Invisibility Potion",
     "description": "A glowing, translucent potion remains after aught else is boiled away. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, so becoming invisible for 10 minutes.",
     "level": 7,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -291,6 +305,7 @@
     "name": "Brew: Elixir of Invulnerability",
     "description": "A dark crimson concoction derived from crushed bricks, tar, and grass plucked from between cobblestones. The reaction yields 1 ounce of liquid, which is stored in a vial. As an action, you may drink the contents of the vial, gaining immunity to all forms of damage for 1 minute.",
     "level": 8,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -312,6 +327,7 @@
     "name": "Brew: Elixir of Immortality",
     "description": "A shimmering gold solution containing the essence of life is distilled from an alchemical solution. The reaction yields 1 ounce of liquid, stored in a vial. As an action, you may drink the contents of the vial, so extending your life by 500 years.",
     "level": 9,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Enchantment",
     "study": "Pharmacology",
@@ -332,6 +348,7 @@
     "name": "Brew: Aphrodisiac",
     "description": "Produces a rosy pink concoction, brewed from crushed rose petals and thorns of the same. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons must pass a DT 11 willpower saving throw or fall in love with the next being it sees, of the appropriate gender and species.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -352,6 +369,7 @@
     "name": "Brew: Necrotoxin",
     "description": "A pungent decoction derived from spider fangs and toadstool powder emerges after being separated from waste product. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons must pass a DT 11 willpower saving throw accumulate one level of necrotic poisoning, dealing 1d4 damage at the start of its turn.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -372,6 +390,7 @@
     "name": "Brew: Brimstone",
     "description": "A frothing, ochre concentrate of sulfur is distilled in alchemical solution. The reaction yields 4 ounces of liquid, which are stored in a stoppered flask. The contents of the flask can be thrown at an enemy, dealing 2d6 acid damage and reducing their armor by 1.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -392,6 +411,7 @@
     "name": "Brew: Narcoleptic Toxin",
     "description": "A warm and bubbly solution of butter and silver dust is dissolved in alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons must pass a DT 12 willpower saving throw or fall into a slumber (becoming {{status.incapacitated}}) for 1d10 turns, or until damaged.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -412,6 +432,7 @@
     "name": "Brew: Lethargic Toxin",
     "description": "A viscous solution with a metallic luster remains after an alchemical mixture of algae and ogre bile has evaporated. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons must pass a DT 13 willpower saving throw or suffer -1 to STR, SPD, and DEX scores.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -432,6 +453,7 @@
     "name": "Brew: Debilitative",
     "description": "A tepid solution of nightshade oil and ocular jelly is dissolved in alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons must pass a DT 14 willpower saving throw or suffer -1 to INT, CHA, and WILL scores.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -453,6 +475,7 @@
     "name": "Brew: Enervative",
     "description": "A frothing solution of nettles and thistle is distilled from an alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons loses 1d4 willpower for each hit.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -474,6 +497,7 @@
     "name": "Brew: Neurotoxin",
     "description": "A potent concentrate of serpent venom is precipitated in alchemical solution. The reaction yields 1 ounce of liquid, which is stored in a vial. With an action, you can coat a weapon or up to ten arrows with the solution. Any target damaged by these weapons must pass a DT 12 willpower saving throw or become paralysed.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -495,6 +519,7 @@
     "name": "Brew: Aqua Regia",
     "description": "The alchemical ritual renders an extremely volatile acid that even dissolves inert metals such as gold and platinum. The reaction yields four ounces of liquid, which are stored in a stoppered flask. When thrown at a target after the incantation has been uttered, it deals 4d6 acid damage and reduces armor by 3.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -516,6 +541,7 @@
     "name": "Brew: Liquid Light",
     "description": "A viscous, glowing solution of yellow-white light appears overnight after the proper admixture of rust shavings, crushed amber, and powdered dragon tooth has settled. The reaction yields 4 ounces of liquid, which are stored in a stoppered flask. With an action, you coat a weapon or up to ten arrows with one ounce of the solution. Any target damaged by these weapons takes 1d6 fire damage. Additionally, the entire flask can be thrown, causing an explosion which deals 3d6 fire damage and 3d6 force damage to all enemies within 10 feet.",
     "level": 8,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -537,6 +563,7 @@
     "name": "Brew: Gorgonic Toxin",
     "description": "Following the correct procedure, a skilled alchemist may produce 1 drop of a foul grayish paste. Failing a DT 16 willpower saving throw, whoso drinks a drink tainted with a drop of this poison shall be turned to stone in a few seconds time. The drop may also be used to coat a weapon or arrow which, striking true, shall deliver the selfsame fate to an unlucky foe.",
     "level": 9,
+    "duration": "Instantaneous",
     "rarity": "Forbidden",
     "type": "Enchantment",
     "study": "Toxicology",
@@ -556,8 +583,9 @@
   },
   {
     "name": "Lodestone",
-    "description": "A trail of ghostly lights appear, guiding you to a location you have visited before no further than ten miles away. The lights last for one hour, and can be seen by allies and enemies. The lights appear as you approach them and disappear as you leave them behind.",
+    "description": "A trail of ghostly lights appear, guiding you to a location you have visited before no further than ten miles away. The lights can be seen by allies and enemies, and appear as you approach them and disappear as you leave them behind.",
     "level": 1,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Solar",
@@ -578,6 +606,7 @@
     "name": "Sunbeam",
     "description": "Deal 1d8 {{damage.holy}} damage to an enemy. If cast upon an ally (but not undead or an automaton) heal it by that amount instead.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Solar",
@@ -598,6 +627,7 @@
     "name": "Luminance",
     "description": "An item you choose begins to glow with a gentle blue or yellow aura. You may combine this enchantment with a divination spell (by casting both at the same time) to make the aura only appear when some condition is met.",
     "level": 2,
+    "duration": "Indefinite",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Solar",
@@ -618,6 +648,7 @@
     "name": "Solstice",
     "description": "A beam of healing sunlight shines down on an area and remains for duration of the spell. Within the spell's effect radius of 10 feet, allies gain 1d6 healing, while enemies take 1d6 {{damage.holy}} damage. This effect is applied when the spell is cast, and again at the start of your turn.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Solar",
@@ -638,6 +669,7 @@
     "name": "Bolster",
     "description": "Grant an ally 5 temporary hitpoints and increase their BC by 5 for as long as concentration is maintained.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Solar",
@@ -658,6 +690,7 @@
     "name": "Starlight",
     "description": "Illuminate an area (no larger than an acre) with a soft blue celestial light. The light is only visible to you and your allies. Living creatures illuminated by this light glow brightly, but not the undead or automatons.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Concentration",
     "study": "Solar",
@@ -679,6 +712,7 @@
     "name": "Holy Aurora",
     "description": "A spectral halo of prismatic light circles the head of an ally you choose. For every turn concentration is maintained, they heal 1d6 hitpoints per turn and deal 1d6 bonus {{damage.holy}} damage with their melee attacks. In addition, they cannot be {{status.blinded}} by magical effects.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Concentration",
     "study": "Solar",
@@ -700,6 +734,7 @@
     "name": "High Noon",
     "description": "Deal {{damage.holy}} damage to a target by its remaining willpower.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Solar",
@@ -720,6 +755,7 @@
     "name": "Soul Equinox",
     "description": "A mote of light damages an enemy for 10 {{damage.holy}} damage and then heals an ally by 10. If the enemy succeeds a DT 10 {{skills.defense}} saving throw, the damage and healing are reduced by half.",
     "level": 7,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Solar",
@@ -741,6 +777,7 @@
     "name": "Justice",
     "description": "Deal {{damage.holy}} damage to an enemy equal to the last amount of damage it dealt, or heal a target by the last damage it took.",
     "level": 8,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Solar",
@@ -760,8 +797,9 @@
   },
   {
     "name": "Solar Laser",
-    "description": "A beam of light brighter than the sun issues forth from your hands and burns all in its path. All creatures caught in the path of the light must pass a DT 15 {{skills.mobility}} check or take 2d20 {{damage.holy}} damage and become {{status.blinded}} for 1d4 turns. Creatures that make their save take half damage and are not blinded.",
+    "description": "A beam of light brighter than the sun issues forth from your hands and burns all in its path. All creatures caught in the path of the light must pass a DT 20 {{skills.mobility}} check or take 2d20 {{damage.holy}} damage and become {{status.blinded}} for 1d4 turns. Creatures that make their save take half damage and are not blinded.",
     "level": 9,
+    "duration": "Concentration",
     "rarity": "Esoteric",
     "type": "Concentration",
     "study": "Solar",
@@ -782,6 +820,7 @@
     "name": "Ray of Lunacy",
     "description": "A dark violet ray issues forth from your extended hand, directed towards the forehead of the chosen creature. That creature must succeed a DT 12 {{attr.CHA}} saving throw or be driven to {{status.madness}} and become {{status.blinded}} for 1d4 turns.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Lunar",
@@ -802,6 +841,7 @@
     "name": "Moonshadow",
     "description": "A circular shadow appears on the ground, encircled by ghastly violet flames. Entities stepping inside the circle are {{status.blinded}} and take 1d6 {{damage.profane}} damage per turn.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Lunar",
@@ -820,8 +860,9 @@
   },
   {
     "name": "Lesser Invisibility",
-    "description": "You or a target you can touch gains {{status.ephemeral_invisibility}} for 10 minutes.",
+    "description": "You or a target you can touch gains {{status.ephemeral_invisibility}} for 12 minutes.",
     "level": 3,
+    "duration": "12 Minutes",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Lunar",
@@ -840,10 +881,11 @@
   },
   {
     "name": "Time Stream",
-    "description": "Time accelerates for you or a target you touch, allowing the target to take twice as many actions per turn for 2 turns. From the target's perspective, the world appears to be unfolding in slow motion for around 20 seconds.",
+    "description": "Time accelerates for you or a target you touch, allowing them to take twice as many actions per turn. From the target's perspective, the world appears to be unfolding in slow motion.",
     "level": 4,
+    "duration": "Concentration",
     "rarity": "Academic",
-    "type": "Evocation",
+    "type": "Concentration",
     "study": "Lunar",
     "trainingReqs": {
       "level": 7,
@@ -855,7 +897,7 @@
     },
     "castingReqs": {
       "evocation": 3,
-      "concentration": 0,
+      "concentration": 2,
       "time": "1 Action"
     }
   },
@@ -863,6 +905,7 @@
     "name": "Time Void",
     "description": "An object or entity makes a DT 14 {{skills.defense}} saving throw. On a failed save, it disappears into a dark void where no time passes for 1d4 turns. When the spell ends, the object returns to the same spot, unchanged, as if no time had passed during that interval.",
     "level": 5,
+    "duration": "1d4 Turns",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Lunar",
@@ -884,6 +927,7 @@
     "name": "Phantasm",
     "description": "Your physical form fades, still visible to the eye but noticeably transparent. Fire and blade find no purchase against you, passing through your body as through empty air. As a result of casting this spell, you become {{status.levitated}} and may not move by walking. If you are partially inside physical matter when the spell ends, you are pushed out forcefully. If wholly inside, death is instantaneous and certain.",
     "level": 5,
+    "duration": "Concentration",
     "rarity": "Esoteric",
     "type": "Concentration",
     "study": "Lunar",
@@ -904,6 +948,7 @@
     "name": "Midnight",
     "description": "The target loses 3 willpower. On a successful DT 12 {{skills.defense}} saving throw, the target only loses 2 willpower.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Lunar",
@@ -924,6 +969,7 @@
     "name": "Time Rift",
     "description": "The spell creates a sphere with an eight-foot radius around yourself. Within the sphere, time appears to proceed at a normal rate, and time outside the sphere appears to be accelerated by a factor of ten. Living creatures which pass through the sphere take 3d8 damage, due to the effects of the time disjunction on their internal organs.",
     "level": 7,
+    "duration": "Concentration",
     "rarity": "Academic",
     "type": "Concentration",
     "study": "Lunar",
@@ -945,6 +991,7 @@
     "name": "Greater Invisibility",
     "description": "You or a target you touch gains {{status.invisibility}} for 1 hour.",
     "level": 7,
+    "duration": "1 Hour",
     "rarity": "Academic",
     "type": "Concentration",
     "study": "Lunar",
@@ -963,9 +1010,10 @@
     }
   },
   {
-    "name": "Dark Mercy",
+    "name": "Mercy Kill",
     "description": "Deal 1d100 {{damage.profane}} damage to a creature whose willpower is exhausted. On a DT 18 {{skills.defense}} save, the damage is reduced by half.",
     "level": 8,
+    "duration": "Instantaneous",
     "rarity": "Forbidden",
     "type": "Evocation",
     "study": "Lunar",
@@ -987,6 +1035,7 @@
     "name": "Mass Invisibility",
     "description": "You and up to six ceremonial participants gain {{status.invisibility}} for 8 hours.",
     "level": 9,
+    "duration": "8 Hours",
     "rarity": "Academic",
     "type": "Ceremony",
     "study": "Lunar",
@@ -1008,6 +1057,7 @@
     "name": "Meteorite",
     "description": "A meteorite slams into the ground, striking a chosen location. The meteorite deals 1d8 {{damage.bludgeoning}} damage to its target and 1d4 {{damage.force}} damage to creatures within 6 feet. If the target makes a DT 11 {{attr.DEX}} saving throw, it does not take force damage.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Planetary",
@@ -1028,6 +1078,7 @@
     "name": "Gravity Slam",
     "description": "Choose a target within range. As long as concentration is maintained, the target ceases to be effected by gravity and hovers a few feet above the ground. If you choose, you may overwhelm the target with residual gravity and slam them into the ground when you end concentration. The target takes 1d12 {{damage.bludgeoning}} damage for every turn concentration was maintained. If concentration is broken, the spell ends without slamming the target into the ground.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Planetary",
@@ -1048,6 +1099,7 @@
     "name": "Microgravity",
     "description": "For one minute, the target's weight is reduced by half. The target can jump twice as high and their terminal velocity is reduced by half. They have advantage on {{skills.mobility}} checks, but disadvantage on mobility saves.",
     "level": 3,
+    "duration": "Concentration",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Planetary",
@@ -1068,6 +1120,7 @@
     "name": "Gravity Well",
     "description": "Create a gravity well at a chosen point. Each creature that starts its turn within 50 feet of the sphere must make a DT 12 {{skills.mobility}} saving throw or be pulled 10 feet closer to the point and lose the ability to move. If the creature begins its turn adjacent to the sphere, the DT of the saving throw increases to 18.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Planetary",
@@ -1086,8 +1139,9 @@
   },
   {
     "name": "Arms of Hadar",
-    "description": "A mass of tentacles erupt from a portal to the dark between the stars, lashing out at an enemy. If the enemy fails a DT 13 {{skills.defense}} saving throw, it takes 1d6 {{damage.profane}} damage and becomes {{status.restrained}}. The creature may attempt to break free as an action on each of its turns by rerolling its saving throw, taking an additional 1d6 profane damage each time it fails. If it fails to break free after four attempts, it is pulled through the portal and devoured by the eternal ones. The target must be {{sizes.large}} or smaller, and is immediately freed if helped by an ally.",
+    "description": "A mass of tentacles erupt from a portal to the dark between the stars, lashing out at an enemy. If the enemy fails a DT 15 {{skills.defense}} saving throw, it takes 1d6 {{damage.profane}} damage and becomes {{status.restrained}}. The creature may attempt to break free as an action on each of its turns by rerolling its saving throw, taking an additional 1d6 profane damage each time it fails. If it fails to break free after four attempts, it is pulled through the portal and devoured by the eternal ones. The target must be {{sizes.large}} or smaller, and is immediately freed if helped by an ally.",
     "level": 4,
+    "duration": "Up to 4 turns",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Planetary",
@@ -1108,6 +1162,7 @@
     "name": "Misty Step",
     "description": "Teleport to a location you can see, within 300 feet.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Planetary",
@@ -1128,6 +1183,7 @@
     "name": "Great Comet",
     "description": "A comet burning with pure white flame issues forth from your outstretched hands. Dodge and weave as they may, the comet tracks its target around corners and over obstacles to strike true. On a hit, the comet deals 1d8 {{damage.bludgeoning}} and 1d8 {{damage.holy}} damage.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Planetary",
@@ -1149,6 +1205,7 @@
     "name": "Hunger of Hadar",
     "description": "A portal to the dark between the stars is opened, invoking the power of the nameless ones. A cloud of darkness appears which cannot be illuminated, absorbing all light that passes within. Sickly white tentacles sprout from the ground, and their air is filled with the sound of whispers and slithering  Creatures that enter the darkness are {{status.blinded}} and take 1d6 {{damage.cold}} damage and 1d6 {{damage.profane}} damage.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Concentration",
     "study": "Planetary",
@@ -1169,6 +1226,7 @@
     "name": "Teleportation",
     "description": "Transport yourself or a target you touch to a location you have visited before. If the target is unwilling, they may attempt a DT 8 {{skills.defense}} saving throw to resist being teleported.",
     "level": 7,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Planetary",
@@ -1188,8 +1246,9 @@
   },
   {
     "name": "Meteor Shower",
-    "description": "A storm of meteors plummets from the sky, towards random locations near a chosen point. Targets within range take 2d8 bludgeoning and 2d8 {{damage.force}} damage. Each target that passes a DT 12 {{skills.mobility}} save takes no bludgeoning damage.",
+    "description": "A storm of meteors plummets from the sky, towards random locations near a chosen point. Targets within 60 feet take 2d8 bludgeoning and 2d8 {{damage.force}} damage. Each target that passes a DT 12 {{skills.mobility}} save takes no bludgeoning damage.",
     "level": 8,
+    "duration": "1d4 turns",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Planetary",
@@ -1210,6 +1269,7 @@
     "name": "Black Hole",
     "description": "A dark sphere appears in the chosen location, drawing in nearby creatures and objects for one minute. Each creature that starts its turn within 50 feet of the sphere must make a DT 15 {{skills.mobility}} saving throw or be pulled 10 feet closer to the sphere and lose the ability to move. Any creature that ends its turn adjacent (including diagonally) to the sphere takes 3d20 {{damage.force}} damage. If the creature begins its turn adjacent to the sphere, the DT of the saving throw increases to 20.",
     "level": 8,
+    "duration": "1 Minute",
     "rarity": "Forbidden",
     "type": "Evocation",
     "study": "Planetary",
@@ -1229,8 +1289,9 @@
   },
   {
     "name": "Mass Teleportation",
-    "description": "When the ceremony is completed, up all participants are teleported to a location up to 10 miles away. Each additional participant increases the cost of the spell by 20, but also increases the teleportation range by 5 miles.",
+    "description": "When the ceremony is completed, all participants (at least 3) are teleported to a location up to 10 miles away. Each additional participant increases the cost of the spell by 10, but also increases the teleportation range by 5 miles.",
     "level": 9,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Ceremony",
     "study": "Planetary",
@@ -1242,7 +1303,7 @@
       }
     },
     "castingReqs": {
-      "evocation": 50,
+      "evocation": 20,
       "concentration": 0,
       "time": "1 Action"
     }
@@ -1251,6 +1312,7 @@
     "name": "Stargate",
     "description": "Two parties working in tandem perform corresponding ceremonies in two different locations. After confirming appropriate astrological alignment, the two groups (typically working via psychic connection) gather around a circle and perform a complex ceremony involving specific incantations. When the ceremony is complete, a permanent astral gate appears in that location, linked to the corresponding gate constructed by the cooperating party. The portal remains open indefinitely, unless another ceremony is convened to banish it.",
     "level": 9,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Ceremony",
     "study": "Planetary",
@@ -1269,8 +1331,9 @@
   },
   {
     "name": "Herbal Remedy",
-    "description": "Heal yourself and a target you touch for 1d6 damage. You cannot heal yourself with this spell unless you heal a living creature.",
+    "description": "Heal yourself and a target you touch for 1d6 damage. You cannot target yourself with this spell.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Weal",
@@ -1291,6 +1354,7 @@
     "name": "Shillelagh",
     "description": "Any wooden weapons (such as a club or quarterstaff) wielded by the caster becomes imbued with the power of nature. While active, the caster may add their {{skills.nature}} proficiency bonus to the weapon's damage. In addition, they may use the nature skill to make attack rolls with the weapon, instead of {{skills.martial_arts}}.",
     "level": 1,
+    "duration": "1 Minute",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Weal",
@@ -1311,6 +1375,7 @@
     "name": "Barkskin",
     "description": "The caster's skin gradually gains a thick covering resembling the bark of a tree. Their BC increases by 2 each turn concentration is maintained, up to a maximum of 10.",
     "level": 2,
+    "duration": "1 Minute",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Weal",
@@ -1331,6 +1396,7 @@
     "name": "Thorn Whip",
     "description": "The caster lashes out with the power of thorns, coiling around the target and dragging them 5 feet towards the caster. The target takes 2d6 piercing damage and is dragged up to 10 feet towards the caster. If the target makes a DT 10 {{attr.STR}} saving throw, the target takes half damage and is not dragged.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Weal",
@@ -1351,6 +1417,7 @@
     "name": "Aromatherapy",
     "description": "Soothed by the scent of magical incense, the party heals 3d6 damage during the ritual.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Weal",
@@ -1371,6 +1438,7 @@
     "name": "Tree Speech",
     "description": "Placing their hands on a tree, the caster gains the ability to converse with a forest. Trees bear a timeless wisdom, and are able to communicate with other trees via their roots. Trees cannot see or speak (to humans) but they can distinguish animals, humans, and intruders within the limits of their root network.",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Weal",
@@ -1391,6 +1459,7 @@
     "name": "Chaos Spores",
     "description": "A cloud of spores coalesces around a point chosen by the caster. Targets within must make a {{attr.NST}} saving throw or suffer one of the following effects: <ol><li>{{status.blinded}}</li><li>{{status.dazed}}</li><li>{{status.madness}}</li><li>{{status.terrified}}</li></ol>",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Weal",
@@ -1409,8 +1478,9 @@
   },
   {
     "name": "Poison Spores",
-    "description": "A cloud of poisonous spores condenses on the target, implanting them with fungal growth. The spell cannot be mitigated, and inflicts 3 {{damage.poison}} damage. The damage increases by 3 every time it is cast on the same target. Spore buildup is removed if the target is set aflame.",
+    "description": "A cloud of poisonous spores condenses on the target, implanting them with fungal growth. The spell cannot be mitigated, and inflicts 3 {{damage.poison}} damage. The damage increases by 3 every time it is cast on the same target. Spore buildup is removed if the target is healed or set aflame.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Weal",
@@ -1431,6 +1501,7 @@
     "name": "Thorn Bed",
     "description": "An area designated by the caster becomes thickly overgrown with thorns, becoming difficult terrain. Targets affected take 1d4 piercing damage immediately and an additional 1d4 piercing damage whenever they move through the terrain.",
     "level": 6,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Weal",
@@ -1451,6 +1522,7 @@
     "name": "Tree of Life",
     "description": "A magical tree appears, healing all living creatures in range by 3d6 each turn, at the start of their turn. The tree has 100 hitpoints, but is vulnerable to {{damage.heat}} damage. The tree's healing decreases to 2d6 below 70 hp and to 1d6 below 40 hp.",
     "level": 8,
+    "duration": "1 Day",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Weal",
@@ -1471,6 +1543,7 @@
     "name": "Become Tree",
     "description": "The caster gradually transforms themselves into a tree. In so doing, they lose the ability to speak or see, but retain their knowledge, memories and personality. In addition, they may communicate with nearby trees and their lifespan is increased by 1d6 millennia.",
     "level": 9,
+    "duration": "Permanent",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Weal",
@@ -1491,6 +1564,7 @@
     "name": "Spiderweb",
     "description": "A gout of sticky webbing shoots from the caster's outstretched hands. The target must make a DT 14 {{skills.mobility}} saving throw or become {{status.restrained}}, unable to move.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wild",
@@ -1511,6 +1585,7 @@
     "name": "Snakebite",
     "description": "The appearance of a serpent lashes out from the caster's outstretched hand, striking towards a target up to 12 feet away. The caster makes a {{skills.nature}} check against the target's mitigation. If successful, the target takes 1d12 {{damage.poison}} damage.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wild",
@@ -1531,6 +1606,7 @@
     "name": "Cat's Eye",
     "description": "The target gains the ability to see in the dark, seeing in pitch blackness as if it were dim light, and in dim light as if it were bright light.",
     "level": 1,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wild",
@@ -1542,15 +1618,16 @@
       }
     },
     "castingReqs": {
-      "evocation": 0,
+      "evocation": 1,
       "concentration": 0,
       "time": "1 Action"
     }
   },
   {
     "name": "Fish's lung",
-    "description": "The caster gains the ability to breathe water for 1 hour.",
+    "description": "The caster gains the ability to breathe water.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Wild",
@@ -1571,6 +1648,7 @@
     "name": "Eagle's Talons",
     "description": "The caster's hands temporarily grow sharp talons, increasing their unarmed melee damage by 1d6 plus their {{skills.nature}} proficiency in {{damage.piercing}} damage. In addition, they gain advantage on grappling checks.",
     "level": 3,
+    "duration": "1 Minute",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wild",
@@ -1591,6 +1669,7 @@
     "name": "Hawk's Eyes",
     "description": "For one hour, gain advantage on perception checks. You see objects clearly, up to a distance of 10 miles.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wild",
@@ -1611,6 +1690,7 @@
     "name": "Raven's Wings",
     "description": "Feathered wings sprout from your back, imbuing you with the ability to fly. The coloration and shape of the wings is unique to each caster, often a reflection of their underlying personality. Casting this spell for the first time is often treated as a coming-of-age ritual in druid circles.",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Wild",
@@ -1631,6 +1711,7 @@
     "name": "Lacerate",
     "description": "You make a horizontal slashing motion with your hands, causing a large spectral paw to slice their air with its claws. Enemies lined up horizontally in front of you must make a {{attr.STR}} saving throw or take 2d12 {{damage.slashing}} damage. On a successful save, they take half damage.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Wild",
@@ -1651,6 +1732,7 @@
     "name": "Mole",
     "description": "For one hour, gain the ability to tunnel through dirt. Your tunneling speed is one foot per second. Creatures cannot follow you in your burrow unless you expend 1 willpower per 10 feet to make it wide enough to follow.",
     "level": 5,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Wild",
@@ -1671,6 +1753,7 @@
     "name": "Owl's Wisdom",
     "description": "The caster's {{attr.INT}} increases by 1d8 for 8 hours.",
     "level": 6,
+    "duration": "8 Hours",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Wild",
@@ -1691,6 +1774,7 @@
     "name": "Rhino's Hide",
     "description": "If not wearing armor, the caster's skin becomes as tough as a Rhinoceros, increasing their BC by 8 for 5 turns. They also gain resistance to {{damage.acid}}, {{damage.lightning}} and {{damage.heat}} damage.",
     "level": 7,
+    "duration": "30 Seconds",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Wild",
@@ -1709,8 +1793,9 @@
   },
   {
     "name": "Circle of Life",
-    "description": "The caster takes 2d6 damage, but the target is healed for thrice that amount. If the caster falls unconscious as a result of casting this spell, the target is healed completely.",
+    "description": "The caster takes 2d6 {{damage.holy}} damage, but the target is healed for thrice that amount. If the caster falls unconscious as a result of casting this spell, the target is healed completely.",
     "level": 9,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Wild",
@@ -1731,6 +1816,7 @@
     "name": "Fairy Fire",
     "description": "The caster designates an area, causing the ground to glow and sparkle with eerie fairy fire. Enemies entering this area become illuminated and outlined in green, blue, teal, or violet light, even if they are invisible. Melee or ranged attacks against such enemies have advantage, unless the attacker is blinded.",
     "level": 1,
+    "duration": "1 Minute",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wyrd",
@@ -1749,8 +1835,9 @@
   },
   {
     "name": "Beast Speech",
-    "description": "The caster gains the ability to converse with animals for one hour.",
+    "description": "The caster gains the ability to converse with animals.",
     "level": 1,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Wyrd",
@@ -1769,8 +1856,9 @@
   },
   {
     "name": "Bubble",
-    "description": "A magical bubble appears, able to engulf one {{sizes.medium}} target. On your turn, you can move the bubble up to 3 feet per second. Physical attacks cannot pass through the bubble, but it can be attacked from within by the engulfed creature. The bubble is vulnerable to {{damage.piercing}} damage and pops after taking 1d20 piercing damage. The bubble lasts for up to 1 minute and has a Mitigation of 5, from its dodge chance.",
+    "description": "A magical bubble appears, able to engulf one {{sizes.medium}} target. On your turn, you can move the bubble up to 18 feet (3 tiles). Physical attacks cannot pass through the bubble, but it can be attacked from within by the engulfed creature. The bubble is vulnerable to {{damage.piercing}} damage and pops after taking 1d20 piercing damage. The bubble a dodge chance of 5.",
     "level": 2,
+    "duration": "1 Minute",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wyrd",
@@ -1789,8 +1877,9 @@
   },
   {
     "name": "Bonfire",
-    "description": "A magical bonfire appears, lasting for up to one hour. Once per turn, the caster can use a reaction to cause it to deal 2d6 fire damage to enemies within 5 feet. The bonfire is otherwise ordinary and can be extinguished by water or suffocation.",
+    "description": "A magical bonfire appears, lasting for up to one hour. Once per turn, the caster can use a reaction to cause it to deal 2d6 {{damage.heat}} damage to enemies within 5 feet. The bonfire is otherwise ordinary and can be extinguished by water or suffocation.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wyrd",
@@ -1811,6 +1900,7 @@
     "name": "Spirit Animal",
     "description": "The first time this spell is cast, the caster enters a trance and meets their spirit animal, a fey spirit wise in the ways of the wild who takes the form of a spectral animal, such as a bear, panther, wolf, or hawk. TODO",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Wyrd",
@@ -1831,6 +1921,7 @@
     "name": "Far Whisper",
     "description": "You gain the ability to whisper to distant creatures as if they were near. You may whisper or speak to a creature up to a mile away, and they will hear your voice as if they were standing beside you.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Wyrd",
@@ -1849,8 +1940,9 @@
   },
   {
     "name": "Illusory Terrain",
-    "description": "The caster beseeches the appropriate fairy council to disguise a large swathe of terrain in an appropriate manner. The fairies must be convinced that it is in their benefit to do so, though (being fey) they rarely say no to a sufficiently clever prank. If the player passes a DT 16 {{skills.persuasion}} check, the terrain appears transformed for 1d8 days, after which time the fey grow bored and cease the illusion. The illusion can be detected by anyone who draws close and",
+    "description": "The caster beseeches the appropriate fairy council to disguise a large swathe of terrain in a specific manner. The fairies must be convinced that it is in their benefit to do so, though they (being fey) rarely say no to a sufficiently clever prank. If the player passes a DT 16 {{skills.persuasion}} check, the terrain appears transformed for a time, until the fey grow bored and cease the illusion. The illusion can be detected by anyone who draws close and passes a DT 14 {{skills.perception}} check.",
     "level": 4,
+    "duration": "1d8 Days",
     "rarity": "Esoteric",
     "type": "Ceremony",
     "study": "Wyrd",
@@ -1871,6 +1963,7 @@
     "name": "Rain Dance",
     "description": "The caster leads a group in a dance of supplication around a fire, beseeching the fey for rain, snow, or clear skies. The fey, eager to show their power, respond by producing the requested weather.",
     "level": 4,
+    "duration": "1 Day",
     "rarity": "Common",
     "type": "Ceremony",
     "study": "Wyrd",
@@ -1891,6 +1984,7 @@
     "name": "Awaken Beastie",
     "description": "A beast is permanently awakened to sentience, gaining +3 to {{attr.INT}} and +3 to {{attr.CHA}} in addition to the ability to speak. It automatically joins you in combat, unless mortally afraid. After one week of sentience, the animal must make a DT 14 {{attr.CHA}} saving throw or be overcome with existential angst, whereupon it will plead the caster to revoke sentience (which is done by casting the spell a second time).",
     "level": 5,
+    "duration": "Indefinite",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Wyrd",
@@ -1911,6 +2005,7 @@
     "name": "Oneiromancy",
     "description": "During the ritual, the caster beseeches the fey for a vision concerning an important topic, and then falls into a magical slumber. While asleep, the caster receives a vision. The DM privately rolls a d20, which determines how directly the vision answers the question. On a 1, the vision (fantastical as it may be) bears absolutely no relation to the question at hand, and may even be malicious fey trickery.",
     "level": 5,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Wyrd",
@@ -1929,8 +2024,9 @@
   },
   {
     "name": "Sweet Dreams",
-    "description": "You and all participants call out to the fey, thanking them for their role in maintaining the balance of nature and protecting the life force. You invite them to visit you in your dreams, calling for succor, entertainment, and guidance. All participants roll a 1d4, and gain an effect accordingly: <ol><li>Hellish Nightmares: Tormented by cruel fey, no rest can be had. No Willpower is recovered during the long rest.</li><li>Vivid Visions: Playful and adventurous fey take the dreamer on wondrous adventures seeming to last for many days. Upon awakening, the individual gains 1d4 temporary willpower.</li><li>Quiet Quandaries: The dreamer awakens beside a pool of water, which idly asks the dreamer a question. After it has been answered, it invites the dreamer to ask a question of their own. If the adventurer answered the water's question truthfully, it answers truthfully. Also gain 1d6 temporary WP.</li><li>Allmother's Embrace: The dreamers is escorted by powerful fey to the magical heart of the forest. They are greeted by a gentle yet powerful dryad called the Allmother, who embraces them tenderly. Gain 1d8 temporary HP and willpower.</li></ol>",
+    "description": "You and all participants call out to the fey, thanking them for their role in maintaining the balance of nature and protecting the life force. You invite them to visit you in your dreams, calling for succor, entertainment, and guidance. All participants roll a 1d4, and gain an effect accordingly: <ol><li>Hellish Nightmares: Tormented by cruel fey, no rest can be had. No Willpower is recovered during the long rest.</li><li>Vivid Visions: Playful and adventurous fey take the dreamer on wondrous adventures seeming to last for many days. Upon awakening, the individual gains 1d4 temporary willpower.</li><li>Quiet Quandaries: The dreamer awakens beside a pool of water, which idly asks the dreamer a question. After it has been answered, it invites the dreamer to ask a question of their own. If the adventurer answered the water's question truthfully, it answers truthfully. Also gain 1d6 temporary WP.</li><li>Everwood's Embrace: The dreamer is escorted by powerful fey to the magical heart of the forest. They are greeted by a gentle yet powerful dryad, who embraces them tenderly. Gain 1d8 temporary HP and willpower.</li></ol>",
     "level": 6,
+    "duration": "8 Hours",
     "rarity": "Esoteric",
     "type": "Ceremony",
     "study": "Wyrd",
@@ -1949,8 +2045,9 @@
   },
   {
     "name": "Primal Form",
-    "description": "The caster expends 10 willpower to transform into a more primal version of their race for one hour. For example, a human, elf, dwarf, or halfling would become a neanderthal. The caster gains +5 {{attr.STR}}, and +2 {{attr.NST}} but suffers -5 {{attr.INT}} and -2 {{attr.CHA}} for the duration of the spell. You lose one level of proficiency in every skill for the duration of the spell.",
+    "description": "The caster expends 10 willpower to transform into a more primal version of their race for the duration. For example, a human, elf, dwarf, or halfling would become a neanderthal. The caster gains +5 {{attr.STR}}, and +2 {{attr.NST}} but suffers -5 {{attr.INT}} and -2 {{attr.CHA}}. You lose one level of proficiency in every skill for the duration of the spell.",
     "level": 6,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Wyrd",
@@ -1971,6 +2068,7 @@
     "name": "Forest Defender",
     "description": "An allied animal (recruited via {{spells.beast_speech}} or {{spells.awaken_beastie}}) grows to twice its normal size. Such a creature gains +10 {{attr.STR}}.",
     "level": 7,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Wyrd",
@@ -1991,6 +2089,7 @@
     "name": "Fairy’s Feast",
     "description": "The fairies bring forth a great feast, consisting of fruits and vegetables, wine, cheeses, and venison. The feast serves up to a dozen men, and all who partake become immune to disease and poison (and cured thereof) for eight hours, and also heal 3d20 hp. The feast also alleviates two levels of hunger. After one hour, the entire repast vanishes without a trace.<br /><b>But beware!</b> If anyone partakes and forgets to thank the fairies, they shall suffer one of the following curses for 1 hour (chosen randomly):<ol><li>Shrunken to the size of a rat</li><li>Beset with bizarre illusions and hallucinations</li><li>Plagued with swarms of gnats and biting flies</li><li>Loss of sight and hearing</li><li>Dreadful nightmares and intrusive thoughts most vile</li><li>Gnawing hunger, which is not sated by any amount of food or drink</li></ol>",
     "level": 7,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Wyrd",
@@ -2011,6 +2110,7 @@
     "name": "Dream Warrior",
     "description": "During the next long rest following the ritual, you dream of a warrior spirit who will assist you in times of hardship. You may determine the warrior's race, class, and level, though their level is limited to half of yours. When you awake in the morning, you will find at your side a glittering silver hand bell. When you ring this bell, you may expend willpower (equal to twice their level) to summon this warrior to your side for eight hours. Performing this ritual a second time causes the first bell to disappear.",
     "level": 8,
+    "duration": "8 Hours",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Wyrd",
@@ -2031,6 +2131,7 @@
     "name": "Monkey's Paw",
     "description": "Three individuals wish upon the severed paw of a monkey, gaining one wish each. Each one who would wish rolls a d20; the number shown is the number of words they may use to construct their wish. Each wish is sure to come true, but the execution is left to the caprice of powerful fairy. A given individual may partake three times of this ceremony, ere the fey turn a deaf ear to their pleas.",
     "level": 9,
+    "duration": "Instantaneous",
     "rarity": "Forbidden",
     "type": "Ceremony",
     "study": "Wyrd",
@@ -2052,6 +2153,7 @@
     "name": "Find Familiar",
     "description": "The caster summons a lesser spirit as a familiar. The spirit takes the form of an imp, a pseudodragon, or a chupacabra.",
     "level": 1,
+    "duration": "Indefinite",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Thaumaturgy",
@@ -2072,6 +2174,7 @@
     "name": "Mage Hand",
     "description": "The caster expends 1 willpower to summon a floating spectral hand. The hand is a minor spirit, obedient and sentient but prone to occasional unbidden mischief. The hand can fly up to 100 yards away from its master, and carry an object weighing up to five pounds.",
     "level": 1,
+    "duration": "5 minutes",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Thaumaturgy",
@@ -2092,6 +2195,7 @@
     "name": "Summon Weapon",
     "description": "Summon a small or standard weapon to hand for one hour. The weapon is partially transparent, ever burning with an eerie violet flame. The weapon deals the same damage as a weapon of steel.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Thaumaturgy",
@@ -2109,9 +2213,31 @@
     }
   },
   {
+    "name": "Detect Magic",
+    "description": "You detect the presence of any ongoing spells. You may also detect TODO",
+    "level": 2,
+    "duration": "Instantaneous",
+    "rarity": "Common",
+    "type": "Evocation",
+    "study": "Thaumaturgy",
+    "trainingReqs": {
+      "level": 3,
+      "slots": 3,
+      "stats": {
+        "cha": 12
+      }
+    },
+    "castingReqs": {
+      "evocation": 2,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
     "name": "Locust Swarm",
-    "description": "A swarm of biting locusts swarms around a target, dealing 2d6 {{damage.piercing}} damage. The spell also has a chance to inflict {{status.poisoned}},",
+    "description": "A swarm of biting locusts swarms around a target, dealing 2d6 {{damage.poison}} damage. TODO poison status effect.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Thaumaturgy",
@@ -2132,6 +2258,7 @@
     "name": "Imbue Sentience",
     "description": "A minor spirit is bound to an inanimate object weighing less than one ton. TODO",
     "level": 3,
+    "duration": "Indefinite",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Thaumaturgy",
@@ -2149,9 +2276,31 @@
     }
   },
   {
-    "name": "Soul Dart",
-    "description": "The caster imbues some of their life force into a number of spectral darts, up to four. Lose 1 hp and one willpower for each dart summoned. Each dart deals 1d6 piercing damage on a hit, and cannot miss.",
+    "name": "Diagnose",
+    "description": "Gain insight into the remaining hitpoints and willpower of an enemy monster.",
+    "level": 3,
+    "duration": "Instantaneous",
+    "rarity": "Common",
+    "type": "Evocation",
+    "study": "Thaumaturgy",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 3,
+      "stats": {
+        "cha": 13
+      }
+    },
+    "castingReqs": {
+      "evocation": 1,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Soul Sight",
+    "description": "For one hour, gain the ability to perceive latent spirits and the lingering deceased.",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Thaumaturgy",
@@ -2163,17 +2312,18 @@
       }
     },
     "castingReqs": {
-      "evocation": 3,
+      "evocation": 1,
       "concentration": 0,
       "time": "1 Action"
     }
   },
   {
-    "name": "Sentient Weapon",
-    "description": "The spirit of a fallen warrior is summoned from the astral to imbue a summoned weapon with sentience for one hour. The spirit possess a weapon summoned with {{spells.summon_weapon}}, and causes it hover in place and attack on its own.",
+    "name": "Augury",
+    "description": "TODO",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Common",
-    "type": "Evocation",
+    "type": "Ritual",
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 7,
@@ -2183,15 +2333,16 @@
       }
     },
     "castingReqs": {
-      "evocation": 4,
+      "evocation": 5,
       "concentration": 0,
       "time": "1 Action"
     }
   },
   {
-    "name": "Exorcism",
-    "description": "The caster attempts to purge a demon or unnatural host from a possessed body. The caster rolls for {{skills.sorcery}} while the possessing spirit rolls for {{attr.NST}}. If the caster rolls higher, the spirit is cast out, unless it is extremely powerful.",
+    "name": "Astral Projection",
+    "description": "The caster enters a meditative state and enters the astral plane, the realm ordinarily accessible only to disincarnate entities. The nature of the astral is elucidated in {{appendices.bestiary}}. While in the astral, the caster may explore the lower astral to perceive a distorted version of the physical plane, or venture into the higher astral and converse with various entities in their natural environs, and request their names for summoning purposes.",
     "level": 5,
+    "duration": "8 Hours",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Thaumaturgy",
@@ -2212,6 +2363,7 @@
     "name": "Cloud of Daggers",
     "description": "Summon dozens of daggers from the astral plane begin to swirl around the designated region. Creatures within take 2d4 slashing and 2d4 piercing damage per turn.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Thaumaturgy",
@@ -2229,91 +2381,31 @@
     }
   },
   {
-    "name": "Demonic Posession",
-    "description": "The caster calls forth a lesser demon and commands it to bind the chosen creature. The demon attempts possession, rolling for {{attr.CHA}} against the victim's current willpower. If successful, the target is possessed for one hour, at which point they may make an additional saving throw to escape possession.",
+    "name": "Ancient Name",
+    "description": "The ritual establishes an audience with an ancient and mighty spirit: a dragon, an archdemon, or an angel. Each type of spirit must be plied by a valuable thing of a specific kind: the dragon, by gold. The demon, by the blood of innocents. The angel, by sincerity and a pure heart. If the offering is lacking in quality or quantity, the spirit chastises the summoner and explains by what terms, if any, the spirit may be plied. If successful, the spirit joins the player as a summon for eight hours. The spirit fights at the player's side and is true to their word, but acts of their own volition otherwise.",
     "level": 6,
-    "rarity": "Forbidden",
-    "type": "Evocation",
+    "duration": "1 Hour",
+    "rarity": "Common",
+    "type": "Ritual",
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 11,
-      "slots": 6,
-      "gold": 60,
+      "slots": 5,
       "stats": {
         "cha": 16
       }
     },
     "castingReqs": {
-      "evocation": 10,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
-    "name": "Invade Body",
-    "description": "The caster identifies a victim and attempts to permanently enter their body. The caster rolls for {{skills.sorcery}} against the target's willpower score. If successful, the victim is abruptly torn from their body and cast into the astral plane, while their attacker inhabits their body. If this spell is cast successful while already incarnate, the caster's previous body suffers cardiac arrest and undergoes irreversible damage after 2d6 minutes.",
-    "level": 7,
-    "rarity": "Forbidden",
-    "type": "Evocation",
-    "study": "Thaumaturgy",
-    "trainingReqs": {
-      "level": 13,
-      "slots": 6,
-      "gold": 70,
-      "stats": {
-        "cha": 17
-      }
-    },
-    "castingReqs": {
-      "evocation": 9,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
-    "name": "Reincarnation",
-    "description": "Draconic spirits answer the ceremonial call, allowing a living and a deceased soul exchange places. The reincarnated spirit inhabits the new body, while the sacrificial participant departs into the astral plane as a servant of dragons. The dragons accept only willing sacrifices, but otherwise do not question the methods of the ceremony. Once reincarnated, the soul retains both their old memories and those of the body's original inhabitant.",
-    "level": 8,
-    "rarity": "Esoteric",
-    "type": "Ceremony",
-    "study": "Thaumaturgy",
-    "trainingReqs": {
-      "level": 15,
-      "slots": 8,
-      "stats": {
-        "cha": 18
-      }
-    },
-    "castingReqs": {
-      "evocation": 100,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
-    "name": "Resurrection",
-    "description": "A deceased soul is returned to its body and made whole again, in a manner holy and pure. If the soul's body was destroyed, a new one in the same likeness is formed. The spirit to be resurrected must be good aligned. Otherwise, the leader must pass a DT 18 {{skills.persuasion}} check to persuade the angels that it is righteous to make an exception and overturn the course of nature. If the spirit to resurrect is evil, the",
-    "level": 9,
-    "rarity": "Esoteric",
-    "type": "Ceremony",
-    "study": "Thaumaturgy",
-    "trainingReqs": {
-      "level": 17,
-      "slots": 8,
-      "stats": {
-        "cha": 19
-      }
-    },
-    "castingReqs": {
-      "evocation": 150,
+      "evocation": 0,
       "concentration": 0,
       "time": "1 Action"
     }
   },
   {
     "name": "Guidance",
-    "description": "The caster touches an ally, giving them a 1d4 bonus to ability checks and saving throws for one round.",
+    "description": "The caster touches an ally, giving them a 1d4 bonus to ability checks and saving throws for the duration.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Theurgy",
@@ -2334,6 +2426,7 @@
     "name": "Alarm",
     "description": "A minor spirit is infused into an object, keeping watch. If the spirit observes unexpected or suspicious behavior, it begins to screech as loudly as possible. Each minor spirit has its own manner of screeching, but they are invariably extremely loud and annoying. The spirit can respond to simple instructions once summoned, regarding when to remain silent, screech, or abandon its post. If the spell {{spells.minor_telepathy}} is known, the spirit can be instructed to transmit a silent telepathic alarm instead. If the spell {{spells.major_telepathy}} is known, it can also communicate details about the situation when the alarm is triggered.",
     "level": 1,
+    "duration": "Indefinite",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Theurgy",
@@ -2351,29 +2444,10 @@
     }
   },
   {
-    "name": "Detect Magic",
-    "description": "You detect the presence of any ongoing spells. You may also detect",
-    "level": 2,
-    "rarity": "Common",
-    "type": "Evocation",
-    "study": "Theurgy",
-    "trainingReqs": {
-      "level": 3,
-      "slots": 3,
-      "stats": {
-        "cha": 12
-      }
-    },
-    "castingReqs": {
-      "evocation": 2,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
     "name": "Seek Spirit",
     "description": "The caster enters a meditative state and calls out for assistance, either to angels, demons, or dragons. Up to three entities are called forth, identifying themselves by name, but not by rank or alignment. The caster may ask each entity three questions, in order to discern its nature. The questions are limited to hypotheticals. The caster remembers the names of these principalities and powers, whose names he may later call upon in times of need.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Theurgy",
@@ -2391,49 +2465,10 @@
     }
   },
   {
-    "name": "Seance",
-    "description": "The caster enters a state of focus, sitting in a quiet and darkened room scented with incense. The caster calls a departed soul by name and asks them to come forward. A spirit responds and may answer questions, but might not answer truthfully or be the one which was called. The caster can attempt a DT 16 {{skills.perception}} (CHA) check to determine if the spirit has lied at any point so far during the ritual. Detecting a liar banishes the spirit but does not necessarily end the seance.",
-    "level": 3,
-    "rarity": "Common",
-    "type": "Ritual",
-    "study": "Theurgy",
-    "trainingReqs": {
-      "level": 5,
-      "slots": 3,
-      "stats": {
-        "cha": 13
-      }
-    },
-    "castingReqs": {
-      "evocation": 2,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
-    "name": "Diagnose",
-    "description": "Gain insight into the remaining hitpoints and willpower of an enemy monster.",
-    "level": 3,
-    "rarity": "Common",
-    "type": "Evocation",
-    "study": "Theurgy",
-    "trainingReqs": {
-      "level": 5,
-      "slots": 3,
-      "stats": {
-        "cha": 13
-      }
-    },
-    "castingReqs": {
-      "evocation": 1,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
-    "name": "Soul Sight",
-    "description": "For one hour, gain the ability to perceive latent spirits and the lingering deceased.",
+    "name": "Sentient Weapon",
+    "description": "The spirit of a fearsome angel is summoned from the astral to imbue a summoned weapon with sentience for one hour. The spirit possess a weapon summoned with {{spells.summon_weapon}}, and causes it hover in place and attack on its own.",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Theurgy",
@@ -2445,35 +2480,16 @@
       }
     },
     "castingReqs": {
-      "evocation": 1,
+      "evocation": 4,
       "concentration": 0,
       "time": "1 Action"
     }
   },
   {
-    "name": "Augury",
-    "description": "TODO",
-    "level": 4,
-    "rarity": "Common",
-    "type": "Ritual",
-    "study": "Theurgy",
-    "trainingReqs": {
-      "level": 7,
-      "slots": 4,
-      "stats": {
-        "cha": 14
-      }
-    },
-    "castingReqs": {
-      "evocation": 5,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
-    "name": "Astral Projection",
-    "description": "The caster enters a meditative state and enters the astral plane, the realm ordinarily accessible only to disincarnate entities. The nature of the astral is elucidated in {{appendices.bestiary}}. While in the astral, the caster may explore the lower astral to perceive a distorted version of the physical plane, or venture into the higher astral and converse with various entities in their natural environs, and request their names for summoning purposes.",
+    "name": "Exorcism",
+    "description": "The caster attempts to purge a demon or unnatural host from a possessed body. The caster rolls for {{skills.sorcery}} while the possessing spirit rolls for {{attr.NST}}. If the caster rolls higher, the spirit is cast out, unless it is extremely powerful.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Theurgy",
@@ -2491,29 +2507,10 @@
     }
   },
   {
-    "name": "Ancient Name",
-    "description": "The ritual establishes an audience with an ancient and mighty spirit: a dragon, an archdemon, or an angel. Each type of spirit must be plied by a valuable thing of a specific kind: the dragon, by gold. The demon, by the blood of innocents. The angel, by sincerity and a pure heart. If the offering is lacking in quality or quantity, the spirit chastises the summoner and explains by what terms, if any, the spirit may be plied. If successful, the spirit joins the player as a summon for eight hours. The spirit fights at the player's side and is true to their word, but acts of their own volition otherwise.",
-    "level": 6,
-    "rarity": "Common",
-    "type": "Ritual",
-    "study": "Theurgy",
-    "trainingReqs": {
-      "level": 11,
-      "slots": 5,
-      "stats": {
-        "cha": 16
-      }
-    },
-    "castingReqs": {
-      "evocation": 0,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
     "name": "Futuresight",
-    "description": "The player gains the ability to foresee events before they occur. For one hour, the player may see the result of skill checks before the underlying action is undertaken.",
+    "description": "You gain the ability to foresee events before they occur, up to one hour in the future. You can roll skill checks before the underlying action is undertaken.",
     "level": 9,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Ritual",
     "study": "Theurgy",
@@ -2531,9 +2528,31 @@
     }
   },
   {
+    "name": "Resurrection",
+    "description": "A deceased soul is returned to its body and made whole again, in a manner holy and pure. If the soul's body was destroyed, a new one in the same likeness is formed. The spirit to be resurrected must be good aligned. Otherwise, the leader must pass a DT 18 {{skills.persuasion}} check to persuade the angels that it is righteous to make an exception and overturn the course of nature. If the spirit to resurrect is evil, the",
+    "level": 9,
+    "duration": "Permanent",
+    "rarity": "Esoteric",
+    "type": "Ceremony",
+    "study": "Theurgy",
+    "trainingReqs": {
+      "level": 17,
+      "slots": 8,
+      "stats": {
+        "cha": 19
+      }
+    },
+    "castingReqs": {
+      "evocation": 150,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
     "name": "Vampiric Touch",
     "description": "A target you touch is putrefied with necrotic energy. The target takes 1d8 {{damage.profane}} damage, while you are healed by the same amount of damage dealt.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Forbidden",
     "type": "Evocation",
     "study": "Necromancy",
@@ -2555,6 +2574,7 @@
     "name": "Life Leach",
     "description": "A ray of black energy arcs from the hands of the caster to their target. The target takes 1d4 {{damage.profane}} damage on the first turn the spell is cast and 1d6 damage on subsequent turns. The healer is healed by 1 for every point of damage dealt.",
     "level": 2,
+    "duration": "Concentration",
     "rarity": "Forbidden",
     "type": "Concentration",
     "study": "Necromancy",
@@ -2576,6 +2596,7 @@
     "name": "Reanimate",
     "description": "A bestial or humanoid creature is returned to an eerie semblance of life.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Forbidden",
     "type": "Evocation",
     "study": "Necromancy",
@@ -2594,43 +2615,43 @@
     }
   },
   {
-    "name": "Inflict Disease",
-    "description": "A target you choose potentially becomes afflicted by one of a number of diseases, with symptoms appearing within one hour if the target  fails a DT 10 {{skills.defense}} saving throw. The target becomes {{status.lethargic}} for 1d8 days.",
+    "name": "Seance",
+    "description": "The caster enters a state of focus, sitting in a quiet and darkened room scented with incense. The caster calls a departed soul by name and asks them to come forward. A spirit responds and may answer questions, but might not answer truthfully or be the one which was called. The caster can attempt a DT 16 {{skills.perception}} (CHA) check to determine if the spirit has lied at any point so far during the ritual. Detecting a liar banishes the spirit but does not necessarily end the seance.",
     "level": 3,
-    "rarity": "Forbidden",
-    "type": "Evocation",
+    "duration": "1 Hour",
+    "rarity": "Common",
+    "type": "Ritual",
     "study": "Necromancy",
     "trainingReqs": {
       "level": 5,
-      "slots": 4,
-      "gold": 30,
+      "slots": 3,
       "stats": {
         "cha": 13
       }
     },
     "castingReqs": {
-      "evocation": 5,
+      "evocation": 2,
       "concentration": 0,
       "time": "1 Action"
     }
   },
   {
-    "name": "Hex",
-    "description": "Cruel magic inflicts a lasting disability upon the target, hampering their use of a chosen skill. The target gains disadvantage on checks with that skill until they are cleansed by a priest or sprinkled with holy water.",
-    "level": 3,
-    "rarity": "Forbidden",
+    "name": "Soul Dart",
+    "description": "The caster imbues some of their life force into a number of spectral darts, up to four. Lose 1 hp and one willpower for each dart summoned. Each dart deals 1d6 piercing damage on a hit, and cannot miss.",
+    "level": 4,
+    "duration": "Instantaneous",
+    "rarity": "Common",
     "type": "Evocation",
     "study": "Necromancy",
     "trainingReqs": {
-      "level": 5,
+      "level": 7,
       "slots": 4,
-      "gold": 30,
       "stats": {
-        "cha": 13
+        "cha": 14
       }
     },
     "castingReqs": {
-      "evocation": 4,
+      "evocation": 3,
       "concentration": 0,
       "time": "1 Action"
     }
@@ -2639,6 +2660,7 @@
     "name": "Starvation",
     "description": "The target gains one level of starvation, as if it had gone a day without consuming food.",
     "level": 4,
+    "duration": "1 Day",
     "rarity": "Forbidden",
     "type": "Evocation",
     "study": "Necromancy",
@@ -2660,6 +2682,7 @@
     "name": "Speak with the Dead",
     "description": "A dead body is used as conduit to contact a departed soul. The soul is torn across time and space and wrenched back into its former body in order to answer up to three questions. Afterwards, its body crumbles into dust. If the soul is incarnated, its current body falls unconscious while this spell is cast.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Forbidden",
     "type": "Concentration",
     "study": "Necromancy",
@@ -2678,30 +2701,10 @@
     }
   },
   {
-    "name": "Curse",
-    "description": "The target is cursed with a cruel and lasting affliction of one of the following types: TODO",
-    "level": 6,
-    "rarity": "Forbidden",
-    "type": "Evocation",
-    "study": "Necromancy",
-    "trainingReqs": {
-      "level": 11,
-      "slots": 6,
-      "gold": 60,
-      "stats": {
-        "cha": 16
-      }
-    },
-    "castingReqs": {
-      "evocation": 3,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
     "name": "Disintegrate",
-    "description": "A ray of dark black and green energy arcs towards a target. The target takes 3d12 {{damage.profane}} damage if it is living, or disintegrates into a pile of ash if it is inanimate.",
+    "description": "A ray of dark black and green energy arcs towards a target. The target takes 3d12 {{damage.profane}} damage if it is living, or disintegrates into a pile of ash if it is inanimate. Targets slain by this spell cannot be raised or resurrected into their original body.",
     "level": 6,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Necromancy",
@@ -2722,6 +2725,7 @@
     "name": "Vampiric Kiss",
     "description": "Transfer up to 6 willpower to or from a target you can touch. If the target is willing, the spell costs no willpower. If not, you must grapple the target before casting the spell.",
     "level": 7,
+    "duration": "Instantaneous",
     "rarity": "Forbidden",
     "type": "Evocation",
     "study": "Necromancy",
@@ -2740,30 +2744,10 @@
     }
   },
   {
-    "name": "Devour",
-    "description": "Inflict 2d6 {{damage.profane}} damage on a target. If the spell lands a killing blow, gain their remaining willpower.",
-    "level": 8,
-    "rarity": "Forbidden",
-    "type": "Evocation",
-    "study": "Necromancy",
-    "trainingReqs": {
-      "level": 15,
-      "slots": 7,
-      "gold": 80,
-      "stats": {
-        "cha": 18
-      }
-    },
-    "castingReqs": {
-      "evocation": 3,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
     "name": "Rend Soul",
     "description": "Deal 4d12 {{damage.profane}} damage to a target within 100 yards. If a target is slain as a result of this spell, the caster may immediately enter its body.",
     "level": 8,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Necromancy",
@@ -2784,6 +2768,7 @@
     "name": "Flesh Golem",
     "description": "A repulsive mountain of pulsating organs and exposed muscle is summoned to do its master's bidding.",
     "level": 9,
+    "duration": "6 Days",
     "rarity": "Forbidden",
     "type": "Ceremony",
     "study": "Necromancy",
@@ -2805,6 +2790,7 @@
     "name": "Become Lich",
     "description": "The caster prepares a number of vessels, called phylacteries, to anchor the components of their soul to the physical plane. For every phylactery, a sentient mortal life (willing or unwilling) is sacrificed, to provide the necessary magical binding energy. A minimum of three sacrifices is required, to complete the ritual. The sacrificial victims contribute their willpower towards the completion of the ritual. When the ceremony is complete, the caster becomes a lich, a sentient undead with a lifespan of 666 years. Repeating the ritual extends lifespan by an additional 666 years, but requires twice as many sacrifices each time.",
     "level": 9,
+    "duration": "666 Years",
     "rarity": "Forbidden",
     "type": "Ceremony",
     "study": "Necromancy",
@@ -2823,9 +2809,163 @@
     }
   },
   {
+    "name": "Reincarnation",
+    "description": "Draconic spirits answer the ceremonial call, allowing a living and a deceased soul exchange places. The reincarnated spirit inhabits the new body, while the sacrificial participant departs into the astral plane as a servant of dragons. The dragons accept only willing sacrifices, but otherwise do not question the methods of the ceremony. Once reincarnated, the soul retains both their old memories and those of the body's original inhabitant.",
+    "level": 8,
+    "duration": "Permanent",
+    "rarity": "Esoteric",
+    "type": "Ceremony",
+    "study": "Draconolatry",
+    "trainingReqs": {
+      "level": 15,
+      "slots": 8,
+      "stats": {
+        "cha": 18
+      }
+    },
+    "castingReqs": {
+      "evocation": 100,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Hex",
+    "description": "Cruel magic inflicts a lasting disability upon the target, hampering their use of a chosen skill. The target gains disadvantage on checks with that skill until they are cleansed by a priest or sprinkled with holy water.",
+    "level": 3,
+    "duration": "Indefinite",
+    "rarity": "Forbidden",
+    "type": "Evocation",
+    "study": "Demonolatry",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "gold": 30,
+      "stats": {
+        "cha": 13
+      }
+    },
+    "castingReqs": {
+      "evocation": 4,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Inflict Disease",
+    "description": "A target you choose potentially becomes afflicted by one of a number of diseases, with symptoms appearing within one hour if the target  fails a DT 10 {{skills.defense}} saving throw. The target becomes {{status.lethargic}} for 1d8 days.",
+    "level": 3,
+    "duration": "1d8 Days",
+    "rarity": "Forbidden",
+    "type": "Evocation",
+    "study": "Demonolatry",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 4,
+      "gold": 30,
+      "stats": {
+        "cha": 13
+      }
+    },
+    "castingReqs": {
+      "evocation": 5,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Curse",
+    "description": "The target is cursed with a cruel and lasting affliction of one of the following types: TODO",
+    "level": 6,
+    "duration": "1 Year",
+    "rarity": "Forbidden",
+    "type": "Evocation",
+    "study": "Demonolatry",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 6,
+      "gold": 60,
+      "stats": {
+        "cha": 16
+      }
+    },
+    "castingReqs": {
+      "evocation": 3,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Demonic Posession",
+    "description": "The caster calls forth a lesser demon and commands it to bind the chosen creature. The demon attempts possession, rolling for {{attr.CHA}} against the victim's current willpower. If successful, the target is possessed for one hour, at which point they may make an additional saving throw to escape possession.",
+    "level": 6,
+    "duration": "1 Hour",
+    "rarity": "Forbidden",
+    "type": "Evocation",
+    "study": "Demonolatry",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 6,
+      "gold": 60,
+      "stats": {
+        "cha": 16
+      }
+    },
+    "castingReqs": {
+      "evocation": 10,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Invade Body",
+    "description": "The caster identifies a victim and attempts to permanently enter their body. The caster rolls for {{skills.sorcery}} against the target's maximum willpower. If successful, the victim is abruptly torn from their body and cast into the astral plane, while their attacker inhabits their body. If this spell is cast successful while already incarnate, the caster's previous body suffers cardiac arrest and undergoes irreversible damage after 2d6 minutes.",
+    "level": 7,
+    "duration": "Permanent",
+    "rarity": "Forbidden",
+    "type": "Evocation",
+    "study": "Demonolatry",
+    "trainingReqs": {
+      "level": 13,
+      "slots": 6,
+      "gold": 70,
+      "stats": {
+        "cha": 17
+      }
+    },
+    "castingReqs": {
+      "evocation": 9,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Devour",
+    "description": "Inflict 2d6 {{damage.profane}} damage on a target. If the spell lands a killing blow, gain their remaining willpower.",
+    "level": 8,
+    "duration": "Instantaneous",
+    "rarity": "Forbidden",
+    "type": "Evocation",
+    "study": "Demonolatry",
+    "trainingReqs": {
+      "level": 15,
+      "slots": 7,
+      "gold": 80,
+      "stats": {
+        "cha": 18
+      }
+    },
+    "castingReqs": {
+      "evocation": 3,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
     "name": "Heat Metal",
     "description": "A piece of metal such as a weapon or suit of armor becomes unbearably hot. If the item is worn or carried, the wearer takes 2 {{damage.heat}} damage, which increases by 2 each turn to a maximum of 8 {{damage.heat}} damage per turn.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Earth",
@@ -2846,6 +2986,7 @@
     "name": "Mend",
     "description": "The caster magically repairs a small wound, crack, or tear in a person or object. The target must be smaller than one cubic foot of volume.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Earth",
@@ -2866,6 +3007,7 @@
     "name": "Clay Armor",
     "description": "The caster's skin becomes hardened clay for one hour, improving BC by 5.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Earth",
@@ -2886,6 +3028,7 @@
     "name": "Quake",
     "description": "The caster concentrates on accumulating seismic forces within the earth. A patch of ground with a radius of 10 feet begins to tremble and undulate noticeably. When the spell is ended, all targets within 30 feet of the caster take 1d10 {{damage.force}} damage for every turn concentration was maintained.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Earth",
@@ -2906,6 +3049,7 @@
     "name": "Quicksand",
     "description": "Transform solid ground into sinking sand. The affected area becomes difficult terrain. Additionally, targets which start their turn on the quicksand must make a DT 14 {{skills.mobility}} saving throw or lose the ability to move.",
     "level": 3,
+    "duration": "1 Minute",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Earth",
@@ -2926,6 +3070,7 @@
     "name": "Acid Blade",
     "description": "Imbue a blade you touch with the power of acid. For one hour, attacks with the weapon deal 1d4 {{damage.acid}} damage and decrease enemy BC by 1.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Earth",
@@ -2947,6 +3092,7 @@
     "name": "Clay Golem",
     "description": "A clay golem is summoned for 8 hours. Though the weakest of the golems, it has resistance to {{damage.bludgeoning}} and {{damage.piercing}} damage due to its soft body.",
     "level": 4,
+    "duration": "8 Hours",
     "rarity": "Academic",
     "type": "Ceremony",
     "study": "Earth",
@@ -2968,6 +3114,7 @@
     "name": "Stone Armor",
     "description": "The caster's skin becomes brittle stone, improving BC by 7. The armor shatters after 10 {{damage.bludgeoning}} damage is taken, ending the spell.",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Earth",
@@ -2988,6 +3135,7 @@
     "name": "Earthen Wall",
     "description": "A great earthen wall up to 100 feet long appears in the indicated location, obstructing movement. The wall can absorb 50 damage before it breaks, and is immune to {{damage.heat}} damage. Targets over the area where the wall was constructed are pushed aside.",
     "level": 5,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Earth",
@@ -3008,6 +3156,7 @@
     "name": "Stone Golem",
     "description": "Summon a stone golem. The golem is vulnerable to {{damage.bludgeoning}} damage, but resistant to {{damage.piercing}} damage.",
     "level": 6,
+    "duration": "1 Day",
     "rarity": "Academic",
     "type": "Ceremony",
     "study": "Earth",
@@ -3029,6 +3178,7 @@
     "name": "Iron Armor",
     "description": "Your skin becomes covered by a magical metallic liquid. The liquid condenses and becomes firm wherever an arrow, missile, or blade would strike true. {{keywords.bc}} is increased by 10.",
     "level": 6,
+    "duration": "Concentration",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Earth",
@@ -3049,6 +3199,7 @@
     "name": "Awaken Statue",
     "description": "A statue you touch comes to life for one hour. The statue may assist you in battle or inform you events that have transpired since it was built.",
     "level": 7,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Earth",
@@ -3069,6 +3220,7 @@
     "name": "Earthquake",
     "description": "The ground around you rumbles and shakes, as your spell unleashes a mighty earthquake. Creatures within 300 yards take 3d12 {{damage.force}} damage and have disadvantage on the saving throw to avoid being knocked prone.",
     "level": 7,
+    "duration": "Instantaneous",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Earth",
@@ -3090,6 +3242,7 @@
     "name": "Iron Golem",
     "description": "Summon a heavy iron golem, heaviest of the golems.",
     "level": 8,
+    "duration": "7 Days",
     "rarity": "Academic",
     "type": "Ceremony",
     "study": "Earth",
@@ -3109,8 +3262,9 @@
   },
   {
     "name": "Petrify",
-    "description": "Transform a creature of living flesh into stone. The creature may make a DT 10 {{skills.defense}} saving throw to resist this effect.",
+    "description": "Transform a creature of living flesh into stone. The creature may make a DT 10 {{skills.sorcery}} saving throw to resist this effect.",
     "level": 9,
+    "duration": "Indefinite",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Earth",
@@ -3131,8 +3285,9 @@
     "name": "Mote o' Fire",
     "description": "A mote of fire alights in your hand, hovering gently. The flame can be held for illumination, or thrown at an enemy within 30 feet. If thrown, roll for {{skills.accuracy}} again your target. On a hit, it takes 2d6 {{damage.heat}} damage.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
-    "type": "Evocation",
+    "type": "Concentration",
     "study": "Fire",
     "trainingReqs": {
       "level": 1,
@@ -3151,6 +3306,7 @@
     "name": "Arcane Flames",
     "description": "Flowing flames surge from your outstretched hands, dealing 3d6 {{damage.heat}} damage to all creatures caught in the blaze.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Fire",
@@ -3169,8 +3325,9 @@
   },
   {
     "name": "Flame Armor",
-    "description": "Wreath your body in flame. The spell does not increase your {{keywords.bc}}, but causes enemies that start or end their turn next to you to take 1d12 {{damage.heat}} damage.",
+    "description": "Wreath your body in flame, gaining immunity to {{damage.heat}} damage. The spell does not increase your {{keywords.bc}}, but causes enemies that start or end their turn next to you to take 1d12 {{damage.heat}} damage.",
     "level": 2,
+    "duration": "5 minutes",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Fire",
@@ -3189,8 +3346,9 @@
   },
   {
     "name": "Flaming Sword",
-    "description": "For one hour, A blade is imbued with the power of arcane fire. The blade deals 1d6 additional {{damage.heat}} damage.",
+    "description": "A blade is imbued with the power of arcane fire. The blade deals 1d6 additional {{damage.heat}} damage.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Fire",
@@ -3211,6 +3369,7 @@
     "name": "Fireball",
     "description": "Hurl a blazing ball of fire which explodes upon impact. Roll for {{skills.accuracy}}",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Fire",
@@ -3231,6 +3390,7 @@
     "name": "Incinerate",
     "description": "An flame of exceptional heat deals 2d12 {{damage.heat}} damage to a target within 15 feet.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Fire",
@@ -3249,8 +3409,9 @@
   },
   {
     "name": "Create Lava",
-    "description": "Create a mass of lava, able to cover 100 square feet of terrain. Creatures which start or end their turn on lava take 3d6 {{damage.heat}} damage.",
+    "description": "Create a mass of lava, able to cover 100 square feet of terrain. Creatures which start or end their turn on lava take 3d6 {{damage.heat}} damage. After the spell duration, the lava solidifies into rock and no longer deals damage.",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Fire",
@@ -3271,6 +3432,7 @@
     "name": "Fire Elemental",
     "description": "Summon a fire elemental. It knows the spells {{spells.mote_o_fire}}, {{spells.arcane_flames}} and {{spells.fireball}}, and has a continual flame cloak as if it had cast {{spells.flame_armor}}.",
     "level": 5,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Ritual",
     "study": "Fire",
@@ -3291,6 +3453,7 @@
     "name": "Flame Wall",
     "description": "A wall of flames, 20 feet in height, surges up from scorched and blackened ground. Creatures which pass through the wall take 3d12 {{damage.heat}} damage. Any creatures standing where the wall is cast take 2d12 {{damage.heat}} damage.",
     "level": 5,
+    "duration": "5 Minutes",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Fire",
@@ -3311,6 +3474,7 @@
     "name": "Fire Storm",
     "description": "Pure flame explodes from the caster bringing glorious devastation. The caster deals 4d20 {{damage.heat}} damage to all creatures within 50 feet.",
     "level": 7,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Fire",
@@ -3329,8 +3493,9 @@
   },
   {
     "name": "Fire Golem",
-    "description": "The ritual summons a fire golem, the most volatile of the golems.",
+    "description": "The ritual summons a fire golem, the most volatile of the golems. The golem automatically casts {{spells.fire_storm}} when it is defeated, or may be ordered to do so when it is banished.",
     "level": 9,
+    "duration": "1 Day",
     "rarity": "Academic",
     "type": "Ceremony",
     "study": "Fire",
@@ -3352,6 +3517,7 @@
     "name": "Frostbite",
     "description": "A conical spray of frost deals 1d6 {{damage.cold}} damage to all enemies caught within.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Water",
@@ -3372,6 +3538,7 @@
     "name": "Shape Water",
     "description": "You may shape water into a form you choose, and freeze so that it retains its form. This spell can manipulate, freeze, or melt up to 100 pounds of water per cast.",
     "level": 1,
+    "duration": "1 Minute",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Water",
@@ -3392,6 +3559,7 @@
     "name": "Icicle",
     "description": "An icy spear is hurled at a foe, dealing 1d8 {{damage.piercing}} and 1d6 {{damage.cold}} damage.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Water",
@@ -3410,8 +3578,9 @@
   },
   {
     "name": "Water Walking",
-    "description": "For one hour, you gain the ability to walk on water as if it were solid ground. When the spell is about to expire, the water's surface betakes a spongy and soft texture, as if it were thick mud or bedding. If cast while the mage is partially submerged, you are propelled to the surface of the water. If fully underwater, the spell has no effect. You do not take fall damage if you cast this spell before falling onto the surface of the water.",
+    "description": "Gain the ability to walk on water as if it were solid ground. When the spell is about to expire, the water's surface betakes a spongy and soft texture, as if it were thick mud or bedding. If cast while partially submerged, you are propelled to the surface of the water. If fully underwater, the spell has no effect. You do not take fall damage if you cast this spell before falling onto the surface of the water.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Water",
@@ -3432,6 +3601,7 @@
     "name": "Ice Elemental",
     "description": "Summon and bid an ice elemental from the plane of water. The ice elemental knows the spells {{spells.frostbite}}, {{spells.icicle}}, {{spells.water_walking}}, and {{spells.become_water}}.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Water",
@@ -3452,6 +3622,7 @@
     "name": "Steam Blast",
     "description": "A gout of pressurized steam spouts from your outstretched hand, dealing 1d10 {{damage.heat}} damage and 1d10 {{damage.force}} damage. The heat damage dealt by this spell does not inflict {{status.burning}}.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Water",
@@ -3472,6 +3643,7 @@
     "name": "Ice Wall",
     "description": "Construct a wall of ice, one yard thick and up to 10 yards in length. Creatures inside the wall when it forms must make a DT 8 {{skills.mobility}} saving throw or become encased in the wall for the duration of the spell. Creatures which pass the saving throw may choose to stand on top of the wall or be pushed to one side.",
     "level": 4,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Water",
@@ -3490,8 +3662,9 @@
   },
   {
     "name": "Wellspring",
-    "description": "Water spouts forth from a point designated by the caster, releasing up to 10 gallons per minute.",
+    "description": "Water spouts forth from a point designated by the caster, releasing up to 5 gallons per minute.",
     "level": 4,
+    "duration": "Concentration",
     "rarity": "Academic",
     "type": "Concentration",
     "study": "Water",
@@ -3513,6 +3686,7 @@
     "name": "Become Water",
     "description": "The caster becomes liquid water for up to eight hours, able to flow and reform according to their will.",
     "level": 5,
+    "duration": "8 Hours",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Water",
@@ -3534,6 +3708,7 @@
     "name": "Ice Armor",
     "description": "Encase yourself in armor of solid ice. You gain immunity to {{damage.cold}} damage and you BC increases by 7. The spell lasts for 1 minute or until you take 10 {{damage.bludgeoning}} damage.",
     "level": 5,
+    "duration": "1 Minute",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Water",
@@ -3553,8 +3728,9 @@
   },
   {
     "name": "Blizzard",
-    "description": "You summon a small blizzard, creating a region of extremely frigid air within a radius of 100 feet that lasts for 1 hour. Targets within take 1d12 {{damage.cold}} damage and 1d12 {{damage.force}} damage per turn.",
+    "description": "You summon a small blizzard, creating a region of extremely frigid air within a radius of 100 feet. Targets within take 1d12 {{damage.cold}} damage and 1d12 {{damage.force}} damage per turn.",
     "level": 6,
+    "duration": "Concentration",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Water",
@@ -3575,6 +3751,7 @@
     "name": "Ice Golem",
     "description": "Summon and bid a powerful ice golem.",
     "level": 7,
+    "duration": "1 Day",
     "rarity": "Academic",
     "type": "Ceremony",
     "study": "Water",
@@ -3596,6 +3773,7 @@
     "name": "Ice Statue",
     "description": "An enemy makes a DT 16 {{skills.defense}} aving throw or is instantaneously encased into a block of ice. On a successful save, the target accumulates 3 levels of {{status.freezing}} instead. If this is sufficient to trigger the {{status.frozen}} status, then so be it.",
     "level": 8,
+    "duration": "1 Hour",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Water",
@@ -3617,6 +3795,7 @@
     "name": "Tsunami",
     "description": "A great wall of water appears, sweeping across the battlefield in a wide berth 100 feet wide. Targets take 4d10 {{damage.force}} damage and must make a DT 20 {{skills.mobility}} saving throw or be pushed up to 100 yards by the wall of water.",
     "level": 9,
+    "duration": "Instantaneous",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Water",
@@ -3637,6 +3816,7 @@
     "name": "Thunderbolt",
     "description": "A bolt of lightning from the heavens strikes a single enemy, dealing 1d10 damage.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Air",
@@ -3657,6 +3837,7 @@
     "name": "Electrocute",
     "description": "Attempt an unarmed attack on an opponent. On a success, deal 1d8 {{damage.lightning}} damage in addition to your normal damage.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Air",
@@ -3677,6 +3858,7 @@
     "name": "Cyclone",
     "description": "A swiftly swirling whirlwind forms in the location you choose. On your turn, you can move the cyclone along a path up to 20 feet in length, dealing 2d6 {{damage.force}} damage to each target hit.",
     "level": 2,
+    "duration": "Concentration",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Air",
@@ -3695,8 +3877,9 @@
   },
   {
     "name": "Shocking Blade",
-    "description": "Imbue a metallic weapon you can touch with the power of lightning. The weapon deals 1d6 {{damage.lightning}} damage for one hour.",
+    "description": "Imbue a metallic weapon you can touch with the power of lightning.  1d6 {{damage.lightning}} damage is added to the weapon's damage.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Enchantment",
     "study": "Air",
@@ -3717,6 +3900,7 @@
     "name": "Blustering Gust",
     "description": "A gust of wind blusters forth, dealing no damage but pushing enemies about. An enemy caught in the gust is pushed 20 feet in the direction of the gust. On a successful DT 10 {{skills.defense}} saving throw, the target is only pushed half that distance.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Air",
@@ -3735,8 +3919,9 @@
   },
   {
     "name": "Soar",
-    "description": "Gain the ability of wingless flight for five minutes. While the spell is active, you may move through the air at 15 feet per second.",
+    "description": "Gain the ability of wingless flight for five minutes. While the spell is active, you may move through the air at 12 feet per second.",
     "level": 4,
+    "duration": "5 Minutes",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Air",
@@ -3757,6 +3942,7 @@
     "name": "Lightning Dash",
     "description": "Teleport to a location you can see within 15 feet. If any enemies are between you and your destination, they take 1d12 {{damage.lightning}} damage.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Air",
@@ -3777,6 +3963,7 @@
     "name": "Air Elemental",
     "description": "Summons an air elemental to do your bidding. The elemental knows {{spells.blustering_gust}}, {{spells.soar}}, {{spells.lightning_dash}}, abd {{spells.thunderbolt}}.",
     "level": 5,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Air",
@@ -3795,8 +3982,9 @@
   },
   {
     "name": "Become Vapor",
-    "description": "Become a cloud of vapor. You become immune to slashing, piercing, and bludgeoning damage. You may change your shape to fit around or between narrow obstacles or enemies. You may not delve underwater, and if this spell is cast underwater, you automatically shoot to the surface.",
+    "description": "Become a cloud of vapor. You become immune to slashing, piercing, and bludgeoning damage. You may change your shape to fit around or between narrow obstacles or enemies. You may not delve underwater, and if this spell is cast underwater, you automatically bubble to the surface.",
     "level": 6,
+    "duration": "1 Hour",
     "rarity": "Esoteric",
     "type": "Evocation",
     "study": "Air",
@@ -3817,6 +4005,7 @@
     "name": "Chain Lighting",
     "description": "A bolt of blue lightning leaps from your outstretched hand to an enemy within range, and then to an additional enemy within 10 feet, if available. Up to three targets take 3d8 {{damage.lightning}} damage.",
     "level": 7,
+    "duration": "Concentration",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Air",
@@ -3837,6 +4026,7 @@
     "name": "Lighting Storm",
     "description": "A dark thundrous cloud spreads over a 50-foot radius around a point up to 100 yards away. Each target within the area takes 1d20 {{damage.lightning}} damage.",
     "level": 8,
+    "duration": "Concentration",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Air",
@@ -3857,6 +4047,7 @@
     "name": "Storm Golem",
     "description": "Summon the mighty storm golem, the most powerful elemental entity which can be summoned and bidden.",
     "level": 9,
+    "duration": "1 Day",
     "rarity": "Esoteric",
     "type": "Ceremony",
     "study": "Air",
@@ -3877,6 +4068,7 @@
     "name": "Hurricane",
     "description": "By the power of this ceremony, a mighty hurricane is formed and travels along the path you have ordained. Roll a d20. The category of the hurricane is as follows: <ul><li><b>1-9</b>:1</li><li><b>11-14</b></li><li><b>15-17</b>: 3</li><li><b>18-19</b>: 4</li><li><b>20</b>: 5</li></ul>",
     "level": 9,
+    "duration": "7 Days",
     "rarity": "Esoteric",
     "type": "Ceremony",
     "study": "Air",
@@ -3897,6 +4089,7 @@
     "name": "Detect Illusion",
     "description": "For one hour after casting the spell, you psychically discern the presence of illusions.",
     "level": 1,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Illusion",
@@ -3915,8 +4108,9 @@
   },
   {
     "name": "Fleeting Illusion",
-    "description": "You manifest a small illusion, which may have a physical and auditory component. The illusion may be used to lure, mystify, repel, or even assist the target. However, if the target passes a DT 16 {{skills.perception}} check, they are able to perceive the illusion.",
+    "description": "You manifest a small illusion, which may have a physical and auditory component. The illusion may be used to lure, mystify, repel, or even assist the target. However, if the target passes a DT 16 {{skills.perception}} check, they are able to perceive the illusion as such.",
     "level": 1,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Illusion",
@@ -3937,6 +4131,7 @@
     "name": "Illusory Disguise",
     "description": "For one hour, your face appears to change to match any face you have seen previously. Your clothes, stature, and body type do not change unless you also know the {{spells.illusory_being}} spell. You may dismiss this spell at will before the duration is through. Anyone who scrutinizes your face may make a DT 18 {{skills.perception}} check to see past your disguise.",
     "level": 2,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Illusion",
@@ -3955,8 +4150,9 @@
   },
   {
     "name": "Dispell Illusion",
-    "description": "An illusion spell you have detected is permanently dispelled. Some illusions may make a saving throw based on the charisma of the caster.",
+    "description": "An illusion spell you have detected is permanently dispelled. Sufficiently powerful illusions may resist being dispelled.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Illusion",
@@ -3968,7 +4164,7 @@
       }
     },
     "castingReqs": {
-      "evocation": 2,
+      "evocation": 1,
       "concentration": 0,
       "time": "1 Action"
     }
@@ -3977,6 +4173,7 @@
     "name": "Illusory Being",
     "description": "You create an illusory being of any of the following types: <i>Beguiling</i>, <i>Terrifying</i>, <i>Distracting</i>, or <i>Ordinary</i>. The being appears in a location you can see, and obeys your telepathic command for the duration of the spell.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Illusion",
@@ -3995,8 +4192,9 @@
   },
   {
     "name": "Fool's Invisibility",
-    "description": "The target is filled with the inexplicable and illogical conviction that they are fully invisible.",
+    "description": "The target is filled with the inexplicable and irrational conviction that they are fully invisible. TODO",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Illusion",
@@ -4014,9 +4212,32 @@
     }
   },
   {
+    "name": "Unseeable",
+    "description": "For the duration of the spell, those who see you believe that you are a phantasm, hallucination, or a figment of their imagination, unless they succeed a DT 20 {{skills.perception}} saving throw. If you speak to anyone in this state, they will either not remember what was said, or believe that it was said during a dream.",
+    "level": 4,
+    "duration": "1 Hour",
+    "rarity": "Academic",
+    "type": "Evocation",
+    "study": "Illusion",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 6,
+      "gold": 20,
+      "stats": {
+        "cha": 14
+      }
+    },
+    "castingReqs": {
+      "evocation": 3,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
     "name": "Mass Illusion",
-    "description": "You create a powerful illusion visible from a great distance to any number of people. The visual has a",
+    "description": "You create a powerful illusion visible from a great distance to any number of people. The visual has a TODO",
     "level": 5,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Illusion",
@@ -4037,8 +4258,9 @@
     "name": "Telempathy",
     "description": "You reach out and place the palms of your hands on either side of the target's forehead. While so positioned, you experience the emotions of the target as if they were your own. By mutual agreement, the target may also experience your emotions as well.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
-    "type": "Evocation",
+    "type": "Concentration",
     "study": "Telepathy",
     "trainingReqs": {
       "level": 1,
@@ -4054,11 +4276,12 @@
     }
   },
   {
-    "name": "Minor telepathy",
+    "name": "Minor Telepathy",
     "description": "You read the thoughts of a creature within 100 feet of you. You may also impart your own thoughts into their mind. Unwilling targets make a DT 15 {{attr.CHA}} saving throw to resist. If successful, they reject your contact and have advantage on willpower saving throws against your psychic spells for the next 24 hours.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
-    "type": "Evocation",
+    "type": "Concentration",
     "study": "Telepathy",
     "trainingReqs": {
       "level": 1,
@@ -4077,6 +4300,7 @@
     "name": "Major Telepathy",
     "description": "You establish a psychic connection with a being within range that you can see. You may read their thoughts, including those that the being is unable or unwilling to articulate. You may also impart your own thoughts into their mind. The spell lasts for as long as you continue concentration, or until the target breaks line of sight for ten minutes. If the target is unwilling, they may make a DT 15 willpower saving throw to resist. If successful, they reject your contact and have advantage on all willpower saving throws against you for the next 24 hours.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Telepathy",
@@ -4094,29 +4318,10 @@
     }
   },
   {
-    "name": "Esoteric Telepathy",
-    "description": "For 24 hours, you gain the ability to read the thoughts of an entity known to you by name, and may communicate with them telepathically. If at any point they become aware of your presence within their mind, they may make a DT 18 charisma saving throw to resist. If successful, they reject your intrusion and have advantage on all willpower saving throws against you for the next 24 hours.",
-    "level": 7,
-    "rarity": "Esoteric",
-    "type": "Ritual",
-    "study": "Telepathy",
-    "trainingReqs": {
-      "level": 13,
-      "slots": 7,
-      "stats": {
-        "cha": 17
-      }
-    },
-    "castingReqs": {
-      "evocation": 5,
-      "concentration": 0,
-      "time": "1 Action"
-    }
-  },
-  {
     "name": "Psychic Sight",
-    "description": "You see and hear through the senses of someone you can see, from a first person perspective. If the target has not consented to psychic contact, they make a DT 12 {{skills.perception}} saving throw to detect your presence. If this check succeeds, they may make a DT 15 {{attr.CHA}} saving throw to reject your from their mind. Failing this, they can interfere with the spell by closing their eyes.",
+    "description": "You see and hear through the senses of someone within 100 yards, from a first person perspective. If the target has not consented to psychic contact, they make a DT 12 {{attr.CHA}} saving throw to detect your presence. Above DT 15, they may also choose to reject your from their mind. As long as the target detects your presence, they have advantage on saving throws against your psychic spells for the next 24 hours.",
     "level": 3,
+    "duration": "1 Hour",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Telepathy",
@@ -4135,8 +4340,9 @@
   },
   {
     "name": "Induce Emotion",
-    "description": "Induce one of the following emotions in a target: calm, confusion, courage, fear, or rage.",
+    "description": "If the target fails a DT 16 {{attr.CHA}} saving throw, they are overcome by an emotion you choose: calm, confusion, courage, fear, or rage.",
     "level": 2,
+    "duration": "1d4 turns",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Telepathy",
@@ -4154,9 +4360,10 @@
     }
   },
   {
-    "name": "Inflict Amnesia",
-    "description": "The the target fails a DT 17 {{attr.CHA}} saving throw, they immediately forget their immediate surroundings and intentions.",
+    "name": "Amnesia",
+    "description": "If the target fails a DT 17 {{attr.CHA}} saving throw, they immediately forget their immediate surroundings and intentions.",
     "level": 4,
+    "duration": "1d4 Hours",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Telepathy",
@@ -4168,15 +4375,16 @@
       }
     },
     "castingReqs": {
-      "evocation": 5,
+      "evocation": 4,
       "concentration": 0,
       "time": "1 Action"
     }
   },
   {
     "name": "Hypnosis",
-    "description": "You mesmerize a target that can see you, causing it to serve you in combat. If the target fails a DT 15 {{attr.CHA}} saving throw, the spell takes hold and the target joins you in combat. If the target takes damage, they may repeat the saving throw.",
+    "description": "On a failed DT 15 {{attr.CHA}} saving throw, a target that can see you becomes mesmerized and serves you in combat for 1d4 turns. If the target takes damage, they may repeat the saving throw.",
     "level": 5,
+    "duration": "1d4 turns",
     "rarity": "Academic",
     "type": "Evocation",
     "study": "Telepathy",
@@ -4196,8 +4404,9 @@
   },
   {
     "name": "Mind Control",
-    "description": "Take control of being you can see within range. You automatically gain the psychic sight and major telepathy. The target makes a DT 10 perception check to realize they are being psychically dominated. If the target succeeds, they may make an additional DT 18 willpower check to resist your control. If they succeed this check, the spell ends and they have advantage on similar checks against you. If it fails, they may make additional attempts to resist at the end of each of their combat turns, or before making actions significantly against their interests. Additionally, if the target is aware that they are being dominated, they may give subtle tells such as speaking with unnatural vocal inflections or eye twitches.",
+    "description": "The target makes a charisma saving throw. IfTake control of a being you can see within 100 yards. You automatically gain the psychic sight and major telepathy. The target makes a DT 10 perception check to realize they are being psychically dominated. If the target succeeds, they may make an additional DT 18 willpower check to resist your control. If they succeed this check, the spell ends and they have advantage on similar checks against you. If it fails, they may make additional attempts to resist at the end of each of their combat turns, or before making actions significantly against their interests. Additionally, if the target is aware that they are being dominated, they may give subtle tells such as speaking with unnatural vocal inflections or eye twitches.",
     "level": 7,
+    "duration": "Concentration",
     "rarity": "Forbidden",
     "type": "Concentration",
     "study": "Telepathy",
@@ -4216,9 +4425,31 @@
     }
   },
   {
+    "name": "Esoteric Telepathy",
+    "description": "For 24 hours, you gain the ability to read the thoughts of an entity known to you by name, and may communicate with them telepathically. If at any point they become aware of your presence within their mind, they may make a DT 18 charisma saving throw to resist. If successful, they reject your intrusion and have advantage on all psychic saving throws against you for the next 24 hours.",
+    "level": 7,
+    "duration": "24 hours",
+    "rarity": "Esoteric",
+    "type": "Ritual",
+    "study": "Telepathy",
+    "trainingReqs": {
+      "level": 13,
+      "slots": 7,
+      "stats": {
+        "cha": 17
+      }
+    },
+    "castingReqs": {
+      "evocation": 5,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
     "name": "Unimind",
     "description": "During the ceremony, all participants share a single mind such that the thoughts and emotions of each participant are instantaneously apparent to all others. Participants other than the caster must possess at least 12 {{attr.CHA}} in order to participate in the ritual. The willpower cost is divided between all participants.",
     "level": 8,
+    "duration": "Up to 24 hours",
     "rarity": "Academic",
     "type": "Ceremony",
     "study": "Telepathy",
@@ -4238,8 +4469,9 @@
   },
   {
     "name": "Lesser Telekinetic Pull",
-    "description": "A target weighing less than 20 pounds is drawn to the beckoning fingers of your outstretched hand. The object must be within 50 feet.",
+    "description": "A target weighing less than 20 pounds is drawn to the beckoning fingers of your outstretched hand. The object must be within 60 feet.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Telekinesis",
@@ -4260,6 +4492,7 @@
     "name": "Telekinetic Throw",
     "description": "Hurl an object or enemy captured by one of your telekinetic spells and make an {{skills.accuracy}} attack roll. If it hits, deal 2d8 {{damage.bludgeoning}} damage. If the object thrown was already under your telekinetic control, you have advantage on the attack roll. If the object levitated was a dagger or spear etc, the damage type changes to {{damage.piercing}}. The projectile's speed depends on the weight of the object. If the object weighs one pound or less, it moves at 200 ft/s. Otherwise, its speed is 200 ft/s divided by its weight in pounds.",
     "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Telekinesis",
@@ -4280,6 +4513,7 @@
     "name": "Levitate Object",
     "description": "An object weighing at most 1000 pounds responds to telekinetic impulse, rising to hover 3 feet above the ground. The object can be pushed or rotated while levitated without interrupting the spell.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Telekinesis",
@@ -4300,6 +4534,7 @@
     "name": "Shockwave",
     "description": "With a blast of psionic power, you deal 2d8 force damage to targets within the radius, knocking them back by 10 feet and causing them to fall {{status.prone}}. If a target makes a DT 13 {{skills.defense}} saving throw, it takes half damage and is not knocked prone. If a target rolls below a 9 on its saving throw, it also becomes {{status.dazed}}.",
     "level": 2,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Telekinesis",
@@ -4320,6 +4555,7 @@
     "name": "Levitation",
     "description": "While concentration is maintained, you hover roughly 3 feet above the ground, gliding above the terrain. You gain the {{status.levitated}} status and your {{attr.SPD}} changes to 18. If the ground is more than 3 feet below, you may remain aloft or descend gracefully.",
     "level": 3,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Telekinesis",
@@ -4340,6 +4576,7 @@
     "name": "Telemanipulation",
     "description": "Via subtle telekinetic impulses, the caster manipulates a target weighing less than 20 pounds with great precision, moving or rotating it at will. The object moves at a maximum speed of 5 ft/s and may not be rotated in such a way that any part of its outer boundary exceeds maximum speed relative to the center of mass. There is no limit to how many times this spell may be cast upon the same object or how much weight may be moved, provided all casters act in concert.",
     "level": 3,
+    "duration": "Concentration",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Telekinesis",
@@ -4358,8 +4595,9 @@
   },
   {
     "name": "Greater Telekinetic Pull",
-    "description": "A {{sizes.medium}} or small creature is drawn just before your outstretched hands, at a rate of 10 ft/s. It gains the {{status.levitated}} status for as long as you maintain concentration. The target may make a DT 11 {{skills.defense}} or {{skills.sorcery}} saving throw to resist being pulled.",
+    "description": "A {{sizes.medium}} or small creature is drawn just before your outstretched hands, at a speed of 12 ft/s (12 tiles per combat turn). It gains the {{status.levitated}} status for as long as you maintain concentration. The target may make a DT 12 {{skills.defense}} or {{skills.sorcery}} saving throw to resist being pulled.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Telekinesis",
@@ -4380,6 +4618,7 @@
     "name": "Force Shield",
     "description": "Generate a shield of telekinetic force measuring six feet in diameter. The shield appears as a shimmering transparent pocket of air hovering in front of you. The shield grants partial cover and provides 7 {{keywords.bc}} to up to two people standing behind it.",
     "level": 4,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Concentration",
     "study": "Telekinesis",
@@ -4400,6 +4639,7 @@
     "name": "Psyblast",
     "description": "Deal 4d6 {{damage.force}} damage to an enemy. If it fails a DT 16 {{skills.mobility}} saving throw, it is also knocked back 10 feet.",
     "level": 5,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Telekinesis",
@@ -4420,8 +4660,9 @@
     "name": "Force Field",
     "description": "An invisible wall of telekinetic impulse appears in the chosen location. The wall prevents the passage of people and objects except for the spellcaster and allies. The wall can absorb 50+1d100 damage before concentration fails and the spell must be recast.",
     "level": 7,
+    "duration": "2 Hours",
     "rarity": "Academic",
-    "type": "Concentration",
+    "type": "Evocation",
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 13,
@@ -4433,14 +4674,15 @@
     },
     "castingReqs": {
       "evocation": 4,
-      "concentration": 1,
+      "concentration": 0,
       "time": "1 Action"
     }
   },
   {
     "name": "Mind Armor",
-    "description": "Generate a telekinetic suit of armor covering your entire body. The suit provides 10 BC initially, but loses 1 BC per hour until it vanishes.",
+    "description": "Generate a telekinetic suit of armor covering your entire body. The suit provides 10 BC initially, but loses 1 BC per hour until it vanishes. The spell cannot take hold if armor is already worn, but does not impose any of the mobility or stealth penalties ordinarily associated with heavy armor.",
     "level": 9,
+    "duration": "10 Hours",
     "rarity": "Esoteric",
     "type": "Ceremony",
     "study": "Telekinesis",
