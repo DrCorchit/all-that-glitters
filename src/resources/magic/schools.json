@@ -109,7 +109,7 @@
 	},
 	{
 		"name": "Shamanism",
-		"description": "The magic of living things, of the wild, and fairies. The study is called biomancy by acedmic institutions, but the druids who actually practice it detest this name. Spells of this school are not taught or studuied by universities, and must be obtained from druid circles or the mad whisperings of the fey themselves.",
+		"description": "The magic of living things, of the wild, and fairies. The study is called biomancy by academic institutions, but the druids who actually practice it detest this name. Spells of this school are not taught or studuied by universities, and must be obtained from druid circles or the mad whisperings of the fey themselves.",
 		"attr": "NST",
 		"skill": "nature",
 		"studies": [

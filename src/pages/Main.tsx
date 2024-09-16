@@ -11,31 +11,37 @@ function MainPage() {
 			<p>
 				All That Glitters is a fantasy tabletop role-playing game set in a world inspired by the late medieval to early
 				renaissance period. There's fantasy races like dwarves and elves, knights in shining armor, a sprinkling of
-				gunpowder, and an entire spectrum of magical spells. Central to the game is the call to adventure, as souls of
-				every stripe leave behind the comfortable and familiar in order to bravely explore the unknown, fight evil, or
-				find their fortune—often all three at once!
+				gunpowder, and an entire spectrum of magical spells and combat feats. Central to the game is the call to
+				adventure, as souls of every stripe leave behind the comfortable and familiar in order to bravely explore the
+				unknown, fight evil, or find their fortune—often all three at once!
 			</p>
-			<p>So what's unique about All That Glitters?</p>
-			<p>
-				All That Glitters is designed to capture the essence of swords-and-torches swashbuckling while providing a
-				combat and spellcasting framework that is easy to expand, modify, and homebrew. The combat system is designed to
-				capture much of the nuance of actual martial combat without getting bogged down in spreadsheets and mathematical
-				formulas. Combat is fast-paced, decisive, and meaningful, so that players can get back to the story—or the next
-				combat encounter! Finally, the leveling system is designed to ensure every choice offers a meaningful tradeoff
-				of one utility for another. After all, if nothing is forgone, nothing is truly chosen.
+			<p style={{textAlign: "center"}}>
+				<b>What's unique about All That Glitters?</b>
 			</p>
-			<p>These are the primary design goals of the game:</p>
-			<ol>
-				<li>To create a framework that integrates combat with interactive storytelling.</li>
-				<li>To limit complexity to what can reasonably be done with dice and scratch paper.</li>
-				<li>To provide game masters with guidelines for creating balanced homebrew content.</li>
-				<li>To treat the acquisition of loot as a core part of the leveling process.</li>
-				<li>To increase flexibility when leveling characters, without sacrificing variety or balance.</li>
-			</ol>
 			<p>
-				If you're interested in playing the game, you're welcome to begin by reading the{" "}
-				<Link to='chapters'>Player's Handbook</Link>.<br />
-				If you're interested in running a game, I suggest reading the <Link to='dmg_toc'>Dungeon Master's Guide</Link>.
+				All That Glitters is designed to emulate the creative essence loved by fans of Dungeons and Dragons while
+				solving some of its design flaws and avoiding the aggressive monetization practices that plague the modern
+				version of the game. By design, the game will feel a great deal like DnD, although it also brings plenty of new
+				ideas to the table. Here's some things that are unique to All That Glitters:
+			</p>
+			<ul>
+				<li>An open-ended character leveling framework, significantly increasing player choice for martial classes.</li>
+				<li>A streamlined character building process. Making characters is easy for players and storytellers alike.</li>
+				<li>A focus on historical accuracy with respect to weapons, armor, combat techniques.</li>
+				<li>
+					An emphasis on offline play, including easily printable character sheets and rules that are playable with
+					nothing more than a pen, paper, and a set of dice.
+				</li>
+			</ul>
+			<p style={{textAlign: "center"}}>
+				<b>If you're interested, here's how to get started:</b>
+			</p>
+			<p>
+				Players and storytellers should read the <Link to='chapters'>Player's Handbook</Link>, which explains the basic
+				rules of the game.
+				<br />
+				If you're interested in running a game, you should also read the <Link to='dmg_toc'>Storyteller's Guide</Link>.
+				(Coming soon!)
 				<br />
 				Character sheets are available <SheetLink>here</SheetLink> with an optional second page available{" "}
 				<SheetLink2>here</SheetLink2>.

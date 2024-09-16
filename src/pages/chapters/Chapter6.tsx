@@ -11,8 +11,8 @@ const info = chapters.array[index - 1];
 function Intro(): JSX.Element {
 	return (
 		<p>
-			Outside of combat, most events are fairly open-ended and subject to DM discretion. However, certain actions do
-			have predefined rules, for consistency and balance. These are listed below:
+			Outside of combat, most events are fairly open-ended and subject to storyteller discretion. However, certain
+			actions do have predefined rules, for consistency and balance. These are listed below:
 		</p>
 	);
 }
@@ -101,10 +101,10 @@ function WorkingSection(): JSX.Element {
 				</li>
 				<li>
 					<b>Guarding</b>: Offers higher pay than other unskilled jobs at 5 gold per day. If the players are directly
-					attacked while guarding, they roll for <Sub skill='defense' /> to handle the situation. If not, the DM may
-					have the players roll for <Sub skill='perception' />. If the players fail to observe a crime that was
-					committed, they may be docked a day's pay or dismissed from guard duty. Players should roll for these events
-					roughly once for every week of guard duty.
+					attacked while guarding, they roll for <Sub skill='defense' /> to handle the situation. If not, the
+					storyteller may have the players roll for <Sub skill='perception' />. If the players fail to observe a crime
+					that was committed, they may be docked a day's pay or dismissed from guard duty. Players should roll for these
+					events roughly once for every week of guard duty.
 				</li>
 				<li>
 					<b>Performing</b>: At most one player can take this job per tavern per night. The base pay depends on the
@@ -117,8 +117,8 @@ function WorkingSection(): JSX.Element {
 					<b>Hunting &amp; Fishing</b>: Player engaged in this activity make a DT 15 <Sub skill='survival' /> check. On
 					a success, they acquire enough fish, fowl, or game to feed themselves and one other player for one night. On a
 					critical success, they feed the entire party. If near a town, the quarry can instead be sold for 10 or 20
-					gold, respectively. If attempted in an inhospitable environment, the DM may impose disadvantage or forbid
-					hunting altogether.
+					gold, respectively. If attempted in an inhospitable environment, the storyteller may impose disadvantage or
+					forbid hunting altogether.
 				</li>
 				<li>
 					<b>Transcribing</b>: If there is an employer hiring for this type of work, the player may be able to take
@@ -299,7 +299,7 @@ function RidingSection(): JSX.Element {
 				</li>
 				<li>
 					Mounts can have levels, which affect their max HP and recovery during breathers. A mount's level is determined
-					by the DM, and can increase alongside that of its rider.
+					by the storyteller, and can increase alongside that of its rider.
 				</li>
 				<li>
 					A mount can pull weight equal to its deadlift weight as determined by its strength score. A mount can pull up
@@ -470,7 +470,7 @@ function SneakingSection(): JSX.Element {
 					Actively sought: The seeker's <Sub skill='perception' /> modifier and proficiency are added to the DT.
 				</li>
 			</ul>
-			<p>As always, the DM may make additional adjustments as necessary.</p>
+			<p>As always, the storyteller may make additional adjustments as necessary.</p>
 		</Section>
 	);
 }
@@ -562,9 +562,9 @@ function LockpickingSection(): JSX.Element {
 					lawless behavior.
 				</li>
 				<li>
-					If a lock is of an unusual make, the pick can break inside the lock rendering the lock unpickable. The DM
-					should notify the player beforehand if this is likely to occur. The lockpick breaking inside the lock may also
-					happen on a critical failure.
+					If a lock is of an unusual make, the pick can break inside the lock rendering the lock unpickable. The
+					storyteller should notify the player beforehand if this is likely to occur. The lockpick breaking inside the
+					lock may also happen on a critical failure.
 				</li>
 				<li>Some locks may require two picks to be used at a time.</li>
 			</ul>
@@ -600,8 +600,8 @@ function TradingSection(): JSX.Element {
 			</p>
 			<p>
 				After attempting to haggle a merchant, the same merchant will not allow themselves to be haggled again for some
-				time, unless they are fond of the adventuring party or from a culture where haggling is expected. The DM may
-				impose situational bonuses or penalties to haggling accordingly.
+				time, unless they are fond of the adventuring party or from a culture where haggling is expected. The
+				storyteller may impose situational bonuses or penalties to haggling accordingly.
 			</p>
 			<table className='default'>
 				<thead>

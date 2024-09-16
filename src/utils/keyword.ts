@@ -25,7 +25,7 @@ export const NPC: Keyword = {
 export const PC: Keyword = {
 	abbr: "PC",
 	name: "Player Character",
-	description: "A character controlled by the player.",
+	description: "A character controlled by a player.",
 };
 
 export const HP: Keyword = {

@@ -80,8 +80,14 @@ function RaceSection(): JSX.Element {
 				A character's race also determines their size. Size is not recorded on the character sheet, but is usually
 				medium. If you picked a halfling, it's small. Size primarily affects what weapons a character can and can’t use,
 				terminal velocity, and how effectively they can grapple. Grappling will be explained in further detail in{" "}
-				<ChapterLink chapter={5} target='grappling' />, while fall damage and terminal velocity will be explained in
-				<ChapterLink chapter={6} target='falling' />.
+				<ChapterLink chapter={5} target='grappling'>
+					Chapter 5
+				</ChapterLink>
+				, while fall damage and terminal velocity will be explained in{" "}
+				<ChapterLink chapter={6} target='falling'>
+					Chapter 6
+				</ChapterLink>
+				.
 			</p>
 			<table className='default'>
 				<thead>
@@ -361,8 +367,8 @@ function EquipmentSection(): JSX.Element {
 				Starting equipment depends heavily on your character's class. Some classes are well-prepared, bringing several
 				unique items for unforeseen situations. Others have more scant preparations, bringing hardly more than the
 				clothes on their back and a smattering of food and gold. If you do not feel your character's initial gear is
-				appropriate for your character, discuss this with your DM. If they agree, you can exchange some of your starting
-				gear for gold or items of equivalent value.
+				appropriate for your character, discuss this with the storyteller. If they agree, you can exchange some of your
+				starting gear for gold or items of equivalent value.
 			</p>
 			<p>
 				Most classes also start with an initial sum of gold, which may be spent at a merchant or on combat training. You

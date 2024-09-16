@@ -13,10 +13,10 @@ export const elf = <div className="default"><p>
 Graceful and elegant, elves often exemplify much of what humans aspire to be. In height, male elves average about 6’3”; female elves about 5’9”. Weight varies between 120-200 lbs. They are barely heavier than humans, despite their increased stature. The gods have truly blessed their race: they live around 200 years at least, and some (of the royal line) as long as five hundred.
 </p>
 <p>
-Over time, their kind has diverged into three bloodlines. Descendants of the royal bloodline are called Eldarii and excel in magic and all manner of letters. They incorporate magic into nearly every level of society. As a consequence, even their young children know basic spells. They are invariably blonde haired and fair skinned, and persistently arrogant. Some of them attempt to repent their hubris, but I have come to prefer the frank honesty of arrogance to a feigned humility.
+Over time, their kind has diverged into three bloodlines. Descendants of the royal bloodline are called Eldarii and excel in magic and all manner of letters. They incorporate magic into nearly every level of society. As a consequence, even their young children know basic spells. They are invariably blonde haired and fair skinned, and persistently arrogant. Where they do show humility, it is usually feigned.
 </p>
 <p>
-Members of the common line are called Numenarii, and pursue archery, hunting, fishing, and farming. They have interbred on occasion with humans, and so take on darker hair and skin tones. They imitate the arrogance of the Eldarii, though it is but a veneer: they are quite insecure.
+Members of the common line are called Numenarii, and pursue archery, hunting, fishing, and farming. They have interbred on occasion with humans, and so take on slightly darker hair and skin tones. They imitate the arrogance of the Eldarii, though it is but a veneer: they are quite insecure.
 </p>
 <p>
 Members of the third bloodline are called Drow, and are descended from the line of the nameless usurper. Tales of their cruelty are exaggerated, but not by much. Their skin is bluish gray, and their hair silver. They do not spare themselves from their own ruthless designs, and many attempt to escape their subterranean holds. Those few who do often become brave adventurers.

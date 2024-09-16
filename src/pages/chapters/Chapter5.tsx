@@ -43,7 +43,7 @@ function BattlefieldSection(): JSX.Element {
 			<ul>
 				<li>A battlemap, with minis or markers representing the combatants</li>
 				<li>A Virtual Tabletop (VTT)</li>
-				<li>Theater of the Mind, with positioning described verbally by the DM</li>
+				<li>Theater of the Mind, with positioning described verbally by the storyteller</li>
 			</ul>
 			<p>
 				Each of these methods has its advantages and drawbacks, but a physical battlemap offers the best experience in
@@ -57,8 +57,8 @@ function BattlefieldSection(): JSX.Element {
 				square is impassible or contains some sort of hazard. Large and huge combatants may occupy more than one square.
 			</p>
 			<p>
-				When playing without a battlemap, the DM verbally describes the layout of the battlefield, including the
-				positioning of any hazards or attackers the characters can see. Players respond by describing their intended
+				When playing without a battlemap, the storyteller verbally describes the layout of the battlefield, including
+				the positioning of any hazards or attackers the characters can see. Players respond by describing their intended
 				actions, or asking questions about what moves are or are not available. Combat proceeds in a similar way as when
 				there is a battlemap, although complex positioning and tactics are not practically viable.
 			</p>

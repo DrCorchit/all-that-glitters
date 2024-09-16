@@ -26,7 +26,7 @@ function LevelingSection(): JSX.Element {
 			<p>
 				Each character’s skill as an adventurer is measured by their level, which typically begins at 1 and progresses
 				up to 20. All characters in the party level up together, usually after a huge battle or major obstacle is
-				overcome. The DM increases the party's level after such milestones, recognizing the adventuring party’s
+				overcome. The storyteller increases the party's level after such milestones, recognizing the adventuring party’s
 				increasing skill and renown.
 			</p>
 			<p>

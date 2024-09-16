@@ -34,6 +34,7 @@ export function ChapterLink({
 		target = normalize(target);
 	} else {
 		text = `Chapter ${info.index}`;
+		target = "top";
 	}
 
 	const link = `/chapters/${info.index}#${target}`;
@@ -46,7 +47,7 @@ export function ChapterLink({
 
 export function AppendixLink({
 	appendix,
-	target = "",
+	target,
 	rel,
 	children,
 }: {
@@ -60,7 +61,6 @@ export function AppendixLink({
 	}
 
 	const info = appendices.array[appendix - 1];
-	const link = `${info.link}#${target}`;
 
 	let text;
 	if (target) {
@@ -68,8 +68,10 @@ export function AppendixLink({
 		target = normalize(target);
 	} else {
 		text = info.name;
+		target = "top";
 	}
 
+	const link = `${info.link}#${target}`;
 	return (
 		<Link to={link} rel={rel}>
 			{children || text}

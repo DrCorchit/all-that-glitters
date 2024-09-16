@@ -9,7 +9,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "int": 11
       }
@@ -30,7 +30,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 12
       }
@@ -51,7 +51,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 12
       }
@@ -72,7 +72,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 13
       }
@@ -93,7 +93,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "int": 14
@@ -115,7 +115,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "int": 14
       }
@@ -136,7 +136,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "int": 14
@@ -158,7 +158,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "int": 14
@@ -180,7 +180,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "int": 15
@@ -202,7 +202,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "int": 15
@@ -224,7 +224,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "int": 15
       }
@@ -245,7 +245,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "gold": 30,
       "stats": {
         "int": 16
@@ -267,7 +267,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "gold": 30,
       "stats": {
         "int": 16
@@ -289,7 +289,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "int": 17
@@ -311,7 +311,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "gold": 40,
       "stats": {
         "int": 18
@@ -333,7 +333,7 @@
     "study": "Pharmacology",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "int": 19
       }
@@ -354,7 +354,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "int": 11
       }
@@ -375,7 +375,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "int": 11
       }
@@ -396,7 +396,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 12
       }
@@ -417,7 +417,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 12
       }
@@ -438,7 +438,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 13
       }
@@ -459,7 +459,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "int": 14
@@ -481,7 +481,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "int": 15
@@ -503,7 +503,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "gold": 30,
       "stats": {
         "int": 16
@@ -525,7 +525,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "gold": 30,
       "stats": {
         "int": 16
@@ -547,7 +547,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "gold": 40,
       "stats": {
         "int": 18
@@ -569,7 +569,7 @@
     "study": "Toxicology",
     "trainingReqs": {
       "level": 17,
-      "slots": 7,
+      "slots": 8,
       "gold": 90,
       "stats": {
         "int": 19
@@ -591,7 +591,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "int": 11
       }
@@ -612,7 +612,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "int": 11
       }
@@ -633,7 +633,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 12
       }
@@ -654,7 +654,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 13
       }
@@ -675,7 +675,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 13
       }
@@ -696,7 +696,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "int": 14
@@ -718,7 +718,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "int": 15
@@ -740,7 +740,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 11,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "int": 16
       }
@@ -761,7 +761,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "int": 17
@@ -783,7 +783,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "gold": 40,
       "stats": {
         "int": 18
@@ -805,7 +805,7 @@
     "study": "Solar",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "int": 19
       }
@@ -826,7 +826,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "int": 11
       }
@@ -847,7 +847,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 12
       }
@@ -868,7 +868,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 13
       }
@@ -889,7 +889,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "int": 14
@@ -911,7 +911,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "int": 15
@@ -933,7 +933,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "int": 15
       }
@@ -954,7 +954,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 11,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "int": 16
       }
@@ -975,7 +975,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "int": 17
@@ -997,7 +997,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "int": 17
@@ -1019,7 +1019,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 15,
-      "slots": 7,
+      "slots": 8,
       "gold": 80,
       "stats": {
         "int": 18
@@ -1041,7 +1041,7 @@
     "study": "Lunar",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "gold": 45,
       "stats": {
         "int": 19
@@ -1063,7 +1063,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "int": 11
       }
@@ -1084,7 +1084,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 12
       }
@@ -1105,7 +1105,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "int": 13
       }
@@ -1126,7 +1126,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "int": 14
       }
@@ -1147,7 +1147,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "int": 14
       }
@@ -1168,7 +1168,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "int": 15
       }
@@ -1189,7 +1189,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "gold": 30,
       "stats": {
         "int": 16
@@ -1211,7 +1211,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "int": 16
       }
@@ -1232,7 +1232,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "int": 17
@@ -1254,7 +1254,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "int": 18
       }
@@ -1275,7 +1275,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 15,
-      "slots": 7,
+      "slots": 8,
       "gold": 80,
       "stats": {
         "int": 18
@@ -1297,7 +1297,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "int": 19
       }
@@ -1318,7 +1318,7 @@
     "study": "Planetary",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "int": 19
       }
@@ -1339,7 +1339,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -1360,7 +1360,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -1381,7 +1381,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -1402,7 +1402,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -1423,7 +1423,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -1444,7 +1444,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 14
       }
@@ -1465,7 +1465,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 15
       }
@@ -1486,7 +1486,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 16
       }
@@ -1507,7 +1507,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 16
       }
@@ -1528,7 +1528,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 18
       }
@@ -1549,7 +1549,7 @@
     "study": "Weal",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 19
       }
@@ -1570,7 +1570,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -1591,7 +1591,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -1612,7 +1612,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -1633,7 +1633,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 3,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "nst": 12
       }
@@ -1654,7 +1654,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -1675,7 +1675,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -1696,7 +1696,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 14
       }
@@ -1717,7 +1717,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 15
       }
@@ -1738,7 +1738,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 15
       }
@@ -1759,7 +1759,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 16
       }
@@ -1780,7 +1780,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 17
       }
@@ -1801,7 +1801,7 @@
     "study": "Wild",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 19
       }
@@ -1822,7 +1822,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -1843,7 +1843,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 1,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 11
       }
@@ -1864,7 +1864,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -1885,7 +1885,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -1906,7 +1906,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -1927,7 +1927,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -1948,7 +1948,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 14
       }
@@ -1969,7 +1969,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 14
       }
@@ -1990,7 +1990,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 15
       }
@@ -2003,7 +2003,7 @@
   },
   {
     "name": "Oneiromancy",
-    "description": "During the ritual, the caster beseeches the fey for a vision concerning an important topic, and then falls into a magical slumber. While asleep, the caster receives a vision. The DM privately rolls a d20, which determines how directly the vision answers the question. On a 1, the vision (fantastical as it may be) bears absolutely no relation to the question at hand, and may even be malicious fey trickery.",
+    "description": "During the ritual, the caster beseeches the fey for a vision concerning an important topic, and then falls into a magical slumber. While asleep, the caster receives a vision. The storyteller privately rolls a d20, which determines how directly the vision answers the question. On a 1, the vision (fantastical as it may be) bears absolutely no relation to the question at hand, and may even be malicious fey trickery.",
     "level": 5,
     "duration": "1 Hour",
     "rarity": "Common",
@@ -2011,7 +2011,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 15
       }
@@ -2032,7 +2032,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 16
       }
@@ -2053,7 +2053,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 16
       }
@@ -2074,7 +2074,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 17
       }
@@ -2095,7 +2095,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 17
       }
@@ -2116,7 +2116,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 18
       }
@@ -2137,7 +2137,7 @@
     "study": "Wyrd",
     "trainingReqs": {
       "level": 17,
-      "slots": 7,
+      "slots": 8,
       "gold": 90,
       "stats": {
         "nst": 19
@@ -2159,7 +2159,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -2180,7 +2180,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -2201,7 +2201,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 12
       }
@@ -2222,7 +2222,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 12
       }
@@ -2243,7 +2243,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -2264,7 +2264,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -2285,7 +2285,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -2306,7 +2306,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -2327,7 +2327,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -2348,7 +2348,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 15
       }
@@ -2369,7 +2369,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 15
       }
@@ -2390,7 +2390,7 @@
     "study": "Thaumaturgy",
     "trainingReqs": {
       "level": 11,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "cha": 16
       }
@@ -2411,7 +2411,7 @@
     "study": "Theurgy",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -2432,7 +2432,7 @@
     "study": "Theurgy",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -2453,7 +2453,7 @@
     "study": "Theurgy",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 12
       }
@@ -2474,7 +2474,7 @@
     "study": "Theurgy",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -2495,7 +2495,7 @@
     "study": "Theurgy",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 15
       }
@@ -2516,7 +2516,7 @@
     "study": "Theurgy",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "cha": 19
       }
@@ -2537,7 +2537,7 @@
     "study": "Theurgy",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "cha": 19
       }
@@ -2558,7 +2558,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 1,
-      "slots": 3,
+      "slots": 4,
       "gold": 10,
       "stats": {
         "cha": 11
@@ -2580,7 +2580,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 3,
-      "slots": 4,
+      "slots": 5,
       "gold": 20,
       "stats": {
         "cha": 12
@@ -2602,7 +2602,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 3,
-      "slots": 4,
+      "slots": 5,
       "gold": 20,
       "stats": {
         "cha": 12
@@ -2624,7 +2624,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -2645,7 +2645,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -2666,7 +2666,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 7,
-      "slots": 5,
+      "slots": 6,
       "gold": 40,
       "stats": {
         "cha": 14
@@ -2688,7 +2688,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 9,
-      "slots": 5,
+      "slots": 6,
       "gold": 50,
       "stats": {
         "cha": 15
@@ -2710,7 +2710,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "cha": 16
       }
@@ -2731,7 +2731,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 13,
-      "slots": 6,
+      "slots": 7,
       "gold": 70,
       "stats": {
         "cha": 17
@@ -2753,7 +2753,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "cha": 18
       }
@@ -2774,7 +2774,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 17,
-      "slots": 7,
+      "slots": 8,
       "gold": 90,
       "stats": {
         "cha": 19
@@ -2796,7 +2796,7 @@
     "study": "Necromancy",
     "trainingReqs": {
       "level": 17,
-      "slots": 7,
+      "slots": 8,
       "gold": 90,
       "stats": {
         "cha": 19
@@ -2818,7 +2818,7 @@
     "study": "Draconolatry",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "cha": 18
       }
@@ -2839,7 +2839,7 @@
     "study": "Demonolatry",
     "trainingReqs": {
       "level": 5,
-      "slots": 4,
+      "slots": 5,
       "gold": 30,
       "stats": {
         "cha": 13
@@ -2861,7 +2861,7 @@
     "study": "Demonolatry",
     "trainingReqs": {
       "level": 5,
-      "slots": 4,
+      "slots": 5,
       "gold": 30,
       "stats": {
         "cha": 13
@@ -2883,7 +2883,7 @@
     "study": "Demonolatry",
     "trainingReqs": {
       "level": 11,
-      "slots": 6,
+      "slots": 7,
       "gold": 60,
       "stats": {
         "cha": 16
@@ -2905,7 +2905,7 @@
     "study": "Demonolatry",
     "trainingReqs": {
       "level": 11,
-      "slots": 6,
+      "slots": 7,
       "gold": 60,
       "stats": {
         "cha": 16
@@ -2927,7 +2927,7 @@
     "study": "Demonolatry",
     "trainingReqs": {
       "level": 13,
-      "slots": 6,
+      "slots": 7,
       "gold": 70,
       "stats": {
         "cha": 17
@@ -2949,7 +2949,7 @@
     "study": "Demonolatry",
     "trainingReqs": {
       "level": 15,
-      "slots": 7,
+      "slots": 8,
       "gold": 80,
       "stats": {
         "cha": 18
@@ -2971,7 +2971,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -2992,7 +2992,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -3013,7 +3013,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3034,7 +3034,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3055,7 +3055,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -3076,7 +3076,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 5,
-      "slots": 5,
+      "slots": 6,
       "gold": 15,
       "stats": {
         "nst": 13
@@ -3098,7 +3098,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "nst": 14
@@ -3120,7 +3120,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 14
       }
@@ -3141,7 +3141,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 15
       }
@@ -3162,7 +3162,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "gold": 30,
       "stats": {
         "nst": 16
@@ -3184,7 +3184,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 11,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "nst": 16
       }
@@ -3205,7 +3205,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 13,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "nst": 17
       }
@@ -3226,7 +3226,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "nst": 17
@@ -3248,7 +3248,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "gold": 40,
       "stats": {
         "nst": 18
@@ -3270,7 +3270,7 @@
     "study": "Earth",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 19
       }
@@ -3291,7 +3291,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -3312,7 +3312,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3333,7 +3333,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3354,7 +3354,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -3375,7 +3375,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -3396,7 +3396,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 14
       }
@@ -3417,7 +3417,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 14
       }
@@ -3438,7 +3438,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 15
       }
@@ -3459,7 +3459,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 15
       }
@@ -3480,7 +3480,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 13,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "nst": 17
       }
@@ -3501,7 +3501,7 @@
     "study": "Fire",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "gold": 45,
       "stats": {
         "nst": 19
@@ -3523,7 +3523,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -3544,7 +3544,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -3565,7 +3565,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3586,7 +3586,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3607,7 +3607,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -3628,7 +3628,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -3649,7 +3649,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 14
       }
@@ -3670,7 +3670,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "nst": 14
@@ -3692,7 +3692,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "nst": 15
@@ -3714,7 +3714,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "nst": 15
@@ -3736,7 +3736,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 11,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "nst": 16
       }
@@ -3757,7 +3757,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "nst": 17
@@ -3779,7 +3779,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "gold": 40,
       "stats": {
         "nst": 18
@@ -3801,7 +3801,7 @@
     "study": "Water",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 19
       }
@@ -3822,7 +3822,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -3843,7 +3843,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "nst": 11
       }
@@ -3864,7 +3864,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3885,7 +3885,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 12
       }
@@ -3906,7 +3906,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "nst": 13
       }
@@ -3927,7 +3927,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 14
       }
@@ -3948,7 +3948,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 14
       }
@@ -3969,7 +3969,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "nst": 15
       }
@@ -3990,7 +3990,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 11,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "nst": 16
       }
@@ -4011,7 +4011,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 13,
-      "slots": 5,
+      "slots": 6,
       "stats": {
         "nst": 17
       }
@@ -4032,7 +4032,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 15,
-      "slots": 6,
+      "slots": 7,
       "stats": {
         "nst": 18
       }
@@ -4053,7 +4053,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 19
       }
@@ -4074,7 +4074,7 @@
     "study": "Air",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "nst": 19
       }
@@ -4095,7 +4095,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -4116,7 +4116,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -4137,7 +4137,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 12
       }
@@ -4158,7 +4158,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -4179,7 +4179,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -4200,7 +4200,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -4221,7 +4221,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 7,
-      "slots": 6,
+      "slots": 7,
       "gold": 20,
       "stats": {
         "cha": 14
@@ -4243,7 +4243,7 @@
     "study": "Illusion",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 15
       }
@@ -4264,7 +4264,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -4285,7 +4285,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -4306,7 +4306,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -4327,7 +4327,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -4348,7 +4348,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 12
       }
@@ -4369,7 +4369,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -4390,7 +4390,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 9,
-      "slots": 6,
+      "slots": 7,
       "gold": 25,
       "stats": {
         "cha": 15
@@ -4412,7 +4412,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 13,
-      "slots": 6,
+      "slots": 7,
       "gold": 70,
       "stats": {
         "cha": 17
@@ -4434,7 +4434,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "stats": {
         "cha": 17
       }
@@ -4455,7 +4455,7 @@
     "study": "Telepathy",
     "trainingReqs": {
       "level": 15,
-      "slots": 8,
+      "slots": 9,
       "gold": 40,
       "stats": {
         "cha": 18
@@ -4477,7 +4477,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -4498,7 +4498,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 1,
-      "slots": 2,
+      "slots": 3,
       "stats": {
         "cha": 11
       }
@@ -4519,7 +4519,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 12
       }
@@ -4540,7 +4540,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 3,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 12
       }
@@ -4561,7 +4561,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -4582,7 +4582,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 5,
-      "slots": 3,
+      "slots": 4,
       "stats": {
         "cha": 13
       }
@@ -4603,7 +4603,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -4624,7 +4624,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 7,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 14
       }
@@ -4645,7 +4645,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 9,
-      "slots": 4,
+      "slots": 5,
       "stats": {
         "cha": 15
       }
@@ -4666,7 +4666,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 13,
-      "slots": 7,
+      "slots": 8,
       "gold": 35,
       "stats": {
         "cha": 17
@@ -4688,7 +4688,7 @@
     "study": "Telekinesis",
     "trainingReqs": {
       "level": 17,
-      "slots": 8,
+      "slots": 9,
       "stats": {
         "cha": 19
       }
