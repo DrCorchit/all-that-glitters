@@ -170,7 +170,7 @@ export default function AppendixSpells(): ReactElement {
 
 	return (
 		<Appendix index={1}>
-			<h4 id='top'>Schools of Sorcery</h4>
+			<h4>Schools of Sorcery</h4>
 			<Outline pathname='/spells' sections={spellSchools.array.map(school => school.name)} />
 			<Collapsible text='Search'>
 				<FilterForm filterState={filterState} setFilterState={setFilterState} />

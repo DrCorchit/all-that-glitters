@@ -22,7 +22,7 @@ export default function Appendix({index, children}: {index: number; children: Re
 	return (
 		<>
 			<ScrollToHashElement />
-			<h3>{info.name}</h3>
+			<h3 id='top'>{info.name}</h3>
 			{nav}
 			{children}
 			{nav}

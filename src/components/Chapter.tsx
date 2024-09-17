@@ -23,7 +23,7 @@ export default function Chapter({index, children}: {index: number; children?: Re
 	return (
 		<>
 			<ScrollToHashElement />
-			<h2>{`Chapter ${index}`}</h2>
+			<h2 id='top'>{`Chapter ${index}`}</h2>
 			<h3>{info.name}</h3>
 			{nav}
 			{children}

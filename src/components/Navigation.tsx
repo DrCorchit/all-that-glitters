@@ -13,7 +13,7 @@ export default function Navigation({prev, next}: NavProps) {
 			<div className='row' style={{margin: 0, justifyContent: "space-evenly"}}>
 				{prev && <div className='column-shrink'>{prev}</div>}
 				<div className='column-shrink'>
-					<Link to='/chapters'>Back to the Table of Contents</Link>
+					<Link to='/chapters#top'>Back to the Table of Contents</Link>
 				</div>
 				{next && <div className='column-shrink'>{next}</div>}
 			</div>

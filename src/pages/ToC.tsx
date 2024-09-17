@@ -1,3 +1,4 @@
+import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 import {appendices} from "../components/AppendixInfo";
 import {ChapterInfo, chapters} from "../components/ChapterInfo";
 import {ChapterLink, AppendixLink} from "../components/InternalLink";
@@ -22,7 +23,8 @@ function TocEntry({chapter}: {chapter: ChapterInfo}) {
 export default function ToC() {
 	return (
 		<>
-			<h1>All That Glitters</h1>
+			<ScrollToHashElement />
+			<h1 id='top'>All That Glitters</h1>
 			<h2>Player's Handbook</h2>
 			<p>
 				This guide is designed for players new to TTRPGs. If you're an experienced player, I suggest skipping the first
