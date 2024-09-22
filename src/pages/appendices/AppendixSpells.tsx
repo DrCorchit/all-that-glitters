@@ -47,7 +47,7 @@ function Spellement({spell}: {spell: Spell}): ReactElement {
 				<ul>
 					<li>Casting Time: {spell.castingReqs.time}</li>
 					<li>Evocation Willpower: {spell.castingReqs.evocation}</li>
-					{spell.type === "Concentration" && <li>Concentration Willpower: {spell.castingReqs.concentration}</li>}
+					{spell.type.name === "Concentration" && <li>Concentration Willpower: {spell.castingReqs.concentration}</li>}
 				</ul>
 			</Collapsible>
 		</div>
