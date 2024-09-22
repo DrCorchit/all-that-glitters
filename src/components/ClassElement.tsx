@@ -5,7 +5,6 @@ import {levelingBonuses} from "../generated/levelingBonuses";
 import {startingEquipment} from "../generated/startingEquipment";
 import {normalize} from "../utils/utils";
 import Collapsible from "./Collapsible";
-import {Line} from "./Line";
 import {Subheader} from "./text/Subheader";
 
 export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
