@@ -8,7 +8,7 @@
 	{
 		"name": "Renegade",
 		"description": "For those focused on stealth, sneak attacks, and subterfuge—or assassination and seduction!",
-		"classes": ["Assassin", "Minstrel", "Thief", "Tinker"],
+		"classes": ["Assassin", "Minstrel", "Plague Doctor", "Thief"],
 		"bonuses": ["+1 Dexterity", "Stealth Proficiency", "Maneuver: Precision Strike"]
 	},
 	{

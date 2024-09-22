@@ -3,10 +3,13 @@ import Appendix from "../../components/Appendix";
 import Collapsible from "../../components/Collapsible";
 import {AppendixLink} from "../../components/InternalLink";
 import Outline from "../../components/Outline";
-import Section from "../../components/Section";
+import Section from "../../components/text/Section";
 import {Spell, lookupSpellsBySchool, spellSchools} from "../../concepts/magic";
 import {recordEquals, range} from "../../utils/utils";
 import {spellDescriptions} from "../../generated/spellDescriptions";
+import {Header} from "../../components/text/Header";
+import {Line} from "../../components/Line";
+import {CopyLink} from "../../components/text/CopyLink";
 
 function NoSpells(): React.JSX.Element {
 	return (
@@ -19,15 +22,9 @@ function NoSpells(): React.JSX.Element {
 function Spellement({spell}: {spell: Spell}): ReactElement {
 	return (
 		<div className='background'>
-			<button
-				className='h5'
-				id={spell.id}
-				onClick={() => {
-					const text = `https://all-that-glitters.net/spells#${spell.id}`;
-					navigator.clipboard.writeText(text);
-				}}>
+			<CopyLink link='spells' id={spell.id}>
 				{spell.name}
-			</button>
+			</CopyLink>
 			<p>
 				<i>{spell.blurb}</i>
 			</p>
@@ -92,7 +89,7 @@ function FilterForm({
 				value={filterState.word}
 				onChange={e => setFilterState({...filterState, word: e.target.value})}
 				placeholder='Filter by spell name'></input>
-			<hr />
+			<Line color='gold' />
 			<label>Filter by spell level: </label>
 			<select value={filterState.level} onChange={e => setFilterState({...filterState, level: Number(e.target.value)})}>
 				{range(1, 9).map((value, index) => (
@@ -112,7 +109,7 @@ function FilterForm({
 					{type}
 				</label>
 			))}
-			<hr />
+			<Line color='gold' />
 			<label>Filter by training slots: </label>
 			<select value={filterState.slots} onChange={e => setFilterState({...filterState, slots: Number(e.target.value)})}>
 				{range(1, 15).map((value, index) => (
@@ -137,7 +134,7 @@ function FilterForm({
 	);
 }
 
-export default function AppendixSpells(): ReactElement {
+export function AppendixSpells(): ReactElement {
 	const [filterState, setFilterState] = useState<FilterState>(defaultFilterState);
 
 	function filter(spell: Spell): boolean {
@@ -170,7 +167,7 @@ export default function AppendixSpells(): ReactElement {
 
 	return (
 		<Appendix index={1}>
-			<h4>Schools of Sorcery</h4>
+			<Header>Schools of Sorcery</Header>
 			<Outline pathname='/spells' sections={spellSchools.array.map(school => school.name)} />
 			<Collapsible text='Search'>
 				<FilterForm filterState={filterState} setFilterState={setFilterState} />

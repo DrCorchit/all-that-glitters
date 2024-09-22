@@ -3,43 +3,43 @@ import React from "react";
 import {TSXDirectory} from "../utils/tsxDirectory";
 import Tooltip from "../components/Tooltip";
 
-export const bleeding = <div className="default">Alleviated by resting, healing spells, or the "help" action.</div>
+export const bleeding = <span className="default">Alleviated by resting, healing spells, or the "help" action.</span>
 
-export const blinded = <div className="default"><Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip>, or wait until vision returns naturally.</div>
+export const blinded = <span className="default"><Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip>, or wait until vision returns naturally.</span>
 
-export const burning = <div className="default">Alleviated by freezing, water, or the Fire Mitigation ability.</div>
+export const burning = <span className="default">Alleviated by freezing, water, or the Fire Mitigation ability.</span>
 
-export const deafened = <div className="default">Wait until hearing returns naturally.</div>
+export const deafened = <span className="default">Wait until hearing returns naturally.</span>
 
-export const incapacitated = <div className="default">Wait until the condition passes.</div>
+export const incapacitated = <span className="default">Wait until the condition passes.</span>
 
-export const intoxicated = <div className="default">One level of intoxication is lost per hour.</div>
+export const intoxicated = <span className="default">One level of intoxication is lost per hour.</span>
 
-export const terrified = <div className="default">Wait until the condition passes.</div>
+export const terrified = <span className="default">Wait until the condition passes.</span>
 
-export const dazed = <div className="default">Wait until the condition passes.</div>
+export const dazed = <span className="default">Wait until the condition passes.</span>
 
-export const prone = <div className="default">Use the move action to stand up.</div>
+export const prone = <span className="default">Use the move action to stand up.</span>
 
-export const lethargic = <div className="default">Wait until the condition passes</div>
+export const lethargic = <span className="default">Wait until the condition passes</span>
 
-export const madness = <div className="default">Wait until the condition passes.</div>
+export const madness = <span className="default">Wait until the condition passes.</span>
 
-export const restrained = <div className="default">Receiving help from an ally or taking <span style={{color: "#CFF"}}>Slashing</span> or <span style={{color: "#F80"}}>Heat</span> damage.</div>
+export const restrained = <span className="default">Receiving help from an ally or taking <span style={{color: "#CFF"}}>Slashing</span> or <span style={{color: "#F80"}}>Heat</span> damage.</span>
 
-export const freezing = <div className="default">Fire damage, or short rest.</div>
+export const freezing = <span className="default">Fire damage, or short rest.</span>
 
-export const frozen = <div className="default">Short rest.</div>
+export const frozen = <span className="default">Short rest.</span>
 
-export const petrified = <div className="default">Basilisk Oil</div>
+export const petrified = <span className="default">Basilisk Oil</span>
 
-export const poisoned = <div className="default">Taking an <Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip> or a long rest.</div>
+export const poisoned = <span className="default">Taking an <Tooltip tip={"Antidote"}>Cures poisoning. If taken as a preventative, prevents poisoning for one hour.</Tooltip> or a long rest.</span>
 
-export const levitated = <div className="default">Break the caster's concentration.</div>
+export const levitated = <span className="default">Break the caster's concentration.</span>
 
-export const invisibility = <div className="default"></div>
+export const invisibility = <span className="default"></span>
 
-export const ephemeral_invisibility = <div className="default"></div>
+export const ephemeral_invisibility = <span className="default"></span>
 
 export const statusRecoveries = new TSXDirectory<React.JSX.Element>();
 

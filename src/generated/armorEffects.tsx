@@ -3,27 +3,27 @@ import React from "react";
 import {TSXDirectory} from "../utils/tsxDirectory";
 import Sub from "../components/Sub";
 
-export const quilted_armor = <div className="default">-1 <Sub attr="CHA"/></div>
+export const quilted_armor = <span className="default">-1 <Sub attr="CHA"/></span>
 
-export const gambeson = <div className="default"></div>
+export const gambeson = <span className="default"></span>
 
-export const leather_armor = <div className="default"></div>
+export const leather_armor = <span className="default"></span>
 
-export const brigandine = <div className="default"><Sub attr="DEX"/> is capped at 16</div>
+export const brigandine = <span className="default"><Sub attr="DEX"/> is capped at 16</span>
 
-export const hauberk = <div className="default"><Sub attr="DEX"/> is capped at 15, <Sub skill="Stealth" /> disadvantage</div>
+export const hauberk = <span className="default"><Sub attr="DEX"/> is capped at 15, <Sub skill="Stealth" /> disadvantage</span>
 
-export const breastplate = <div className="default"><Sub attr="DEX"/> is capped at 14.</div>
+export const breastplate = <span className="default"><Sub attr="DEX"/> is capped at 14.</span>
 
-export const ringmail = <div className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Stealth" /> disadvantage</div>
+export const ringmail = <span className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Stealth" /> disadvantage</span>
 
-export const chainmail = <div className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Stealth" /> disadvantage</div>
+export const chainmail = <span className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Stealth" /> disadvantage</span>
 
-export const half_plate_armor = <div className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Mobility" /> disadvantage</div>
+export const half_plate_armor = <span className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Mobility" /> disadvantage</span>
 
-export const splinted_chainmail = <div className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Stealth" /> disadvantage</div>
+export const splinted_chainmail = <span className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 11, <Sub skill="Stealth" /> disadvantage</span>
 
-export const full_plate_armor = <div className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 10, <Sub skill="Mobility" /> disadvantage, <Sub skill="Stealth" /> disadvantage</div>
+export const full_plate_armor = <span className="default"><Sub attr="DEX"/> and <Sub attr="SPD"/> are capped at 10, <Sub skill="Mobility" /> disadvantage, <Sub skill="Stealth" /> disadvantage</span>
 
 export const armorEffects = new TSXDirectory<React.JSX.Element>();
 

@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Evocation",
+		"description": "These are spells of the usual sort, cast quickly and with instantaneous (or near instantaneous) effect. They are so named because they are often initiated by speaking a magical word. Casting such a spell incurs a one-time expenditure of willpower. Most of these are versatile spells with few material or circumstantial requirements."
+	},
+	{
+		"name": "Concentration",
+		"description": "Spells such as these are cast over a span of time. They usually require a burst of willpower to initiate and a small amount to maintain. Concentration can be broken if the caster is damaged or distracted."
+	},
+	{
+		"name": "Ritual",
+		"description": "Ritual spells require careful and methodic preparation. They offer a better tradeoff of willpower versus power, at the cost of versatility, since it is not practicable to cast them in the midst of danger or combat. Rituals may require specific circumstances, such as certain weather conditions, positioning of the moon or stars, or access to a consecrated altar."
+	},
+	{
+		"name": "Ceremony",
+		"description": "Ceremonies are cooperative rituals that require more magical energy than is available to a single individual. During a ceremony, each participant contributes some energy towards the casting of the spell. Like rituals, these spells often have special requirements."
+	},
+	{
+		"name": "Enchantment",
+		"description": "An enchantment is a special type of ritual spell where magical energies are infused into a physical object or substance, such as a sword, piece of armor, or an alchemical brew. The enchantment's magic lingers long after the spell is cast."
+	}
+]

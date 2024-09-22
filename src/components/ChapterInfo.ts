@@ -63,7 +63,7 @@ export const chapters = new Source<ChapterInfo>(
 		{
 			index: 7,
 			name: "How do I use Magic?",
-			sections: ["Learning Spells", "Casting Spells", "Schools of Sorcery"],
+			sections: ["Schools of Sorcery", "Learning Spells", "Casting Spells"],
 		},
 	],
 	chapter => chapter.index.toString(),

@@ -1,13 +1,16 @@
 import {Link} from "react-router-dom";
 import {SheetLink, SheetLink2} from "../components/InternalLink";
+import {ATG} from "../components/text/ATG";
+import {Subtitle} from "../components/text/Subtitle";
+import {Line} from "../components/Line";
 
 function MainPage() {
 	return (
 		<>
-			<h1>All That Glitters</h1>
-			<hr />
-			<h2>A Fantasy Renaissance Tabletop Role-Playing Game</h2>
-			<hr />
+			<ATG />
+			<Line color='yellow' />
+			<Subtitle>A Fantasy Renaissance Tabletop Role-Playing Game</Subtitle>
+			<Line color='yellow' />
 			<p>
 				All That Glitters is a fantasy tabletop role-playing game set in a world inspired by the late medieval to early
 				renaissance period. There's fantasy races like dwarves and elves, knights in shining armor, a sprinkling of
@@ -46,8 +49,8 @@ function MainPage() {
 				Character sheets are available <SheetLink>here</SheetLink> with an optional second page available{" "}
 				<SheetLink2>here</SheetLink2>.
 			</p>
-			<h1>...Is Not Gold!</h1>
-			<h2>Thank you for reading.</h2>
+			<ATG>...Is Not Gold!</ATG>
+			<Subtitle>Thank you for reading.</Subtitle>
 		</>
 	);
 }

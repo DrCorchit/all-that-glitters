@@ -1,7 +1,7 @@
 import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
-import {ChapterLink} from "../../components/InternalLink";
-import Section from "../../components/Section";
+import {AppendixLink, ChapterLink} from "../../components/InternalLink";
+import Section from "../../components/text/Section";
 import Sub from "../../components/Sub";
 import strings from "../../resources/strings.json";
 
@@ -13,9 +13,9 @@ function Intro(): JSX.Element {
 		<p>
 			In All That Glitters, there are three ways that characters increase their power level: leveling, training, and
 			looting. Each of these serves a unique function. Leveling provides characters with guaranteed and predicatable
-			bonuses that they can plan their character around. Training allows players to customized their characters and
-			fine-tune their characters for their own needs. Finally, looting allows the storyteller to challenge players with
-			new ideas that are unique to each adventure.
+			bonuses that they can plan their character around. Training allows players to adapt their character to looming
+			challenges and emphasize their character's flavor. Finally, looting allows the storyteller to challenge players
+			with new ideas that are unique to each adventure.
 		</p>
 	);
 }
@@ -97,12 +97,12 @@ function LevelingSection(): JSX.Element {
 					proficiency bonuses. Class features are covered in <ChapterLink chapter={2} target='classes' />.
 				</li>
 				<li>
-					Increase your maximum hitpoints. If you didn't level <Sub attr='STR' />, just add half your strength score to
-					your Max HP.
+					Increase your maximum hitpoints. The easy way is to just add half your strength score to your Max HP, but if
+					you want to be 100% accurate, you can recalculate using the max hp formula above.
 				</li>
 				<li>
-					Regain training slots. Any abilities trained in previous levels now use half as many training slots, rounded
-					down.
+					Regain training slots used by abilities learned in the previous level. If you didn't use every trainig slot
+					available in the previous level, up to 5 training slots carry over to the next level.
 				</li>
 				<li>
 					Update your character sheet. You don't need to copy new class abilities into the "abilities" section, but you
@@ -118,33 +118,50 @@ function TrainingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[1]}>
 			<p>
-				It is possible for characters to proactively learn certain abilities from NPC trainers, such as skill
-				proficiencies, combat tactics, and spells. In addition to any gold cost, learning abilities in this way costs
-				training slots. Each player has training slots equal to their intelligence score, which represent the time and
-				mental effort required to fully master the new skill. Most abilities consume 2 training slots at first, but that
-				number is reduced by half every time the player levels up, rounded down. After leveling up, any trained
-				abilities that consume only one training slot become rote abilities, and no longer consume training slots.
+				Trainable abilities are divided into three types:
+				<ul>
+					<li>
+						<b>Feats</b>, which are (usually) passive abilities useful in and out of combat.
+					</li>
+					<li>
+						<b>Spells</b>, which are magical abilities available to players who have taken the{" "}
+						<AppendixLink appendix={2} target='Arcane Apprentice' /> feat.
+					</li>
+					<li>
+						<b>Maneuvers</b>, which are nonmagical combat abilities used during battles.
+					</li>
+				</ul>
 			</p>
 			<p>
-				If a player does not have enough training slots available to learn a new ability, they cannot learn the ability
-				even if they have sufficient gold to purchase the training. In this case, players can choose to forget abilities
-				they are in the process of learning. If this is done, the training slots for the forgotten ability are recovered
-				but the gold use to purchase the ability is lost and the skill can no longer be used.
+				All three of these types of abilities cost training slots to learn. Training slots represent the time and mental
+				effort required to fully master the new skill. Normally, each player has training slots equal to their
+				intelligence score. These are expended when learning new abilities, and returned after leveling up. If you want
+				to play a character who has an answer for every situation, you likely want to level your <Sub attr='int' />{" "}
+				score, since this directly influences their repertoir.
+			</p>
+			<p>
+				If you level up and have some training slots left over, but none of the availabilities appeal to you, up to 5
+				training slots carry over to the next level. (Or more, if your storyteller allows.)
 			</p>
 			<p>
 				In order to learn new abilities, players must first ensure that they meet the requirements of the ability they
 				are trying to learn. For example:
 			</p>
 			<ul>
-				<li>Many abilities require a certain level of strength or intelligence, or other attribute.</li>
-				<li>Some abilities require a level of proficiency in a certain skill.</li>
+				<li>All spells, feats, and abilities require a certain adventurer level.</li>
+				<li>A certain level of strength or intelligence, or other attribute.</li>
 				<li>High level spells often require mastery of other low level spells before they can be learned.</li>
 				<li>Players must have sufficient training slots available for the ability they are trying to learn.</li>
 			</ul>
-			<p>
-				Assuming they meet these requirements, players must find and hire a trainer of the appropriate discipline and
-				skill level. After this, the new ability is gained, and can be used at any point in the adventure.
-			</p>
+			<p>The list of all feats, spells, and maneuvers are listed in the following appendices:</p>
+			<ul>
+				<li>
+					<b>Spells</b>: <AppendixLink appendix={1} />
+				</li>
+				<li>
+					<b>Feats and Maneuvers</b>: <AppendixLink appendix={2} />
+				</li>
+			</ul>
 		</Section>
 	);
 }
@@ -153,12 +170,11 @@ function LootingSection(): JSX.Element {
 	return (
 		<Section name={info.sections[2]}>
 			<p>
-				True to its name, All That Glitters treats looting as a core part of the leveling process. Besides the
+				True to its name, <i>All That Glitters</i> treats looting as a core part of the leveling process. Besides the
 				acquisition of magical items, gold allows players to improve their builds in a number of important ways:
 			</p>
 			<ul>
-				<li>Learning spells</li>
-				<li>Hiring trainers</li>
+				<li>Hiring trainers for rare spells or abilities</li>
 				<li>Purchasing magical trinkets and jewelry</li>
 				<li>Buying improved weapons and armor</li>
 				<li>Buying potions, scrolls, or other tools</li>

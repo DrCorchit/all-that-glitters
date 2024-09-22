@@ -1,4 +1,5 @@
 import rarityJson from "../resources/magic/rarity.json";
+import spellTypeJson from "../resources/magic/spellTypes.json";
 import schoolsJson from "../resources/magic/schools.json";
 import spellsJson from "../generated/spells.json";
 import {Keyword} from "../utils/keyword";
@@ -41,7 +42,15 @@ export const spellRarities = new Source<SpellRarity>(
 	(feat, text) => `<Tooltip tip={"${text ?? feat.name}"}>${feat.description}</Tooltip>`
 );
 
-export type Type = "Evocation" | "Concentration" | "Ritual" | "Ceremony";
+export interface SpellType extends Keyword {}
+
+export const spellTypes = new Source<SpellType>(
+	"Spell Types",
+	spellTypeJson,
+	type => type.name,
+	type => type.name,
+	(type, text) => `<Tooltip tip={"${text ?? type.name}>${type.description}</Tooltip>}`
+);
 
 export interface TrainingReqs {
 	level: number;
@@ -108,7 +117,7 @@ export class Spell {
 	level: number;
 	duration: string;
 	rarity: SpellRarity;
-	type: Type;
+	type: SpellType;
 	study: SpellStudy;
 	trainingReqs: TrainingReqs;
 	castingReqs: CastingReqs;
@@ -122,7 +131,7 @@ export class Spell {
 		this.level = json.level;
 		this.duration = json.duration;
 		this.rarity = spellRarities.lookup(json.rarity);
-		this.type = json.type as Type;
+		this.type = spellTypes.lookup(json.type);
 		this.study = spellStudies.lookup(json.study);
 
 		this.trainingReqs = {
@@ -170,7 +179,7 @@ function getBase(spell: Spell): string {
 }
 
 function getSuffix(spell: Spell): string {
-	return spell.type === "Evocation" || spell.type === "Concentration" ? "spell" : "";
+	return spell.type.name === "Evocation" || spell.type.name === "Concentration" ? "spell" : "";
 }
 
 export const spells = new Source<Spell>(

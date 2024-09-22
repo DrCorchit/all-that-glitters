@@ -1,5 +1,6 @@
 import {ReactNode} from "react";
 import {Link} from "react-router-dom";
+import {Line} from "./Line";
 
 type NavProps = {
 	prev?: ReactNode;
@@ -9,7 +10,7 @@ type NavProps = {
 export default function Navigation({prev, next}: NavProps) {
 	return (
 		<>
-			<hr />
+			<Line color='yellow' />
 			<div className='row' style={{margin: 0, justifyContent: "space-evenly"}}>
 				{prev && <div className='column-shrink'>{prev}</div>}
 				<div className='column-shrink'>
@@ -17,7 +18,7 @@ export default function Navigation({prev, next}: NavProps) {
 				</div>
 				{next && <div className='column-shrink'>{next}</div>}
 			</div>
-			<hr />
+			<Line color='yellow' />
 		</>
 	);
 }

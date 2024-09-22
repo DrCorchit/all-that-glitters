@@ -646,9 +646,10 @@
     ],
     "alignment": "Lawful",
     "coreAbilityName": "Punditry",
-    "coreAbilityDescription": "You start out with the {{feats.arcane_adept}} feat. The training slot cost to learn academic spells is reduced by 2.",
+    "coreAbilityDescription": "You start out with the {{feats.arcane_adept}} feat for a magical school of your choice. The training slot cost to learn spells is reduced by 1, and the cost to learn academic spells is reduced by 2.",
     "levelingBonuses": {
       "1": "gain proficiency in Literacy. Gain Arcane Apprentice in a school of your choice.",
+      "2": "",
       "5": "increase your proficiency in Sorcery and Literacy to expertise.",
       "10": "increase your proficiency in Sorcery and Literacy to mastery.",
       "15": "gain the Arcane Master feat",

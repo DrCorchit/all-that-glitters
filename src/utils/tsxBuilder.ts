@@ -65,7 +65,7 @@ export class ObjectBuilder {
 
 	withTSX(key: string, value?: string): ObjectBuilder {
 		if (value !== undefined) {
-			return this.withValue(key, `<div className='default'>${value}</div>`);
+			return this.withValue(key, `<span className='default'>${value}</span>`);
 		}
 		return this;
 	}

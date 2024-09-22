@@ -3,6 +3,7 @@ import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 import {appendices} from "./AppendixInfo";
 import Navigation from "./Navigation";
 import {AppendixLink} from "./InternalLink";
+import {Title} from "./text/Title";
 
 function makeNavigation(index: number): JSX.Element {
 	const prev = index > 1 && <AppendixLink appendix={index - 1} rel='prev' />;
@@ -22,7 +23,7 @@ export default function Appendix({index, children}: {index: number; children: Re
 	return (
 		<>
 			<ScrollToHashElement />
-			<h3 id='top'>{info.name}</h3>
+			<Title id='top'>{info.name}</Title>
 			{nav}
 			{children}
 			{nav}

@@ -3,6 +3,8 @@ import Navigation from "./Navigation";
 import {chapters} from "./ChapterInfo";
 import {ChapterLink} from "./InternalLink";
 import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
+import {Title} from "./text/Title";
+import {Subtitle} from "./text/Subtitle";
 
 function makeNavigation(index: number) {
 	const prev = index > 1 && <ChapterLink chapter={index - 1}>Retreat to Chapter {index - 1}</ChapterLink>;
@@ -23,8 +25,8 @@ export default function Chapter({index, children}: {index: number; children?: Re
 	return (
 		<>
 			<ScrollToHashElement />
-			<h2 id='top'>{`Chapter ${index}`}</h2>
-			<h3>{info.name}</h3>
+			<Subtitle id='top'>{`Chapter ${index}`}</Subtitle>
+			<Title>{info.name}</Title>
 			{nav}
 			{children}
 			{nav}

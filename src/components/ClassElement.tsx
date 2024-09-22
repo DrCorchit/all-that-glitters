@@ -5,6 +5,8 @@ import {levelingBonuses} from "../generated/levelingBonuses";
 import {startingEquipment} from "../generated/startingEquipment";
 import {normalize} from "../utils/utils";
 import Collapsible from "./Collapsible";
+import {Line} from "./Line";
+import {Subheader} from "./text/Subheader";
 
 export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 	const tag = normalize(clazz.name);
@@ -15,7 +17,9 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 	return (
 		<div className='background'>
 			<div className='default'>
-				<h5 id={tag}>{name}</h5>
+				<Subheader id={tag} negateTopMargin>
+					{name}
+				</Subheader>
 				{classDescriptions.lookup(clazz.name)}
 				<p>While writing the backstory for a {clazz.name}, consider the following:</p>
 				<ul>
@@ -28,17 +32,18 @@ export function ClassElement({clazz}: {clazz: CombatClass}): JSX.Element {
 						<b>Alignment Suggestion</b>: {clazz.alignment}
 					</p>
 				)}
-				<div>
-					<b>Core Ability</b>: <i>{clazz.coreAbilityName}</i>
-					{coreAbilityDescriptions.lookup(clazz.name)}
-				</div>
-				<Collapsible text='Detailed Information'>
-					<b>Limitations</b>: {clazz.limitations}
-					<b>Leveling Bonuses</b>:
+				<b>Core Ability</b>: <i>{clazz.coreAbilityName}</i>. {coreAbilityDescriptions.lookup(clazz.name)}
+				<Collapsible text='Detailed Information' margin={5}>
+					<p>
+						<b>Limitations</b>: {clazz.limitations}
+					</p>
+					<label>
+						<b>Leveling Bonuses</b>:
+					</label>
 					{Object.entries(bonuses).map((entry, index) => {
 						const [level, bonus] = entry;
 						return (
-							<div className='default' key={index}>
+							<div className='default' style={{margin: "5px 0 10px 10px"}} key={index}>
 								At level {level}, {bonus}
 							</div>
 						);

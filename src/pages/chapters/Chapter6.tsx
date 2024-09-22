@@ -2,8 +2,9 @@ import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink, AppendixLink} from "../../components/InternalLink";
 import Outline from "../../components/Outline";
-import Section from "../../components/Section";
+import Section from "../../components/text/Section";
 import Sub from "../../components/Sub";
+import {Subheader} from "../../components/text/Subheader";
 
 const index = 6;
 const info = chapters.array[index - 1];
@@ -145,7 +146,7 @@ function TravelingSection(): JSX.Element {
 				When traveling long distance overland, there are a number of concerns: travel time, food, water, bandits,
 				weather, and road quality. Of these, food and bandits are the most troublesome.
 			</p>
-			<h5>Travel Time</h5>
+			<Subheader>Travel Time</Subheader>
 			<p>
 				The amount of distance covered per day depends greatly on the physical fitness of the traveler, trail and
 				weather conditions, and other factors such as mounts. A character's long distance hiking speed over even terrain
@@ -156,7 +157,7 @@ function TravelingSection(): JSX.Element {
 				25-30 miles is a reasonable distance for a party to cover per day, provided they follow established roads. When
 				travelling over rough terrain (such as mountains or dense forests), this distance is halved.
 			</p>
-			<h5>Food</h5>
+			<Subheader>Food</Subheader>
 			<p>
 				The basic unit of food is the day's ration. Rations are presumed to consist of nonperishable supplies such as
 				salted meat, pickled vegetables, or hardtack. Each adventurer consumes one ration per day. When rations run out,
@@ -177,7 +178,7 @@ function TravelingSection(): JSX.Element {
 				hunger every day they consume rations. In villages and towns, 3 days of hunger are recovered per day. It takes a
 				bit more than one week to fully recover from the brink of starvation.
 			</p>
-			<h5>Bandits</h5>
+			<Subheader>Bandits</Subheader>
 			<p>
 				Bandits usually set up ambushes along minor trade routes and between cities, but shy away from the cities
 				themselves and heavily travelled routes. Similarly, pirates roam the seas usually along trade routes. Naturally,
@@ -203,7 +204,7 @@ function RidingSection(): JSX.Element {
 				can carry more riders and pull more weight, but render melee combat impossible. The following rules apply to
 				both types of mounts, unless otherwise stated.
 			</p>
-			<h5>Mounted Combat</h5>
+			<Subheader>Mounted Combat</Subheader>
 			<p>
 				During mounted combat, rider and mount have separate HP and willpower pools, and are targeted separately. The
 				rider and mount share an initiative score and move and act together, but the mount does not take actions. Riders
@@ -225,7 +226,7 @@ function RidingSection(): JSX.Element {
 				</li>
 				<li>The hitpoints of a mount are equal to twice its strength score.</li>
 			</ul>
-			<h5>Pace and Speed</h5>
+			<Subheader>Pace and Speed</Subheader>
 			<p>
 				When riding a mount, a player's movement speed is replaced with the speed of their mount. Mounts travel at one
 				of four paces: walk, trot, canter, or gallop. At a walking pace, a mount's speed (in tiles per turn) is one
@@ -286,7 +287,7 @@ function RidingSection(): JSX.Element {
 				carrying two riders or a heavy load must expend twice as much willpower in order to trot, and cannot canter or
 				gallop.
 			</p>
-			<h5>Additional Rules</h5>
+			<Subheader>Additional Rules</Subheader>
 			<ul>
 				<li>
 					A player can mount a rideable feral animal by passing a DT 18 <Sub skill='nature' /> check. Failing the check,

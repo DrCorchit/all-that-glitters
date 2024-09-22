@@ -2,12 +2,14 @@ import {useState} from "react";
 import Appendix from "../../components/Appendix";
 import {normalize, range, recordEquals} from "../../utils/utils";
 import Collapsible from "../../components/Collapsible";
-import Section from "../../components/Section";
+import Section from "../../components/text/Section";
 import {Feat, feats, FeatType, featTypes, maxFeatSlots} from "../../concepts/feat";
 import {featDescriptions} from "../../generated/featDescriptions";
 import {featReqs} from "../../generated/featReqs";
 import {Attribute, attributes, getStat} from "../../concepts/attribute";
 import React from "react";
+import {Line} from "../../components/Line";
+import {CopyLink} from "../../components/text/CopyLink";
 
 function NoFeats(): React.JSX.Element {
 	return (
@@ -21,15 +23,9 @@ function FeatElement({feat}: {feat: Feat}): React.JSX.Element {
 	const id = normalize(feat.name);
 	return (
 		<div className='background'>
-			<button
-				className='h5'
-				id={id}
-				onClick={() => {
-					const text = `https://all-that-glitters.net/feats#${id}`;
-					navigator.clipboard.writeText(text);
-				}}>
+			<CopyLink link='feats' id={id}>
 				{feat.name}
-			</button>
+			</CopyLink>
 			<p>
 				<i>{`Level ${feat.level} ${feat.featType.name} Feat`}</i>
 			</p>
@@ -103,7 +99,7 @@ function FilterForm({
 				value={filterState.word}
 				onChange={e => setFilterState({...filterState, word: e.target.value})}
 				placeholder='Filter by feat name'></input>
-			<hr />
+			<Line color='gold' />
 			<label>Filter by feat level: </label>
 			<select value={filterState.level} onChange={e => setFilterState({...filterState, level: Number(e.target.value)})}>
 				{range(1, 9).map((value, index) => (
@@ -123,7 +119,7 @@ function FilterForm({
 					{type}
 				</label>
 			))}
-			<hr />
+			<Line color='gold' />
 			<label>Filter by training slots: </label>
 			<select value={filterState.slots} onChange={e => setFilterState({...filterState, slots: Number(e.target.value)})}>
 				{range(1, maxFeatSlots).map((value, index) => (
@@ -143,7 +139,7 @@ function FilterForm({
 					{type}
 				</label>
 			))}
-			<hr />
+			<Line color='gold' />
 			<label>Filter by attribute: </label>
 			<label>
 				<input

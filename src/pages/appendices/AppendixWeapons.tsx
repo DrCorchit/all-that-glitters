@@ -1,15 +1,17 @@
 import Appendix from "../../components/Appendix";
 import {GlossaryElement} from "../../components/Glossary";
 import {Table} from "../../components/Table";
+import {Header} from "../../components/text/Header";
 import {WeaponType, weaponKeywords, weaponTypes} from "../../concepts/weapon";
 import {weaponKeywordDescriptions} from "../../generated/weaponKeywordDescriptions";
+import {normalize} from "../../utils/utils";
 
 const headers = ["Name", "Damage", "Price", "Modifiers", "Requirements", "Notes"];
 
 function WeaponTable({type: weapons}: {type: WeaponType}): JSX.Element {
 	return (
 		<>
-			<h4>{weapons.name}</h4>
+			<Header id={normalize(weapons.name)}>{weapons.name}</Header>
 			<p>{weapons.description}</p>
 			<Table
 				headers={headers}
@@ -27,10 +29,10 @@ function WeaponTable({type: weapons}: {type: WeaponType}): JSX.Element {
 	);
 }
 
-export default function AppendixWeapons() {
+export function AppendixWeapons() {
 	return (
 		<Appendix index={3}>
-			<h4>Weapon Modifiers</h4>
+			<Header id='modifiers'>Weapon Modifiers</Header>
 			<p>Certain weapons have special properties, which affect how they behave:</p>
 			{weaponKeywords.array.map((keyword, index) => (
 				<GlossaryElement term={keyword} description={weaponKeywordDescriptions.lookup(keyword.name)} key={index} />

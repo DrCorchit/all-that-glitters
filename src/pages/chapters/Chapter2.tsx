@@ -1,7 +1,7 @@
 import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink, AppendixLink} from "../../components/InternalLink";
-import Section from "../../components/Section";
+import Section from "../../components/text/Section";
 import {combatCategories, CombatCategory} from "../../concepts/combatCategory";
 import {sizes, Size} from "../../concepts/size";
 import {range} from "../../utils/utils";
@@ -10,6 +10,7 @@ import {Race, races} from "../../concepts/race";
 import {raceDescriptions} from "../../generated/raceDescriptions";
 import {raceBonuses} from "../../generated/raceBonuses";
 import {combatClasses} from "../../concepts/combatClass";
+import {Subheader} from "../../components/text/Subheader";
 
 const index = 2;
 const info = chapters.array[index - 1];
@@ -63,7 +64,7 @@ function RaceSection(): JSX.Element {
 			{races.array.map((race, index) => {
 				return <RaceElement race={race} key={index} />;
 			})}
-			<h5 id='custom_races'>Custom Races</h5>
+			<Subheader id='custom_races'>Custom Races</Subheader>
 			<p>When creating new races, consider following these general guidelines:</p>
 			<ol>
 				<li>No stat bonus should exceed +2, and no stat penalty should exceed -2.</li>
@@ -75,7 +76,7 @@ function RaceSection(): JSX.Element {
 					Such races make very strong warriors or wizards respectively with very little downside.
 				</li>
 			</ol>
-			<h5 id='size'>Size</h5>
+			<Subheader id='size'>Size</Subheader>
 			<p>
 				A character's race also determines their size. Size is not recorded on the character sheet, but is usually
 				medium. If you picked a halfling, it's small. Size primarily affects what weapons a character can and can’t use,
@@ -112,7 +113,7 @@ function RaceSection(): JSX.Element {
 function RaceElement({race}: {race: Race}) {
 	return (
 		<div className='default'>
-			<h5>{race.name}</h5>
+			<Subheader>{race.name}</Subheader>
 			{raceDescriptions.lookup(race.name)}
 			{raceBonuses.lookup(race.name)}
 		</div>

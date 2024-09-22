@@ -2,7 +2,7 @@ import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import {Glossary} from "../../components/Glossary";
 import {ChapterLink} from "../../components/InternalLink";
-import Section from "../../components/Section";
+import Section from "../../components/text/Section";
 
 const index = 1;
 const info = chapters.array[index - 1];
@@ -178,7 +178,7 @@ function SectionOtherRules() {
 			<ul>
 				<li>Rolling with advantage means to roll a die twice and take the higher result.</li>
 				<li>Rolling with disadvantage means to roll a die twice and take the lower result.</li>
-				<li>Advantage and disadvantage cancel each other out.</li>
+				<li>Whenever you have advantage and disadvantage at the same time, they cancel each other out.</li>
 			</ul>
 			<p>When adding numbers, round down to calculate the final sum.</p>
 			<p>When rules conflict, specifics override general rules.</p>

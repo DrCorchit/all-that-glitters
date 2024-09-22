@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink} from "../../components/InternalLink";
-import Section from "../../components/Section";
+import Section from "../../components/text/Section";
 import Sub from "../../components/Sub";
 import {damageTypes, DamageType} from "../../concepts/damageType";
 import {statuses, StatusEffect} from "../../concepts/statusEffect";
@@ -10,6 +10,7 @@ import Outline from "../../components/Outline";
 import {statusDescriptions} from "../../generated/statusDescriptions";
 import {statusRecoveries} from "../../generated/statusRecoveries";
 import {actions} from "../../concepts/actions";
+import {Subheader} from "../../components/text/Subheader";
 
 const index = 5;
 const info = chapters.array[index - 1];
@@ -69,7 +70,7 @@ function BattlefieldSection(): JSX.Element {
 function BeginningSection(): JSX.Element {
 	return (
 		<Section name={info.sections[1]}>
-			<h5>Initiative</h5>
+			<Subheader>Initiative</Subheader>
 			<p>
 				Combat begins with a skill check, as both players and npc combatants roll for initiative. This determines move
 				order, with higher scores moving first. Rolling for initiative is an ordinary event roll, and all other rules
@@ -77,7 +78,7 @@ function BeginningSection(): JSX.Element {
 				players rolling the same initiative may either reach an agreement about who moves first or roll a d20 to decide,
 				while monsters rolling the same initiative move in whatever order the storyteller decides.
 			</p>
-			<h5>Recognition</h5>
+			<Subheader>Recognition</Subheader>
 			<p>
 				The storyteller may decide to ask players to roll for recognition to see the stats of the monsters they are
 				about to fight. This normally includes their HP, willpower, attributes, mitigation, and some of their spells,
@@ -135,7 +136,7 @@ function BeginningSection(): JSX.Element {
 				Note: Sometimes, players may have a chance to view their enemies from a distance before they are recognized. In
 				this case, they may roll for recognition before combat begins, typically with advantage.
 			</p>
-			<h5>Surprise</h5>
+			<Subheader>Surprise</Subheader>
 			<p>
 				During an ambush or surprise attack, sometimes the defenders are so completely discombobulated that they are
 				unable to react decisively. This condition is called <i>surprise</i> and has the following effects:
@@ -170,7 +171,7 @@ function ActionSection(): JSX.Element {
 				Monsters may have more or fewer actions than human players, but otherwise their combat turns proceed in
 				essentially the same way.
 			</p>
-			<h5 id='acting'>Acting</h5>
+			<Subheader id='acting'>Acting</Subheader>
 			<p>The following chart displays some actions and reactions typically available to players:</p>
 			<table className='default'>
 				<thead>
@@ -190,7 +191,7 @@ function ActionSection(): JSX.Element {
 					))}
 				</tbody>
 			</table>
-			<h5 id='reactions'>Reacting</h5>
+			<Subheader id='reactions'>Reacting</Subheader>
 			<p>
 				Reactions are moves a character makes in response to specific triggers, such as an enemy moving into or out of
 				melee range. Characters use reactions outside of their turn, as long as they have enough actions required to do
@@ -202,7 +203,7 @@ function ActionSection(): JSX.Element {
 				opportunity attack is made outside the attacker's turn. Other than being a reaction, an opportunity attack is an
 				ordinary melee attack, and can be made by both players and monsters without special training.
 			</p>
-			<h5 id='attacking'>Attacking</h5>
+			<Subheader id='attacking'>Attacking</Subheader>
 			<p>
 				Attacks are handled in two parts, the first being an attack roll to determine whether the attack connects, and
 				the second being a damage roll to determine how much damage is dealt. The attack roll is an ordinary skill
@@ -226,7 +227,7 @@ function ActionSection(): JSX.Element {
 				ordinary mitigation or hit an entire area at once. In such cases, the target usually makes a saving throw to
 				avoid full damage, rather than the caster trying to pass an ability check to cast the spell.
 			</p>
-			<h5 id='critical_hits'>Critical Hits</h5>
+			<Subheader id='critical_hits'>Critical Hits</Subheader>
 			<p>
 				Not all attacks are created equal. Sometimes a blade strikes exceptionally true, piercing all defenses. When
 				this happens, the blow is called a critical hit. Critical hits are triggered when the attacker rolls above the
@@ -239,7 +240,7 @@ function ActionSection(): JSX.Element {
 				<li>Damage is doubled.</li>
 				<li>If there is only one damage die for the attack, you can roll it twice and take the higher value.</li>
 			</ul>
-			<h5 id='defending'>Defending</h5>
+			<Subheader id='defending'>Defending</Subheader>
 			<p>
 				Defenders can increase their MIT temporarily by blocking (with an action), parrying (with a reaction), or
 				attempting to dodge (with an action). A few special rules apply to blocking and parrying:
@@ -255,7 +256,13 @@ function ActionSection(): JSX.Element {
 				</li>
 				<li>The dodge action allows you to disengage from enemy attacks without triggering opportunity attacks.</li>
 			</ul>
-			<h5 id='moving'>Moving</h5>
+			<Subheader id='spell_saving_throws'>Spell Saving throws</Subheader>
+			<p>
+				If a character takes damage while casting a concentration spell, they must succeed a strength saving throw to
+				continue casting the spell, or else concentration is lost. The difficulty of the saving throw is equal to the
+				damage dealt. If the damage taken is lightning, the saving throw is twice the damage dealt instead.
+			</p>
+			<Subheader id='moving'>Moving</Subheader>
 			<p>
 				When taking the move action, characters gain movement points equal to half their speed attribute score. When
 				moving around on a rectangular battle grid, players expend 1 movement point for every vertical, horizontal, or
@@ -265,7 +272,7 @@ function ActionSection(): JSX.Element {
 				tile unless they have the required amount of movement points remaining. For example, a character with 5.5
 				movement points would be able to move at most 5 tiles horizontally or vertically, not 6.
 			</p>
-			<h5 id='grappling'>Grappling</h5>
+			<Subheader id='grappling'>Grappling</Subheader>
 			<p>
 				A player can attempt to grapple an enemy by using two actions. The attacker and the defender then both roll a
 				<Sub skill='martial arts' /> skill check, with the grapple succeeding if the attacker's score is greater than or
@@ -370,23 +377,24 @@ function DamageTypesSection(): JSX.Element {
 			<p>A few notes on damage types:</p>
 			<ul>
 				<li>
-					When a character takes force damage exceeding their strength score, they must make a strength saving throw
-					with DT equal to the force damage dealt or be knocked prone.
+					When a character takes force damage exceeding half their strength score, they must make a strength saving
+					throw with difficulty equal to the force damage dealt or be knocked prone.
 				</li>
 				<li>
-					Metal armor protects the wearer from lightning damage by acting as a
+					The storyteller may rule that metal armor confers resistance to lightning damage. Although counterintuitive,
+					metal armor protects the wearer from lightning damage by acting as a
 					<Link to='https://www.youtube.com/watch?v=eNxDgd3D_bU'>faraday cage</Link>.
 				</li>
 				<li>
-					Successful attacks with acid decrease the target's BC by 1, until zero. The armor can be repaired at a
-					blacksmith for 20 gold per BC lost.
+					Successful attacks with acid decrease the target's BC by 1 (or more, if specified), until zero. The armor can
+					be repaired at a blacksmith for 20 gold per BC lost.
 				</li>
 				<li>
 					Good-aligned characters possess resistance to holy damage, and vulnerability to profane damage. Conversely,
 					evil-aligned characters and the undead possess resistance to profane damage and vulnerability to holy damage.
 				</li>
 			</ul>
-			<h5>Vulnerability, Resistance, and Immunity</h5>
+			<Subheader>Vulnerability, Resistance, and Immunity</Subheader>
 			<p>
 				Besides their inherent effects, damage types may deal differing amounts of damage to creatures depending on
 				their vulnerabilities. Every creature has one of four levels of vulnerability to each damage type, modifying

@@ -2,12 +2,13 @@ import Chapter from "../../components/Chapter";
 import {chapters} from "../../components/ChapterInfo";
 import {ChapterLink, AppendixLink, SheetLink} from "../../components/InternalLink";
 import Outline from "../../components/Outline";
-import Section from "../../components/Section";
+import Section from "../../components/text/Section";
 import Sub from "../../components/Sub";
 import {Table} from "../../components/Table";
 import {attributes} from "../../concepts/attribute";
 import {skills, Skill} from "../../concepts/skill";
 import strings from "../../resources/strings.json";
+import {Subheader} from "../../components/text/Subheader";
 
 const index = 3;
 const info = chapters.array[index - 1];
@@ -32,7 +33,7 @@ function StatsSection(): JSX.Element {
 	return (
 		<Section name={info.sections[1]}>
 			<p>Found in the topmost right corner, this section tracks several important statistics:</p>
-			<h5>Hitpoints</h5>
+			<Subheader>Hitpoints</Subheader>
 			<p>
 				Hitpoints (HP) measure hardiness and vitality. When a creature's hitpoints fall to zero, they succumb to their
 				wounds and fall unconscious. A character’s maximum HP is initially equal to their strength score and increases
@@ -40,7 +41,7 @@ function StatsSection(): JSX.Element {
 				feature, feats, or magical gear.
 			</p>
 			<pre>{strings.max_hp_formula}</pre>
-			<h5>Willpower</h5>
+			<Subheader>Willpower</Subheader>
 			<p>
 				Willpower (WP) is expended as the player uses powerful spells and abilities. When WP is fully depleted, the
 				character is said to be exhausted. There is not an immediate penalty for this condition, other than not being
@@ -48,7 +49,7 @@ function StatsSection(): JSX.Element {
 				<Sub attr='CHA' /> or <Sub attr='NST' /> modifiers. Willpower also increases by 1 at even numbered levels.
 			</p>
 			<pre>{strings.max_wp_formula}</pre>
-			<h5>Mitigation</h5>
+			<Subheader>Mitigation</Subheader>
 			<p>
 				Mitigation (MIT) is a derived statistic which determines how likely a character is to successfully avoid damage
 				from an attack, similar to armor class from D&amp;D. During combat, melee and ranged attacks are treated as an
@@ -77,23 +78,26 @@ function StatsSection(): JSX.Element {
 				base mitigation value. For example, specific potions increase DC, while the parry reaction or certain spells
 				improve BC.
 			</p>
-			<h5>Gold</h5>
+			<Subheader>Gold</Subheader>
 			<p>
 				Gold measures a character's material wealth, and does not necessarily correspond to a specific number of gold
 				coins or any specific currency. Coins made from other metals such as copper or silver are converted to their
 				gold value when recorded on the character sheet. Gold is mainly used to purchase goods and services, such as
 				buying equipment from merchants or hiring trainers.
 			</p>
-			<h5>Status</h5>
+			<Subheader>Status</Subheader>
 			<p>This section records any status effects inflicted on your character.</p>
-			<h5>Training Slots</h5>
+			<Subheader>Training Slots</Subheader>
 			<p>
 				Training slots are a resource that control how often a character can learn new abilities from training.
 				Characters expend training slots whenever they learn new feats or spells. If they don't have enough training
 				slots for a new ability, they may have to forget an ability to regain the required training slots, or wait until
 				they level up. If you're just making a character, you won't have used any training slots, so they will be at
 				maximum, which is equal to your intelligence attribute score. Training slots are explained in more detail in{" "}
-				<ChapterLink chapter={6} />.
+				<ChapterLink chapter={4} target='training'>
+					Chapter 4
+				</ChapterLink>
+				.
 			</p>
 			<pre>{strings.training_slots_formula}</pre>
 		</Section>
@@ -141,7 +145,7 @@ function EquipmentSection(): JSX.Element {
 				This section records your character's equipped weapons and armor. Magical trinkets are not recorded here, but
 				under "inventory", even if they are currently being worn.
 			</p>
-			<h5>Weapons</h5>
+			<Subheader>Weapons</Subheader>
 			<p>
 				To fill out this section, copy down the names and damage of the weapons you chose when you created your
 				character. For example, let's suppose you're playing a character with a strength score of 13 and a dexterity
@@ -171,7 +175,7 @@ function EquipmentSection(): JSX.Element {
 				<li>A light weapon and a greatshield</li>
 			</ul>
 			<p>If you only carry one weapon, leave the "offhand" column blank.</p>
-			<h5>Armor</h5>
+			<Subheader>Armor</Subheader>
 			<p>
 				Under the "armor" section, write down the type of armor your character is wearing and the associated BC. For
 				example, if your character is a knight you would start out wearing half plate. Therefore, you would write:
