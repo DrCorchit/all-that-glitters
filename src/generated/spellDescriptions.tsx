@@ -207,9 +207,11 @@ export const dream_warrior = <span className="default">During the next long rest
 
 export const monkeys_paw = <span className="default">Three individuals wish upon the severed paw of a monkey, gaining one wish each. Each one who would wish rolls a d20; the number shown is the number of words they may use to construct their wish. Each wish is sure to come true, but the execution is left to the caprice of powerful fairy. A given individual may partake three times of this ceremony, ere the fey turn a deaf ear to their pleas.</span>
 
-export const find_familiar = <span className="default">The caster summons a lesser spirit as a familiar. The spirit takes the form of an imp, a pseudodragon, or a chupacabra.</span>
+export const find_familiar = <span className="default">You summon a lesser spirit as a familiar. The spirit takes the form of an imp, a pseudodragon, or a chupacabra.</span>
 
-export const mage_hand = <span className="default">The caster expends 1 willpower to summon a floating spectral hand. The hand is a minor spirit, obedient and sentient but prone to occasional unbidden mischief. The hand can fly up to 100 yards away from its master, and carry an object weighing up to five pounds.</span>
+export const mage_hand = <span className="default">You expend 1 willpower to summon a floating spectral hand. The hand is a minor spirit, obedient and sentient but prone to occasional unbidden mischief. The hand can fly up to 100 yards away and carry an object weighing up to five pounds.</span>
+
+export const prestidigitation = <span className="default">As an action, you evoke a minor magical effect, such as: <ul><li>A harmless sensory effect, such as a shower of sparks, a puff of smoke, a sound or a faint scent.</li><li>You ignite or extinguish a nonmagical source of flame, such as a torch or candle.</li><li>You create a small magical mark on an object that lasts for up to one hour.</li><li>You render a small object clean, soiled, warm, cold, or transparent for up to one minute.</li></ul></span>
 
 export const summon_weapon = <span className="default">Summon a small or standard weapon to hand for one hour. The weapon is partially transparent, ever burning with an eerie violet flame. The weapon deals the same damage as a weapon of steel.</span>
 
@@ -372,6 +374,8 @@ export const cyclone = <span className="default">A swiftly swirling whirlwind fo
 export const shocking_blade = <span className="default">Imbue a metallic weapon you can touch with the power of lightning.  1d6 <span style={{color: "#FF4"}}>Lightning</span> damage is added to the weapon's damage.</span>
 
 export const blustering_gust = <span className="default">A gust of wind blusters forth, dealing no damage but pushing enemies about. An enemy caught in the gust is pushed 20 feet in the direction of the gust. On a successful DT 10 <Sub skill="Defense" /> saving throw, the target is only pushed half that distance.</span>
+
+export const silence = <span className="default">All sound is quenched within a 5-foot sphere centered a location of your choosing, within 100 yards. No magic can be cast from within this sphere, but pre-existing magical spells are not effected.</span>
 
 export const soar = <span className="default">Gain the ability of wingless flight for five minutes. While the spell is active, you may move through the air at 12 feet per second.</span>
 
@@ -655,6 +659,8 @@ spellDescriptions.register("find_familiar", find_familiar)
 
 spellDescriptions.register("mage_hand", mage_hand)
 
+spellDescriptions.register("prestidigitation", prestidigitation)
+
 spellDescriptions.register("summon_weapon", summon_weapon)
 
 spellDescriptions.register("detect_magic", detect_magic)
@@ -816,6 +822,8 @@ spellDescriptions.register("cyclone", cyclone)
 spellDescriptions.register("shocking_blade", shocking_blade)
 
 spellDescriptions.register("blustering_gust", blustering_gust)
+
+spellDescriptions.register("silence", silence)
 
 spellDescriptions.register("soar", soar)
 

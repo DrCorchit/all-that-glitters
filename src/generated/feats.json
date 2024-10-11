@@ -2049,6 +2049,66 @@
     }
   },
   {
+    "name": "Counterspell",
+    "description": "As a reaction, you can expend 3 willpower to cancel the effects of a spell that is about to be cast. If the caster expended more than 3 willpower to cast the spell, you must pass a difficulty 12 {{skills.sorcery}} check to do so. The difficulty of the check increases by 2 for every additional point of willpower expended by the caster, but you have advantage on the check if you already know the spell they are attempting to cast.",
+    "level": 4,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 7,
+      "slots": 7,
+      "other": [],
+      "stats": {
+        "int": 14
+      },
+      "clazz": "Scholar"
+    }
+  },
+  {
+    "name": "Arcane Mirror",
+    "description": "You can recast an evocation spell cast by an opponent, even if it is a spell you have not learned. The willpower cost to do so is 3 more than the ordinary willpower cost of the spell.",
+    "level": 5,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 9,
+      "slots": 7,
+      "other": [],
+      "stats": {
+        "int": 15
+      },
+      "clazz": "Scholar"
+    }
+  },
+  {
+    "name": "Zarnifu's Floating Eye",
+    "description": "A large eyeball around four feet in diameter appears for one hour. The eye hovers quietly and follows you around, telepathically communicating everything it sees with you. As a result, you have advantage on {{skills.perception}} checks, but disadvantage on {{skills.stealth}} checks. The eye can be telepathically bidden to move up to 100 yards away from you, but cannot communicate with you if the distance is increased beyond this limit.",
+    "level": 6,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 8,
+      "other": [],
+      "stats": {
+        "nst": 16
+      },
+      "clazz": "Scholar"
+    }
+  },
+  {
+    "name": "Nystrom's Magical Orchestra",
+    "description": "You can expend 6 willpower to summon a magical orchestra of self-playing instruments for one hour. The orchestra can be ordered to play a simple ballad or an entire symphony. As a result of casting this spell, you critically succeed performance checks for the duratino of the spell.",
+    "level": 6,
+    "featType": "Class",
+    "trainingReqs": {
+      "level": 11,
+      "slots": 6,
+      "other": [],
+      "stats": {
+        "cha": 16
+      },
+      "clazz": "Scholar"
+    }
+  },
+  {
     "name": "Recidivism",
     "description": "You have advantage on skill checks for actions that are against the law.",
     "level": 2,

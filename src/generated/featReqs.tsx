@@ -574,6 +574,22 @@ export const templar = {
   reqs: [],
 }
 
+export const counterspell = {
+  reqs: [],
+}
+
+export const arcane_mirror = {
+  reqs: [],
+}
+
+export const zarnifus_floating_eye = {
+  reqs: [],
+}
+
+export const nystroms_magical_orchestra = {
+  reqs: [],
+}
+
 export const recidivism = {
   reqs: [],
 }
@@ -893,6 +909,14 @@ featReqs.register("praetorian", praetorian)
 featReqs.register("samurai", samurai)
 
 featReqs.register("templar", templar)
+
+featReqs.register("counterspell", counterspell)
+
+featReqs.register("arcane_mirror", arcane_mirror)
+
+featReqs.register("zarnifus_floating_eye", zarnifus_floating_eye)
+
+featReqs.register("nystroms_magical_orchestra", nystroms_magical_orchestra)
 
 featReqs.register("recidivism", recidivism)
 

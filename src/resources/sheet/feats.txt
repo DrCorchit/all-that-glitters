@@ -204,10 +204,14 @@ Psychic
 Ranger
 
 Scholar
+    4|Counterspell|7|INT 14|As a reaction, you can expend 3 willpower to cancel the effects of a spell that is about to be cast. If the caster expended more than 3 willpower to cast the spell, you must pass a difficulty 12 {{skills.sorcery}} check to do so. The difficulty of the check increases by 2 for every additional point of willpower expended by the caster, but you have advantage on the check if you already know the spell they are attempting to cast.
+    5|Arcane Mirror|7|INT 15|You can recast an evocation spell cast by an opponent, even if it is a spell you have not learned. The willpower cost to do so is 3 more than the ordinary willpower cost of the spell.
+    6|Zarnifu's Floating Eye|8|NST 16|You can expend 8 willpower to summon a large eyeball around four feet in diameter that remains for one hour. The eye hovers quietly and follows you around, telepathically communicating everything it sees with you. As a result, you have advantage on {{skills.perception}} checks, but disadvantage on {{skills.stealth}} checks. The eye can be telepathically bidden to move up to 100 yards away from you, but cannot communicate with you if the distance is increased beyond this limit.
+    6|Nystrom's Magical Orchestra|6|CHA 16|You can expend 6 willpower to summon a magical orchestra of self-playing instruments for one hour. The orchestra can be ordered to play a simple ballad or an entire symphony. As a result of casting this spell, you critically succeed performance checks for the duration of the spell.
 
 Thief
   2|Recidivism|5|CHA 12|You have advantage on skill checks for actions that are against the law.
-  3|Crazy Eights|5|CHA 13|Whenever you roll an 8 on a d20, something unexpected happens. It is what it is.
+  3|Crazy Eights|5|CHA 13|Whenever you roll an 8 on a d20 (outside of combat), something unexpected happens. It is what it is.
   4|Mastermind|8|INT 14|You have advantage on {{skills.persuasion}} rolls to convince unscrupulous folk to carry out your plans, and can always find specialists of the appropriate skill for the job.
   5|Lucky Sevens|12|NST 15|When you roll a seven on a d20, it counts as a natural 20.
 

@@ -2151,7 +2151,7 @@
   },
   {
     "name": "Find Familiar",
-    "description": "The caster summons a lesser spirit as a familiar. The spirit takes the form of an imp, a pseudodragon, or a chupacabra.",
+    "description": "You summon a lesser spirit as a familiar. The spirit takes the form of an imp, a pseudodragon, or a chupacabra.",
     "level": 1,
     "duration": "Indefinite",
     "rarity": "Common",
@@ -2172,9 +2172,30 @@
   },
   {
     "name": "Mage Hand",
-    "description": "The caster expends 1 willpower to summon a floating spectral hand. The hand is a minor spirit, obedient and sentient but prone to occasional unbidden mischief. The hand can fly up to 100 yards away from its master, and carry an object weighing up to five pounds.",
+    "description": "You expend 1 willpower to summon a floating spectral hand. The hand is a minor spirit, obedient and sentient but prone to occasional unbidden mischief. The hand can fly up to 100 yards away and carry an object weighing up to five pounds.",
     "level": 1,
     "duration": "5 minutes",
+    "rarity": "Common",
+    "type": "Evocation",
+    "study": "Thaumaturgy",
+    "trainingReqs": {
+      "level": 1,
+      "slots": 3,
+      "stats": {
+        "cha": 11
+      }
+    },
+    "castingReqs": {
+      "evocation": 0,
+      "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Prestidigitation",
+    "description": "As an action, you evoke a minor magical effect, such as: <ul><li>A harmless sensory effect, such as a shower of sparks, a puff of smoke, a sound or a faint scent.</li><li>You ignite or extinguish a nonmagical source of flame, such as a torch or candle.</li><li>You create a small magical mark on an object that lasts for up to one hour.</li><li>You render a small object clean, soiled, warm, cold, or transparent for up to one minute.</li></ul>",
+    "level": 1,
+    "duration": "Instantaneous",
     "rarity": "Common",
     "type": "Evocation",
     "study": "Thaumaturgy",
@@ -3914,6 +3935,28 @@
     "castingReqs": {
       "evocation": 2,
       "concentration": 0,
+      "time": "1 Action"
+    }
+  },
+  {
+    "name": "Silence",
+    "description": "All sound is quenched within a 5-foot sphere centered a location of your choosing, within 100 yards. No magic can be cast from within this sphere, but pre-existing magical spells are not effected.",
+    "level": 3,
+    "duration": "Concentration",
+    "rarity": "Academic",
+    "type": "Concentration",
+    "study": "Air",
+    "trainingReqs": {
+      "level": 5,
+      "slots": 6,
+      "gold": 15,
+      "stats": {
+        "nst": 13
+      }
+    },
+    "castingReqs": {
+      "evocation": 2,
+      "concentration": 1,
       "time": "1 Action"
     }
   },

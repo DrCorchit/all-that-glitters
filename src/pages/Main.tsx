@@ -28,13 +28,10 @@ function MainPage() {
 				ideas to the table. Here's some things that are unique to All That Glitters:
 			</p>
 			<ul>
-				<li>An open-ended character leveling framework, significantly increasing player choice for martial classes.</li>
-				<li>A streamlined character building process. Making characters is easy for players and storytellers alike.</li>
+				<li>Streamlined character creation: making characters is easy for players and storytellers alike.</li>
+				<li>Open-ended character leveling, with significant freedom even when building non-magical characters.</li>
 				<li>A focus on historical accuracy with respect to weapons, armor, combat techniques.</li>
-				<li>
-					An emphasis on offline play, including easily printable character sheets and rules that are playable with
-					nothing more than a pen, paper, and a set of dice.
-				</li>
+				<li>An emphasis on offline play: the game is playable with a pen, paper, and polyhedral dice.</li>
 			</ul>
 			<p style={{textAlign: "center"}}>
 				<b>If you're interested, here's how to get started:</b>

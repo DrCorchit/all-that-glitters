@@ -291,6 +291,14 @@ export const samurai = <span className="default">You no longer have disadvantage
 
 export const templar = <span className="default">Ignore disadvantage on stealth checks while wearing full plate.</span>
 
+export const counterspell = <span className="default">As a reaction, you can expend 3 willpower to cancel the effects of a spell that is about to be cast. If the caster expended more than 3 willpower to cast the spell, you must pass a difficulty 12 <Sub skill="Sorcery" /> check to do so. The difficulty of the check increases by 2 for every additional point of willpower expended by the caster, but you have advantage on the check if you already know the spell they are attempting to cast.</span>
+
+export const arcane_mirror = <span className="default">You can recast an evocation spell cast by an opponent, even if it is a spell you have not learned. The willpower cost to do so is 3 more than the ordinary willpower cost of the spell.</span>
+
+export const zarnifus_floating_eye = <span className="default">A large eyeball around four feet in diameter appears for one hour. The eye hovers quietly and follows you around, telepathically communicating everything it sees with you. As a result, you have advantage on <Sub skill="Perception" /> checks, but disadvantage on <Sub skill="Stealth" /> checks. The eye can be telepathically bidden to move up to 100 yards away from you, but cannot communicate with you if the distance is increased beyond this limit.</span>
+
+export const nystroms_magical_orchestra = <span className="default">You can expend 6 willpower to summon a magical orchestra of self-playing instruments for one hour. The orchestra can be ordered to play a simple ballad or an entire symphony. As a result of casting this spell, you critically succeed performance checks for the duratino of the spell.</span>
+
 export const recidivism = <span className="default">You have advantage on skill checks for actions that are against the law.</span>
 
 export const crazy_eights = <span className="default">Whenever you roll an 8 on a d20, something unexpected happens. It is what it is.</span>
@@ -594,6 +602,14 @@ featDescriptions.register("praetorian", praetorian)
 featDescriptions.register("samurai", samurai)
 
 featDescriptions.register("templar", templar)
+
+featDescriptions.register("counterspell", counterspell)
+
+featDescriptions.register("arcane_mirror", arcane_mirror)
+
+featDescriptions.register("zarnifus_floating_eye", zarnifus_floating_eye)
+
+featDescriptions.register("nystroms_magical_orchestra", nystroms_magical_orchestra)
 
 featDescriptions.register("recidivism", recidivism)
 

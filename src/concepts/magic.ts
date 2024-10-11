@@ -174,7 +174,7 @@ function getBase(spell: Spell): string {
 		case "toxicology":
 			return `Alchemical Toxin`;
 		default:
-			return `${spell.study.adjective} ${spell.type}`;
+			return `${spell.study.adjective} ${spell.type.name}`;
 	}
 }
 
