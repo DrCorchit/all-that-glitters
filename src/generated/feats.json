@@ -2080,7 +2080,7 @@
   },
   {
     "name": "Zarnifu's Floating Eye",
-    "description": "A large eyeball around four feet in diameter appears for one hour. The eye hovers quietly and follows you around, telepathically communicating everything it sees with you. As a result, you have advantage on {{skills.perception}} checks, but disadvantage on {{skills.stealth}} checks. The eye can be telepathically bidden to move up to 100 yards away from you, but cannot communicate with you if the distance is increased beyond this limit.",
+    "description": "You can expend 8 willpower to summon a large eyeball around four feet in diameter that remains for one hour. The eye hovers quietly and follows you around, telepathically communicating everything it sees with you. As a result, you have advantage on {{skills.perception}} checks, but disadvantage on {{skills.stealth}} checks. The eye can be telepathically bidden to move up to 100 yards away from you, but cannot communicate with you if the distance is increased beyond this limit.",
     "level": 6,
     "featType": "Class",
     "trainingReqs": {
@@ -2095,7 +2095,7 @@
   },
   {
     "name": "Nystrom's Magical Orchestra",
-    "description": "You can expend 6 willpower to summon a magical orchestra of self-playing instruments for one hour. The orchestra can be ordered to play a simple ballad or an entire symphony. As a result of casting this spell, you critically succeed performance checks for the duratino of the spell.",
+    "description": "You can expend 6 willpower to summon a magical orchestra of self-playing instruments for one hour. The orchestra can be ordered to play a simple ballad or an entire symphony. As a result of casting this spell, you critically succeed performance checks for the duration of the spell.",
     "level": 6,
     "featType": "Class",
     "trainingReqs": {
@@ -2125,7 +2125,7 @@
   },
   {
     "name": "Crazy Eights",
-    "description": "Whenever you roll an 8 on a d20, something unexpected happens. It is what it is.",
+    "description": "Whenever you roll an 8 on a d20 (outside of combat), something unexpected happens. It is what it is.",
     "level": 3,
     "featType": "Class",
     "trainingReqs": {

@@ -295,13 +295,13 @@ export const counterspell = <span className="default">As a reaction, you can exp
 
 export const arcane_mirror = <span className="default">You can recast an evocation spell cast by an opponent, even if it is a spell you have not learned. The willpower cost to do so is 3 more than the ordinary willpower cost of the spell.</span>
 
-export const zarnifus_floating_eye = <span className="default">A large eyeball around four feet in diameter appears for one hour. The eye hovers quietly and follows you around, telepathically communicating everything it sees with you. As a result, you have advantage on <Sub skill="Perception" /> checks, but disadvantage on <Sub skill="Stealth" /> checks. The eye can be telepathically bidden to move up to 100 yards away from you, but cannot communicate with you if the distance is increased beyond this limit.</span>
+export const zarnifus_floating_eye = <span className="default">You can expend 8 willpower to summon a large eyeball around four feet in diameter that remains for one hour. The eye hovers quietly and follows you around, telepathically communicating everything it sees with you. As a result, you have advantage on <Sub skill="Perception" /> checks, but disadvantage on <Sub skill="Stealth" /> checks. The eye can be telepathically bidden to move up to 100 yards away from you, but cannot communicate with you if the distance is increased beyond this limit.</span>
 
-export const nystroms_magical_orchestra = <span className="default">You can expend 6 willpower to summon a magical orchestra of self-playing instruments for one hour. The orchestra can be ordered to play a simple ballad or an entire symphony. As a result of casting this spell, you critically succeed performance checks for the duratino of the spell.</span>
+export const nystroms_magical_orchestra = <span className="default">You can expend 6 willpower to summon a magical orchestra of self-playing instruments for one hour. The orchestra can be ordered to play a simple ballad or an entire symphony. As a result of casting this spell, you critically succeed performance checks for the duration of the spell.</span>
 
 export const recidivism = <span className="default">You have advantage on skill checks for actions that are against the law.</span>
 
-export const crazy_eights = <span className="default">Whenever you roll an 8 on a d20, something unexpected happens. It is what it is.</span>
+export const crazy_eights = <span className="default">Whenever you roll an 8 on a d20 (outside of combat), something unexpected happens. It is what it is.</span>
 
 export const mastermind = <span className="default">You have advantage on <Sub skill="Persuasion" /> rolls to convince unscrupulous folk to carry out your plans, and can always find specialists of the appropriate skill for the job.</span>
 

@@ -28,14 +28,14 @@
 		"name": "Sorcerer's Robes",
 		"cost": 150,
 		"weight": 2,
-		"description": "Distinguishes one as a practitioner of the arcane. Grants advantage on ability checks to cast magical spells.",
+		"description": "Distinguishes one as a practitioner of the arcane. +2 to maximum willpower.",
 		"key": "mage_robes"
 	},
 	{
 		"name": "Druid's Robes",
 		"cost": 50,
 		"weight": 3,
-		"description": "Rugged robes that never wear thin or lose color. Signifies membership in a druidic circle, and grants advantage on medicine and nature ability checks.",
+		"description": "Rugged robes that never wear thin or lose color. Signifies membership in a druidic circle, and grants advantage on nature ability checks.",
 		"key": "druid_robes"
 	},
 	{

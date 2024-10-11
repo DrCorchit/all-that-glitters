@@ -7,7 +7,7 @@ export function Header() {
 			style={{
 				color: "black",
 				margin: "0",
-				padding: "10px",
+				padding: "8px",
 				textAlign: "center",
 				fontFamily: "Jim Nightshade",
 				fontSize: "20pt",
@@ -241,26 +241,13 @@ const EmptyRow = () => {
 	);
 };
 
-const Sheet = () => {
+export const Sheet = () => {
 	return (
-		<div className='sheet'>
+		<div className='sheet' style={{display: "table", height: "100%", margin: "auto"}}>
 			<Helmet>
-				<body style={{backgroundColor: "white"}}></body>
+				<style>{"body { background-color: white; }"}</style>
 			</Helmet>
-			<p
-				style={{
-					color: "black",
-					margin: "0",
-					padding: "10px",
-					textAlign: "center",
-					fontFamily: "Jim Nightshade",
-					fontSize: "20pt",
-					fontWeight: "bold",
-					background: "transparent url(/images/header.png) no-repeat bottom right",
-					backgroundSize: "100%",
-				}}>
-				All That Glitters — Character Sheet
-			</p>
+			<Header />
 			<table
 				className='sheet'
 				style={{
@@ -321,5 +308,3 @@ const Sheet = () => {
 		</div>
 	);
 };
-
-export default Sheet;

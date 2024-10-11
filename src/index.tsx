@@ -12,12 +12,12 @@ import Chapter5 from "./pages/chapters/Chapter5";
 import Chapter6 from "./pages/chapters/Chapter6";
 import Chapter7 from "./pages/chapters/Chapter7";
 import {AppendixSpells} from "./pages/appendices/AppendixSpells";
+import {AppendixFeats} from "./pages/appendices/AppendixFeats";
 import {AppendixWeapons} from "./pages/appendices/AppendixWeapons";
 import {AppendixArmor} from "./pages/appendices/AppendixArmor";
 import {AppendixItems} from "./pages/appendices/AppendixItems";
 import {AppendixBestiary} from "./pages/appendices/AppendixBestiary";
-import Sheet from "./pages/Sheet";
-import AppendixFeats from "./pages/appendices/AppendixFeats";
+import {Sheet} from "./pages/Sheet";
 import {SheetPage2} from "./pages/SheetPage2";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);

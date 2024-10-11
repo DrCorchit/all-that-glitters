@@ -167,7 +167,7 @@ function FilterForm({
 	);
 }
 
-export default function AppendixFeats() {
+export function AppendixFeats() {
 	const [filterState, setFilterState] = useState<FilterState>(defaultFilterState);
 
 	function filter(feat: Feat): boolean {
