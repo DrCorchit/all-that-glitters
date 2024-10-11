@@ -31,7 +31,10 @@ function MainPage() {
 				<li>Streamlined character creation: making characters is easy for players and storytellers alike.</li>
 				<li>Open-ended character leveling, with significant freedom even when building non-magical characters.</li>
 				<li>A focus on historical accuracy with respect to weapons, armor, combat techniques.</li>
-				<li>An emphasis on offline play: the game is playable with a pen, paper, and polyhedral dice.</li>
+				<li>
+					An emphasis on offline play, including easily printable character sheets and rules that are playable with
+					nothing more than a pen, paper, and a set of dice.
+				</li>
 			</ul>
 			<p style={{textAlign: "center"}}>
 				<b>If you're interested, here's how to get started:</b>
